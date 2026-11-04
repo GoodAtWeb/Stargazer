@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ConstellationMap from '../components/ConstellationMap'
 import FortuneSection from '../components/FortuneSection'
+import TopNav from '../components/TopNav'
 import { getConstellationById } from '../utils/constellations'
 import './ConstellationDetail.css'
 
@@ -19,6 +20,7 @@ function ConstellationView({ constellation }) {
 
   return (
     <div className="detail-page">
+      <TopNav />
       <main className="detail">
         <header className="detail__header">
           <h1>{nameKo}</h1>
