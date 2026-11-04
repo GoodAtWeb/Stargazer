@@ -1,0 +1,253 @@
+.fortune {
+  padding: 24px 64px 72px;
+  box-sizing: border-box;
+  text-align: left;
+  color: #fff;
+}
+
+.fortune h2,
+.fortune h3 {
+  margin: 0;
+}
+
+.fortune h2 {
+  font-size: 22px;
+}
+
+.fortune h3 {
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.fortune__top {
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
+  gap: 48px;
+  align-items: start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.fortune__score {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.score-ring {
+  position: relative;
+  width: 160px;
+  aspect-ratio: 1;
+}
+
+.score-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.score-ring circle {
+  fill: none;
+  stroke-width: 9;
+}
+
+.score-ring__track {
+  stroke: rgba(255, 255, 255, 0.15);
+}
+
+.score-ring__value {
+  stroke: #f0cd82;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.8s ease;
+}
+
+.score-ring__text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0;
+  padding-top: 48px;
+}
+
+.score-ring__text strong {
+  font-size: 44px;
+}
+
+.score-ring__text span {
+  margin-left: 2px;
+  font-size: 16px;
+}
+
+.fortune__summary {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.fortune__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fortune__categories li {
+  display: grid;
+  grid-template-columns: 110px 110px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.fortune__label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.fortune__stars {
+  color: #f0cd82;
+  letter-spacing: 2px;
+}
+
+.fortune__comment {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.fortune__side {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.fortune__lucky {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.fortune__lucky div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.fortune__lucky dt {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.fortune__lucky dd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.fortune__lucky i {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.fortune__match-list {
+  display: flex;
+  gap: 12px;
+}
+
+.fortune__rank {
+  padding-top: 36px;
+}
+
+.fortune__rank-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.sign-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 8px 12px;
+  color: #fff;
+  font: inherit;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.sign-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.sign-button--active {
+  background: rgba(36, 46, 92, 0.6);
+  border-color: rgba(240, 205, 130, 0.8);
+}
+
+.sign-button__rank {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.sign-button__rank--1 {
+  color: #ffd34d;
+}
+
+.sign-button__rank--2 {
+  color: #c4ccdb;
+}
+
+.sign-button__rank--3 {
+  color: #d98a4b;
+}
+
+.sign-button img {
+  width: 72px;
+  height: 72px;
+}
+
+.sign-button__name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sign-button__caption {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 960px) {
+  .fortune {
+    padding: 24px 24px 56px;
+  }
+
+  .fortune__top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .fortune__categories li {
+    grid-template-columns: 96px 96px 1fr;
+  }
+
+  .fortune__rank-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

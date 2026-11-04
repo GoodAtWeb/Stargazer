@@ -1,0 +1,76 @@
+.detail-page {
+  color: #fff;
+  font-family: 'Pretendard', system-ui, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  background:
+    radial-gradient(1.4px 1.4px at 8% 18%, #fff 60%, transparent 62%),
+    radial-gradient(1px 1px at 22% 8%, #fff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 38% 74%, #fff 60%, transparent 62%),
+    radial-gradient(1px 1px at 55% 30%, #fff 60%, transparent 62%),
+    radial-gradient(1.6px 1.6px at 71% 62%, #fff 60%, transparent 62%),
+    radial-gradient(1px 1px at 84% 14%, #fff 60%, transparent 62%),
+    radial-gradient(1.4px 1.4px at 92% 78%, #fff 60%, transparent 62%),
+    radial-gradient(1px 1px at 15% 88%, #fff 60%, transparent 62%),
+    radial-gradient(1px 1px at 63% 90%, #fff 60%, transparent 62%),
+    radial-gradient(60% 50% at 30% 62%, rgba(120, 140, 215, 0.35), transparent 70%),
+    linear-gradient(180deg, #1b2140 0%, #2f3d6e 45%, #46568a 100%);
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 24px 48px;
+  min-height: 100svh;
+  padding: 56px 64px 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: left;
+}
+
+.detail--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail__header h1 {
+  margin: 0 0 10px;
+  font-size: 36px;
+}
+
+.detail__meta {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.detail__period {
+  margin: 0;
+  font-size: 18px;
+  color: rgba(220, 228, 255, 0.8);
+}
+
+.detail__origin {
+  max-width: 680px;
+}
+
+.detail__origin h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.detail__origin p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.detail__stage {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 360px;
+  min-height: 0;
+}
