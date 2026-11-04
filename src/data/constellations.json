@@ -1,6 +1,1091 @@
 [
   {
-    "id": "scorpius",
+    "id": "aries",
+    "isZodiac": true,
+    "nameKo": "양자리",
+    "nameEn": "Aries",
+    "nameLatin": "Aries",
+    "abbr": "Ari",
+    "symbol": "숫양",
+    "element": "불",
+    "rulingPlanet": "화성",
+    "period": {
+      "start": "03-21",
+      "end": "04-19"
+    },
+    "season": "가을",
+    "origin": "테살리아 왕 아타마스의 아이들 프릭소스와 헬레는 계모 밑에서 힘들게 지냈어요. 이를 안타깝게 여긴 헤르메스가 황금 털을 가진 숫양을 보내 두 아이를 태우고 하늘을 날게 했다고 전해져요. 하늘을 날던 중 헬레는 바다에 떨어졌고, 그 바다는 훗날 '헬레의 바다'라는 뜻의 헬레스폰트(오늘날의 다르다넬스 해협)로 불렸어요. 프릭소스는 무사히 흑해 동쪽의 콜키스에 닿았고, 제우스가 그 숫양의 공을 기려 별자리로 만들었어요. 가장 오래된 기록은 바빌로니아의 『물 아핀(MUL.APIN)』으로, 이곳에서는 '품팔이꾼'이라고 불렀어요. 이집트에서는 춘분을 알리는 태양신 아몬라와 연결됐어요.",
+    "stars": [
+      {
+        "id": "mesarthim",
+        "nameKo": "메사르팀",
+        "bayer": "Mesarthim · γ Arietis",
+        "x": 14,
+        "y": 66,
+        "magnitude": 3.86,
+        "badge": "쌍성계",
+        "tagline": "비슷한 밝기의 두 별이 나란히",
+        "brightness": "3.86등급",
+        "distance": "약 166광년",
+        "temperature": "약 10,512K",
+        "size": "태양의 약 1.9배",
+        "description": "밝기가 비슷한 두 별이 7.8초각 떨어져 있는 쌍성계예요. 이름의 어원은 확실하지 않고, 2016년 IAU가 γ² Arietis의 공식 이름으로 승인했어요."
+      },
+      {
+        "id": "sheratan",
+        "nameKo": "셰라탄",
+        "bayer": "Sheratan · β Arietis",
+        "x": 40,
+        "y": 52,
+        "magnitude": 2.65,
+        "badge": "분광 쌍성",
+        "tagline": "봄의 시작을 알리던 별",
+        "brightness": "2.65등급",
+        "distance": "약 58광년",
+        "temperature": null,
+        "size": null,
+        "description": "이름은 아랍어로 '두 개의 표지'를 뜻해요. 이 별과 감마 양자리가 한때 북반구의 춘분점을 알리는 표지였기 때문이에요."
+      },
+      {
+        "id": "hamal",
+        "nameKo": "하말",
+        "bayer": "Hamal · α Arietis",
+        "x": 64,
+        "y": 42,
+        "magnitude": 2.0,
+        "badge": "주황색 거성",
+        "tagline": "양자리에서 가장 밝은 별",
+        "brightness": "2등급",
+        "distance": "약 66광년",
+        "temperature": "약 4,553K",
+        "size": "태양의 약 15배",
+        "description": "이름은 아랍어로 '숫양의 머리'를 뜻하는 '라스 알 하말'에서 왔어요. 아랍에서는 양자리를 '양'이라 불렀어요."
+      },
+      {
+        "id": "botein",
+        "nameKo": "보테인",
+        "bayer": "Botein · δ Arietis",
+        "x": 76,
+        "y": 54,
+        "magnitude": 4.35,
+        "badge": "주황색 거성",
+        "tagline": "양의 배를 이루는 별",
+        "brightness": "4.35등급",
+        "distance": "약 165광년",
+        "temperature": "약 4,782K",
+        "size": "태양의 약 10배",
+        "description": "이름은 '배'를 뜻하는 아랍어 '알 바튼'의 지소형인 '알 부타인'에서 왔어요. 2016년 IAU가 공식 이름으로 승인했어요."
+      },
+      {
+        "id": "bharani",
+        "nameKo": "브하라니",
+        "bayer": "Bharani · 41 Arietis",
+        "x": 50,
+        "y": 30,
+        "magnitude": 3.63,
+        "badge": "청백색 주계열성",
+        "tagline": "인도 별자리 이름을 가진 별",
+        "brightness": "3.63등급",
+        "distance": "약 166광년",
+        "temperature": "약 11,900K",
+        "size": "태양의 약 2.5배",
+        "description": "이름 '브하라니'는 힌두 천문학에서 두 번째 낙샤트라(달의 집)의 이름이에요."
+      }
+    ],
+    "lines": [
+      [
+        "mesarthim",
+        "sheratan"
+      ],
+      [
+        "sheratan",
+        "hamal"
+      ],
+      [
+        "hamal",
+        "botein"
+      ],
+      [
+        "hamal",
+        "bharani"
+      ]
+    ]
+  },
+  {
+    "id": "taurus",
+    "isZodiac": true,
+    "nameKo": "황소자리",
+    "nameEn": "Taurus",
+    "nameLatin": "Taurus",
+    "abbr": "Tau",
+    "symbol": "황소",
+    "element": "흙",
+    "rulingPlanet": "금성",
+    "period": {
+      "start": "04-20",
+      "end": "05-20"
+    },
+    "season": "겨울",
+    "origin": "바람기 많은 제우스는 바닷가에서 노는 페니키아의 공주 유로파에게 반했어요. 제우스는 눈부신 흰 황소로 변해 왕의 소 떼 속에 섞였고, 장난삼아 등에 올라탄 유로파를 태운 채 바다로 뛰어들어 크레타섬까지 헤엄쳐 갔다고 전해져요. 그리스에는 제우스가 정부 이오를 헤라에게서 숨기려고 암소로 바꾸었다는 이야기도 있고, 아쿠실라오스는 이 황소를 헤라클레스가 잡은 크레타의 황소와 연결했어요. 더 오래된 메소포타미아에서는 『길가메시 서사시』에 나오는 '하늘의 황소'와 이어져요. 하늘에서는 황소의 앞쪽 절반만 그려지는 경우가 많아요.",
+    "stars": [
+      {
+        "id": "tianguan",
+        "nameKo": "톈관",
+        "bayer": "Tianguan · ζ Tauri",
+        "x": 14,
+        "y": 80,
+        "magnitude": 3.01,
+        "badge": "식쌍성",
+        "tagline": "황소의 남쪽 뿔 끝",
+        "brightness": "3.01등급",
+        "distance": "약 440광년",
+        "temperature": "약 15,500K",
+        "size": "태양의 약 5.5배",
+        "description": "이름은 중국어 '천관(天關)'에서 왔어요. '하늘의 관문'이라는 뜻으로, 중국 별자리 필수(畢宿) 안에 있는 별이에요. 약 133일 주기로 서로를 가리는 식쌍성이에요."
+      },
+      {
+        "id": "aldebaran",
+        "nameKo": "알데바란",
+        "bayer": "Aldebaran · α Tauri",
+        "x": 34,
+        "y": 64,
+        "magnitude": 0.85,
+        "badge": "주황색 거성",
+        "tagline": "황소자리에서 가장 밝은 별",
+        "brightness": "약 0.85등급",
+        "distance": "약 67광년",
+        "temperature": "약 3,900K",
+        "size": "태양의 약 45배",
+        "description": "이름은 아랍어 '알 다바란', 곧 '뒤따르는 자'에서 왔어요. 플레이아데스 성단을 뒤따라 떠오르는 데서 붙은 이름이에요. 밝기가 0.75~0.95등급 사이에서 조금씩 변해요."
+      },
+      {
+        "id": "chamukuy",
+        "nameKo": "챠무쿠이",
+        "bayer": "Chamukuy · θ² Tauri",
+        "x": 48,
+        "y": 54,
+        "magnitude": 3.4,
+        "badge": "변광성",
+        "tagline": "히아데스 성단의 작은 새",
+        "brightness": "3.4등급",
+        "distance": "약 157광년",
+        "temperature": "약 7,800K",
+        "size": "태양의 약 4.4배",
+        "description": "'차무쿠이'는 유카텍 마야어로 작은 새를 뜻해요. 2017년 IAU가 공식 이름으로 승인했고, 밝기가 아주 조금씩 변하는 방패자리 델타형 변광성이에요."
+      },
+      {
+        "id": "prima-hyadum",
+        "nameKo": "첫째 히아데스",
+        "bayer": "Prima Hyadum · γ Tauri",
+        "x": 60,
+        "y": 46,
+        "magnitude": 3.65,
+        "badge": "황색 거성",
+        "tagline": "히아데스 성단의 첫째 별",
+        "brightness": "3.65등급",
+        "distance": "약 154광년",
+        "temperature": "약 4,844K",
+        "size": "태양의 약 13배",
+        "description": "이름은 라틴어로 '히아데스의 첫째'라는 뜻이에요. 황소의 얼굴을 이루는 히아데스 성단에 속한 별이에요."
+      },
+      {
+        "id": "elnath",
+        "nameKo": "엘나스",
+        "bayer": "Elnath · β Tauri",
+        "x": 82,
+        "y": 20,
+        "magnitude": 1.65,
+        "badge": "청백색 거성",
+        "tagline": "황소의 북쪽 뿔 끝",
+        "brightness": "1.65등급",
+        "distance": "약 134광년",
+        "temperature": "약 13,600K",
+        "size": "태양의 약 4.8배",
+        "description": "이름은 아랍어로 '뿔로 받는 것'을 뜻해요. 황소의 뿔 끝을 가리켜요."
+      },
+      {
+        "id": "bibing",
+        "nameKo": "비빙",
+        "bayer": "Bibing · λ Tauri",
+        "x": 88,
+        "y": 52,
+        "magnitude": 3.37,
+        "badge": "식쌍성",
+        "tagline": "3.95일마다 밝기가 변하는 별",
+        "brightness": "3.4~3.9등급",
+        "distance": "약 480광년",
+        "temperature": "약 18,700K",
+        "size": "태양의 약 6.4배",
+        "description": "약 3.95일마다 두 별이 서로를 가려 밝기가 3.37~3.91등급으로 변해요. 이름은 중국 별자리 필수(畢宿) 중 '그물의 손잡이'에서 왔어요."
+      },
+      {
+        "id": "secunda-hyadum",
+        "nameKo": "둘째 히아데스",
+        "bayer": "Secunda Hyadum · δ¹ Tauri",
+        "x": 30,
+        "y": 44,
+        "magnitude": 3.77,
+        "badge": "황색 거성",
+        "tagline": "히아데스 성단의 둘째 별",
+        "brightness": "3.77등급",
+        "distance": "약 156광년",
+        "temperature": "약 4,819K",
+        "size": "태양의 약 15배",
+        "description": "이름은 라틴어로 '히아데스의 둘째'라는 뜻이에요. 2017년 IAU가 공식 이름으로 승인했어요."
+      },
+      {
+        "id": "ain",
+        "nameKo": "아인",
+        "bayer": "Ain · ε Tauri",
+        "x": 20,
+        "y": 30,
+        "magnitude": 3.53,
+        "badge": "주황색 거성",
+        "tagline": "황소의 눈을 뜻하는 별",
+        "brightness": "3.53등급",
+        "distance": "약 146광년",
+        "temperature": "약 4,880K",
+        "size": "태양의 약 12배",
+        "description": "이름은 아랍어로 '눈'이라는 뜻이에요. 히아데스 성단에 속한 주황색 거성이에요."
+      }
+    ],
+    "lines": [
+      [
+        "tianguan",
+        "aldebaran"
+      ],
+      [
+        "aldebaran",
+        "chamukuy"
+      ],
+      [
+        "chamukuy",
+        "prima-hyadum"
+      ],
+      [
+        "prima-hyadum",
+        "elnath"
+      ],
+      [
+        "prima-hyadum",
+        "bibing"
+      ],
+      [
+        "aldebaran",
+        "secunda-hyadum"
+      ],
+      [
+        "secunda-hyadum",
+        "ain"
+      ]
+    ]
+  },
+  {
+    "id": "gemini",
+    "isZodiac": true,
+    "nameKo": "쌍둥이자리",
+    "nameEn": "Gemini",
+    "nameLatin": "Gemini",
+    "abbr": "Gem",
+    "symbol": "쌍둥이",
+    "element": "바람",
+    "rulingPlanet": "수성",
+    "period": {
+      "start": "05-21",
+      "end": "06-21"
+    },
+    "season": "겨울",
+    "origin": "스파르타의 왕비 레다는 백조로 변한 제우스와 남편 틴다레오스 사이에서 쌍둥이 형제를 낳았다고 전해져요. 폴룩스는 제우스의 아들이어서 죽지 않는 몸이었고, 카스토르는 사람의 아들이었어요. 말 타기에 능한 카스토르와 권투와 무기에 뛰어난 폴룩스는 늘 함께였어요. 카스토르가 죽자 폴룩스는 슬픔에 빠져 자신도 죽게 해 달라고 제우스에게 부탁했고, 형제의 우애에 감동한 제우스가 두 사람을 하늘의 별로 만들었어요. 그리스인들은 이 쌍둥이를 뱃사람의 수호신으로 여겼어요. 바빌로니아에서는 이 두 별을 '위대한 쌍둥이'라고 불렀어요.",
+    "stars": [
+      {
+        "id": "pollux",
+        "nameKo": "폴룩스",
+        "bayer": "Pollux · β Geminorum",
+        "x": 34,
+        "y": 12,
+        "magnitude": 1.14,
+        "badge": "주황색 거성",
+        "tagline": "쌍둥이자리에서 가장 밝은 별",
+        "brightness": "1.14등급",
+        "distance": "약 34광년",
+        "temperature": "약 4,810K",
+        "size": "태양의 약 9.0배",
+        "description": "신화에서 불사의 몸을 타고난 쌍둥이 형제 폴룩스의 이름을 땄어요. 카스토르보다 실제로 더 밝은 쌍둥이자리 으뜸별이에요."
+      },
+      {
+        "id": "wasat",
+        "nameKo": "와사트",
+        "bayer": "Wasat · δ Geminorum",
+        "x": 36,
+        "y": 38,
+        "magnitude": 3.53,
+        "badge": "쌍성계",
+        "tagline": "이름이 '가운데'를 뜻하는 별",
+        "brightness": "3.53등급",
+        "distance": "약 61광년",
+        "temperature": "약 6,900K",
+        "size": "태양의 약 2.1배",
+        "description": "이름은 아랍어로 '가운데'를 뜻해요. 황백색 주성에 주황색 동반성이 함께 도는 쌍성계예요."
+      },
+      {
+        "id": "mekbuda",
+        "nameKo": "메크부다",
+        "bayer": "Mekbuda · ζ Geminorum",
+        "x": 28,
+        "y": 62,
+        "magnitude": 3.93,
+        "badge": "세페이드 변광성",
+        "tagline": "10.2일 주기로 맥박치는 별",
+        "brightness": "3.7~4.2등급",
+        "distance": "약 1,120광년",
+        "temperature": "약 5,200~5,800K",
+        "size": "태양의 약 72배",
+        "description": "약 10.2일 주기로 부풀었다 줄어들며 밝기가 3.7~4.2등급 사이에서 변하는 황색 초거성이에요. 이름은 아랍어로 '사자의 접힌 앞발'을 뜻해요."
+      },
+      {
+        "id": "alhena",
+        "nameKo": "알레나",
+        "bayer": "Alhena · γ Geminorum",
+        "x": 22,
+        "y": 86,
+        "magnitude": 1.92,
+        "badge": "청백색 준거성",
+        "tagline": "쌍둥이의 발",
+        "brightness": "1.92등급",
+        "distance": "약 109광년",
+        "temperature": "약 9,190K",
+        "size": "태양의 약 6.1배",
+        "description": "이름은 아랍어 '알 한아', 곧 '낙타 목에 찍는 낙인'에서 왔어요. 폴룩스의 발 쪽에서 빛나요."
+      },
+      {
+        "id": "castor",
+        "nameKo": "카스토르",
+        "bayer": "Castor · α Geminorum",
+        "x": 60,
+        "y": 18,
+        "magnitude": 1.58,
+        "badge": "다중성계",
+        "tagline": "쌍둥이자리에서 두 번째로 밝은 별",
+        "brightness": "1.58등급",
+        "distance": "약 49광년",
+        "temperature": "약 10,286K",
+        "size": "태양의 약 2.1배",
+        "description": "신화 속 쌍둥이 중 사람의 아들인 카스토르의 이름을 땄어요. 여러 별이 함께 도는 다중성계예요."
+      },
+      {
+        "id": "mebsuta",
+        "nameKo": "멥수타",
+        "bayer": "Mebsuta · ε Geminorum",
+        "x": 58,
+        "y": 44,
+        "magnitude": 3.06,
+        "badge": "황색 초거성",
+        "tagline": "쌍둥이의 뻗은 앞발",
+        "brightness": "3.06등급",
+        "distance": "약 861광년",
+        "temperature": "약 4,591K",
+        "size": "태양의 약 130배",
+        "description": "이름은 아랍어로 '뻗은 앞발'을 뜻해요. 옛 아랍인들이 여러 별자리에 걸쳐 그린 거대한 사자의 앞발에서 왔어요."
+      },
+      {
+        "id": "tejat",
+        "nameKo": "테얏",
+        "bayer": "Tejat · μ Geminorum",
+        "x": 62,
+        "y": 66,
+        "magnitude": 2.9,
+        "badge": "적색 거성",
+        "tagline": "붉게 빛나는 쌍둥이의 발",
+        "brightness": "2.75~3.02등급",
+        "distance": "약 230광년",
+        "temperature": "약 3,643K",
+        "size": "태양의 약 108배",
+        "description": "밝기가 2.75~3.02등급 사이에서 변하는 적색 거성이에요. 이름은 남아라비아의 옛말 '티흐야트'에서 왔고, 뜻은 알려지지 않았어요."
+      },
+      {
+        "id": "propus",
+        "nameKo": "프로퍼스",
+        "bayer": "Propus · η Geminorum",
+        "x": 74,
+        "y": 86,
+        "magnitude": 3.4,
+        "badge": "변광성",
+        "tagline": "쌍둥이의 앞발",
+        "brightness": "3.1~3.7등급",
+        "distance": "약 380광년",
+        "temperature": "약 3,502K",
+        "size": "태양의 약 153배",
+        "description": "밝기가 3.1~3.7등급 사이에서 변하는 적색 거성이에요. 이름은 그리스어로 '앞발'을 뜻해요."
+      },
+      {
+        "id": "lambda",
+        "nameKo": "람다",
+        "bayer": "λ Geminorum",
+        "x": 46,
+        "y": 40,
+        "magnitude": 3.57,
+        "badge": "백색 주계열성",
+        "tagline": null,
+        "brightness": "3.57등급",
+        "distance": "약 101광년",
+        "temperature": "약 7,932K",
+        "size": "태양의 약 2.8배",
+        "description": "쌍둥이자리의 λ별이에요. 따로 정해진 고유 이름은 없어요."
+      }
+    ],
+    "lines": [
+      [
+        "pollux",
+        "wasat"
+      ],
+      [
+        "wasat",
+        "mekbuda"
+      ],
+      [
+        "mekbuda",
+        "alhena"
+      ],
+      [
+        "castor",
+        "mebsuta"
+      ],
+      [
+        "mebsuta",
+        "tejat"
+      ],
+      [
+        "tejat",
+        "propus"
+      ],
+      [
+        "pollux",
+        "castor"
+      ],
+      [
+        "wasat",
+        "lambda"
+      ],
+      [
+        "lambda",
+        "mebsuta"
+      ]
+    ]
+  },
+  {
+    "id": "cancer",
+    "isZodiac": true,
+    "nameKo": "게자리",
+    "nameEn": "Cancer",
+    "nameLatin": "Cancer",
+    "abbr": "Cnc",
+    "symbol": "게",
+    "element": "물",
+    "rulingPlanet": "달",
+    "period": {
+      "start": "06-22",
+      "end": "07-22"
+    },
+    "season": "겨울",
+    "origin": "헤라클레스는 열두 가지 과업 중 두 번째로 괴물 물뱀 히드라를 물리쳐야 했어요. 헤라클레스를 미워하던 헤라는 물뱀을 돕도록 커다란 게 한 마리를 보냈고, 게는 헤라클레스의 발가락을 물었지만 발에 밟혀 죽고 말았어요. 헤라는 자신을 위해 싸우다 죽은 게에 보답하려고 그 모습을 하늘의 별자리로 올려 주었다고 전해져요. 2세기 프톨레마이오스는 이 별자리를 '카르키노스(게)'라 불렀어요. 중앙의 프레세페(벌집 성단)는 그리스·로마에서 당나귀 두 마리가 먹는 구유로 여겨졌고, 바빌로니아에서는 '알룰(MUL.AL.LUL)'이라 불렀어요.",
+    "stars": [
+      {
+        "id": "asellus-australis",
+        "nameKo": "남쪽 아셀루스",
+        "bayer": "Asellus Australis · δ Cancri",
+        "x": 50,
+        "y": 52,
+        "magnitude": 3.94,
+        "badge": "주황색 거성",
+        "tagline": "게의 몸통 한가운데",
+        "brightness": "3.94등급",
+        "distance": "약 137광년",
+        "temperature": "약 4,684K",
+        "size": "태양의 약 12배",
+        "description": "이름은 라틴어로 '남쪽 당나귀 새끼'예요. 중앙의 프레세페(벌집 성단)를 당나귀가 먹는 구유로 보고, 그 양옆의 두 별을 당나귀로 여긴 데서 왔어요."
+      },
+      {
+        "id": "asellus-borealis",
+        "nameKo": "북쪽 아셀루스",
+        "bayer": "Asellus Borealis · γ Cancri",
+        "x": 34,
+        "y": 28,
+        "magnitude": 4.67,
+        "badge": "백색 준거성",
+        "tagline": "북쪽 당나귀",
+        "brightness": "4.67등급",
+        "distance": "약 175광년",
+        "temperature": "약 9,311K",
+        "size": "태양의 약 2.5배",
+        "description": "이름은 라틴어로 '북쪽 당나귀'예요. 프레세페 바로 북쪽에서 빛나요."
+      },
+      {
+        "id": "yuyu",
+        "nameKo": "유유",
+        "bayer": "Yuyu · ι Cancri",
+        "x": 70,
+        "y": 30,
+        "magnitude": 4.03,
+        "badge": "다중성계",
+        "tagline": "발리 사람들이 부르던 게",
+        "brightness": "4.03등급",
+        "distance": "약 347광년",
+        "temperature": "약 4,954K",
+        "size": "태양의 약 21배",
+        "description": "'유유'는 자바어로 민물게를 뜻하고, 발리에서는 게자리를 가리키는 이름이기도 해요. 두 별이 함께 도는 다중성계예요."
+      },
+      {
+        "id": "tarf",
+        "nameKo": "타르프",
+        "bayer": "Tarf · β Cancri",
+        "x": 28,
+        "y": 82,
+        "magnitude": 3.54,
+        "badge": "주황색 거성",
+        "tagline": "게자리에서 가장 밝은 별",
+        "brightness": "3.54등급",
+        "distance": "약 303광년",
+        "temperature": "약 4,094K",
+        "size": "태양의 약 52배",
+        "description": "이름은 아랍어 '알 타르프', 곧 '끝' 또는 '가장자리'에서 왔어요. 2018년 IAU가 공식 이름으로 승인했어요."
+      },
+      {
+        "id": "acubens",
+        "nameKo": "아쿠벤스",
+        "bayer": "Acubens · α Cancri",
+        "x": 72,
+        "y": 84,
+        "magnitude": 4.2,
+        "badge": "다중성계",
+        "tagline": "게의 집게발",
+        "brightness": "4.2등급",
+        "distance": "약 178광년",
+        "temperature": "약 7,943K",
+        "size": "태양의 약 3.7배",
+        "description": "이름은 아랍어로 '집게발'을 뜻해요. 네 개의 별로 이루어진 다중성계예요."
+      }
+    ],
+    "lines": [
+      [
+        "asellus-australis",
+        "asellus-borealis"
+      ],
+      [
+        "asellus-australis",
+        "yuyu"
+      ],
+      [
+        "asellus-australis",
+        "tarf"
+      ],
+      [
+        "asellus-australis",
+        "acubens"
+      ]
+    ]
+  },
+  {
+    "id": "leo",
+    "isZodiac": true,
+    "nameKo": "사자자리",
+    "nameEn": "Leo",
+    "nameLatin": "Leo",
+    "abbr": "Leo",
+    "symbol": "사자",
+    "element": "불",
+    "rulingPlanet": "태양",
+    "period": {
+      "start": "07-23",
+      "end": "08-22"
+    },
+    "season": "봄",
+    "origin": "하늘이 어지럽고 혜성이 자주 나타나던 시절, 달에서 떨어진 유성이 황금빛 사자로 변해 네메아 골짜기에 내려왔다고 전해져요. 이 사자는 보통 사자보다 훨씬 크고 포악해서 사람들을 괴롭혔어요. 헤라클레스가 열두 가지 과업 중 첫 번째로 이 사자를 잡아야 했는데, 활과 창, 방망이가 통하지 않자 맨몸으로 맞붙어 이겼어요. 제우스는 아들의 용맹을 기려 사자를 하늘에 올렸고, 오비디우스는 이 별자리를 '헤라클레스의 사자'라 불렀어요. 바빌로니아에서는 '위대한 사자(UR.GU.LA)'라 불렀고, 레굴루스는 '왕의 별'로 여겨졌어요.",
+    "stars": [
+      {
+        "id": "regulus",
+        "nameKo": "레굴루스",
+        "bayer": "Regulus · α Leonis",
+        "x": 18,
+        "y": 80,
+        "magnitude": 1.4,
+        "badge": "청백색 별",
+        "tagline": "사자자리에서 가장 밝은 별",
+        "brightness": "1.4등급",
+        "distance": "약 79광년",
+        "temperature": "약 11,010K",
+        "size": "태양의 약 4.2배",
+        "description": "이름은 라틴어로 '작은 왕'이에요. 바빌로니아에서는 사자의 가슴에 선 '왕의 별'이라 불렀어요. 매우 빠르게 자전해서 적도 쪽이 불룩한 별이에요."
+      },
+      {
+        "id": "eta",
+        "nameKo": "에타",
+        "bayer": "η Leonis",
+        "x": 26,
+        "y": 62,
+        "magnitude": 3.49,
+        "badge": "청백색 초거성",
+        "tagline": "사자의 이마를 이루는 별",
+        "brightness": "3.49등급",
+        "distance": "약 1,270광년",
+        "temperature": "약 9,600K",
+        "size": "태양의 약 47배",
+        "description": "사자의 이마를 뜻하는 아랍 별자리 '알 자브하'에 속한 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "algieba",
+        "nameKo": "알기에바",
+        "bayer": "Algieba · γ Leonis",
+        "x": 34,
+        "y": 46,
+        "magnitude": 2.37,
+        "badge": "쌍성계",
+        "tagline": "사자의 갈기에 걸린 이중성",
+        "brightness": "2.37등급",
+        "distance": "약 130광년",
+        "temperature": "약 4,457K",
+        "size": "태양의 약 26~32배",
+        "description": "이름은 아랍어로 '이마'를 뜻해요. 망원경으로 보면 두 별로 갈라져 보이는 쌍성이에요."
+      },
+      {
+        "id": "adhafera",
+        "nameKo": "아드하페라",
+        "bayer": "Adhafera · ζ Leonis",
+        "x": 32,
+        "y": 28,
+        "magnitude": 3.33,
+        "badge": "황백색 거성",
+        "tagline": "사자의 갈기 한 타래",
+        "brightness": "3.33등급",
+        "distance": "약 274광년",
+        "temperature": "약 6,900K",
+        "size": "태양의 약 10배",
+        "description": "이름은 아랍어로 '머리카락 타래'를 뜻해요. 원래는 머리털자리를 가리키던 이름이 17세기에 이 별에 잘못 붙었어요."
+      },
+      {
+        "id": "rasalas",
+        "nameKo": "라살라스",
+        "bayer": "Rasalas · μ Leonis",
+        "x": 44,
+        "y": 16,
+        "magnitude": 3.88,
+        "badge": "주황색 거성",
+        "tagline": "사자 머리의 북쪽 별",
+        "brightness": "3.88등급",
+        "distance": "약 124광년",
+        "temperature": "약 4,519K",
+        "size": "태양의 약 12배",
+        "description": "이름은 '알 라스 알 아사드 알 샤말리', 곧 '사자 머리의 북쪽'을 줄인 말이에요."
+      },
+      {
+        "id": "algenubi",
+        "nameKo": "알게누비",
+        "bayer": "Algenubi · ε Leonis",
+        "x": 58,
+        "y": 20,
+        "magnitude": 2.98,
+        "badge": "황색 거성",
+        "tagline": "사자 머리의 남쪽 별",
+        "brightness": "2.98등급",
+        "distance": "약 247광년",
+        "temperature": "약 5,314K",
+        "size": "태양의 약 21배",
+        "description": "이름은 아랍어로 '사자 머리의 남쪽 별'이라는 뜻이에요. 사자의 머리를 그리는 '낫' 모양의 끝에 있어요."
+      },
+      {
+        "id": "zosma",
+        "nameKo": "조스마",
+        "bayer": "Zosma · δ Leonis",
+        "x": 64,
+        "y": 46,
+        "magnitude": 2.56,
+        "badge": "백색 주계열성",
+        "tagline": "사자의 허리",
+        "brightness": "2.56등급",
+        "distance": "약 58광년",
+        "temperature": "약 8,296K",
+        "size": "태양의 약 2.1배",
+        "description": "이름은 고대 그리스어로 '허리띠'를 뜻하고, 사자의 엉덩이에 해당하는 위치에 있어요."
+      },
+      {
+        "id": "chertan",
+        "nameKo": "셰르탄",
+        "bayer": "Chertan · θ Leonis",
+        "x": 70,
+        "y": 64,
+        "magnitude": 3.32,
+        "badge": "백색 주계열성",
+        "tagline": "사자의 갈비뼈",
+        "brightness": "3.32등급",
+        "distance": "약 165광년",
+        "temperature": "약 9,480K",
+        "size": "태양의 약 4.0배",
+        "description": "이름은 아랍어 '알 카라탄', 곧 '작은 두 갈비뼈'에서 왔어요. 원래는 δ별과 θ별을 함께 가리켰어요."
+      },
+      {
+        "id": "denebola",
+        "nameKo": "데네볼라",
+        "bayer": "Denebola · β Leonis",
+        "x": 90,
+        "y": 54,
+        "magnitude": 2.14,
+        "badge": "백색 주계열성",
+        "tagline": "사자의 꼬리",
+        "brightness": "2.14등급",
+        "distance": "약 36광년",
+        "temperature": "약 8,262K",
+        "size": "태양의 약 1.8배",
+        "description": "이름은 아랍어 '다나브 알 아사드', 곧 '사자의 꼬리'에서 왔어요. 지구에서 가까운 편이라 밝게 보여요."
+      }
+    ],
+    "lines": [
+      [
+        "regulus",
+        "eta"
+      ],
+      [
+        "eta",
+        "algieba"
+      ],
+      [
+        "algieba",
+        "adhafera"
+      ],
+      [
+        "adhafera",
+        "rasalas"
+      ],
+      [
+        "rasalas",
+        "algenubi"
+      ],
+      [
+        "algieba",
+        "zosma"
+      ],
+      [
+        "zosma",
+        "denebola"
+      ],
+      [
+        "denebola",
+        "chertan"
+      ],
+      [
+        "chertan",
+        "zosma"
+      ],
+      [
+        "chertan",
+        "regulus"
+      ]
+    ]
+  },
+  {
+    "id": "virgo",
+    "isZodiac": true,
+    "nameKo": "처녀자리",
+    "nameEn": "Virgo",
+    "nameLatin": "Virgo",
+    "abbr": "Vir",
+    "symbol": "처녀",
+    "element": "흙",
+    "rulingPlanet": "수성",
+    "period": {
+      "start": "08-23",
+      "end": "09-22"
+    },
+    "season": "봄",
+    "origin": "처녀자리는 정의의 여신 아스트라이아의 모습이라고 전해져요. 신들이 땅을 떠난 뒤에도 인간 곁에 남아 정의를 가르쳤지만, 인간들이 거짓과 폭력에 빠지자 결국 하늘로 돌아갔다고 해요. 옛 별자리 그림에서는 보리 이삭을 든 모습이라 곡식의 여신 데메테르, 또는 지하세계에서 돌아오는 딸 페르세포네로 풀이되기도 했어요. 히기누스는 이 별자리를 이카리오스의 딸 에리고네와 연결했어요. 가장 오래된 바빌로니아 기록에서는 곡식 이삭을 든 여신 샬라의 '밭고랑'이라고 불렀어요.",
+    "stars": [
+      {
+        "id": "spica",
+        "nameKo": "스피카",
+        "bayer": "Spica · α Virginis",
+        "x": 52,
+        "y": 90,
+        "magnitude": 0.97,
+        "badge": "청백색 거성",
+        "tagline": "처녀자리에서 가장 밝은 별",
+        "brightness": "약 0.97등급",
+        "distance": "약 250광년",
+        "temperature": "약 25,300K",
+        "size": "태양의 약 7.5배",
+        "description": "이름은 라틴어로 '처녀의 보리 이삭'이에요. 처녀가 든 이삭 끝에서 푸르게 빛나요. 가까이 도는 쌍성이라 밝기가 조금씩 변해요."
+      },
+      {
+        "id": "porrima",
+        "nameKo": "포리마",
+        "bayer": "Porrima · γ Virginis",
+        "x": 46,
+        "y": 68,
+        "magnitude": 2.74,
+        "badge": "쌍성계",
+        "tagline": "예언의 여신 이름을 가진 별",
+        "brightness": "2.74등급",
+        "distance": "약 38광년",
+        "temperature": "약 6,922K",
+        "size": "태양의 약 1.5배",
+        "description": "로마의 예언의 여신 포리마(안테보르타)에서 이름을 땄어요. 비슷한 두 별이 서로 도는 쌍성이에요."
+      },
+      {
+        "id": "zaniah",
+        "nameKo": "자니아흐",
+        "bayer": "Zaniah · η Virginis",
+        "x": 30,
+        "y": 60,
+        "magnitude": 3.89,
+        "badge": "백색 주계열성",
+        "tagline": "처녀의 모퉁이",
+        "brightness": "3.89등급",
+        "distance": "약 246광년",
+        "temperature": "약 9,333K",
+        "size": null,
+        "description": "이름은 아랍어로 '모퉁이'를 뜻해요."
+      },
+      {
+        "id": "zavijava",
+        "nameKo": "자비야바",
+        "bayer": "Zavijava · β Virginis",
+        "x": 16,
+        "y": 42,
+        "magnitude": 3.6,
+        "badge": "황백색 별",
+        "tagline": "태양과 비슷한 이웃 별",
+        "brightness": "3.6등급",
+        "distance": "약 36광년",
+        "temperature": "약 6,132K",
+        "size": "태양의 약 1.7배",
+        "description": "이름은 아랍어로 '짖는 개의 모퉁이'쯤의 뜻이에요. 태양과 비슷한 종류의 별이 가까이 있어요."
+      },
+      {
+        "id": "minelauva",
+        "nameKo": "미네로바",
+        "bayer": "Minelauva · δ Virginis",
+        "x": 60,
+        "y": 52,
+        "magnitude": 3.4,
+        "badge": "적색 거성",
+        "tagline": "붉게 빛나는 처녀의 별",
+        "brightness": "3.3~3.4등급",
+        "distance": "약 198광년",
+        "temperature": "약 3,643K",
+        "size": "태양의 약 67배",
+        "description": "밝기가 3.32~3.40등급 사이에서 조금씩 변해요. 이름은 아랍어 '달의 집 아우와에 있는'에서 왔고, 2017년 IAU가 공식 이름으로 승인했어요."
+      },
+      {
+        "id": "vindemiatrix",
+        "nameKo": "반데미아트릭스",
+        "bayer": "Vindemiatrix · ε Virginis",
+        "x": 74,
+        "y": 40,
+        "magnitude": 2.83,
+        "badge": "황색 거성",
+        "tagline": "포도 수확을 알리는 별",
+        "brightness": "2.83등급",
+        "distance": "약 110광년",
+        "temperature": "약 5,020K",
+        "size": "태양의 약 12배",
+        "description": "이름은 라틴어로 '포도를 따는 여인'이에요."
+      },
+      {
+        "id": "syrma",
+        "nameKo": "시르마",
+        "bayer": "Syrma · ι Virginis",
+        "x": 86,
+        "y": 24,
+        "magnitude": 4.08,
+        "badge": "황백색 별",
+        "tagline": "처녀의 옷자락",
+        "brightness": "4.08등급",
+        "distance": "약 72광년",
+        "temperature": "약 6,055K",
+        "size": "태양의 약 2.9배",
+        "description": "이름은 고대 그리스어로 '옷자락'을 뜻해요."
+      },
+      {
+        "id": "heze",
+        "nameKo": "헤제",
+        "bayer": "Heze · ζ Virginis",
+        "x": 52,
+        "y": 34,
+        "magnitude": 3.38,
+        "badge": "백색 주계열성",
+        "tagline": "이름의 유래가 알려지지 않은 별",
+        "brightness": "3.38등급",
+        "distance": "약 74광년",
+        "temperature": "약 8,247K",
+        "size": "태양의 약 2.1배",
+        "description": "이름은 1951년 별 지도 『Atlas Coeli』에 처음 실렸고, 어디서 왔는지는 알려지지 않았어요. 2018년 IAU가 공식 이름으로 승인했어요."
+      }
+    ],
+    "lines": [
+      [
+        "spica",
+        "porrima"
+      ],
+      [
+        "porrima",
+        "zaniah"
+      ],
+      [
+        "zaniah",
+        "zavijava"
+      ],
+      [
+        "porrima",
+        "minelauva"
+      ],
+      [
+        "minelauva",
+        "vindemiatrix"
+      ],
+      [
+        "vindemiatrix",
+        "syrma"
+      ],
+      [
+        "minelauva",
+        "heze"
+      ]
+    ]
+  },
+  {
+    "id": "libra",
+    "isZodiac": true,
+    "nameKo": "천칭자리",
+    "nameEn": "Libra",
+    "nameLatin": "Libra",
+    "abbr": "Lib",
+    "symbol": "천칭",
+    "element": "바람",
+    "rulingPlanet": "금성",
+    "period": {
+      "start": "09-23",
+      "end": "10-22"
+    },
+    "season": "봄",
+    "origin": "천칭자리는 정의의 여신 아스트라이아가 들고 다닌 저울이라고 전해져요. 이 저울로 사람의 선과 악을 달아 운명을 정했고, 여신이 정의와 공평을 위해 힘쓴 공을 기려 하늘에 올렸다고 해요. 사실 이 별자리는 오랫동안 전갈의 집게발로 여겨졌어요. 아라토스는 이 별들을 '집게발'이라 불렀고, 아랍어 '주바나'도 '전갈의 집게발'을 뜻해요. 바빌로니아에서는 태양신 샤마시의 저울 '지바누'라고 불렀어요. 로마 시대에 처녀자리 옆의 독립된 저울 별자리가 되었어요.",
+    "stars": [
+      {
+        "id": "zubenelgenubi",
+        "nameKo": "주벤엘게누비",
+        "bayer": "Zubenelgenubi · α² Librae",
+        "x": 26,
+        "y": 48,
+        "magnitude": 2.74,
+        "badge": "다중성계",
+        "tagline": "남쪽 집게발",
+        "brightness": "2.74등급",
+        "distance": "약 76광년",
+        "temperature": "약 8,200K",
+        "size": "태양의 약 2.2배",
+        "description": "이름은 아랍어로 '남쪽 집게발'이에요. 쌍안경으로 보면 두 별로 갈라져 보여요."
+      },
+      {
+        "id": "zubeneschamali",
+        "nameKo": "주벤에샤마리",
+        "bayer": "Zubeneschamali · β Librae",
+        "x": 56,
+        "y": 22,
+        "magnitude": 2.61,
+        "badge": "청백색 주계열성",
+        "tagline": "천칭자리에서 가장 밝은 별",
+        "brightness": "2.61등급",
+        "distance": "약 185광년",
+        "temperature": "약 11,900K",
+        "size": "태양의 약 4.8배",
+        "description": "이름은 아랍어로 '북쪽 집게발'이에요. 천칭자리에서 가장 밝은 별이에요."
+      },
+      {
+        "id": "zubenelhakrabi",
+        "nameKo": "주벤엘하크라비",
+        "bayer": "Zubenelhakrabi · γ Librae",
+        "x": 82,
+        "y": 50,
+        "magnitude": 3.91,
+        "badge": "주황색 거성",
+        "tagline": "전갈의 집게발",
+        "brightness": "3.91등급",
+        "distance": "약 163광년",
+        "temperature": "약 4,826K",
+        "size": "태양의 약 11배",
+        "description": "이름은 아랍어 '주반 알 아크랍', 곧 '전갈의 집게발'에서 왔어요."
+      },
+      {
+        "id": "delta",
+        "nameKo": "델타",
+        "bayer": "δ Librae",
+        "x": 48,
+        "y": 72,
+        "magnitude": 4.9,
+        "badge": "식쌍성",
+        "tagline": "2일 8시간마다 어두워지는 별",
+        "brightness": "4.9~5.9등급",
+        "distance": "약 304광년",
+        "temperature": null,
+        "size": null,
+        "description": "약 2일 8시간 주기로 두 별이 서로를 가려 밝기가 4.9~5.9등급으로 변하는 식쌍성이에요."
+      },
+      {
+        "id": "brachium",
+        "nameKo": "브라키움",
+        "bayer": "Brachium · σ Librae",
+        "x": 16,
+        "y": 78,
+        "magnitude": 3.29,
+        "badge": "적색 거성",
+        "tagline": "원래는 전갈자리에 속했던 별",
+        "brightness": "3.2~3.5등급",
+        "distance": "약 261광년",
+        "temperature": "약 3,596K",
+        "size": "태양의 약 108배",
+        "description": "이름은 라틴어로 '팔'이에요. 예전에는 전갈자리 γ별이었다가 1851년 벤저민 굴드가 천칭자리 σ별로 옮겼어요."
+      },
+      {
+        "id": "iota",
+        "nameKo": "이오타",
+        "bayer": "ι Librae",
+        "x": 88,
+        "y": 80,
+        "magnitude": 4.5,
+        "badge": "다중성계",
+        "tagline": "여럿이 함께 도는 별",
+        "brightness": "4.5등급",
+        "distance": "약 377광년",
+        "temperature": null,
+        "size": null,
+        "description": "여러 별이 함께 도는 복잡한 다중성계예요. 주성은 청백색이고 23년 주기로 도는 쌍성이에요."
+      }
+    ],
+    "lines": [
+      [
+        "zubenelgenubi",
+        "zubeneschamali"
+      ],
+      [
+        "zubeneschamali",
+        "zubenelhakrabi"
+      ],
+      [
+        "zubenelhakrabi",
+        "delta"
+      ],
+      [
+        "delta",
+        "zubenelgenubi"
+      ],
+      [
+        "zubenelgenubi",
+        "brachium"
+      ],
+      [
+        "zubenelhakrabi",
+        "iota"
+      ]
+    ]
+  },
+  {
+    "id": "scorpio",
     "isZodiac": true,
     "nameKo": "전갈자리",
     "nameEn": "Scorpio",
@@ -241,6 +1326,740 @@
       [
         "girtab",
         "shaula"
+      ]
+    ]
+  },
+  {
+    "id": "sagittarius",
+    "isZodiac": true,
+    "nameKo": "궁수자리",
+    "nameEn": "Sagittarius",
+    "nameLatin": "Sagittarius",
+    "abbr": "Sgr",
+    "symbol": "궁수",
+    "element": "불",
+    "rulingPlanet": "목성",
+    "period": {
+      "start": "11-22",
+      "end": "12-21"
+    },
+    "season": "여름",
+    "origin": "켄타우로스는 상반신은 사람, 하반신은 말인 종족이에요. 대부분 거칠었지만 케이론만은 품위 있고 현명했고, 아폴론과 아르테미스에게 음악과 의술, 사냥, 예언술을 배워 헤라클레스에게 천문학을, 아킬레우스에게 무술을 가르쳤다고 전해져요. 헤라클레스가 켄타우로스와 싸우던 중 히드라의 독이 묻은 화살이 케이론의 발에 잘못 맞았어요. 불사의 몸이라 죽을 수도 없던 케이론은 고통 끝에 불사의 몸을 프로메테우스에게 넘기고 숨을 거두었고, 제우스가 그를 별자리로 올렸어요. 에라토스테네스는 이 궁수를 활쏘기를 발명한 사티로스 크로토스로 보았어요. 바빌로니아에서는 '파빌사그'라고 불렀어요.",
+    "stars": [
+      {
+        "id": "namalsadirah",
+        "nameKo": "나말사디라흐",
+        "bayer": "Namalsadirah · φ Sagittarii",
+        "x": 48,
+        "y": 16,
+        "magnitude": 3.17,
+        "badge": "청백색 거성",
+        "tagline": "돌아오는 타조들",
+        "brightness": "3.17등급",
+        "distance": "약 239광년",
+        "temperature": "약 10,600~12,500K",
+        "size": "태양의 약 5.3배",
+        "description": "이름은 아랍어 '돌아오는 타조들'이에요. 원래는 네 별을 함께 가리키던 이름이었고, φ별은 그중 첫째였어요."
+      },
+      {
+        "id": "kaus-borealis",
+        "nameKo": "북쪽 카우스",
+        "bayer": "Kaus Borealis · λ Sagittarii",
+        "x": 36,
+        "y": 38,
+        "magnitude": 2.81,
+        "badge": "주황색 거성",
+        "tagline": "활의 윗부분",
+        "brightness": "2.81등급",
+        "distance": "약 78광년",
+        "temperature": "약 4,768K",
+        "size": "태양의 약 11배",
+        "description": "이름은 아랍어 '활'과 라틴어 '북쪽'을 합친 말이에요. 궁수가 든 활의 위쪽 끝에 있어요."
+      },
+      {
+        "id": "nunki",
+        "nameKo": "눈키",
+        "bayer": "Nunki · σ Sagittarii",
+        "x": 62,
+        "y": 34,
+        "magnitude": 2.05,
+        "badge": "청백색 주계열성",
+        "tagline": "수메르 도시의 이름을 가진 별",
+        "brightness": "2.05등급",
+        "distance": "약 225광년",
+        "temperature": "약 18,500K",
+        "size": "태양의 약 4.1배",
+        "description": "이름은 수메르어로 지하 담수의 바다 압주의 중심 도시 에리두를 뜻하는 '눈키'에서 왔어요."
+      },
+      {
+        "id": "ascella",
+        "nameKo": "아셀라",
+        "bayer": "Ascella · ζ Sagittarii",
+        "x": 72,
+        "y": 56,
+        "magnitude": 2.59,
+        "badge": "쌍성계",
+        "tagline": "궁수의 겨드랑이",
+        "brightness": "2.59등급",
+        "distance": "약 88광년",
+        "temperature": "약 8,230K",
+        "size": "태양의 약 1.9배",
+        "description": "이름은 후기 라틴어로 '겨드랑이'를 뜻해요. 비슷한 밝기의 별 두 개가 가까이 있는 쌍성계예요."
+      },
+      {
+        "id": "kaus-australis",
+        "nameKo": "남쪽 카우스",
+        "bayer": "Kaus Australis · ε Sagittarii",
+        "x": 64,
+        "y": 80,
+        "magnitude": 1.85,
+        "badge": "청백색 거성",
+        "tagline": "궁수자리에서 가장 밝은 별",
+        "brightness": "1.85등급",
+        "distance": "약 143광년",
+        "temperature": "약 7,400~11,700K",
+        "size": "태양의 약 6~9배",
+        "description": "이름은 아랍어 '활'과 라틴어 '남쪽'을 합친 말이에요. 빠르게 자전해서 극과 적도의 온도와 크기가 달라요."
+      },
+      {
+        "id": "alnasl",
+        "nameKo": "알나슬",
+        "bayer": "Alnasl · γ² Sagittarii",
+        "x": 38,
+        "y": 74,
+        "magnitude": 2.96,
+        "badge": "주황색 거성",
+        "tagline": "화살촉",
+        "brightness": "2.96등급",
+        "distance": "약 106광년",
+        "temperature": "약 4,864K",
+        "size": "태양의 약 12배",
+        "description": "이름은 아랍어로 '화살촉'이에요. 찻주전자 모양의 주둥이 끝에 있어요."
+      },
+      {
+        "id": "kaus-media",
+        "nameKo": "중앙 카우스",
+        "bayer": "Kaus Media · δ Sagittarii",
+        "x": 26,
+        "y": 54,
+        "magnitude": 2.7,
+        "badge": "주황색 거성",
+        "tagline": "활의 가운데",
+        "brightness": "2.7등급",
+        "distance": "약 348광년",
+        "temperature": "약 4,203K",
+        "size": "태양의 약 77배",
+        "description": "이름은 아랍어 '활'과 라틴어 '가운데'를 합친 말이에요."
+      },
+      {
+        "id": "hamalwarid",
+        "nameKo": "하말와리드",
+        "bayer": "Hamalwarid · η Sagittarii",
+        "x": 10,
+        "y": 42,
+        "magnitude": 3.11,
+        "badge": "적색 거성",
+        "tagline": "붉게 빛나는 궁수자리의 별",
+        "brightness": "3.11등급",
+        "distance": "약 146광년",
+        "temperature": "약 3,638K",
+        "size": "태양의 약 58배",
+        "description": "밝기가 3.08~3.12등급 사이에서 거의 변하지 않는 적색 거성이에요."
+      }
+    ],
+    "lines": [
+      [
+        "namalsadirah",
+        "kaus-borealis"
+      ],
+      [
+        "namalsadirah",
+        "nunki"
+      ],
+      [
+        "kaus-borealis",
+        "nunki"
+      ],
+      [
+        "nunki",
+        "ascella"
+      ],
+      [
+        "ascella",
+        "kaus-australis"
+      ],
+      [
+        "kaus-australis",
+        "alnasl"
+      ],
+      [
+        "alnasl",
+        "kaus-media"
+      ],
+      [
+        "kaus-media",
+        "kaus-borealis"
+      ],
+      [
+        "kaus-media",
+        "hamalwarid"
+      ]
+    ]
+  },
+  {
+    "id": "capricorn",
+    "isZodiac": true,
+    "nameKo": "염소자리",
+    "nameEn": "Capricorn",
+    "nameLatin": "Capricornus",
+    "abbr": "Cap",
+    "symbol": "염소",
+    "element": "흙",
+    "rulingPlanet": "토성",
+    "period": {
+      "start": "12-22",
+      "end": "01-19"
+    },
+    "season": "가을",
+    "origin": "가축의 신 판은 나일강변에서 열린 신들의 잔치에서 흥겹게 놀고 있었어요. 그때 거인 티폰이 나타나 신들을 공격했고, 신들은 짐승으로 변해 달아났어요. 판도 서둘러 주문을 외우다 뒤섞여 상반신은 염소, 하반신은 물고기의 모습이 되었다고 전해져요. 제우스가 위험에 처하자 판은 풀피리를 불어 티폰을 물리쳤고, 제우스는 그 은혜를 기려 반은 염소, 반은 물고기인 '바다염소'를 별자리로 만들었어요. 제우스를 젖으로 키운 염소 아말테이아와 연결하는 이야기도 있어요. 바빌로니아에서는 물의 신 에아의 상징인 '염소 물고기(MUL.SUḪUR.MAŠ)'로 불렸어요.",
+    "stars": [
+      {
+        "id": "dabih",
+        "nameKo": "다비흐",
+        "bayer": "Dabih · β Capricorni",
+        "x": 10,
+        "y": 28,
+        "magnitude": 3.05,
+        "badge": "다중성계",
+        "tagline": "염소의 도살자",
+        "brightness": "3.05등급",
+        "distance": "약 390광년",
+        "temperature": "약 4,870K",
+        "size": "태양의 약 31배",
+        "description": "이름은 아랍어 '알 다비흐', 곧 '도살하는 자'에서 왔어요. 이 별이 해 뜨기 전에 처음 떠오를 때 제물을 바치던 풍습에서 나왔다고 해요."
+      },
+      {
+        "id": "psi",
+        "nameKo": "프사이",
+        "bayer": "ψ Capricorni",
+        "x": 28,
+        "y": 64,
+        "magnitude": 4.13,
+        "badge": "황백색 주계열성",
+        "tagline": "중국에서는 하늘의 밭",
+        "brightness": "4.13등급",
+        "distance": "약 48광년",
+        "temperature": "약 6,589K",
+        "size": "태양의 약 1.5배",
+        "description": "염소자리의 ψ별이에요. 중국 천문학에서는 '천전(天田)', 곧 '하늘의 밭'을 이루는 별이에요."
+      },
+      {
+        "id": "omega",
+        "nameKo": "오메가",
+        "bayer": "ω Capricorni",
+        "x": 50,
+        "y": 82,
+        "magnitude": 4.11,
+        "badge": "주황색 거성",
+        "tagline": null,
+        "brightness": "4.11등급",
+        "distance": "약 550광년",
+        "temperature": "약 4,474K",
+        "size": "태양의 약 93배",
+        "description": "염소자리의 ω별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "yen",
+        "nameKo": "옌",
+        "bayer": "Yen · ζ Capricorni",
+        "x": 72,
+        "y": 72,
+        "magnitude": 3.77,
+        "badge": "황색 초거성",
+        "tagline": "중국의 옛 나라 이름",
+        "brightness": "3.77등급",
+        "distance": "약 386광년",
+        "temperature": "약 5,269K",
+        "size": "태양의 약 29배",
+        "description": "이름 '옌'은 중국 열두 옛 나라 중 하나인 연(燕)나라에서 왔어요. 백색왜성이 함께 도는 쌍성계예요."
+      },
+      {
+        "id": "deneb-algedi",
+        "nameKo": "데네브 알게디",
+        "bayer": "Deneb Algedi · δ Capricorni",
+        "x": 88,
+        "y": 44,
+        "magnitude": 2.81,
+        "badge": "쌍성계",
+        "tagline": "염소자리에서 가장 밝은 별",
+        "brightness": "2.81등급",
+        "distance": "약 39광년",
+        "temperature": "약 7,000K",
+        "size": "태양의 약 1.9배",
+        "description": "이름은 아랍어로 '염소의 꼬리'예요. 24.5시간 주기로 밝기가 0.2등급쯤 변하는 식변광성이에요."
+      },
+      {
+        "id": "algedi",
+        "nameKo": "알게디",
+        "bayer": "Algedi · α² Capricorni",
+        "x": 50,
+        "y": 30,
+        "magnitude": 3.57,
+        "badge": "황색 거성",
+        "tagline": "염소",
+        "brightness": "3.57등급",
+        "distance": "약 102광년",
+        "temperature": "약 5,030K",
+        "size": "태양의 약 8.4배",
+        "description": "이름은 아랍어로 '염소'를 뜻하는 '알 자디'에서 왔어요. 2016년 IAU가 이 별의 공식 이름으로 승인했어요."
+      }
+    ],
+    "lines": [
+      [
+        "dabih",
+        "psi"
+      ],
+      [
+        "psi",
+        "omega"
+      ],
+      [
+        "omega",
+        "yen"
+      ],
+      [
+        "yen",
+        "deneb-algedi"
+      ],
+      [
+        "deneb-algedi",
+        "algedi"
+      ],
+      [
+        "algedi",
+        "dabih"
+      ],
+      [
+        "dabih",
+        "deneb-algedi"
+      ]
+    ]
+  },
+  {
+    "id": "aquarius",
+    "isZodiac": true,
+    "nameKo": "물병자리",
+    "nameEn": "Aquarius",
+    "nameLatin": "Aquarius",
+    "abbr": "Aqr",
+    "symbol": "물병",
+    "element": "바람",
+    "rulingPlanet": "토성",
+    "period": {
+      "start": "01-20",
+      "end": "02-18"
+    },
+    "season": null,
+    "origin": "청춘의 여신 헤베가 발목을 삐어 신들에게 술을 따를 수 없게 되자, 제우스가 독수리로 변해 이다산에서 양 떼를 돌보던 트로이의 미소년 가니메데를 올림포스로 데려왔다고 전해져요. 가니메데는 그 뒤 신들의 잔에 술을 따르는 일을 맡았어요. 이 별자리는 넘치도록 물을 채운 병을 든 가니메데의 모습이에요. 이밖에 대홍수에서 살아남은 데우칼리온이나, 신들에게 포도주 대신 물을 바친 아테네 왕 케크롭스로 보는 이야기도 있어요. 바빌로니아에서는 물의 신 에아의 별 '위대한 자(GU.LA)'로 불렸고, 이집트에서는 나일강의 범람과 연결됐어요.",
+    "stars": [
+      {
+        "id": "albali",
+        "nameKo": "알발리",
+        "bayer": "Albali · ε Aquarii",
+        "x": 26,
+        "y": 26,
+        "magnitude": 3.77,
+        "badge": "백색 주계열성",
+        "tagline": null,
+        "brightness": "3.77등급",
+        "distance": "약 244광년",
+        "temperature": "약 9,622K",
+        "size": "태양의 약 4.2배",
+        "description": "이름은 아랍어 '알 바리', 곧 '삼키는 자'에서 왔어요."
+      },
+      {
+        "id": "sadalsuud",
+        "nameKo": "사달수드",
+        "bayer": "Sadalsuud · β Aquarii",
+        "x": 42,
+        "y": 32,
+        "magnitude": 2.87,
+        "badge": "황색 초거성",
+        "tagline": "행운 중의 행운",
+        "brightness": "2.87등급",
+        "distance": "약 542광년",
+        "temperature": "약 5,608K",
+        "size": "태양의 약 48배",
+        "description": "이름은 아랍어 '사드 알 수우드', 곧 '행운 중의 행운'이에요. 물병자리에서 가장 밝은 별 중 하나예요."
+      },
+      {
+        "id": "sadalmelik",
+        "nameKo": "사달멜리크",
+        "bayer": "Sadalmelik · α Aquarii",
+        "x": 58,
+        "y": 22,
+        "magnitude": 2.94,
+        "badge": "황색 초거성",
+        "tagline": "왕의 행운",
+        "brightness": "2.94등급",
+        "distance": "약 691광년",
+        "temperature": "약 5,190K",
+        "size": "태양의 약 70배",
+        "description": "이름은 아랍어 '사드 알 말리크', 곧 '왕의 행운'이에요. 지구에서 약 690광년 떨어진 초거성이에요."
+      },
+      {
+        "id": "sadachbia",
+        "nameKo": "사다크비아",
+        "bayer": "Sadachbia · γ Aquarii",
+        "x": 46,
+        "y": 46,
+        "magnitude": 3.85,
+        "badge": "백색 주계열성",
+        "tagline": "천막의 행운",
+        "brightness": "3.85등급",
+        "distance": "약 164광년",
+        "temperature": "약 10,637K",
+        "size": "태양의 약 2.7배",
+        "description": "이름은 아랍어로 '천막(집)들의 행운'이에요. 2016년 IAU가 공식 이름으로 승인했어요."
+      },
+      {
+        "id": "sadaltager",
+        "nameKo": "사달타게르",
+        "bayer": "Sadaltager · ζ Aquarii",
+        "x": 54,
+        "y": 62,
+        "magnitude": 3.65,
+        "badge": "쌍성계",
+        "tagline": "가까이 도는 쌍성",
+        "brightness": "3.65등급",
+        "distance": "약 95광년",
+        "temperature": null,
+        "size": null,
+        "description": "두 별이 가까이 도는 쌍성계로, 합쳐서 3.65등급이에요. 옛 아랍 이름은 '알 아크르 알 아크비야'였어요."
+      },
+      {
+        "id": "ancha",
+        "nameKo": "안차",
+        "bayer": "Ancha · θ Aquarii",
+        "x": 42,
+        "y": 74,
+        "magnitude": 4.18,
+        "badge": "황색 거성",
+        "tagline": "엉덩이를 뜻하는 별",
+        "brightness": "4.18등급",
+        "distance": "약 191광년",
+        "temperature": "약 4,864K",
+        "size": "태양의 약 12배",
+        "description": "이름은 중세 라틴어로 '엉덩이'를 뜻해요."
+      },
+      {
+        "id": "hydor",
+        "nameKo": "히도르",
+        "bayer": "Hydor · λ Aquarii",
+        "x": 58,
+        "y": 84,
+        "magnitude": 3.7,
+        "badge": "적색 거성",
+        "tagline": "그리스어로 '물'",
+        "brightness": "3.6~3.8등급",
+        "distance": "약 365광년",
+        "temperature": "약 3,702K",
+        "size": "태양의 약 100배",
+        "description": "이름은 그리스어로 '물'이에요. 밝기가 3.57~3.80등급 사이에서 변하는 적색 거성이에요."
+      },
+      {
+        "id": "skat",
+        "nameKo": "스캇",
+        "bayer": "Skat · δ Aquarii",
+        "x": 76,
+        "y": 90,
+        "magnitude": 3.28,
+        "badge": "백색 별",
+        "tagline": "정강이를 뜻하는 별",
+        "brightness": "3.28등급",
+        "distance": "약 113광년",
+        "temperature": "약 8,650K",
+        "size": "태양의 약 4.2배",
+        "description": "이름은 아랍어 '알 사크', 곧 '정강이'에서 왔어요."
+      }
+    ],
+    "lines": [
+      [
+        "albali",
+        "sadalsuud"
+      ],
+      [
+        "sadalsuud",
+        "sadalmelik"
+      ],
+      [
+        "sadalsuud",
+        "sadachbia"
+      ],
+      [
+        "sadachbia",
+        "sadaltager"
+      ],
+      [
+        "sadaltager",
+        "ancha"
+      ],
+      [
+        "ancha",
+        "hydor"
+      ],
+      [
+        "hydor",
+        "skat"
+      ]
+    ]
+  },
+  {
+    "id": "pisces",
+    "isZodiac": true,
+    "nameKo": "물고기자리",
+    "nameEn": "Pisces",
+    "nameLatin": "Pisces",
+    "abbr": "Psc",
+    "symbol": "물고기",
+    "element": "물",
+    "rulingPlanet": "목성",
+    "period": {
+      "start": "02-19",
+      "end": "03-20"
+    },
+    "season": "봄",
+    "origin": "미의 여신 아프로디테와 아들 에로스가 유프라테스 강가에서 쉬고 있을 때 괴물 티폰이 나타났어요. 놀란 두 신은 물고기로 변해 강물로 뛰어들어 몸을 피했고, 그 모습이 하늘에 올라 별자리가 되었다고 전해져요. 히기누스의 『시의 천문학』과 오비디우스의 『축제력』에도 같은 이야기가 실려 있고, 로마 판에서는 두 신이 물고기 두 마리의 등에 타고 달아나요. 두 물고기를 끈으로 묶었다고 하는데, 바빌로니아의 '큰 제비'와 '하늘의 여주인 아누니툼'이라는 두 별자리에서 비롯됐다고 해요.",
+    "stars": [
+      {
+        "id": "alrescha",
+        "nameKo": "알레샤",
+        "bayer": "Alrescha · α Piscium",
+        "x": 60,
+        "y": 80,
+        "magnitude": 3.82,
+        "badge": "쌍성계",
+        "tagline": "두 물고기를 묶은 끈의 매듭",
+        "brightness": "3.82등급",
+        "distance": "약 157광년",
+        "temperature": "약 10,000K",
+        "size": "태양의 약 2.3배",
+        "description": "이름은 아랍어 '아르 리샤', 곧 '끈'이에요. 두 물고기를 이은 끈이 만나는 매듭 자리에서 빛나요."
+      },
+      {
+        "id": "revati",
+        "nameKo": "레바티",
+        "bayer": "Revati · ζ Piscium",
+        "x": 44,
+        "y": 70,
+        "magnitude": 4.9,
+        "badge": "다중성계",
+        "tagline": "인도 별자리 이름을 가진 별",
+        "brightness": "4.9등급",
+        "distance": "약 170광년",
+        "temperature": "약 7,345K",
+        "size": null,
+        "description": "이름 '레바티'는 인도 천문학의 낙샤트라(달의 집) 이름으로, 산스크리트어로 '풍요로운'이라는 뜻이에요. 여러 별이 함께 도는 다중성계예요."
+      },
+      {
+        "id": "omega",
+        "nameKo": "오메가",
+        "bayer": "Pili · ω Piscium",
+        "x": 30,
+        "y": 62,
+        "magnitude": 4.01,
+        "badge": "황백색 별",
+        "tagline": "중국 별자리 '벽력'의 별",
+        "brightness": "4.01등급",
+        "distance": "약 104광년",
+        "temperature": "약 6,641K",
+        "size": null,
+        "description": "이름 '필리'는 중국 별자리 '벽력(霹靂)', 곧 '천둥'에서 왔어요. 옛 아랍 목록에서는 '물고기의 꼬리'라 불렀어요."
+      },
+      {
+        "id": "iota",
+        "nameKo": "이오타",
+        "bayer": "ι Piscium",
+        "x": 14,
+        "y": 58,
+        "magnitude": 4.13,
+        "badge": "황백색 주계열성",
+        "tagline": "가까운 이웃 별",
+        "brightness": "4.13등급",
+        "distance": "약 45광년",
+        "temperature": "약 6,288K",
+        "size": "태양의 약 1.6배",
+        "description": "지구에서 약 45광년 떨어진 태양과 비슷한 종류의 별이에요. 중국에서는 '벽력' 별자리의 넷째 별이에요."
+      },
+      {
+        "id": "theta",
+        "nameKo": "세타",
+        "bayer": "θ Piscium",
+        "x": 8,
+        "y": 44,
+        "magnitude": 4.27,
+        "badge": "주황색 거성",
+        "tagline": null,
+        "brightness": "4.27등급",
+        "distance": "약 149광년",
+        "temperature": "약 4,684K",
+        "size": "태양의 약 11배",
+        "description": "물고기자리의 θ별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "gamma",
+        "nameKo": "감마",
+        "bayer": "γ Piscium",
+        "x": 20,
+        "y": 36,
+        "magnitude": 3.7,
+        "badge": "황색 거성",
+        "tagline": "서쪽 물고기의 가장 밝은 별",
+        "brightness": "3.7등급",
+        "distance": "약 135광년",
+        "temperature": "약 4,833K",
+        "size": "태양의 약 11배",
+        "description": "서쪽 물고기를 이루는 별 중 가장 밝아요. 2021년 이 별 둘레에서 외계 행성이 발견됐어요."
+      },
+      {
+        "id": "kuton",
+        "nameKo": "쿠톤",
+        "bayer": "Kuton · δ Piscium",
+        "x": 28,
+        "y": 48,
+        "magnitude": 4.44,
+        "badge": "주황색 거성",
+        "tagline": null,
+        "brightness": "4.44등급",
+        "distance": "약 305광년",
+        "temperature": null,
+        "size": null,
+        "description": "중국 천문학에서는 '외병(外屏)', 곧 '바깥 울타리'를 이루는 별이에요."
+      },
+      {
+        "id": "torcular",
+        "nameKo": "토르쿨라",
+        "bayer": "Torcular · ο Piscium",
+        "x": 68,
+        "y": 62,
+        "magnitude": 4.27,
+        "badge": "주황색 거성",
+        "tagline": "북쪽 물고기의 입구",
+        "brightness": "4.27등급",
+        "distance": "약 280광년",
+        "temperature": "약 5,004K",
+        "size": "태양의 약 14배",
+        "description": "옛 이름 '토르쿨라리스 셉텐트리오날리스'(북쪽 포도 압착기)에서 왔고, 2017년 IAU가 공식 이름으로 승인했어요."
+      },
+      {
+        "id": "alpherg",
+        "nameKo": "알페르그",
+        "bayer": "Alpherg · η Piscium",
+        "x": 78,
+        "y": 48,
+        "magnitude": 3.61,
+        "badge": "황색 거성",
+        "tagline": "북쪽 물고기의 가장 밝은 별",
+        "brightness": "3.61등급",
+        "distance": "약 350광년",
+        "temperature": "약 4,937K",
+        "size": "태양의 약 26배",
+        "description": "이름은 아랍어 '알 페르그', 곧 '비움'으로 전해져요. 2018년 IAU가 공식 이름으로 승인했어요."
+      },
+      {
+        "id": "chi",
+        "nameKo": "카이",
+        "bayer": "χ Piscium",
+        "x": 88,
+        "y": 34,
+        "magnitude": 4.66,
+        "badge": null,
+        "tagline": null,
+        "brightness": "4.66등급",
+        "distance": null,
+        "temperature": null,
+        "size": null,
+        "description": "북쪽 물고기를 이루는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "phi",
+        "nameKo": "파이",
+        "bayer": "φ Piscium",
+        "x": 92,
+        "y": 18,
+        "magnitude": 4.67,
+        "badge": null,
+        "tagline": null,
+        "brightness": "4.67등급",
+        "distance": null,
+        "temperature": null,
+        "size": null,
+        "description": "북쪽 물고기를 이루는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "tau",
+        "nameKo": "타우",
+        "bayer": "τ Piscium",
+        "x": 80,
+        "y": 12,
+        "magnitude": 4.51,
+        "badge": null,
+        "tagline": null,
+        "brightness": "4.51등급",
+        "distance": null,
+        "temperature": null,
+        "size": null,
+        "description": "북쪽 물고기를 이루는 별이에요. 따로 정해진 고유 이름은 없어요."
+      }
+    ],
+    "lines": [
+      [
+        "alrescha",
+        "revati"
+      ],
+      [
+        "revati",
+        "omega"
+      ],
+      [
+        "omega",
+        "iota"
+      ],
+      [
+        "iota",
+        "theta"
+      ],
+      [
+        "theta",
+        "gamma"
+      ],
+      [
+        "gamma",
+        "kuton"
+      ],
+      [
+        "kuton",
+        "omega"
+      ],
+      [
+        "alrescha",
+        "torcular"
+      ],
+      [
+        "torcular",
+        "alpherg"
+      ],
+      [
+        "alpherg",
+        "chi"
+      ],
+      [
+        "chi",
+        "phi"
+      ],
+      [
+        "phi",
+        "tau"
       ]
     ]
   }
