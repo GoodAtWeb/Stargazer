@@ -4,167 +4,515 @@
     "nameKo": "물병자리",
     "score": 91,
     "summary": "새로운 아이디어가 술술 떠오르는 날이에요. 마음 가는 대로 한 걸음 내디뎌 봐요.",
-    "love": { "score": 88, "comment": "먼저 건넨 인사가 좋은 인연이 돼요" },
-    "money": { "score": 85, "comment": "작은 투자가 기분 좋은 결과로 돌아와요" },
-    "work": { "score": 93, "comment": "참신한 제안이 높은 평가를 받아요" },
-    "health": { "score": 90, "comment": "가벼운 산책이 활력을 줘요" },
-    "luckyColor": { "name": "하늘색", "hex": "#8ecbff" },
-    "luckyNumbers": [4, 11],
-    "luckyTime": "오전 10~12시",
-    "compatibility": ["gemini", "libra"]
+    "love": {
+      "score": 88,
+      "comment": "먼저 건넨 인사가 좋은 인연이 돼요"
+    },
+    "money": {
+      "score": 85,
+      "comment": "작은 투자가 기분 좋은 결과로 돌아와요"
+    },
+    "work": {
+      "score": 93,
+      "comment": "참신한 제안이 높은 평가를 받아요"
+    },
+    "health": {
+      "score": 90,
+      "comment": "가벼운 산책이 활력을 줘요"
+    },
+    "luckyColor": {
+      "name": "하늘색",
+      "hex": "#8ecbff"
+    },
+    "luckyNumbers": [
+      4,
+      11
+    ],
+    "luckyTime": "오전 10시~오후 12시",
+    "compatibility": [
+      {
+        "id": "gemini",
+        "percent": 92,
+        "comment": "대화가 끊기지 않아요"
+      },
+      {
+        "id": "libra",
+        "percent": 88,
+        "comment": "서로 존중하는 사이"
+      }
+    ]
   },
   {
     "id": "leo",
     "nameKo": "사자자리",
     "score": 86,
     "summary": "자신감이 빛나는 하루예요. 주변 사람들과 기쁨을 나눠 봐요.",
-    "love": { "score": 84, "comment": "솔직한 칭찬이 마음을 열어요" },
-    "money": { "score": 80, "comment": "계획한 소비가 만족스러워요" },
-    "work": { "score": 90, "comment": "맡은 일에서 존재감이 커져요" },
-    "health": { "score": 85, "comment": "물을 충분히 마셔요" },
-    "luckyColor": { "name": "금색", "hex": "#f2c94c" },
-    "luckyNumbers": [1, 9],
-    "luckyTime": "오후 1~3시",
-    "compatibility": ["aries", "sagittarius"]
+    "love": {
+      "score": 84,
+      "comment": "솔직한 칭찬이 마음을 열어요"
+    },
+    "money": {
+      "score": 80,
+      "comment": "계획한 소비가 만족스러워요"
+    },
+    "work": {
+      "score": 90,
+      "comment": "맡은 일에서 존재감이 커져요"
+    },
+    "health": {
+      "score": 85,
+      "comment": "물을 충분히 마셔요"
+    },
+    "luckyColor": {
+      "name": "금색",
+      "hex": "#f2c94c"
+    },
+    "luckyNumbers": [
+      1,
+      9
+    ],
+    "luckyTime": "오후 1시~오후 3시",
+    "compatibility": [
+      {
+        "id": "aries",
+        "percent": 94,
+        "comment": "열정이 잘 통해요"
+      },
+      {
+        "id": "sagittarius",
+        "percent": 90,
+        "comment": "함께 있으면 신나요"
+      }
+    ]
   },
   {
     "id": "libra",
     "nameKo": "천칭자리",
     "score": 82,
     "summary": "균형 잡힌 선택이 돋보이는 날이에요. 급하게 결정하지 않아도 괜찮아요.",
-    "love": { "score": 80, "comment": "상대의 이야기를 끝까지 들어줘요" },
-    "money": { "score": 76, "comment": "비교해 보고 고르면 후회가 없어요" },
-    "work": { "score": 85, "comment": "팀원과의 조율이 잘 풀려요" },
-    "health": { "score": 79, "comment": "자세를 자주 바로잡아 봐요" },
-    "luckyColor": { "name": "분홍색", "hex": "#f4a6c0" },
-    "luckyNumbers": [6, 15],
-    "luckyTime": "오후 5~7시",
-    "compatibility": ["gemini", "aquarius"]
+    "love": {
+      "score": 80,
+      "comment": "상대의 이야기를 끝까지 들어줘요"
+    },
+    "money": {
+      "score": 76,
+      "comment": "비교해 보고 고르면 후회가 없어요"
+    },
+    "work": {
+      "score": 85,
+      "comment": "팀원과의 조율이 잘 풀려요"
+    },
+    "health": {
+      "score": 79,
+      "comment": "자세를 자주 바로잡아 봐요"
+    },
+    "luckyColor": {
+      "name": "분홍색",
+      "hex": "#f4a6c0"
+    },
+    "luckyNumbers": [
+      6,
+      15
+    ],
+    "luckyTime": "오후 5시~오후 7시",
+    "compatibility": [
+      {
+        "id": "gemini",
+        "percent": 91,
+        "comment": "가볍게 잘 어울려요"
+      },
+      {
+        "id": "aquarius",
+        "percent": 87,
+        "comment": "생각이 잘 맞아요"
+      }
+    ]
   },
   {
     "id": "gemini",
     "nameKo": "쌍둥이자리",
     "score": 78,
     "summary": "대화 속에서 좋은 기회가 찾아와요. 호기심을 따라가 봐요.",
-    "love": { "score": 77, "comment": "가벼운 농담이 분위기를 풀어줘요" },
-    "money": { "score": 70, "comment": "필요한 것부터 먼저 챙겨요" },
-    "work": { "score": 82, "comment": "새로운 정보가 도움이 돼요" },
-    "health": { "score": 76, "comment": "눈을 자주 쉬게 해 줘요" },
-    "luckyColor": { "name": "노란색", "hex": "#ffe27a" },
-    "luckyNumbers": [5, 14],
-    "luckyTime": "오전 9~11시",
-    "compatibility": ["libra", "aquarius"]
+    "love": {
+      "score": 77,
+      "comment": "가벼운 농담이 분위기를 풀어줘요"
+    },
+    "money": {
+      "score": 70,
+      "comment": "필요한 것부터 먼저 챙겨요"
+    },
+    "work": {
+      "score": 82,
+      "comment": "새로운 정보가 도움이 돼요"
+    },
+    "health": {
+      "score": 76,
+      "comment": "눈을 자주 쉬게 해 줘요"
+    },
+    "luckyColor": {
+      "name": "노란색",
+      "hex": "#ffe27a"
+    },
+    "luckyNumbers": [
+      5,
+      14
+    ],
+    "luckyTime": "오전 9시~오전 11시",
+    "compatibility": [
+      {
+        "id": "aquarius",
+        "percent": 93,
+        "comment": "아이디어가 통해요"
+      },
+      {
+        "id": "libra",
+        "percent": 90,
+        "comment": "편하게 대화해요"
+      }
+    ]
   },
   {
     "id": "virgo",
     "nameKo": "처녀자리",
     "score": 75,
     "summary": "꼼꼼함이 빛을 발하는 날이에요. 작은 것부터 차근차근 정리해 봐요.",
-    "love": { "score": 72, "comment": "작은 배려가 마음에 닿아요" },
-    "money": { "score": 74, "comment": "가계부를 한 번 정리해 봐요" },
-    "work": { "score": 80, "comment": "세심한 점검이 실수를 막아줘요" },
-    "health": { "score": 73, "comment": "식사 시간을 규칙적으로 지켜요" },
-    "luckyColor": { "name": "연두색", "hex": "#b7e08a" },
-    "luckyNumbers": [3, 8],
-    "luckyTime": "오전 8~10시",
-    "compatibility": ["taurus", "capricorn"]
+    "love": {
+      "score": 72,
+      "comment": "작은 배려가 마음에 닿아요"
+    },
+    "money": {
+      "score": 74,
+      "comment": "가계부를 한 번 정리해 봐요"
+    },
+    "work": {
+      "score": 80,
+      "comment": "세심한 점검이 실수를 막아줘요"
+    },
+    "health": {
+      "score": 73,
+      "comment": "식사 시간을 규칙적으로 지켜요"
+    },
+    "luckyColor": {
+      "name": "연두색",
+      "hex": "#b7e08a"
+    },
+    "luckyNumbers": [
+      3,
+      8
+    ],
+    "luckyTime": "오전 8시~오전 10시",
+    "compatibility": [
+      {
+        "id": "taurus",
+        "percent": 92,
+        "comment": "차분히 잘 맞아요"
+      },
+      {
+        "id": "capricorn",
+        "percent": 89,
+        "comment": "든든한 파트너예요"
+      }
+    ]
   },
   {
     "id": "taurus",
     "nameKo": "황소자리",
     "score": 72,
     "summary": "여유를 갖고 천천히 가면 좋은 하루예요. 좋아하는 것을 챙겨 봐요.",
-    "love": { "score": 74, "comment": "편안한 대화가 사이를 가깝게 해요" },
-    "money": { "score": 71, "comment": "꼭 필요한 곳에만 써요" },
-    "work": { "score": 69, "comment": "한 가지씩 끝내면 마음이 가벼워요" },
-    "health": { "score": 75, "comment": "스트레칭으로 몸을 풀어 줘요" },
-    "luckyColor": { "name": "초록색", "hex": "#6fcf97" },
-    "luckyNumbers": [2, 6],
-    "luckyTime": "오후 2~4시",
-    "compatibility": ["virgo", "capricorn"]
+    "love": {
+      "score": 74,
+      "comment": "편안한 대화가 사이를 가깝게 해요"
+    },
+    "money": {
+      "score": 71,
+      "comment": "꼭 필요한 곳에만 써요"
+    },
+    "work": {
+      "score": 69,
+      "comment": "한 가지씩 끝내면 마음이 가벼워요"
+    },
+    "health": {
+      "score": 75,
+      "comment": "스트레칭으로 몸을 풀어 줘요"
+    },
+    "luckyColor": {
+      "name": "초록색",
+      "hex": "#6fcf97"
+    },
+    "luckyNumbers": [
+      2,
+      6
+    ],
+    "luckyTime": "오후 2시~오후 4시",
+    "compatibility": [
+      {
+        "id": "virgo",
+        "percent": 91,
+        "comment": "서로를 챙겨줘요"
+      },
+      {
+        "id": "capricorn",
+        "percent": 90,
+        "comment": "믿음직한 사이예요"
+      }
+    ]
   },
   {
     "id": "pisces",
     "nameKo": "물고기자리",
     "score": 70,
     "summary": "감수성이 풍부해지는 날이에요. 마음을 돌보는 시간을 가져 봐요.",
-    "love": { "score": 76, "comment": "따뜻한 메시지를 보내 봐요" },
-    "money": { "score": 62, "comment": "충동구매에 주의해요" },
-    "work": { "score": 68, "comment": "집중이 흐트러지면 잠깐 쉬어요" },
-    "health": { "score": 74, "comment": "충분히 자는 게 최고의 보약이에요" },
-    "luckyColor": { "name": "청록색", "hex": "#7fd6d1" },
-    "luckyNumbers": [9, 18],
-    "luckyTime": "저녁 8~10시",
-    "compatibility": ["cancer", "scorpio"]
+    "love": {
+      "score": 76,
+      "comment": "따뜻한 메시지를 보내 봐요"
+    },
+    "money": {
+      "score": 62,
+      "comment": "충동구매에 주의해요"
+    },
+    "work": {
+      "score": 68,
+      "comment": "집중이 흐트러지면 잠깐 쉬어요"
+    },
+    "health": {
+      "score": 74,
+      "comment": "충분히 자는 게 최고의 보약이에요"
+    },
+    "luckyColor": {
+      "name": "청록색",
+      "hex": "#7fd6d1"
+    },
+    "luckyNumbers": [
+      9,
+      18
+    ],
+    "luckyTime": "오후 8시~오후 10시",
+    "compatibility": [
+      {
+        "id": "cancer",
+        "percent": 93,
+        "comment": "마음이 잘 통해요"
+      },
+      {
+        "id": "scorpio",
+        "percent": 88,
+        "comment": "깊이 이해해줘요"
+      }
+    ]
   },
   {
     "id": "cancer",
     "nameKo": "게자리",
     "score": 68,
     "summary": "가까운 사람들과의 시간이 힘이 되는 날이에요. 편안한 곳에서 쉬어가요.",
-    "love": { "score": 73, "comment": "마음을 표현하면 더 가까워져요" },
-    "money": { "score": 60, "comment": "불필요한 구독을 점검해 봐요" },
-    "work": { "score": 66, "comment": "도움을 요청해도 괜찮아요" },
-    "health": { "score": 71, "comment": "따뜻한 음식을 챙겨 먹어요" },
-    "luckyColor": { "name": "하얀색", "hex": "#f1f3ff" },
-    "luckyNumbers": [2, 20],
-    "luckyTime": "오후 6~8시",
-    "compatibility": ["pisces", "scorpio"]
+    "love": {
+      "score": 73,
+      "comment": "마음을 표현하면 더 가까워져요"
+    },
+    "money": {
+      "score": 60,
+      "comment": "불필요한 구독을 점검해 봐요"
+    },
+    "work": {
+      "score": 66,
+      "comment": "도움을 요청해도 괜찮아요"
+    },
+    "health": {
+      "score": 71,
+      "comment": "따뜻한 음식을 챙겨 먹어요"
+    },
+    "luckyColor": {
+      "name": "하얀색",
+      "hex": "#f1f3ff"
+    },
+    "luckyNumbers": [
+      2,
+      20
+    ],
+    "luckyTime": "오후 6시~오후 8시",
+    "compatibility": [
+      {
+        "id": "pisces",
+        "percent": 92,
+        "comment": "감정을 잘 나눠요"
+      },
+      {
+        "id": "scorpio",
+        "percent": 89,
+        "comment": "서로 아껴줘요"
+      }
+    ]
   },
   {
     "id": "capricorn",
     "nameKo": "염소자리",
     "score": 65,
     "summary": "묵묵히 해 온 일이 조금씩 결과를 보여줘요. 서두르지 말고 이어가요.",
-    "love": { "score": 58, "comment": "바쁜 중에도 안부를 전해 봐요" },
-    "money": { "score": 70, "comment": "저축 계획을 점검하기 좋아요" },
-    "work": { "score": 72, "comment": "꾸준함이 신뢰를 쌓아요" },
-    "health": { "score": 60, "comment": "어깨와 목을 자주 풀어 줘요" },
-    "luckyColor": { "name": "남색", "hex": "#5b6bc0" },
-    "luckyNumbers": [8, 10],
-    "luckyTime": "오전 7~9시",
-    "compatibility": ["taurus", "virgo"]
+    "love": {
+      "score": 58,
+      "comment": "바쁜 중에도 안부를 전해 봐요"
+    },
+    "money": {
+      "score": 70,
+      "comment": "저축 계획을 점검하기 좋아요"
+    },
+    "work": {
+      "score": 72,
+      "comment": "꾸준함이 신뢰를 쌓아요"
+    },
+    "health": {
+      "score": 60,
+      "comment": "어깨와 목을 자주 풀어 줘요"
+    },
+    "luckyColor": {
+      "name": "남색",
+      "hex": "#5b6bc0"
+    },
+    "luckyNumbers": [
+      8,
+      10
+    ],
+    "luckyTime": "오전 7시~오전 9시",
+    "compatibility": [
+      {
+        "id": "taurus",
+        "percent": 91,
+        "comment": "함께 꾸준히 나아가요"
+      },
+      {
+        "id": "virgo",
+        "percent": 88,
+        "comment": "계획이 잘 맞아요"
+      }
+    ]
   },
   {
     "id": "scorpio",
     "nameKo": "전갈자리",
     "score": 62,
     "summary": "서두르지 않는 게 좋은 하루예요. 한 템포 쉬어가며 흐름을 지켜봐요.",
-    "love": { "score": 70, "comment": "솔직한 대화가 관계를 깊게 해요" },
-    "money": { "score": 48, "comment": "큰 지출은 내일로 미뤄요" },
-    "work": { "score": 66, "comment": "꾸준함이 서서히 빛을 발해요" },
-    "health": { "score": 72, "comment": "따뜻한 물을 자주 마셔요" },
-    "luckyColor": { "name": "연보라색", "hex": "#c9b3f0" },
-    "luckyNumbers": [7, 12],
-    "luckyTime": "오후 3~5시",
-    "compatibility": ["cancer", "pisces"]
+    "love": {
+      "score": 70,
+      "comment": "솔직한 대화가 관계를 깊게 해요"
+    },
+    "money": {
+      "score": 48,
+      "comment": "큰 지출은 내일로 미뤄요"
+    },
+    "work": {
+      "score": 66,
+      "comment": "꾸준함이 서서히 빛을 발해요"
+    },
+    "health": {
+      "score": 72,
+      "comment": "따뜻한 물을 자주 마셔요"
+    },
+    "luckyColor": {
+      "name": "연보라색",
+      "hex": "#c9b3f0"
+    },
+    "luckyNumbers": [
+      7,
+      12
+    ],
+    "luckyTime": "오후 3시~오후 5시",
+    "compatibility": [
+      {
+        "id": "cancer",
+        "percent": 90,
+        "comment": "서로를 편하게 해요"
+      },
+      {
+        "id": "pisces",
+        "percent": 85,
+        "comment": "말없이도 통해요"
+      }
+    ]
   },
   {
     "id": "sagittarius",
     "nameKo": "사수자리",
     "score": 58,
     "summary": "마음이 앞서기 쉬운 날이에요. 한 번 더 확인하고 움직여요.",
-    "love": { "score": 60, "comment": "말하기 전에 한 번 더 생각해요" },
-    "money": { "score": 52, "comment": "예산을 넘지 않게 주의해요" },
-    "work": { "score": 57, "comment": "세부 사항을 꼼꼼히 확인해요" },
-    "health": { "score": 63, "comment": "가벼운 운동으로 기분을 바꿔요" },
-    "luckyColor": { "name": "주황색", "hex": "#ffb067" },
-    "luckyNumbers": [3, 9],
-    "luckyTime": "오후 4~6시",
-    "compatibility": ["aries", "leo"]
+    "love": {
+      "score": 60,
+      "comment": "말하기 전에 한 번 더 생각해요"
+    },
+    "money": {
+      "score": 52,
+      "comment": "예산을 넘지 않게 주의해요"
+    },
+    "work": {
+      "score": 57,
+      "comment": "세부 사항을 꼼꼼히 확인해요"
+    },
+    "health": {
+      "score": 63,
+      "comment": "가벼운 운동으로 기분을 바꿔요"
+    },
+    "luckyColor": {
+      "name": "주황색",
+      "hex": "#ffb067"
+    },
+    "luckyNumbers": [
+      3,
+      9
+    ],
+    "luckyTime": "오후 4시~오후 6시",
+    "compatibility": [
+      {
+        "id": "aries",
+        "percent": 92,
+        "comment": "함께 도전하기 좋아요"
+      },
+      {
+        "id": "leo",
+        "percent": 89,
+        "comment": "에너지가 닮았어요"
+      }
+    ]
   },
   {
     "id": "aries",
     "nameKo": "양자리",
     "score": 54,
     "summary": "의욕이 넘치지만 조급해지기 쉬워요. 숨을 고르고 천천히 시작해요.",
-    "love": { "score": 55, "comment": "말투를 부드럽게 해 봐요" },
-    "money": { "score": 50, "comment": "큰 결정은 내일로 미뤄요" },
-    "work": { "score": 58, "comment": "우선순위를 정하고 시작해요" },
-    "health": { "score": 53, "comment": "무리한 운동은 피해요" },
-    "luckyColor": { "name": "붉은색", "hex": "#f08a8a" },
-    "luckyNumbers": [1, 7],
-    "luckyTime": "오전 11~1시",
-    "compatibility": ["leo", "sagittarius"]
+    "love": {
+      "score": 55,
+      "comment": "말투를 부드럽게 해 봐요"
+    },
+    "money": {
+      "score": 50,
+      "comment": "큰 결정은 내일로 미뤄요"
+    },
+    "work": {
+      "score": 58,
+      "comment": "우선순위를 정하고 시작해요"
+    },
+    "health": {
+      "score": 53,
+      "comment": "무리한 운동은 피해요"
+    },
+    "luckyColor": {
+      "name": "붉은색",
+      "hex": "#f08a8a"
+    },
+    "luckyNumbers": [
+      1,
+      7
+    ],
+    "luckyTime": "오전 11시~오후 1시",
+    "compatibility": [
+      {
+        "id": "leo",
+        "percent": 93,
+        "comment": "서로 힘이 돼요"
+      },
+      {
+        "id": "sagittarius",
+        "percent": 90,
+        "comment": "모험이 잘 맞아요"
+      }
+    ]
   }
 ]

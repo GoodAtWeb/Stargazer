@@ -16,10 +16,14 @@ const CATEGORIES = [
 const RING_RADIUS = 52
 const RING_LENGTH = 2 * Math.PI * RING_RADIUS
 
-// 점수(0~100)를 별 5개 중 채워진 개수로 환산해 별 문자열을 반환
+// 점수(0~100)를 별 5개 중 채워진 개수로 환산해 채운 별과 빈 별 요소 목록을 반환
 const toStars = (score) => {
   const filled = Math.round(score / 20)
-  return '★'.repeat(filled) + '☆'.repeat(5 - filled)
+  return Array.from({ length: 5 }, (_, i) => (
+    <span key={i} className={i < filled ? 'star-on' : 'star-off'}>
+      ★
+    </span>
+  ))
 }
 
 // 오늘의 총점을 원형 게이지로 보여줌
@@ -39,14 +43,13 @@ function ScoreRing({ score }) {
       </svg>
       <p className="score-ring__text">
         <strong>{score}</strong>
-        <span>점</span>
       </p>
     </div>
   )
 }
 
 // 별자리 하나를 아이콘과 이름으로 보여주는 버튼
-function SignButton({ id, nameKo, rank, caption, active, onSelect }) {
+function SignButton({ id, nameKo, rank, caption, comment, active, onSelect }) {
   return (
     <button
       type="button"
@@ -62,6 +65,7 @@ function SignButton({ id, nameKo, rank, caption, active, onSelect }) {
       <img src={getConstellationIcon(id, active)} alt="" />
       <span className="sign-button__name">{nameKo}</span>
       {caption && <span className="sign-button__caption">{caption}</span>}
+      {comment && <span className="sign-button__comment">{comment}</span>}
     </button>
   )
 }
@@ -120,8 +124,15 @@ function FortuneSection({ constellationId }) {
           <div className="fortune__match">
             <h3>오늘의 궁합</h3>
             <div className="fortune__match-list">
-              {horoscope.compatibility.map((id) => (
-                <SignButton key={id} id={id} nameKo={nameOf(id)} onSelect={goTo} />
+              {horoscope.compatibility.map(({ id, percent, comment }) => (
+                <SignButton
+                  key={id}
+                  id={id}
+                  nameKo={nameOf(id)}
+                  caption={`${percent}%`}
+                  comment={comment}
+                  onSelect={goTo}
+                />
               ))}
             </div>
           </div>
@@ -129,7 +140,7 @@ function FortuneSection({ constellationId }) {
       </div>
 
       <div className="fortune__rank">
-        <h3>12별자리 운세 순위</h3>
+        <h3>황도 12궁 운세 순위</h3>
         <div className="fortune__rank-grid">
           {ranked.map((item, i) => (
             <SignButton

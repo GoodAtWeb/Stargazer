@@ -38,7 +38,7 @@ function ConstellationView({ constellation }) {
           <p>{origin}</p>
         </section>
 
-        <section className="detail__stage">
+        <section className={`detail__stage${selectedId ? ' detail__stage--selected' : ''}`}>
           <ConstellationMap
             constellation={constellation}
             selectedId={selectedId}
