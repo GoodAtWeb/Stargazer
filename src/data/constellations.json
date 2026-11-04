@@ -1,0 +1,247 @@
+[
+  {
+    "id": "scorpius",
+    "isZodiac": true,
+    "nameKo": "전갈자리",
+    "nameEn": "Scorpio",
+    "nameLatin": "Scorpius",
+    "abbr": "Sco",
+    "symbol": "전갈",
+    "element": "물",
+    "rulingPlanet": "화성",
+    "period": {
+      "start": "10-23",
+      "end": "11-21"
+    },
+    "season": "여름",
+    "origin": "거인 사냥꾼 오리온은 자신이 세상에서 가장 강하고, 어떤 짐승도 사냥할 수 있다고 자랑했어요. 이 오만함에 화가 난 헤라가 전갈을 풀어 오리온을 없애려 했다고 전해져요. 전승에 따라 전갈을 보낸 신은 달라서, 헤시오도스와 히기누스, 오비디우스는 대지의 여신 가이아가, 아라토스는 아르테미스가 보냈다고 전해요. 전갈은 그 공으로 하늘의 별자리가 되었어요. 그래서 전갈자리가 떠오르면 오리온자리는 서쪽으로 달아나 지고, 두 별자리는 하늘에서 동시에 보이지 않아요.",
+    "stars": [
+      {
+        "id": "antares",
+        "nameKo": "안타레스",
+        "bayer": "Antares · α Scorpii",
+        "x": 39.8,
+        "y": 63.7,
+        "magnitude": 1,
+        "badge": "적색 초거성",
+        "tagline": "전갈자리에서 가장 밝은 별",
+        "brightness": "약 1등급",
+        "distance": "약 550광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 680배",
+        "description": "이름은 고대 그리스어로 '아레스(화성)의 라이벌'이라는 뜻이에요. 붉은 빛이 화성과 닮아 붙은 이름이고, 전갈의 심장 자리에서 붉게 빛나요. 밝기가 조금씩 변하는 변광성이에요."
+      },
+      {
+        "id": "acrab",
+        "nameKo": "아크랍",
+        "bayer": "Acrab · β¹ Scorpii",
+        "x": 54.1,
+        "y": 35.6,
+        "magnitude": 2.6,
+        "badge": "다중성계",
+        "tagline": "전갈의 머리 쪽 집게발 별",
+        "brightness": "약 2.6등급",
+        "distance": "약 470광년",
+        "temperature": "약 28,000K",
+        "size": "태양의 약 6배",
+        "description": "아크랍은 아랍어로 '전갈'을 뜻해요. 그리스어 이름 그라피아스(게)로도 불려요. 여러 개의 별이 모인 다중성계라 망원경으로 보면 나뉘어 보여요."
+      },
+      {
+        "id": "dschubba",
+        "nameKo": "드슈바",
+        "bayer": "Dschubba · δ Scorpii",
+        "x": 51.2,
+        "y": 47.5,
+        "magnitude": 2.3,
+        "badge": "변광성",
+        "tagline": "전갈의 이마",
+        "brightness": "약 2.3등급 (1.6~2.3 변광)",
+        "distance": "약 440광년",
+        "temperature": "약 29,700K",
+        "size": "태양의 약 7배",
+        "description": "이름은 아랍어로 '전갈의 이마'라는 뜻이에요. 2000년에 갑자기 밝아진 적이 있고 지금도 밝기가 변하는 별이에요."
+      },
+      {
+        "id": "alniyat",
+        "nameKo": "알니야트",
+        "bayer": "Alniyat · σ Scorpii",
+        "x": 46,
+        "y": 56.3,
+        "magnitude": 2.9,
+        "badge": "다중성계",
+        "tagline": "안타레스 바로 북쪽의 별",
+        "brightness": "약 2.9등급",
+        "distance": "약 570광년",
+        "temperature": "약 25,200K",
+        "size": "태양의 약 9배",
+        "description": "알니야트는 아랍어로 '동맥'이라는 뜻이에요. 안타레스(전갈의 심장) 양옆의 시그마와 타우 두 별을 함께 부르던 이름이고, 시그마는 안타레스의 북쪽에 있어요."
+      },
+      {
+        "id": "pi",
+        "nameKo": "팡",
+        "bayer": "Fang · π Scorpii",
+        "x": 50.2,
+        "y": 60.8,
+        "magnitude": 2.9,
+        "badge": "다중성계",
+        "tagline": "집게발 쪽의 별",
+        "brightness": "약 2.9등급",
+        "distance": "약 590광년",
+        "temperature": "약 25,200K",
+        "size": "태양의 약 5배",
+        "description": "집게발 쪽에 있는 별이에요. 두 개 이상의 별이 서로 돌고 있는 다중성계예요."
+      },
+      {
+        "id": "tau",
+        "nameKo": "파이카우할레",
+        "bayer": "Paikauhale · τ Scorpii",
+        "x": 34.8,
+        "y": 71.2,
+        "magnitude": 2.8,
+        "badge": "청백색 주계열성",
+        "tagline": "안타레스 남쪽의 별",
+        "brightness": "약 2.8등급",
+        "distance": "약 470광년",
+        "temperature": "약 28,900K",
+        "size": "태양의 약 6배",
+        "description": "안타레스 남쪽에서 시그마와 함께 안타레스를 감싸는 별이에요. 하와이어 이름 파이카우할레는 '집집마다 떠도는 방랑자'라는 뜻이에요."
+      },
+      {
+        "id": "epsilon",
+        "nameKo": "라라와그",
+        "bayer": "Larawag · ε Scorpii",
+        "x": 31.6,
+        "y": 80.1,
+        "magnitude": 2.3,
+        "badge": "주황색 거성",
+        "tagline": "꼬리 쪽에서 가까운 별",
+        "brightness": "약 2.3등급",
+        "distance": "약 64광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 13배",
+        "description": "전갈자리의 밝은 별 중에서 지구와 가장 가까운 편이에요. 이름은 호주 원주민 와르다만 사람들의 말로 '맑게 보인다'는 뜻이에요."
+      },
+      {
+        "id": "mu",
+        "nameKo": "크사미디무라",
+        "bayer": "Xamidimura · μ¹ Scorpii",
+        "x": 28.6,
+        "y": 89,
+        "magnitude": 3,
+        "badge": "쌍성계",
+        "tagline": "꼬리 곡선이 시작되는 별",
+        "brightness": "약 3.0등급",
+        "distance": "약 500광년",
+        "temperature": "약 24,000K",
+        "size": "태양의 약 4배",
+        "description": "꼬리의 굽은 부분이 시작되는 곳에 있는 쌍성계예요. 이름은 코이코이어로 '(두 마리) 사자의 눈'이라는 뜻이에요."
+      },
+      {
+        "id": "zeta2",
+        "nameKo": "제타2 전갈자리",
+        "bayer": "ζ² Scorpii",
+        "x": 21.4,
+        "y": 90.2,
+        "magnitude": 3.6,
+        "badge": "주황색 거성",
+        "tagline": "꼬리 곡선 맨 아래의 별",
+        "brightness": "약 3.6등급",
+        "distance": "약 135광년",
+        "temperature": "약 4,300K",
+        "size": "태양의 약 19배",
+        "description": "바로 옆에 보이는 제타1은 약 6,000광년 떨어진 청백색 초거성이에요. 두 별은 같은 방향에 겹쳐 보일 뿐 서로 관계가 없어요."
+      },
+      {
+        "id": "sargas",
+        "nameKo": "사르가스",
+        "bayer": "Sargas · θ Scorpii",
+        "x": 16.2,
+        "y": 81.6,
+        "magnitude": 1.8,
+        "badge": "황백색 거성",
+        "tagline": "꼬리에서 밝게 빛나는 별",
+        "brightness": "약 1.8등급",
+        "distance": "약 330광년",
+        "temperature": "약 6,300K",
+        "size": "태양의 약 36배",
+        "description": "꼬리 곡선 왼쪽 끝에서 밝게 빛나는 별이에요. 이름은 수메르어에서 유래했다고 전해져요."
+      },
+      {
+        "id": "girtab",
+        "nameKo": "기르타브",
+        "bayer": "Girtab · κ Scorpii",
+        "x": 16.3,
+        "y": 69.7,
+        "magnitude": 2.4,
+        "badge": "청백색 거성",
+        "tagline": "독침 아래의 별",
+        "brightness": "약 2.4등급",
+        "distance": "약 480광년",
+        "temperature": "약 23,200K",
+        "size": "태양의 약 6.5배",
+        "description": "꼬리가 위로 휘어 올라가는 부분에 있는 별이에요. 기르타브는 수메르어로 '전갈'을 뜻한다고 해요."
+      },
+      {
+        "id": "shaula",
+        "nameKo": "샤울라",
+        "bayer": "Shaula · λ Scorpii",
+        "x": 20.4,
+        "y": 65.4,
+        "magnitude": 1.6,
+        "badge": "다중성계",
+        "tagline": "전갈의 독침",
+        "brightness": "약 1.6등급",
+        "distance": "약 570광년",
+        "temperature": "약 25,000K",
+        "size": "태양의 약 9배",
+        "description": "이름은 아랍어로 '치켜든 (꼬리)'라는 뜻이에요. 전갈의 독침 끝에서 빛나고, 전갈자리에서 안타레스 다음으로 밝은 별이에요."
+      }
+    ],
+    "lines": [
+      [
+        "acrab",
+        "dschubba"
+      ],
+      [
+        "dschubba",
+        "alniyat"
+      ],
+      [
+        "alniyat",
+        "antares"
+      ],
+      [
+        "dschubba",
+        "pi"
+      ],
+      [
+        "antares",
+        "tau"
+      ],
+      [
+        "tau",
+        "epsilon"
+      ],
+      [
+        "epsilon",
+        "mu"
+      ],
+      [
+        "mu",
+        "zeta2"
+      ],
+      [
+        "zeta2",
+        "sargas"
+      ],
+      [
+        "sargas",
+        "girtab"
+      ],
+      [
+        "girtab",
+        "shaula"
+      ]
+    ]
+  }
+]
