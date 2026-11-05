@@ -15,6 +15,7 @@ Stargazer/
 │  │  ├─ ConstellationArt.jsx # 별자리 배경 그림을 별 좌표에 맞춰 표시
 │  │  ├─ ConstellationMap.jsx # 별과 선으로 그리는 SVG 별자리 지도 (별 클릭 선택)
 │  │  ├─ StarInfoCard.jsx     # 선택한 별의 정보 카드
+│  │  ├─ ObservationSection.jsx # 관측 적기, 시간, 방향, 팁
 │  │  ├─ FortuneSection.jsx   # 오늘의 운세, 궁합, 12궁 운세 순위
 │  │  └─ TopNav.jsx           # 상단 메뉴바 (구색만 갖춤)
 │  ├─ data/
@@ -23,7 +24,7 @@ Stargazer/
 │  ├─ dev/
 │  │  └─ detailPreview.jsx    # 상세보기 화면 단독 미리보기용 임시 진입점
 │  ├─ pages/
-│  │  └─ ConstellationDetail.jsx  # 별자리 상세보기 화면 (유래, 지도, 운세)
+│  │  └─ ConstellationDetail.jsx  # 별자리 상세보기 화면 (유래, 지도, 관측 정보, 운세)
 │  ├─ utils/
 │  │  ├─ constellations.js    # id로 별자리 데이터 조회
 │  │  └─ horoscopes.js        # 운세 조회, 순위 계산, 아이콘 경로
