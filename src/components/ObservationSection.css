@@ -1,0 +1,79 @@
+.observation {
+  padding: 8px calc(64px + 7vw) 48px;
+  box-sizing: border-box;
+  text-align: left;
+  color: #fff;
+}
+
+.observation h2 {
+  margin: 0 0 18px;
+  font-size: 27.5px;
+}
+
+.observation__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.observation__item {
+  padding: 0 28px;
+}
+
+.observation__item + .observation__item {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.observation__item:first-child {
+  padding-left: 0;
+}
+
+.observation__item dt {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #f0cd82;
+}
+
+.observation__item dd {
+  margin: 0 0 6px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.observation__item p {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(220, 228, 255, 0.7);
+}
+
+.observation__tip {
+  margin: 28px 0 0;
+  padding-top: 20px;
+  font-size: 17px;
+  line-height: 1.8;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.observation__tip strong {
+  margin-right: 10px;
+  color: #f0cd82;
+}
+
+@media (max-width: 900px) {
+  .observation__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .observation__item,
+  .observation__item:first-child {
+    padding: 0;
+  }
+
+  .observation__item + .observation__item {
+    border-left: 0;
+  }
+}

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ConstellationMap from '../components/ConstellationMap'
 import FortuneSection from '../components/FortuneSection'
+import ObservationSection from '../components/ObservationSection'
 import TopNav from '../components/TopNav'
 import { getConstellationById } from '../utils/constellations'
 import './ConstellationDetail.css'
@@ -52,6 +53,8 @@ function ConstellationView({ constellation }) {
           />
         </section>
       </main>
+
+      <ObservationSection observation={constellation.observation} />
 
       <FortuneSection constellationId={constellation.id} />
     </div>
