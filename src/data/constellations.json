@@ -2062,5 +2062,1438 @@
         "tau"
       ]
     ]
+  },
+  {
+    "id": "orion",
+    "isZodiac": false,
+    "nameKo": "오리온자리",
+    "nameEn": "Orion",
+    "nameLatin": "Orion",
+    "abbr": "Ori",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "origin": "오리온은 바다의 신 포세이돈의 아들로, 키가 크고 힘센 사냥꾼이었어요. 사냥의 여신 아르테미스와 가까이 지냈는데, 이를 못마땅하게 여긴 아폴론이 꾀를 내어 아르테미스가 멀리 바다 위의 검은 점을 화살로 맞히게 했고, 그것이 오리온이었다고 전해져요. 슬퍼한 아르테미스가 그를 하늘에 올려 별자리로 만들었어요. 다른 이야기에서는 오리온이 전갈에 쏘여 죽어서, 전갈자리가 떠오르면 오리온자리가 서쪽으로 도망치듯 진다고도 해요. 겨울 밤하늘에서 가장 눈에 띄는 별자리로, 세 별이 나란한 허리띠가 길잡이가 돼요.",
+    "stars": [
+      {
+        "id": "betelgeuse",
+        "nameKo": "베텔게우스",
+        "bayer": "Betelgeuse · α Orionis",
+        "x": 28.3,
+        "y": 18.7,
+        "magnitude": 0.5,
+        "badge": "적색 초거성",
+        "tagline": "오리온의 어깨에서 붉게 빛나는 별",
+        "brightness": "약 0.5등급(변광)",
+        "distance": "약 550광년",
+        "temperature": "약 3,600K",
+        "size": "태양의 약 760배",
+        "description": "이름은 아랍어에서 왔다고 전해지지만 정확한 뜻은 확실하지 않아요. 크기가 매우 커서 태양 자리에 놓으면 목성 궤도 근처까지 닿을 정도예요. 밝기가 조금씩 변하는 변광성이에요."
+      },
+      {
+        "id": "bellatrix",
+        "nameKo": "벨라트릭스",
+        "bayer": "Bellatrix · γ Orionis",
+        "x": 60.2,
+        "y": 23.5,
+        "magnitude": 1.64,
+        "badge": "청백색 거성",
+        "tagline": "'여전사'라는 이름의 별",
+        "brightness": "1.64등급",
+        "distance": "약 250광년",
+        "temperature": "약 21,800K",
+        "size": "태양의 약 6.0배",
+        "description": "이름은 라틴어로 '여전사'를 뜻해요. 오리온의 왼쪽 어깨에 해당하는 청백색 별이에요."
+      },
+      {
+        "id": "meissa",
+        "nameKo": "메이사",
+        "bayer": "Meissa · λ Orionis",
+        "x": 49.6,
+        "y": 8.0,
+        "magnitude": 3.39,
+        "badge": "청백색 별",
+        "tagline": "오리온의 머리를 이루는 별",
+        "brightness": "3.39등급",
+        "distance": "약 1,100광년",
+        "temperature": "약 33,000K",
+        "size": "태양의 약 12배",
+        "description": "오리온의 머리 부분을 이루는 별이에요. 이름은 아랍어로 '빛나는 것'이라는 뜻으로 전해져요."
+      },
+      {
+        "id": "alnitak",
+        "nameKo": "알니탁",
+        "bayer": "Alnitak · ζ Orionis",
+        "x": 43.6,
+        "y": 58.4,
+        "magnitude": 1.77,
+        "badge": "삼중성계",
+        "tagline": "허리띠의 동쪽 끝 별",
+        "brightness": "1.77등급",
+        "distance": "약 1,260광년",
+        "temperature": "약 31,000K",
+        "size": "태양의 약 20배",
+        "description": "오리온 허리띠의 한쪽 끝을 이루는 별로, 이름은 아랍어로 '띠'를 뜻해요. 근처에 말머리성운과 불꽃성운이 있어요."
+      },
+      {
+        "id": "alnilam",
+        "nameKo": "알닐람",
+        "bayer": "Alnilam · ε Orionis",
+        "x": 48.3,
+        "y": 55.5,
+        "magnitude": 1.69,
+        "badge": "청색 초거성",
+        "tagline": "허리띠 한가운데의 별",
+        "brightness": "1.69등급",
+        "distance": "약 2,000광년",
+        "temperature": "약 27,500K",
+        "size": "태양의 약 32배",
+        "description": "이름은 아랍어로 '진주 목걸이'를 뜻하는 말에서 왔어요. 허리띠 세 별 가운데 중앙에 있어요."
+      },
+      {
+        "id": "mintaka",
+        "nameKo": "민타카",
+        "bayer": "Mintaka · δ Orionis",
+        "x": 52.9,
+        "y": 51.6,
+        "magnitude": 2.25,
+        "badge": "다중성계",
+        "tagline": "허리띠의 서쪽 끝 별",
+        "brightness": "2.25등급",
+        "distance": "약 1,200광년",
+        "temperature": "약 29,500K",
+        "size": "태양의 약 16배",
+        "description": "허리띠의 한쪽 끝을 이루는 별로, 이름은 아랍어로 '띠'를 뜻해요. 천구 적도 바로 위에 있어서 거의 정동쪽에서 떠올라 정서쪽으로 져요."
+      },
+      {
+        "id": "saiph",
+        "nameKo": "사이프",
+        "bayer": "Saiph · κ Orionis",
+        "x": 36.4,
+        "y": 92.0,
+        "magnitude": 2.07,
+        "badge": "청색 초거성",
+        "tagline": "오리온의 오른쪽 무릎",
+        "brightness": "2.07등급",
+        "distance": "약 650광년",
+        "temperature": "약 26,500K",
+        "size": "태양의 약 22배",
+        "description": "이름은 아랍어로 '거인의 칼'이라는 뜻의 말에서 왔어요. 오리온의 무릎에 해당해요."
+      },
+      {
+        "id": "rigel",
+        "nameKo": "리겔",
+        "bayer": "Rigel · β Orionis",
+        "x": 71.7,
+        "y": 85.6,
+        "magnitude": 0.18,
+        "badge": "청색 초거성",
+        "tagline": "오리온자리에서 가장 밝은 별",
+        "brightness": "0.18등급",
+        "distance": "약 860광년",
+        "temperature": "약 12,100K",
+        "size": "태양의 약 79배",
+        "description": "이름은 아랍어로 '발'을 뜻하는 말에서 왔어요. 오리온의 왼쪽 발에 해당하고, 이름과 달리 별자리에서 가장 밝은 별이에요."
+      }
+    ],
+    "lines": [
+      [
+        "meissa",
+        "betelgeuse"
+      ],
+      [
+        "meissa",
+        "bellatrix"
+      ],
+      [
+        "betelgeuse",
+        "alnitak"
+      ],
+      [
+        "bellatrix",
+        "mintaka"
+      ],
+      [
+        "alnitak",
+        "alnilam"
+      ],
+      [
+        "alnilam",
+        "mintaka"
+      ],
+      [
+        "alnitak",
+        "saiph"
+      ],
+      [
+        "mintaka",
+        "rigel"
+      ]
+    ]
+  },
+  {
+    "id": "ursa-major",
+    "isZodiac": false,
+    "nameKo": "큰곰자리",
+    "nameEn": "Ursa Major",
+    "nameLatin": "Ursa Major",
+    "abbr": "UMa",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "origin": "제우스는 아름다운 요정 칼리스토를 사랑했고, 이를 알게 된 헤라가 질투해 칼리스토를 곰으로 바꿔 버렸어요. 세월이 흘러 칼리스토의 아들 아르카스가 사냥을 나가 곰이 된 어머니를 마주쳤고, 모르고 활을 쏘려는 순간 제우스가 둘을 하늘로 올려 큰곰자리와 작은곰자리로 만들었다고 전해져요. 큰곰의 등과 꼬리를 이루는 일곱 별이 북두칠성이에요. 국자 끝의 두 별을 이어 5배쯤 늘이면 북극성을 찾을 수 있어서 길잡이로 오래 쓰였어요.",
+    "stars": [
+      {
+        "id": "dubhe",
+        "nameKo": "두베",
+        "bayer": "Dubhe · α Ursae Majoris",
+        "x": 85.9,
+        "y": 29.7,
+        "magnitude": 1.81,
+        "badge": "주황색 거성",
+        "tagline": "북극성을 가리키는 포인터 별",
+        "brightness": "1.81등급",
+        "distance": "약 123광년",
+        "temperature": "약 4,660K",
+        "size": "태양의 약 30배",
+        "description": "이름은 아랍어로 '곰'을 뜻하는 말에서 왔어요. 메라크와 함께 북극성을 찾는 지침이 되는 별이에요."
+      },
+      {
+        "id": "merak",
+        "nameKo": "메라크",
+        "bayer": "Merak · β Ursae Majoris",
+        "x": 92.0,
+        "y": 47.1,
+        "magnitude": 2.34,
+        "badge": "백색 주계열성",
+        "tagline": "국자의 아래 모서리 별",
+        "brightness": "2.34등급",
+        "distance": "약 79광년",
+        "temperature": "약 9,400K",
+        "size": "태양의 약 3.0배",
+        "description": "이름은 아랍어로 '허리'를 뜻하는 말에서 왔어요. 두베와 이어 북극성을 찾는 데 쓰여요."
+      },
+      {
+        "id": "phecda",
+        "nameKo": "펙다",
+        "bayer": "Phecda · γ Ursae Majoris",
+        "x": 69.0,
+        "y": 61.1,
+        "magnitude": 2.41,
+        "badge": "백색 주계열성",
+        "tagline": "국자의 아랫부분을 이루는 별",
+        "brightness": "2.41등급",
+        "distance": "약 84광년",
+        "temperature": "약 9,355K",
+        "size": "태양의 약 3.0배",
+        "description": "이름은 아랍어로 '허벅지'를 뜻하는 말에서 왔어요. 북두칠성의 국자 아래쪽 한 모서리에 있어요."
+      },
+      {
+        "id": "megrez",
+        "nameKo": "메그레즈",
+        "bayer": "Megrez · δ Ursae Majoris",
+        "x": 57.9,
+        "y": 50.8,
+        "magnitude": 3.32,
+        "badge": "백색 주계열성",
+        "tagline": "국자와 손잡이가 만나는 곳",
+        "brightness": "3.32등급",
+        "distance": "약 81광년",
+        "temperature": "약 9,500K",
+        "size": "태양의 약 1.4배",
+        "description": "이름은 아랍어로 '꼬리의 시작'이라는 뜻이에요. 북두칠성에서 가장 어두운 별이에요."
+      },
+      {
+        "id": "alioth",
+        "nameKo": "알리오스",
+        "bayer": "Alioth · ε Ursae Majoris",
+        "x": 40.0,
+        "y": 53.4,
+        "magnitude": 1.76,
+        "badge": "백색 변광성",
+        "tagline": "북두칠성에서 가장 밝은 별",
+        "brightness": "1.76등급",
+        "distance": "약 83광년",
+        "temperature": "약 9,400K",
+        "size": "태양의 약 4.0배",
+        "description": "이름은 아랍어에서 왔어요. 큰곰자리에서 가장 밝은 별이며, 자기장이 강한 특이한 별로 알려져 있어요."
+      },
+      {
+        "id": "mizar",
+        "nameKo": "미자르",
+        "bayer": "Mizar · ζ Ursae Majoris",
+        "x": 25.2,
+        "y": 54.8,
+        "magnitude": 2.23,
+        "badge": "다중성계",
+        "tagline": "옆에 알코르가 함께 있는 별",
+        "brightness": "2.23등급",
+        "distance": "약 83광년",
+        "temperature": "약 9,000K",
+        "size": "태양의 약 2.4배",
+        "description": "곁에 희미한 알코르가 있어 옛날에는 시력 검사에 쓰였다고 해요. 망원경으로 보면 여러 별이 함께 도는 다중성계예요."
+      },
+      {
+        "id": "alkaid",
+        "nameKo": "알카이드",
+        "bayer": "Alkaid · η Ursae Majoris",
+        "x": 8.0,
+        "y": 70.3,
+        "magnitude": 1.85,
+        "badge": "청백색 주계열성",
+        "tagline": "국자 손잡이의 끝 별",
+        "brightness": "1.85등급",
+        "distance": "약 104광년",
+        "temperature": "약 15,500K",
+        "size": "태양의 약 3.4배",
+        "description": "이름은 아랍어로 '무리의 우두머리'를 뜻하는 말에서 왔어요. 북두칠성 손잡이 맨 끝의 별이에요."
+      }
+    ],
+    "lines": [
+      [
+        "dubhe",
+        "merak"
+      ],
+      [
+        "merak",
+        "phecda"
+      ],
+      [
+        "phecda",
+        "megrez"
+      ],
+      [
+        "megrez",
+        "dubhe"
+      ],
+      [
+        "megrez",
+        "alioth"
+      ],
+      [
+        "alioth",
+        "mizar"
+      ],
+      [
+        "mizar",
+        "alkaid"
+      ]
+    ]
+  },
+  {
+    "id": "ursa-minor",
+    "isZodiac": false,
+    "nameKo": "작은곰자리",
+    "nameEn": "Ursa Minor",
+    "nameLatin": "Ursa Minor",
+    "abbr": "UMi",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "사계절",
+    "origin": "작은곰자리는 큰곰자리와 짝을 이루는 별자리로, 칼리스토의 아들 아르카스라고 전해져요. 또 다른 이야기에서는 어린 제우스를 숨겨 길러 준 요정이 올려진 것이라고도 해요. 꼬리 끝에 있는 별이 북극성(폴라리스)이라 늘 북쪽을 가리키고, 그래서 항해자와 여행자의 길잡이가 되었어요. 북극 가까이에 있어서 우리나라에서는 일 년 내내 지평선 아래로 지지 않아요.",
+    "stars": [
+      {
+        "id": "polaris",
+        "nameKo": "폴라리스",
+        "bayer": "Polaris · α Ursae Minoris",
+        "x": 45.3,
+        "y": 8.0,
+        "magnitude": 1.97,
+        "badge": "세페이드 변광성",
+        "tagline": "하늘의 북쪽을 가리키는 북극성",
+        "brightness": "1.97등급",
+        "distance": "약 433광년",
+        "temperature": "약 6,015K",
+        "size": "태양의 약 46배",
+        "description": "현재 북극을 거의 정확히 가리키는 별로 '북극성'이라 불려요. 지구 자전축이 천천히 움직여서 시간이 지나면 다른 별이 북극성 자리를 맡게 돼요."
+      },
+      {
+        "id": "yildun",
+        "nameKo": "일둔",
+        "bayer": "Yildun · δ Ursae Minoris",
+        "x": 39.5,
+        "y": 24.8,
+        "magnitude": 4.35,
+        "badge": "백색 주계열성",
+        "tagline": "북극성 곁에서 이어지는 꼬리",
+        "brightness": "4.35등급",
+        "distance": "약 183광년",
+        "temperature": "약 9,500K",
+        "size": "태양의 약 4.0배",
+        "description": "이름은 튀르키예어로 '별'을 뜻하는 말에서 왔어요. 작은 국자 손잡이를 이루는 별이에요."
+      },
+      {
+        "id": "epsilon-umi",
+        "nameKo": "엡실론",
+        "bayer": "ε Ursae Minoris",
+        "x": 37.1,
+        "y": 45.8,
+        "magnitude": 4.21,
+        "badge": "황색 거성",
+        "tagline": null,
+        "brightness": "4.21등급",
+        "distance": "약 347광년",
+        "temperature": "약 5,200K",
+        "size": "태양의 약 17배",
+        "description": "작은곰자리의 손잡이를 이루는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "zeta-umi",
+        "nameKo": "제타",
+        "bayer": "ζ Ursae Minoris",
+        "x": 46.7,
+        "y": 65.6,
+        "magnitude": 4.29,
+        "badge": "백색 주계열성",
+        "tagline": null,
+        "brightness": "4.29등급",
+        "distance": "약 380광년",
+        "temperature": "약 9,200K",
+        "size": "태양의 약 5.0배",
+        "description": "작은 국자의 모서리를 이루는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "eta-umi",
+        "nameKo": "에타",
+        "bayer": "η Ursae Minoris",
+        "x": 37.7,
+        "y": 73.9,
+        "magnitude": 4.95,
+        "badge": "황백색 주계열성",
+        "tagline": null,
+        "brightness": "4.95등급",
+        "distance": "약 97광년",
+        "temperature": "약 6,900K",
+        "size": "태양의 약 2.0배",
+        "description": "작은 국자의 한 모서리를 이루는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "pherkad",
+        "nameKo": "페르카드",
+        "bayer": "Pherkad · γ Ursae Minoris",
+        "x": 55.1,
+        "y": 92.0,
+        "magnitude": 3.0,
+        "badge": "백색 거성",
+        "tagline": "작은 국자의 모서리 별",
+        "brightness": "3등급",
+        "distance": "약 487광년",
+        "temperature": "약 8,280K",
+        "size": "태양의 약 15배",
+        "description": "이름은 아랍어로 '송아지'를 뜻하는 말에서 왔어요. 코카브와 함께 '북극의 수호자'라 불렸어요."
+      },
+      {
+        "id": "kochab",
+        "nameKo": "코카브",
+        "bayer": "Kochab · β Ursae Minoris",
+        "x": 62.9,
+        "y": 79.7,
+        "magnitude": 2.07,
+        "badge": "주황색 거성",
+        "tagline": "작은곰자리에서 가장 밝은 별 중 하나",
+        "brightness": "2.07등급",
+        "distance": "약 131광년",
+        "temperature": "약 4,030K",
+        "size": "태양의 약 42배",
+        "description": "기원전 약 1500년 무렵에는 북극에 가장 가까운 별이었어요. 페르카드와 함께 '북극의 수호자'라 불렸어요."
+      }
+    ],
+    "lines": [
+      [
+        "polaris",
+        "yildun"
+      ],
+      [
+        "yildun",
+        "epsilon-umi"
+      ],
+      [
+        "epsilon-umi",
+        "zeta-umi"
+      ],
+      [
+        "zeta-umi",
+        "eta-umi"
+      ],
+      [
+        "eta-umi",
+        "pherkad"
+      ],
+      [
+        "pherkad",
+        "kochab"
+      ],
+      [
+        "kochab",
+        "zeta-umi"
+      ]
+    ]
+  },
+  {
+    "id": "cassiopeia",
+    "isZodiac": false,
+    "nameKo": "카시오페이아자리",
+    "nameEn": "Cassiopeia",
+    "nameLatin": "Cassiopeia",
+    "abbr": "Cas",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "origin": "카시오페이아는 에티오피아의 왕비로, 자기 딸 안드로메다가 바다의 요정 네레이드들보다 아름답다고 자랑했어요. 화가 난 포세이돈이 바다 괴물을 보내 나라를 괴롭혔고, 그 벌로 카시오페이아는 왕좌에 앉은 채 하늘에 올려져 북극 둘레를 돌게 되었다고 전해져요. 하늘에서는 W 또는 M 모양으로 보여서 찾기 쉽고, 북극성을 찾을 때 북두칠성의 반대편 길잡이로 쓰여요.",
+    "stars": [
+      {
+        "id": "caph",
+        "nameKo": "카프",
+        "bayer": "Caph · β Cassiopeiae",
+        "x": 92.0,
+        "y": 55.1,
+        "magnitude": 2.28,
+        "badge": "황백색 거성",
+        "tagline": "W자의 서쪽 끝 별",
+        "brightness": "2.28등급",
+        "distance": "약 55광년",
+        "temperature": "약 6,700K",
+        "size": "태양의 약 3.5배",
+        "description": "이름은 아랍어로 '손'을 뜻하는 말에서 왔어요. 밝기가 아주 조금씩 변하는 변광성이에요."
+      },
+      {
+        "id": "shedar",
+        "nameKo": "셰다르",
+        "bayer": "Schedar · α Cassiopeiae",
+        "x": 66.5,
+        "y": 76.1,
+        "magnitude": 2.24,
+        "badge": "주황색 거성",
+        "tagline": "'가슴'이라는 이름의 별",
+        "brightness": "2.24등급",
+        "distance": "약 228광년",
+        "temperature": "약 4,530K",
+        "size": "태양의 약 42배",
+        "description": "이름은 아랍어로 '가슴'을 뜻해요. 카시오페이아 왕비의 가슴에 해당하는 별이에요."
+      },
+      {
+        "id": "navi",
+        "nameKo": "나비",
+        "bayer": "Navi · γ Cassiopeiae",
+        "x": 51.0,
+        "y": 48.5,
+        "magnitude": 2.15,
+        "badge": "변광성",
+        "tagline": "W자의 한가운데 별",
+        "brightness": "2.15등급",
+        "distance": "약 550광년",
+        "temperature": "약 25,000K",
+        "size": "태양의 약 10배",
+        "description": "밝기가 크게 변하는 별로, 한때는 1등성만큼 밝아진 적도 있어요. '나비'는 우주비행사 거스 그리섬의 가운데 이름 Ivan을 거꾸로 쓴 것이에요."
+      },
+      {
+        "id": "ruchbah",
+        "nameKo": "루크바",
+        "bayer": "Ruchbah · δ Cassiopeiae",
+        "x": 26.7,
+        "y": 50.7,
+        "magnitude": 2.66,
+        "badge": "식쌍성",
+        "tagline": "왕비의 무릎을 뜻하는 별",
+        "brightness": "2.66등급",
+        "distance": "약 99광년",
+        "temperature": "약 8,400K",
+        "size": "태양의 약 3.8배",
+        "description": "이름은 아랍어로 '무릎'을 뜻하는 말에서 왔어요. 두 별이 서로를 가려 밝기가 조금씩 변하는 식쌍성이에요."
+      },
+      {
+        "id": "segin",
+        "nameKo": "세긴",
+        "bayer": "Segin · ε Cassiopeiae",
+        "x": 8.0,
+        "y": 23.9,
+        "magnitude": 3.35,
+        "badge": "청백색 거성",
+        "tagline": "W자의 동쪽 끝 별",
+        "brightness": "3.35등급",
+        "distance": "약 440광년",
+        "temperature": "약 15,000K",
+        "size": "태양의 약 4.0배",
+        "description": "카시오페이아의 의자를 이루는 별이에요. 이름의 어원은 확실하지 않아요."
+      }
+    ],
+    "lines": [
+      [
+        "caph",
+        "shedar"
+      ],
+      [
+        "shedar",
+        "navi"
+      ],
+      [
+        "navi",
+        "ruchbah"
+      ],
+      [
+        "ruchbah",
+        "segin"
+      ]
+    ]
+  },
+  {
+    "id": "cygnus",
+    "isZodiac": false,
+    "nameKo": "백조자리",
+    "nameEn": "Cygnus",
+    "nameLatin": "Cygnus",
+    "abbr": "Cyg",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "origin": "제우스가 백조로 변해 스파르타의 왕비 레다를 찾아갔다는 이야기에서 유래했다고 전해져요. 또 다른 이야기에서는 태양신의 마차를 몰다 추락한 파에톤을 찾아 강물에 뛰어들던 친구 키크노스가 백조로 변해 별이 되었다고도 해요. 십자가 모양이라 '북십자'라고도 불리며, 은하수 한가운데를 날아가는 모습이에요. 데네브는 직녀성 베가, 견우성 알타이르와 함께 '여름철 대삼각형'을 이뤄요.",
+    "stars": [
+      {
+        "id": "deneb",
+        "nameKo": "데네브",
+        "bayer": "Deneb · α Cygni",
+        "x": 19.2,
+        "y": 8.0,
+        "magnitude": 1.25,
+        "badge": "청백색 초거성",
+        "tagline": "백조의 꼬리에서 빛나는 별",
+        "brightness": "1.25등급",
+        "distance": "약 2,600광년",
+        "temperature": "약 8,525K",
+        "size": "태양의 약 200배",
+        "description": "이름은 아랍어로 '꼬리'를 뜻하는 말에서 왔어요. 아주 멀리 있는데도 1등성으로 보일 만큼 본래 밝기가 엄청난 별이에요."
+      },
+      {
+        "id": "sadr",
+        "nameKo": "사드르",
+        "bayer": "Sadr · γ Cygni",
+        "x": 35.1,
+        "y": 33.5,
+        "magnitude": 2.2,
+        "badge": "황백색 초거성",
+        "tagline": "백조의 가슴에 해당하는 별",
+        "brightness": "2.2등급",
+        "distance": "약 1,800광년",
+        "temperature": "약 5,790K",
+        "size": "태양의 약 150배",
+        "description": "이름은 아랍어로 '가슴'을 뜻해요. 십자가의 교차점에 있고, 둘레에 성운이 넓게 퍼져 있어요."
+      },
+      {
+        "id": "albireo",
+        "nameKo": "알비레오",
+        "bayer": "Albireo · β Cygni",
+        "x": 90.1,
+        "y": 92.0,
+        "magnitude": 3.05,
+        "badge": "이중성",
+        "tagline": "주황색과 청색이 나란한 별",
+        "brightness": "3.05등급",
+        "distance": "약 430광년",
+        "temperature": "약 4,080K",
+        "size": "태양의 약 69배",
+        "description": "작은 망원경으로 보면 주황색 별과 청색 별이 나란히 보이는 유명한 이중성이에요. 백조의 부리에 해당해요."
+      },
+      {
+        "id": "fawaris",
+        "nameKo": "파와리스",
+        "bayer": "Fawaris · δ Cygni",
+        "x": 68.2,
+        "y": 9.1,
+        "magnitude": 2.86,
+        "badge": "다중성계",
+        "tagline": "백조의 한쪽 날개를 이루는 별",
+        "brightness": "2.86등급",
+        "distance": "약 165광년",
+        "temperature": "약 9,500K",
+        "size": "태양의 약 4.0배",
+        "description": "백조의 날개에 해당하는 별로, 여러 별이 함께 도는 다중성계예요."
+      },
+      {
+        "id": "aljanah",
+        "nameKo": "알야나흐",
+        "bayer": "Aljanah · ε Cygni",
+        "x": 9.9,
+        "y": 62.8,
+        "magnitude": 2.48,
+        "badge": "주황색 거성",
+        "tagline": "백조의 다른 쪽 날개 끝 별",
+        "brightness": "2.48등급",
+        "distance": "약 72광년",
+        "temperature": "약 4,710K",
+        "size": "태양의 약 11배",
+        "description": "이름은 아랍어로 '날개'를 뜻하는 말에서 왔어요. 백조의 한쪽 날개 끝을 이루는 주황색 별이에요."
+      }
+    ],
+    "lines": [
+      [
+        "deneb",
+        "sadr"
+      ],
+      [
+        "sadr",
+        "albireo"
+      ],
+      [
+        "fawaris",
+        "sadr"
+      ],
+      [
+        "sadr",
+        "aljanah"
+      ]
+    ]
+  },
+  {
+    "id": "lyra",
+    "isZodiac": false,
+    "nameKo": "거문고자리",
+    "nameEn": "Lyra",
+    "nameLatin": "Lyra",
+    "abbr": "Lyr",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "origin": "거문고자리는 그리스 신화의 음악가 오르페우스의 리라(수금)라고 전해져요. 헤르메스가 거북 등딱지로 만든 악기를 아폴론이 오르페우스에게 주었고, 오르페우스는 이 악기로 새와 짐승까지 감동시켰다고 해요. 아내 에우리디케를 잃은 그가 세상을 떠난 뒤 제우스가 리라를 하늘에 올렸어요. 가장 밝은 별 베가는 동양에서는 칠석 이야기의 직녀성으로 불리며, 여름철 대삼각형의 한 꼭짓점이에요.",
+    "stars": [
+      {
+        "id": "vega",
+        "nameKo": "베가",
+        "bayer": "Vega · α Lyrae",
+        "x": 80.5,
+        "y": 8.0,
+        "magnitude": 0.03,
+        "badge": "백색 주계열성",
+        "tagline": "직녀성으로 불리는 여름의 별",
+        "brightness": "0.03등급",
+        "distance": "약 25광년",
+        "temperature": "약 9,600K",
+        "size": "태양의 약 2.4배",
+        "description": "밤하늘에서 다섯 번째로 밝은 별이에요. 이름은 아랍어로 '내려앉는 독수리'를 뜻하는 말에서 왔고, 동양에서는 직녀성이라 불러요. 약 1만 2천 년 뒤에는 북극성이 될 거예요."
+      },
+      {
+        "id": "zeta-lyr",
+        "nameKo": "제타",
+        "bayer": "ζ¹ Lyrae",
+        "x": 59.2,
+        "y": 25.0,
+        "magnitude": 4.36,
+        "badge": "백색 주계열성",
+        "tagline": null,
+        "brightness": "4.36등급",
+        "distance": "약 154광년",
+        "temperature": "약 8,300K",
+        "size": "태양의 약 2.5배",
+        "description": "베가 가까이에서 작은 삼각형을 이루는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "delta-lyr",
+        "nameKo": "델타",
+        "bayer": "δ² Lyrae",
+        "x": 33.0,
+        "y": 34.6,
+        "magnitude": 4.3,
+        "badge": "적색 거성",
+        "tagline": "붉은빛이 도는 거문고의 별",
+        "brightness": "4.3등급",
+        "distance": "약 900광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 70배",
+        "description": "거문고 아래쪽 평행사변형의 한 모서리를 이루는 붉은 거성이에요. 밝기가 조금씩 변해요."
+      },
+      {
+        "id": "sulafat",
+        "nameKo": "술라파트",
+        "bayer": "Sulafat · γ Lyrae",
+        "x": 19.5,
+        "y": 92.0,
+        "magnitude": 3.25,
+        "badge": "청백색 거성",
+        "tagline": "'거북'이라는 이름의 별",
+        "brightness": "3.25등급",
+        "distance": "약 620광년",
+        "temperature": "약 10,000K",
+        "size": "태양의 약 15배",
+        "description": "이름은 아랍어로 '거북'을 뜻해요. 헤르메스가 거북 등딱지로 리라를 만들었다는 이야기와 이어져요."
+      },
+      {
+        "id": "sheliak",
+        "nameKo": "셸리아크",
+        "bayer": "Sheliak · β Lyrae",
+        "x": 45.0,
+        "y": 82.7,
+        "magnitude": 3.52,
+        "badge": "식쌍성",
+        "tagline": "두 별이 서로 가리며 깜빡이는 별",
+        "brightness": "3.52등급",
+        "distance": "약 960광년",
+        "temperature": "약 13,000K",
+        "size": "태양의 약 15배",
+        "description": "두 별이 아주 가까이 돌며 서로를 가려 밝기가 변하는 식쌍성이에요. 이름은 아랍어로 '거북'을 뜻하는 말에서 왔어요."
+      }
+    ],
+    "lines": [
+      [
+        "vega",
+        "zeta-lyr"
+      ],
+      [
+        "zeta-lyr",
+        "delta-lyr"
+      ],
+      [
+        "delta-lyr",
+        "sulafat"
+      ],
+      [
+        "sulafat",
+        "sheliak"
+      ],
+      [
+        "sheliak",
+        "zeta-lyr"
+      ]
+    ]
+  },
+  {
+    "id": "aquila",
+    "isZodiac": false,
+    "nameKo": "독수리자리",
+    "nameEn": "Aquila",
+    "nameLatin": "Aquila",
+    "abbr": "Aql",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "origin": "독수리자리는 제우스의 번개를 나르던 독수리라고 전해져요. 제우스는 트로이의 아름다운 청년 가니메데스를 올림포스로 데려오려고 독수리로 변하거나 독수리를 보냈고, 가니메데스는 신들의 술 따르는 시종이 되었어요. 이 독수리가 하늘에 올라 별자리가 되었다고 해요. 가장 밝은 별 알타이르는 동양에서 견우성으로 불리며, 직녀성 베가와 천체 사이의 은하수를 두고 마주 보아요.",
+    "stars": [
+      {
+        "id": "altair",
+        "nameKo": "알타이르",
+        "bayer": "Altair · α Aquilae",
+        "x": 36.9,
+        "y": 30.7,
+        "magnitude": 0.76,
+        "badge": "백색 주계열성",
+        "tagline": "견우성으로 불리는 별",
+        "brightness": "0.76등급",
+        "distance": "약 17광년",
+        "temperature": "약 7,700K",
+        "size": "태양의 약 1.8배",
+        "description": "이름은 아랍어로 '날아오르는 독수리'를 뜻하는 말에서 왔어요. 아주 빠르게 자전해서 둥글지 않고 납작한 모양이에요."
+      },
+      {
+        "id": "tarazed",
+        "nameKo": "타라제드",
+        "bayer": "Tarazed · γ Aquilae",
+        "x": 41.7,
+        "y": 23.2,
+        "magnitude": 2.72,
+        "badge": "주황색 거성",
+        "tagline": "알타이르 곁의 붉은 별",
+        "brightness": "2.72등급",
+        "distance": "약 395광년",
+        "temperature": "약 4,100K",
+        "size": "태양의 약 113배",
+        "description": "알타이르의 바로 곁에서 한 줄로 늘어선 세 별 중 하나예요. 이름은 페르시아어로 '저울대'를 뜻하는 말에서 왔다고 전해져요."
+      },
+      {
+        "id": "alshain",
+        "nameKo": "알샤인",
+        "bayer": "Alshain · β Aquilae",
+        "x": 32.0,
+        "y": 41.7,
+        "magnitude": 3.71,
+        "badge": "황색 준거성",
+        "tagline": "알타이르 곁의 가까운 이웃",
+        "brightness": "3.71등급",
+        "distance": "약 45광년",
+        "temperature": "약 5,100K",
+        "size": "태양의 약 3.2배",
+        "description": "알타이르와 타라제드와 함께 한 줄로 늘어선 별이에요. 지구에서 약 45광년으로 가까운 편이에요."
+      },
+      {
+        "id": "theta-aql",
+        "nameKo": "세타",
+        "bayer": "θ Aquilae",
+        "x": 13.9,
+        "y": 73.5,
+        "magnitude": 3.24,
+        "badge": "청백색 거성",
+        "tagline": null,
+        "brightness": "3.24등급",
+        "distance": "약 287광년",
+        "temperature": "약 11,000K",
+        "size": "태양의 약 5.0배",
+        "description": "독수리의 꼬리 쪽에 있는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "okab",
+        "nameKo": "오카브",
+        "bayer": "Okab · ζ Aquilae",
+        "x": 85.9,
+        "y": 8.0,
+        "magnitude": 2.99,
+        "badge": "백색 쌍성",
+        "tagline": "독수리의 한쪽 날개 끝",
+        "brightness": "2.99등급",
+        "distance": "약 83광년",
+        "temperature": "약 9,000K",
+        "size": "태양의 약 2.7배",
+        "description": "독수리의 날개 끝에 해당하는 별이에요. 이름은 아랍어로 '독수리'를 뜻하는 말에서 왔다고 전해져요."
+      },
+      {
+        "id": "almizan",
+        "nameKo": "알미잔",
+        "bayer": "Almizan · δ Aquilae",
+        "x": 64.4,
+        "y": 56.2,
+        "magnitude": 3.36,
+        "badge": "백색 준거성",
+        "tagline": "독수리의 날개를 이루는 별",
+        "brightness": "3.36등급",
+        "distance": "약 50광년",
+        "temperature": "약 7,000K",
+        "size": "태양의 약 2.3배",
+        "description": "지구에서 약 50광년 떨어진 별로, 밝기가 아주 조금씩 변해요."
+      },
+      {
+        "id": "lambda-aql",
+        "nameKo": "람다",
+        "bayer": "λ Aquilae",
+        "x": 86.1,
+        "y": 92.0,
+        "magnitude": 3.43,
+        "badge": "청백색 주계열성",
+        "tagline": null,
+        "brightness": "3.43등급",
+        "distance": "약 125광년",
+        "temperature": "약 11,000K",
+        "size": "태양의 약 3.0배",
+        "description": "독수리의 날개 아래쪽에 있는 별이에요. 따로 정해진 고유 이름은 없어요."
+      }
+    ],
+    "lines": [
+      [
+        "tarazed",
+        "altair"
+      ],
+      [
+        "altair",
+        "alshain"
+      ],
+      [
+        "alshain",
+        "theta-aql"
+      ],
+      [
+        "altair",
+        "okab"
+      ],
+      [
+        "altair",
+        "almizan"
+      ],
+      [
+        "almizan",
+        "lambda-aql"
+      ]
+    ]
+  },
+  {
+    "id": "canis-major",
+    "isZodiac": false,
+    "nameKo": "큰개자리",
+    "nameEn": "Canis Major",
+    "nameLatin": "Canis Major",
+    "abbr": "CMa",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "origin": "큰개자리는 사냥꾼 오리온을 따라다니는 충직한 사냥개라고 전해져요. 또 다른 이야기에서는 절대로 사냥감을 놓치지 않는 개 라일랍스, 곧 제우스가 하늘에 올려 준 개의 별이라고도 해요. 가장 밝은 별 시리우스는 밤하늘에서 가장 밝은 항성으로, 고대 이집트에서는 이 별이 해 뜨기 전에 떠오를 때를 나일강이 범람하는 시기의 신호로 삼았어요. 오리온자리 허리띠를 따라 아래로 이으면 시리우스를 찾을 수 있어요.",
+    "stars": [
+      {
+        "id": "sirius",
+        "nameKo": "시리우스",
+        "bayer": "Sirius · α Canis Majoris",
+        "x": 59.8,
+        "y": 9.0,
+        "magnitude": -1.44,
+        "badge": "백색 주계열성",
+        "tagline": "밤하늘에서 가장 밝은 별",
+        "brightness": "약 -1.44등급",
+        "distance": "약 8.6광년",
+        "temperature": "약 9,940K",
+        "size": "태양의 약 1.7배",
+        "description": "이름은 그리스어로 '불타는 것'이라는 뜻이에요. 가까이 있고 본래도 밝아서 가장 밝게 보이고, 작고 흰 동반성 시리우스 B와 쌍을 이루고 있어요."
+      },
+      {
+        "id": "mirzam",
+        "nameKo": "미르잠",
+        "bayer": "Mirzam · β Canis Majoris",
+        "x": 92.0,
+        "y": 17.7,
+        "magnitude": 1.98,
+        "badge": "청색 거성",
+        "tagline": "'알리는 자'라는 이름의 별",
+        "brightness": "1.98등급",
+        "distance": "약 500광년",
+        "temperature": "약 25,000K",
+        "size": "태양의 약 10배",
+        "description": "이름은 아랍어로 '알리는 자'를 뜻해요. 시리우스보다 먼저 떠올라 시리우스의 등장을 알려 주는 것처럼 보여요."
+      },
+      {
+        "id": "omicron2-cma",
+        "nameKo": "오미크론2",
+        "bayer": "ο² Canis Majoris",
+        "x": 34.7,
+        "y": 52.0,
+        "magnitude": 3.02,
+        "badge": "청색 초거성",
+        "tagline": null,
+        "brightness": "3.02등급",
+        "distance": "약 2,800광년",
+        "temperature": "약 15,000K",
+        "size": "태양의 약 100배",
+        "description": "큰개자리에서 멀리 있는 밝은 청색 초거성이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "wezen",
+        "nameKo": "웨젠",
+        "bayer": "Wezen · δ Canis Majoris",
+        "x": 28.0,
+        "y": 67.7,
+        "magnitude": 1.83,
+        "badge": "황백색 초거성",
+        "tagline": "'무게'를 뜻하는 이름의 별",
+        "brightness": "1.83등급",
+        "distance": "약 1,600광년",
+        "temperature": "약 6,000K",
+        "size": "태양의 약 215배",
+        "description": "이름은 아랍어로 '무게'를 뜻하는 말에서 왔어요. 크기가 아주 큰 초거성이에요."
+      },
+      {
+        "id": "aludra",
+        "nameKo": "알루드라",
+        "bayer": "Aludra · η Canis Majoris",
+        "x": 8.0,
+        "y": 86.2,
+        "magnitude": 2.45,
+        "badge": "청색 초거성",
+        "tagline": "큰개의 꼬리 쪽 별",
+        "brightness": "2.45등급",
+        "distance": "약 2,000광년",
+        "temperature": "약 15,000K",
+        "size": "태양의 약 80배",
+        "description": "이름은 아랍어로 '처녀'를 뜻하는 말에서 왔다고 전해져요. 매우 멀리 있지만 밝게 보이는 초거성이에요."
+      },
+      {
+        "id": "adhara",
+        "nameKo": "아다라",
+        "bayer": "Adhara · ε Canis Majoris",
+        "x": 41.1,
+        "y": 83.0,
+        "magnitude": 1.5,
+        "badge": "청색 거성",
+        "tagline": "큰개자리에서 두 번째로 밝은 별",
+        "brightness": "1.5등급",
+        "distance": "약 430광년",
+        "temperature": "약 22,000K",
+        "size": "태양의 약 14배",
+        "description": "이름은 아랍어로 '처녀들'을 뜻하는 말에서 왔어요. 자외선을 매우 많이 내보내는 밝은 별이에요."
+      },
+      {
+        "id": "furud",
+        "nameKo": "퍼러드",
+        "bayer": "Furud · ζ Canis Majoris",
+        "x": 91.3,
+        "y": 91.0,
+        "magnitude": 3.02,
+        "badge": "청백색 거성",
+        "tagline": "큰개의 앞발에 해당하는 별",
+        "brightness": "3.02등급",
+        "distance": "약 362광년",
+        "temperature": "약 12,000K",
+        "size": "태양의 약 5.0배",
+        "description": "이름은 아랍어로 '짧은 별들'을 뜻하는 말에서 왔어요. 큰개의 앞발 쪽에 있는 별이에요."
+      }
+    ],
+    "lines": [
+      [
+        "mirzam",
+        "sirius"
+      ],
+      [
+        "sirius",
+        "omicron2-cma"
+      ],
+      [
+        "omicron2-cma",
+        "wezen"
+      ],
+      [
+        "wezen",
+        "adhara"
+      ],
+      [
+        "adhara",
+        "furud"
+      ],
+      [
+        "aludra",
+        "wezen"
+      ]
+    ]
+  },
+  {
+    "id": "pegasus",
+    "isZodiac": false,
+    "nameKo": "페가수스자리",
+    "nameEn": "Pegasus",
+    "nameLatin": "Pegasus",
+    "abbr": "Peg",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "origin": "페가수스는 영웅 페르세우스가 메두사의 목을 베었을 때 그 피에서 태어난 날개 달린 말이라고 전해져요. 말은 헬리콘산에서 샘을 솟아나게 했고, 영웅 벨레로폰이 길들여 괴물 키마이라를 물리치는 데 함께했어요. 나중에는 올림포스에서 제우스의 번개를 나르는 일을 맡았고, 제우스가 하늘에 올려 별자리로 만들었어요. 가을 밤하늘의 '가을 사각형'으로 찾을 수 있어요.",
+    "stars": [
+      {
+        "id": "markab",
+        "nameKo": "마르카브",
+        "bayer": "Markab · α Pegasi",
+        "x": 46.1,
+        "y": 56.9,
+        "magnitude": 2.49,
+        "badge": "청백색 거성",
+        "tagline": "가을 사각형의 한 모서리",
+        "brightness": "2.49등급",
+        "distance": "약 133광년",
+        "temperature": "약 9,700K",
+        "size": "태양의 약 4.7배",
+        "description": "이름은 아랍어로 '배'나 '탈것'을 뜻하는 말에서 왔어요. 가을 사각형의 한 모서리를 이뤄요."
+      },
+      {
+        "id": "scheat",
+        "nameKo": "쉬트",
+        "bayer": "Scheat · β Pegasi",
+        "x": 47.0,
+        "y": 28.0,
+        "magnitude": 2.44,
+        "badge": "적색 거성",
+        "tagline": "가을 사각형의 북서쪽 모서리",
+        "brightness": "2.44등급",
+        "distance": "약 196광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 95배",
+        "description": "이름은 아랍어로 '정강이'를 뜻하는 말에서 왔다고 전해져요. 밝기가 변하는 붉은 거성이에요."
+      },
+      {
+        "id": "alpheratz",
+        "nameKo": "알페라츠",
+        "bayer": "Alpheratz · α Andromedae",
+        "x": 14.1,
+        "y": 23.0,
+        "magnitude": 2.07,
+        "badge": "청백색 준거성",
+        "tagline": "안드로메다와 함께 쓰는 별",
+        "brightness": "2.07등급",
+        "distance": "약 97광년",
+        "temperature": "약 13,800K",
+        "size": "태양의 약 2.7배",
+        "description": "이름은 아랍어로 '말의 배꼽'을 뜻하는 말에서 왔어요. 지금은 안드로메다자리에 속하지만 가을 사각형의 한 모서리를 이뤄요."
+      },
+      {
+        "id": "algenib",
+        "nameKo": "알게니브",
+        "bayer": "Algenib · γ Pegasi",
+        "x": 8.0,
+        "y": 55.1,
+        "magnitude": 2.83,
+        "badge": "청색 거성",
+        "tagline": "가을 사각형의 남동쪽 모서리",
+        "brightness": "2.83등급",
+        "distance": "약 390광년",
+        "temperature": "약 23,000K",
+        "size": "태양의 약 5.0배",
+        "description": "가을 사각형의 한 모서리를 이루는 별이에요. 이름은 아랍어로 '옆구리'를 뜻하는 말에서 왔다고 전해져요."
+      },
+      {
+        "id": "enif",
+        "nameKo": "에니프",
+        "bayer": "Enif · ε Pegasi",
+        "x": 92.0,
+        "y": 67.7,
+        "magnitude": 2.38,
+        "badge": "주황색 초거성",
+        "tagline": "페가수스의 코를 이루는 별",
+        "brightness": "2.38등급",
+        "distance": "약 690광년",
+        "temperature": "약 4,460K",
+        "size": "태양의 약 185배",
+        "description": "이름은 아랍어로 '코'를 뜻해요. 페가수스의 코 끝에 있는 주황색 초거성이에요."
+      },
+      {
+        "id": "homam",
+        "nameKo": "호맘",
+        "bayer": "Homam · ζ Pegasi",
+        "x": 58.8,
+        "y": 66.7,
+        "magnitude": 3.41,
+        "badge": "청백색 주계열성",
+        "tagline": "페가수스의 앞다리 쪽 별",
+        "brightness": "3.41등급",
+        "distance": "약 204광년",
+        "temperature": "약 10,000K",
+        "size": "태양의 약 4.0배",
+        "description": "이름은 아랍어로 '용감한 영웅'을 뜻하는 말에서 왔어요. 페가수스의 앞다리 부분에 있어요."
+      },
+      {
+        "id": "biham",
+        "nameKo": "비함",
+        "bayer": "Biham · θ Pegasi",
+        "x": 77.2,
+        "y": 77.0,
+        "magnitude": 3.52,
+        "badge": "백색 주계열성",
+        "tagline": "페가수스의 머리 쪽 별",
+        "brightness": "3.52등급",
+        "distance": "약 114광년",
+        "temperature": "약 8,000K",
+        "size": "태양의 약 2.0배",
+        "description": "이름은 아랍어로 '새끼 동물들'을 뜻하는 말에서 왔다고 전해져요. 페가수스의 머리 쪽에 있어요."
+      },
+      {
+        "id": "matar",
+        "nameKo": "마타르",
+        "bayer": "Matar · η Pegasi",
+        "x": 57.0,
+        "y": 23.1,
+        "magnitude": 2.93,
+        "badge": "황색 거성",
+        "tagline": "'비'를 뜻하는 이름의 별",
+        "brightness": "2.93등급",
+        "distance": "약 215광년",
+        "temperature": "약 5,900K",
+        "size": "태양의 약 15배",
+        "description": "이름은 아랍어로 '비'를 뜻해요. 페가수스의 앞다리 방향으로 이어지는 별이에요."
+      }
+    ],
+    "lines": [
+      [
+        "markab",
+        "scheat"
+      ],
+      [
+        "scheat",
+        "alpheratz"
+      ],
+      [
+        "alpheratz",
+        "algenib"
+      ],
+      [
+        "algenib",
+        "markab"
+      ],
+      [
+        "markab",
+        "homam"
+      ],
+      [
+        "homam",
+        "biham"
+      ],
+      [
+        "biham",
+        "enif"
+      ],
+      [
+        "scheat",
+        "matar"
+      ]
+    ]
+  },
+  {
+    "id": "perseus",
+    "isZodiac": false,
+    "nameKo": "페르세우스자리",
+    "nameEn": "Perseus",
+    "nameLatin": "Perseus",
+    "abbr": "Per",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "origin": "페르세우스는 제우스와 다나에 사이에서 태어난 영웅이에요. 메두사의 눈을 보면 돌이 된다는 말을 알고, 아테나의 방패에 비친 모습을 보며 메두사의 목을 벴다고 전해져요. 돌아오는 길에 바다 괴물에게 바쳐질 뻔한 안드로메다 공주를 구하고 결혼했어요. 별자리의 알골은 '악마의 머리'라는 뜻으로, 메두사의 머리를 든 페르세우스의 손에 해당해요. 매년 8월 중순에는 페르세우스자리 유성우가 쏟아져요.",
+    "stars": [
+      {
+        "id": "mirfak",
+        "nameKo": "미르팍",
+        "bayer": "Mirfak · α Persei",
+        "x": 52.9,
+        "y": 30.0,
+        "magnitude": 1.79,
+        "badge": "황백색 초거성",
+        "tagline": "페르세우스자리에서 가장 밝은 별",
+        "brightness": "1.79등급",
+        "distance": "약 510광년",
+        "temperature": "약 6,350K",
+        "size": "태양의 약 68배",
+        "description": "이름은 아랍어로 '팔꿈치'를 뜻하는 말에서 왔어요. 둘레의 젊은 별들과 함께 '알파 페르세우스 이동성단'을 이뤄요."
+      },
+      {
+        "id": "algol",
+        "nameKo": "알골",
+        "bayer": "Algol · β Persei",
+        "x": 63.7,
+        "y": 60.3,
+        "magnitude": 2.09,
+        "badge": "식쌍성",
+        "tagline": "'악마의 별'로 불리는 변광성",
+        "brightness": "약 2.1~3.4등급",
+        "distance": "약 90광년",
+        "temperature": "약 12,550K",
+        "size": "태양의 약 3.0배",
+        "description": "약 2.87일마다 밝기가 크게 줄어드는 식쌍성이에요. 이름은 아랍어로 '악마의 머리'를 뜻하고, 메두사의 눈이라고 불리기도 해요."
+      },
+      {
+        "id": "atik",
+        "nameKo": "아틱",
+        "bayer": "Atik · ζ Persei",
+        "x": 31.0,
+        "y": 92.0,
+        "magnitude": 2.84,
+        "badge": "청색 초거성",
+        "tagline": "페르세우스의 발에 해당하는 별",
+        "brightness": "2.84등급",
+        "distance": "약 980광년",
+        "temperature": "약 20,000K",
+        "size": "태양의 약 26배",
+        "description": "이름은 아랍어로 '어깨'라고 전해지는 말에서 왔어요. 페르세우스의 발 부분에 있어요."
+      },
+      {
+        "id": "epsilon-per",
+        "nameKo": "엡실론",
+        "bayer": "ε Persei",
+        "x": 30.8,
+        "y": 63.1,
+        "magnitude": 2.9,
+        "badge": "다중성계",
+        "tagline": null,
+        "brightness": "2.9등급",
+        "distance": "약 640광년",
+        "temperature": "약 22,000K",
+        "size": "태양의 약 5.0배",
+        "description": "페르세우스의 발 쪽에 있는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "gamma-per",
+        "nameKo": "감마",
+        "bayer": "γ Persei",
+        "x": 62.9,
+        "y": 17.1,
+        "magnitude": 2.91,
+        "badge": "황색 거성 쌍성",
+        "tagline": null,
+        "brightness": "2.91등급",
+        "distance": "약 243광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 11배",
+        "description": "페르세우스자리의 북쪽 끝에 가까운 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "delta-per",
+        "nameKo": "델타",
+        "bayer": "δ Persei",
+        "x": 42.3,
+        "y": 37.0,
+        "magnitude": 3.01,
+        "badge": "청백색 거성",
+        "tagline": null,
+        "brightness": "3.01등급",
+        "distance": "약 520광년",
+        "temperature": "약 17,000K",
+        "size": "태양의 약 6.0배",
+        "description": "페르세우스의 몸통 동쪽 부분을 이루는 별이에요. 따로 정해진 고유 이름은 없어요."
+      },
+      {
+        "id": "miram",
+        "nameKo": "미람",
+        "bayer": "Miram · η Persei",
+        "x": 69.2,
+        "y": 8.0,
+        "magnitude": 3.77,
+        "badge": "주황색 초거성",
+        "tagline": "이중성으로 보이는 별",
+        "brightness": "3.77등급",
+        "distance": "약 1,200광년",
+        "temperature": "약 4,300K",
+        "size": "태양의 약 120배",
+        "description": "이름은 아랍어로 '승부를 겨루는 자'를 뜻하는 말에서 왔다고 전해져요. 작은 망원경으로 보면 이중성이에요."
+      },
+      {
+        "id": "misam",
+        "nameKo": "미삼",
+        "bayer": "Misam · κ Persei",
+        "x": 61.9,
+        "y": 46.9,
+        "magnitude": 3.79,
+        "badge": "주황색 거성",
+        "tagline": "알골 곁의 별",
+        "brightness": "3.79등급",
+        "distance": "약 118광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 5.0배",
+        "description": "페르세우스의 팔 쪽에 있는 별이에요. 이름은 아랍어로 '손목'에서 왔다고 전해져요."
+      }
+    ],
+    "lines": [
+      [
+        "miram",
+        "gamma-per"
+      ],
+      [
+        "gamma-per",
+        "mirfak"
+      ],
+      [
+        "mirfak",
+        "delta-per"
+      ],
+      [
+        "delta-per",
+        "epsilon-per"
+      ],
+      [
+        "epsilon-per",
+        "atik"
+      ],
+      [
+        "algol",
+        "misam"
+      ],
+      [
+        "misam",
+        "miram"
+      ]
+    ]
   }
 ]

@@ -15,7 +15,7 @@ const formatMonthDay = (value) => {
 // 별자리 정보, 지도, 오늘의 운세를 한 페이지에 이어서 보여주고 선택된 별 상태를 관리
 function ConstellationView({ constellation }) {
   const [selectedId, setSelectedId] = useState(null)
-  const { nameKo, nameEn, symbol, element, rulingPlanet, season, period, origin } =
+  const { isZodiac, nameKo, nameEn, symbol, element, rulingPlanet, season, period, origin } =
     constellation
 
   return (
@@ -25,11 +25,17 @@ function ConstellationView({ constellation }) {
         <header className="detail__header">
           <h1>{nameKo}</h1>
           <p className="detail__meta">
-            상징: {symbol} &nbsp; 원소: {element} &nbsp; 수호성: {rulingPlanet}
-            {season && <> &nbsp; 계절: {season}</>}
+            {isZodiac && (
+              <>
+                상징: {symbol} &nbsp; 원소: {element} &nbsp; 수호성: {rulingPlanet}
+                {season && <> &nbsp;</>}
+              </>
+            )}
+            {season && <>계절: {season}</>}
           </p>
           <p className="detail__period">
-            {nameEn} · {formatMonthDay(period.start)} ~ {formatMonthDay(period.end)}
+            {nameEn}
+            {period && <> · {formatMonthDay(period.start)} ~ {formatMonthDay(period.end)}</>}
           </p>
         </header>
 
