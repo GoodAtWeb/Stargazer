@@ -1,0 +1,104 @@
+.constellation-map {
+  position: relative;
+  flex: none;
+  height: min(62vh, 640px);
+}
+
+.constellation-map svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.constellation-map__line {
+  stroke: rgba(255, 255, 255, 0.7);
+  stroke-width: 0.2;
+  stroke-linecap: round;
+}
+
+.constellation-map__connector {
+  stroke: rgba(242, 201, 107, 0.8);
+  stroke-width: 0.35;
+  stroke-linecap: round;
+  stroke-dasharray: 0.01 0.8;
+}
+
+.star {
+  cursor: pointer;
+  outline: none;
+}
+
+.star__halo {
+  fill: rgba(190, 210, 255, 0.28);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: star-twinkle 3.2s ease-in-out infinite;
+}
+
+.star:hover .star__halo {
+  fill: rgba(255, 230, 160, 0.42);
+}
+
+.star__core {
+  fill: #fff;
+}
+
+.star__dot {
+  fill: #fff;
+}
+
+.star__hit {
+  fill: transparent;
+}
+
+.star:focus-visible .star__hit {
+  stroke: #fff;
+  stroke-width: 0.15;
+  stroke-dasharray: 0.4;
+}
+
+.star__ring {
+  fill: none;
+  stroke: #f2c96b;
+  stroke-width: 0.2;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: star-ring 2.4s ease-in-out infinite;
+}
+
+.star__label {
+  font-size: 2.4px;
+  font-weight: 700;
+  text-anchor: middle;
+  fill: #f2c96b;
+  pointer-events: none;
+}
+
+@keyframes star-twinkle {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes star-ring {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.constellation-art {
+  pointer-events: none;
+}

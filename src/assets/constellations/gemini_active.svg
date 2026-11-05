@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 116 116" width="240" height="240" role="img" aria-label="쌍둥이자리 (선택됨)">
+  <title>쌍둥이자리 (선택됨)</title>
+  <defs>
+    <radialGradient id="haloA">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="0.16" stop-color="#f4f7ff" stop-opacity="0.85"/>
+      <stop offset="0.45" stop-color="#d6e0ff" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#cfd9ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="34" y1="12" x2="36" y2="38" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="34" y1="12" x2="36" y2="38" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <line x1="36" y1="38" x2="28" y2="62" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="36" y1="38" x2="28" y2="62" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <line x1="28" y1="62" x2="22" y2="86" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="28" y1="62" x2="22" y2="86" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <line x1="60" y1="18" x2="58" y2="44" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="60" y1="18" x2="58" y2="44" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <line x1="58" y1="44" x2="62" y2="66" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="58" y1="44" x2="62" y2="66" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <line x1="62" y1="66" x2="74" y2="86" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="62" y1="66" x2="74" y2="86" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <line x1="34" y1="12" x2="60" y2="18" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="34" y1="12" x2="60" y2="18" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <line x1="36" y1="38" x2="46" y2="40" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="36" y1="38" x2="46" y2="40" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <line x1="46" y1="40" x2="58" y2="44" stroke="#dfe6ff" stroke-width="2.2" opacity="0.2" stroke-linecap="round"/>
+  <line x1="46" y1="40" x2="58" y2="44" stroke="#ffffff" stroke-width="0.6" opacity="1" stroke-linecap="round"/>
+  <g>
+    <circle cx="34" cy="12" r="19.8" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="34" cy="12" r="11.0" fill="url(#haloA)"/>
+    <g transform="rotate(6 34 12)">
+      <polygon points="17.0,12 34,11.05 51.0,12 34,12.95" fill="url(#gH)"/>
+      <polygon points="34,-5.0 34.95,12 34,29.0 33.05,12" fill="url(#gV)"/>
+      <g transform="rotate(45 34 12)" opacity="0.6">
+        <polygon points="23.8,12 34,11.335 44.2,12 34,12.665" fill="url(#gH)"/>
+        <polygon points="34,1.8 34.665,12 34,22.2 33.335,12" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="34" cy="12" r="2.1" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="36" cy="38" r="10.6" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="36" cy="38" r="5.9" fill="url(#haloA)"/>
+    <g transform="rotate(3 36 38)">
+      <polygon points="26.9,38 36,37.4 45.1,38 36,38.6" fill="url(#gH)"/>
+      <polygon points="36,28.9 36.6,38 36,47.1 35.4,38" fill="url(#gV)"/>
+      <g transform="rotate(45 36 38)" opacity="0.6">
+        <polygon points="30.5,38 36,37.58 41.5,38 36,38.42" fill="url(#gH)"/>
+        <polygon points="36,32.5 36.42,38 36,43.5 35.58,38" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="36" cy="38" r="1.3" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="28" cy="62" r="13.1" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="28" cy="62" r="7.3" fill="url(#haloA)"/>
+    <g transform="rotate(0 28 62)">
+      <polygon points="16.8,62 28,61.4 39.2,62 28,62.6" fill="url(#gH)"/>
+      <polygon points="28,50.8 28.6,62 28,73.2 27.4,62" fill="url(#gV)"/>
+      <g transform="rotate(45 28 62)" opacity="0.6">
+        <polygon points="21.3,62 28,61.58 34.7,62 28,62.42" fill="url(#gH)"/>
+        <polygon points="28,55.3 28.42,62 28,68.7 27.58,62" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="28" cy="62" r="1.3" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="22" cy="86" r="12.1" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="22" cy="86" r="6.7" fill="url(#haloA)"/>
+    <g transform="rotate(-3 22 86)">
+      <polygon points="11.7,86 22,85.4 32.3,86 22,86.6" fill="url(#gH)"/>
+      <polygon points="22,75.7 22.6,86 22,96.3 21.4,86" fill="url(#gV)"/>
+      <g transform="rotate(45 22 86)" opacity="0.6">
+        <polygon points="15.8,86 22,85.58 28.2,86 22,86.42" fill="url(#gH)"/>
+        <polygon points="22,79.8 22.42,86 22,92.2 21.58,86" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="22" cy="86" r="1.3" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="60" cy="18" r="18.6" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="60" cy="18" r="10.3" fill="url(#haloA)"/>
+    <g transform="rotate(-6 60 18)">
+      <polygon points="44.0,18 60,17.05 76.0,18 60,18.95" fill="url(#gH)"/>
+      <polygon points="60,2.0 60.95,18 60,34.0 59.05,18" fill="url(#gV)"/>
+      <g transform="rotate(45 60 18)" opacity="0.6">
+        <polygon points="50.4,18 60,17.335 69.6,18 60,18.665" fill="url(#gH)"/>
+        <polygon points="60,8.4 60.665,18 60,27.6 59.335,18" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="60" cy="18" r="2.1" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="58" cy="44" r="9.9" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="58" cy="44" r="5.5" fill="url(#haloA)"/>
+    <g transform="rotate(5 58 44)">
+      <polygon points="49.5,44 58,43.4 66.5,44 58,44.6" fill="url(#gH)"/>
+      <polygon points="58,35.5 58.6,44 58,52.5 57.4,44" fill="url(#gV)"/>
+      <g transform="rotate(45 58 44)" opacity="0.6">
+        <polygon points="52.9,44 58,43.58 63.1,44 58,44.42" fill="url(#gH)"/>
+        <polygon points="58,38.9 58.42,44 58,49.1 57.58,44" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="58" cy="44" r="1.3" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="62" cy="66" r="12.4" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="62" cy="66" r="6.9" fill="url(#haloA)"/>
+    <g transform="rotate(2 62 66)">
+      <polygon points="51.4,66 62,65.4 72.6,66 62,66.6" fill="url(#gH)"/>
+      <polygon points="62,55.4 62.6,66 62,76.6 61.4,66" fill="url(#gV)"/>
+      <g transform="rotate(45 62 66)" opacity="0.6">
+        <polygon points="55.6,66 62,65.58 68.4,66 62,66.42" fill="url(#gH)"/>
+        <polygon points="62,59.6 62.42,66 62,72.4 61.58,66" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="62" cy="66" r="1.3" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="74" cy="86" r="11.3" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="74" cy="86" r="6.3" fill="url(#haloA)"/>
+    <g transform="rotate(-1 74 86)">
+      <polygon points="64.3,86 74,85.4 83.7,86 74,86.6" fill="url(#gH)"/>
+      <polygon points="74,76.3 74.6,86 74,95.7 73.4,86" fill="url(#gV)"/>
+      <g transform="rotate(45 74 86)" opacity="0.6">
+        <polygon points="68.2,86 74,85.58 79.8,86 74,86.42" fill="url(#gH)"/>
+        <polygon points="74,80.2 74.42,86 74,91.8 73.58,86" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="74" cy="86" r="1.3" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="46" cy="40" r="10.3" fill="url(#haloA)" opacity="0.42"/>
+    <circle cx="46" cy="40" r="5.7" fill="url(#haloA)"/>
+    <g transform="rotate(-4 46 40)">
+      <polygon points="37.2,40 46,39.4 54.8,40 46,40.6" fill="url(#gH)"/>
+      <polygon points="46,31.2 46.6,40 46,48.8 45.4,40" fill="url(#gV)"/>
+      <g transform="rotate(45 46 40)" opacity="0.6">
+        <polygon points="40.7,40 46,39.58 51.3,40 46,40.42" fill="url(#gH)"/>
+        <polygon points="46,34.7 46.42,40 46,45.3 45.58,40" fill="url(#gV)"/>
+      </g>
+    </g>
+    <circle cx="46" cy="40" r="1.3" fill="#ffffff"/>
+  </g>
+</svg>

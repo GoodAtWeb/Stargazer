@@ -1,0 +1,78 @@
+.detail-page {
+  color: #fff;
+  font-family: 'Pretendard', system-ui, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  background-color: #1b2140;
+  background-image:
+    linear-gradient(180deg, rgba(12, 17, 42, 0.25), rgba(12, 17, 42, 0.1)),
+    url('../assets/bg/milkyway.jpg');
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 24px 48px;
+  min-height: calc(100svh - 56px);
+  padding: 40px 8vw 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: left;
+}
+
+.detail--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail__header h1 {
+  margin: 0 0 18px;
+  font-size: 43.5px;
+}
+
+.detail__meta {
+  margin: 0 0 14px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.detail__period {
+  margin: 0;
+  font-size: 22px;
+  color: rgba(220, 228, 255, 0.8);
+}
+
+.detail__origin {
+  max-width: 900px;
+}
+
+.detail__origin h2 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+
+.detail__origin p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.detail__stage {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0;
+  min-height: 0;
+  transition: padding-right 0.3s ease;
+}
+
+.detail__stage--selected {
+  padding-right: 420px;
+}
