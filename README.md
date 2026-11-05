@@ -18,7 +18,7 @@ Stargazer/
 │  │  ├─ FortuneSection.jsx   # 오늘의 운세, 궁합, 12궁 운세 순위
 │  │  └─ TopNav.jsx           # 상단 메뉴바 (구색만 갖춤)
 │  ├─ data/
-│  │  ├─ constellations.json  # 12별자리와 별 mock 데이터
+│  │  ├─ constellations.json  # 12별자리 + 대표 별자리 별 mock 데이터
 │  │  └─ horoscopes.json      # 12별자리 운세 mock 데이터
 │  ├─ dev/
 │  │  └─ detailPreview.jsx    # 상세보기 화면 단독 미리보기용 임시 진입점
