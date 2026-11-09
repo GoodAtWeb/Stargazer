@@ -1,0 +1,8 @@
+.home {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  background: #141b38;
+  color: #eef0ff;
+  font-family: 'Pretendard', system-ui, 'Malgun Gothic', sans-serif;
+}
