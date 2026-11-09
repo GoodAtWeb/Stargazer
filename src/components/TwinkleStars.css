@@ -1,0 +1,31 @@
+.twinkle-stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.twinkle-stars__star {
+  position: absolute;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.25;
+  animation: twinkle-stars-blink ease-in-out infinite;
+}
+
+/* 큰 별은 빛이 번지고 더 천천히 반짝임 */
+.twinkle-stars__star--big {
+  box-shadow: 0 0 8px 2px currentColor;
+}
+
+@keyframes twinkle-stars-blink {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.85);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}

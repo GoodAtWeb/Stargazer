@@ -1,0 +1,72 @@
+.condition-card {
+  display: grid;
+  grid-template-columns: 96px 190px 1fr;
+  align-items: center;
+  gap: 0 28px;
+  padding: 26px 0;
+}
+
+.condition-card__head {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.condition-card__head h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.condition-card__badge {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.condition-card__value {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.condition-card__value strong {
+  margin-right: 4px;
+  font-size: 44px;
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.condition-card__bar {
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.condition-card__bar span {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.condition-card__bar--good span {
+  background: #ffcf8b;
+}
+
+.condition-card__bar--normal span {
+  background: #8aa4ff;
+}
+
+.condition-card__bar--bad span {
+  background: #8f98bd;
+}
+
+.condition-card__desc {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
+}
