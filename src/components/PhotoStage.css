@@ -1,0 +1,140 @@
+.photo-stage {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background: rgba(6, 9, 24, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.photo-stage__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--aspect);
+}
+
+.photo-stage__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.photo-stage__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 분석 중: 스캔 빛줄기가 지나갈 때 밝은 점이 하나씩 표시됨 */
+.photo-stage__spot {
+  fill: none;
+  stroke: #7fe3ff;
+  stroke-width: 0.25;
+  opacity: 0;
+  animation: spot-found 0.6s ease-out forwards;
+}
+
+@keyframes spot-found {
+  from {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+  to {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+.photo-stage__spot {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.photo-stage__scan {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: rgba(10, 20, 50, 0.18);
+}
+
+.photo-stage__beam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -120px;
+  height: 120px;
+  background: linear-gradient(
+    180deg,
+    rgba(127, 227, 255, 0) 0%,
+    rgba(127, 227, 255, 0.08) 60%,
+    rgba(127, 227, 255, 0.32) 100%
+  );
+  border-bottom: 2px solid #b8f1ff;
+  box-shadow:
+    0 2px 12px 2px rgba(127, 227, 255, 0.85),
+    0 4px 40px 6px rgba(127, 227, 255, 0.35);
+  animation: scan-down linear infinite;
+}
+
+@keyframes scan-down {
+  from {
+    top: -120px;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+/* 분석 결과: 찾은 별자리 선과 별 */
+.photo-stage__group {
+  cursor: pointer;
+}
+
+.photo-stage__line {
+  stroke: rgba(159, 220, 255, 0.7);
+  stroke-width: 0.28;
+  stroke-linecap: round;
+  transition: stroke 0.25s ease;
+}
+
+.photo-stage__star {
+  fill: #fff;
+  filter: drop-shadow(0 0 0.6px rgba(255, 255, 255, 0.9));
+}
+
+.photo-stage__group--active .photo-stage__line {
+  stroke: #ffd34d;
+  stroke-width: 0.36;
+}
+
+.photo-stage__label {
+  position: absolute;
+  transform: translate(-50%, calc(-100% - 10px));
+  padding: 3px 10px;
+  border: 1px solid rgba(159, 220, 255, 0.5);
+  border-radius: 999px;
+  background: rgba(14, 19, 44, 0.7);
+  color: #d6f1ff;
+  font: inherit;
+  font-size: 12.5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.photo-stage__label--active {
+  border-color: #ffd34d;
+  background: #ffd34d;
+  color: #1b2140;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-stage__beam {
+    animation-duration: 6s !important;
+  }
+}

@@ -1,0 +1,126 @@
+.uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 72px 24px;
+  text-align: center;
+  background: rgba(20, 27, 60, 0.55);
+  border: 1.5px dashed rgba(255, 255, 255, 0.28);
+  border-radius: 24px;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.uploader:hover,
+.uploader:focus-visible,
+.uploader--dragging {
+  border-color: #ffd34d;
+  background: rgba(30, 40, 84, 0.65);
+  outline: none;
+}
+
+.uploader__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.uploader__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.uploader__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.uploader__hint {
+  margin: 0;
+  font-size: 13.5px;
+  color: rgba(220, 228, 255, 0.6);
+}
+
+.uploader__button {
+  margin-top: 14px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #ffd34d;
+  color: #1b2140;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.uploader__error {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #ff9b9b;
+}
+
+.photo-tips {
+  margin-top: 32px;
+  padding: 24px 28px 28px;
+  background: rgb(244, 244, 244, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+}
+
+.photo-tips h2 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.photo-tips > p {
+  margin: 0 0 18px;
+  font-size: 14px;
+  color: rgba(220, 228, 255, 0.6);
+}
+
+.photo-tips ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-tips li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+  background: rgba(16, 22, 56, 0.38);
+  border-radius: 14px;
+}
+
+.photo-tips strong {
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.photo-tips span {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #D6DBF0;
+}
+
+@media (max-width: 760px) {
+  .photo-tips ul {
+    grid-template-columns: 1fr;
+  }
+}
