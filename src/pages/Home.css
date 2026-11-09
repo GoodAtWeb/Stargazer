@@ -2,7 +2,17 @@
   position: relative;
   min-height: 100svh;
   overflow: hidden;
-  background: #141b38;
   color: #eef0ff;
   font-family: 'Pretendard', system-ui, 'Malgun Gothic', sans-serif;
+  background: #141b38 url('../assets/bg/milkyway.jpg') center / cover no-repeat;
+}
+
+.home__stars {
+  position: absolute;
+  inset: 0;
+}
+
+.home__stars canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
