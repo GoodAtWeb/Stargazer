@@ -16,20 +16,21 @@ const MENUS = [
   { to: '/photo', label: '사진 분석' },
 ]
 
-// x, y: 시안 기준 중심 좌표(%) / spread: 아이콘 안 별들의 가로·세로 반경 (버튼 크기 대비)
+// x, y: 시안 기준 중심 좌표(%) / mobile: 세로 화면용 좌표(%), 로고 위아래로 엇갈리게
+// spread: 아이콘 안 별들의 가로·세로 반경 (버튼 크기 대비)
 const LAYOUT = [
-  { id: 'aquarius', x: 10.8, y: 27.6, spread: [0.22, 0.34] },
-  { id: 'aries', x: 29.3, y: 24.9, spread: [0.31, 0.17] },
-  { id: 'cancer', x: 47.3, y: 17.5, spread: [0.19, 0.29] },
-  { id: 'capricorn', x: 69, y: 26.7, spread: [0.34, 0.28] },
-  { id: 'gemini', x: 87.5, y: 24.9, spread: [0.24, 0.33] },
-  { id: 'taurus', x: 21.5, y: 59, spread: [0.33, 0.26] },
-  { id: 'sagittarius', x: 76.5, y: 55.3, spread: [0.34, 0.29] },
-  { id: 'leo', x: 10, y: 83, spread: [0.34, 0.29] },
-  { id: 'libra', x: 33.5, y: 84.8, spread: [0.33, 0.26] },
-  { id: 'pisces', x: 51, y: 74.7, spread: [0.36, 0.33] },
-  { id: 'virgo', x: 68, y: 80.2, spread: [0.31, 0.34] },
-  { id: 'scorpio', x: 86.5, y: 77.4, spread: [0.33, 0.34] },
+  { id: 'aquarius', x: 10.8, y: 27.6, mobile: [2, 2], spread: [0.22, 0.34] },
+  { id: 'aries', x: 29.3, y: 24.9, mobile: [62, 0], spread: [0.31, 0.17] },
+  { id: 'cancer', x: 47.3, y: 17.5, mobile: [98, 12], spread: [0.19, 0.29] },
+  { id: 'capricorn', x: 69, y: 26.7, mobile: [6, 28], spread: [0.34, 0.28] },
+  { id: 'gemini', x: 87.5, y: 24.9, mobile: [68, 27], spread: [0.24, 0.33] },
+  { id: 'taurus', x: 21.5, y: 59, mobile: [30, 14], spread: [0.33, 0.26] },
+  { id: 'sagittarius', x: 76.5, y: 55.3, mobile: [36, 72], spread: [0.34, 0.29] },
+  { id: 'leo', x: 10, y: 83, mobile: [100, 74], spread: [0.34, 0.29] },
+  { id: 'libra', x: 33.5, y: 84.8, mobile: [0, 86], spread: [0.33, 0.26] },
+  { id: 'pisces', x: 51, y: 74.7, mobile: [30, 100], spread: [0.36, 0.33] },
+  { id: 'virgo', x: 68, y: 80.2, mobile: [66, 88], spread: [0.31, 0.34] },
+  { id: 'scorpio', x: 86.5, y: 77.4, mobile: [96, 100], spread: [0.33, 0.34] },
 ]
 
 const APPEAR_ORDER = [3, 8, 0, 6, 10, 2, 7, 4, 9, 1, 11, 5]
@@ -83,8 +84,10 @@ const SAFE_X = 0.05
 const SAFE_Y = 0.06
 const SAFE_MIN = 24
 
-const X_RANGE = [Math.min(...LAYOUT.map((c) => c.x)), Math.max(...LAYOUT.map((c) => c.x))]
-const Y_RANGE = [Math.min(...LAYOUT.map((c) => c.y)), Math.max(...LAYOUT.map((c) => c.y))]
+const getRange = (values) => [Math.min(...values), Math.max(...values)]
+const X_RANGE = getRange(LAYOUT.map((c) => c.x))
+const Y_RANGE = getRange(LAYOUT.map((c) => c.y))
+const MOBILE_RANGE = [0, 100]
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max)
 
@@ -169,17 +172,18 @@ const getRadius = (constellation, size, scale = 1) =>
   (Math.max(...constellation.spread) + GLOW) * size * scale
 
 // 평소 위치: 시안 좌표를 여백 안쪽에 맞추고 로고·메뉴를 피함
-const getRestPositions = (width, height, size, block) => {
+const getRestPositions = (width, height, size, block, portrait) => {
   const safe = getSafeArea(width, height)
   const toRange = (value, [min, max], start, end, half) =>
     start + half + ((value - min) / (max - min)) * (end - start - half * 2)
 
   const points = CONSTELLATIONS.map((c) => {
     const half = getHalf(c, size)
+    const [x, y] = portrait ? c.mobile : [c.x, c.y]
     return {
       id: c.id,
-      x: toRange(c.x, X_RANGE, safe.left, safe.right, half.x),
-      y: toRange(c.y, Y_RANGE, safe.top, safe.bottom, half.y),
+      x: toRange(x, portrait ? MOBILE_RANGE : X_RANGE, safe.left, safe.right, half.x),
+      y: toRange(y, portrait ? MOBILE_RANGE : Y_RANGE, safe.top, safe.bottom, half.y),
     }
   })
   const origin = points.map((p) => ({ ...p }))
@@ -265,10 +269,15 @@ function Home() {
     return () => observer.disconnect()
   }, [])
 
-  const size = Math.min(area.width * 0.18, area.height * 0.32)
+  // 세로로 긴 화면은 별도 좌표로 로고 위아래에 배치
+  const portrait = area.width < area.height
+  const size = portrait
+    ? Math.min(area.width * 0.3, area.height * 0.16)
+    : Math.min(area.width * 0.18, area.height * 0.32)
   const rest = useMemo(
-    () => (area.block ? getRestPositions(area.width, area.height, size, area.block) : null),
-    [area.width, area.height, size, area.block],
+    () =>
+      area.block ? getRestPositions(area.width, area.height, size, area.block, portrait) : null,
+    [area.width, area.height, size, area.block, portrait],
   )
   const { offsets, hoverScale } = useMemo(
     () =>
