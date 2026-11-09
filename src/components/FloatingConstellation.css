@@ -1,0 +1,43 @@
+.floating-constellation {
+  position: absolute;
+}
+
+.floating-constellation__layer {
+  width: 100%;
+  height: 100%;
+}
+
+.floating-constellation__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.floating-constellation__button:focus-visible {
+  outline: 1px dashed rgba(245, 217, 140, 0.6);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.floating-constellation__icon,
+.floating-constellation__art {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+.floating-constellation__icon {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.floating-constellation__art {
+  height: auto;
+}
