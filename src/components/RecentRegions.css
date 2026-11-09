@@ -1,0 +1,49 @@
+.recent-regions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+}
+
+.recent-regions__label {
+  flex: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.recent-regions ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recent-regions li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.recent-regions button {
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.85);
+  font: inherit;
+  cursor: pointer;
+}
+
+.recent-regions__item:hover {
+  color: #ffcf8b;
+}
+
+.recent-regions__remove {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.recent-regions__remove:hover {
+  color: #fff !important;
+}

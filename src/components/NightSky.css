@@ -1,0 +1,323 @@
+.forecast-card.night-sky {
+  padding: 24px 0 0;
+}
+
+.night-sky__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.night-sky__head h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.night-sky__head p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.night-sky__controls {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px 24px;
+}
+
+.night-sky__heading {
+  min-width: 84px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-variant-numeric: tabular-nums;
+}
+
+.night-sky__views {
+  display: flex;
+  flex: none;
+  gap: 4px;
+}
+
+.night-sky__view {
+  width: 40px;
+  padding: 6px 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: rgba(255, 255, 255, 0.65);
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.night-sky__view:hover {
+  color: #fff;
+}
+
+.night-sky__view--active {
+  border-bottom-color: #ffcf8b;
+  color: #ffcf8b;
+  font-weight: 700;
+}
+
+/* 별자리 모두 보기 스위치 */
+.night-sky__toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.night-sky__switch {
+  position: relative;
+  width: 32px;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  transition: background 0.2s;
+}
+
+.night-sky__switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.25s cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+
+.night-sky__toggle--on .night-sky__switch {
+  background: #ffcf8b;
+}
+
+.night-sky__toggle--on .night-sky__switch::after {
+  transform: translateX(14px);
+}
+
+.night-sky__panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  user-select: none;
+}
+
+.night-sky__panel--full {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+  cursor: grab;
+  touch-action: none;
+}
+
+.night-sky__panel--full:active {
+  cursor: grabbing;
+}
+
+.night-sky__panel svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.night-sky__constellation {
+  cursor: inherit;
+  outline: none;
+}
+
+.night-sky__hit {
+  fill: transparent;
+}
+
+.night-sky__constellation circle {
+  fill: #fff;
+}
+
+/* 평소에는 별만 보이고, 마우스를 올리거나 '모두 보기'를 켜면 선과 이름이 나타남 */
+.night-sky__figure {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.night-sky__constellation:hover .night-sky__figure,
+.night-sky__constellation--active .night-sky__figure,
+.night-sky__constellation:focus-visible .night-sky__figure,
+.night-sky__panel--all .night-sky__figure {
+  opacity: 1;
+}
+
+.night-sky__figure line {
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 1;
+}
+
+.night-sky__constellation:hover .night-sky__figure line,
+.night-sky__constellation--active .night-sky__figure line {
+  stroke: #ffcf8b;
+}
+
+.night-sky__figure text {
+  fill: rgba(255, 207, 139, 0.95);
+  font-size: 15px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: rgba(6, 10, 29, 0.7);
+  stroke-width: 3px;
+}
+
+.night-sky__compass {
+  fill: rgba(255, 255, 255, 0.55);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* 구름이 많을수록 하늘 위에 흐릿하게 덮임 */
+.night-sky__clouds {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 30% 20% at 18% 30%, rgba(190, 200, 225, 0.55), transparent),
+    radial-gradient(ellipse 36% 24% at 55% 22%, rgba(190, 200, 225, 0.5), transparent),
+    radial-gradient(ellipse 28% 20% at 85% 40%, rgba(190, 200, 225, 0.55), transparent),
+    radial-gradient(ellipse 40% 18% at 40% 55%, rgba(190, 200, 225, 0.4), transparent);
+  filter: blur(14px);
+  transition: opacity 0.6s;
+}
+
+/* 해가 지기 전후에는 하늘이 밝게 물듦 */
+.night-sky__dusk {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(90, 130, 200, 0.55), rgba(255, 170, 110, 0.6));
+  transition: opacity 0.6s;
+}
+
+.night-sky__notice {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* 더블클릭하면 열리는 전체 화면 */
+.night-sky-full {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  background: #04060f;
+  color: #fff;
+  font-family: 'Pretendard', system-ui, 'Segoe UI', 'Malgun Gothic', sans-serif;
+}
+
+.night-sky-full .night-sky__panel svg {
+  height: 100%;
+}
+
+.night-sky-full__back {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(6, 10, 29, 0.45);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.night-sky-full__back:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-2px);
+}
+
+.night-sky-full__back svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.night-sky-full__hint {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.night-sky-full__bar {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 700px) {
+  .night-sky__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .night-sky__controls {
+    justify-content: flex-start;
+  }
+
+  .night-sky-full__bar {
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+}
+
+/* 밤하늘은 다른 영역과 같은 폭에 맞추고, 폭에 비례해 높이를 키워 위쪽이 잘리지 않게 함 */
+.night-sky > .night-sky__panel svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 500;
+  min-height: 340px;
+}
+

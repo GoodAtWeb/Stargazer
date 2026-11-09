@@ -1,0 +1,93 @@
+.score-card {
+  --tone: #ffcf8b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 24px;
+  text-align: center;
+}
+
+.score-card--normal {
+  --tone: #8aa4ff;
+}
+
+.score-card--poor {
+  --tone: #c9a3e0;
+}
+
+.score-card--bad {
+  --tone: #8f98bd;
+}
+
+.score-card__ring {
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+
+.score-card__ring svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.score-card__track,
+.score-card__arc {
+  fill: none;
+  stroke-width: 2;
+}
+
+.score-card__track {
+  stroke: rgba(255, 255, 255, 0.14);
+}
+
+.score-card__arc {
+  stroke: var(--tone);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.score-card__value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-card__value strong {
+  font-size: 104px;
+  font-weight: 200;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.score-card__value span {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.score-card__status {
+  margin: 26px 0 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--tone);
+}
+
+.score-card__summary {
+  margin: 20px 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.score-card__message {
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: pre-line;
+}

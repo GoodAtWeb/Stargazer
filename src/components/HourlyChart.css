@@ -1,0 +1,134 @@
+/* 페이지의 .forecast-card 바탕보다 우선하도록 클래스를 함께 씀 */
+.forecast-card.hourly-chart {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0;
+  background: none;
+  backdrop-filter: none;
+  padding: 24px 0 20px;
+}
+
+.hourly-chart h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.hourly-chart__sub {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hourly-chart__sub strong {
+  color: #ffcf8b;
+}
+
+.hourly-chart__plot {
+  position: relative;
+  height: 236px;
+  margin-top: 12px;
+}
+
+.hourly-chart__plot svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  overflow: visible;
+}
+
+.hourly-chart__columns {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hourly-chart__columns li {
+  flex: 1;
+}
+
+.hourly-chart__item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* 점은 곡선 위 점수 위치에 놓임 (top은 애니메이션으로 이동) */
+.hourly-chart__point {
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.hourly-chart__dot {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.hourly-chart__item:hover .hourly-chart__dot {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.hourly-chart__item--selected .hourly-chart__dot {
+  opacity: 1;
+  background: #ffcf8b;
+}
+
+.hourly-chart__ring {
+  position: absolute;
+  left: -13px;
+  top: -13px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hourly-chart__score {
+  position: absolute;
+  left: -30px;
+  top: -34px;
+  width: 60px;
+  height: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hourly-chart__item:focus-visible {
+  outline: 2px solid #ffcf8b;
+  outline-offset: -2px;
+  border-radius: 8px;
+}
+
+.hourly-chart__hour {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
