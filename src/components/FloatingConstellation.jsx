@@ -70,14 +70,9 @@ function FloatingConstellation({
                 className="floating-constellation__art"
                 src={art.src}
                 alt=""
-                style={{
-                  left: `${art.x}%`,
-                  top: `${art.y}%`,
-                  width: `${art.size}%`,
-                  filter: art.blur ? `blur(${art.blur}px)` : undefined,
-                }}
+                style={{ left: `${art.x}%`, top: `${art.y}%`, width: `${art.size}%` }}
                 initial={{ opacity: 0 }}
-                animate={{ opacity: hovered ? art.opacity : 0 }}
+                animate={{ opacity: hovered ? 0.9 : 0 }}
                 transition={{ duration: 0.4 }}
               />
             )}

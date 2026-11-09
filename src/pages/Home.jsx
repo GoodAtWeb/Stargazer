@@ -42,11 +42,10 @@ const artFiles = import.meta.glob('../assets/art/*.svg', {
   import: 'default',
 })
 
-// 위치·크기는 버튼 대비 %, 기본은 아이콘과 같은 크기
-// 면으로 채운 그림은 선 위주인 전갈 그림 밝기에 맞춰 흐리게
-const DEFAULT_ART_PLACEMENT = { x: 0, y: 0, size: 100, opacity: 0.6, blur: 1 }
+// 버튼 크기 대비 %, 기본은 아이콘과 같은 크기
+const DEFAULT_ART_PLACEMENT = { x: 0, y: 0, size: 100 }
 const ART_PLACEMENTS = {
-  scorpio: { x: 2, y: 4, size: 98, opacity: 0.9, blur: 0 },
+  scorpio: { x: 2, y: 4, size: 98 },
 }
 
 const getArt = (id) => {
