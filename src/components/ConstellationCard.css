@@ -94,3 +94,36 @@
   outline: 2px solid #ffd34d;
   border-radius: 6px;
 }
+
+@media (max-width: 700px) {
+  .constellation-card__link {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .constellation-card__figure {
+    width: min(64%, 12vh);
+    margin-bottom: 8px;
+  }
+
+  .constellation-card__name {
+    font-size: 17px;
+  }
+
+  .constellation-card__latin {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .constellation-card__meta {
+    margin-top: 6px;
+    font-size: 12.5px;
+  }
+
+  .constellation-card__fav {
+    top: 10px;
+    right: 10px;
+  }
+}

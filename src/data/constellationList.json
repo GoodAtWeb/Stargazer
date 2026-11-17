@@ -267,7 +267,7 @@
     "id": "puppis",
     "nameKo": "고물자리",
     "nameEn": "Puppis",
-    "season": "남반구",
+    "season": "봄",
     "brightStar": "나오스",
     "isZodiac": false,
     "points": [
@@ -417,7 +417,7 @@
     "id": "pavo",
     "nameKo": "공작자리",
     "nameEn": "Pavo",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "피콕",
     "isZodiac": false,
     "points": [
@@ -767,7 +767,7 @@
     "id": "reticulum",
     "nameKo": "그물자리",
     "nameEn": "Reticulum",
-    "season": "남반구",
+    "season": "겨울",
     "brightStar": "α Ret",
     "isZodiac": false,
     "points": [
@@ -817,7 +817,7 @@
     "id": "apus",
     "nameKo": "극락조자리",
     "nameEn": "Apus",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "α Aps",
     "isZodiac": false,
     "points": [
@@ -1051,7 +1051,7 @@
     "id": "volans",
     "nameKo": "날치자리",
     "nameEn": "Volans",
-    "season": "남반구",
+    "season": "봄",
     "brightStar": "β Vol",
     "isZodiac": false,
     "points": [
@@ -1113,7 +1113,7 @@
     "id": "crux",
     "nameKo": "남십자자리",
     "nameEn": "Crux",
-    "season": "남반구",
+    "season": "봄",
     "brightStar": "아크룩스",
     "isZodiac": false,
     "points": [
@@ -1247,7 +1247,7 @@
     "id": "triangulum-australe",
     "nameKo": "남쪽삼각형자리",
     "nameEn": "Triangulum Australe",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "아트리아",
     "isZodiac": false,
     "points": [
@@ -1289,7 +1289,7 @@
     "id": "corona-australis",
     "nameKo": "남쪽왕관자리",
     "nameEn": "Corona Australis",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "β CrA",
     "isZodiac": false,
     "points": [
@@ -1611,7 +1611,7 @@
     "id": "vela",
     "nameKo": "돛자리",
     "nameEn": "Vela",
-    "season": "남반구",
+    "season": "봄",
     "brightStar": "레고르",
     "isZodiac": false,
     "points": [
@@ -1689,7 +1689,7 @@
     "id": "grus",
     "nameKo": "두루미자리",
     "nameEn": "Grus",
-    "season": "남반구",
+    "season": "가을",
     "brightStar": "알나이르",
     "isZodiac": false,
     "points": [
@@ -1875,7 +1875,7 @@
     "id": "telescopium",
     "nameKo": "망원경자리",
     "nameEn": "Telescopium",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "α Tel",
     "isZodiac": false,
     "points": [
@@ -2279,7 +2279,7 @@
     "id": "hydrus",
     "nameKo": "물뱀자리",
     "nameEn": "Hydrus",
-    "season": "남반구",
+    "season": "겨울",
     "brightStar": "β Hyi",
     "isZodiac": false,
     "points": [
@@ -3027,7 +3027,7 @@
     "id": "phoenix",
     "nameKo": "봉황자리",
     "nameEn": "Phoenix",
-    "season": "남반구",
+    "season": "가을",
     "brightStar": "앙카",
     "isZodiac": false,
     "points": [
@@ -3573,7 +3573,7 @@
     "id": "centaurus",
     "nameKo": "센타우루스자리",
     "nameEn": "Centaurus",
-    "season": "남반구",
+    "season": "봄",
     "brightStar": "리길 켄타우루스",
     "isZodiac": false,
     "points": [
@@ -3733,7 +3733,7 @@
     "id": "horologium",
     "nameKo": "시계자리",
     "nameEn": "Horologium",
-    "season": "남반구",
+    "season": "겨울",
     "brightStar": "α Hor",
     "isZodiac": false,
     "points": [
@@ -4775,7 +4775,7 @@
     "id": "carina",
     "nameKo": "용골자리",
     "nameEn": "Carina",
-    "season": "남반구",
+    "season": "봄",
     "brightStar": "카노푸스",
     "isZodiac": false,
     "points": [
@@ -5255,7 +5255,7 @@
     "id": "indus",
     "nameKo": "인디언자리",
     "nameEn": "Indus",
-    "season": "남반구",
+    "season": "가을",
     "brightStar": "페르시안",
     "isZodiac": false,
     "points": [
@@ -5661,7 +5661,7 @@
     "id": "ara",
     "nameKo": "제단자리",
     "nameEn": "Ara",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "β Ara",
     "isZodiac": false,
     "points": [
@@ -5777,7 +5777,7 @@
     "id": "caelum",
     "nameKo": "조각칼자리",
     "nameEn": "Caelum",
-    "season": "남반구",
+    "season": "겨울",
     "brightStar": "α Cae",
     "isZodiac": false,
     "points": [
@@ -5861,7 +5861,7 @@
     "id": "norma",
     "nameKo": "직각자자리",
     "nameEn": "Norma",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "γ2 Nor",
     "isZodiac": false,
     "points": [
@@ -6113,7 +6113,7 @@
     "id": "chamaeleon",
     "nameKo": "카멜레온자리",
     "nameEn": "Chamaeleon",
-    "season": "남반구",
+    "season": "봄",
     "brightStar": "α Cha",
     "isZodiac": false,
     "points": [
@@ -6225,7 +6225,7 @@
     "id": "circinus",
     "nameKo": "컴퍼스자리",
     "nameEn": "Circinus",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "α Cir",
     "isZodiac": false,
     "points": [
@@ -6695,7 +6695,7 @@
     "id": "tucana",
     "nameKo": "큰부리새자리",
     "nameEn": "Tucana",
-    "season": "남반구",
+    "season": "가을",
     "brightStar": "α Tuc",
     "isZodiac": false,
     "points": [
@@ -6761,7 +6761,7 @@
     "id": "mensa",
     "nameKo": "테이블산자리",
     "nameEn": "Mensa",
-    "season": "남반구",
+    "season": "겨울",
     "brightStar": "α Men",
     "isZodiac": false,
     "points": [
@@ -6915,7 +6915,7 @@
     "id": "musca",
     "nameKo": "파리자리",
     "nameEn": "Musca",
-    "season": "남반구",
+    "season": "봄",
     "brightStar": "α Mus",
     "isZodiac": false,
     "points": [
@@ -6981,7 +6981,7 @@
     "id": "octans",
     "nameKo": "팔분의자리",
     "nameEn": "Octans",
-    "season": "남반구",
+    "season": "여름",
     "brightStar": "ν Oct",
     "isZodiac": false,
     "points": [
@@ -7609,7 +7609,7 @@
     "id": "pictor",
     "nameKo": "화가자리",
     "nameEn": "Pictor",
-    "season": "남반구",
+    "season": "겨울",
     "brightStar": "α Pic",
     "isZodiac": false,
     "points": [
@@ -7737,7 +7737,7 @@
     "id": "dorado",
     "nameKo": "황새치자리",
     "nameEn": "Dorado",
-    "season": "남반구",
+    "season": "겨울",
     "brightStar": "α Dor",
     "isZodiac": false,
     "points": [

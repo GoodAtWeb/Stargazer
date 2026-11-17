@@ -55,3 +55,39 @@
   color: #fff;
   font-size: 13px;
 }
+
+@media (max-width: 700px) {
+  .top-nav {
+    gap: 14px;
+    padding: 0 14px;
+  }
+
+  .top-nav__logo {
+    flex: none;
+    font-size: 15px;
+  }
+
+  .top-nav__menu {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .top-nav__menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .top-nav__link {
+    padding: 6px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .top-nav__lang {
+    flex: none;
+    padding: 4px 9px;
+    font-size: 12px;
+  }
+}

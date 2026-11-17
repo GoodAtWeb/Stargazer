@@ -2,7 +2,7 @@ import detailed from '../data/constellations.json'
 import list from '../data/constellationList.json'
 
 export const PAGE_SIZE = 10
-export const SEASONS = ['봄', '여름', '가을', '겨울', '남반구', '연중']
+export const SEASONS = ['봄', '여름', '가을', '겨울', '연중']
 export const TABS = [
   { key: 'all', label: '전체' },
   { key: 'zodiac', label: '황도 12궁' },

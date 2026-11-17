@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 const arts = import.meta.glob('../assets/art/*.svg', {
   eager: true,
   query: '?url',
@@ -17,18 +19,31 @@ const PLACEMENTS = {
   capricorn: { x: 0, y: 0, size: 100 },
   aquarius: { x: 0, y: 0, size: 100 },
   pisces: { x: 0, y: 0, size: 100 },
+  orion: { x: 0, y: 0, size: 100 },
+  'ursa-major': { x: 0, y: 0, size: 100 },
+  'ursa-minor': { x: 0, y: 0, size: 100 },
+  cassiopeia: { x: 0, y: 0, size: 100 },
+  cygnus: { x: 0, y: 0, size: 100 },
+  lyra: { x: 0, y: 0, size: 100 },
+  aquila: { x: 0, y: 0, size: 100 },
+  'canis-major': { x: 0, y: 0, size: 100 },
+  pegasus: { x: 0, y: 0, size: 100 },
+  perseus: { x: 0, y: 0, size: 100 },
 }
 
-// 별자리 id에 맞는 배경 그림을 별 좌표계(0~100)에 맞춰 반환 (없으면 아무것도 그리지 않음)
-function ConstellationArt({ id }) {
+// 별자리 id에 맞는 배경 그림을 별 좌표계(0~100)에 맞춰 delay초 뒤에 서서히 나타나게 반환 (없으면 아무것도 그리지 않음)
+function ConstellationArt({ id, delay = 0 }) {
   const href = arts[`../assets/art/${id}.svg`]
   const placement = PLACEMENTS[id]
   if (!href || !placement) return null
 
   return (
-    <image
+    <motion.image
       className="constellation-art"
       href={href}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.4, delay, ease: 'easeOut' }}
       x={placement.x}
       y={placement.y}
       width={placement.size}

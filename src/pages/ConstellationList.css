@@ -162,3 +162,29 @@
     min-height: calc(var(--card-h) * 4 + 60px);
   }
 }
+
+@media (max-width: 700px) {
+  .list {
+    padding: 20px 16px 20px;
+  }
+
+  .list__header h1 {
+    font-size: 30px;
+  }
+
+  .list__header p {
+    font-size: 14px;
+  }
+
+  .list__tab {
+    padding: 7px 16px;
+    font-size: 13.5px;
+  }
+
+  .list__grid {
+    --card-h: calc(12vh + 108px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: calc(var(--card-h) * 5 + 48px);
+    gap: 12px;
+  }
+}
