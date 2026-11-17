@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import ConstellationMap from '../components/ConstellationMap'
 import FortuneSection from '../components/FortuneSection'
 import ObservationSection from '../components/ObservationSection'
@@ -22,6 +22,11 @@ function ConstellationView({ constellation }) {
   return (
     <div className="detail-page">
       <TopNav />
+      <div className="detail__bar">
+        <Link to="/constellations" className="detail__back" aria-label="별자리 목록으로">
+          ←
+        </Link>
+      </div>
       <main className="detail">
         <header className="detail__header">
           <h1>{nameKo}</h1>

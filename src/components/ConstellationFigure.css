@@ -1,0 +1,22 @@
+.constellation-figure {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.constellation-figure__line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.7);
+  stroke-width: 0.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.constellation-figure__glow {
+  fill: rgba(190, 210, 255, 0.22);
+}
+
+.constellation-figure__star {
+  fill: #fff;
+}
