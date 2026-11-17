@@ -13,6 +13,8 @@ Stargazer/
 │  │  └─ constellations/      # 별자리 아이콘 (id.svg, id_active.svg)
 │  ├─ components/
 │  │  ├─ ConstellationArt.jsx # 별자리 배경 그림을 별 좌표에 맞춰 표시
+│  │  ├─ ConstellationCard.jsx # 별자리 목록의 카드 (모양, 이름, 계절·대표 별, 즐겨찾기)
+│  │  ├─ ConstellationFigure.jsx # 별 좌표와 선으로 그리는 작은 별자리 모양 (목록 카드용)
 │  │  ├─ ConstellationMap.jsx # 별과 선으로 그리는 SVG 별자리 지도 (별 클릭 선택)
 │  │  ├─ StarInfoCard.jsx     # 선택한 별의 정보 카드
 │  │  ├─ ObservationSection.jsx # 관측 적기, 시간, 방향, 팁
@@ -29,19 +31,24 @@ Stargazer/
 │  │  ├─ TwinkleStars.jsx     # 별 예보 화면 배경에서 하나씩 반짝이는 별
 │  │  └─ VisibleConstellations.jsx # 볼 수 있는 별자리 목록 (클릭 시 상세보기 이동, 돋보기로 밤하늘에서 위치 찾기)
 │  ├─ data/
-│  │  ├─ constellations.json  # 12별자리 + 대표 별자리 별 mock 데이터
+│  │  ├─ constellations.json  # 12별자리 + 대표 별자리 10개 별 상세 mock 데이터 (관측 정보 포함)
+│  │  ├─ constellationList.json # 88개 별자리 목록 데이터 (모양, 계절, 대표 별)
 │  │  ├─ horoscopes.json      # 12별자리 운세 mock 데이터
 │  │  ├─ forecastData.json    # 별 예보 mock 데이터 (지역 위치와 빛공해, 달, 시간별 구름·습도)
 │  │  └─ skyData.json         # 밤하늘 mock 데이터 (별자리 중심 좌표, 배경 별)
 │  ├─ dev/
-│  │  ├─ detailPreview.jsx    # 상세보기 화면 단독 미리보기용 임시 진입점
+│  │  ├─ detailPreview.jsx    # 별자리 목록·상세보기 등 화면 미리보기용 임시 진입점
 │  │  └─ homePreview.jsx      # 메인 화면 단독 미리보기용 임시 진입점
 │  ├─ pages/
 │  │  ├─ ConstellationDetail.jsx  # 별자리 상세보기 화면 (유래, 지도, 관측 정보, 운세)
+│  │  ├─ ConstellationList.jsx # 별자리 목록 화면 (탭·계절 필터, 10개씩 페이지, 즐겨찾기)
 │  │  ├─ Home.jsx             # 메인 화면 (로고, 메뉴, 12별자리 배치)
+│  │  ├─ PhotoAnalysis.jsx    # 사진 분석 화면
 │  │  └─ StarForecast.jsx     # 별 예보 화면 (입력 폼 + 점수, 조건, 밤하늘, 시간대별 그래프, 별자리)
 │  ├─ utils/
 │  │  ├─ constellations.js    # id로 별자리 데이터 조회
+│  │  ├─ constellationList.js # 별자리 목록 데이터 가공 (탭·계절 필터, 페이지 계산)
+│  │  ├─ favorites.js         # 즐겨찾기 별자리 저장 (localStorage)
 │  │  ├─ horoscopes.js        # 운세 조회, 순위 계산, 아이콘 경로
 │  │  ├─ forecast.js          # 별 예보 더미 계산 (점수, 달, 구름, 습도, 별자리)
 │  │  ├─ recentRegions.js     # 최근 검색 지역 저장 (localStorage)
@@ -49,7 +56,7 @@ Stargazer/
 │  ├─ App.jsx                 # 라우터 설정 (페이지 주소 연결, 이동 시 스크롤 위치 관리)
 │  ├─ main.jsx                # 앱 진입점
 │  └─ index.css               # 전역 스타일 (body 여백 제거, 화면 꽉 채우기만 설정)
-├─ detail-dev.html            # 상세보기 미리보기용 임시 HTML (src/dev와 함께 사용)
+├─ detail-dev.html            # 별자리 목록·상세보기 미리보기용 임시 HTML (src/dev와 함께 사용)
 ├─ home-dev.html              # 메인 화면 미리보기용 임시 HTML (src/dev와 함께 사용)
 ├─ index.html                 # HTML 진입 파일 (탭 제목: Stargazer)
 ├─ vite.config.js             # Vite 설정
@@ -75,18 +82,21 @@ Stargazer/
 | 주소 | 화면 |
 | --- | --- |
 | `/` | 메인 화면 |
+| `/constellations` | 별자리 목록 |
 | `/forecast` | 별 예보 |
 | `/photo` | 사진 분석 |
 | `/constellations/:id` | 별자리 상세보기 (예: `/constellations/aries`) |
 
-- 별자리 목록 화면(`/constellations`)은 아직 없어서, 상단 메뉴의 "별자리"를 누르면 메인 화면으로 이동
+- 상단 메뉴의 "별자리"를 누르면 별자리 목록으로 이동하고, 카드를 누르면 상세보기로 이동 (상세보기 왼쪽 위 ← 버튼으로 목록 복귀)
 - 없는 주소로 접속하면 메인 화면으로 이동
 - 별자리 상세보기로 이동하면 맨 위부터 보이고, 별 예보는 갔다 돌아오면 보던 위치를 기억 (새로고침하면 초기화)
 - 별 예보의 밤하늘이나 "오늘 밤 볼 수 있는 별자리" 목록에서 별자리를 누르면 해당 상세보기로 이동
 
 아래 임시 진입점은 각 화면만 따로 확인하고 싶을 때 사용 (라우터 없이 `src/dev` 의 진입점으로 열림)
 
-## 별자리 상세보기 화면 임시 진입점
+## 별자리 목록·상세보기 화면 임시 진입점
+
+별자리 목록이 먼저 열리고, 카드를 누르면 상세보기로 이동 (상단 메뉴의 홈, 별 예보, 사진 분석도 이동 가능)
 
 1. 의존성 설치
 
