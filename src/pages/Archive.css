@@ -1,4 +1,4 @@
-.favorites-page {
+.archive-page {
   min-height: 100svh;
   color: #fff;
   font-family: 'Pretendard', system-ui, 'Segoe UI', 'Malgun Gothic', sans-serif;
@@ -12,7 +12,7 @@
   background-attachment: fixed;
 }
 
-.favorites {
+.archive {
   max-width: 1680px;
   margin: 0 auto;
   padding: 56px 6vw 48px;
@@ -20,13 +20,45 @@
   text-align: left;
 }
 
-.favorites__title {
-  margin: 0 0 48px;
+.archive__title {
+  margin: 0 0 24px;
   font-size: 40px;
   font-weight: 700;
 }
 
-.favorites__grid {
+.archive__tabs {
+  display: inline-flex;
+  margin-bottom: 32px;
+  padding: 4px;
+  background: rgba(20, 27, 62, 0.55);
+  border: 1px solid rgba(190, 205, 255, 0.4);
+  border-radius: 999px;
+}
+
+.archive__tab {
+  padding: 8px 22px;
+  font: inherit;
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.85);
+  background: none;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.archive__tab:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.archive__tab--active,
+.archive__tab--active:hover {
+  font-weight: 700;
+  color: #1b2140;
+  background: #ffd34d;
+}
+
+.archive__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(20px, 2.8vw, 56px);
@@ -34,7 +66,7 @@
   padding: 0;
 }
 
-.favorites__empty {
+.archive__empty {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,19 +75,19 @@
   text-align: center;
 }
 
-.favorites__empty-title {
+.archive__empty-title {
   margin: 0;
   font-size: 22px;
   font-weight: 700;
 }
 
-.favorites__empty-text {
+.archive__empty-text {
   margin: 0;
   font-size: 16px;
   color: rgba(225, 232, 255, 0.8);
 }
 
-.favorites__empty-button {
+.archive__empty-button {
   margin-top: 18px;
   padding: 12px 26px;
   border-radius: 999px;
@@ -68,39 +100,48 @@
     box-shadow 0.25s;
 }
 
-.favorites__empty-button:hover,
-.favorites__empty-button:focus-visible {
+.archive__empty-button:hover,
+.archive__empty-button:focus-visible {
   outline: none;
   background: #fde7a6;
   box-shadow: 0 0 16px rgba(245, 217, 140, 0.75);
 }
 
 @media (max-width: 1100px) {
-  .favorites__grid {
+  .archive__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 700px) {
-  .favorites {
+  .archive {
     padding: 28px 16px 32px;
   }
 
-  .favorites__title {
-    margin-bottom: 24px;
+  .archive__title {
+    margin-bottom: 16px;
     font-size: 30px;
   }
 
-  .favorites__grid {
+  .archive__tabs {
+    margin-bottom: 20px;
+  }
+
+  .archive__tab {
+    padding: 7px 16px;
+    font-size: 13.5px;
+  }
+
+  .archive__grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 14px;
   }
 
-  .favorites__empty-title {
+  .archive__empty-title {
     font-size: 19px;
   }
 
-  .favorites__empty-text {
+  .archive__empty-text {
     font-size: 14px;
   }
 }

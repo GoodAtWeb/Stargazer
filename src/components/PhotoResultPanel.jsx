@@ -10,7 +10,16 @@ const getBrightestStar = (stars) =>
   stars.reduce((a, b) => (b.magnitude < a.magnitude ? b : a))
 
 // 찾은 별자리 목록, 선택한 별자리 설명, 다시 분석/저장 버튼으로 이루어진 결과 패널
-function PhotoResultPanel({ detected, starCount, selectedId, onSelect, onReset, onSave, isSaving }) {
+function PhotoResultPanel({
+  detected,
+  starCount,
+  selectedId,
+  onSelect,
+  onReset,
+  onSave,
+  isSaving,
+  onRecord,
+}) {
   const actions = (
     <div className="result-panel__actions">
       <button type="button" className="result-panel__btn" onClick={onReset}>
@@ -23,6 +32,13 @@ function PhotoResultPanel({ detected, starCount, selectedId, onSelect, onReset, 
         disabled={isSaving}
       >
         {isSaving ? '저장 중…' : '결과 저장'}
+      </button>
+      <button
+        type="button"
+        className="result-panel__btn result-panel__btn--record"
+        onClick={onRecord}
+      >
+        나의 기록에 저장
       </button>
     </div>
   )

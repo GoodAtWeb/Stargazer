@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import AnalysisProgress from '../components/AnalysisProgress'
 import PhotoResultPanel from '../components/PhotoResultPanel'
 import PhotoStage from '../components/PhotoStage'
 import PhotoUploader from '../components/PhotoUploader'
+import SaveRecordDialog from '../components/SaveRecordDialog'
 import TopNav from '../components/TopNav'
 import {
   ANALYSIS_DURATION,
@@ -31,6 +33,7 @@ function PhotoAnalysis() {
   const [selectedId, setSelectedId] = useState(null)
   const [loadError, setLoadError] = useState(null)
   const [isSaving, setIsSaving] = useState(false)
+  const [isRecording, setIsRecording] = useState(false)
   const { status, file, photoUrl, aspect, spots, foundCount, progress, result } = state
 
   // 사진에서 별을 먼저 찾은 뒤 스캔을 시작하고, 빛줄기가 지나간 만큼 찾은 별 개수를 늘림
@@ -172,11 +175,24 @@ function PhotoAnalysis() {
                 onReset={handleReset}
                 onSave={handleSave}
                 isSaving={isSaving}
+                onRecord={() => setIsRecording(true)}
               />
             )}
           </div>
         )}
       </main>
+
+      <AnimatePresence>
+        {isRecording && result && (
+          <SaveRecordDialog
+            photoUrl={photoUrl}
+            file={file}
+            aspect={aspect}
+            detected={result.detected}
+            onClose={() => setIsRecording(false)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   )
 }

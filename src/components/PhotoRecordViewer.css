@@ -1,0 +1,228 @@
+.record-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  background: rgba(6, 9, 26, 0.72);
+}
+
+.record-viewer__panel {
+  width: min(760px, 100%);
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 24px;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: left;
+  font-family: 'Pretendard', system-ui, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  background: #1b2140;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+}
+
+.record-viewer__photo {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #0b0f26;
+}
+
+.record-viewer__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.record-viewer__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.record-viewer__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.record-viewer__date {
+  margin: 0;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.record-viewer__label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.record-viewer__label span {
+  margin-left: 6px;
+  font-size: 13px;
+  color: #ffcf8b;
+}
+
+.record-viewer__note {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.record-viewer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.record-viewer__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+.record-viewer__item:hover,
+.record-viewer__item:focus-visible {
+  outline: none;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.record-viewer__icon {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.record-viewer__icon--text {
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.record-viewer__name {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.record-viewer__more {
+  font-size: 13px;
+  color: #ffcf8b;
+}
+
+.record-viewer__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.record-viewer__field input {
+  height: 42px;
+  padding: 0 12px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color-scheme: dark;
+}
+
+.record-viewer__field input:focus-visible {
+  outline: none;
+  border-color: #ffcf8b;
+}
+
+.record-viewer__confirm {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.record-viewer__confirm p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.record-viewer__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.record-viewer__actions--three {
+  grid-template-columns: auto 1fr 1fr;
+}
+
+.record-viewer__btn {
+  height: 48px;
+  padding: 0 18px;
+  font: inherit;
+  font-size: 15px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.record-viewer__btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.record-viewer__btn--primary {
+  font-weight: 700;
+  color: #1b2140;
+  background: #ffcf8b;
+  border-color: #ffcf8b;
+}
+
+.record-viewer__btn--primary:hover {
+  background: #ffdca3;
+  border-color: #ffdca3;
+}
+
+.record-viewer__btn--text {
+  color: rgba(255, 180, 168, 0.9);
+  border-color: transparent;
+}
+
+.record-viewer__btn--danger {
+  font-weight: 700;
+  color: #1b2140;
+  background: #ffb4a8;
+  border-color: #ffb4a8;
+}
+
+.record-viewer__btn--danger:hover {
+  background: #ffc6bc;
+}

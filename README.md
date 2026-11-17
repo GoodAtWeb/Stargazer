@@ -17,12 +17,16 @@ Stargazer/
 │  │  ├─ ConstellationFigure.jsx # 별 좌표와 선으로 그리는 작은 별자리 모양 (목록 카드용)
 │  │  ├─ ConstellationMap.jsx # 별과 선으로 그리는 SVG 별자리 지도 (별 클릭 선택)
 │  │  ├─ FavoriteCard.jsx     # 즐겨찾기 카드 (모양, 이름, 기간, 오늘의 운세, 해제)
+│  │  ├─ PhotoRecordCard.jsx  # 사진 기록 카드 (사진 + 별자리 선, 제목, 날짜, 별자리 이동)
+│  │  ├─ PhotoRecordViewer.jsx # 사진 기록 크게 보기 (제목·날짜 수정, 삭제)
+│  │  ├─ RecordOverlay.jsx    # 저장한 사진 위에 별자리 선을 다시 그림
+│  │  ├─ SaveRecordDialog.jsx # 사진 분석 결과를 나의 기록에 저장하는 창 (제목, 날짜, 별자리 선택)
 │  │  ├─ StarInfoCard.jsx     # 선택한 별의 정보 카드
 │  │  ├─ ObservationSection.jsx # 관측 적기, 시간, 방향, 팁
 │  │  ├─ FortuneSection.jsx   # 오늘의 운세, 궁합, 12궁 운세 순위
 │  │  ├─ FloatingConstellation.jsx # 메인 화면에서 둥둥 떠다니는 별자리 (hover 확대, 클릭 이동)
 │  │  ├─ StarField.jsx        # 메인 화면 배경 반짝이는 별 (tsparticles)
-│  │  ├─ TopNav.jsx           # 상단 메뉴바 (홈, 별자리, 별 예보, 사진 분석, 즐겨찾기 이동)
+│  │  ├─ TopNav.jsx           # 상단 메뉴바 (홈, 별자리, 별 예보, 사진 분석, 나의 기록 이동)
 │  │  ├─ ForecastForm.jsx     # 별 예보 입력 폼 (지역, 날짜, 시간)
 │  │  ├─ RecentRegions.jsx    # 최근 검색한 지역 바로가기 (localStorage)
 │  │  ├─ ScoreCard.jsx        # 관측 적합도 점수 원형 게이지
@@ -41,16 +45,19 @@ Stargazer/
 │  │  ├─ detailPreview.jsx    # 별자리 목록·상세보기 등 화면 미리보기용 임시 진입점
 │  │  └─ homePreview.jsx      # 메인 화면 단독 미리보기용 임시 진입점
 │  ├─ pages/
+│  │  ├─ Archive.jsx          # 나의 기록 화면 (즐겨찾기·사진 기록 탭, 빈 화면 안내)
 │  │  ├─ ConstellationDetail.jsx  # 별자리 상세보기 화면 (유래, 지도, 관측 정보, 운세)
 │  │  ├─ ConstellationList.jsx # 별자리 목록 화면 (탭·계절 필터, 10개씩 페이지, 즐겨찾기)
-│  │  ├─ Favorites.jsx        # 즐겨찾기 화면 (즐겨찾기한 별자리 카드, 해제 애니메이션, 빈 화면 안내)
-│  │  ├─ Home.jsx             # 메인 화면 (로고, 메뉴(즐겨찾기 포함), 12별자리 배치)
+│  │  ├─ Home.jsx             # 메인 화면 (로고, 메뉴(나의 기록 포함), 12별자리 배치)
 │  │  ├─ PhotoAnalysis.jsx    # 사진 분석 화면
 │  │  └─ StarForecast.jsx     # 별 예보 화면 (입력 폼 + 점수, 조건, 밤하늘, 시간대별 그래프, 별자리)
+│  ├─ stores/
+│  │  └─ archiveStore.js      # 나의 기록 스토어 (Zustand + persist, IndexedDB에 즐겨찾기·사진 기록 저장)
 │  ├─ utils/
 │  │  ├─ constellations.js    # id로 별자리 데이터 조회
 │  │  ├─ constellationList.js # 별자리 목록 데이터 가공 (탭·계절 필터, 페이지 계산)
-│  │  ├─ favorites.js         # 즐겨찾기 별자리 저장 (localStorage)
+│  │  ├─ favorites.js         # 즐겨찾기 별자리 목록과 토글 (나의 기록 스토어 사용)
+│  │  ├─ photoRecord.js       # 사진 기록 도우미 (사진 줄이기, 촬영일 EXIF 읽기, 기본 제목)
 │  │  ├─ horoscopes.js        # 운세 조회, 순위 계산, 아이콘 경로
 │  │  ├─ forecast.js          # 별 예보 더미 계산 (점수, 달, 구름, 습도, 별자리)
 │  │  ├─ recentRegions.js     # 최근 검색 지역 저장 (localStorage)
@@ -87,11 +94,14 @@ Stargazer/
 | `/constellations` | 별자리 목록 |
 | `/forecast` | 별 예보 |
 | `/photo` | 사진 분석 |
-| `/favorites` | 즐겨찾기 |
+| `/archive` | 나의 기록 (즐겨찾기, `?tab=photos` 사진 기록). 예전 주소 `/favorites`는 여기로 이동 |
 | `/constellations/:id` | 별자리 상세보기 (예: `/constellations/aries`) |
 
 - 상단 메뉴의 "별자리"를 누르면 별자리 목록으로 이동하고, 카드를 누르면 상세보기로 이동 (상세보기 왼쪽 위 ← 버튼으로 목록 복귀)
-- 별자리 목록에서 ✦를 누른 별자리가 즐겨찾기 화면에 모이고, 카드의 ✦를 누르면 해제 (브라우저 localStorage에 저장)
+- 별자리 목록에서 ✦를 누른 별자리가 나의 기록의 즐겨찾기 탭에 모이고, 카드의 ✦를 누르면 해제
+- 사진 분석 결과에서 "나의 기록에 저장"을 누르면 제목·날짜(기본값: 사진 촬영일, 없으면 오늘)와 저장할 별자리를 골라 사진 기록 탭에 저장
+- 사진 기록을 누르면 크게 보고 제목·날짜를 수정하거나 삭제할 수 있음
+- 나의 기록은 브라우저 IndexedDB에 저장 (예전 localStorage 즐겨찾기는 처음 열 때 자동으로 옮겨짐)
 - 없는 주소로 접속하면 메인 화면으로 이동
 - 별자리 상세보기로 이동하면 맨 위부터 보이고, 별 예보는 갔다 돌아오면 보던 위치를 기억 (새로고침하면 초기화)
 - 별 예보의 밤하늘이나 "오늘 밤 볼 수 있는 별자리" 목록에서 별자리를 누르면 해당 상세보기로 이동
