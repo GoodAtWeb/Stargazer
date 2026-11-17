@@ -1,44 +1,48 @@
 .analysis {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
 }
 
 .analysis__card {
-  padding: 22px 22px 24px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 20px;
-  backdrop-filter: blur(8px);
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .analysis__card h2 {
-  margin: 0 0 4px;
+  margin: 0;
   font-size: 18px;
+  font-weight: 700;
 }
 
 .analysis__desc {
-  margin: 0 0 22px;
-  font-size: 13.5px;
-  color: rgba(220, 228, 255, 0.6);
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .analysis__bar-head {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin: 24px 0 10px;
   font-size: 13px;
-  color: rgba(220, 228, 255, 0.75);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .analysis__bar-head strong {
+  font-size: 44px;
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  line-height: 1;
   color: #fff;
+  font-variant-numeric: tabular-nums;
 }
 
 .analysis__bar {
-  height: 6px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.14);
   overflow: hidden;
 }
 
@@ -46,9 +50,33 @@
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #7fe3ff, #b8f1ff);
-  box-shadow: 0 0 10px rgba(127, 227, 255, 0.7);
+  background: #ffcf8b;
   transition: width 0.15s linear;
+}
+
+/* 빛줄기가 지나가며 찾은 별 개수 (사진 속 표시와 같은 하늘색) */
+.analysis__found {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.analysis__found strong {
+  min-width: 2ch;
+  font-size: 15px;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.analysis__found-dot {
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid #7fe3ff;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .analysis__steps {
@@ -66,7 +94,7 @@
   gap: 12px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.45);
-  transition: color 0.2s ease;
+  transition: color 0.2s;
 }
 
 .analysis__dot {
@@ -85,18 +113,18 @@
 }
 
 .analysis__step--current .analysis__dot {
-  border-color: rgba(127, 227, 255, 0.25);
-  border-top-color: #7fe3ff;
+  border-color: rgba(255, 207, 139, 0.25);
+  border-top-color: #ffcf8b;
   animation: step-spin 0.9s linear infinite;
 }
 
 .analysis__step--done {
-  color: rgba(220, 228, 255, 0.85);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .analysis__step--done .analysis__dot {
-  border-color: #7fe3ff;
-  background: #7fe3ff;
+  border-color: #ffcf8b;
+  background: #ffcf8b;
 }
 
 .analysis__step--done .analysis__dot::after {
@@ -117,17 +145,19 @@
   }
 }
 
+/* 보조 버튼: 테두리만 있는 버튼 */
 .analysis__cancel {
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: transparent;
   color: #fff;
   font: inherit;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
+  transition: background 0.15s;
 }
 
 .analysis__cancel:hover {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.12);
 }

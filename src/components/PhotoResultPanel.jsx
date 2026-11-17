@@ -10,7 +10,44 @@ const getBrightestStar = (stars) =>
   stars.reduce((a, b) => (b.magnitude < a.magnitude ? b : a))
 
 // 찾은 별자리 목록, 선택한 별자리 설명, 다시 분석/저장 버튼으로 이루어진 결과 패널
-function PhotoResultPanel({ detected, selectedId, onSelect, onReset, onSave, isSaving }) {
+function PhotoResultPanel({ detected, starCount, selectedId, onSelect, onReset, onSave, isSaving }) {
+  const actions = (
+    <div className="result-panel__actions">
+      <button type="button" className="result-panel__btn" onClick={onReset}>
+        다른 사진 분석
+      </button>
+      <button
+        type="button"
+        className="result-panel__btn result-panel__btn--primary"
+        onClick={onSave}
+        disabled={isSaving}
+      >
+        {isSaving ? '저장 중…' : '결과 저장'}
+      </button>
+    </div>
+  )
+
+  // 별은 찾았지만 별자리 모양과 맞는 별 묶음이 없을 때
+  if (detected.length === 0) {
+    return (
+      <aside className="result-panel">
+        <section className="result-panel__card result-panel__empty">
+          <h2>별자리를 찾지 못했어요</h2>
+          <p>
+            사진에서 별 {starCount}개를 찾았지만, 별자리 모양과 맞는 별 묶음은 없었어요.
+            하늘을 더 넓게, 흔들리지 않게 찍으면 찾을 가능성이 높아져요.
+          </p>
+        </section>
+        {actions}
+      </aside>
+    )
+  }
+
+  return <ResultDetail detected={detected} selectedId={selectedId} onSelect={onSelect} actions={actions} />
+}
+
+// 찾은 별자리 목록과 선택한 별자리 설명
+function ResultDetail({ detected, selectedId, onSelect, actions }) {
   const navigate = useNavigate()
   const selected = detected.find((item) => item.id === selectedId) ?? detected[0]
   const { constellation } = selected
@@ -44,7 +81,7 @@ function PhotoResultPanel({ detected, selectedId, onSelect, onReset, onSave, isS
                   <span className="result-list__name">
                     <strong>{c.nameKo}</strong>
                     <small>
-                      {c.nameEn} · 별 {c.stars.length}개 일치
+                      {c.nameEn} · 별 {c.stars.length}개 중 {item.matched}개 일치
                     </small>
                   </span>
                   <span className="result-list__confidence">{item.confidence}%</span>
@@ -82,19 +119,7 @@ function PhotoResultPanel({ detected, selectedId, onSelect, onReset, onSave, isS
         </button>
       </section>
 
-      <div className="result-panel__actions">
-        <button type="button" className="result-panel__btn" onClick={onReset}>
-          다른 사진 분석
-        </button>
-        <button
-          type="button"
-          className="result-panel__btn result-panel__btn--primary"
-          onClick={onSave}
-          disabled={isSaving}
-        >
-          {isSaving ? '저장 중…' : '결과 저장'}
-        </button>
-      </div>
+      {actions}
     </aside>
   )
 }
