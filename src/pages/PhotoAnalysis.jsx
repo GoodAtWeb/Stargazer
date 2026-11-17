@@ -6,8 +6,9 @@ import PhotoUploader from '../components/PhotoUploader'
 import TopNav from '../components/TopNav'
 import {
   ANALYSIS_DURATION,
+  SCAN_DURATION,
   createAnalysisResult,
-  detectBrightSpots,
+  detectStars,
   downloadResultImage,
   loadImage,
 } from '../utils/photoAnalysis'
@@ -18,7 +19,8 @@ const INITIAL = {
   file: null,
   photoUrl: null,
   aspect: 16 / 9,
-  spots: [],
+  spots: null,
+  foundCount: 0,
   progress: 0,
   result: null,
 }
@@ -29,54 +31,52 @@ function PhotoAnalysis() {
   const [selectedId, setSelectedId] = useState(null)
   const [loadError, setLoadError] = useState(null)
   const [isSaving, setIsSaving] = useState(false)
-  const { status, file, photoUrl, aspect, spots, progress, result } = state
+  const { status, file, photoUrl, aspect, spots, foundCount, progress, result } = state
 
-  // 분석 중일 때 진행률을 올리고, 사진의 밝은 점을 찾은 뒤 결과를 만듦
+  // 사진에서 별을 먼저 찾은 뒤 스캔을 시작하고, 빛줄기가 지나간 만큼 찾은 별 개수를 늘림
   useEffect(() => {
     if (status !== 'analyzing') return
     const run = { cancelled: false, frame: 0 }
 
-    const detection = loadImage(photoUrl).then((img) => {
-      const found = detectBrightSpots(img)
-      if (!run.cancelled) {
-        setState((s) => ({
-          ...s,
-          aspect: img.naturalWidth / img.naturalHeight,
-          spots: found.points,
-        }))
-      }
-      return found.count
-    })
-
-    detection.catch(() => {
-      if (run.cancelled) return
-      URL.revokeObjectURL(photoUrl)
-      setState(INITIAL)
-      setLoadError('사진을 읽을 수 없어요. JPG나 PNG 사진으로 다시 시도해 주세요.')
-    })
-
-    const start = performance.now()
-    const tick = (now) => {
-      const next = Math.min(100, ((now - start) / ANALYSIS_DURATION) * 100)
-      setState((s) => ({ ...s, progress: next }))
-      if (next < 100) {
-        run.frame = requestAnimationFrame(tick)
-        return
-      }
-      detection.then((count) => {
+    loadImage(photoUrl)
+      .then((img) => {
         if (run.cancelled) return
-        const analysis = createAnalysisResult(file, count)
-        setSelectedId(analysis.detected[0].id)
-        setState((s) => ({ ...s, status: 'done', result: analysis }))
-      }, () => {})
-    }
-    run.frame = requestAnimationFrame(tick)
+        const aspect = img.naturalWidth / img.naturalHeight
+        const found = detectStars(img)
+        // 찾은 별들과 별자리 모양을 맞춰 보는 계산은 스캔 전에 미리 끝내 둠
+        const analysis = createAnalysisResult(found.points, found.count, aspect)
+        setState((s) => ({ ...s, aspect, spots: found.points }))
+
+        // 빛줄기 아래쪽 끝이 각 별의 높이에 닿는 시각(ms)
+        const revealAt = found.points.map((p) => (p.y / 100) * SCAN_DURATION)
+        const start = performance.now()
+        const tick = (now) => {
+          const elapsed = now - start
+          const next = Math.min(100, (elapsed / ANALYSIS_DURATION) * 100)
+          const foundCount =
+            elapsed >= SCAN_DURATION ? found.count : revealAt.filter((t) => t <= elapsed).length
+          setState((s) => ({ ...s, progress: next, foundCount }))
+          if (next < 100) {
+            run.frame = requestAnimationFrame(tick)
+            return
+          }
+          setSelectedId(analysis.detected[0]?.id ?? null)
+          setState((s) => ({ ...s, status: 'done', result: analysis }))
+        }
+        run.frame = requestAnimationFrame(tick)
+      })
+      .catch(() => {
+        if (run.cancelled) return
+        URL.revokeObjectURL(photoUrl)
+        setState(INITIAL)
+        setLoadError('사진을 읽을 수 없어요. JPG나 PNG 사진으로 다시 시도해 주세요.')
+      })
 
     return () => {
       run.cancelled = true
       cancelAnimationFrame(run.frame)
     }
-  }, [status, photoUrl, file])
+  }, [status, photoUrl])
 
   const handleSelect = (nextFile) => {
     setLoadError(null)
@@ -139,23 +139,34 @@ function PhotoAnalysis() {
                   <div>
                     <dt>가장 밝은 별</dt>
                     <dd>
-                      {result.brightest.nameKo}
-                      <small>{result.brightest.brightness}</small>
+                      {result.brightest ? (
+                        <>
+                          {result.brightest.nameKo}
+                          <small>{result.brightest.brightness}</small>
+                        </>
+                      ) : (
+                        '-'
+                      )}
                     </dd>
                   </div>
                   <div>
                     <dt>추정 방향</dt>
-                    <dd>{result.direction}</dd>
+                    <dd>{result.direction ?? '-'}</dd>
                   </div>
                 </dl>
               )}
             </div>
 
             {status === 'analyzing' ? (
-              <AnalysisProgress progress={progress} onCancel={handleReset} />
+              <AnalysisProgress
+                progress={progress}
+                foundCount={foundCount}
+                onCancel={handleReset}
+              />
             ) : (
               <PhotoResultPanel
                 detected={result.detected}
+                starCount={result.starCount}
                 selectedId={selectedId}
                 onSelect={setSelectedId}
                 onReset={handleReset}
