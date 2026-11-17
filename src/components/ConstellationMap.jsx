@@ -7,6 +7,9 @@ import './ConstellationMap.css'
 const PADDING = 10
 const DEFAULT_CARD_HEIGHT = 380
 const CONNECTOR_INSET = 28
+const LINE_DURATION = 0.8
+const LINE_STAGGER = 0.08
+const MAP_SCALE = { scorpio: 1.3 }
 
 // 별 좌표 전체를 감싸는 SVG viewBox 범위를 계산
 const getBounds = (stars) => {
@@ -36,6 +39,7 @@ const clamp = (value, min, max) => Math.max(min, Math.min(value, max))
 function ConstellationMap({ constellation, selectedId, onSelect }) {
   const { stars, lines, nameKo } = constellation
   const bounds = getBounds(stars)
+  const mapScale = MAP_SCALE[constellation.id] ?? 1
   const starById = Object.fromEntries(stars.map((s) => [s.id, s]))
   const selected = starById[selectedId]
   const mapRef = useRef(null)
@@ -63,14 +67,20 @@ function ConstellationMap({ constellation, selectedId, onSelect }) {
     <div
       ref={mapRef}
       className="constellation-map"
-      style={{ aspectRatio: `${bounds.width} / ${bounds.height}` }}
+      style={{
+        aspectRatio: `${bounds.width} / ${bounds.height}`,
+        height: `min(${62 * mapScale}vh, ${640 * mapScale}px)`,
+      }}
     >
       <svg
         viewBox={`${bounds.x} ${bounds.y} ${bounds.width} ${bounds.height}`}
         role="group"
         aria-label={`${nameKo} 별자리 지도`}
       >
-        <ConstellationArt id={constellation.id} />
+        <ConstellationArt
+          id={constellation.id}
+          delay={(lines.length - 1) * LINE_STAGGER + LINE_DURATION}
+        />
 
         {lines.map(([from, to], i) => (
           <motion.line
@@ -82,7 +92,7 @@ function ConstellationMap({ constellation, selectedId, onSelect }) {
             y2={starById[to].y}
             initial={{ pathLength: 0, opacity: 0 }}
             animate={{ pathLength: 1, opacity: 1 }}
-            transition={{ duration: 0.8, delay: i * 0.08 }}
+            transition={{ duration: LINE_DURATION, delay: i * LINE_STAGGER }}
           />
         ))}
 

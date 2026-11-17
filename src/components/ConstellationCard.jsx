@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import ConstellationFigure from './ConstellationFigure'
 import './ConstellationCard.css'
 
@@ -8,10 +8,15 @@ const SPARKLE = 'M12 2Q12 12 22 12Q12 12 12 22Q12 12 2 12Q12 12 12 2Z'
 // 별자리 모양, 이름, 계절·대표 별을 보여 주고 누르면 상세 화면으로 이동하는 카드
 function ConstellationCard({ item, favorite, onToggleFavorite }) {
   const { id, nameKo, nameEn, season, brightStar, figure } = item
+  const { search } = useLocation()
 
   return (
     <li className="constellation-card">
-      <Link to={`/constellations/${id}`} className="constellation-card__link">
+      <Link
+        to={`/constellations/${id}`}
+        state={{ from: `/constellations${search}` }}
+        className="constellation-card__link"
+      >
         <div className="constellation-card__figure">
           <ConstellationFigure figure={figure} />
         </div>

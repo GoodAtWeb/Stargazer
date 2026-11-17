@@ -110,3 +110,45 @@
 .detail__stage--selected {
   padding-right: 420px;
 }
+
+@media (max-width: 1100px) {
+  .detail__stage--selected {
+    padding-right: 0;
+    padding-bottom: 440px;
+  }
+}
+
+@media (max-width: 900px) {
+  .detail__bar {
+    padding: 16px 5vw 0;
+  }
+
+  .detail {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+    padding: 24px 5vw 32px;
+  }
+
+  .detail__bar + .detail {
+    padding-top: 12px;
+  }
+
+  .detail__header h1 {
+    margin-bottom: 12px;
+    font-size: 34px;
+  }
+
+  .detail__meta {
+    font-size: 15px;
+  }
+
+  .detail__period {
+    font-size: 18px;
+  }
+
+  .detail__origin p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}

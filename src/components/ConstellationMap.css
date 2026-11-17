@@ -102,3 +102,14 @@
 .constellation-art {
   pointer-events: none;
 }
+
+@media (max-width: 1100px) {
+  .constellation-map {
+    width: min(100%, 640px);
+    height: auto !important;
+  }
+
+  .constellation-map__connector {
+    display: none;
+  }
+}

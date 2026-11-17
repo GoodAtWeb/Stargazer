@@ -87,3 +87,24 @@
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
 }
+
+@media (max-width: 1100px) {
+  .star-card {
+    top: 100% !important;
+    left: 0;
+    width: 100%;
+    margin-top: 16px;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .star-card {
+    padding: 22px 18px 18px;
+    border-radius: 22px;
+  }
+
+  .star-card__head h2 {
+    font-size: 22px;
+  }
+}
