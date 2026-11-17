@@ -1,5 +1,6 @@
 import { memo, useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
+import { useNavigate } from 'react-router-dom'
 import { AnimatePresence, animate, motion, useMotionValue, useMotionValueEvent, useTransform } from 'framer-motion'
 import { getDirectionName } from '../utils/sky'
 import './NightSky.css'
@@ -47,7 +48,7 @@ const moonLitPath = (radius, fraction) => {
 }
 
 // 한 바퀴(360도) 분량의 별, 별자리, 달을 그림
-const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive }) {
+const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive, onSelect }) {
   const { constellations, background, moon, limitMagnitude, moonInfo } = sky
 
   return (
@@ -90,8 +91,11 @@ const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive }) {
             onPointerLeave={() => onActive(null)}
             onFocus={() => onActive(c.id)}
             onBlur={() => onActive(null)}
+            role="link"
             tabIndex={copy === 0 ? 0 : -1}
-            aria-label={c.nameKo}
+            aria-label={`${c.nameKo} 상세 보기`}
+            onClick={() => onSelect(c.id)}
+            onKeyDown={(e) => e.key === 'Enter' && onSelect(c.id)}
           >
             <rect
               className="night-sky__hit"
@@ -249,7 +253,7 @@ function useSkyDrag(controls, enabled) {
 }
 
 // 하늘 그림 한 장 (일반 화면과 전체 화면에서 같이 씀)
-function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive, onToggleExpand }) {
+function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive, onSelect, onToggleExpand }) {
   const x = useTransform(controls.center, (c) => WIDTH / 2 - c * PPD)
   const { ref, handlers } = useSkyDrag(controls, expanded)
 
@@ -261,7 +265,15 @@ function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive
     .join(' ')
 
   return (
-    <div ref={ref} className={className} onDoubleClick={onToggleExpand} {...handlers}>
+    <div
+      ref={ref}
+      className={className}
+      onDoubleClick={(e) => {
+        // 별자리 위에서의 더블클릭은 이동 중이므로 크게 보기를 열지 않음
+        if (!e.target.closest('.night-sky__constellation')) onToggleExpand()
+      }}
+      {...handlers}
+    >
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         preserveAspectRatio={expanded ? 'xMidYMid slice' : 'xMidYMax slice'}
@@ -295,7 +307,7 @@ function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive
           >
             {COPIES.map((k) => (
               <g key={k} transform={`translate(${k * 360 * PPD} 0)`}>
-                <SkyLayer sky={sky} copy={k} activeId={activeId} onActive={onActive} />
+                <SkyLayer sky={sky} copy={k} activeId={activeId} onActive={onActive} onSelect={onSelect} />
               </g>
             ))}
           </motion.g>
@@ -325,6 +337,7 @@ function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive
 
 // 선택한 지역, 날짜, 시간의 밤하늘을 보여주는 섹션. 더블클릭하면 전체 화면에서 마우스로 돌려볼 수 있음
 function NightSky({ sky, skyKey, activeId, onActive, focus }) {
+  const navigate = useNavigate()
   const [expanded, setExpanded] = useState(false)
   const [showAll, setShowAll] = useState(false)
   const [activeView, setActiveView] = useState(180)
@@ -372,6 +385,11 @@ function NightSky({ sky, skyKey, activeId, onActive, focus }) {
     setActiveView(near ? near.az : null)
   })
 
+  // 별자리를 누르면 그 별자리의 상세 페이지로 이동
+  const selectConstellation = (id) => {
+    navigate(`/constellations/${id}`)
+  }
+
   const toggleExpand = () => {
     setExpanded((value) => !value)
   }
@@ -413,6 +431,7 @@ function NightSky({ sky, skyKey, activeId, onActive, focus }) {
       showAll={showAll}
       activeId={activeId}
       onActive={onActive}
+      onSelect={selectConstellation}
       onToggleExpand={toggleExpand}
     />
   )
