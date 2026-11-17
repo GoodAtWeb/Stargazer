@@ -19,19 +19,20 @@ const MENUS = [
 
 // x, y: 시안 기준 중심 좌표(%) / mobile: 세로 화면용 좌표(%), 로고 위아래로 엇갈리게
 // spread: 아이콘 안 별들의 가로·세로 반경 (버튼 크기 대비)
+// labelReach: 이름표가 놓이는 가운데 폭에서 별·그림의 위·아래 끝 (버튼 크기 대비, 픽셀로 측정)
 const LAYOUT = [
-  { id: 'aquarius', x: 10.8, y: 27.6, mobile: [2, 2], spread: [0.22, 0.34] },
-  { id: 'aries', x: 29.3, y: 24.9, mobile: [62, 0], spread: [0.31, 0.17] },
-  { id: 'cancer', x: 47.3, y: 17.5, mobile: [98, 12], spread: [0.19, 0.29] },
-  { id: 'capricorn', x: 69, y: 26.7, mobile: [6, 28], spread: [0.34, 0.28] },
-  { id: 'gemini', x: 87.5, y: 24.9, mobile: [68, 27], spread: [0.24, 0.33] },
-  { id: 'taurus', x: 21.5, y: 59, mobile: [30, 14], spread: [0.33, 0.26] },
-  { id: 'sagittarius', x: 76.5, y: 55.3, mobile: [36, 72], spread: [0.34, 0.29] },
-  { id: 'leo', x: 10, y: 83, mobile: [100, 74], spread: [0.34, 0.29] },
-  { id: 'libra', x: 33.5, y: 84.8, mobile: [0, 86], spread: [0.33, 0.26] },
-  { id: 'pisces', x: 51, y: 74.7, mobile: [30, 100], spread: [0.36, 0.33] },
-  { id: 'virgo', x: 68, y: 80.2, mobile: [66, 88], spread: [0.31, 0.34] },
-  { id: 'scorpio', x: 86.5, y: 77.4, mobile: [96, 100], spread: [0.33, 0.34] },
+  { id: 'aquarius', x: 10.8, y: 27.6, mobile: [2, 2], spread: [0.22, 0.34], labelReach: [0.31, 0.44] },
+  { id: 'aries', x: 29.3, y: 24.9, mobile: [62, 0], spread: [0.31, 0.17], labelReach: [0.26, 0.26] },
+  { id: 'cancer', x: 47.3, y: 17.5, mobile: [98, 12], spread: [0.19, 0.29], labelReach: [0.27, 0.38] },
+  { id: 'capricorn', x: 69, y: 26.7, mobile: [6, 28], spread: [0.34, 0.28], labelReach: [0.31, 0.43] },
+  { id: 'gemini', x: 87.5, y: 24.9, mobile: [68, 27], spread: [0.24, 0.33], labelReach: [0.46, 0.39] },
+  { id: 'taurus', x: 21.5, y: 59, mobile: [30, 14], spread: [0.33, 0.26], labelReach: [0.26, 0.27] },
+  { id: 'sagittarius', x: 76.5, y: 55.3, mobile: [36, 72], spread: [0.34, 0.29], labelReach: [0.39, 0.39] },
+  { id: 'leo', x: 10, y: 83, mobile: [100, 74], spread: [0.34, 0.29], labelReach: [0.38, 0.31] },
+  { id: 'libra', x: 33.5, y: 84.8, mobile: [0, 86], spread: [0.33, 0.26], labelReach: [0.38, 0.39] },
+  { id: 'pisces', x: 51, y: 74.7, mobile: [30, 100], spread: [0.36, 0.33], labelReach: [0.1, 0.39] },
+  { id: 'virgo', x: 68, y: 80.2, mobile: [66, 88], spread: [0.31, 0.34], labelReach: [0.3, 0.48] },
+  { id: 'scorpio', x: 86.5, y: 77.4, mobile: [96, 100], spread: [0.33, 0.34], labelReach: [0.15, 0.43] },
 ]
 
 const APPEAR_ORDER = [3, 8, 0, 6, 10, 2, 7, 4, 9, 1, 11, 5]
@@ -80,6 +81,8 @@ const GLOW = 0.05
 const ART_RADIUS = 0.46
 // 로고·메뉴 여백 (둥둥 떠오르는 높이 포함)
 const BLOCK_PADDING = 22
+// hover 이름표가 별·그림 바깥으로 차지하는 높이(px, 간격 포함)
+const LABEL_SPACE = 36
 // 화면 끝 여백 (화면 대비, 최소 px)
 const SAFE_X = 0.05
 const SAFE_Y = 0.06
@@ -98,23 +101,25 @@ const getSafeArea = (width, height) => {
   return { left: padX, right: width - padX, top: padY, bottom: height - padY }
 }
 
-// 별들이 차지하는 가로·세로 반경(px)
-const getHalf = (constellation, size, scale = 1) => ({
-  x: (constellation.spread[0] + GLOW) * size * scale,
-  y: (constellation.spread[1] + GLOW) * size * scale,
-})
+// 별들이 중심에서 차지하는 가로·위·아래 거리(px)
+const getHalf = (constellation, size, scale = 1) => {
+  const y = (constellation.spread[1] + GLOW) * size * scale
+  return { x: (constellation.spread[0] + GLOW) * size * scale, top: y, bottom: y }
+}
+
+const getLabelReach = (constellation, below) => constellation.labelReach[below ? 1 : 0]
 
 const clampToSafe = (point, half, safe) => ({
   x: clamp(point.x, safe.left + half.x, safe.right - half.x),
-  y: clamp(point.y, safe.top + half.y, safe.bottom - half.y),
+  y: clamp(point.y, safe.top + half.top, safe.bottom - half.bottom),
 })
 
 // 로고·메뉴 영역에 겹치면 가장 가까운 바깥쪽으로 옮김 (여백 밖으로 나가는 방향은 제외)
-const moveOutOfBlock = (point, half, edgeHalf, block, safe) => {
+const moveOutOfBlock = (point, half, block, safe) => {
   const left = block.left - half.x
   const right = block.right + half.x
-  const top = block.top - half.y
-  const bottom = block.bottom + half.y
+  const top = block.top - half.bottom
+  const bottom = block.bottom + half.top
   if (point.x <= left || point.x >= right || point.y <= top || point.y >= bottom) return point
 
   const candidates = [
@@ -124,10 +129,10 @@ const moveOutOfBlock = (point, half, edgeHalf, block, safe) => {
     { x: point.x, y: bottom },
   ].filter(
     (c) =>
-      c.x >= safe.left + edgeHalf.x &&
-      c.x <= safe.right - edgeHalf.x &&
-      c.y >= safe.top + edgeHalf.y &&
-      c.y <= safe.bottom - edgeHalf.y,
+      c.x >= safe.left + half.x &&
+      c.x <= safe.right - half.x &&
+      c.y >= safe.top + half.top &&
+      c.y <= safe.bottom - half.bottom,
   )
   if (candidates.length === 0) return null
   return candidates.reduce((best, c) =>
@@ -163,7 +168,7 @@ const separate = (points, fixed, gapFor, safe, block, size) => {
       if (p === fixed) return
       const half = getHalf(CONSTELLATIONS[i], size)
       Object.assign(p, clampToSafe(p, half, safe))
-      const placed = moveOutOfBlock(p, half, half, block, safe)
+      const placed = moveOutOfBlock(p, half, block, safe)
       if (placed) Object.assign(p, placed)
     })
   }
@@ -184,7 +189,7 @@ const getRestPositions = (width, height, size, block, portrait) => {
     return {
       id: c.id,
       x: toRange(x, portrait ? MOBILE_RANGE : X_RANGE, safe.left, safe.right, half.x),
-      y: toRange(y, portrait ? MOBILE_RANGE : Y_RANGE, safe.top, safe.bottom, half.y),
+      y: toRange(y, portrait ? MOBILE_RANGE : Y_RANGE, safe.top, safe.bottom, half.top),
     }
   })
   const origin = points.map((p) => ({ ...p }))
@@ -198,7 +203,7 @@ const getRestPositions = (width, height, size, block, portrait) => {
 const getHoverLayout = (hoveredId, rest, width, height, size, block) => {
   const offsets = {}
   const index = rest.findIndex((p) => p.id === hoveredId)
-  if (index < 0) return { offsets, hoverScale: 1 }
+  if (index < 0) return { offsets, hoverScale: 1, labelBelow: false }
 
   const safe = getSafeArea(width, height)
   const target = CONSTELLATIONS[index]
@@ -206,19 +211,32 @@ const getHoverLayout = (hoveredId, rest, width, height, size, block) => {
   const hovered = points[index]
   const maxScale = Math.min(HOVER_SCALE, (height * HOVER_MAX_HEIGHT) / (size * 2 * ART_RADIUS))
   let hoverScale = 1
+  let labelBelow = false
 
-  // 별은 여백 안, 그림은 화면 안에 들어오게
+  // 별은 여백 안, 그림은 화면 안에 들어오게. 이름표는 위가 막히면 아래로
   const screen = { left: 0, right: width, top: 0, bottom: height }
-  for (let scale = maxScale; scale > 1; scale -= 0.05) {
-    const half = getHalf(target, size, scale)
-    const artHalf = { x: size * ART_RADIUS * scale, y: size * ART_RADIUS * scale }
+  const tryPlace = (scale, below) => {
+    const stars = getHalf(target, size, scale)
+    const label = getLabelReach(target, below) * size * scale + LABEL_SPACE
+    const half = below
+      ? { ...stars, bottom: Math.max(stars.bottom, label) }
+      : { ...stars, top: Math.max(stars.top, label) }
+    const art = size * ART_RADIUS * scale
+    const artHalf = { x: art, top: art, bottom: art }
     const start = clampToSafe(clampToSafe(rest[index], artHalf, screen), half, safe)
-    const placed = moveOutOfBlock(start, half, half, block, safe)
+    const placed = moveOutOfBlock(start, half, block, safe)
     const shift = placed && Math.hypot(placed.x - rest[index].x, placed.y - rest[index].y)
-    if (placed && shift <= size * HOVER_MAX_SHIFT) {
-      Object.assign(hovered, placed)
-      hoverScale = scale
-      break
+    return placed && shift <= size * HOVER_MAX_SHIFT ? placed : null
+  }
+  search: for (let scale = maxScale; scale >= 1 - 1e-6; scale -= 0.05) {
+    for (const below of [false, true]) {
+      const placed = tryPlace(Math.max(scale, 1), below)
+      if (placed) {
+        Object.assign(hovered, placed)
+        hoverScale = Math.max(scale, 1)
+        labelBelow = below
+        break search
+      }
     }
   }
 
@@ -236,7 +254,7 @@ const getHoverLayout = (hoveredId, rest, width, height, size, block) => {
     const dy = p.y - rest[i].y
     if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) offsets[p.id] = { x: dx, y: dy }
   })
-  return { offsets, hoverScale }
+  return { offsets, hoverScale, labelBelow }
 }
 
 function Home() {
@@ -280,11 +298,11 @@ function Home() {
       area.block ? getRestPositions(area.width, area.height, size, area.block, portrait) : null,
     [area.width, area.height, size, area.block, portrait],
   )
-  const { offsets, hoverScale } = useMemo(
+  const { offsets, hoverScale, labelBelow } = useMemo(
     () =>
       rest
         ? getHoverLayout(hoveredId, rest, area.width, area.height, size, area.block)
-        : { offsets: {}, hoverScale: 1 },
+        : { offsets: {}, hoverScale: 1, labelBelow: false },
     [hoveredId, rest, area.width, area.height, size, area.block],
   )
 
@@ -306,6 +324,8 @@ function Home() {
             offset={offsets[c.id] ?? NO_OFFSET}
             hovered={hoveredId === c.id}
             hoverScale={hoverScale}
+            labelReach={[getLabelReach(c, false), getLabelReach(c, true)]}
+            labelBelow={hoveredId === c.id && labelBelow}
             introDelay={c.introDelay}
             float={c.float}
             onHoverChange={(isHovered) =>
