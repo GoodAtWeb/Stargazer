@@ -2,7 +2,7 @@ import { ANALYSIS_STEPS } from '../utils/photoAnalysis'
 import './AnalysisProgress.css'
 
 // 진행률과 단계별 상태(완료/진행 중/대기)를 보여주는 분석 중 패널
-function AnalysisProgress({ progress, onCancel }) {
+function AnalysisProgress({ progress, foundCount, onCancel }) {
   const percent = Math.round(progress)
   const currentIndex = ANALYSIS_STEPS.findIndex((step) => progress < step.until)
 
@@ -26,6 +26,11 @@ function AnalysisProgress({ progress, onCancel }) {
         >
           <span style={{ width: `${percent}%` }} />
         </div>
+
+        <p className="analysis__found" aria-live="polite">
+          <span className="analysis__found-dot" aria-hidden="true" />
+          찾은 별 <strong>{foundCount}</strong>개
+        </p>
 
         <ol className="analysis__steps">
           {ANALYSIS_STEPS.map((step, i) => {

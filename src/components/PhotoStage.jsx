@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
-import { placeStars } from '../utils/photoAnalysis'
+import { SCAN_DURATION } from '../utils/photoAnalysis'
 import './PhotoStage.css'
 
-const SCAN_DURATION = 2.4
+const SCAN_SECONDS = SCAN_DURATION / 1000
+const BRIGHT_SPOT = 0.6 // 상대 밝기가 이 이상이면 밝은 별로 강조
 
 // 등급이 작을수록(밝을수록) 큰 반지름을 반환
 const getStarRadius = (magnitude) => 0.35 + (4 - magnitude) * 0.12
@@ -11,6 +12,8 @@ const getStarRadius = (magnitude) => 0.35 + (4 - magnitude) * 0.12
 function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSelect }) {
   const viewHeight = 100 / aspect
   const isAnalyzing = status === 'analyzing'
+  // 별을 다 찾은 뒤에 스캔을 시작해야 빛줄기와 별 표시 시점이 맞음
+  const isScanning = isAnalyzing && spots !== null
 
   return (
     <div className="photo-stage">
@@ -22,20 +25,24 @@ function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSel
           viewBox={`0 0 100 ${viewHeight}`}
           aria-hidden={isAnalyzing}
         >
-          {isAnalyzing &&
-            spots.map((p, i) => (
-              <circle
-                key={i}
-                className="photo-stage__spot"
-                cx={p.x}
-                cy={(p.y / 100) * viewHeight}
-                r={0.9}
-                style={{ animationDelay: `${(p.y / 100) * SCAN_DURATION}s` }}
-              />
-            ))}
+          {isScanning &&
+            spots.map((p, i) => {
+              const delay = (p.y / 100) * SCAN_SECONDS
+              const isBright = p.b >= BRIGHT_SPOT
+              return (
+                <circle
+                  key={i}
+                  className={`photo-stage__spot${isBright ? ' photo-stage__spot--bright' : ''}`}
+                  cx={p.x}
+                  cy={(p.y / 100) * viewHeight}
+                  r={0.6 + p.b * 1.1}
+                  style={{ animationDelay: `${delay}s, ${delay + 0.6}s` }}
+                />
+              )
+            })}
 
           {result?.detected.map((item, index) => {
-            const stars = placeStars(item, viewHeight)
+            const stars = item.placed
             const isActive = item.id === selectedId
 
             return (
@@ -44,6 +51,7 @@ function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSel
                 className={`photo-stage__group${isActive ? ' photo-stage__group--active' : ''}`}
                 onClick={() => onSelect(item.id)}
               >
+                {/* 사진에서 못 찾은 별(모양으로 추정한 위치)도 실제 별자리처럼 실선으로 이음 */}
                 {item.constellation.lines.map(([from, to], i) => (
                   <motion.line
                     key={`${from}-${to}`}
@@ -72,7 +80,7 @@ function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSel
         </svg>
 
         {result?.detected.map((item, index) => {
-          const stars = Object.values(placeStars(item, viewHeight))
+          const stars = Object.values(item.placed)
           const top = Math.min(...stars.map((s) => s.py))
           const isActive = item.id === selectedId
 
@@ -92,11 +100,11 @@ function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSel
           )
         })}
 
-        {isAnalyzing && (
+        {isScanning && (
           <div className="photo-stage__scan" aria-hidden="true">
             <div
               className="photo-stage__beam"
-              style={{ animationDuration: `${SCAN_DURATION}s` }}
+              style={{ animationDuration: `${SCAN_SECONDS}s` }}
             />
           </div>
         )}

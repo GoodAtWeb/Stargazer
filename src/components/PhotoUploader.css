@@ -2,24 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   padding: 72px 24px;
   text-align: center;
-  background: rgba(20, 27, 60, 0.55);
-  border: 1.5px dashed rgba(255, 255, 255, 0.28);
-  border-radius: 24px;
-  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
   cursor: pointer;
   transition:
-    border-color 0.2s ease,
-    background 0.2s ease;
+    border-color 0.2s,
+    background 0.2s;
 }
 
 .uploader:hover,
 .uploader:focus-visible,
 .uploader--dragging {
-  border-color: #ffd34d;
-  background: rgba(30, 40, 84, 0.65);
+  border-color: rgba(255, 207, 139, 0.8);
+  background: rgba(255, 255, 255, 0.1);
   outline: none;
 }
 
@@ -28,16 +27,23 @@
   place-items: center;
   width: 52px;
   height: 52px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.uploader:hover .uploader__icon,
+.uploader--dragging .uploader__icon {
+  color: #ffcf8b;
 }
 
 .uploader__icon svg {
   width: 24px;
   height: 24px;
   fill: none;
-  stroke: #fff;
+  stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -51,18 +57,24 @@
 
 .uploader__hint {
   margin: 0;
-  font-size: 13.5px;
-  color: rgba(220, 228, 255, 0.6);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
+/* 별 예보의 검색 버튼과 같은 모양 */
 .uploader__button {
-  margin-top: 14px;
-  padding: 10px 22px;
-  border-radius: 999px;
-  background: #ffd34d;
+  margin-top: 16px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  background: #ffcf8b;
   color: #1b2140;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
+  transition: background 0.15s;
+}
+
+.uploader:hover .uploader__button {
+  background: #ffdca3;
 }
 
 .uploader__error {
@@ -71,30 +83,29 @@
   color: #ff9b9b;
 }
 
+/* 촬영 팁 */
 .photo-tips {
-  margin-top: 32px;
-  padding: 24px 28px 28px;
-  background: rgb(244, 244, 244, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .photo-tips h2 {
-  margin: 0 0 4px;
+  margin: 0;
   font-size: 18px;
+  font-weight: 700;
 }
 
 .photo-tips > p {
-  margin: 0 0 18px;
-  font-size: 14px;
-  color: rgba(220, 228, 255, 0.6);
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
+/* 상세보기의 관측 정보처럼 박스 없이 세로 구분선으로 3칸을 나눔 */
 .photo-tips ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin: 0;
+  margin: 20px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -102,25 +113,42 @@
 .photo-tips li {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 16px 18px;
-  background: rgba(16, 22, 56, 0.38);
-  border-radius: 14px;
+  gap: 8px;
+  padding: 0 28px;
+}
+
+.photo-tips li:first-child {
+  padding-left: 0;
+}
+
+.photo-tips li + li {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .photo-tips strong {
-  font-size: 15px;
-  color: #FFFFFF;
+  font-size: 16px;
+  color: #ffcf8b;
 }
 
 .photo-tips span {
   font-size: 13.5px;
   line-height: 1.6;
-  color: #D6DBF0;
+  color: #d6dbf0;
+  word-break: keep-all;
 }
 
 @media (max-width: 760px) {
   .photo-tips ul {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .photo-tips li,
+  .photo-tips li:first-child {
+    padding: 0;
+  }
+
+  .photo-tips li + li {
+    border-left: 0;
   }
 }
