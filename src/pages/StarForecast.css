@@ -55,6 +55,12 @@
   align-items: center;
 }
 
+/* index.css의 기본 제목 색·글꼴이 덮어쓰지 않게 */
+.forecast-page :is(h1, h2) {
+  color: inherit;
+  font-family: inherit;
+}
+
 .forecast__header h1 {
   margin: 0;
   font-size: 44px;
