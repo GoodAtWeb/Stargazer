@@ -194,6 +194,12 @@
   background: #ffdca3;
 }
 
+.result-panel__btn--record {
+  grid-column: 1 / -1;
+  border-color: rgba(255, 207, 139, 0.6);
+  color: #ffcf8b;
+}
+
 .result-panel__btn:disabled {
   opacity: 0.6;
   cursor: default;

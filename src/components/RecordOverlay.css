@@ -1,0 +1,18 @@
+.record-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.record-overlay__line {
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 0.28;
+  stroke-linecap: round;
+}
+
+.record-overlay__star {
+  fill: #fff;
+  filter: drop-shadow(0 0 0.6px rgba(255, 255, 255, 0.9));
+}
