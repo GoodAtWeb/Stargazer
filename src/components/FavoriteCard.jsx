@@ -1,9 +1,12 @@
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import ConstellationFigure from './ConstellationFigure'
 import './FavoriteCard.css'
 
 const SPARKLE = 'M12 2Q12 12 22 12Q12 12 12 22Q12 12 2 12Q12 12 12 2Z'
 const HIGH_SCORE = 80
+const SLOW_OUT = [0.16, 1, 0.3, 1]
+const APPEAR_GAP = 0.08
 
 // '10-23' → '10월 23일'
 const formatMonthDay = (value) => {
@@ -11,7 +14,7 @@ const formatMonthDay = (value) => {
   return `${month}월 ${day}일`
 }
 
-function FavoriteCard({ item, period, fortune, onRemove }) {
+function FavoriteCard({ item, period, fortune, index, onRemove }) {
   const { id, nameKo, nameEn, season, brightStar, figure } = item
   const subtitle = period
     ? `${formatMonthDay(period.start)} ~ ${formatMonthDay(period.end)}`
@@ -20,7 +23,24 @@ function FavoriteCard({ item, period, fortune, onRemove }) {
       : `${season} 별자리`
 
   return (
-    <li className="favorite-card">
+    <motion.li
+      className="favorite-card"
+      layout
+      initial={{ opacity: 0, y: 16, filter: 'blur(8px)' }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        filter: 'blur(0px)',
+        transition: { duration: 0.8, delay: index * APPEAR_GAP, ease: SLOW_OUT },
+      }}
+      exit={{
+        opacity: 0,
+        scale: 0.92,
+        filter: 'blur(6px)',
+        transition: { duration: 0.35, ease: 'easeIn' },
+      }}
+      transition={{ layout: { type: 'spring', stiffness: 260, damping: 30 } }}
+    >
       <Link
         to={`/constellations/${id}`}
         state={{ from: '/favorites' }}
@@ -68,7 +88,7 @@ function FavoriteCard({ item, period, fortune, onRemove }) {
           <path d={SPARKLE} />
         </svg>
       </button>
-    </li>
+    </motion.li>
   )
 }
 
