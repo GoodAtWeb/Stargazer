@@ -74,3 +74,33 @@
   background: #fde7a6;
   box-shadow: 0 0 16px rgba(245, 217, 140, 0.75);
 }
+
+@media (max-width: 1100px) {
+  .favorites__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .favorites {
+    padding: 28px 16px 32px;
+  }
+
+  .favorites__title {
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+
+  .favorites__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .favorites__empty-title {
+    font-size: 19px;
+  }
+
+  .favorites__empty-text {
+    font-size: 14px;
+  }
+}

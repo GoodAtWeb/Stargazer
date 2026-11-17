@@ -1,6 +1,7 @@
 .favorite-card {
   position: relative;
   list-style: none;
+  container-type: inline-size;
 }
 
 .favorite-card__link {
@@ -51,6 +52,7 @@
 
 .favorite-card__name {
   margin: 0 0 14px;
+  padding-right: 32px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -109,4 +111,56 @@
 .favorite-card__fav:focus-visible {
   outline: 2px solid #f5d98c;
   border-radius: 6px;
+}
+
+/* 화면 너비가 아니라 카드 너비 기준으로 좁을 때 촘촘하게 */
+@container (max-width: 420px) {
+  .favorite-card__link {
+    padding: 20px 20px 16px;
+    border-radius: 20px;
+  }
+
+  .favorite-card__top {
+    gap: 14px;
+    padding-bottom: 16px;
+  }
+
+  .favorite-card__figure {
+    width: 26%;
+    max-width: 104px;
+  }
+
+  .favorite-card__info {
+    padding-top: 2px;
+  }
+
+  .favorite-card__name {
+    margin-bottom: 8px;
+    padding-right: 26px;
+    font-size: 19px;
+  }
+
+  .favorite-card__latin,
+  .favorite-card__period {
+    font-size: 14px;
+  }
+
+  .favorite-card__bottom {
+    padding-top: 14px;
+    font-size: 15px;
+  }
+
+  .favorite-card__score {
+    font-size: 14.5px;
+  }
+
+  .favorite-card__fav {
+    top: 12px;
+    right: 14px;
+  }
+
+  .favorite-card__fav svg {
+    width: 24px;
+    height: 24px;
+  }
 }
