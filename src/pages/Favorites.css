@@ -1,0 +1,27 @@
+.favorites-page {
+  min-height: 100svh;
+  color: #fff;
+  font-family: 'Pretendard', system-ui, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  background-color: #1b2140;
+  background-image:
+    linear-gradient(180deg, rgba(12, 17, 42, 0.25), rgba(12, 17, 42, 0.1)),
+    url('../assets/bg/milkyway.jpg');
+  background-size: auto, cover;
+  background-position: 0 0, center;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+}
+
+.favorites {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 56px 8vw 48px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.favorites__title {
+  margin: 0 0 48px;
+  font-size: 40px;
+  font-weight: 700;
+}
