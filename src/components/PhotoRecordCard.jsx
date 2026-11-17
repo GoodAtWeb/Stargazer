@@ -7,7 +7,7 @@ import './PhotoRecordCard.css'
 const SLOW_OUT = [0.16, 1, 0.3, 1]
 const APPEAR_GAP = 0.08
 
-function PhotoRecordCard({ record, index }) {
+function PhotoRecordCard({ record, index, onOpen }) {
   const { title, date, photo, aspect, constellations } = record
 
   return (
@@ -29,13 +29,22 @@ function PhotoRecordCard({ record, index }) {
       }}
       transition={{ layout: { type: 'spring', stiffness: 260, damping: 30 } }}
     >
-      <div className="photo-record__thumb">
+      <button
+        type="button"
+        className="photo-record__thumb"
+        aria-label={`${title} 크게 보기`}
+        onClick={() => onOpen(record.id)}
+      >
         <img src={photo} alt="" />
         <RecordOverlay aspect={aspect} constellations={constellations} />
-      </div>
+      </button>
 
       <div className="photo-record__body">
-        <h2 className="photo-record__title">{title}</h2>
+        <h2 className="photo-record__title">
+          <button type="button" onClick={() => onOpen(record.id)}>
+            {title}
+          </button>
+        </h2>
         <p className="photo-record__date">{formatDateLabel(date)}</p>
         {constellations.length > 0 ? (
           <ul className="photo-record__tags">

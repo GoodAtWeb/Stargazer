@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link, useSearchParams } from 'react-router-dom'
 import FavoriteCard from '../components/FavoriteCard'
 import PhotoRecordCard from '../components/PhotoRecordCard'
+import PhotoRecordViewer from '../components/PhotoRecordViewer'
 import TopNav from '../components/TopNav'
 import { constellationItems } from '../utils/constellationList'
 import { getConstellationById } from '../utils/constellations'
@@ -44,6 +46,8 @@ function Archive() {
   const [favorites, toggleFavorite] = useFavorites()
   const photoRecords = useArchiveStore((s) => s.photoRecords)
   const hydrated = useArchiveStore((s) => s.hydrated)
+  const [openId, setOpenId] = useState(null)
+  const openRecord = photoRecords.find((r) => r.id === openId)
   const items = favorites.map((id) => itemsById[id]).filter(Boolean)
   const counts = { favorites: items.length, photos: photoRecords.length }
 
@@ -99,7 +103,12 @@ function Archive() {
             <ul className="archive__grid">
               <AnimatePresence>
                 {photoRecords.map((record, index) => (
-                  <PhotoRecordCard key={record.id} record={record} index={index} />
+                  <PhotoRecordCard
+                    key={record.id}
+                    record={record}
+                    index={index}
+                    onOpen={setOpenId}
+                  />
                 ))}
               </AnimatePresence>
             </ul>
@@ -115,6 +124,16 @@ function Archive() {
           </>
         )}
       </main>
+
+      <AnimatePresence>
+        {openRecord && (
+          <PhotoRecordViewer
+            key={openRecord.id}
+            record={openRecord}
+            onClose={() => setOpenId(null)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   )
 }
