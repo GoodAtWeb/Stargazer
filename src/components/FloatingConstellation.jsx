@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import './FloatingConstellation.css'
 
 const SLOW_OUT = [0.16, 1, 0.3, 1]
 const SPRING = { type: 'spring', stiffness: 140, damping: 20 }
+const LABEL_GAP = 12
 
 function FloatingConstellation({
   name,
@@ -15,12 +17,22 @@ function FloatingConstellation({
   offset,
   hovered,
   hoverScale,
+  labelReach,
+  labelBelow,
   introDelay,
   float,
   onHoverChange,
   onSelect,
 }) {
   const reduceMotion = useReducedMotion()
+  // 사라지는 동안 이름표가 반대쪽으로 튀지 않게 마지막 위치 유지
+  const [below, setBelow] = useState(false)
+  if (hovered && below !== labelBelow) setBelow(labelBelow)
+
+  // 이름표 아래(또는 위) 가운데 부분의 별·그림 끝에서 조금 띄움 (중심 기준 px)
+  const reach = labelReach[below ? 1 : 0]
+  const labelOffset = `calc(50% + ${reach * size * hoverScale + LABEL_GAP}px)`
+  const labelHiddenY = below ? -6 : 6
 
   return (
     <motion.div
@@ -92,6 +104,21 @@ function FloatingConstellation({
               transition={{ duration: 0.3 }}
             />
           </motion.button>
+
+          <motion.span
+            className="floating-constellation__label"
+            aria-hidden="true"
+            style={below ? { top: labelOffset } : { bottom: labelOffset }}
+            initial={false}
+            animate={
+              hovered
+                ? { opacity: 1, y: 0, filter: 'blur(0px)' }
+                : { opacity: 0, y: labelHiddenY, filter: 'blur(4px)' }
+            }
+            transition={{ duration: hovered ? 0.45 : 0.2, ease: SLOW_OUT }}
+          >
+            {name}
+          </motion.span>
         </motion.div>
       </motion.div>
     </motion.div>
