@@ -1,0 +1,166 @@
+.favorite-card {
+  position: relative;
+  list-style: none;
+  container-type: inline-size;
+}
+
+.favorite-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 32px 34px 26px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(120, 136, 210, 0.16);
+  border: 1px solid rgba(200, 212, 255, 0.28);
+  border-radius: 28px;
+  backdrop-filter: blur(6px);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.favorite-card__link:hover,
+.favorite-card__link:focus-visible {
+  transform: translateY(-4px);
+  background: rgba(130, 146, 220, 0.24);
+  border-color: rgba(242, 201, 107, 0.75);
+  outline: none;
+}
+
+.favorite-card__top {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid rgba(200, 212, 255, 0.24);
+}
+
+.favorite-card__figure {
+  flex: none;
+  width: 32%;
+  max-width: 150px;
+  aspect-ratio: 1;
+}
+
+.favorite-card__info {
+  min-width: 0;
+  padding-top: 6px;
+}
+
+.favorite-card__name {
+  margin: 0 0 14px;
+  padding-right: 32px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.favorite-card__latin,
+.favorite-card__period {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(230, 236, 255, 0.85);
+  white-space: nowrap;
+}
+
+.favorite-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 22px;
+  font-size: 17px;
+}
+
+.favorite-card__score {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f5d98c;
+}
+
+.favorite-card__score--high {
+  color: #8ee0da;
+}
+
+.favorite-card__fav {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  display: flex;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.favorite-card__fav svg {
+  width: 28px;
+  height: 28px;
+  fill: #f5d98c;
+  filter: drop-shadow(0 0 6px rgba(245, 217, 140, 0.8));
+  transition: transform 0.2s ease;
+}
+
+.favorite-card__fav:hover svg {
+  transform: scale(1.15);
+}
+
+.favorite-card__fav:focus-visible {
+  outline: 2px solid #f5d98c;
+  border-radius: 6px;
+}
+
+/* 화면 너비가 아니라 카드 너비 기준으로 좁을 때 촘촘하게 */
+@container (max-width: 420px) {
+  .favorite-card__link {
+    padding: 20px 20px 16px;
+    border-radius: 20px;
+  }
+
+  .favorite-card__top {
+    gap: 14px;
+    padding-bottom: 16px;
+  }
+
+  .favorite-card__figure {
+    width: 26%;
+    max-width: 104px;
+  }
+
+  .favorite-card__info {
+    padding-top: 2px;
+  }
+
+  .favorite-card__name {
+    margin-bottom: 8px;
+    padding-right: 26px;
+    font-size: 19px;
+  }
+
+  .favorite-card__latin,
+  .favorite-card__period {
+    font-size: 14px;
+  }
+
+  .favorite-card__bottom {
+    padding-top: 14px;
+    font-size: 15px;
+  }
+
+  .favorite-card__score {
+    font-size: 14.5px;
+  }
+
+  .favorite-card__fav {
+    top: 12px;
+    right: 14px;
+  }
+
+  .favorite-card__fav svg {
+    width: 24px;
+    height: 24px;
+  }
+}

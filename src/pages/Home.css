@@ -88,3 +88,20 @@
   text-shadow: none;
   box-shadow: 0 0 16px rgba(245, 217, 140, 0.75);
 }
+
+@media (max-width: 700px) {
+  .home__menu {
+    gap: 2px;
+  }
+
+  .home__menu-link {
+    min-width: 28px;
+    height: 28px;
+    padding: 0 0.55em;
+    font-size: 12.5px;
+  }
+
+  .home__menu-link--active {
+    padding: 0;
+  }
+}
