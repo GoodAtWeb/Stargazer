@@ -14,7 +14,7 @@ const MENUS = [
   { to: '/constellations', label: '별자리' },
   { to: '/forecast', label: '별 예보' },
   { to: '/photo', label: '사진 분석' },
-  { to: '/favorites', label: '즐겨찾기' },
+  { to: '/archive', label: '나의 기록' },
 ]
 
 // x, y: 시안 기준 중심 좌표(%) / mobile: 세로 화면용 좌표(%), 로고 위아래로 엇갈리게

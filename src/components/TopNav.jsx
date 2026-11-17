@@ -6,7 +6,7 @@ const MENUS = [
   { to: '/constellations', label: '별자리' },
   { to: '/forecast', label: '별 예보' },
   { to: '/photo', label: '사진 분석' },
-  { to: '/favorites', label: '즐겨찾기' },
+  { to: '/archive', label: '나의 기록' },
 ]
 
 // 로고, 페이지 이동 메뉴, 언어 표시로 이루어진 상단 메뉴바

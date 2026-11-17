@@ -112,7 +112,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
               <button
                 type="button"
                 className="save-record__btn save-record__btn--primary"
-                onClick={() => navigate('/favorites')}
+                onClick={() => navigate('/archive?tab=photos')}
               >
                 보러 가기
               </button>

@@ -1,8 +1,8 @@
 import { useEffect, useLayoutEffect, useRef } from 'react'
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import Archive from './pages/Archive'
 import ConstellationDetail from './pages/ConstellationDetail'
 import ConstellationList from './pages/ConstellationList'
-import Favorites from './pages/Favorites'
 import Home from './pages/Home'
 import PhotoAnalysis from './pages/PhotoAnalysis'
 import StarForecast from './pages/StarForecast'
@@ -43,7 +43,8 @@ function App() {
         <Route path="/photo" element={<PhotoAnalysis />} />
         <Route path="/constellations" element={<ConstellationList />} />
         <Route path="/constellations/:id" element={<ConstellationDetail />} />
-        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/archive" element={<Archive />} />
+        <Route path="/favorites" element={<Navigate to="/archive" replace />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

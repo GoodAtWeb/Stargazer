@@ -10,6 +10,12 @@ const pad = (n) => String(n).padStart(2, '0')
 export const toDateValue = (date) =>
   `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`
 
+// 'YYYY-MM-DD' → 'YYYY년 M월 D일'
+export const formatDateLabel = (dateValue) => {
+  const [y, m, d] = dateValue.split('-').map(Number)
+  return `${y}년 ${m}월 ${d}일`
+}
+
 // 'YYYY-MM-DD' → 'yy-mm-dd 별자리 사진'
 export const getDefaultTitle = (dateValue) => `${dateValue.slice(2)} 별자리 사진`
 

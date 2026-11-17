@@ -43,7 +43,7 @@ function FavoriteCard({ item, period, fortune, index, onRemove }) {
     >
       <Link
         to={`/constellations/${id}`}
-        state={{ from: '/favorites' }}
+        state={{ from: '/archive' }}
         className="favorite-card__link"
       >
         <div className="favorite-card__top">
