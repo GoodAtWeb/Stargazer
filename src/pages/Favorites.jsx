@@ -4,6 +4,7 @@ import FavoriteCard from '../components/FavoriteCard'
 import TopNav from '../components/TopNav'
 import { constellationItems } from '../utils/constellationList'
 import { getConstellationById } from '../utils/constellations'
+import { useArchiveStore } from '../stores/archiveStore'
 import { useFavorites } from '../utils/favorites'
 import { getRankedHoroscopes } from '../utils/horoscopes'
 import './Favorites.css'
@@ -15,6 +16,7 @@ const fortunesById = Object.fromEntries(
 
 function Favorites() {
   const [favorites, toggleFavorite] = useFavorites()
+  const hydrated = useArchiveStore((s) => s.hydrated)
   const items = favorites.map((id) => itemsById[id]).filter(Boolean)
 
   return (
@@ -38,7 +40,7 @@ function Favorites() {
           </AnimatePresence>
         </ul>
 
-        {items.length === 0 && (
+        {hydrated && items.length === 0 && (
           // 마지막 카드가 사라진 뒤에 나타나도록 지연
           <motion.div
             className="favorites__empty"
