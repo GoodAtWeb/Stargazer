@@ -13,22 +13,23 @@
 }
 
 .list {
-  max-width: 1360px;
+  width: min(1200px, 100% - 128px);
   margin: 0 auto;
-  padding: 32px 4vw 24px;
+  padding: 56px 0 72px;
   box-sizing: border-box;
   text-align: left;
 }
 
 .list__header h1 {
-  margin: 0 0 10px;
-  font-size: 40px;
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
 }
 
 .list__header p {
-  margin: 0;
-  font-size: 16px;
-  color: rgba(225, 232, 255, 0.85);
+  margin: 6px 0 0;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .list__filters {
@@ -103,7 +104,8 @@
 
 .list__grid {
   display: grid;
-  --card-h: calc(16vh + 112px);
+  --fig: 14vh;
+  --card-h: calc(var(--fig) + 126px);
   grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-auto-rows: var(--card-h);
   align-content: start;
@@ -163,9 +165,17 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .list {
+    width: calc(100% - 32px);
+    padding-top: 32px;
+  }
+}
+
 @media (max-width: 700px) {
   .list {
-    padding: 20px 16px 20px;
+    padding-top: 24px;
+    padding-bottom: 20px;
   }
 
   .list__header h1 {
@@ -182,7 +192,8 @@
   }
 
   .list__grid {
-    --card-h: calc(12vh + 108px);
+    --fig: 12vh;
+    --card-h: calc(var(--fig) + 112px);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     min-height: calc(var(--card-h) * 5 + 48px);
     gap: 12px;

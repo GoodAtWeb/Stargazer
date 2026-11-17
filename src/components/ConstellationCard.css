@@ -32,7 +32,7 @@
 
 .constellation-card__figure {
   align-self: center;
-  width: min(60%, 16vh);
+  width: min(60%, var(--fig, 16vh));
   aspect-ratio: 1;
   margin-bottom: 12px;
 }
@@ -102,7 +102,7 @@
   }
 
   .constellation-card__figure {
-    width: min(64%, 12vh);
+    width: min(64%, var(--fig, 12vh));
     margin-bottom: 8px;
   }
 

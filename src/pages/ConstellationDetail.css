@@ -16,8 +16,10 @@
   grid-template-columns: 440px 1fr;
   grid-template-rows: auto 1fr;
   gap: 24px 48px;
+  width: min(1200px, 100% - 128px);
+  margin: 0 auto;
   min-height: calc(100svh - 56px);
-  padding: 40px 8vw 40px;
+  padding: 40px 0 72px;
   box-sizing: border-box;
   overflow: hidden;
   text-align: left;
@@ -30,8 +32,14 @@
 }
 
 .detail__bar {
-  padding: 20px 64px 0;
+  position: sticky;
+  top: 56px;
+  z-index: 15;
+  width: min(1200px, 100% - 128px);
+  margin: 0 auto;
+  padding: 20px 0 0;
   text-align: left;
+  pointer-events: none;
 }
 
 .detail__bar + .detail {
@@ -40,6 +48,7 @@
 }
 
 .detail__back {
+  pointer-events: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +74,8 @@
 
 .detail__header h1 {
   margin: 0 0 18px;
-  font-size: 43.5px;
+  font-size: 44px;
+  font-weight: 700;
 }
 
 .detail__meta {
@@ -118,16 +128,23 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .detail,
+  .detail__bar {
+    width: calc(100% - 32px);
+  }
+}
+
 @media (max-width: 900px) {
   .detail__bar {
-    padding: 16px 5vw 0;
+    padding: 16px 0 0;
   }
 
   .detail {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
     gap: 20px;
-    padding: 24px 5vw 32px;
+    padding: 24px 0 32px;
   }
 
   .detail__bar + .detail {
