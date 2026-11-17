@@ -29,6 +29,40 @@
   justify-content: center;
 }
 
+.detail__bar {
+  padding: 20px 64px 0;
+  text-align: left;
+}
+
+.detail__bar + .detail {
+  padding-top: 20px;
+  min-height: calc(100svh - 112px);
+}
+
+.detail__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  background: rgba(20, 27, 62, 0.55);
+  border: 1px solid rgba(190, 205, 255, 0.4);
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.detail__back:hover,
+.detail__back:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+  outline: none;
+}
+
 .detail__header h1 {
   margin: 0 0 18px;
   font-size: 43.5px;

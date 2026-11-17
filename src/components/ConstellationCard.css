@@ -1,0 +1,96 @@
+.constellation-card {
+  position: relative;
+  list-style: none;
+}
+
+.constellation-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 22px 22px 20px;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(72, 84, 158, 0.5);
+  border: 1px solid rgba(190, 205, 255, 0.28);
+  border-radius: 22px;
+  backdrop-filter: blur(6px);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.constellation-card__link:hover,
+.constellation-card__link:focus-visible {
+  transform: translateY(-4px);
+  background: rgba(86, 99, 178, 0.6);
+  border-color: rgba(242, 201, 107, 0.75);
+  outline: none;
+}
+
+.constellation-card__figure {
+  align-self: center;
+  width: min(60%, 16vh);
+  aspect-ratio: 1;
+  margin-bottom: 12px;
+}
+
+.constellation-card__name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.constellation-card__latin {
+  margin: 3px 0 0;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.constellation-card__meta {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.constellation-card__fav {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  padding: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.constellation-card__fav svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.8);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease,
+    transform 0.2s ease;
+}
+
+.constellation-card__fav:hover svg {
+  stroke: #fff;
+  transform: scale(1.12);
+}
+
+.constellation-card__fav--on svg {
+  fill: #ffd34d;
+  stroke: #ffd34d;
+}
+
+.constellation-card__fav:focus-visible {
+  outline: 2px solid #ffd34d;
+  border-radius: 6px;
+}

@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useRef } from 'react'
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import ConstellationDetail from './pages/ConstellationDetail'
+import ConstellationList from './pages/ConstellationList'
 import Home from './pages/Home'
 import PhotoAnalysis from './pages/PhotoAnalysis'
 import StarForecast from './pages/StarForecast'
@@ -39,6 +40,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/forecast" element={<StarForecast />} />
         <Route path="/photo" element={<PhotoAnalysis />} />
+        <Route path="/constellations" element={<ConstellationList />} />
         <Route path="/constellations/:id" element={<ConstellationDetail />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
