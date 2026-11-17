@@ -56,11 +56,12 @@
   background: none;
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: color 0.2s;
 }
 
-.visible-list__find:hover {
-  background: rgba(255, 255, 255, 0.18);
+/* 항목 전체가 강조될 때(마우스를 올리거나 밤하늘에서 같은 별자리를 가리킬 때) 돋보기도 같이 색이 바뀜 */
+.visible-list__item:hover .visible-list__find,
+.visible-list__item--active .visible-list__find {
   color: #ffcf8b;
 }
 
