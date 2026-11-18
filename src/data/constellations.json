@@ -8234,5 +8234,6357 @@
         "nu-oph"
       ]
     ]
+  },
+  {
+    "id": "phoenix",
+    "isZodiac": false,
+    "nameKo": "봉황자리",
+    "nameEn": "Phoenix",
+    "nameLatin": "Phoenix",
+    "abbr": "Phe",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "observation": {
+      "bestMonth": "11월",
+      "season": "10월~12월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 지평선 가까이 (고도 약 5°)",
+      "tip": "한국에서는 남쪽 지평선 위로 아주 낮게만 걸려서 관측이 어려워요. 늦가을 남쪽이 완전히 트인 곳에서 으뜸별 앙카를 찾아보세요."
+    },
+    "origin": "봉황자리는 16세기 말 네덜란드의 지도 제작자 페트뤼스 플란시우스가 항해사 케이저르와 더 하우트만의 남쪽 하늘 관측을 바탕으로 만든 별자리예요. 1603년 요한 바이어의 별자리 지도에 실리며 알려졌어요. 죽을 때가 되면 스스로 불에 타 재가 되었다가 다시 태어난다는 전설 속의 새, 불사조(피닉스)를 나타내요. 서양의 불사조를 나타내지만 우리말로는 '봉황자리'라고 불러요.",
+    "stars": [
+      {
+        "id": "ankaa",
+        "nameKo": "앙카",
+        "bayer": "Ankaa · α Phoenicis",
+        "x": 73.9,
+        "y": 15.5,
+        "magnitude": 2.4,
+        "badge": "주황색 거성",
+        "tagline": "불사조의 으뜸별",
+        "brightness": "2.4등급",
+        "distance": "약 85광년",
+        "temperature": "약 4,600K",
+        "size": "태양의 약 13배",
+        "description": "이름은 아랍어로 '불사조'를 뜻해요. 봉황자리에서 가장 밝은 별이에요."
+      },
+      {
+        "id": "beta-phe",
+        "nameKo": "봉황자리 베타별",
+        "bayer": "β Phoenicis",
+        "x": 34.5,
+        "y": 38.0,
+        "magnitude": 3.32,
+        "badge": "황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.32등급",
+        "temperature": "약 5,000K",
+        "description": "봉황자리의 별자리 선을 이루는 황색 거성이에요."
+      },
+      {
+        "id": "gamma-phe",
+        "nameKo": "봉황자리 감마별",
+        "bayer": "γ Phoenicis",
+        "x": 12.0,
+        "y": 20.8,
+        "magnitude": 3.41,
+        "badge": "주황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "3.41등급",
+        "distance": "약 230광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 34배",
+        "description": "봉황자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 230광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-phe",
+        "nameKo": "봉황자리 엡실론별",
+        "bayer": "ε Phoenicis",
+        "x": 88.0,
+        "y": 36.2,
+        "magnitude": 3.88,
+        "badge": "주황색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.88등급",
+        "distance": "약 140광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 10배",
+        "description": "봉황자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 140광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-phe",
+        "nameKo": "봉황자리 델타별",
+        "bayer": "δ Phoenicis",
+        "x": 12.4,
+        "y": 52.2,
+        "magnitude": 3.93,
+        "badge": "주황색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.93등급",
+        "distance": "약 140광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 9.6배",
+        "description": "봉황자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 140광년 떨어져 있어요."
+      },
+      {
+        "id": "wurren",
+        "nameKo": "우렌",
+        "bayer": "Wurren · ζ Phoenicis",
+        "x": 33.8,
+        "y": 84.5,
+        "magnitude": 3.94,
+        "badge": "청백색 별",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.94등급",
+        "distance": "약 300광년",
+        "temperature": "약 11,900K",
+        "size": "태양의 약 3.3배",
+        "description": "봉황자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 300광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "epsilon-phe",
+        "ankaa"
+      ],
+      [
+        "epsilon-phe",
+        "beta-phe"
+      ],
+      [
+        "ankaa",
+        "beta-phe"
+      ],
+      [
+        "beta-phe",
+        "wurren"
+      ],
+      [
+        "beta-phe",
+        "gamma-phe"
+      ],
+      [
+        "wurren",
+        "delta-phe"
+      ],
+      [
+        "gamma-phe",
+        "delta-phe"
+      ]
+    ]
+  },
+  {
+    "id": "corona-borealis",
+    "isZodiac": false,
+    "nameKo": "북쪽왕관자리",
+    "nameEn": "Corona Borealis",
+    "nameLatin": "Corona Borealis",
+    "abbr": "CrB",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "7월",
+      "season": "6월~8월",
+      "time": "저녁 9시 무렵",
+      "position": "머리 위 가까이 (고도 약 81°)",
+      "tip": "여름철 머리 위 가까이에서 목동자리 아르크투루스와 헤르쿨레스자리 사이를 살펴보세요. 알페카를 중심으로 반원 모양으로 늘어선 별이 길잡이예요."
+    },
+    "origin": "북쪽왕관자리는 그리스 신화에서 크레타의 공주 아리아드네의 왕관이에요. 아리아드네는 영웅 테세우스가 미궁의 괴물 미노타우로스를 물리칠 수 있도록 도왔지만 낙소스섬에 홀로 남겨졌어요. 이때 술의 신 디오니소스가 그녀와 결혼하며 선물한 왕관이 하늘에 올려져 별자리가 되었다고 전해져요. 별들이 동그랗게 반원을 이루고 있어서 왕관 모양을 쉽게 알아볼 수 있어요. 2세기 프톨레마이오스가 정리한 48개 별자리에도 들어 있는 오래된 별자리예요.",
+    "stars": [
+      {
+        "id": "alphecca",
+        "nameKo": "알페카",
+        "bayer": "Alphecca · α Coronae Borealis",
+        "x": 72.9,
+        "y": 70.8,
+        "magnitude": 2.22,
+        "badge": "백색 별",
+        "tagline": "왕관을 장식한 보석",
+        "brightness": "2.22등급",
+        "distance": "약 75광년",
+        "temperature": "약 9,700K",
+        "size": "태양의 약 2.7배",
+        "description": "이름은 아랍어로 '깨진 접시'를 뜻해요. 라틴어로 '보석'이라는 뜻의 '젬마'라고도 불려요. 두 별이 서로를 가려 밝기가 조금씩 변하는 식쌍성이에요."
+      },
+      {
+        "id": "nusakan",
+        "nameKo": "누사칸",
+        "bayer": "Nusakan · β Coronae Borealis",
+        "x": 88.0,
+        "y": 45.5,
+        "magnitude": 3.66,
+        "badge": "황백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.66등급",
+        "distance": "약 110광년",
+        "temperature": "약 7,300K",
+        "size": "태양의 약 3.7배",
+        "description": "북쪽왕관자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 110광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-crb",
+        "nameKo": "북쪽왕관자리 감마별",
+        "bayer": "γ Coronae Borealis",
+        "x": 54.2,
+        "y": 75.3,
+        "magnitude": 3.81,
+        "badge": "백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "3.81등급",
+        "distance": "약 150광년",
+        "temperature": "약 9,900K",
+        "size": "태양의 약 2.5배",
+        "description": "북쪽왕관자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "theta-crb",
+        "nameKo": "북쪽왕관자리 세타별",
+        "bayer": "θ Coronae Borealis",
+        "x": 75.9,
+        "y": 22.4,
+        "magnitude": 4.14,
+        "badge": "청백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.14등급",
+        "distance": "약 380광년",
+        "temperature": "약 12,000K",
+        "size": "태양의 약 3.7배",
+        "description": "북쪽왕관자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-crb",
+        "nameKo": "북쪽왕관자리 엡실론별",
+        "bayer": "ε Coronae Borealis",
+        "x": 19.8,
+        "y": 68.8,
+        "magnitude": 4.14,
+        "badge": "주황색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.14등급",
+        "distance": "약 220광년",
+        "temperature": "약 4,200K",
+        "size": "태양의 약 18배",
+        "description": "북쪽왕관자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 220광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-crb",
+        "nameKo": "북쪽왕관자리 델타별",
+        "bayer": "δ Coronae Borealis",
+        "x": 38.3,
+        "y": 77.6,
+        "magnitude": 4.59,
+        "badge": "황색 거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "4.59등급",
+        "distance": "약 170광년",
+        "temperature": "약 5,300K",
+        "size": "태양의 약 7.0배",
+        "description": "북쪽왕관자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 170광년 떨어져 있어요."
+      },
+      {
+        "id": "iota-crb",
+        "nameKo": "북쪽왕관자리 이오타별",
+        "bayer": "ι Coronae Borealis",
+        "x": 12.0,
+        "y": 37.6,
+        "magnitude": 4.98,
+        "badge": "백색 별",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "4.98등급",
+        "distance": "약 310광년",
+        "temperature": "약 10,800K",
+        "size": "태양의 약 2.6배",
+        "description": "북쪽왕관자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 310광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "nusakan",
+        "theta-crb"
+      ],
+      [
+        "nusakan",
+        "alphecca"
+      ],
+      [
+        "alphecca",
+        "gamma-crb"
+      ],
+      [
+        "gamma-crb",
+        "delta-crb"
+      ],
+      [
+        "delta-crb",
+        "epsilon-crb"
+      ],
+      [
+        "epsilon-crb",
+        "iota-crb"
+      ]
+    ]
+  },
+  {
+    "id": "columba",
+    "isZodiac": false,
+    "nameKo": "비둘기자리",
+    "nameEn": "Columba",
+    "nameLatin": "Columba",
+    "abbr": "Col",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "2월",
+      "season": "1월~3월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 낮은 하늘 (고도 약 16°)",
+      "tip": "겨울철 남쪽 낮은 하늘에서 큰개자리 시리우스 아래쪽을 살펴보세요. 으뜸별 팍트가 길잡이예요. 높이가 낮아 남쪽이 트인 곳이 좋아요."
+    },
+    "origin": "비둘기자리는 16세기 말 플란시우스가 만든 별자리로, 성경에서 대홍수 뒤 노아가 날려 보낸 비둘기를 나타내요. 이 비둘기가 올리브 가지를 물고 돌아와 물이 빠졌음을 알렸다고 해요. 그리스 신화에서 아르고호가 길을 찾을 때 날려 보낸 비둘기 이야기와 연결하기도 해요. 큰개자리 남쪽에 있는 작은 별자리예요.",
+    "stars": [
+      {
+        "id": "phact",
+        "nameKo": "팍트",
+        "bayer": "Phact · α Columbae",
+        "x": 75.9,
+        "y": 20.2,
+        "magnitude": 2.65,
+        "badge": "청백색 준거성",
+        "tagline": "비둘기의 으뜸별",
+        "brightness": "2.65등급",
+        "distance": "약 260광년",
+        "temperature": "약 11,900K",
+        "size": "태양의 약 5.2배",
+        "description": "이름은 아랍어로 '산비둘기'를 뜻하는 말에서 왔어요. 비둘기자리에서 가장 밝은 별이에요."
+      },
+      {
+        "id": "wazn",
+        "nameKo": "와즌",
+        "bayer": "Wazn · β Columbae",
+        "x": 59.0,
+        "y": 32.1,
+        "magnitude": 3.12,
+        "badge": "주황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.12등급",
+        "distance": "약 87광년",
+        "temperature": "약 4,400K",
+        "size": "태양의 약 10배",
+        "description": "이름은 아랍어로 '무게'를 뜻해요."
+      },
+      {
+        "id": "delta-col",
+        "nameKo": "비둘기자리 델타별",
+        "bayer": "δ Columbae",
+        "x": 12.0,
+        "y": 16.8,
+        "magnitude": 3.85,
+        "badge": "황색 밝은 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "3.85등급",
+        "distance": "약 230광년",
+        "temperature": "약 5,100K",
+        "size": "태양의 약 15배",
+        "description": "비둘기자리의 별자리 선을 이루는 황색 밝은 거성이에요. 지구에서 약 230광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-col",
+        "nameKo": "비둘기자리 엡실론별",
+        "bayer": "ε Columbae",
+        "x": 88.0,
+        "y": 30.8,
+        "magnitude": 3.86,
+        "badge": "주황색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.86등급",
+        "distance": "약 260광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 21배",
+        "description": "비둘기자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 260광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-col",
+        "nameKo": "비둘기자리 에타별",
+        "bayer": "η Columbae",
+        "x": 47.9,
+        "y": 83.2,
+        "magnitude": 3.96,
+        "badge": "주황색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.96등급",
+        "distance": "약 470광년",
+        "temperature": "약 4,400K",
+        "size": "태양의 약 38배",
+        "description": "비둘기자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 470광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "epsilon-col",
+        "phact"
+      ],
+      [
+        "phact",
+        "wazn"
+      ],
+      [
+        "wazn",
+        "eta-col"
+      ],
+      [
+        "wazn",
+        "delta-col"
+      ]
+    ]
+  },
+  {
+    "id": "canes-venatici",
+    "isZodiac": false,
+    "nameKo": "사냥개자리",
+    "nameEn": "Canes Venatici",
+    "nameLatin": "Canes Venatici",
+    "abbr": "CVn",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "5월",
+      "season": "4월~6월",
+      "time": "저녁 9시 무렵",
+      "position": "머리 위 가까이 (고도 약 88°)",
+      "tip": "봄철 머리 위 가까이에서 북두칠성 손잡이 끝과 목동자리 사이를 살펴보세요. 코르 카롤리 외에는 어두운 별이라 어두운 하늘이 필요해요."
+    },
+    "origin": "사냥개자리는 17세기 폴란드 천문학자 요하네스 헤벨리우스가 만든 별자리예요. 목동자리가 두 마리 사냥개 아스테리온과 카라를 끈에 묶어 큰곰자리 쪽으로 몰고 가는 모습을 나타내요. 으뜸별 코르 카롤리는 '찰스의 심장'이라는 뜻으로, 영국 왕 찰스 2세를 기려 붙인 이름이라고 전해져요. 이 별자리에는 '소용돌이은하(M51)'를 비롯한 밝은 은하와 구상성단 M3도 있어요.",
+    "stars": [
+      {
+        "id": "cor-caroli",
+        "nameKo": "코르 카롤리",
+        "bayer": "Cor Caroli · α² Canum Venaticorum",
+        "x": 12.0,
+        "y": 77.1,
+        "magnitude": 2.89,
+        "badge": "백색 별",
+        "tagline": "'찰스의 심장'이라는 별",
+        "brightness": "2.89등급",
+        "distance": "약 110광년",
+        "temperature": "약 11,800K",
+        "size": "태양의 약 2.1배",
+        "description": "이름은 라틴어로 '찰스의 심장'이라는 뜻이에요. 영국 왕 찰스 2세를 기려 붙였다고 전해져요. 맨눈에는 하나로 보이지만 작은 망원경으로 보면 두 별로 나뉘는 이중성이에요."
+      },
+      {
+        "id": "chara",
+        "nameKo": "카라",
+        "bayer": "Chara · β Canum Venaticorum",
+        "x": 88.0,
+        "y": 22.9,
+        "magnitude": 4.24,
+        "badge": "황색 별",
+        "tagline": "사냥개의 별",
+        "brightness": "4.24등급",
+        "distance": "약 28광년",
+        "temperature": "약 6,000K",
+        "size": "태양의 약 1.0배",
+        "description": "이름은 그리스어로 '기쁨'을 뜻해요. 사냥개자리의 두 마리 개 가운데 한 마리를 나타내요."
+      }
+    ],
+    "lines": [
+      [
+        "chara",
+        "cor-caroli"
+      ]
+    ]
+  },
+  {
+    "id": "lynx",
+    "isZodiac": false,
+    "nameKo": "살쾡이자리",
+    "nameEn": "Lynx",
+    "nameLatin": "Lynx",
+    "abbr": "Lyn",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "3월",
+      "season": "2월~4월",
+      "time": "저녁 9시 무렵",
+      "position": "머리 위 가까이 (고도 약 81°)",
+      "tip": "겨울철 머리 위 가까이에서 마차부자리와 큰곰자리 사이를 살펴보세요. 아주 어두운 별들이라 빛 공해가 적은 어두운 하늘이 필요해요."
+    },
+    "origin": "살쾡이자리는 17세기 헤벨리우스가 만든 별자리예요. 어두운 별로만 이루어져 있어서, 헤벨리우스는 이 별들을 알아보려면 살쾡이처럼 눈이 좋아야 한다고 했다고 전해져요. 신화는 없고, 큰곰자리와 마차부자리 사이에 별 몇 개가 지그재그로 이어진 모양이에요.",
+    "stars": [
+      {
+        "id": "alpha-lyn",
+        "nameKo": "살쾡이자리 알파별",
+        "bayer": "α Lyncis",
+        "x": 12.0,
+        "y": 83.5,
+        "magnitude": 3.14,
+        "badge": "적색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.14등급",
+        "distance": "약 200광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 33배",
+        "description": "살쾡이자리의 별자리 선을 이루는 적색 거성이에요. 지구에서 약 200광년 떨어져 있어요."
+      },
+      {
+        "id": "38-lyn",
+        "nameKo": "살쾡이자리 38번",
+        "bayer": "38 Lyncis",
+        "x": 14.7,
+        "y": 77.4,
+        "magnitude": 3.82,
+        "badge": "백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.82등급",
+        "distance": "약 120광년",
+        "temperature": "약 9,400K",
+        "size": "태양의 약 2.3배",
+        "description": "살쾡이자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 120광년 떨어져 있어요."
+      },
+      {
+        "id": "hr3579",
+        "nameKo": "HR 3579",
+        "bayer": "HR 3579",
+        "x": 26.5,
+        "y": 66.2,
+        "magnitude": 3.96,
+        "badge": "황백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "3.96등급",
+        "distance": "약 52광년",
+        "temperature": "약 6,600K",
+        "size": "태양의 약 1.9배",
+        "description": "살쾡이자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 52광년 떨어져 있어요."
+      },
+      {
+        "id": "alsciaukat",
+        "nameKo": "알샤우카트",
+        "bayer": "Alsciaukat · 31 Lyncis",
+        "x": 44.7,
+        "y": 64.5,
+        "magnitude": 4.25,
+        "badge": "주황색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.25등급",
+        "distance": "약 380광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 38배",
+        "description": "살쾡이자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "15-lyn",
+        "nameKo": "살쾡이자리 15번",
+        "bayer": "15 Lyncis",
+        "x": 75.7,
+        "y": 22.4,
+        "magnitude": 4.35,
+        "badge": "황색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.35등급",
+        "distance": "약 180광년",
+        "temperature": "약 5,100K",
+        "size": "태양의 약 8.8배",
+        "description": "살쾡이자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 180광년 떨어져 있어요."
+      },
+      {
+        "id": "2-lyn",
+        "nameKo": "살쾡이자리 2번",
+        "bayer": "2 Lyncis",
+        "x": 88.0,
+        "y": 16.5,
+        "magnitude": 4.44,
+        "badge": "백색 별",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "4.44등급",
+        "distance": "약 160광년",
+        "temperature": "약 9,700K",
+        "size": "태양의 약 2.1배",
+        "description": "살쾡이자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 160광년 떨어져 있어요."
+      },
+      {
+        "id": "21-lyn",
+        "nameKo": "살쾡이자리 21번",
+        "bayer": "21 Lyncis",
+        "x": 68.7,
+        "y": 48.3,
+        "magnitude": 4.61,
+        "badge": "백색 별",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "4.61등급",
+        "distance": "약 270광년",
+        "temperature": "약 10,100K",
+        "size": "태양의 약 3.1배",
+        "description": "살쾡이자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 270광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "2-lyn",
+        "15-lyn"
+      ],
+      [
+        "15-lyn",
+        "21-lyn"
+      ],
+      [
+        "21-lyn",
+        "alsciaukat"
+      ],
+      [
+        "alsciaukat",
+        "hr3579"
+      ],
+      [
+        "hr3579",
+        "38-lyn"
+      ],
+      [
+        "38-lyn",
+        "alpha-lyn"
+      ]
+    ]
+  },
+  {
+    "id": "triangulum",
+    "isZodiac": false,
+    "nameKo": "삼각형자리",
+    "nameEn": "Triangulum",
+    "nameLatin": "Triangulum",
+    "abbr": "Tri",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "observation": {
+      "bestMonth": "12월",
+      "season": "11월~1월",
+      "time": "저녁 9시 무렵",
+      "position": "머리 위 가까이 (고도 약 85°)",
+      "tip": "가을철 머리 위 가까이, 안드로메다자리 옆에서 작은 삼각형을 찾아보세요. 아주 어두운 하늘에서는 이웃 은하 M33도 쌍안경으로 볼 수 있어요."
+    },
+    "origin": "삼각형자리는 고대부터 알려진 작은 별자리로, 2세기 프톨레마이오스가 정리한 48개 별자리에 들어 있어요. 그리스 사람들은 이 모양이 그리스 문자 델타(Δ)와 닮았다고 해서 '델토톤'이라고 불렀어요. 나일강 하구의 삼각주를 닮았다고 보는 이야기도 있어요. 안드로메다자리 옆에 있고, 이웃 은하인 삼각형자리은하(M33)가 이곳에 있어요.",
+    "stars": [
+      {
+        "id": "beta-tri",
+        "nameKo": "삼각형자리 베타별",
+        "bayer": "β Trianguli",
+        "x": 36.4,
+        "y": 12.0,
+        "magnitude": 3.0,
+        "badge": "백색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3등급",
+        "distance": "약 130광년",
+        "temperature": "약 8,700K",
+        "size": "태양의 약 4.0배",
+        "description": "삼각형자리의 별자리 선을 이루는 백색 거성이에요. 지구에서 약 130광년 떨어져 있어요."
+      },
+      {
+        "id": "mothallah",
+        "nameKo": "모탈라",
+        "bayer": "Mothallah · α Trianguli",
+        "x": 86.6,
+        "y": 88.0,
+        "magnitude": 3.42,
+        "badge": "황백색 준거성",
+        "tagline": "삼각형의 으뜸별",
+        "brightness": "3.42등급",
+        "distance": "약 63광년",
+        "temperature": "약 6,400K",
+        "size": "태양의 약 3.1배",
+        "description": "이름은 아랍어로 '삼각형'을 뜻해요. 삼각형자리에서 가장 밝은 별이에요."
+      },
+      {
+        "id": "gamma-tri",
+        "nameKo": "삼각형자리 감마별",
+        "bayer": "γ Trianguli",
+        "x": 13.4,
+        "y": 27.8,
+        "magnitude": 4.03,
+        "badge": "백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.03등급",
+        "distance": "약 110광년",
+        "temperature": "약 9,900K",
+        "size": "태양의 약 1.7배",
+        "description": "삼각형자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 110광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "mothallah",
+        "beta-tri"
+      ],
+      [
+        "mothallah",
+        "gamma-tri"
+      ],
+      [
+        "beta-tri",
+        "gamma-tri"
+      ]
+    ]
+  },
+  {
+    "id": "cepheus",
+    "isZodiac": false,
+    "nameKo": "세페우스자리",
+    "nameEn": "Cepheus",
+    "nameLatin": "Cepheus",
+    "abbr": "Cep",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "연중",
+    "observation": {
+      "bestMonth": "일 년 내내 (특히 10월)",
+      "season": "일 년 내내",
+      "time": "해가 진 뒤 언제든",
+      "position": "북쪽 하늘 (북극 근처)",
+      "tip": "카시오페이아자리 바로 옆에서 지붕 달린 집 모양의 오각형을 찾아보세요. 북극성 근처라 일 년 내내 볼 수 있어요."
+    },
+    "origin": "세페우스자리는 그리스 신화에서 에티오피아의 왕 케페우스를 나타내요. 왕비 카시오페이아의 남편이고, 바다 괴물에게 바쳐질 뻔한 공주 안드로메다의 아버지예요. 하늘에서는 카시오페이아자리 가까이에서 지붕 달린 집 모양의 오각형으로 보여요. 델타 세페이 별은 밝기가 규칙적으로 변해서, 별까지의 거리를 재는 기준이 되는 '세페이드 변광성'이라는 이름이 이 별에서 나왔어요.",
+    "stars": [
+      {
+        "id": "alderamin",
+        "nameKo": "알데라민",
+        "bayer": "Alderamin · α Cephei",
+        "x": 57.5,
+        "y": 68.2,
+        "magnitude": 2.45,
+        "badge": "백색 준거성",
+        "tagline": "세페우스의 오른팔",
+        "brightness": "2.45등급",
+        "distance": "약 49광년",
+        "temperature": "약 7,700K",
+        "size": "태양의 약 2.6배",
+        "description": "이름은 아랍어로 '오른팔'을 뜻해요. 세페우스의 오른쪽 어깨에 해당하는 별이에요."
+      },
+      {
+        "id": "errai",
+        "nameKo": "에라이",
+        "bayer": "Errai · γ Cephei",
+        "x": 23.9,
+        "y": 12.0,
+        "magnitude": 3.21,
+        "badge": "주황색 준거성",
+        "tagline": "미래의 북극성 후보",
+        "brightness": "3.21등급",
+        "distance": "약 46광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 4.5배",
+        "description": "이름은 아랍어로 '양치기'를 뜻해요. 행성이 발견된 별이고, 먼 미래에는 북극성 자리를 이어받을 별로 알려져 있어요."
+      },
+      {
+        "id": "alfirk",
+        "nameKo": "알피르크",
+        "bayer": "Alfirk · β Cephei",
+        "x": 50.7,
+        "y": 41.3,
+        "magnitude": 3.23,
+        "badge": "청백색 거성",
+        "tagline": "변광성 이름의 기준이 된 별",
+        "brightness": "3.23등급",
+        "distance": "약 690광년",
+        "temperature": "약 13,600K",
+        "size": "태양의 약 8.0배",
+        "description": "이름은 아랍어로 '양 떼'를 뜻해요. 규칙적으로 밝기가 변하는 '세페이우스 베타형 변광성'의 이름이 이 별에서 나왔어요."
+      },
+      {
+        "id": "zeta-cep",
+        "nameKo": "세페우스자리 제타별",
+        "bayer": "ζ Cephei",
+        "x": 35.9,
+        "y": 84.1,
+        "magnitude": 3.39,
+        "badge": "주황색 초거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.39등급",
+        "distance": "약 840광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 120배",
+        "description": "세페우스자리의 별자리 선을 이루는 주황색 초거성이에요. 지구에서 약 840광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-cep",
+        "nameKo": "세페우스자리 에타별",
+        "bayer": "η Cephei",
+        "x": 71.2,
+        "y": 68.0,
+        "magnitude": 3.41,
+        "badge": "주황색 준거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.41등급",
+        "distance": "약 47광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 3.7배",
+        "description": "세페우스자리의 별자리 선을 이루는 주황색 준거성이에요. 지구에서 약 47광년 떨어져 있어요."
+      },
+      {
+        "id": "iota-cep",
+        "nameKo": "세페우스자리 이오타별",
+        "bayer": "ι Cephei",
+        "x": 24.3,
+        "y": 54.7,
+        "magnitude": 3.5,
+        "badge": "주황색 거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.5등급",
+        "distance": "약 120광년",
+        "temperature": "약 4,600K",
+        "size": "태양의 약 10배",
+        "description": "세페우스자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 120광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-cep",
+        "nameKo": "세페우스자리 델타별",
+        "bayer": "δ Cephei",
+        "x": 27.7,
+        "y": 82.6,
+        "magnitude": 4.07,
+        "badge": "황색 초거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "4.07등급",
+        "distance": "약 870광년",
+        "temperature": "약 5,300K",
+        "size": "태양의 약 45배",
+        "description": "세페우스자리의 별자리 선을 이루는 황색 초거성이에요. 지구에서 약 870광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-cep",
+        "nameKo": "세페우스자리 엡실론별",
+        "bayer": "ε Cephei",
+        "x": 33.7,
+        "y": 88.0,
+        "magnitude": 4.18,
+        "badge": "황백색 준거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "4.18등급",
+        "distance": "약 85광년",
+        "temperature": "약 7,600K",
+        "size": "태양의 약 2.1배",
+        "description": "세페우스자리의 별자리 선을 이루는 황백색 준거성이에요. 지구에서 약 85광년 떨어져 있어요."
+      },
+      {
+        "id": "theta-cep",
+        "nameKo": "세페우스자리 세타별",
+        "bayer": "θ Cephei",
+        "x": 76.1,
+        "y": 62.3,
+        "magnitude": 4.21,
+        "badge": "백색 거성",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "4.21등급",
+        "distance": "약 140광년",
+        "temperature": "약 8,200K",
+        "size": "태양의 약 2.8배",
+        "description": "세페우스자리의 별자리 선을 이루는 백색 거성이에요. 지구에서 약 140광년 떨어져 있어요."
+      },
+      {
+        "id": "mu-cep",
+        "nameKo": "세페우스자리 뮤별",
+        "bayer": "μ Cephei",
+        "x": 48.3,
+        "y": 82.2,
+        "magnitude": 4.23,
+        "badge": "적색 초거성",
+        "tagline": "10번째로 밝은 별",
+        "brightness": "4.23등급",
+        "temperature": "약 3,750K",
+        "description": "윌리엄 허셜이 '석류석 별'이라고 부른 아주 붉은 초거성이에요. 은하수에서 알려진 가장 큰 별 가운데 하나예요.",
+        "distance": "약 3,000광년",
+        "size": "태양의 약 1,000배"
+      }
+    ],
+    "lines": [
+      [
+        "theta-cep",
+        "eta-cep"
+      ],
+      [
+        "eta-cep",
+        "alderamin"
+      ],
+      [
+        "alderamin",
+        "alfirk"
+      ],
+      [
+        "alderamin",
+        "mu-cep"
+      ],
+      [
+        "alfirk",
+        "iota-cep"
+      ],
+      [
+        "alfirk",
+        "errai"
+      ],
+      [
+        "mu-cep",
+        "epsilon-cep"
+      ],
+      [
+        "zeta-cep",
+        "epsilon-cep"
+      ],
+      [
+        "zeta-cep",
+        "delta-cep"
+      ],
+      [
+        "delta-cep",
+        "iota-cep"
+      ],
+      [
+        "iota-cep",
+        "errai"
+      ]
+    ]
+  },
+  {
+    "id": "centaurus",
+    "isZodiac": false,
+    "nameKo": "센타우루스자리",
+    "nameEn": "Centaurus",
+    "nameLatin": "Centaurus",
+    "abbr": "Cen",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "5월",
+      "season": "4월~6월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 지평선 가까이 (고도 약 4°)",
+      "tip": "한국에서는 봄철 남쪽 지평선 가까이에 위쪽 일부 별만 걸려요. 가장 밝은 알파 센타우리(리길 켄타우루스)와 하다르는 한국에서 볼 수 없고, 남반구에서는 남십자자리 옆에서 쉽게 찾을 수 있어요."
+    },
+    "origin": "센타우루스자리는 사람의 상체에 말의 몸을 가진 켄타우로스를 나타내요. 그리스 신화에서는 현명한 스승 케이론이라고 하는 이야기가 널리 알려져 있어요. 켄타우로스는 옆에 있는 이리자리의 짐승을 창으로 찌르는 모습으로 그려졌어요. 으뜸별 리길 켄타우루스(알파 센타우리)는 태양계에서 가장 가까운 별계예요. 맨눈으로 보이는 가장 큰 구상성단 '오메가 센타우리'도 이 별자리에 있어요.",
+    "stars": [
+      {
+        "id": "rigil-kentaurus",
+        "nameKo": "리길 켄타우루스",
+        "bayer": "Rigil Kentaurus · α¹ Centauri",
+        "x": 30.6,
+        "y": 77.3,
+        "magnitude": -0.27,
+        "badge": "황색 별",
+        "tagline": "가장 가까운 이웃 별계",
+        "brightness": "-0.27등급",
+        "distance": "약 4.4광년",
+        "temperature": "약 5,800K",
+        "size": "태양의 약 1.2배",
+        "description": "이름은 아랍어로 '켄타우루스의 발'을 뜻해요. 태양계에서 가장 가까운 별계인 알파 센타우리에 속하고, 이 별계에서는 가장 가까운 별 프록시마 켄타우리도 함께 돌아요."
+      },
+      {
+        "id": "hadar",
+        "nameKo": "하다르",
+        "bayer": "Hadar · β Centauri",
+        "x": 39.7,
+        "y": 74.0,
+        "magnitude": 0.61,
+        "badge": "청백색 거성",
+        "tagline": "남십자를 가리키는 별",
+        "brightness": "0.61등급",
+        "distance": "약 390광년",
+        "temperature": "약 14,400K",
+        "size": "태양의 약 14배",
+        "description": "남십자자리를 가리키는 두 별(포인터스) 가운데 하나예요. 알파 센타우리와 함께 남십자를 찾는 길잡이가 돼요."
+      },
+      {
+        "id": "menkent",
+        "nameKo": "멘켄트",
+        "bayer": "Menkent · θ Centauri",
+        "x": 31.2,
+        "y": 23.2,
+        "magnitude": 2.06,
+        "badge": "주황색 거성",
+        "tagline": "켄타우루스의 어깨",
+        "brightness": "2.06등급",
+        "distance": "약 59광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 9.8배",
+        "description": "이름은 아랍어로 '켄타우루스의 어깨'를 뜻하는 말에서 왔어요."
+      },
+      {
+        "id": "gamma-cen",
+        "nameKo": "센타우루스자리 감마별",
+        "bayer": "γ Centauri",
+        "x": 64.6,
+        "y": 49.6,
+        "magnitude": 2.2,
+        "badge": "백색 준거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "2.2등급",
+        "distance": "약 130광년",
+        "temperature": "약 10,400K",
+        "size": "태양의 약 4.2배",
+        "description": "센타우루스자리의 별자리 선을 이루는 백색 준거성이에요. 지구에서 약 130광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-cen",
+        "nameKo": "센타우루스자리 엡실론별",
+        "bayer": "ε Centauri",
+        "x": 45.1,
+        "y": 58.5,
+        "magnitude": 2.29,
+        "badge": "청백색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "2.29등급",
+        "distance": "약 430광년",
+        "temperature": "약 12,900K",
+        "size": "태양의 약 8.5배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 430광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-cen",
+        "nameKo": "센타우루스자리 에타별",
+        "bayer": "η Centauri",
+        "x": 21.6,
+        "y": 37.8,
+        "magnitude": 2.33,
+        "badge": "청백색 별",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "2.33등급",
+        "distance": "약 310광년",
+        "temperature": "약 12,600K",
+        "size": "태양의 약 6.3배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 310광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-cen",
+        "nameKo": "센타우루스자리 제타별",
+        "bayer": "ζ Centauri",
+        "x": 38.7,
+        "y": 46.0,
+        "magnitude": 2.55,
+        "badge": "청백색 준거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "2.55등급",
+        "distance": "약 380광년",
+        "temperature": "약 13,000K",
+        "size": "태양의 약 6.7배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-cen",
+        "nameKo": "센타우루스자리 델타별",
+        "bayer": "δ Centauri",
+        "x": 75.2,
+        "y": 55.4,
+        "magnitude": 2.58,
+        "badge": "청백색 준거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "2.58등급",
+        "distance": "약 410광년",
+        "temperature": "약 12,100K",
+        "size": "태양의 약 8.2배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 410광년 떨어져 있어요."
+      },
+      {
+        "id": "iota-cen",
+        "nameKo": "센타우루스자리 이오타별",
+        "bayer": "ι Centauri",
+        "x": 51.2,
+        "y": 22.7,
+        "magnitude": 2.75,
+        "badge": "백색 별",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "2.75등급",
+        "distance": "약 59광년",
+        "temperature": "약 9,300K",
+        "size": "태양의 약 1.8배",
+        "description": "센타우루스자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 59광년 떨어져 있어요."
+      },
+      {
+        "id": "kappa-cen",
+        "nameKo": "센타우루스자리 카파별",
+        "bayer": "κ Centauri",
+        "x": 12.0,
+        "y": 40.1,
+        "magnitude": 3.13,
+        "badge": "청백색 준거성",
+        "tagline": "10번째로 밝은 별",
+        "brightness": "3.13등급",
+        "distance": "약 380광년",
+        "temperature": "약 13,800K",
+        "size": "태양의 약 4.5배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "nu-cen",
+        "nameKo": "센타우루스자리 뉴별",
+        "bayer": "ν Centauri",
+        "x": 39.7,
+        "y": 33.9,
+        "magnitude": 3.41,
+        "badge": "청백색 준거성",
+        "tagline": "11번째로 밝은 별",
+        "brightness": "3.41등급",
+        "distance": "약 440광년",
+        "temperature": "약 14,200K",
+        "size": "태양의 약 4.3배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 440광년 떨어져 있어요."
+      },
+      {
+        "id": "mu-cen",
+        "nameKo": "센타우루스자리 뮤별",
+        "bayer": "μ Centauri",
+        "x": 39.9,
+        "y": 35.6,
+        "magnitude": 3.47,
+        "badge": "청백색 준거성",
+        "tagline": "12번째로 밝은 별",
+        "brightness": "3.47등급",
+        "distance": "약 510광년",
+        "temperature": "약 12,900K",
+        "size": "태양의 약 5.9배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 510광년 떨어져 있어요."
+      },
+      {
+        "id": "pi-cen",
+        "nameKo": "센타우루스자리 파이별",
+        "bayer": "π Centauri",
+        "x": 88.0,
+        "y": 68.4,
+        "magnitude": 3.9,
+        "badge": "청백색 별",
+        "tagline": "13번째로 밝은 별",
+        "brightness": "3.9등급",
+        "distance": "약 360광년",
+        "temperature": "약 12,600K",
+        "size": "태양의 약 3.6배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 360광년 떨어져 있어요."
+      },
+      {
+        "id": "sigma-cen",
+        "nameKo": "센타우루스자리 시그마별",
+        "bayer": "σ Centauri",
+        "x": 68.8,
+        "y": 53.0,
+        "magnitude": 3.91,
+        "badge": "청백색 별",
+        "tagline": "14번째로 밝은 별",
+        "brightness": "3.91등급",
+        "distance": "약 410광년",
+        "temperature": "약 13,400K",
+        "size": "태양의 약 3.6배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 410광년 떨어져 있어요."
+      },
+      {
+        "id": "rho-cen",
+        "nameKo": "센타우루스자리 로별",
+        "bayer": "ρ Centauri",
+        "x": 73.3,
+        "y": 58.6,
+        "magnitude": 3.97,
+        "badge": "청백색 별",
+        "tagline": "15번째로 밝은 별",
+        "brightness": "3.97등급",
+        "distance": "약 380광년",
+        "temperature": "약 12,600K",
+        "size": "태양의 약 3.7배",
+        "description": "센타우루스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "omicron1-cen",
+        "nameKo": "센타우루스자리 오미크론1별",
+        "bayer": "ο¹ Centauri",
+        "x": 80.7,
+        "y": 77.3,
+        "magnitude": 5.07,
+        "badge": "황색 초거성",
+        "tagline": "16번째로 밝은 별",
+        "brightness": "5.07등급",
+        "temperature": "약 4,700K",
+        "description": "센타우루스자리의 별자리 선을 이루는 황색 초거성이에요."
+      }
+    ],
+    "lines": [
+      [
+        "pi-cen",
+        "delta-cen"
+      ],
+      [
+        "omicron1-cen",
+        "rho-cen"
+      ],
+      [
+        "delta-cen",
+        "sigma-cen"
+      ],
+      [
+        "rho-cen",
+        "sigma-cen"
+      ],
+      [
+        "sigma-cen",
+        "gamma-cen"
+      ],
+      [
+        "gamma-cen",
+        "epsilon-cen"
+      ],
+      [
+        "iota-cen",
+        "nu-cen"
+      ],
+      [
+        "epsilon-cen",
+        "zeta-cen"
+      ],
+      [
+        "epsilon-cen",
+        "hadar"
+      ],
+      [
+        "epsilon-cen",
+        "rigil-kentaurus"
+      ],
+      [
+        "nu-cen",
+        "mu-cen"
+      ],
+      [
+        "nu-cen",
+        "menkent"
+      ],
+      [
+        "mu-cen",
+        "zeta-cen"
+      ],
+      [
+        "menkent",
+        "eta-cen"
+      ],
+      [
+        "eta-cen",
+        "kappa-cen"
+      ]
+    ]
+  },
+  {
+    "id": "horologium",
+    "isZodiac": false,
+    "nameKo": "시계자리",
+    "nameEn": "Horologium",
+    "nameLatin": "Horologium",
+    "abbr": "Hor",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "12월",
+      "season": "11월~1월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 지평선 가까이 (고도 약 10°)",
+      "tip": "한국에서는 남쪽 지평선 위에 겨우 걸리는 아주 어두운 별자리라 사실상 관측이 어려워요. 남반구에서 에리다누스자리 아케르나르 근처를 찾아보세요."
+    },
+    "origin": "시계자리는 18세기 프랑스 천문학자 니콜라 루이 드 라카유가 만든 별자리로, 추가 달린 시계(진자시계)를 나타내요. 라카유는 남아프리카 케이프에서 남쪽 하늘을 관측하며 과학과 기술 도구의 이름을 딴 별자리를 많이 만들었어요. 신화는 없고, 어두운 별 몇 개가 길게 이어진 모양이에요.",
+    "stars": [
+      {
+        "id": "alpha-hor",
+        "nameKo": "시계자리 알파별",
+        "bayer": "α Horologii",
+        "x": 17.9,
+        "y": 12.0,
+        "magnitude": 3.85,
+        "badge": "주황색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.85등급",
+        "distance": "약 120광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 9.2배",
+        "description": "시계자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 120광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-hor",
+        "nameKo": "시계자리 베타별",
+        "bayer": "β Horologii",
+        "x": 69.5,
+        "y": 88.0,
+        "magnitude": 4.98,
+        "badge": "백색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.98등급",
+        "distance": "약 290광년",
+        "temperature": "약 8,800K",
+        "size": "태양의 약 3.7배",
+        "description": "시계자리의 별자리 선을 이루는 백색 거성이에요. 지구에서 약 290광년 떨어져 있어요."
+      },
+      {
+        "id": "mu-hor",
+        "nameKo": "시계자리 뮤별",
+        "bayer": "μ Horologii",
+        "x": 67.5,
+        "y": 71.7,
+        "magnitude": 5.12,
+        "badge": "황백색 준거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "5.12등급",
+        "distance": "약 140광년",
+        "temperature": "약 7,200K",
+        "size": "태양의 약 2.5배",
+        "description": "시계자리의 별자리 선을 이루는 황백색 준거성이에요. 지구에서 약 140광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-hor",
+        "nameKo": "시계자리 제타별",
+        "bayer": "ζ Horologii",
+        "x": 79.7,
+        "y": 52.9,
+        "magnitude": 5.21,
+        "badge": "황백색 준거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "5.21등급",
+        "distance": "약 160광년",
+        "temperature": "약 6,800K",
+        "size": "태양의 약 3.0배",
+        "description": "시계자리의 별자리 선을 이루는 황백색 준거성이에요. 지구에서 약 160광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-hor",
+        "nameKo": "시계자리 에타별",
+        "bayer": "η Horologii",
+        "x": 82.1,
+        "y": 45.7,
+        "magnitude": 5.3,
+        "badge": "백색 별",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "5.3등급",
+        "distance": "약 150광년",
+        "temperature": "약 7,500K",
+        "size": "태양의 약 2.2배",
+        "description": "시계자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "iota-hor",
+        "nameKo": "시계자리 이오타별",
+        "bayer": "ι Horologii",
+        "x": 79.7,
+        "y": 39.0,
+        "magnitude": 5.4,
+        "badge": "황색 준거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "5.4등급",
+        "distance": "약 56광년",
+        "temperature": "약 6,100K",
+        "size": "태양의 약 1.2배",
+        "description": "시계자리의 별자리 선을 이루는 황색 준거성이에요. 지구에서 약 56광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "eta-hor",
+        "zeta-hor"
+      ],
+      [
+        "eta-hor",
+        "iota-hor"
+      ],
+      [
+        "zeta-hor",
+        "mu-hor"
+      ],
+      [
+        "iota-hor",
+        "alpha-hor"
+      ],
+      [
+        "beta-hor",
+        "mu-hor"
+      ]
+    ]
+  },
+  {
+    "id": "andromeda",
+    "isZodiac": false,
+    "nameKo": "안드로메다자리",
+    "nameEn": "Andromeda",
+    "nameLatin": "Andromeda",
+    "abbr": "And",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "observation": {
+      "bestMonth": "11월",
+      "season": "10월~12월",
+      "time": "저녁 9시 무렵",
+      "position": "머리 위 가까이 (고도 약 89°)",
+      "tip": "가을철 머리 위 가까이에서 페가수스 대사각형의 한 꼭짓점 알페라츠에서 이어지는 별 줄을 찾아보세요. 맑고 어두운 밤에는 맨눈으로 안드로메다은하(M31)가 흐릿하게 보여요."
+    },
+    "origin": "안드로메다자리는 그리스 신화의 공주 안드로메다를 나타내요. 어머니 카시오페이아가 딸이 바다 요정들보다 아름답다고 자랑하자, 포세이돈이 바다 괴물을 보내 나라를 괴롭혔어요. 안드로메다는 괴물의 제물로 바위에 쇠사슬로 묶였다가 영웅 페르세우스가 구해 주었고, 둘은 결혼했다고 전해져요. 이 별자리에는 맨눈으로 보이는 가장 먼 천체 가운데 하나인 안드로메다은하(M31)가 있어요. 지구에서 약 250만 광년 떨어져 있어요.",
+    "stars": [
+      {
+        "id": "alpheratz",
+        "nameKo": "알페라츠",
+        "bayer": "Alpheratz · α Andromedae",
+        "x": 62.0,
+        "y": 66.4,
+        "magnitude": 2.07,
+        "badge": "청백색 별",
+        "tagline": "두 별자리가 함께 쓰던 별",
+        "brightness": "2.07등급",
+        "distance": "약 97광년",
+        "temperature": "약 10,600K",
+        "size": "태양의 약 3.2배",
+        "description": "이름은 아랍어로 '말의 배꼽'을 뜻해요. 원래 페가수스자리와 안드로메다자리가 함께 쓰던 별로, 가을철 '페가수스 대사각형'의 한 꼭짓점이에요."
+      },
+      {
+        "id": "mirach",
+        "nameKo": "미라크",
+        "bayer": "Mirach · β Andromedae",
+        "x": 33.4,
+        "y": 51.4,
+        "magnitude": 2.07,
+        "badge": "적색 거성",
+        "tagline": "안드로메다은하 길잡이",
+        "brightness": "2.07등급",
+        "distance": "약 200광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 53배",
+        "description": "이름은 아랍어에서 왔어요. 이 별에서 위쪽으로 두 별을 이어 가면 안드로메다은하(M31)를 찾을 수 있어요."
+      },
+      {
+        "id": "almach",
+        "nameKo": "알마크",
+        "bayer": "Almach · γ¹ Andromedae",
+        "x": 12.0,
+        "y": 32.1,
+        "magnitude": 2.1,
+        "badge": "청백색 별",
+        "tagline": "주황과 청색이 나란한 별",
+        "brightness": "2.1등급",
+        "distance": "약 390광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 80배",
+        "description": "작은 망원경으로 보면 주황색 별과 청색 별이 나란히 보이는 아름다운 다중성계예요. 안드로메다의 발 부분에 해당하는 별이에요."
+      },
+      {
+        "id": "delta-and",
+        "nameKo": "안드로메다자리 델타별",
+        "bayer": "δ Andromedae",
+        "x": 46.9,
+        "y": 62.7,
+        "magnitude": 3.27,
+        "badge": "주황색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.27등급",
+        "distance": "약 110광년",
+        "temperature": "약 4,200K",
+        "size": "태양의 약 13배",
+        "description": "안드로메다자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 110광년 떨어져 있어요."
+      },
+      {
+        "id": "nembus",
+        "nameKo": "넴부스",
+        "bayer": "Nembus · 51 Andromedae",
+        "x": 25.6,
+        "y": 20.5,
+        "magnitude": 3.59,
+        "badge": "주황색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.59등급",
+        "distance": "약 180광년",
+        "temperature": "약 4,200K",
+        "size": "태양의 약 18배",
+        "description": "안드로메다자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 180광년 떨어져 있어요."
+      },
+      {
+        "id": "omicron-and",
+        "nameKo": "안드로메다자리 오미크론별",
+        "bayer": "ο Andromedae",
+        "x": 88.0,
+        "y": 32.1,
+        "magnitude": 3.62,
+        "badge": "청백색 별",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.62등급",
+        "distance": "약 690광년",
+        "temperature": "약 11,600K",
+        "size": "태양의 약 9.2배",
+        "description": "안드로메다자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 690광년 떨어져 있어요."
+      },
+      {
+        "id": "lambda-and",
+        "nameKo": "안드로메다자리 람다별",
+        "bayer": "λ Andromedae",
+        "x": 71.4,
+        "y": 26.2,
+        "magnitude": 3.81,
+        "badge": "황색 거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "3.81등급",
+        "distance": "약 86광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 6.2배",
+        "description": "안드로메다자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 86광년 떨어져 있어요."
+      },
+      {
+        "id": "mu-and",
+        "nameKo": "안드로메다자리 뮤별",
+        "bayer": "μ Andromedae",
+        "x": 39.7,
+        "y": 45.4,
+        "magnitude": 3.86,
+        "badge": "백색 별",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "3.86등급",
+        "distance": "약 130광년",
+        "temperature": "약 8,700K",
+        "size": "태양의 약 2.8배",
+        "description": "안드로메다자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 130광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-and",
+        "nameKo": "안드로메다자리 제타별",
+        "bayer": "ζ Andromedae",
+        "x": 42.5,
+        "y": 77.7,
+        "magnitude": 4.08,
+        "badge": "주황색 밝은 거성",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "4.08등급",
+        "distance": "약 190광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 14배",
+        "description": "안드로메다자리의 별자리 선을 이루는 주황색 밝은 거성이에요. 지구에서 약 190광년 떨어져 있어요."
+      },
+      {
+        "id": "kappa-and",
+        "nameKo": "안드로메다자리 카파별",
+        "bayer": "κ Andromedae",
+        "x": 71.0,
+        "y": 31.1,
+        "magnitude": 4.15,
+        "badge": "청백색 준거성",
+        "tagline": "10번째로 밝은 별",
+        "brightness": "4.15등급",
+        "distance": "약 170광년",
+        "temperature": "약 11,100K",
+        "size": "태양의 약 1.9배",
+        "description": "안드로메다자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 170광년 떨어져 있어요."
+      },
+      {
+        "id": "phi-and",
+        "nameKo": "안드로메다자리 피별",
+        "bayer": "φ Andromedae",
+        "x": 36.1,
+        "y": 25.5,
+        "magnitude": 4.26,
+        "badge": "청백색 거성",
+        "tagline": "11번째로 밝은 별",
+        "brightness": "4.26등급",
+        "distance": "약 720광년",
+        "temperature": "약 10,000K",
+        "size": "태양의 약 9.6배",
+        "description": "안드로메다자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 720광년 떨어져 있어요."
+      },
+      {
+        "id": "iota-and",
+        "nameKo": "안드로메다자리 이오타별",
+        "bayer": "ι Andromedae",
+        "x": 72.3,
+        "y": 33.4,
+        "magnitude": 4.29,
+        "badge": "청백색 별",
+        "tagline": "12번째로 밝은 별",
+        "brightness": "4.29등급",
+        "distance": "약 500광년",
+        "temperature": "약 11,300K",
+        "size": "태양의 약 5.2배",
+        "description": "안드로메다자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 500광년 떨어져 있어요."
+      },
+      {
+        "id": "pi-and",
+        "nameKo": "안드로메다자리 파이별",
+        "bayer": "π Andromedae",
+        "x": 48.2,
+        "y": 56.3,
+        "magnitude": 4.34,
+        "badge": "청백색 별",
+        "tagline": "13번째로 밝은 별",
+        "brightness": "4.34등급",
+        "distance": "약 600광년",
+        "temperature": "약 12,000K",
+        "size": "태양의 약 5.4배",
+        "description": "안드로메다자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 600광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-and",
+        "nameKo": "안드로메다자리 엡실론별",
+        "bayer": "ε Andromedae",
+        "x": 47.3,
+        "y": 66.2,
+        "magnitude": 4.34,
+        "badge": "황색 거성",
+        "tagline": "14번째로 밝은 별",
+        "brightness": "4.34등급",
+        "distance": "약 160광년",
+        "temperature": "약 5,100K",
+        "size": "태양의 약 8.1배",
+        "description": "안드로메다자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 160광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-and",
+        "nameKo": "안드로메다자리 에타별",
+        "bayer": "η Andromedae",
+        "x": 37.2,
+        "y": 79.5,
+        "magnitude": 4.4,
+        "badge": "황색 거성",
+        "tagline": "15번째로 밝은 별",
+        "brightness": "4.4등급",
+        "distance": "약 230광년",
+        "temperature": "약 4,900K",
+        "size": "태양의 약 12배",
+        "description": "안드로메다자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 230광년 떨어져 있어요."
+      },
+      {
+        "id": "nu-and",
+        "nameKo": "안드로메다자리 뉴별",
+        "bayer": "ν Andromedae",
+        "x": 42.9,
+        "y": 39.9,
+        "magnitude": 4.53,
+        "badge": "청백색 별",
+        "tagline": "16번째로 밝은 별",
+        "brightness": "4.53등급",
+        "distance": "약 620광년",
+        "temperature": "약 12,200K",
+        "size": "태양의 약 4.9배",
+        "description": "안드로메다자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 620광년 떨어져 있어요."
+      },
+      {
+        "id": "psi-and",
+        "nameKo": "안드로메다자리 프사이별",
+        "bayer": "ψ Andromedae",
+        "x": 68.1,
+        "y": 26.8,
+        "magnitude": 4.97,
+        "badge": "황색 초거성",
+        "tagline": "17번째로 밝은 별",
+        "brightness": "4.97등급",
+        "distance": "약 1,000광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 48배",
+        "description": "안드로메다자리의 별자리 선을 이루는 황색 초거성이에요. 지구에서 약 1,000광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "alpheratz",
+        "delta-and"
+      ],
+      [
+        "pi-and",
+        "delta-and"
+      ],
+      [
+        "pi-and",
+        "iota-and"
+      ],
+      [
+        "epsilon-and",
+        "delta-and"
+      ],
+      [
+        "epsilon-and",
+        "zeta-and"
+      ],
+      [
+        "delta-and",
+        "mirach"
+      ],
+      [
+        "zeta-and",
+        "eta-and"
+      ],
+      [
+        "nu-and",
+        "mu-and"
+      ],
+      [
+        "nu-and",
+        "phi-and"
+      ],
+      [
+        "mu-and",
+        "mirach"
+      ],
+      [
+        "phi-and",
+        "nembus"
+      ],
+      [
+        "mirach",
+        "almach"
+      ],
+      [
+        "omicron-and",
+        "iota-and"
+      ],
+      [
+        "lambda-and",
+        "kappa-and"
+      ],
+      [
+        "iota-and",
+        "kappa-and"
+      ],
+      [
+        "kappa-and",
+        "psi-and"
+      ]
+    ]
+  },
+  {
+    "id": "eridanus",
+    "isZodiac": false,
+    "nameKo": "에리다누스자리",
+    "nameEn": "Eridanus",
+    "nameLatin": "Eridanus",
+    "abbr": "Eri",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "12월",
+      "season": "11월~1월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 낮은 하늘 (고도 약 26°)",
+      "tip": "겨울철 오리온자리 리겔 근처에서 시작해 남쪽으로 구불구불 이어지는 별을 따라가 보세요. 한국에서는 남쪽 끝의 아케르나르가 보이지 않아 위쪽 일부만 보여요."
+    },
+    "origin": "에리다누스자리는 하늘에서 길게 구불구불 흐르는 강을 나타내요. 이야기는 여러 가지로 전해지는데, 태양의 마차를 몰다 제우스의 번개를 맞고 추락한 파에톤이 떨어진 강이라는 이야기가 가장 유명해요. 오리온자리 리겔 근처에서 시작해 남쪽 끝의 아케르나르까지 이어지고, 아케르나르는 이름이 '강의 끝'이라는 뜻이에요. 88개 별자리 가운데 여섯 번째로 넓어요.",
+    "stars": [
+      {
+        "id": "achernar",
+        "nameKo": "아케르나르",
+        "bayer": "Achernar · α Eridani",
+        "x": 77.9,
+        "y": 88.0,
+        "magnitude": 0.45,
+        "badge": "청백색 별",
+        "tagline": "강의 끝에서 빛나는 별",
+        "brightness": "0.45등급",
+        "distance": "약 140광년",
+        "temperature": "약 14,500K",
+        "size": "태양의 약 7~11배",
+        "description": "이름은 아랍어로 '강의 끝'을 뜻해요. 에리다누스 강의 가장 남쪽 끝에 있어요. 아주 빠르게 자전해서 둥근 공이 아니라 납작하게 찌그러진 모양인 별이에요."
+      },
+      {
+        "id": "cursa",
+        "nameKo": "쿠르사",
+        "bayer": "Cursa · β Eridani",
+        "x": 22.1,
+        "y": 15.0,
+        "magnitude": 2.78,
+        "badge": "백색 거성",
+        "tagline": "오리온의 발판",
+        "brightness": "2.78등급",
+        "distance": "약 89광년",
+        "temperature": "약 8,500K",
+        "size": "태양의 약 3.3배",
+        "description": "이름은 아랍어로 '발판'을 뜻해요. 오리온이 발을 올려놓은 발판에 해당하는 별이에요."
+      },
+      {
+        "id": "acamar",
+        "nameKo": "아카마르",
+        "bayer": "Acamar · θ¹ Eridani",
+        "x": 63.3,
+        "y": 58.7,
+        "magnitude": 2.88,
+        "badge": "백색 거성",
+        "tagline": "강의 끝에 있던 별",
+        "brightness": "2.88등급",
+        "distance": "약 160광년",
+        "temperature": "약 8,800K",
+        "size": "태양의 약 5.3배",
+        "description": "이름은 '강의 끝'을 뜻하는 말에서 왔어요. 옛날에는 이 별이 에리다누스 강의 맨 끝으로 여겨졌어요."
+      },
+      {
+        "id": "zaurak",
+        "nameKo": "자우라크",
+        "bayer": "Zaurak · γ Eridani",
+        "x": 47.2,
+        "y": 25.5,
+        "magnitude": 2.97,
+        "badge": "적색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "2.97등급",
+        "distance": "약 200광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 36배",
+        "description": "에리다누스자리의 별자리 선을 이루는 적색 거성이에요. 지구에서 약 200광년 떨어져 있어요."
+      },
+      {
+        "id": "rana",
+        "nameKo": "라나",
+        "bayer": "Rana · δ Eridani",
+        "x": 51.5,
+        "y": 20.6,
+        "magnitude": 3.52,
+        "badge": "주황색 준거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.52등급",
+        "distance": "약 29광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 2.2배",
+        "description": "에리다누스자리의 별자리 선을 이루는 주황색 준거성이에요. 지구에서 약 29광년 떨어져 있어요."
+      },
+      {
+        "id": "upsilon4-eri",
+        "nameKo": "에리다누스자리 입실론4별",
+        "bayer": "υ⁴ Eridani",
+        "x": 43.5,
+        "y": 51.0,
+        "magnitude": 3.55,
+        "badge": "청백색 별",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.55등급",
+        "distance": "약 180광년",
+        "temperature": "약 11,700K",
+        "size": "태양의 약 2.4배",
+        "description": "에리다누스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 180광년 떨어져 있어요."
+      },
+      {
+        "id": "phi-eri",
+        "nameKo": "에리다누스자리 피별",
+        "bayer": "φ Eridani",
+        "x": 71.3,
+        "y": 75.9,
+        "magnitude": 3.56,
+        "badge": "청백색 준거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "3.56등급",
+        "distance": "약 150광년",
+        "temperature": "약 11,900K",
+        "size": "태양의 약 2.0배",
+        "description": "에리다누스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "chi-eri",
+        "nameKo": "에리다누스자리 카이별",
+        "bayer": "χ Eridani",
+        "x": 75.8,
+        "y": 77.4,
+        "magnitude": 3.69,
+        "badge": "황색 준거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "3.69등급",
+        "distance": "약 58광년",
+        "temperature": "약 5,200K",
+        "size": "태양의 약 3.8배",
+        "description": "에리다누스자리의 별자리 선을 이루는 황색 준거성이에요. 지구에서 약 58광년 떨어져 있어요."
+      },
+      {
+        "id": "tau4-eri",
+        "nameKo": "에리다누스자리 타우4별",
+        "bayer": "τ⁴ Eridani",
+        "x": 58.6,
+        "y": 35.6,
+        "magnitude": 3.7,
+        "badge": "적색 거성",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "3.7등급",
+        "distance": "약 300광년",
+        "temperature": "약 3,600K",
+        "size": "태양의 약 41배",
+        "description": "에리다누스자리의 별자리 선을 이루는 적색 거성이에요. 지구에서 약 300광년 떨어져 있어요."
+      },
+      {
+        "id": "ran",
+        "nameKo": "란",
+        "bayer": "Ran · ε Eridani",
+        "x": 54.7,
+        "y": 20.2,
+        "magnitude": 3.72,
+        "badge": "주황색 별",
+        "tagline": "가까운 이웃 별",
+        "brightness": "3.72등급",
+        "distance": "약 10.5광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 0.7배",
+        "description": "지구에서 약 10.5광년 떨어진 가까운 이웃 별이에요. 젊은 시절의 태양과 비슷하고, 행성이 발견되었어요."
+      },
+      {
+        "id": "theemin",
+        "nameKo": "테에민",
+        "bayer": "Theemin · υ² Eridani",
+        "x": 38.3,
+        "y": 47.6,
+        "magnitude": 3.81,
+        "badge": "황색 거성",
+        "tagline": "11번째로 밝은 별",
+        "brightness": "3.81등급",
+        "distance": "약 210광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 15배",
+        "description": "에리다누스자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 210광년 떨어져 있어요."
+      },
+      {
+        "id": "azha",
+        "nameKo": "아자",
+        "bayer": "Azha · η Eridani",
+        "x": 66.2,
+        "y": 19.6,
+        "magnitude": 3.89,
+        "badge": "주황색 거성",
+        "tagline": "12번째로 밝은 별",
+        "brightness": "3.89등급",
+        "distance": "약 140광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 11배",
+        "description": "에리다누스자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 140광년 떨어져 있어요."
+      },
+      {
+        "id": "nu-eri",
+        "nameKo": "에리다누스자리 뉴별",
+        "bayer": "ν Eridani",
+        "x": 33.3,
+        "y": 12.1,
+        "magnitude": 3.93,
+        "badge": "청백색 거성",
+        "tagline": "13번째로 밝은 별",
+        "brightness": "3.93등급",
+        "distance": "약 680광년",
+        "temperature": "약 13,800K",
+        "size": "태양의 약 5.5배",
+        "description": "에리다누스자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 680광년 떨어져 있어요."
+      },
+      {
+        "id": "beemim",
+        "nameKo": "비밈",
+        "bayer": "Beemim · 43 Eridani",
+        "x": 41.9,
+        "y": 51.4,
+        "magnitude": 3.97,
+        "badge": "주황색 거성",
+        "tagline": "14번째로 밝은 별",
+        "brightness": "3.97등급",
+        "distance": "약 300광년",
+        "temperature": "약 3,800K",
+        "size": "태양의 약 31배",
+        "description": "에리다누스자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 300광년 떨어져 있어요."
+      },
+      {
+        "id": "mu-eri",
+        "nameKo": "에리다누스자리 뮤별",
+        "bayer": "μ Eridani",
+        "x": 30.0,
+        "y": 12.0,
+        "magnitude": 4.01,
+        "badge": "청백색 준거성",
+        "tagline": "15번째로 밝은 별",
+        "brightness": "4.01등급",
+        "distance": "약 520광년",
+        "temperature": "약 12,400K",
+        "size": "태양의 약 5.1배",
+        "description": "에리다누스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 520광년 떨어져 있어요."
+      },
+      {
+        "id": "beid",
+        "nameKo": "베이드",
+        "bayer": "Beid · ο¹ Eridani",
+        "x": 42.2,
+        "y": 16.9,
+        "magnitude": 4.04,
+        "badge": "황백색 거성",
+        "tagline": "16번째로 밝은 별",
+        "brightness": "4.04등급",
+        "distance": "약 120광년",
+        "temperature": "약 7,300K",
+        "size": "태양의 약 3.4배",
+        "description": "에리다누스자리의 별자리 선을 이루는 황백색 거성이에요. 지구에서 약 120광년 떨어져 있어요."
+      },
+      {
+        "id": "tau3-eri",
+        "nameKo": "에리다누스자리 타우3별",
+        "bayer": "τ³ Eridani",
+        "x": 63.4,
+        "y": 38.0,
+        "magnitude": 4.08,
+        "badge": "백색 별",
+        "tagline": "17번째로 밝은 별",
+        "brightness": "4.08등급",
+        "distance": "약 89광년",
+        "temperature": "약 8,500K",
+        "size": "태양의 약 1.8배",
+        "description": "에리다누스자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 89광년 떨어져 있어요."
+      },
+      {
+        "id": "iota-eri",
+        "nameKo": "에리다누스자리 이오타별",
+        "bayer": "ι Eridani",
+        "x": 67.6,
+        "y": 58.6,
+        "magnitude": 4.11,
+        "badge": "주황색 거성",
+        "tagline": "18번째로 밝은 별",
+        "brightness": "4.11등급",
+        "distance": "약 150광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 9.8배",
+        "description": "에리다누스자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "hr1195",
+        "nameKo": "HR 1195",
+        "bayer": "HR 1195",
+        "x": 50.9,
+        "y": 53.3,
+        "magnitude": 4.17,
+        "badge": "황색 거성",
+        "tagline": "19번째로 밝은 별",
+        "brightness": "4.17등급",
+        "distance": "약 210광년",
+        "temperature": "약 4,900K",
+        "size": "태양의 약 12배",
+        "description": "에리다누스자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 210광년 떨어져 있어요."
+      },
+      {
+        "id": "tau6-eri",
+        "nameKo": "에리다누스자리 타우6별",
+        "bayer": "τ⁶ Eridani",
+        "x": 51.0,
+        "y": 37.5,
+        "magnitude": 4.22,
+        "badge": "황백색 별",
+        "tagline": "20번째로 밝은 별",
+        "brightness": "4.22등급",
+        "distance": "약 57광년",
+        "temperature": "약 6,700K",
+        "size": "태양의 약 1.7배",
+        "description": "에리다누스자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 57광년 떨어져 있어요."
+      },
+      {
+        "id": "kappa-eri",
+        "nameKo": "에리다누스자리 카파별",
+        "bayer": "κ Eridani",
+        "x": 69.7,
+        "y": 69.7,
+        "magnitude": 4.24,
+        "badge": "청백색 준거성",
+        "tagline": "21번째로 밝은 별",
+        "brightness": "4.24등급",
+        "distance": "약 510광년",
+        "temperature": "약 12,200K",
+        "size": "태양의 약 4.6배",
+        "description": "에리다누스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 510광년 떨어져 있어요."
+      },
+      {
+        "id": "pi-cet",
+        "nameKo": "고래자리 파이별",
+        "bayer": "π Ceti",
+        "x": 69.6,
+        "y": 26.2,
+        "magnitude": 4.24,
+        "badge": "청백색 준거성",
+        "tagline": "22번째로 밝은 별",
+        "brightness": "4.24등급",
+        "distance": "약 390광년",
+        "temperature": "약 12,000K",
+        "size": "태양의 약 3.7배",
+        "description": "고래자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 390광년 떨어져 있어요."
+      },
+      {
+        "id": "82-g-eri",
+        "nameKo": "HR 1008",
+        "bayer": "HR 1008",
+        "x": 58.1,
+        "y": 62.0,
+        "magnitude": 4.26,
+        "badge": "황색 별",
+        "tagline": "23번째로 밝은 별",
+        "brightness": "4.26등급",
+        "distance": "약 19.7광년",
+        "temperature": "약 5,600K",
+        "size": "태양의 약 0.8배",
+        "description": "에리다누스자리의 별자리 선을 이루는 황색 별이에요. 지구에서 약 19.7광년 떨어져 있어요."
+      },
+      {
+        "id": "tau5-eri",
+        "nameKo": "에리다누스자리 타우5별",
+        "bayer": "τ⁵ Eridani",
+        "x": 54.6,
+        "y": 35.5,
+        "magnitude": 4.26,
+        "badge": "청백색 별",
+        "tagline": "24번째로 밝은 별",
+        "brightness": "4.26등급",
+        "distance": "약 290광년",
+        "temperature": "약 11,700K",
+        "size": "태양의 약 2.9배",
+        "description": "에리다누스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 290광년 떨어져 있어요."
+      },
+      {
+        "id": "pi-eri",
+        "nameKo": "에리다누스자리 파이별",
+        "bayer": "π Eridani",
+        "x": 50.7,
+        "y": 23.7,
+        "magnitude": 4.43,
+        "badge": "적색 거성",
+        "tagline": "25번째로 밝은 별",
+        "brightness": "4.43등급",
+        "distance": "약 480광년",
+        "temperature": "약 3,600K",
+        "size": "태양의 약 46배",
+        "description": "에리다누스자리의 별자리 선을 이루는 적색 거성이에요. 지구에서 약 480광년 떨어져 있어요."
+      },
+      {
+        "id": "tau1-eri",
+        "nameKo": "에리다누스자리 타우1별",
+        "bayer": "τ¹ Eridani",
+        "x": 68.8,
+        "y": 32.1,
+        "magnitude": 4.47,
+        "badge": "황백색 별",
+        "tagline": "26번째로 밝은 별",
+        "brightness": "4.47등급",
+        "distance": "약 46광년",
+        "temperature": "약 6,500K",
+        "size": "태양의 약 1.3배",
+        "description": "에리다누스자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 46광년 떨어져 있어요."
+      },
+      {
+        "id": "hr1106",
+        "nameKo": "HR 1106",
+        "bayer": "HR 1106",
+        "x": 54.1,
+        "y": 58.4,
+        "magnitude": 4.57,
+        "badge": "주황색 거성",
+        "tagline": "27번째로 밝은 별",
+        "brightness": "4.57등급",
+        "distance": "약 230광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 12배",
+        "description": "에리다누스자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 230광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "achernar",
+        "chi-eri"
+      ],
+      [
+        "chi-eri",
+        "phi-eri"
+      ],
+      [
+        "phi-eri",
+        "kappa-eri"
+      ],
+      [
+        "kappa-eri",
+        "iota-eri"
+      ],
+      [
+        "iota-eri",
+        "acamar"
+      ],
+      [
+        "pi-cet",
+        "tau1-eri"
+      ],
+      [
+        "pi-cet",
+        "azha"
+      ],
+      [
+        "tau1-eri",
+        "tau3-eri"
+      ],
+      [
+        "azha",
+        "ran"
+      ],
+      [
+        "acamar",
+        "82-g-eri"
+      ],
+      [
+        "tau3-eri",
+        "tau4-eri"
+      ],
+      [
+        "tau4-eri",
+        "tau5-eri"
+      ],
+      [
+        "82-g-eri",
+        "hr1106"
+      ],
+      [
+        "ran",
+        "rana"
+      ],
+      [
+        "tau5-eri",
+        "tau6-eri"
+      ],
+      [
+        "hr1106",
+        "hr1195"
+      ],
+      [
+        "rana",
+        "pi-eri"
+      ],
+      [
+        "pi-eri",
+        "zaurak"
+      ],
+      [
+        "tau6-eri",
+        "theemin"
+      ],
+      [
+        "hr1195",
+        "upsilon4-eri"
+      ],
+      [
+        "zaurak",
+        "beid"
+      ],
+      [
+        "beid",
+        "nu-eri"
+      ],
+      [
+        "upsilon4-eri",
+        "beemim"
+      ],
+      [
+        "beemim",
+        "theemin"
+      ],
+      [
+        "nu-eri",
+        "mu-eri"
+      ],
+      [
+        "mu-eri",
+        "cursa"
+      ]
+    ]
+  },
+  {
+    "id": "monoceros",
+    "isZodiac": false,
+    "nameKo": "외뿔소자리",
+    "nameEn": "Monoceros",
+    "nameLatin": "Monoceros",
+    "abbr": "Mon",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "2월",
+      "season": "1월~3월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 하늘 (고도 약 52°)",
+      "tip": "겨울철 오리온자리, 큰개자리, 작은개자리 사이의 은하수 속에서 어두운 별들을 찾아보세요. 밝은 별이 없어 맑고 어두운 밤이 좋아요."
+    },
+    "origin": "외뿔소자리는 이마에 뿔이 하나 달린 전설 속 동물, 일각수(유니콘)를 나타내요. 17세기 초에 만들어진 비교적 새로운 별자리이고, 신화는 없어요. 오리온자리, 큰개자리, 작은개자리 사이의 은하수 속에 있고 밝은 별이 거의 없어요. 대신 장미 모양의 '장미성운'과 '크리스마스트리성단' 같은 볼거리가 있어요.",
+    "stars": [
+      {
+        "id": "beta-mon",
+        "nameKo": "외뿔소자리 베타별",
+        "bayer": "β Monocerotis",
+        "x": 78.7,
+        "y": 68.7,
+        "magnitude": 3.76,
+        "badge": "청백색 별",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.76등급",
+        "distance": "약 680광년",
+        "temperature": "약 11,800K",
+        "size": "태양의 약 8.2배",
+        "description": "외뿔소자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 680광년 떨어져 있어요."
+      },
+      {
+        "id": "alpha-mon",
+        "nameKo": "외뿔소자리 알파별",
+        "bayer": "α Monocerotis",
+        "x": 31.1,
+        "y": 75.8,
+        "magnitude": 3.94,
+        "badge": "주황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.94등급",
+        "distance": "약 150광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 10배",
+        "description": "외뿔소자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-mon",
+        "nameKo": "외뿔소자리 감마별",
+        "bayer": "γ Monocerotis",
+        "x": 88.0,
+        "y": 66.9,
+        "magnitude": 3.99,
+        "badge": "주황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "3.99등급",
+        "distance": "약 500광년",
+        "temperature": "약 4,100K",
+        "size": "태양의 약 45배",
+        "description": "외뿔소자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 500광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-mon",
+        "nameKo": "외뿔소자리 델타별",
+        "bayer": "δ Monocerotis",
+        "x": 50.6,
+        "y": 51.5,
+        "magnitude": 4.15,
+        "badge": "백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.15등급",
+        "distance": "약 380광년",
+        "temperature": "약 10,200K",
+        "size": "태양의 약 5.2배",
+        "description": "외뿔소자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-mon",
+        "nameKo": "외뿔소자리 제타별",
+        "bayer": "ζ Monocerotis",
+        "x": 12.0,
+        "y": 58.4,
+        "magnitude": 4.36,
+        "badge": "황색 초거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.36등급",
+        "distance": "약 1,060광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 59배",
+        "description": "외뿔소자리의 별자리 선을 이루는 황색 초거성이에요. 지구에서 약 1,060광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-mon",
+        "nameKo": "외뿔소자리 엡실론별",
+        "bayer": "ε Monocerotis",
+        "x": 82.1,
+        "y": 38.1,
+        "magnitude": 4.39,
+        "badge": "백색 준거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "4.39등급",
+        "distance": "약 120광년",
+        "temperature": "약 8,000K",
+        "size": "태양의 약 2.4배",
+        "description": "외뿔소자리의 별자리 선을 이루는 백색 준거성이에요. 지구에서 약 120광년 떨어져 있어요."
+      },
+      {
+        "id": "13-mon",
+        "nameKo": "외뿔소자리 13번",
+        "bayer": "13 Monocerotis",
+        "x": 76.1,
+        "y": 31.0,
+        "magnitude": 4.47,
+        "badge": "백색 초거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "4.47등급",
+        "temperature": "약 9,800K",
+        "description": "외뿔소자리의 별자리 선을 이루는 백색 초거성이에요."
+      },
+      {
+        "id": "18-mon",
+        "nameKo": "외뿔소자리 18번",
+        "bayer": "18 Monocerotis",
+        "x": 66.3,
+        "y": 44.0,
+        "magnitude": 4.48,
+        "badge": "주황색 거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "4.48등급",
+        "distance": "약 370광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 22배",
+        "description": "외뿔소자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 370광년 떨어져 있어요."
+      },
+      {
+        "id": "15-mon",
+        "nameKo": "외뿔소자리 15번",
+        "bayer": "15 Monocerotis",
+        "x": 70.8,
+        "y": 24.2,
+        "magnitude": 4.66,
+        "badge": "청백색 별",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "4.66등급",
+        "distance": "약 920광년",
+        "temperature": "약 14,400K",
+        "size": "태양의 약 4.9배",
+        "description": "외뿔소자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 920광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "gamma-mon",
+        "beta-mon"
+      ],
+      [
+        "epsilon-mon",
+        "13-mon"
+      ],
+      [
+        "epsilon-mon",
+        "18-mon"
+      ],
+      [
+        "beta-mon",
+        "delta-mon"
+      ],
+      [
+        "13-mon",
+        "15-mon"
+      ],
+      [
+        "18-mon",
+        "delta-mon"
+      ],
+      [
+        "delta-mon",
+        "zeta-mon"
+      ],
+      [
+        "alpha-mon",
+        "zeta-mon"
+      ]
+    ]
+  },
+  {
+    "id": "carina",
+    "isZodiac": false,
+    "nameKo": "용골자리",
+    "nameEn": "Carina",
+    "nameLatin": "Carina",
+    "abbr": "Car",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "3월 (남반구 기준)",
+      "season": "2월~4월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국 본토에서는 볼 수 없어요. 제주도 등 남쪽 끝에서는 카노푸스가 남쪽 지평선 가까이에 아주 낮게 보일 때가 있어요.",
+      "region": "south"
+    },
+    "origin": "용골자리는 원래 그리스 신화의 영웅 이아손이 탔던 거대한 배 '아르고호'를 나타내던 아르고자리의 일부였어요. 아르고자리는 너무 커서 18세기 프랑스 천문학자 라카유가 용골자리·돛자리·고물자리로 나누었고, 용골은 배 바닥의 뼈대 부분이에요. 으뜸별 카노푸스는 밤하늘에서 시리우스 다음으로 밝아요. 이 별자리에는 아주 큰 '용골자리 성운'과, 언젠가 초신성이 될 것으로 보이는 별 에타 카리나도 있어요.",
+    "stars": [
+      {
+        "id": "canopus",
+        "nameKo": "카노푸스",
+        "bayer": "Canopus · α Carinae",
+        "x": 79.4,
+        "y": 54.8,
+        "magnitude": -0.62,
+        "badge": "황백색 초거성",
+        "tagline": "시리우스 다음으로 밝은 별",
+        "brightness": "-0.62등급",
+        "distance": "약 310광년",
+        "temperature": "약 7,350K",
+        "size": "태양의 약 71배",
+        "description": "밤하늘에서 시리우스 다음으로 밝은 별이에요. 이름은 그리스 신화 속 메넬라오스 왕의 배 키잡이에서 따왔다고 전해져요. 우주선이 방향을 잡는 기준별로도 쓰여요."
+      },
+      {
+        "id": "miaplacidus",
+        "nameKo": "미아플라키두스",
+        "bayer": "Miaplacidus · β Carinae",
+        "x": 35.1,
+        "y": 66.7,
+        "magnitude": 1.67,
+        "badge": "백색 준거성",
+        "tagline": "'잔잔한 물'이라는 이름의 별",
+        "brightness": "1.67등급",
+        "distance": "약 110광년",
+        "temperature": "약 9,300K",
+        "size": "태양의 약 5.8배",
+        "description": "이름은 아랍어 '물'과 라틴어 '잔잔한'이 합쳐진 말로, '잔잔한 물'이라는 뜻이라고 알려져 있어요."
+      },
+      {
+        "id": "regor",
+        "nameKo": "레고르",
+        "bayer": "Regor · γ² Velorum",
+        "x": 56.2,
+        "y": 32.4,
+        "magnitude": 1.75,
+        "badge": "쌍성계",
+        "tagline": "볼프-레이예 별이 있는 쌍성계",
+        "brightness": "1.75등급",
+        "distance": "약 1,120광년",
+        "description": "이름은 아폴로 우주비행사 로저(Roger)의 이름을 거꾸로 읽은 것이에요. 아주 뜨거운 볼프-레이예 별과 푸른 별로 이루어진 쌍성계예요."
+      },
+      {
+        "id": "avior",
+        "nameKo": "아비오르",
+        "bayer": "Avior · ε Carinae",
+        "x": 47.0,
+        "y": 51.4,
+        "magnitude": 1.86,
+        "badge": "주황색 거성",
+        "tagline": "가짜 십자가의 한 별",
+        "brightness": "1.86등급",
+        "distance": "약 610광년",
+        "temperature": "약 4,300K",
+        "size": "태양의 약 130배",
+        "description": "이름은 20세기에 항해용 별 목록을 만들며 새로 붙인 이름이에요. 돛자리 델타·카파, 용골자리 이오타와 함께 '가짜 십자가'를 이루는 별이에요."
+      },
+      {
+        "id": "alsephina",
+        "nameKo": "알세피나",
+        "bayer": "Alsephina · δ Velorum",
+        "x": 43.8,
+        "y": 42.5,
+        "magnitude": 1.93,
+        "badge": "백색 별",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "1.93등급",
+        "distance": "약 81광년",
+        "temperature": "약 9,600K",
+        "size": "태양의 약 3.4배",
+        "description": "이름은 아랍어로 '작은 배'를 뜻하는 말에서 왔어요."
+      },
+      {
+        "id": "aspidiske",
+        "nameKo": "아스피디스케",
+        "bayer": "Aspidiske · ι Carinae",
+        "x": 35.6,
+        "y": 49.2,
+        "magnitude": 2.21,
+        "badge": "백색 초거성",
+        "tagline": "'작은 방패'라는 이름의 별",
+        "brightness": "2.21등급",
+        "distance": "약 770광년",
+        "temperature": "약 8,200K",
+        "size": "태양의 약 39배",
+        "description": "이름은 그리스어로 '작은 방패'를 뜻해요. 용골자리 엡실론, 돛자리 델타·카파와 함께 남십자자리와 닮아 '가짜 십자가'라고 불리는 모양을 이뤄요."
+      },
+      {
+        "id": "theta-car",
+        "nameKo": "용골자리 세타별",
+        "bayer": "θ Carinae",
+        "x": 19.7,
+        "y": 59.3,
+        "magnitude": 2.74,
+        "badge": "청백색 별",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "2.74등급",
+        "distance": "약 460광년",
+        "temperature": "약 14,100K",
+        "size": "태양의 약 6.2배",
+        "description": "용골자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 460광년 떨어져 있어요."
+      },
+      {
+        "id": "nu-pup",
+        "nameKo": "고물자리 뉴별",
+        "bayer": "ν Puppis",
+        "x": 88.0,
+        "y": 37.9,
+        "magnitude": 3.17,
+        "badge": "청백색 거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "3.17등급",
+        "distance": "약 370광년",
+        "temperature": "약 11,600K",
+        "size": "태양의 약 6.1배",
+        "description": "고물자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 370광년 떨어져 있어요."
+      },
+      {
+        "id": "omega-car",
+        "nameKo": "용골자리 오메가별",
+        "bayer": "ω Carinae",
+        "x": 26.4,
+        "y": 67.6,
+        "magnitude": 3.29,
+        "badge": "청백색 거성",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "3.29등급",
+        "distance": "약 340광년",
+        "temperature": "약 11,200K",
+        "size": "태양의 약 5.7배",
+        "description": "용골자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 340광년 떨어져 있어요."
+      },
+      {
+        "id": "hr4140",
+        "nameKo": "HR 4140",
+        "bayer": "HR 4140",
+        "x": 20.7,
+        "y": 54.3,
+        "magnitude": 3.3,
+        "badge": "청백색 별",
+        "tagline": "10번째로 밝은 별",
+        "brightness": "3.3등급",
+        "distance": "약 480광년",
+        "temperature": "약 11,400K",
+        "size": "태양의 약 7.8배",
+        "description": "용골자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 480광년 떨어져 있어요."
+      },
+      {
+        "id": "hr4050",
+        "nameKo": "HR 4050",
+        "bayer": "HR 4050",
+        "x": 23.5,
+        "y": 53.2,
+        "magnitude": 3.39,
+        "badge": "주황색 밝은 거성",
+        "tagline": "11번째로 밝은 별",
+        "brightness": "3.39등급",
+        "distance": "약 660광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 96배",
+        "description": "용골자리의 별자리 선을 이루는 주황색 밝은 거성이에요. 지구에서 약 660광년 떨어져 있어요."
+      },
+      {
+        "id": "chi-car",
+        "nameKo": "용골자리 카이별",
+        "bayer": "χ Carinae",
+        "x": 56.3,
+        "y": 42.8,
+        "magnitude": 3.46,
+        "badge": "청백색 준거성",
+        "tagline": "12번째로 밝은 별",
+        "brightness": "3.46등급",
+        "distance": "약 450광년",
+        "temperature": "약 13,100K",
+        "size": "태양의 약 5.1배",
+        "description": "용골자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 450광년 떨어져 있어요."
+      },
+      {
+        "id": "hr4257",
+        "nameKo": "HR 4257",
+        "bayer": "HR 4257",
+        "x": 15.1,
+        "y": 50.9,
+        "magnitude": 3.78,
+        "badge": "주황색 거성",
+        "tagline": "13번째로 밝은 별",
+        "brightness": "3.78등급",
+        "distance": "약 95광년",
+        "temperature": "약 4,900K",
+        "size": "태양의 약 6.6배",
+        "description": "용골자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 95광년 떨어져 있어요."
+      },
+      {
+        "id": "hr4337",
+        "nameKo": "HR 4337",
+        "bayer": "HR 4337",
+        "x": 12.0,
+        "y": 52.2,
+        "magnitude": 3.93,
+        "badge": "황색 초거성",
+        "tagline": "14번째로 밝은 별",
+        "brightness": "3.93등급",
+        "temperature": "약 4,300K",
+        "description": "용골자리의 별자리 선을 이루는 황색 초거성이에요."
+      },
+      {
+        "id": "hr4352",
+        "nameKo": "HR 4352",
+        "bayer": "HR 4352",
+        "x": 12.0,
+        "y": 54.6,
+        "magnitude": 4.59,
+        "badge": "백색 초거성",
+        "tagline": "15번째로 밝은 별",
+        "brightness": "4.59등급",
+        "temperature": "약 6,200K",
+        "description": "용골자리의 별자리 선을 이루는 백색 초거성이에요."
+      },
+      {
+        "id": "hr4325",
+        "nameKo": "HR 4325",
+        "bayer": "HR 4325",
+        "x": 14.4,
+        "y": 57.5,
+        "magnitude": 4.62,
+        "badge": "황색 거성",
+        "tagline": "16번째로 밝은 별",
+        "brightness": "4.62등급",
+        "distance": "약 400광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 20배",
+        "description": "용골자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 400광년 떨어져 있어요."
+      },
+      {
+        "id": "hr4338",
+        "nameKo": "HR 4338",
+        "bayer": "HR 4338",
+        "x": 13.8,
+        "y": 56.9,
+        "magnitude": 5.11,
+        "badge": "청백색 초거성",
+        "tagline": "17번째로 밝은 별",
+        "brightness": "5.11등급",
+        "temperature": "약 8,200K",
+        "description": "용골자리의 별자리 선을 이루는 청백색 초거성이에요."
+      }
+    ],
+    "lines": [
+      [
+        "canopus",
+        "nu-pup"
+      ],
+      [
+        "canopus",
+        "miaplacidus"
+      ],
+      [
+        "chi-car",
+        "regor"
+      ],
+      [
+        "chi-car",
+        "avior"
+      ],
+      [
+        "regor",
+        "alsephina"
+      ],
+      [
+        "avior",
+        "aspidiske"
+      ],
+      [
+        "alsephina",
+        "aspidiske"
+      ],
+      [
+        "miaplacidus",
+        "omega-car"
+      ],
+      [
+        "aspidiske",
+        "hr4050"
+      ],
+      [
+        "omega-car",
+        "theta-car"
+      ],
+      [
+        "hr4050",
+        "hr4140"
+      ],
+      [
+        "hr4140",
+        "theta-car"
+      ],
+      [
+        "hr4140",
+        "hr4257"
+      ],
+      [
+        "theta-car",
+        "hr4325"
+      ],
+      [
+        "hr4257",
+        "hr4337"
+      ],
+      [
+        "hr4325",
+        "hr4338"
+      ],
+      [
+        "hr4338",
+        "hr4352"
+      ],
+      [
+        "hr4337",
+        "hr4352"
+      ]
+    ]
+  },
+  {
+    "id": "draco",
+    "isZodiac": false,
+    "nameKo": "용자리",
+    "nameEn": "Draco",
+    "nameLatin": "Draco",
+    "abbr": "Dra",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "연중",
+    "observation": {
+      "bestMonth": "7월",
+      "season": "6월~8월",
+      "time": "저녁 9시 무렵",
+      "position": "북쪽 하늘 (고도 약 64°)",
+      "tip": "북극성 둘레를 감싸듯 이어진 긴 별자리예요. 머리 쪽은 여름철 헤라클레스자리 옆의 사다리꼴 모양 별에서 찾고, 몸은 북두칠성과 작은곰자리 사이를 따라가 보세요."
+    },
+    "origin": "용자리는 그리스 신화에서 황금 사과를 지키던 용 라돈을 나타낸다는 이야기가 널리 알려져 있어요. 헤라클레스는 열두 과업 가운데 하나로 이 용을 물리치고 사과를 얻었다고 해요. 용자리는 북극성 둘레를 감싸듯 긴 몸을 구불구불 늘어뜨리고 있어요. 약 4,500년 전 이집트에서 피라미드를 짓던 때 북극성 역할을 했던 별 투반이 이 별자리에 있어요.",
+    "stars": [
+      {
+        "id": "eltanin",
+        "nameKo": "엘타닌",
+        "bayer": "Eltanin · γ Draconis",
+        "x": 19.0,
+        "y": 84.9,
+        "magnitude": 2.24,
+        "badge": "주황색 거성",
+        "tagline": "용의 머리",
+        "brightness": "2.24등급",
+        "distance": "약 150광년",
+        "temperature": "약 3,800K",
+        "size": "태양의 약 36배",
+        "description": "이름은 아랍어로 '큰 뱀'을 뜻해요. 용의 머리에서 가장 밝은 별이고, 18세기에 이 별을 관측하다가 빛의 광행차가 발견되었어요."
+      },
+      {
+        "id": "athebyne",
+        "nameKo": "아테비네",
+        "bayer": "Athebyne · η Draconis",
+        "x": 47.0,
+        "y": 66.8,
+        "magnitude": 2.73,
+        "badge": "황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "2.73등급",
+        "distance": "약 92광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 10배",
+        "description": "용자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 92광년 떨어져 있어요."
+      },
+      {
+        "id": "rastaban",
+        "nameKo": "라스타반",
+        "bayer": "Rastaban · β Draconis",
+        "x": 27.7,
+        "y": 84.9,
+        "magnitude": 2.79,
+        "badge": "황색 밝은 거성",
+        "tagline": "용의 머리 별",
+        "brightness": "2.79등급",
+        "distance": "약 380광년",
+        "temperature": "약 4,900K",
+        "size": "태양의 약 42배",
+        "description": "이름은 아랍어로 '뱀의 머리'를 뜻해요. 용의 머리를 이루는 별 가운데 하나예요."
+      },
+      {
+        "id": "altais",
+        "nameKo": "알타이스",
+        "bayer": "Altais · δ Draconis",
+        "x": 14.2,
+        "y": 46.2,
+        "magnitude": 3.07,
+        "badge": "황색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.07등급",
+        "distance": "약 97광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 9.8배",
+        "description": "용자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 97광년 떨어져 있어요."
+      },
+      {
+        "id": "aldhibah",
+        "nameKo": "알디바",
+        "bayer": "Aldhibah · ζ Draconis",
+        "x": 36.9,
+        "y": 58.3,
+        "magnitude": 3.17,
+        "badge": "청백색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.17등급",
+        "distance": "약 330광년",
+        "temperature": "약 11,900K",
+        "size": "태양의 약 5.1배",
+        "description": "용자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 330광년 떨어져 있어요."
+      },
+      {
+        "id": "edasich",
+        "nameKo": "에다시크",
+        "bayer": "Edasich · ι Draconis",
+        "x": 62.8,
+        "y": 68.9,
+        "magnitude": 3.29,
+        "badge": "주황색 거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.29등급",
+        "distance": "약 100광년",
+        "temperature": "약 4,400K",
+        "size": "태양의 약 11배",
+        "description": "용자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 100광년 떨어져 있어요."
+      },
+      {
+        "id": "chi-dra",
+        "nameKo": "용자리 카이별",
+        "bayer": "χ Draconis",
+        "x": 27.3,
+        "y": 41.2,
+        "magnitude": 3.55,
+        "badge": "황백색 별",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "3.55등급",
+        "distance": "약 26광년",
+        "temperature": "약 6,400K",
+        "size": "태양의 약 1.2배",
+        "description": "용자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 26광년 떨어져 있어요."
+      },
+      {
+        "id": "thuban",
+        "nameKo": "투반",
+        "bayer": "Thuban · α Draconis",
+        "x": 75.8,
+        "y": 49.7,
+        "magnitude": 3.67,
+        "badge": "백색 거성",
+        "tagline": "옛날의 북극성",
+        "brightness": "3.67등급",
+        "distance": "약 300광년",
+        "temperature": "약 10,800K",
+        "size": "태양의 약 4.6배",
+        "description": "이름은 아랍어로 '큰 뱀'을 뜻해요. 약 5,000년 전에는 북극성이던 별이에요. 지구 자전축이 천천히 흔들리는 세차운동 때문에 시대마다 북극성이 바뀌어요."
+      },
+      {
+        "id": "grumium",
+        "nameKo": "그루미움",
+        "bayer": "Grumium · ξ Draconis",
+        "x": 23.0,
+        "y": 74.2,
+        "magnitude": 3.73,
+        "badge": "주황색 거성",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "3.73등급",
+        "distance": "약 110광년",
+        "temperature": "약 4,400K",
+        "size": "태양의 약 9.9배",
+        "description": "용자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 110광년 떨어져 있어요."
+      },
+      {
+        "id": "giausar",
+        "nameKo": "지아우사르",
+        "bayer": "Giausar · λ Draconis",
+        "x": 88.0,
+        "y": 15.1,
+        "magnitude": 3.82,
+        "badge": "적색 거성",
+        "tagline": "10번째로 밝은 별",
+        "brightness": "3.82등급",
+        "distance": "약 330광년",
+        "temperature": "약 3,600K",
+        "size": "태양의 약 42배",
+        "description": "용자리의 별자리 선을 이루는 적색 거성이에요. 지구에서 약 330광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-dra",
+        "nameKo": "용자리 엡실론별",
+        "bayer": "ε Draconis",
+        "x": 12.0,
+        "y": 37.5,
+        "magnitude": 3.84,
+        "badge": "황색 거성",
+        "tagline": "11번째로 밝은 별",
+        "brightness": "3.84등급",
+        "distance": "약 150광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 9.6배",
+        "description": "용자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "kappa-dra",
+        "nameKo": "용자리 카파별",
+        "bayer": "κ Draconis",
+        "x": 81.0,
+        "y": 27.1,
+        "magnitude": 3.85,
+        "badge": "청백색 거성",
+        "tagline": "12번째로 밝은 별",
+        "brightness": "3.85등급",
+        "distance": "약 490광년",
+        "temperature": "약 11,800K",
+        "size": "태양의 약 5.7배",
+        "description": "용자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 490광년 떨어져 있어요."
+      },
+      {
+        "id": "theta-dra",
+        "nameKo": "용자리 세타별",
+        "bayer": "θ Draconis",
+        "x": 53.4,
+        "y": 72.0,
+        "magnitude": 4.01,
+        "badge": "황백색 준거성",
+        "tagline": "13번째로 밝은 별",
+        "brightness": "4.01등급",
+        "distance": "약 69광년",
+        "temperature": "약 6,300K",
+        "size": "태양의 약 2.6배",
+        "description": "용자리의 별자리 선을 이루는 황백색 준거성이에요. 지구에서 약 69광년 떨어져 있어요."
+      },
+      {
+        "id": "phi-dra",
+        "nameKo": "용자리 피별",
+        "bayer": "φ Draconis",
+        "x": 26.3,
+        "y": 43.9,
+        "magnitude": 4.22,
+        "badge": "백색 별",
+        "tagline": "14번째로 밝은 별",
+        "brightness": "4.22등급",
+        "distance": "약 300광년",
+        "temperature": "약 11,500K",
+        "size": "태양의 약 3.1배",
+        "description": "용자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 300광년 떨어져 있어요."
+      },
+      {
+        "id": "nu2-dra",
+        "nameKo": "용자리 뉴2별",
+        "bayer": "ν² Draconis",
+        "x": 28.2,
+        "y": 78.9,
+        "magnitude": 4.86,
+        "badge": "백색 별",
+        "tagline": "15번째로 밝은 별",
+        "brightness": "4.86등급",
+        "distance": "약 99광년",
+        "temperature": "약 7,600K",
+        "size": "태양의 약 1.8배",
+        "description": "용자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 99광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "giausar",
+        "kappa-dra"
+      ],
+      [
+        "kappa-dra",
+        "thuban"
+      ],
+      [
+        "thuban",
+        "edasich"
+      ],
+      [
+        "edasich",
+        "theta-dra"
+      ],
+      [
+        "theta-dra",
+        "athebyne"
+      ],
+      [
+        "athebyne",
+        "aldhibah"
+      ],
+      [
+        "aldhibah",
+        "phi-dra"
+      ],
+      [
+        "rastaban",
+        "nu2-dra"
+      ],
+      [
+        "rastaban",
+        "eltanin"
+      ],
+      [
+        "nu2-dra",
+        "grumium"
+      ],
+      [
+        "grumium",
+        "eltanin"
+      ],
+      [
+        "grumium",
+        "altais"
+      ],
+      [
+        "phi-dra",
+        "chi-dra"
+      ],
+      [
+        "phi-dra",
+        "altais"
+      ],
+      [
+        "altais",
+        "epsilon-dra"
+      ]
+    ]
+  },
+  {
+    "id": "sextans",
+    "isZodiac": false,
+    "nameKo": "육분의자리",
+    "nameEn": "Sextans",
+    "nameLatin": "Sextans",
+    "abbr": "Sex",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "4월",
+      "season": "3월~5월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 하늘 (고도 약 50°)",
+      "tip": "봄철 사자자리 레굴루스 아래쪽에서 어두운 별 몇 개를 찾아보세요. 아주 어두운 별자리라 어두운 하늘이 필요해요."
+    },
+    "origin": "육분의자리는 17세기 폴란드 천문학자 요하네스 헤벨리우스가 만든 별자리로, 천체의 높이를 재는 도구인 육분의를 나타내요. 헤벨리우스는 직접 만든 큰 관측 기구로 별을 관측했는데, 1679년 화재로 천문대와 기구가 거의 불타 버렸어요. 이 일을 기억하려고 별자리 이름으로 남겼다고 해요. 사자자리 레굴루스 아래쪽에 어두운 별 몇 개로 이루어져 있어요.",
+    "stars": [
+      {
+        "id": "alpha-sex",
+        "nameKo": "육분의자리 알파별",
+        "bayer": "α Sextantis",
+        "x": 57.1,
+        "y": 18.6,
+        "magnitude": 4.48,
+        "badge": "백색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "4.48등급",
+        "distance": "약 280광년",
+        "temperature": "약 10,500K",
+        "size": "태양의 약 3.1배",
+        "description": "육분의자리의 별자리 선을 이루는 백색 거성이에요. 지구에서 약 280광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-sex",
+        "nameKo": "육분의자리 감마별",
+        "bayer": "γ Sextantis",
+        "x": 88.0,
+        "y": 81.4,
+        "magnitude": 5.07,
+        "badge": "백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "5.07등급",
+        "distance": "약 280광년",
+        "temperature": "약 9,700K",
+        "size": "태양의 약 2.7배",
+        "description": "육분의자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 280광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-sex",
+        "nameKo": "육분의자리 베타별",
+        "bayer": "β Sextantis",
+        "x": 12.0,
+        "y": 20.8,
+        "magnitude": 5.08,
+        "badge": "청백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "5.08등급",
+        "distance": "약 400광년",
+        "temperature": "약 12,300K",
+        "size": "태양의 약 2.5배",
+        "description": "육분의자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 400광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-sex",
+        "nameKo": "육분의자리 델타별",
+        "bayer": "δ Sextantis",
+        "x": 13.7,
+        "y": 37.8,
+        "magnitude": 5.19,
+        "badge": "청백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "5.19등급",
+        "distance": "약 320광년",
+        "temperature": "약 10,800K",
+        "size": "태양의 약 2.4배",
+        "description": "육분의자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 320광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "gamma-sex",
+        "alpha-sex"
+      ],
+      [
+        "gamma-sex",
+        "delta-sex"
+      ],
+      [
+        "delta-sex",
+        "beta-sex"
+      ]
+    ]
+  },
+  {
+    "id": "lupus",
+    "isZodiac": false,
+    "nameKo": "이리자리",
+    "nameEn": "Lupus",
+    "nameLatin": "Lupus",
+    "abbr": "Lup",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "6월",
+      "season": "5월~7월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 지평선 가까이 (고도 약 11°)",
+      "tip": "한국에서는 봄철 남쪽 지평선 가까이에 낮게 걸려서 관측이 어려워요. 남쪽이 완전히 트인 곳에서 도전해 보세요."
+    },
+    "origin": "이리자리는 고대 그리스 시대부터 알려진 별자리로, 켄타우루스가 창에 꿰어 든 짐승을 나타내요. 원래는 특정한 동물이 아니라 그냥 '야수'라고 불렀다가, 나중에 늑대(이리)로 여겨지게 되었어요. 하늘에서는 센타우루스자리와 전갈자리 사이에 있고 은하수가 지나가요.",
+    "stars": [
+      {
+        "id": "alpha-lup",
+        "nameKo": "이리자리 알파별",
+        "bayer": "α Lupi",
+        "x": 82.1,
+        "y": 70.4,
+        "magnitude": 2.3,
+        "badge": "청백색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "2.3등급",
+        "distance": "약 460광년",
+        "temperature": "약 12,600K",
+        "size": "태양의 약 9.7배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 460광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-lup",
+        "nameKo": "이리자리 베타별",
+        "bayer": "β Lupi",
+        "x": 71.9,
+        "y": 51.5,
+        "magnitude": 2.68,
+        "badge": "청백색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "2.68등급",
+        "distance": "약 380광년",
+        "temperature": "약 13,200K",
+        "size": "태양의 약 6.1배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-lup",
+        "nameKo": "이리자리 감마별",
+        "bayer": "γ Lupi",
+        "x": 44.3,
+        "y": 42.5,
+        "magnitude": 2.8,
+        "badge": "청백색 준거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "2.8등급",
+        "distance": "약 420광년",
+        "temperature": "약 14,000K",
+        "size": "태양의 약 5.6배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 420광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-lup",
+        "nameKo": "이리자리 델타별",
+        "bayer": "δ Lupi",
+        "x": 55.0,
+        "y": 40.4,
+        "magnitude": 3.22,
+        "badge": "청백색 준거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.22등급",
+        "distance": "약 880광년",
+        "temperature": "약 14,300K",
+        "size": "태양의 약 9.4배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 880광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-lup",
+        "nameKo": "이리자리 엡실론별",
+        "bayer": "ε Lupi",
+        "x": 53.7,
+        "y": 56.9,
+        "magnitude": 3.37,
+        "badge": "청백색 준거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.37등급",
+        "distance": "약 510광년",
+        "temperature": "약 13,400K",
+        "size": "태양의 약 5.8배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 510광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-lup",
+        "nameKo": "이리자리 제타별",
+        "bayer": "ζ Lupi",
+        "x": 59.9,
+        "y": 88.0,
+        "magnitude": 3.41,
+        "badge": "황색 거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.41등급",
+        "distance": "약 120광년",
+        "temperature": "약 4,900K",
+        "size": "태양의 약 9.7배",
+        "description": "이리자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 120광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-lup",
+        "nameKo": "이리자리 에타별",
+        "bayer": "η Lupi",
+        "x": 23.9,
+        "y": 32.3,
+        "magnitude": 3.42,
+        "badge": "청백색 준거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "3.42등급",
+        "distance": "약 440광년",
+        "temperature": "약 13,700K",
+        "size": "태양의 약 4.6배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 440광년 떨어져 있어요."
+      },
+      {
+        "id": "phi1-lup",
+        "nameKo": "이리자리 피1별",
+        "bayer": "φ¹ Lupi",
+        "x": 54.9,
+        "y": 22.4,
+        "magnitude": 3.57,
+        "badge": "주황색 거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "3.57등급",
+        "distance": "약 280광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 37배",
+        "description": "이리자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 280광년 떨어져 있어요."
+      },
+      {
+        "id": "chi-lup",
+        "nameKo": "이리자리 카이별",
+        "bayer": "χ Lupi",
+        "x": 30.0,
+        "y": 12.0,
+        "magnitude": 3.97,
+        "badge": "청백색 거성",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "3.97등급",
+        "distance": "약 200광년",
+        "temperature": "약 10,700K",
+        "size": "태양의 약 2.6배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 200광년 떨어져 있어요."
+      },
+      {
+        "id": "theta-lup",
+        "nameKo": "이리자리 세타별",
+        "bayer": "θ Lupi",
+        "x": 17.9,
+        "y": 26.2,
+        "magnitude": 4.22,
+        "badge": "청백색 별",
+        "tagline": "10번째로 밝은 별",
+        "brightness": "4.22등급",
+        "distance": "약 410광년",
+        "temperature": "약 13,200K",
+        "size": "태양의 약 3.2배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 410광년 떨어져 있어요."
+      },
+      {
+        "id": "mu-lup",
+        "nameKo": "이리자리 뮤별",
+        "bayer": "μ Lupi",
+        "x": 56.4,
+        "y": 70.1,
+        "magnitude": 4.27,
+        "badge": "청백색 별",
+        "tagline": "11번째로 밝은 별",
+        "brightness": "4.27등급",
+        "distance": "약 340광년",
+        "temperature": "약 11,300K",
+        "size": "태양의 약 3.5배",
+        "description": "이리자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 340광년 떨어져 있어요."
+      },
+      {
+        "id": "psi1-lup",
+        "nameKo": "이리자리 프사이1별",
+        "bayer": "ψ¹ Lupi",
+        "x": 39.8,
+        "y": 14.8,
+        "magnitude": 4.66,
+        "badge": "황색 거성",
+        "tagline": "12번째로 밝은 별",
+        "brightness": "4.66등급",
+        "distance": "약 220광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 11배",
+        "description": "이리자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 220광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "alpha-lup",
+        "beta-lup"
+      ],
+      [
+        "alpha-lup",
+        "zeta-lup"
+      ],
+      [
+        "beta-lup",
+        "delta-lup"
+      ],
+      [
+        "zeta-lup",
+        "mu-lup"
+      ],
+      [
+        "mu-lup",
+        "epsilon-lup"
+      ],
+      [
+        "delta-lup",
+        "phi1-lup"
+      ],
+      [
+        "delta-lup",
+        "gamma-lup"
+      ],
+      [
+        "phi1-lup",
+        "psi1-lup"
+      ],
+      [
+        "epsilon-lup",
+        "gamma-lup"
+      ],
+      [
+        "gamma-lup",
+        "eta-lup"
+      ],
+      [
+        "psi1-lup",
+        "chi-lup"
+      ],
+      [
+        "eta-lup",
+        "theta-lup"
+      ]
+    ]
+  },
+  {
+    "id": "indus",
+    "isZodiac": false,
+    "nameKo": "인디언자리",
+    "nameEn": "Indus",
+    "nameLatin": "Indus",
+    "abbr": "Ind",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "observation": {
+      "bestMonth": "9월",
+      "season": "8월~10월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 지평선 가까이 (고도 약 5°)",
+      "tip": "한국에서는 남쪽 지평선에 아슬아슬하게 걸려 사실상 볼 수 없어요. 남반구에서는 공작자리와 두루미자리 근처에서 찾아보세요."
+    },
+    "origin": "인디언자리는 16세기 말 네덜란드의 지도 제작자 플란시우스가 항해사 케이저르와 더 하우트만의 남쪽 하늘 관측을 바탕으로 만든 별자리예요. 1603년 요한 바이어의 별자리 지도에 실렸어요. 남쪽 바다와 새로운 땅을 항해하던 유럽 사람들이 만난 원주민을 나타내요. 하늘의 남극 가까이에 있고 신화는 없어요.",
+    "stars": [
+      {
+        "id": "alpha-ind",
+        "nameKo": "인디언자리 알파별",
+        "bayer": "α Indi",
+        "x": 88.0,
+        "y": 16.1,
+        "magnitude": 3.11,
+        "badge": "주황색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.11등급",
+        "distance": "약 98광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 10배",
+        "description": "인디언자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 98광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-ind",
+        "nameKo": "인디언자리 베타별",
+        "bayer": "β Indi",
+        "x": 67.0,
+        "y": 83.9,
+        "magnitude": 3.67,
+        "badge": "주황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.67등급",
+        "distance": "약 610광년",
+        "temperature": "약 4,200K",
+        "size": "태양의 약 61배",
+        "description": "인디언자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 610광년 떨어져 있어요."
+      },
+      {
+        "id": "theta-ind",
+        "nameKo": "인디언자리 세타별",
+        "bayer": "θ Indi",
+        "x": 45.2,
+        "y": 53.0,
+        "magnitude": 4.39,
+        "badge": "백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.39등급",
+        "distance": "약 99광년",
+        "temperature": "약 8,200K",
+        "size": "태양의 약 1.9배",
+        "description": "인디언자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 99광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-ind",
+        "nameKo": "인디언자리 델타별",
+        "bayer": "δ Indi",
+        "x": 12.0,
+        "y": 66.4,
+        "magnitude": 4.4,
+        "badge": "황백색 준거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.4등급",
+        "distance": "약 190광년",
+        "temperature": "약 7,500K",
+        "size": "태양의 약 4.2배",
+        "description": "인디언자리의 별자리 선을 이루는 황백색 준거성이에요. 지구에서 약 190광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-ind",
+        "nameKo": "인디언자리 에타별",
+        "bayer": "η Indi",
+        "x": 78.9,
+        "y": 44.2,
+        "magnitude": 4.51,
+        "badge": "백색 별",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.51등급",
+        "distance": "약 79광년",
+        "temperature": "약 7,600K",
+        "size": "태양의 약 1.6배",
+        "description": "인디언자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 79광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "alpha-ind",
+        "eta-ind"
+      ],
+      [
+        "alpha-ind",
+        "theta-ind"
+      ],
+      [
+        "eta-ind",
+        "beta-ind"
+      ],
+      [
+        "beta-ind",
+        "delta-ind"
+      ],
+      [
+        "theta-ind",
+        "delta-ind"
+      ]
+    ]
+  },
+  {
+    "id": "canis-minor",
+    "isZodiac": false,
+    "nameKo": "작은개자리",
+    "nameEn": "Canis Minor",
+    "nameLatin": "Canis Minor",
+    "abbr": "CMi",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "2월",
+      "season": "1월~3월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 하늘 (고도 약 59°)",
+      "tip": "겨울철 오리온자리 왼쪽 위에서 밝은 1등성 프로키온을 찾아보세요. 프로키온과 가까운 고메이사, 두 별이 이은 짧은 선이 작은개자리예요."
+    },
+    "origin": "작은개자리는 사냥꾼 오리온을 따르는 작은 사냥개예요. 이야기는 여러 가지로 전해져 확실하지 않아요. 으뜸별 프로키온은 큰개자리 시리우스, 오리온자리 베텔게우스와 함께 겨울철 큰 삼각형(겨울철 대삼각형)을 이뤄요. 별이 두 개뿐이라 모양은 단순하지만 겨울 밤하늘에서 찾기 쉬워요.",
+    "stars": [
+      {
+        "id": "procyon",
+        "nameKo": "프로키온",
+        "bayer": "Procyon · α Canis Minoris",
+        "x": 12.6,
+        "y": 88.0,
+        "magnitude": 0.4,
+        "badge": "황백색 준거성",
+        "tagline": "시리우스보다 먼저 뜨는 별",
+        "brightness": "0.4등급",
+        "distance": "약 11.5광년",
+        "temperature": "약 6,700K",
+        "size": "태양의 약 2.0배",
+        "description": "이름은 그리스어로 '개보다 앞서는 것'을 뜻해요. 시리우스보다 먼저 떠오르기 때문이에요. 지구에서 약 11.5광년 떨어진 가까운 별이고, 작은 백색 왜성 짝별이 있어요."
+      },
+      {
+        "id": "gomeisa",
+        "nameKo": "고메이사",
+        "bayer": "Gomeisa · β Canis Minoris",
+        "x": 87.4,
+        "y": 12.0,
+        "magnitude": 2.89,
+        "badge": "청백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "2.89등급",
+        "distance": "약 160광년",
+        "temperature": "약 11,500K",
+        "size": "태양의 약 3.1배",
+        "description": "작은개자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 160광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "gomeisa",
+        "procyon"
+      ]
+    ]
+  },
+  {
+    "id": "leo-minor",
+    "isZodiac": false,
+    "nameKo": "작은사자자리",
+    "nameEn": "Leo Minor",
+    "nameLatin": "Leo Minor",
+    "abbr": "LMi",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "4월",
+      "season": "3월~5월",
+      "time": "저녁 9시 무렵",
+      "position": "머리 위 가까이 (고도 약 88°)",
+      "tip": "봄철 머리 위 가까이, 큰곰자리와 사자자리 사이에서 어두운 별들을 찾아보세요. 밝은 별이 없어 어두운 하늘에서 찾아야 해요."
+    },
+    "origin": "작은사자자리는 17세기 헤벨리우스가 큰곰자리와 사자자리 사이의 빈 곳을 채우려고 만든 별자리예요. 신화는 없고, 큰 사자(사자자리) 위쪽에 있는 작은 새끼 사자를 나타내요. 밝은 별이 거의 없어서 맨눈으로는 찾기 어려워요.",
+    "stars": [
+      {
+        "id": "praecipua",
+        "nameKo": "프라이키푸아",
+        "bayer": "Praecipua · 46 Leonis Minoris",
+        "x": 12.0,
+        "y": 53.8,
+        "magnitude": 3.79,
+        "badge": "주황색 거성",
+        "tagline": "작은사자의 으뜸별",
+        "brightness": "3.79등급",
+        "distance": "약 95광년",
+        "temperature": "약 4,600K",
+        "size": "태양의 약 7.5배",
+        "description": "이름은 라틴어로 '으뜸'을 뜻해요. 작은사자자리에서 가장 밝은 별이에요."
+      },
+      {
+        "id": "beta-lmi",
+        "nameKo": "작은사자자리 베타별",
+        "bayer": "β Leonis Minoris",
+        "x": 37.1,
+        "y": 43.5,
+        "magnitude": 4.2,
+        "badge": "황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.2등급",
+        "distance": "약 150광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 8.5배",
+        "description": "작은사자자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "21-lmi",
+        "nameKo": "작은사자자리 21번",
+        "bayer": "21 Leonis Minoris",
+        "x": 56.5,
+        "y": 50.4,
+        "magnitude": 4.49,
+        "badge": "백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.49등급",
+        "distance": "약 92광년",
+        "temperature": "약 8,200K",
+        "size": "태양의 약 1.7배",
+        "description": "작은사자자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 92광년 떨어져 있어요."
+      },
+      {
+        "id": "10-lmi",
+        "nameKo": "작은사자자리 10번",
+        "bayer": "10 Leonis Minoris",
+        "x": 88.0,
+        "y": 42.8,
+        "magnitude": 4.54,
+        "badge": "황색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.54등급",
+        "distance": "약 190광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 8.7배",
+        "description": "작은사자자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 190광년 떨어져 있어요."
+      },
+      {
+        "id": "30-lmi",
+        "nameKo": "작은사자자리 30번",
+        "bayer": "30 Leonis Minoris",
+        "x": 38.7,
+        "y": 57.2,
+        "magnitude": 4.72,
+        "badge": "황백색 별",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.72등급",
+        "distance": "약 230광년",
+        "temperature": "약 7,700K",
+        "size": "태양의 약 4.3배",
+        "description": "작은사자자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 230광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "10-lmi",
+        "21-lmi"
+      ],
+      [
+        "21-lmi",
+        "30-lmi"
+      ],
+      [
+        "21-lmi",
+        "beta-lmi"
+      ],
+      [
+        "30-lmi",
+        "praecipua"
+      ],
+      [
+        "beta-lmi",
+        "praecipua"
+      ]
+    ]
+  },
+  {
+    "id": "vulpecula",
+    "isZodiac": false,
+    "nameKo": "작은여우자리",
+    "nameEn": "Vulpecula",
+    "nameLatin": "Vulpecula",
+    "abbr": "Vul",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "9월",
+      "season": "8월~10월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 하늘 (고도 약 78°)",
+      "tip": "여름철 백조자리와 독수리자리 사이 은하수 속에서 어두운 별들을 찾아보세요. 쌍안경으로 아령성운(M27)을 찾는 재미가 있어요."
+    },
+    "origin": "작은여우자리는 17세기 헤벨리우스가 만든 별자리예요. 원래 이름은 '거위를 문 여우'였는데, 지금은 여우만 남았어요. 백조자리와 독수리자리 사이 은하수 속에 있고, 별은 어두워요. 이곳에는 처음 발견된 행성상 성운인 '아령성운(M27)'이 있어요.",
+    "stars": [
+      {
+        "id": "anser",
+        "nameKo": "안세르",
+        "bayer": "Anser · α Vulpeculae",
+        "x": 71.0,
+        "y": 50.3,
+        "magnitude": 4.44,
+        "badge": "적색 별",
+        "tagline": "'거위'라는 이름의 별",
+        "brightness": "4.44등급",
+        "distance": "약 300광년",
+        "temperature": "약 3,800K",
+        "size": "태양의 약 25배",
+        "description": "이름은 라틴어로 '거위'를 뜻해요. 원래 별자리 이름이 '거위를 문 여우'였어요."
+      },
+      {
+        "id": "23-vul",
+        "nameKo": "작은여우자리 23번",
+        "bayer": "23 Vulpeculae",
+        "x": 12.0,
+        "y": 32.0,
+        "magnitude": 4.5,
+        "badge": "주황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.5등급",
+        "distance": "약 340광년",
+        "temperature": "약 4,200K",
+        "size": "태양의 약 23배",
+        "description": "작은여우자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 340광년 떨어져 있어요."
+      },
+      {
+        "id": "13-vul",
+        "nameKo": "작은여우자리 13번",
+        "bayer": "13 Vulpeculae",
+        "x": 39.5,
+        "y": 53.9,
+        "magnitude": 4.57,
+        "badge": "청백색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.57등급",
+        "distance": "약 330광년",
+        "temperature": "약 10,800K",
+        "size": "태양의 약 3.3배",
+        "description": "작은여우자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 330광년 떨어져 있어요."
+      },
+      {
+        "id": "15-vul",
+        "nameKo": "작은여우자리 15번",
+        "bayer": "15 Vulpeculae",
+        "x": 30.2,
+        "y": 33.1,
+        "magnitude": 4.66,
+        "badge": "백색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.66등급",
+        "distance": "약 240광년",
+        "temperature": "약 8,300K",
+        "size": "태양의 약 3.8배",
+        "description": "작은여우자리의 별자리 선을 이루는 백색 거성이에요. 지구에서 약 240광년 떨어져 있어요."
+      },
+      {
+        "id": "1-vul",
+        "nameKo": "작은여우자리 1번",
+        "bayer": "1 Vulpeculae",
+        "x": 88.0,
+        "y": 68.0,
+        "magnitude": 4.76,
+        "badge": "청백색 준거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.76등급",
+        "distance": "약 810광년",
+        "temperature": "약 10,900K",
+        "size": "태양의 약 7.3배",
+        "description": "작은여우자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 810광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "1-vul",
+        "anser"
+      ],
+      [
+        "anser",
+        "13-vul"
+      ],
+      [
+        "13-vul",
+        "15-vul"
+      ],
+      [
+        "15-vul",
+        "23-vul"
+      ]
+    ]
+  },
+  {
+    "id": "ara",
+    "isZodiac": false,
+    "nameKo": "제단자리",
+    "nameEn": "Ara",
+    "nameLatin": "Ara",
+    "abbr": "Ara",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "7월 (남반구 기준)",
+      "season": "6월~8월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 남반구에서 전갈자리 꼬리 아래쪽을 찾아보세요.",
+      "region": "south"
+    },
+    "origin": "제단자리는 그리스 신화에서 올림포스 신들이 티탄과 싸우기 전에 맹세하며 제물을 바친 제단을 나타내요. 전투에서 이긴 제우스가 이 제단을 하늘에 올렸다고 전해져요. 전갈자리 꼬리 아래쪽 남쪽 하늘에 있고, 2세기 프톨레마이오스가 정리한 48개 별자리에도 들어 있어요.",
+    "stars": [
+      {
+        "id": "beta-ara",
+        "nameKo": "제단자리 베타별",
+        "bayer": "β Arae",
+        "x": 38.0,
+        "y": 51.5,
+        "magnitude": 2.84,
+        "badge": "주황색 밝은 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "2.84등급",
+        "distance": "약 650광년",
+        "temperature": "약 3,800K",
+        "size": "태양의 약 120배",
+        "description": "제단자리의 별자리 선을 이루는 주황색 밝은 거성이에요. 지구에서 약 650광년 떨어져 있어요."
+      },
+      {
+        "id": "alpha-ara",
+        "nameKo": "제단자리 알파별",
+        "bayer": "α Arae",
+        "x": 29.0,
+        "y": 12.0,
+        "magnitude": 2.84,
+        "badge": "청백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "2.84등급",
+        "distance": "약 270광년",
+        "temperature": "약 12,200K",
+        "size": "태양의 약 4.6배",
+        "description": "제단자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 270광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-ara",
+        "nameKo": "제단자리 제타별",
+        "bayer": "ζ Arae",
+        "x": 64.3,
+        "y": 55.0,
+        "magnitude": 3.12,
+        "badge": "주황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "3.12등급",
+        "distance": "약 490광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 80배",
+        "description": "제단자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 490광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-ara",
+        "nameKo": "제단자리 감마별",
+        "bayer": "γ Arae",
+        "x": 38.1,
+        "y": 57.4,
+        "magnitude": 3.31,
+        "badge": "청백색 초거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.31등급",
+        "distance": "약 1,110광년",
+        "temperature": "약 12,500K",
+        "size": "태양의 약 15배",
+        "description": "제단자리의 별자리 선을 이루는 청백색 초거성이에요. 지구에서 약 1,110광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-ara",
+        "nameKo": "제단자리 델타별",
+        "bayer": "δ Arae",
+        "x": 34.4,
+        "y": 88.0,
+        "magnitude": 3.6,
+        "badge": "청백색 별",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.6등급",
+        "distance": "약 200광년",
+        "temperature": "약 11,600K",
+        "size": "태양의 약 2.7배",
+        "description": "제단자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 200광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-ara",
+        "nameKo": "제단자리 에타별",
+        "bayer": "η Arae",
+        "x": 71.0,
+        "y": 77.0,
+        "magnitude": 3.77,
+        "badge": "주황색 거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.77등급",
+        "distance": "약 300광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 37배",
+        "description": "제단자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 300광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon1-ara",
+        "nameKo": "제단자리 엡실론1별",
+        "bayer": "ε¹ Arae",
+        "x": 64.4,
+        "y": 35.0,
+        "magnitude": 4.06,
+        "badge": "주황색 거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "4.06등급",
+        "distance": "약 360광년",
+        "temperature": "약 3,900K",
+        "size": "태양의 약 35배",
+        "description": "제단자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 360광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "eta-ara",
+        "zeta-ara"
+      ],
+      [
+        "eta-ara",
+        "delta-ara"
+      ],
+      [
+        "zeta-ara",
+        "epsilon1-ara"
+      ],
+      [
+        "epsilon1-ara",
+        "alpha-ara"
+      ],
+      [
+        "beta-ara",
+        "alpha-ara"
+      ],
+      [
+        "gamma-ara",
+        "delta-ara"
+      ]
+    ]
+  },
+  {
+    "id": "sculptor",
+    "isZodiac": false,
+    "nameKo": "조각가자리",
+    "nameEn": "Sculptor",
+    "nameLatin": "Sculptor",
+    "abbr": "Scl",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "observation": {
+      "bestMonth": "11월",
+      "season": "10월~12월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 낮은 하늘 (고도 약 21°)",
+      "tip": "가을철 남쪽 낮은 하늘에서 고래자리 아래쪽을 살펴보세요. 아주 어두운 별들이라 어두운 하늘과 트인 남쪽이 필요해요."
+    },
+    "origin": "조각가자리는 18세기 프랑스 천문학자 라카유가 만든 별자리로, 원래 이름은 '조각가의 작업실'이에요. 라카유가 남아프리카에서 관측하며 정한 14개 별자리 가운데 하나예요. 이곳은 우리 은하의 먼지와 별이 적어 은하 바깥을 내다보기 좋은 방향이라서, '조각가자리은하(NGC 253)' 같은 은하가 많이 보여요.",
+    "stars": [
+      {
+        "id": "alpha-scl",
+        "nameKo": "조각가자리 알파별",
+        "bayer": "α Sculptoris",
+        "x": 12.0,
+        "y": 40.5,
+        "magnitude": 4.3,
+        "badge": "청백색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "4.3등급",
+        "distance": "약 780광년",
+        "temperature": "약 12,600K",
+        "size": "태양의 약 6.4배",
+        "description": "조각가자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 780광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-scl",
+        "nameKo": "조각가자리 베타별",
+        "bayer": "β Sculptoris",
+        "x": 76.6,
+        "y": 67.2,
+        "magnitude": 4.38,
+        "badge": "청백색 준거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.38등급",
+        "distance": "약 170광년",
+        "temperature": "약 11,500K",
+        "size": "태양의 약 1.7배",
+        "description": "조각가자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 170광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-scl",
+        "nameKo": "조각가자리 감마별",
+        "bayer": "γ Sculptoris",
+        "x": 88.0,
+        "y": 49.3,
+        "magnitude": 4.41,
+        "badge": "주황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.41등급",
+        "distance": "약 180광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 11배",
+        "description": "조각가자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 180광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-scl",
+        "nameKo": "조각가자리 델타별",
+        "bayer": "δ Sculptoris",
+        "x": 65.9,
+        "y": 32.8,
+        "magnitude": 4.59,
+        "badge": "백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.59등급",
+        "distance": "약 140광년",
+        "temperature": "약 10,100K",
+        "size": "태양의 약 1.6배",
+        "description": "조각가자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 140광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "alpha-scl",
+        "delta-scl"
+      ],
+      [
+        "gamma-scl",
+        "beta-scl"
+      ],
+      [
+        "gamma-scl",
+        "delta-scl"
+      ]
+    ]
+  },
+  {
+    "id": "caelum",
+    "isZodiac": false,
+    "nameKo": "조각칼자리",
+    "nameEn": "Caelum",
+    "nameLatin": "Caelum",
+    "abbr": "Cae",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "1월",
+      "season": "12월~2월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 지평선 가까이 (고도 약 13°)",
+      "tip": "한국에서는 겨울철 남쪽 지평선 가까이에 아주 어두운 별이 걸려서 맨눈으로 보기 어려워요."
+    },
+    "origin": "조각칼자리는 18세기 프랑스 천문학자 라카유가 만든 별자리로, 판화나 금속에 무늬를 새기는 조각칼(끌)을 나타내요. 라카유가 남쪽 하늘에서 정한 14개 별자리 가운데 하나이고, 신화는 없어요. 아주 어두운 별 몇 개로 이루어져 있고, 에리다누스자리와 비둘기자리 사이에 있어요.",
+    "stars": [
+      {
+        "id": "alpha-cae",
+        "nameKo": "조각칼자리 알파별",
+        "bayer": "α Caeli",
+        "x": 62.5,
+        "y": 62.6,
+        "magnitude": 4.44,
+        "badge": "황백색 별",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "4.44등급",
+        "distance": "약 66광년",
+        "temperature": "약 7,200K",
+        "size": "태양의 약 1.6배",
+        "description": "조각칼자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 66광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma1-cae",
+        "nameKo": "조각칼자리 감마1별",
+        "bayer": "γ¹ Caeli",
+        "x": 23.8,
+        "y": 12.0,
+        "magnitude": 4.55,
+        "badge": "주황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.55등급",
+        "distance": "약 180광년",
+        "temperature": "약 4,400K",
+        "size": "태양의 약 11배",
+        "description": "조각칼자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 180광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-cae",
+        "nameKo": "조각칼자리 베타별",
+        "bayer": "β Caeli",
+        "x": 60.5,
+        "y": 24.6,
+        "magnitude": 5.04,
+        "badge": "황백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "5.04등급",
+        "distance": "약 94광년",
+        "temperature": "약 6,900K",
+        "size": "태양의 약 1.8배",
+        "description": "조각칼자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 94광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-cae",
+        "nameKo": "조각칼자리 델타별",
+        "bayer": "δ Caeli",
+        "x": 76.2,
+        "y": 88.0,
+        "magnitude": 5.07,
+        "badge": "청백색 준거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "5.07등급",
+        "distance": "약 700광년",
+        "temperature": "약 13,400K",
+        "size": "태양의 약 3.6배",
+        "description": "조각칼자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 700광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "delta-cae",
+        "alpha-cae"
+      ],
+      [
+        "alpha-cae",
+        "beta-cae"
+      ],
+      [
+        "beta-cae",
+        "gamma1-cae"
+      ]
+    ]
+  },
+  {
+    "id": "equuleus",
+    "isZodiac": false,
+    "nameKo": "조랑말자리",
+    "nameEn": "Equuleus",
+    "nameLatin": "Equuleus",
+    "abbr": "Equ",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "9월",
+      "season": "8월~10월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 하늘 (고도 약 61°)",
+      "tip": "여름철 돌고래자리와 페가수스자리 사이에서 작은 별 몇 개를 찾아보세요. 별이 어두워서 맑고 어두운 밤이 필요해요."
+    },
+    "origin": "조랑말자리는 고대 그리스 시대부터 알려진 작은 별자리로, 2세기 프톨레마이오스가 정리한 48개 별자리에도 들어 있어요. 새끼 말(조랑말)을 나타내고, 날개 달린 말 페가수스 바로 앞에 있어요. 이야기는 여러 가지로 전해져 확실하지 않아요. 88개 별자리 가운데 남십자자리 다음으로 작아요.",
+    "stars": [
+      {
+        "id": "kitalpha",
+        "nameKo": "키탈파",
+        "bayer": "Kitalpha · α Equulei",
+        "x": 39.5,
+        "y": 88.0,
+        "magnitude": 3.92,
+        "badge": "황색 거성",
+        "tagline": "조랑말의 으뜸별",
+        "brightness": "3.92등급",
+        "distance": "약 190광년",
+        "temperature": "약 6,200K",
+        "size": "태양의 약 7.8배",
+        "description": "이름은 아랍어로 '말의 한 조각'을 뜻하는 말에서 왔어요. 조랑말자리에서 가장 밝은 별이에요."
+      },
+      {
+        "id": "delta-equ",
+        "nameKo": "조랑말자리 델타별",
+        "bayer": "δ Equulei",
+        "x": 44.7,
+        "y": 14.0,
+        "magnitude": 4.47,
+        "badge": "황백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.47등급",
+        "distance": "약 60광년",
+        "temperature": "약 6,300K",
+        "size": "태양의 약 1.8배",
+        "description": "조랑말자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 60광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-equ",
+        "nameKo": "조랑말자리 감마별",
+        "bayer": "γ Equulei",
+        "x": 60.5,
+        "y": 12.0,
+        "magnitude": 4.7,
+        "badge": "황백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.7등급",
+        "distance": "약 120광년",
+        "temperature": "약 7,700K",
+        "size": "태양의 약 2.2배",
+        "description": "조랑말자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 120광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "gamma-equ",
+        "delta-equ"
+      ],
+      [
+        "delta-equ",
+        "kitalpha"
+      ]
+    ]
+  },
+  {
+    "id": "norma",
+    "isZodiac": false,
+    "nameKo": "직각자자리",
+    "nameEn": "Norma",
+    "nameLatin": "Norma",
+    "abbr": "Nor",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "7월",
+      "season": "6월~8월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 지평선 가까이 (고도 약 4°)",
+      "tip": "한국에서는 남쪽 지평선 바로 위에 걸려서 관측이 어려워요. 남반구에서는 전갈자리와 이리자리 사이 은하수 속에서 찾아보세요."
+    },
+    "origin": "직각자자리는 18세기 프랑스 천문학자 라카유가 만든 별자리로, 원래 이름은 '직각자와 자'예요. 건축가나 측량사가 쓰는 직각자와 눈금자를 나타내요. 라카유가 남쪽 하늘에서 정한 14개 별자리 가운데 하나이고, 신화는 없어요. 은하수 속에 있어서 별 무리가 많아요.",
+    "stars": [
+      {
+        "id": "gamma2-nor",
+        "nameKo": "직각자자리 감마2별",
+        "bayer": "γ² Normae",
+        "x": 39.2,
+        "y": 88.0,
+        "magnitude": 4.01,
+        "badge": "황색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "4.01등급",
+        "distance": "약 130광년",
+        "temperature": "약 4,600K",
+        "size": "태양의 약 9.2배",
+        "description": "직각자자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 130광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-nor",
+        "nameKo": "직각자자리 엡실론별",
+        "bayer": "ε Normae",
+        "x": 19.6,
+        "y": 48.9,
+        "magnitude": 4.46,
+        "badge": "청백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.46등급",
+        "distance": "약 530광년",
+        "temperature": "약 11,100K",
+        "size": "태양의 약 5.3배",
+        "description": "직각자자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 530광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-nor",
+        "nameKo": "직각자자리 에타별",
+        "bayer": "η Normae",
+        "x": 80.4,
+        "y": 74.2,
+        "magnitude": 4.65,
+        "badge": "황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.65등급",
+        "distance": "약 220광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 9.8배",
+        "description": "직각자자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 220광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-nor",
+        "nameKo": "직각자자리 델타별",
+        "bayer": "δ Normae",
+        "x": 73.8,
+        "y": 12.0,
+        "magnitude": 4.73,
+        "badge": "백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.73등급",
+        "distance": "약 120광년",
+        "temperature": "약 7,900K",
+        "size": "태양의 약 2.1배",
+        "description": "직각자자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 120광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "eta-nor",
+        "delta-nor"
+      ],
+      [
+        "eta-nor",
+        "gamma2-nor"
+      ],
+      [
+        "delta-nor",
+        "epsilon-nor"
+      ],
+      [
+        "gamma2-nor",
+        "epsilon-nor"
+      ]
+    ]
+  },
+  {
+    "id": "chamaeleon",
+    "isZodiac": false,
+    "nameKo": "카멜레온자리",
+    "nameEn": "Chamaeleon",
+    "nameLatin": "Chamaeleon",
+    "abbr": "Cha",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "4월 (남반구 기준)",
+      "season": "3월~5월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 남반구에서 하늘의 남극 가까이, 용골자리 남쪽에서 찾아보세요.",
+      "region": "south"
+    },
+    "origin": "카멜레온자리는 16세기 말 네덜란드의 플란시우스가 항해사 케이저르와 더 하우트만의 관측을 바탕으로 만든 별자리예요. 1603년 요한 바이어의 별자리 지도에 실렸어요. 주변 환경에 맞춰 몸 색을 바꾸는 도마뱀 카멜레온을 나타내요. 하늘의 남극 가까이에 있어서 남반구 대부분 지역에서는 일 년 내내 볼 수 있어요.",
+    "stars": [
+      {
+        "id": "alpha-cha",
+        "nameKo": "카멜레온자리 알파별",
+        "bayer": "α Chamaeleontis",
+        "x": 88.0,
+        "y": 50.1,
+        "magnitude": 4.05,
+        "badge": "황백색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "4.05등급",
+        "distance": "약 64광년",
+        "temperature": "약 6,800K",
+        "size": "태양의 약 2.0배",
+        "description": "카멜레온자리의 별자리 선을 이루는 황백색 거성이에요. 지구에서 약 64광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-cha",
+        "nameKo": "카멜레온자리 감마별",
+        "bayer": "γ Chamaeleontis",
+        "x": 41.8,
+        "y": 44.2,
+        "magnitude": 4.11,
+        "badge": "적색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.11등급",
+        "distance": "약 420광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 44배",
+        "description": "카멜레온자리의 별자리 선을 이루는 적색 거성이에요. 지구에서 약 420광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-cha",
+        "nameKo": "카멜레온자리 베타별",
+        "bayer": "β Chamaeleontis",
+        "x": 12.0,
+        "y": 53.5,
+        "magnitude": 4.24,
+        "badge": "청백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.24등급",
+        "distance": "약 300광년",
+        "temperature": "약 12,000K",
+        "size": "태양의 약 2.8배",
+        "description": "카멜레온자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 300광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-cha",
+        "nameKo": "카멜레온자리 엡실론별",
+        "bayer": "ε Chamaeleontis",
+        "x": 15.1,
+        "y": 45.0,
+        "magnitude": 4.88,
+        "badge": "청백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.88등급",
+        "distance": "약 360광년",
+        "temperature": "약 10,900K",
+        "size": "태양의 약 3.1배",
+        "description": "카멜레온자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 360광년 떨어져 있어요."
+      },
+      {
+        "id": "delta1-cha",
+        "nameKo": "카멜레온자리 델타1별",
+        "bayer": "δ¹ Chamaeleontis",
+        "x": 38.5,
+        "y": 55.8,
+        "magnitude": 5.46,
+        "badge": "주황색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "5.46등급",
+        "distance": "약 350광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 12배",
+        "description": "카멜레온자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 350광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "alpha-cha",
+        "gamma-cha"
+      ],
+      [
+        "gamma-cha",
+        "delta1-cha"
+      ],
+      [
+        "gamma-cha",
+        "epsilon-cha"
+      ],
+      [
+        "delta1-cha",
+        "beta-cha"
+      ],
+      [
+        "epsilon-cha",
+        "beta-cha"
+      ]
+    ]
+  },
+  {
+    "id": "circinus",
+    "isZodiac": false,
+    "nameKo": "컴퍼스자리",
+    "nameEn": "Circinus",
+    "nameLatin": "Circinus",
+    "abbr": "Cir",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "6월 (남반구 기준)",
+      "season": "5월~7월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 남반구에서 센타우루스자리 알파별 바로 옆에서 찾아보세요.",
+      "region": "south"
+    },
+    "origin": "컴퍼스자리는 18세기 프랑스 천문학자 라카유가 만든 별자리로, 원을 그리거나 길이를 옮길 때 쓰는 제도용 컴퍼스를 나타내요. 센타우루스자리의 으뜸별 알파 센타우리 바로 옆에 있어요. 신화는 없고, 은하수 속의 작은 별자리예요.",
+    "stars": [
+      {
+        "id": "alpha-cir",
+        "nameKo": "컴퍼스자리 알파별",
+        "bayer": "α Circini",
+        "x": 78.2,
+        "y": 88.0,
+        "magnitude": 3.18,
+        "badge": "황백색 별",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.18등급",
+        "distance": "약 54광년",
+        "temperature": "약 7,800K",
+        "size": "태양의 약 2.0배",
+        "description": "컴퍼스자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 54광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-cir",
+        "nameKo": "컴퍼스자리 베타별",
+        "bayer": "β Circini",
+        "x": 30.6,
+        "y": 12.0,
+        "magnitude": 4.07,
+        "badge": "백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.07등급",
+        "distance": "약 100광년",
+        "temperature": "약 9,100K",
+        "size": "태양의 약 1.8배",
+        "description": "컴퍼스자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 100광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-cir",
+        "nameKo": "컴퍼스자리 감마별",
+        "bayer": "γ Circini",
+        "x": 21.8,
+        "y": 18.7,
+        "magnitude": 4.48,
+        "badge": "청백색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.48등급",
+        "distance": "약 450광년",
+        "temperature": "약 8,400K",
+        "size": "태양의 약 7.7배",
+        "description": "컴퍼스자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 450광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "alpha-cir",
+        "beta-cir"
+      ],
+      [
+        "alpha-cir",
+        "gamma-cir"
+      ]
+    ]
+  },
+  {
+    "id": "crater",
+    "isZodiac": false,
+    "nameKo": "컵자리",
+    "nameEn": "Crater",
+    "nameLatin": "Crater",
+    "abbr": "Crt",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "4월",
+      "season": "3월~5월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 하늘 (고도 약 36°)",
+      "tip": "봄철 남쪽 하늘에서 사자자리와 바다뱀자리 사이, 까마귀자리 옆을 살펴보세요. 어두운 별들이 컵 모양을 이뤄요."
+    },
+    "origin": "컵자리는 그리스 신화에서 태양의 신 아폴론의 컵이에요. 아폴론이 까마귀에게 이 컵에 물을 떠 오라고 시켰는데, 까마귀가 무화과가 익기를 기다리다 늦어서 거짓말을 했다는 이야기가 있어요(까마귀자리). 하늘에서는 바다뱀자리의 등 위에 컵이, 그 옆에 까마귀가 놓여 있어요. 별이 어두워서 맑은 날 어두운 곳에서 찾아야 해요.",
+    "stars": [
+      {
+        "id": "delta-crt",
+        "nameKo": "컵자리 델타별",
+        "bayer": "δ Crateris",
+        "x": 61.8,
+        "y": 41.2,
+        "magnitude": 3.56,
+        "badge": "주황색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.56등급",
+        "distance": "약 190광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 17배",
+        "description": "컵자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 190광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-crt",
+        "nameKo": "컵자리 감마별",
+        "bayer": "γ Crateris",
+        "x": 54.2,
+        "y": 57.6,
+        "magnitude": 4.06,
+        "badge": "백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.06등급",
+        "distance": "약 82광년",
+        "temperature": "약 8,000K",
+        "size": "태양의 약 1.9배",
+        "description": "컵자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 82광년 떨어져 있어요."
+      },
+      {
+        "id": "alkes",
+        "nameKo": "알케스",
+        "bayer": "Alkes · α Crateris",
+        "x": 88.0,
+        "y": 61.7,
+        "magnitude": 4.08,
+        "badge": "주황색 거성",
+        "tagline": "'컵'이라는 이름의 별",
+        "brightness": "4.08등급",
+        "distance": "약 160광년",
+        "temperature": "약 4,600K",
+        "size": "태양의 약 11배",
+        "description": "이름은 아랍어로 '컵'을 뜻해요. 컵자리에서 가장 밝은 별이에요."
+      },
+      {
+        "id": "beta-crt",
+        "nameKo": "컵자리 베타별",
+        "bayer": "β Crateris",
+        "x": 71.5,
+        "y": 87.0,
+        "magnitude": 4.46,
+        "badge": "백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.46등급",
+        "distance": "약 340광년",
+        "temperature": "약 9,800K",
+        "size": "태양의 약 4.3배",
+        "description": "컵자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 340광년 떨어져 있어요."
+      },
+      {
+        "id": "theta-crt",
+        "nameKo": "컵자리 세타별",
+        "bayer": "θ Crateris",
+        "x": 37.8,
+        "y": 13.0,
+        "magnitude": 4.7,
+        "badge": "청백색 별",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.7등급",
+        "distance": "약 280광년",
+        "temperature": "약 11,100K",
+        "size": "태양의 약 2.5배",
+        "description": "컵자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 280광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-crt",
+        "nameKo": "컵자리 제타별",
+        "bayer": "ζ Crateris",
+        "x": 27.5,
+        "y": 61.7,
+        "magnitude": 4.71,
+        "badge": "황색 거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "4.71등급",
+        "distance": "약 350광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 17배",
+        "description": "컵자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 350광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-crt",
+        "nameKo": "컵자리 엡실론별",
+        "bayer": "ε Crateris",
+        "x": 54.7,
+        "y": 19.0,
+        "magnitude": 4.81,
+        "badge": "주황색 거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "4.81등급",
+        "distance": "약 380광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 29배",
+        "description": "컵자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "lambda-crt",
+        "nameKo": "컵자리 람다별",
+        "bayer": "λ Crateris",
+        "x": 56.2,
+        "y": 63.8,
+        "magnitude": 5.08,
+        "badge": "황백색 준거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "5.08등급",
+        "distance": "약 140광년",
+        "temperature": "약 6,700K",
+        "size": "태양의 약 2.9배",
+        "description": "컵자리의 별자리 선을 이루는 황백색 준거성이에요. 지구에서 약 140광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-crt",
+        "nameKo": "컵자리 에타별",
+        "bayer": "η Crateris",
+        "x": 12.0,
+        "y": 55.3,
+        "magnitude": 5.17,
+        "badge": "백색 별",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "5.17등급",
+        "distance": "약 250광년",
+        "temperature": "약 10,400K",
+        "size": "태양의 약 2.0배",
+        "description": "컵자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 250광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "alkes",
+        "beta-crt"
+      ],
+      [
+        "alkes",
+        "delta-crt"
+      ],
+      [
+        "beta-crt",
+        "lambda-crt"
+      ],
+      [
+        "delta-crt",
+        "epsilon-crt"
+      ],
+      [
+        "delta-crt",
+        "gamma-crt"
+      ],
+      [
+        "lambda-crt",
+        "gamma-crt"
+      ],
+      [
+        "epsilon-crt",
+        "theta-crt"
+      ],
+      [
+        "gamma-crt",
+        "zeta-crt"
+      ],
+      [
+        "zeta-crt",
+        "eta-crt"
+      ]
+    ]
+  },
+  {
+    "id": "tucana",
+    "isZodiac": false,
+    "nameKo": "큰부리새자리",
+    "nameEn": "Tucana",
+    "nameLatin": "Tucana",
+    "abbr": "Tuc",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "observation": {
+      "bestMonth": "10월 (남반구 기준)",
+      "season": "9월~11월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 남반구에서 맨눈으로 흐릿한 구름처럼 보이는 소마젤란은하를 길잡이로 찾아보세요.",
+      "region": "south"
+    },
+    "origin": "큰부리새자리는 16세기 말 플란시우스가 항해사 케이저르와 더 하우트만의 관측을 바탕으로 만든 별자리예요. 1603년 요한 바이어의 별자리 지도에 실렸어요. 큰 부리가 특징인 남아메리카의 새, 큰부리새(투칸)를 나타내요. 이곳에는 우리 은하 곁의 작은 은하인 소마젤란은하와, 아주 밝은 구상성단 '47 투카나'가 있어요.",
+    "stars": [
+      {
+        "id": "alpha-tuc",
+        "nameKo": "큰부리새자리 알파별",
+        "bayer": "α Tucanae",
+        "x": 88.0,
+        "y": 47.2,
+        "magnitude": 2.87,
+        "badge": "주황색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "2.87등급",
+        "distance": "약 200광년",
+        "temperature": "약 4,000K",
+        "size": "태양의 약 32배",
+        "description": "큰부리새자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 200광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-tuc",
+        "nameKo": "큰부리새자리 감마별",
+        "bayer": "γ Tucanae",
+        "x": 53.4,
+        "y": 31.9,
+        "magnitude": 3.99,
+        "badge": "황백색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.99등급",
+        "distance": "약 75광년",
+        "temperature": "약 6,800K",
+        "size": "태양의 약 2.5배",
+        "description": "큰부리새자리의 별자리 선을 이루는 황백색 거성이에요. 지구에서 약 75광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-tuc",
+        "nameKo": "큰부리새자리 제타별",
+        "bayer": "ζ Tucanae",
+        "x": 20.0,
+        "y": 66.4,
+        "magnitude": 4.23,
+        "badge": "황백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.23등급",
+        "distance": "약 28광년",
+        "temperature": "약 6,100K",
+        "size": "태양의 약 1.0배",
+        "description": "큰부리새자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 28광년 떨어져 있어요."
+      },
+      {
+        "id": "beta1-tuc",
+        "nameKo": "큰부리새자리 베타1별",
+        "bayer": "β¹ Tucanae",
+        "x": 12.0,
+        "y": 58.7,
+        "magnitude": 4.36,
+        "badge": "청백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.36등급",
+        "distance": "약 140광년",
+        "temperature": "약 11,000K",
+        "size": "태양의 약 1.4배",
+        "description": "큰부리새자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 140광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-tuc",
+        "nameKo": "큰부리새자리 엡실론별",
+        "bayer": "ε Tucanae",
+        "x": 30.7,
+        "y": 68.1,
+        "magnitude": 4.49,
+        "badge": "청백색 준거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.49등급",
+        "distance": "약 370광년",
+        "temperature": "약 11,200K",
+        "size": "태양의 약 3.6배",
+        "description": "큰부리새자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 370광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-tuc",
+        "nameKo": "큰부리새자리 델타별",
+        "bayer": "δ Tucanae",
+        "x": 77.3,
+        "y": 68.1,
+        "magnitude": 4.51,
+        "badge": "청백색 별",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "4.51등급",
+        "distance": "약 250광년",
+        "temperature": "약 10,500K",
+        "size": "태양의 약 2.7배",
+        "description": "큰부리새자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 250광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "zeta-tuc",
+        "beta1-tuc"
+      ],
+      [
+        "zeta-tuc",
+        "epsilon-tuc"
+      ],
+      [
+        "beta1-tuc",
+        "gamma-tuc"
+      ],
+      [
+        "alpha-tuc",
+        "delta-tuc"
+      ],
+      [
+        "alpha-tuc",
+        "gamma-tuc"
+      ],
+      [
+        "delta-tuc",
+        "epsilon-tuc"
+      ]
+    ]
+  },
+  {
+    "id": "mensa",
+    "isZodiac": false,
+    "nameKo": "테이블산자리",
+    "nameEn": "Mensa",
+    "nameLatin": "Mensa",
+    "abbr": "Men",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "1월 (남반구 기준)",
+      "season": "12월~2월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 하늘의 남극 가까이, 대마젤란은하 근처에서 아주 어두운 별 몇 개를 찾아야 해요.",
+      "region": "south"
+    },
+    "origin": "테이블산자리는 18세기 프랑스 천문학자 라카유가 남아프리카 케이프에서 관측하며 만든 별자리예요. 케이프타운에 있는 '테이블산'의 이름을 땄어요. 88개 별자리 가운데 지명에서 이름을 딴 유일한 별자리예요. 별이 아주 어두워요. 대마젤란은하의 일부가 이 별자리 안에 걸쳐 있어요.",
+    "stars": [
+      {
+        "id": "alpha-men",
+        "nameKo": "테이블산자리 알파별",
+        "bayer": "α Mensae",
+        "x": 12.5,
+        "y": 67.9,
+        "magnitude": 5.08,
+        "badge": "황색 별",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "5.08등급",
+        "distance": "약 33광년",
+        "temperature": "약 5,600K",
+        "size": "태양의 약 1.0배",
+        "description": "테이블산자리의 별자리 선을 이루는 황색 별이에요. 지구에서 약 33광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-men",
+        "nameKo": "테이블산자리 감마별",
+        "bayer": "γ Mensae",
+        "x": 51.6,
+        "y": 88.0,
+        "magnitude": 5.18,
+        "badge": "주황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "5.18등급",
+        "distance": "약 100광년",
+        "temperature": "약 4,500K",
+        "size": "태양의 약 4.4배",
+        "description": "테이블산자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 100광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-men",
+        "nameKo": "테이블산자리 베타별",
+        "bayer": "β Mensae",
+        "x": 85.2,
+        "y": 12.0,
+        "magnitude": 5.3,
+        "badge": "황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "5.3등급",
+        "distance": "약 790광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 29배",
+        "description": "테이블산자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 790광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-men",
+        "nameKo": "테이블산자리 에타별",
+        "bayer": "η Mensae",
+        "x": 87.5,
+        "y": 68.2,
+        "magnitude": 5.47,
+        "badge": "주황색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "5.47등급",
+        "distance": "약 670광년",
+        "temperature": "약 3,800K",
+        "size": "태양의 약 36배",
+        "description": "테이블산자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 670광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "eta-men",
+        "beta-men"
+      ],
+      [
+        "eta-men",
+        "gamma-men"
+      ],
+      [
+        "gamma-men",
+        "alpha-men"
+      ]
+    ]
+  },
+  {
+    "id": "lepus",
+    "isZodiac": false,
+    "nameKo": "토끼자리",
+    "nameEn": "Lepus",
+    "nameLatin": "Lepus",
+    "abbr": "Lep",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "1월",
+      "season": "12월~2월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 하늘 (고도 약 35°)",
+      "tip": "겨울철 오리온자리 바로 아래에서 밝은 별 아르네브와 니할을 찾아보세요. 별 몇 개가 이루는 사각형 모양이 토끼예요."
+    },
+    "origin": "토끼자리는 사냥꾼 오리온의 발밑에서 사냥개들에게 쫓기는 토끼를 나타내요. 이야기는 여러 가지로 전해져요. 2세기 프톨레마이오스가 정리한 48개 별자리에 들어 있는 오래된 별자리예요. 이곳에는 선명한 붉은빛이 나서 '힌드의 진홍색 별'이라고 불리는 변광성 R 토끼자리도 있어요.",
+    "stars": [
+      {
+        "id": "arneb",
+        "nameKo": "아르네브",
+        "bayer": "Arneb · α Leporis",
+        "x": 54.6,
+        "y": 50.3,
+        "magnitude": 2.58,
+        "badge": "황백색 초거성",
+        "tagline": "'토끼'라는 이름의 별",
+        "brightness": "2.58등급",
+        "distance": "약 2,220광년",
+        "temperature": "약 8,100K",
+        "size": "태양의 약 98배",
+        "description": "이름은 아랍어로 '토끼'를 뜻해요. 아주 멀리 있는데도 2등성으로 보일 만큼 본래 밝기가 큰 초거성이에요."
+      },
+      {
+        "id": "nihal",
+        "nameKo": "니할",
+        "bayer": "Nihal · β Leporis",
+        "x": 60.1,
+        "y": 65.8,
+        "magnitude": 2.81,
+        "badge": "황색 밝은 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "2.81등급",
+        "distance": "약 160광년",
+        "temperature": "약 5,300K",
+        "size": "태양의 약 15배",
+        "description": "토끼자리의 별자리 선을 이루는 황색 밝은 거성이에요. 지구에서 약 160광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-lep",
+        "nameKo": "토끼자리 엡실론별",
+        "bayer": "ε Leporis",
+        "x": 88.0,
+        "y": 75.1,
+        "magnitude": 3.19,
+        "badge": "주황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "3.19등급",
+        "distance": "약 210광년",
+        "temperature": "약 3,900K",
+        "size": "태양의 약 31배",
+        "description": "토끼자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 210광년 떨어져 있어요."
+      },
+      {
+        "id": "mu-lep",
+        "nameKo": "토끼자리 뮤별",
+        "bayer": "μ Leporis",
+        "x": 79.7,
+        "y": 42.2,
+        "magnitude": 3.29,
+        "badge": "청백색 준거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.29등급",
+        "distance": "약 190광년",
+        "temperature": "약 11,700K",
+        "size": "태양의 약 2.8배",
+        "description": "토끼자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 190광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-lep",
+        "nameKo": "토끼자리 제타별",
+        "bayer": "ζ Leporis",
+        "x": 36.6,
+        "y": 34.6,
+        "magnitude": 3.55,
+        "badge": "백색 별",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.55등급",
+        "distance": "약 70광년",
+        "temperature": "약 9,000K",
+        "size": "태양의 약 1.6배",
+        "description": "토끼자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 70광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-lep",
+        "nameKo": "토끼자리 감마별",
+        "bayer": "γ Leporis",
+        "x": 40.3,
+        "y": 74.8,
+        "magnitude": 3.59,
+        "badge": "황백색 별",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.59등급",
+        "distance": "약 29광년",
+        "temperature": "약 6,500K",
+        "size": "태양의 약 1.3배",
+        "description": "토끼자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 29광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-lep",
+        "nameKo": "토끼자리 에타별",
+        "bayer": "η Leporis",
+        "x": 24.4,
+        "y": 31.4,
+        "magnitude": 3.71,
+        "badge": "황백색 별",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "3.71등급",
+        "distance": "약 49광년",
+        "temperature": "약 7,200K",
+        "size": "태양의 약 1.6배",
+        "description": "토끼자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 49광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-lep",
+        "nameKo": "토끼자리 델타별",
+        "bayer": "δ Leporis",
+        "x": 31.7,
+        "y": 66.7,
+        "magnitude": 3.76,
+        "badge": "황색 거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "3.76등급",
+        "distance": "약 110광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 8.3배",
+        "description": "토끼자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 110광년 떨어져 있어요."
+      },
+      {
+        "id": "lambda-lep",
+        "nameKo": "토끼자리 람다별",
+        "bayer": "λ Leporis",
+        "x": 71.6,
+        "y": 26.0,
+        "magnitude": 4.29,
+        "badge": "청백색 준거성",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "4.29등급",
+        "distance": "약 850광년",
+        "temperature": "약 14,500K",
+        "size": "태양의 약 5.4배",
+        "description": "토끼자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 850광년 떨어져 있어요."
+      },
+      {
+        "id": "kappa-lep",
+        "nameKo": "토끼자리 카파별",
+        "bayer": "κ Leporis",
+        "x": 79.8,
+        "y": 24.9,
+        "magnitude": 4.36,
+        "badge": "청백색 별",
+        "tagline": "10번째로 밝은 별",
+        "brightness": "4.36등급",
+        "distance": "약 730광년",
+        "temperature": "약 11,500K",
+        "size": "태양의 약 7.0배",
+        "description": "토끼자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 730광년 떨어져 있어요."
+      },
+      {
+        "id": "theta-lep",
+        "nameKo": "토끼자리 세타별",
+        "bayer": "θ Leporis",
+        "x": 12.0,
+        "y": 35.9,
+        "magnitude": 4.67,
+        "badge": "백색 별",
+        "tagline": "11번째로 밝은 별",
+        "brightness": "4.67등급",
+        "distance": "약 170광년",
+        "temperature": "약 9,600K",
+        "size": "태양의 약 2.1배",
+        "description": "토끼자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 170광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "epsilon-lep",
+        "mu-lep"
+      ],
+      [
+        "epsilon-lep",
+        "nihal"
+      ],
+      [
+        "mu-lep",
+        "kappa-lep"
+      ],
+      [
+        "mu-lep",
+        "lambda-lep"
+      ],
+      [
+        "mu-lep",
+        "arneb"
+      ],
+      [
+        "nihal",
+        "gamma-lep"
+      ],
+      [
+        "arneb",
+        "zeta-lep"
+      ],
+      [
+        "gamma-lep",
+        "delta-lep"
+      ],
+      [
+        "zeta-lep",
+        "eta-lep"
+      ],
+      [
+        "eta-lep",
+        "theta-lep"
+      ]
+    ]
+  },
+  {
+    "id": "musca",
+    "isZodiac": false,
+    "nameKo": "파리자리",
+    "nameEn": "Musca",
+    "nameLatin": "Musca",
+    "abbr": "Mus",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "봄",
+    "observation": {
+      "bestMonth": "5월 (남반구 기준)",
+      "season": "4월~6월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 남반구에서 남십자자리 바로 아래 은하수 속에서 찾아보세요.",
+      "region": "south"
+    },
+    "origin": "파리자리는 16세기 말 플란시우스가 만든 별자리예요. 처음에는 벌을 뜻하는 '아피스'로 불렸는데, 이후 파리로 바뀌었어요. 남십자자리 바로 아래쪽 은하수 속에 있고, 별 몇 개가 길쭉한 사각형 모양을 이뤄요.",
+    "stars": [
+      {
+        "id": "alpha-mus",
+        "nameKo": "파리자리 알파별",
+        "bayer": "α Muscae",
+        "x": 33.0,
+        "y": 44.7,
+        "magnitude": 2.69,
+        "badge": "청백색 준거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "2.69등급",
+        "distance": "약 320광년",
+        "temperature": "약 13,000K",
+        "size": "태양의 약 5.2배",
+        "description": "파리자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 320광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-mus",
+        "nameKo": "파리자리 베타별",
+        "bayer": "β Muscae",
+        "x": 23.4,
+        "y": 33.8,
+        "magnitude": 3.04,
+        "badge": "청백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.04등급",
+        "distance": "약 340광년",
+        "temperature": "약 13,100K",
+        "size": "태양의 약 4.7배",
+        "description": "파리자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 340광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-mus",
+        "nameKo": "파리자리 델타별",
+        "bayer": "δ Muscae",
+        "x": 12.0,
+        "y": 72.9,
+        "magnitude": 3.61,
+        "badge": "주황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "3.61등급",
+        "distance": "약 91광년",
+        "temperature": "약 4,300K",
+        "size": "태양의 약 8.9배",
+        "description": "파리자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 91광년 떨어져 있어요."
+      },
+      {
+        "id": "lambda-mus",
+        "nameKo": "파리자리 람다별",
+        "bayer": "λ Muscae",
+        "x": 88.0,
+        "y": 22.5,
+        "magnitude": 3.63,
+        "badge": "백색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.63등급",
+        "distance": "약 130광년",
+        "temperature": "약 8,500K",
+        "size": "태양의 약 3.2배",
+        "description": "파리자리의 별자리 선을 이루는 백색 거성이에요. 지구에서 약 130광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-mus",
+        "nameKo": "파리자리 감마별",
+        "bayer": "γ Muscae",
+        "x": 37.9,
+        "y": 77.5,
+        "magnitude": 3.84,
+        "badge": "청백색 별",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.84등급",
+        "distance": "약 320광년",
+        "temperature": "약 12,600K",
+        "size": "태양의 약 3.3배",
+        "description": "파리자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 320광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-mus",
+        "nameKo": "파리자리 엡실론별",
+        "bayer": "ε Muscae",
+        "x": 52.8,
+        "y": 32.0,
+        "magnitude": 4.06,
+        "badge": "적색 거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "4.06등급",
+        "distance": "약 300광년",
+        "temperature": "약 3,600K",
+        "size": "태양의 약 34배",
+        "description": "파리자리의 별자리 선을 이루는 적색 거성이에요. 지구에서 약 300광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "lambda-mus",
+        "epsilon-mus"
+      ],
+      [
+        "epsilon-mus",
+        "alpha-mus"
+      ],
+      [
+        "gamma-mus",
+        "alpha-mus"
+      ],
+      [
+        "gamma-mus",
+        "delta-mus"
+      ],
+      [
+        "alpha-mus",
+        "beta-mus"
+      ],
+      [
+        "beta-mus",
+        "delta-mus"
+      ]
+    ]
+  },
+  {
+    "id": "octans",
+    "isZodiac": false,
+    "nameKo": "팔분의자리",
+    "nameEn": "Octans",
+    "nameLatin": "Octans",
+    "abbr": "Oct",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "9월 (남반구 기준)",
+      "season": "8월~10월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 하늘의 남극 바로 곁에 있어서 남반구 대부분 지역에서는 일 년 내내 볼 수 있어요.",
+      "region": "south"
+    },
+    "origin": "팔분의자리는 18세기 프랑스 천문학자 라카유가 만든 별자리로, 배에서 별의 높이를 재어 위치를 알아내던 항해 도구, 팔분의를 나타내요. 하늘의 남극이 이 별자리 안에 있어요. 남반구의 북극성에 해당하는 별은 시그마 옥탄티스인데, 아주 어두워서 북극성처럼 눈에 띄지는 않아요.",
+    "stars": [
+      {
+        "id": "nu-oct",
+        "nameKo": "팔분의자리 뉴별",
+        "bayer": "ν Octantis",
+        "x": 15.9,
+        "y": 13.3,
+        "magnitude": 3.73,
+        "badge": "주황색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.73등급",
+        "distance": "약 69광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 5.4배",
+        "description": "팔분의자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 69광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-oct",
+        "nameKo": "팔분의자리 베타별",
+        "bayer": "β Octantis",
+        "x": 12.0,
+        "y": 45.1,
+        "magnitude": 4.13,
+        "badge": "백색 준거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.13등급",
+        "distance": "약 150광년",
+        "temperature": "약 8,100K",
+        "size": "태양의 약 3.2배",
+        "description": "팔분의자리의 별자리 선을 이루는 백색 준거성이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-oct",
+        "nameKo": "팔분의자리 델타별",
+        "bayer": "δ Octantis",
+        "x": 88.0,
+        "y": 86.7,
+        "magnitude": 4.31,
+        "badge": "주황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.31등급",
+        "distance": "약 300광년",
+        "temperature": "약 4,100K",
+        "size": "태양의 약 23배",
+        "description": "팔분의자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 300광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "delta-oct",
+        "nu-oct"
+      ],
+      [
+        "delta-oct",
+        "beta-oct"
+      ],
+      [
+        "nu-oct",
+        "beta-oct"
+      ]
+    ]
+  },
+  {
+    "id": "hercules",
+    "isZodiac": false,
+    "nameKo": "헤르쿨레스자리",
+    "nameEn": "Hercules",
+    "nameLatin": "Hercules",
+    "abbr": "Her",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "7월",
+      "season": "6월~8월",
+      "time": "저녁 9시 무렵",
+      "position": "머리 위 가까이 (고도 약 85°)",
+      "tip": "여름철 머리 위 가까이에서 직녀성 베가와 목동자리 사이를 살펴보세요. 가운데 사다리꼴(키스톤) 옆에서 쌍안경으로 구상성단 M13을 찾아보세요."
+    },
+    "origin": "헤르쿨레스자리는 그리스 신화의 영웅 헤라클레스를 나타내요. 하늘에서는 한쪽 무릎을 꿇은 채 몽둥이를 든 모습이에요. 헤라클레스는 열두 가지 과업을 해낸 영웅이고, 신들이 그를 하늘에 올렸다고 전해져요. 별자리 가운데의 사다리꼴(키스톤)이 눈에 잘 띄어요. 이 가까이에 맨눈으로도 희미하게 보이는 '헤르쿨레스 대성단(M13)'이 있어요.",
+    "stars": [
+      {
+        "id": "kornephoros",
+        "nameKo": "코르네포로스",
+        "bayer": "Kornephoros · β Herculis",
+        "x": 68.9,
+        "y": 70.3,
+        "magnitude": 2.78,
+        "badge": "황색 거성",
+        "tagline": "곤봉을 든 사람",
+        "brightness": "2.78등급",
+        "distance": "약 140광년",
+        "temperature": "약 4,900K",
+        "size": "태양의 약 15배",
+        "description": "이름은 그리스어로 '곤봉을 든 사람'을 뜻해요. 헤라클레스의 어깨에 해당하는 별이에요."
+      },
+      {
+        "id": "rasalgethi",
+        "nameKo": "라스알게티",
+        "bayer": "Rasalgethi · α¹ Herculis",
+        "x": 44.2,
+        "y": 88.0,
+        "magnitude": 2.78,
+        "badge": "적색 밝은 거성",
+        "tagline": "무릎 꿇은 이의 머리",
+        "brightness": "2.78등급",
+        "distance": "약 360광년",
+        "temperature": "약 3,300K",
+        "size": "태양의 약 300~400배",
+        "description": "이름은 아랍어로 '무릎 꿇은 사람의 머리'를 뜻해요. 지름이 태양의 수백 배에 이르는 거대한 적색 거성이고, 쌍성계예요."
+      },
+      {
+        "id": "zeta-her",
+        "nameKo": "헤르쿨레스자리 제타별",
+        "bayer": "ζ Herculis",
+        "x": 61.8,
+        "y": 47.1,
+        "magnitude": 2.81,
+        "badge": "황백색 준거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "2.81등급",
+        "distance": "약 35광년",
+        "temperature": "약 5,800K",
+        "size": "태양의 약 2.7배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 황백색 준거성이에요. 지구에서 약 35광년 떨어져 있어요."
+      },
+      {
+        "id": "sarin",
+        "nameKo": "사린",
+        "bayer": "Sarin · δ Herculis",
+        "x": 44.8,
+        "y": 62.8,
+        "magnitude": 3.12,
+        "badge": "백색 준거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "3.12등급",
+        "distance": "약 75광년",
+        "temperature": "약 9,200K",
+        "size": "태양의 약 2.0배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 백색 준거성이에요. 지구에서 약 75광년 떨어져 있어요."
+      },
+      {
+        "id": "pi-her",
+        "nameKo": "헤르쿨레스자리 파이별",
+        "bayer": "π Herculis",
+        "x": 45.8,
+        "y": 35.3,
+        "magnitude": 3.16,
+        "badge": "주황색 밝은 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "3.16등급",
+        "distance": "약 380광년",
+        "temperature": "약 3,900K",
+        "size": "태양의 약 55배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 주황색 밝은 거성이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "mu-her",
+        "nameKo": "헤르쿨레스자리 뮤별",
+        "bayer": "μ Herculis",
+        "x": 28.9,
+        "y": 55.1,
+        "magnitude": 3.42,
+        "badge": "황색 준거성",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "3.42등급",
+        "distance": "약 27광년",
+        "temperature": "약 5,400K",
+        "size": "태양의 약 1.8배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 황색 준거성이에요. 지구에서 약 27광년 떨어져 있어요."
+      },
+      {
+        "id": "eta-her",
+        "nameKo": "헤르쿨레스자리 에타별",
+        "bayer": "η Herculis",
+        "x": 60.3,
+        "y": 30.3,
+        "magnitude": 3.48,
+        "badge": "황색 거성",
+        "tagline": "7번째로 밝은 별",
+        "brightness": "3.48등급",
+        "distance": "약 110광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 8.3배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 110광년 떨어져 있어요."
+      },
+      {
+        "id": "xi-her",
+        "nameKo": "헤르쿨레스자리 크시별",
+        "bayer": "ξ Herculis",
+        "x": 23.5,
+        "y": 50.9,
+        "magnitude": 3.7,
+        "badge": "주황색 거성",
+        "tagline": "8번째로 밝은 별",
+        "brightness": "3.7등급",
+        "distance": "약 140광년",
+        "temperature": "약 4,900K",
+        "size": "태양의 약 9.9배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 140광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-her",
+        "nameKo": "헤르쿨레스자리 감마별",
+        "bayer": "γ Herculis",
+        "x": 74.0,
+        "y": 75.7,
+        "magnitude": 3.74,
+        "badge": "백색 거성",
+        "tagline": "9번째로 밝은 별",
+        "brightness": "3.74등급",
+        "distance": "약 190광년",
+        "temperature": "약 7,500K",
+        "size": "태양의 약 5.8배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 백색 거성이에요. 지구에서 약 190광년 떨어져 있어요."
+      },
+      {
+        "id": "omicron-her",
+        "nameKo": "헤르쿨레스자리 오미크론별",
+        "bayer": "ο Herculis",
+        "x": 18.2,
+        "y": 51.4,
+        "magnitude": 3.84,
+        "badge": "청백색 별",
+        "tagline": "10번째로 밝은 별",
+        "brightness": "3.84등급",
+        "distance": "약 340광년",
+        "temperature": "약 10,400K",
+        "size": "태양의 약 5.1배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 340광년 떨어져 있어요."
+      },
+      {
+        "id": "theta-her",
+        "nameKo": "헤르쿨레스자리 세타별",
+        "bayer": "θ Herculis",
+        "x": 26.7,
+        "y": 32.5,
+        "magnitude": 3.86,
+        "badge": "주황색 밝은 거성",
+        "tagline": "11번째로 밝은 별",
+        "brightness": "3.86등급",
+        "distance": "약 750광년",
+        "temperature": "약 4,000K",
+        "size": "태양의 약 76배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 주황색 밝은 거성이에요. 지구에서 약 750광년 떨어져 있어요."
+      },
+      {
+        "id": "tau-her",
+        "nameKo": "헤르쿨레스자리 타우별",
+        "bayer": "τ Herculis",
+        "x": 69.0,
+        "y": 12.0,
+        "magnitude": 3.91,
+        "badge": "청백색 준거성",
+        "tagline": "12번째로 밝은 별",
+        "brightness": "3.91등급",
+        "distance": "약 310광년",
+        "temperature": "약 12,500K",
+        "size": "태양의 약 3.1배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 청백색 준거성이에요. 지구에서 약 310광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-her",
+        "nameKo": "헤르쿨레스자리 엡실론별",
+        "bayer": "ε Herculis",
+        "x": 52.5,
+        "y": 48.8,
+        "magnitude": 3.92,
+        "badge": "백색 별",
+        "tagline": "13번째로 밝은 별",
+        "brightness": "3.92등급",
+        "distance": "약 160광년",
+        "temperature": "약 10,400K",
+        "size": "태양의 약 2.2배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 160광년 떨어져 있어요."
+      },
+      {
+        "id": "rho-her",
+        "nameKo": "헤르쿨레스자리 로별",
+        "bayer": "ρ Herculis",
+        "x": 41.8,
+        "y": 34.3,
+        "magnitude": 4.15,
+        "badge": "청백색 거성",
+        "tagline": "14번째로 밝은 별",
+        "brightness": "4.15등급",
+        "distance": "약 390광년",
+        "temperature": "약 10,300K",
+        "size": "태양의 약 5.2배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 청백색 거성이에요. 지구에서 약 390광년 떨어져 있어요."
+      },
+      {
+        "id": "sigma-her",
+        "nameKo": "헤르쿨레스자리 시그마별",
+        "bayer": "σ Herculis",
+        "x": 63.7,
+        "y": 21.9,
+        "magnitude": 4.2,
+        "badge": "청백색 별",
+        "tagline": "15번째로 밝은 별",
+        "brightness": "4.2등급",
+        "distance": "약 310광년",
+        "temperature": "약 10,300K",
+        "size": "태양의 약 4.1배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 310광년 떨어져 있어요."
+      },
+      {
+        "id": "phi-her",
+        "nameKo": "헤르쿨레스자리 피별",
+        "bayer": "φ Herculis",
+        "x": 74.0,
+        "y": 14.7,
+        "magnitude": 4.23,
+        "badge": "청백색 별",
+        "tagline": "16번째로 밝은 별",
+        "brightness": "4.23등급",
+        "distance": "약 200광년",
+        "temperature": "약 10,700K",
+        "size": "태양의 약 2.4배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 200광년 떨어져 있어요."
+      },
+      {
+        "id": "chi-her",
+        "nameKo": "헤르쿨레스자리 카이별",
+        "bayer": "χ Herculis",
+        "x": 81.8,
+        "y": 19.3,
+        "magnitude": 4.6,
+        "badge": "황백색 별",
+        "tagline": "17번째로 밝은 별",
+        "brightness": "4.6등급",
+        "distance": "약 52광년",
+        "temperature": "약 6,100K",
+        "size": "태양의 약 1.6배",
+        "description": "헤르쿨레스자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 52광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "chi-her",
+        "phi-her"
+      ],
+      [
+        "phi-her",
+        "tau-her"
+      ],
+      [
+        "tau-her",
+        "sigma-her"
+      ],
+      [
+        "gamma-her",
+        "kornephoros"
+      ],
+      [
+        "kornephoros",
+        "zeta-her"
+      ],
+      [
+        "kornephoros",
+        "rasalgethi"
+      ],
+      [
+        "sigma-her",
+        "eta-her"
+      ],
+      [
+        "zeta-her",
+        "eta-her"
+      ],
+      [
+        "zeta-her",
+        "epsilon-her"
+      ],
+      [
+        "eta-her",
+        "pi-her"
+      ],
+      [
+        "epsilon-her",
+        "sarin"
+      ],
+      [
+        "epsilon-her",
+        "pi-her"
+      ],
+      [
+        "sarin",
+        "mu-her"
+      ],
+      [
+        "pi-her",
+        "rho-her"
+      ],
+      [
+        "rho-her",
+        "theta-her"
+      ],
+      [
+        "mu-her",
+        "xi-her"
+      ],
+      [
+        "xi-her",
+        "omicron-her"
+      ]
+    ]
+  },
+  {
+    "id": "microscopium",
+    "isZodiac": false,
+    "nameKo": "현미경자리",
+    "nameEn": "Microscopium",
+    "nameLatin": "Microscopium",
+    "abbr": "Mic",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "9월",
+      "season": "8월~10월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 낮은 하늘 (고도 약 16°)",
+      "tip": "초가을 남쪽 낮은 하늘에서 궁수자리와 남쪽물고기자리 사이를 살펴보세요. 아주 어두운 별들이라 어두운 하늘과 트인 남쪽이 필요해요."
+    },
+    "origin": "현미경자리는 18세기 프랑스 천문학자 라카유가 만든 별자리로, 작은 것을 크게 보는 현미경을 나타내요. 과학 기구의 이름을 딴 별자리 가운데 하나이고, 신화는 없어요. 남쪽물고기자리와 궁수자리 사이에 있고, 밝은 별이 없어 어두운 별 몇 개로 이루어져 있어요.",
+    "stars": [
+      {
+        "id": "gamma-mic",
+        "nameKo": "현미경자리 감마별",
+        "bayer": "γ Microscopii",
+        "x": 54.5,
+        "y": 12.2,
+        "magnitude": 4.67,
+        "badge": "황색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "4.67등급",
+        "distance": "약 230광년",
+        "temperature": "약 5,000K",
+        "size": "태양의 약 10배",
+        "description": "현미경자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 230광년 떨어져 있어요."
+      },
+      {
+        "id": "epsilon-mic",
+        "nameKo": "현미경자리 엡실론별",
+        "bayer": "ε Microscopii",
+        "x": 31.9,
+        "y": 12.0,
+        "magnitude": 4.71,
+        "badge": "백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.71등급",
+        "distance": "약 180광년",
+        "temperature": "약 9,300K",
+        "size": "태양의 약 2.3배",
+        "description": "현미경자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 180광년 떨어져 있어요."
+      },
+      {
+        "id": "theta1-mic",
+        "nameKo": "현미경자리 세타1별",
+        "bayer": "θ¹ Microscopii",
+        "x": 30.5,
+        "y": 67.5,
+        "magnitude": 4.8,
+        "badge": "백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.8등급",
+        "distance": "약 200광년",
+        "temperature": "약 9,800K",
+        "size": "태양의 약 2.1배",
+        "description": "현미경자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 200광년 떨어져 있어요."
+      },
+      {
+        "id": "alpha-mic",
+        "nameKo": "현미경자리 알파별",
+        "bayer": "α Microscopii",
+        "x": 69.5,
+        "y": 22.3,
+        "magnitude": 4.89,
+        "badge": "황색 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.89등급",
+        "distance": "약 380광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 17배",
+        "description": "현미경자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 380광년 떨어져 있어요."
+      },
+      {
+        "id": "iota-mic",
+        "nameKo": "현미경자리 이오타별",
+        "bayer": "ι Microscopii",
+        "x": 68.9,
+        "y": 88.0,
+        "magnitude": 5.11,
+        "badge": "황백색 준거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "5.11등급",
+        "distance": "약 120광년",
+        "temperature": "약 7,100K",
+        "size": "태양의 약 2.1배",
+        "description": "현미경자리의 별자리 선을 이루는 황백색 준거성이에요. 지구에서 약 120광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "iota-mic",
+        "alpha-mic"
+      ],
+      [
+        "iota-mic",
+        "theta1-mic"
+      ],
+      [
+        "alpha-mic",
+        "gamma-mic"
+      ],
+      [
+        "gamma-mic",
+        "epsilon-mic"
+      ],
+      [
+        "epsilon-mic",
+        "theta1-mic"
+      ]
+    ]
+  },
+  {
+    "id": "pictor",
+    "isZodiac": false,
+    "nameKo": "화가자리",
+    "nameEn": "Pictor",
+    "nameLatin": "Pictor",
+    "abbr": "Pic",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "2월 (남반구 기준)",
+      "season": "1월~3월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 남반구에서 용골자리 카노푸스 가까이에서 찾아보세요.",
+      "region": "south"
+    },
+    "origin": "화가자리는 18세기 프랑스 천문학자 라카유가 만든 별자리로, 원래 이름은 '화가의 이젤'이에요. 그림을 그릴 때 쓰는 이젤을 나타내요. 용골자리 카노푸스 가까이 남쪽 하늘에 있어요. 베타 픽토리스는 별 둘레에 먼지 원반이 있고 행성이 발견된 별로 유명해요.",
+    "stars": [
+      {
+        "id": "alpha-pic",
+        "nameKo": "화가자리 알파별",
+        "bayer": "α Pictoris",
+        "x": 22.6,
+        "y": 88.0,
+        "magnitude": 3.24,
+        "badge": "백색 준거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.24등급",
+        "distance": "약 97광년",
+        "temperature": "약 8,000K",
+        "size": "태양의 약 3.2배",
+        "description": "화가자리의 별자리 선을 이루는 백색 준거성이에요. 지구에서 약 97광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-pic",
+        "nameKo": "화가자리 베타별",
+        "bayer": "β Pictoris",
+        "x": 77.4,
+        "y": 12.0,
+        "magnitude": 3.85,
+        "badge": "백색 별",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.85등급",
+        "distance": "약 63광년",
+        "temperature": "약 8,400K",
+        "size": "태양의 약 1.5배",
+        "description": "화가자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 63광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-pic",
+        "nameKo": "화가자리 감마별",
+        "bayer": "γ Pictoris",
+        "x": 72.3,
+        "y": 46.6,
+        "magnitude": 4.5,
+        "badge": "주황색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.5등급",
+        "distance": "약 180광년",
+        "temperature": "약 4,600K",
+        "size": "태양의 약 10배",
+        "description": "화가자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 180광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "beta-pic",
+        "gamma-pic"
+      ],
+      [
+        "gamma-pic",
+        "alpha-pic"
+      ]
+    ]
+  },
+  {
+    "id": "fornax",
+    "isZodiac": false,
+    "nameKo": "화로자리",
+    "nameEn": "Fornax",
+    "nameLatin": "Fornax",
+    "abbr": "For",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "가을",
+    "observation": {
+      "bestMonth": "12월",
+      "season": "11월~1월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 낮은 하늘 (고도 약 22°)",
+      "tip": "늦가을 남쪽 낮은 하늘에서 에리다누스자리와 고래자리 사이를 살펴보세요. 아주 어두운 별들이라 어두운 하늘이 필요해요."
+    },
+    "origin": "화로자리는 18세기 프랑스 천문학자 라카유가 만든 별자리로, 원래 이름은 '화학 실험용 화로'예요. 화학 실험에 쓰는 가마를 나타내요. 신화는 없고 밝은 별이 거의 없어요. 우리 은하 바깥의 은하가 많이 모인 '화로자리은하단'이 이곳에 있어요.",
+    "stars": [
+      {
+        "id": "dalim",
+        "nameKo": "달림",
+        "bayer": "Dalim · α Fornacis",
+        "x": 12.0,
+        "y": 41.7,
+        "magnitude": 3.8,
+        "badge": "황백색 별",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.8등급",
+        "distance": "약 46광년",
+        "temperature": "약 6,200K",
+        "size": "태양의 약 2.0배",
+        "description": "화로자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 46광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-for",
+        "nameKo": "화로자리 베타별",
+        "bayer": "β Fornacis",
+        "x": 38.2,
+        "y": 58.3,
+        "magnitude": 4.45,
+        "badge": "황색 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "4.45등급",
+        "distance": "약 170광년",
+        "temperature": "약 4,800K",
+        "size": "태양의 약 9.2배",
+        "description": "화로자리의 별자리 선을 이루는 황색 거성이에요. 지구에서 약 170광년 떨어져 있어요."
+      },
+      {
+        "id": "nu-for",
+        "nameKo": "화로자리 뉴별",
+        "bayer": "ν Fornacis",
+        "x": 88.0,
+        "y": 43.9,
+        "magnitude": 4.68,
+        "badge": "청백색 별",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.68등급",
+        "distance": "약 370광년",
+        "temperature": "약 12,600K",
+        "size": "태양의 약 2.6배",
+        "description": "화로자리의 별자리 선을 이루는 청백색 별이에요. 지구에서 약 370광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "nu-for",
+        "beta-for"
+      ],
+      [
+        "beta-for",
+        "dalim"
+      ]
+    ]
+  },
+  {
+    "id": "sagitta",
+    "isZodiac": false,
+    "nameKo": "화살자리",
+    "nameEn": "Sagitta",
+    "nameLatin": "Sagitta",
+    "abbr": "Sge",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "여름",
+    "observation": {
+      "bestMonth": "9월",
+      "season": "8월~10월",
+      "time": "저녁 9시 무렵",
+      "position": "남쪽 하늘 (고도 약 71°)",
+      "tip": "여름철 독수리자리 알타이르와 백조자리 알비레오 사이에서 작은 화살 모양을 찾아보세요. 작지만 모양이 뚜렷해서 쌍안경으로 찾기 쉬워요."
+    },
+    "origin": "화살자리는 고대 그리스 시대부터 알려진 작은 별자리예요. 헤라클레스가 프로메테우스의 간을 쪼던 독수리를 쏜 화살이라는 이야기 등 여러 이야기가 전해져요. 2세기 프톨레마이오스가 정리한 48개 별자리에 들어 있어요. 독수리자리 바로 위에 있고, 88개 별자리 가운데 세 번째로 작아요.",
+    "stars": [
+      {
+        "id": "gamma-sge",
+        "nameKo": "화살자리 감마별",
+        "bayer": "γ Sagittae",
+        "x": 12.0,
+        "y": 32.5,
+        "magnitude": 3.51,
+        "badge": "주황색 거성",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.51등급",
+        "distance": "약 260광년",
+        "temperature": "약 3,700K",
+        "size": "태양의 약 36배",
+        "description": "화살자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 260광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-sge",
+        "nameKo": "화살자리 델타별",
+        "bayer": "δ Sagittae",
+        "x": 58.2,
+        "y": 49.4,
+        "magnitude": 3.68,
+        "badge": "적색 밝은 거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.68등급",
+        "distance": "약 590광년",
+        "temperature": "약 4,100K",
+        "size": "태양의 약 62배",
+        "description": "화살자리의 별자리 선을 이루는 적색 밝은 거성이에요. 지구에서 약 590광년 떨어져 있어요."
+      },
+      {
+        "id": "sham",
+        "nameKo": "샴",
+        "bayer": "Sham · α Sagittae",
+        "x": 88.0,
+        "y": 58.2,
+        "magnitude": 4.39,
+        "badge": "황색 밝은 거성",
+        "tagline": "'화살'이라는 이름의 별",
+        "brightness": "4.39등급",
+        "distance": "약 430광년",
+        "temperature": "약 5,400K",
+        "size": "태양의 약 18배",
+        "description": "이름은 아랍어로 '화살'을 뜻해요. 화살자리에서 가장 밝은 별이에요."
+      },
+      {
+        "id": "beta-sge",
+        "nameKo": "화살자리 베타별",
+        "bayer": "β Sagittae",
+        "x": 84.2,
+        "y": 67.5,
+        "magnitude": 4.39,
+        "badge": "황색 밝은 거성",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.39등급",
+        "distance": "약 440광년",
+        "temperature": "약 4,600K",
+        "size": "태양의 약 26배",
+        "description": "화살자리의 별자리 선을 이루는 황색 밝은 거성이에요. 지구에서 약 440광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "sham",
+        "delta-sge"
+      ],
+      [
+        "beta-sge",
+        "delta-sge"
+      ],
+      [
+        "delta-sge",
+        "gamma-sge"
+      ]
+    ]
+  },
+  {
+    "id": "dorado",
+    "isZodiac": false,
+    "nameKo": "황새치자리",
+    "nameEn": "Dorado",
+    "nameLatin": "Dorado",
+    "abbr": "Dor",
+    "symbol": null,
+    "element": null,
+    "rulingPlanet": null,
+    "period": null,
+    "season": "겨울",
+    "observation": {
+      "bestMonth": "1월 (남반구 기준)",
+      "season": "12월~2월 (남반구)",
+      "time": "저녁 9시 무렵",
+      "position": "한국에서는 볼 수 없는 남쪽 하늘",
+      "tip": "한국에서는 볼 수 없어요. 남반구에서 하늘의 남극 가까이, 대마젤란은하를 길잡이로 찾아보세요.",
+      "region": "south"
+    },
+    "origin": "황새치자리는 16세기 말 플란시우스가 항해사 케이저르와 더 하우트만의 관측을 바탕으로 만든 별자리예요. 1603년 요한 바이어의 별자리 지도에 실렸어요. 이름은 '금빛'이라는 뜻에서 온 열대 바다의 물고기를 가리키는데, 황새치나 만새기로 알려져 있어요. 이 별자리 안에 우리 은하 곁의 이웃 은하인 대마젤란은하가 있고, 그 안에는 거대한 타란툴라성운이 있어요.",
+    "stars": [
+      {
+        "id": "alpha-dor",
+        "nameKo": "황새치자리 알파별",
+        "bayer": "α Doradus",
+        "x": 69.0,
+        "y": 29.3,
+        "magnitude": 3.3,
+        "badge": "백색 별",
+        "tagline": "이 별자리에서 가장 밝은 별",
+        "brightness": "3.3등급",
+        "distance": "약 170광년",
+        "temperature": "약 11,200K",
+        "size": "태양의 약 2.8배",
+        "description": "황새치자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 170광년 떨어져 있어요."
+      },
+      {
+        "id": "beta-dor",
+        "nameKo": "황새치자리 베타별",
+        "bayer": "β Doradus",
+        "x": 25.1,
+        "y": 69.2,
+        "magnitude": 3.76,
+        "badge": "황백색 초거성",
+        "tagline": "2번째로 밝은 별",
+        "brightness": "3.76등급",
+        "distance": "약 1,010광년",
+        "temperature": "약 5,800K",
+        "size": "태양의 약 50배",
+        "description": "황새치자리의 별자리 선을 이루는 황백색 초거성이에요. 지구에서 약 1,010광년 떨어져 있어요."
+      },
+      {
+        "id": "gamma-dor",
+        "nameKo": "황새치자리 감마별",
+        "bayer": "γ Doradus",
+        "x": 87.5,
+        "y": 12.0,
+        "magnitude": 4.26,
+        "badge": "황백색 거성",
+        "tagline": "3번째로 밝은 별",
+        "brightness": "4.26등급",
+        "distance": "약 67광년",
+        "temperature": "약 7,400K",
+        "size": "태양의 약 1.6배",
+        "description": "황새치자리의 별자리 선을 이루는 황백색 거성이에요. 지구에서 약 67광년 떨어져 있어요."
+      },
+      {
+        "id": "delta-dor",
+        "nameKo": "황새치자리 델타별",
+        "bayer": "δ Doradus",
+        "x": 20.2,
+        "y": 88.0,
+        "magnitude": 4.34,
+        "badge": "백색 별",
+        "tagline": "4번째로 밝은 별",
+        "brightness": "4.34등급",
+        "distance": "약 150광년",
+        "temperature": "약 8,000K",
+        "size": "태양의 약 3.0배",
+        "description": "황새치자리의 별자리 선을 이루는 백색 별이에요. 지구에서 약 150광년 떨어져 있어요."
+      },
+      {
+        "id": "hr2102",
+        "nameKo": "HR 2102",
+        "bayer": "HR 2102",
+        "x": 12.5,
+        "y": 74.2,
+        "magnitude": 4.65,
+        "badge": "주황색 거성",
+        "tagline": "5번째로 밝은 별",
+        "brightness": "4.65등급",
+        "distance": "약 86광년",
+        "temperature": "약 4,700K",
+        "size": "태양의 약 4.3배",
+        "description": "황새치자리의 별자리 선을 이루는 주황색 거성이에요. 지구에서 약 86광년 떨어져 있어요."
+      },
+      {
+        "id": "zeta-dor",
+        "nameKo": "황새치자리 제타별",
+        "bayer": "ζ Doradus",
+        "x": 43.7,
+        "y": 40.8,
+        "magnitude": 4.71,
+        "badge": "황백색 별",
+        "tagline": "6번째로 밝은 별",
+        "brightness": "4.71등급",
+        "distance": "약 38광년",
+        "temperature": "약 6,300K",
+        "size": "태양의 약 1.0배",
+        "description": "황새치자리의 별자리 선을 이루는 황백색 별이에요. 지구에서 약 38광년 떨어져 있어요."
+      }
+    ],
+    "lines": [
+      [
+        "gamma-dor",
+        "alpha-dor"
+      ],
+      [
+        "alpha-dor",
+        "zeta-dor"
+      ],
+      [
+        "alpha-dor",
+        "beta-dor"
+      ],
+      [
+        "zeta-dor",
+        "beta-dor"
+      ],
+      [
+        "beta-dor",
+        "delta-dor"
+      ],
+      [
+        "beta-dor",
+        "hr2102"
+      ],
+      [
+        "delta-dor",
+        "hr2102"
+      ]
+    ]
   }
 ]
