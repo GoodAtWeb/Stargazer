@@ -11,12 +11,12 @@
 }
 
 .fortune h2 {
-  font-size: 27.5px;
+  font-size: 24px;
 }
 
 .fortune h3 {
   margin-bottom: 14px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .fortune__top {
@@ -31,7 +31,7 @@
 .fortune__score {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 28px;
 }
 
 .score-ring {
@@ -83,7 +83,7 @@
 .fortune__summary {
   margin: 0;
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -109,7 +109,7 @@
 }
 
 .fortune__label {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .fortune__comment {
-  font-size: 16px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -161,7 +161,7 @@
   align-items: center;
   gap: 8px;
   margin: 0;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .fortune__lucky i {

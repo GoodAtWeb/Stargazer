@@ -76,17 +76,17 @@
 
 .home__menu-link--active {
   padding: 0;
-  background: #78a8e4;
+  background: #ffffff;
   color: #1b2140;
   font-weight: 700;
 }
 
 .home__menu-link--active:hover,
 .home__menu-link--active:focus-visible {
-  background: #96bdee;
+  background: #ffffff;
   color: #1b2140;
   text-shadow: none;
-  box-shadow: 0 0 16px rgba(120, 168, 228, 0.75);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 700px) {

@@ -69,22 +69,13 @@
 
 .star__label {
   font-family: 'Pretendard', system-ui, 'Malgun Gothic', sans-serif;
-  font-size: calc(13.5px * var(--u, 0.1));
-  font-weight: 300;
-  letter-spacing: 0.18em;
+  font-size: calc(15px * var(--u, 0.1));
+  font-weight: 600;
   text-anchor: middle;
-  fill: #fff4d6;
-  filter: drop-shadow(0 0 calc(5px * var(--u, 0.1)) rgba(245, 217, 140, 0.75));
+  fill: rgba(255, 207, 139, 0.95);
   opacity: 0;
   transition: opacity 0.2s;
   pointer-events: none;
-}
-
-@media (max-width: 700px) {
-  .star__label {
-    font-size: calc(10.5px * var(--u, 0.1));
-    letter-spacing: 0.14em;
-  }
 }
 
 .star:hover .star__label,

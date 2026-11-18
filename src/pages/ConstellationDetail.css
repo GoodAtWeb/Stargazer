@@ -93,16 +93,17 @@
 
 .detail__origin {
   max-width: 900px;
+  margin-top: -10px;
 }
 
 .detail__origin h2 {
   margin: 0 0 8px;
-  font-size: 21px;
+  font-size: 24px;
 }
 
 .detail__origin p {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.9;
   color: rgba(255, 255, 255, 0.92);
 }
@@ -162,6 +163,10 @@
 
   .detail__period {
     font-size: 18px;
+  }
+
+  .detail__origin {
+    margin-top: 0;
   }
 
   .detail__origin p {

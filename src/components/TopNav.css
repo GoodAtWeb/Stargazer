@@ -43,9 +43,13 @@
 }
 
 .top-nav__link--active {
-  background: #78a8e4;
+  background: #ffffff;
   color: #1b2140;
   font-weight: 700;
+}
+
+.top-nav__link--active:hover {
+  color: #1b2140;
 }
 
 .top-nav__lang {
