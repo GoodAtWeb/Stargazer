@@ -69,7 +69,8 @@ function ConstellationMap({ constellation, selectedId, onSelect }) {
       className="constellation-map"
       style={{
         aspectRatio: `${bounds.width} / ${bounds.height}`,
-        height: `min(${62 * mapScale}vh, ${640 * mapScale}px)`,
+        width: `min(100%, calc(min(${62 * mapScale}vh, ${640 * mapScale}px) * ${bounds.width / bounds.height}))`,
+        height: 'auto',
       }}
     >
       <svg
