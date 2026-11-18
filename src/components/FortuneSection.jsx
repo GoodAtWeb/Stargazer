@@ -19,8 +19,8 @@ const RING_LENGTH = 2 * Math.PI * RING_RADIUS
 // 점수(0~100)를 별 5개 중 채워진 개수로 환산해 채운 별과 빈 별 요소 목록을 반환
 const toStars = (score) => {
   const filled = Math.round(score / 20)
-  return Array.from({ length: 5 }, (_, i) => (
-    <span key={i} className={i < filled ? 'star-on' : 'star-off'}>
+  return Array.from({ length: 5 }, (_, i) => i + 1).map((order) => (
+    <span key={order} className={order <= filled ? 'star-on' : 'star-off'}>
       ★
     </span>
   ))

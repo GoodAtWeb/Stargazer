@@ -57,7 +57,7 @@
 
 .uploader__hint {
   margin: 0;
-  font-size: 13px;
+  font-size: 13.5px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -97,7 +97,7 @@
 
 .photo-tips > p {
   margin: 2px 0 0;
-  font-size: 13px;
+  font-size: 13.5px;
   color: rgba(255, 255, 255, 0.8);
 }
 

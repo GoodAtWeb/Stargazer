@@ -76,6 +76,7 @@ function ConstellationMap({ constellation, selectedId, onSelect }) {
         viewBox={`${bounds.x} ${bounds.y} ${bounds.width} ${bounds.height}`}
         role="group"
         aria-label={`${nameKo} 별자리 지도`}
+        style={{ '--u': mapHeight ? bounds.height / mapHeight : 0.1 }}
       >
         <ConstellationArt
           id={constellation.id}
@@ -137,13 +138,11 @@ function ConstellationMap({ constellation, selectedId, onSelect }) {
               <circle className="star__dot" cx={star.x} cy={star.y} r={r * 0.55} />
               <circle className="star__hit" cx={star.x} cy={star.y} r={Math.max(r * 2.4, 1.6)} />
               {isSelected && (
-                <>
-                  <circle className="star__ring" cx={star.x} cy={star.y} r={r * 3} />
-                  <text className="star__label" x={star.x} y={star.y - r * 4}>
-                    {star.nameKo}
-                  </text>
-                </>
+                <circle className="star__ring" cx={star.x} cy={star.y} r={r * 3} />
               )}
+              <text className="star__label" x={star.x} y={star.y - r * 4}>
+                {star.nameKo}
+              </text>
             </g>
           )
         })}

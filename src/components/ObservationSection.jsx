@@ -6,7 +6,7 @@ function ObservationSection({ observation }) {
 
   const items = [
     { label: '관측 적기', value: observation.season, sub: `가장 잘 보이는 달: ${observation.bestMonth}` },
-    { label: '관측 시간', value: observation.time, sub: '한국 기준' },
+    { label: '관측 시간', value: observation.time, sub: observation.region === 'south' ? '남반구 기준' : '한국 기준' },
     { label: '보이는 방향과 높이', value: observation.position, sub: '주먹 하나가 하늘에서 약 10°예요' },
   ]
 

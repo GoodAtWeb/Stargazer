@@ -8,12 +8,13 @@ import PhotoAnalysis from './pages/PhotoAnalysis'
 import StarForecast from './pages/StarForecast'
 
 // 스크롤 위치를 기억해 둘 페이지 (별 예보는 갔다 와도 보던 자리 그대로)
+// 별자리 상세는 상단 메뉴로 돌아왔을 때(state.restore)만 보던 자리로
 const KEEP_SCROLL = ['/forecast']
 const savedScroll = {}
 
 // 페이지가 바뀌면 맨 위부터, 단 KEEP_SCROLL 페이지는 마지막 위치로
 function ScrollManager() {
-  const { pathname } = useLocation()
+  const { pathname, state } = useLocation()
   const current = useRef(pathname)
   current.current = pathname // 렌더 시점에 갱신 → 새 페이지의 스크롤이 이전 페이지 기록을 덮지 않음
 
@@ -26,9 +27,11 @@ function ScrollManager() {
   }, [])
 
   useLayoutEffect(() => {
-    const y = KEEP_SCROLL.includes(pathname) ? savedScroll[pathname] || 0 : 0
-    window.scrollTo(0, y)
-  }, [pathname])
+    const keep =
+      KEEP_SCROLL.includes(pathname) ||
+      (pathname.startsWith('/constellations/') && state?.restore)
+    window.scrollTo(0, keep ? savedScroll[pathname] || 0 : 0)
+  }, [pathname, state])
 
   return null
 }

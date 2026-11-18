@@ -22,7 +22,7 @@
 
 .archive__title {
   margin: 0 0 24px;
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 700;
 }
 
@@ -91,7 +91,7 @@
   margin-top: 18px;
   padding: 12px 26px;
   border-radius: 999px;
-  background: #f5d98c;
+  background: #ffcf8b;
   color: #3d2e0a;
   font-weight: 700;
   text-decoration: none;
@@ -103,7 +103,7 @@
 .archive__empty-button:hover,
 .archive__empty-button:focus-visible {
   outline: none;
-  background: #fde7a6;
+  background: #ffdca3;
   box-shadow: 0 0 16px rgba(245, 217, 140, 0.75);
 }
 

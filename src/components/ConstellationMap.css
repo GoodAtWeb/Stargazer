@@ -68,11 +68,20 @@
 }
 
 .star__label {
-  font-size: 2.4px;
-  font-weight: 700;
+  font-family: 'Pretendard', system-ui, 'Malgun Gothic', sans-serif;
+  font-size: calc(15px * var(--u, 0.1));
+  font-weight: 600;
   text-anchor: middle;
-  fill: #f2c96b;
+  fill: rgba(255, 207, 139, 0.95);
+  opacity: 0;
+  transition: opacity 0.2s;
   pointer-events: none;
+}
+
+.star:hover .star__label,
+.star:focus-visible .star__label,
+.star[aria-pressed='true'] .star__label {
+  opacity: 1;
 }
 
 @keyframes star-twinkle {

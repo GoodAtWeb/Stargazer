@@ -175,7 +175,9 @@
   font: inherit;
   font-size: 15px;
   cursor: pointer;
-  transition: background 0.15s;
+  transition:
+    background 0.15s,
+    box-shadow 0.25s;
 }
 
 .result-panel__btn:hover {
@@ -192,6 +194,7 @@
 .result-panel__btn--primary:hover {
   border-color: #ffdca3;
   background: #ffdca3;
+  box-shadow: 0 0 16px rgba(245, 217, 140, 0.75);
 }
 
 .result-panel__btn--record {

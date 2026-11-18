@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import ConstellationMap from '../components/ConstellationMap'
 import FortuneSection from '../components/FortuneSection'
 import ObservationSection from '../components/ObservationSection'
 import TopNav from '../components/TopNav'
+import { useRevisitStore } from '../stores/revisitStore'
 import { getConstellationById } from '../utils/constellations'
 import './ConstellationDetail.css'
 
@@ -15,8 +16,15 @@ const formatMonthDay = (value) => {
 
 // 별자리 정보, 지도, 오늘의 운세를 한 페이지에 이어서 보여주고 선택된 별 상태를 관리
 function ConstellationView({ constellation }) {
-  const [selectedId, setSelectedId] = useState(null)
   const location = useLocation()
+  const remembered = useRevisitStore((s) => s.selectedStars[constellation.id])
+  const setSelectedStar = useRevisitStore((s) => s.setSelectedStar)
+  const [selectedId, setSelectedId] = useState(() =>
+    location.state?.restore ? (remembered ?? null) : null,
+  )
+  useEffect(() => {
+    setSelectedStar(constellation.id, selectedId)
+  }, [constellation.id, selectedId, setSelectedStar])
   const { isZodiac, nameKo, nameEn, symbol, element, rulingPlanet, season, period, origin } =
     constellation
 

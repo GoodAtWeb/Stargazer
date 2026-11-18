@@ -4,15 +4,12 @@ import './ConstellationFigure.css'
 function ConstellationFigure({ figure }) {
   return (
     <svg className="constellation-figure" viewBox="0 0 100 100" aria-hidden="true">
-      {figure.paths.map((path, i) => (
-        <polyline
-          key={i}
-          className="constellation-figure__line"
-          points={path.map(([x, y]) => `${x},${y}`).join(' ')}
-        />
-      ))}
-      {figure.points.map((p, i) => (
-        <g key={i}>
+      {figure.paths.map((path) => {
+        const points = path.map(([x, y]) => `${x},${y}`).join(' ')
+        return <polyline key={points} className="constellation-figure__line" points={points} />
+      })}
+      {figure.points.map((p) => (
+        <g key={`${p.x},${p.y}`}>
           <circle className="constellation-figure__glow" cx={p.x} cy={p.y} r={p.r * 2.6} />
           <circle className="constellation-figure__star" cx={p.x} cy={p.y} r={p.r} />
         </g>
