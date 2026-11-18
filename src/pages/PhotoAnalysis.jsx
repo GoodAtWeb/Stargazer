@@ -27,14 +27,30 @@ const INITIAL = {
   result: null,
 }
 
+// 다른 페이지(별자리 상세보기 등)에 갔다가 돌아와도 마지막 분석 화면을 그대로 보여주기 위한 값
+let lastPhoto = null
+
+// 저장해 둔 상태를 되살림
+const restoreState = () => {
+  if (!lastPhoto) return INITIAL
+  const saved = lastPhoto.state
+  if (saved.status === 'analyzing') return { ...saved, spots: null, foundCount: 0, progress: 0 }
+  return saved
+}
+
 // 사진 업로드 → 분석 중(스캔) → 결과 확인 순서로 진행되는 사진 분석 페이지
 function PhotoAnalysis() {
-  const [state, setState] = useState(INITIAL)
-  const [selectedId, setSelectedId] = useState(null)
+  const [state, setState] = useState(restoreState)
+  const [selectedId, setSelectedId] = useState(() => lastPhoto?.selectedId ?? null)
   const [loadError, setLoadError] = useState(null)
   const [isSaving, setIsSaving] = useState(false)
   const [isRecording, setIsRecording] = useState(false)
   const { status, file, photoUrl, aspect, spots, foundCount, progress, result } = state
+
+  // 사진을 올린 뒤의 상태는 계속 기억해 두고, 처음 화면(업로드)으로 돌아가면 지움
+  useEffect(() => {
+    lastPhoto = status === 'idle' ? null : { state, selectedId }
+  }, [state, selectedId, status])
 
   // 사진에서 별을 먼저 찾은 뒤 스캔을 시작하고, 빛줄기가 지나간 만큼 찾은 별 개수를 늘림
   useEffect(() => {
