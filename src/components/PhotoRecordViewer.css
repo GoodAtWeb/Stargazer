@@ -133,6 +133,30 @@
   color: #ffcf8b;
 }
 
+.record-viewer__choose {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.record-viewer__item--check {
+  cursor: pointer;
+}
+
+.record-viewer__item--on {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.record-viewer__item--check input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #ffcf8b;
+}
+
 .record-viewer__field {
   display: flex;
   flex-direction: column;
