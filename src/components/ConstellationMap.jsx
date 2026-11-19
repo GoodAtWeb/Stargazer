@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useLayoutEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import ConstellationArt from './ConstellationArt'
 import StarInfoCard from './StarInfoCard'
 import './ConstellationMap.css'
@@ -37,7 +38,8 @@ const clamp = (value, min, max) => Math.max(min, Math.min(value, max))
 
 // 별과 연결선을 SVG로 그리고, 선택한 별의 정보 카드를 함께 보여주는 지도
 function ConstellationMap({ constellation, selectedId, onSelect }) {
-  const { stars, lines, nameKo } = constellation
+  const { t } = useTranslation()
+  const { stars, lines, name } = constellation
   const bounds = getBounds(stars)
   const mapScale = MAP_SCALE[constellation.id] ?? 1
   const starById = Object.fromEntries(stars.map((s) => [s.id, s]))
@@ -76,7 +78,7 @@ function ConstellationMap({ constellation, selectedId, onSelect }) {
       <svg
         viewBox={`${bounds.x} ${bounds.y} ${bounds.width} ${bounds.height}`}
         role="group"
-        aria-label={`${nameKo} 별자리 지도`}
+        aria-label={t('detail.mapLabel', { name })}
         style={{ '--u': mapHeight ? bounds.height / mapHeight : 0.1 }}
       >
         <ConstellationArt
@@ -118,7 +120,7 @@ function ConstellationMap({ constellation, selectedId, onSelect }) {
               className="star"
               role="button"
               tabIndex={0}
-              aria-label={`${star.nameKo} 정보 보기`}
+              aria-label={t('star.viewInfo', { name: star.name })}
               aria-pressed={isSelected}
               onClick={() => onSelect(star.id)}
               onKeyDown={(e) => {
@@ -142,7 +144,7 @@ function ConstellationMap({ constellation, selectedId, onSelect }) {
                 <circle className="star__ring" cx={star.x} cy={star.y} r={r * 3} />
               )}
               <text className="star__label" x={star.x} y={star.y - r * 4}>
-                {star.nameKo}
+                {star.name}
               </text>
             </g>
           )

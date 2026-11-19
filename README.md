@@ -26,7 +26,8 @@ Stargazer/
 │  │  ├─ FortuneSection.jsx   # 오늘의 운세, 궁합, 12궁 운세 순위
 │  │  ├─ FloatingConstellation.jsx # 메인 화면에서 둥둥 떠다니는 별자리 (hover 확대, 클릭 이동)
 │  │  ├─ StarField.jsx        # 메인 화면 배경 반짝이는 별 (tsparticles)
-│  │  ├─ TopNav.jsx           # 상단 메뉴바 (홈, 별자리, 별 예보, 사진 분석, 나의 기록 이동)
+│  │  ├─ TopNav.jsx           # 상단 메뉴바 (홈, 별자리, 별 예보, 사진 분석, 나의 기록 이동, 언어 선택)
+│  │  ├─ LanguageSwitch.jsx   # 한국어/English 선택 드롭다운 (메뉴바, 메인 화면 오른쪽 위)
 │  │  ├─ ForecastForm.jsx     # 별 예보 입력 폼 (지역, 날짜, 시간)
 │  │  ├─ RecentRegions.jsx    # 최근 검색한 지역 바로가기 (localStorage)
 │  │  ├─ ScoreCard.jsx        # 관측 적합도 점수 원형 게이지
@@ -40,7 +41,14 @@ Stargazer/
 │  │  ├─ constellationList.json # 88개 별자리 목록 데이터 (모양, 계절, 대표 별)
 │  │  ├─ horoscopes.json      # 12별자리 운세 mock 데이터
 │  │  ├─ forecastData.json    # 별 예보 mock 데이터 (지역 위치와 빛공해, 달, 시간별 구름·습도)
-│  │  └─ skyData.json         # 밤하늘 mock 데이터 (별자리 중심 좌표, 배경 별)
+│  │  ├─ skyData.json         # 밤하늘 mock 데이터 (별자리 중심 좌표, 배경 별)
+│  │  ├─ constellations.en.json # 별자리 설명 영어 번역 (유래, 관측 팁, 별 설명, 별 한 줄 소개)
+│  │  └─ horoscopes.en.json   # 12별자리 운세 영어 번역
+│  ├─ i18n/
+│  │  ├─ index.js             # react-i18next 설정 (언어 저장, <html lang>), 컴포넌트 밖에서 쓰는 t(), getLang()
+│  │  └─ data.js              # 별자리·별 이름과 정보, 날짜·요일 표기, 지역 이름을 현재 언어로 바꿔 주는 도우미
+│  ├─ locales/
+│  │  ├─ ko.json, en.json     # 화면 문구 사전 (키 이름은 두 파일이 똑같아야 함)
 │  ├─ dev/
 │  │  ├─ detailPreview.jsx    # 별자리 목록·상세보기 등 화면 미리보기용 임시 진입점
 │  │  └─ homePreview.jsx      # 메인 화면 단독 미리보기용 임시 진입점
@@ -65,6 +73,8 @@ Stargazer/
 │  ├─ App.jsx                 # 라우터 설정 (페이지 주소 연결, 이동 시 스크롤 위치 관리)
 │  ├─ main.jsx                # 앱 진입점
 │  └─ index.css               # 전역 스타일 (body 여백 제거, 화면 꽉 채우기만 설정)
+├─ scripts/
+│  └─ check-i18n.mjs          # 번역 누락 검사 (npm run check:i18n)
 ├─ detail-dev.html            # 별자리 목록·상세보기 미리보기용 임시 HTML (src/dev와 함께 사용)
 ├─ home-dev.html              # 메인 화면 미리보기용 임시 HTML (src/dev와 함께 사용)
 ├─ index.html                 # HTML 진입 파일 (탭 제목: Stargazer)
@@ -165,3 +175,28 @@ Stargazer/
 - `skyData.json` 의 `constellations`: 별자리 중심의 적경(ra), 적위(dec)(도 단위)와 크기(span). 별 모양은 `constellations.json` 의 x, y 그림을 이 중심 주위에 펼쳐서 그림
 - 실제 별 좌표를 쓰려면 `constellations.json` 의 각 별에 `"ra"`, `"dec"`(도 단위)를 넣으면 그 좌표를 그대로 사용
 - `skyData.json` 의 `background`: 배경 별 목록 `{ "ra", "dec", "mag" }`. 실제 별 카탈로그로 바꿔도 코드 수정 없이 동작
+
+## 한국어 / English 전환
+
+[react-i18next](https://react.i18next.com/) 로 구현. 메뉴바 오른쪽(메인 화면은 오른쪽 위)의 `KO ▾ / EN ▾` 에서 언어를 고르면 새로고침 없이 화면 전체가 바뀜. 고른 언어는 저장되고, 처음 접속하면 브라우저 언어(한국어면 한국어, 그 외 영어)로 시작
+
+새 화면 문구를 추가하는 방법
+
+1. `src/locales/ko.json`, `src/locales/en.json` 에 같은 키로 문장을 한 줄씩 추가 (`{name}` 처럼 쓰면 값이 들어감)
+2. 컴포넌트에서 `const { t } = useTranslation()` (`react-i18next`) 로 `t('키')`, `t('키', { name })` 사용 (컴포넌트 밖 함수에서는 `import { t } from '../i18n'`)
+3. 별자리·별 이름은 문구 사전이 아니라 `src/i18n/data.js` 의 `getConstellationName(id)`, `getStarName(star)`, `getConstellationById(id)` 사용
+4. 날짜, 요일, 지역 이름도 `src/i18n/data.js` (`formatMonthDay`, `getWeekdayName`, `getRegionLabel` 등) 사용
+
+새 별자리, 별 설명을 추가하면 영어 번역도 `src/data/constellations.en.json` 에 같이 추가 (없으면 그 글만 한국어로 보임). 운세는 `horoscopes.en.json`
+
+번역 누락 검사
+
+```
+npm run check:i18n
+```
+
+- `ko.json` 과 `en.json` 의 키, `{자리표시자}` 가 맞는지
+- 코드에서 쓴 `t('키')` 가 사전에 있는지
+- 번역 없이 코드에 직접 적은 한글이 없는지 (의도한 한글은 줄 끝에 `// i18n-ignore`)
+
+사용자가 직접 쓴 사진 기록 제목, 메모는 번역하지 않고 쓴 그대로 보여줌

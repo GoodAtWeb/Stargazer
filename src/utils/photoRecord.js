@@ -1,5 +1,7 @@
 import exifr from 'exifr'
 import { loadImage } from './photoAnalysis'
+import { t } from '../i18n'
+import { formatFullDate } from '../i18n/data'
 
 const MAX_SIDE = 1600
 const JPEG_QUALITY = 0.85
@@ -13,11 +15,11 @@ export const toDateValue = (date) =>
 // 'YYYY-MM-DD' → 'YYYY년 M월 D일'
 export const formatDateLabel = (dateValue) => {
   const [y, m, d] = dateValue.split('-').map(Number)
-  return `${y}년 ${m}월 ${d}일`
+  return formatFullDate(y, m, d)
 }
 
 // 'YYYY-MM-DD' → 'yy-mm-dd 별자리 사진'
-export const getDefaultTitle = (dateValue) => `${dateValue.slice(2)} 별자리 사진`
+export const getDefaultTitle = (dateValue) => t('record.defaultTitle', { date: dateValue.slice(2) })
 
 // 사진 촬영일(EXIF)을 읽고, 없으면 null
 export const readTakenDate = async (file) => {

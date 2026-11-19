@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { getConstellationIcon } from '../utils/horoscopes'
+import { useTranslation } from 'react-i18next'
+import { getConstellationById } from '../i18n/data'
 import './PhotoResultPanel.css'
 
 // 유래 글에서 앞의 두 문장만 잘라 요약으로 사용
@@ -20,10 +22,11 @@ function PhotoResultPanel({
   isSaving,
   onRecord,
 }) {
+  const { t } = useTranslation()
   const actions = (
     <div className="result-panel__actions">
       <button type="button" className="result-panel__btn" onClick={onReset}>
-        다른 사진 분석
+        {t('result.another')}
       </button>
       <button
         type="button"
@@ -31,14 +34,14 @@ function PhotoResultPanel({
         onClick={onSave}
         disabled={isSaving}
       >
-        {isSaving ? '저장 중…' : '결과 저장'}
+        {isSaving ? t('result.saving') : t('result.save')}
       </button>
       <button
         type="button"
         className="result-panel__btn result-panel__btn--record"
         onClick={onRecord}
       >
-        나의 기록에 저장
+        {t('result.saveRecord')}
       </button>
     </div>
   )
@@ -48,11 +51,8 @@ function PhotoResultPanel({
     return (
       <aside className="result-panel">
         <section className="result-panel__card result-panel__empty">
-          <h2>별자리를 찾지 못했어요</h2>
-          <p>
-            사진에서 별 {starCount}개를 찾았지만, 별자리 모양과 맞는 별 묶음은 없었어요.
-            하늘을 더 넓게, 흔들리지 않게 찍으면 찾을 가능성이 높아져요.
-          </p>
+          <h2>{t('result.noneTitle')}</h2>
+          <p>{t('result.noneText', { n: starCount })}</p>
         </section>
         {actions}
       </aside>
@@ -64,23 +64,24 @@ function PhotoResultPanel({
 
 // 찾은 별자리 목록과 선택한 별자리 설명
 function ResultDetail({ detected, selectedId, onSelect, actions }) {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const selected = detected.find((item) => item.id === selectedId) ?? detected[0]
-  const { constellation } = selected
+  const constellation = getConstellationById(selected.constellation.id)
   const brightest = getBrightestStar(constellation.stars)
 
   return (
     <aside className="result-panel">
       <section className="result-panel__card">
         <div className="result-panel__head">
-          <h2>발견된 별자리</h2>
-          <span className="result-panel__count">{detected.length}개</span>
+          <h2>{t('result.found')}</h2>
+          <span className="result-panel__count">{t('result.count', { n: detected.length })}</span>
         </div>
         <ul className="result-list">
           {detected.map((item) => {
             const isActive = item.id === selected.id
             const icon = getConstellationIcon(item.id, isActive)
-            const c = item.constellation
+            const c = getConstellationById(item.constellation.id)
             return (
               <li key={item.id}>
                 <button
@@ -95,9 +96,9 @@ function ResultDetail({ detected, selectedId, onSelect, actions }) {
                     <span className="result-list__icon result-list__icon--text">{c.abbr}</span>
                   )}
                   <span className="result-list__name">
-                    <strong>{c.nameKo}</strong>
+                    <strong>{c.name}</strong>
                     <small>
-                      {c.nameEn} · 별 {c.stars.length}개 중 {item.matched}개 일치
+                      {t('result.matched', { name: c.subName || c.name, total: c.stars.length, matched: item.matched })}
                     </small>
                   </span>
                   <span className="result-list__confidence">{item.confidence}%</span>
@@ -109,20 +110,20 @@ function ResultDetail({ detected, selectedId, onSelect, actions }) {
       </section>
 
       <section className="result-panel__card result-panel__info" aria-live="polite">
-        <h2>{constellation.nameKo}</h2>
-        <p className="result-panel__en">{constellation.nameEn}</p>
+        <h2>{constellation.name}</h2>
+        <p className="result-panel__en">{constellation.subName}</p>
         <p className="result-panel__summary">{summarize(constellation.origin)}</p>
         <ul className="result-panel__facts">
           <li>
-            <span>대표 별</span>
-            {brightest.nameKo} ({brightest.brightness})
+            <span>{t('result.brightStar')}</span>
+            {brightest.name} ({brightest.brightness})
           </li>
           <li>
-            <span>관측 적기</span>
+            <span>{t('result.bestTime')}</span>
             {constellation.observation.bestMonth} ({constellation.observation.season})
           </li>
           <li>
-            <span>위치</span>
+            <span>{t('result.position')}</span>
             {constellation.observation.position}
           </li>
         </ul>
@@ -131,7 +132,7 @@ function ResultDetail({ detected, selectedId, onSelect, actions }) {
           className="result-panel__more"
           onClick={() => navigate(`/constellations/${constellation.id}`)}
         >
-          자세히 보기 →
+          {t('result.more')}
         </button>
       </section>
 

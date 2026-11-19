@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom'
 import { formatDateLabel } from '../utils/photoRecord'
 import RecordOverlay from './RecordOverlay'
 import './PhotoRecordCard.css'
+import { useTranslation } from 'react-i18next'
+import { getConstellationName } from '../i18n/data'
 
 const SLOW_OUT = [0.16, 1, 0.3, 1]
 const APPEAR_GAP = 0.08
 
 function PhotoRecordCard({ record, index, onOpen }) {
+  const { t } = useTranslation()
   const { title, date, photo, aspect, constellations } = record
 
   return (
@@ -32,7 +35,7 @@ function PhotoRecordCard({ record, index, onOpen }) {
       <button
         type="button"
         className="photo-record__thumb"
-        aria-label={`${title} 크게 보기`}
+        aria-label={t('record.viewAria', { title })}
         onClick={() => onOpen(record.id)}
       >
         <img src={photo} alt="" />
@@ -55,13 +58,13 @@ function PhotoRecordCard({ record, index, onOpen }) {
                   state={{ from: '/archive?tab=photos' }}
                   className="photo-record__tag"
                 >
-                  {c.nameKo}
+                  {getConstellationName(c.id)}
                 </Link>
               </li>
             ))}
           </ul>
         ) : (
-          <p className="photo-record__none">별자리 없이 저장한 사진</p>
+          <p className="photo-record__none">{t('record.noConstellation')}</p>
         )}
       </div>
     </motion.li>

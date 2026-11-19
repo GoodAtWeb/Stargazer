@@ -10,10 +10,13 @@ import {
   toDateValue,
   toRecordConstellation,
 } from '../utils/photoRecord'
+import { useTranslation } from 'react-i18next'
+import { getConstellationName } from '../i18n/data'
 import RecordOverlay from './RecordOverlay'
 import './SaveRecordDialog.css'
 
 function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const addPhotoRecord = useArchiveStore((s) => s.addPhotoRecord)
   const [dateValue, setDateValue] = useState(() => toDateValue(new Date()))
@@ -76,7 +79,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
     }
   }
 
-  const sourceLabel = { taken: '사진 촬영일', today: '오늘 날짜', custom: '직접 입력' }[dateSource]
+  const sourceLabel = { taken: t('save.srcTaken'), today: t('save.srcToday'), custom: t('save.srcCustom') }[dateSource]
 
   return (
     <motion.div
@@ -96,7 +99,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
         transition={{ duration: 0.3, ease: 'easeOut' }}
       >
         <h2 id="save-record-title" className="save-record__heading">
-          나의 기록에 저장
+          {t('save.heading')}
         </h2>
 
         <div
@@ -109,24 +112,24 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
 
         {status === 'saved' ? (
           <div className="save-record__done">
-            <p>나의 기록에 저장했어요</p>
+            <p>{t('save.saved')}</p>
             <div className="save-record__actions">
               <button type="button" className="save-record__btn" onClick={onClose}>
-                닫기
+                {t('save.close')}
               </button>
               <button
                 type="button"
                 className="save-record__btn save-record__btn--primary"
                 onClick={() => navigate('/archive?tab=photos')}
               >
-                보러 가기
+                {t('save.view')}
               </button>
             </div>
           </div>
         ) : (
           <>
             <label className="save-record__section">
-              <span className="save-record__label">제목</span>
+              <span className="save-record__label">{t('save.titleLabel')}</span>
               <input
                 type="text"
                 value={title}
@@ -140,7 +143,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
 
             <label className="save-record__section">
               <span className="save-record__label">
-                날짜 <span>{sourceLabel}</span>
+                {t('save.dateLabel')} <span>{sourceLabel}</span>
               </span>
               <input
                 type="date"
@@ -152,10 +155,10 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
 
             <fieldset className="save-record__section">
               <legend className="save-record__label">
-                함께 저장할 별자리 <span>{selected.length}개</span>
+                {t('save.choose')} <span>{t('record.countN', { n: selected.length })}</span>
               </legend>
               {detected.length === 0 ? (
-                <p className="save-record__note">찾은 별자리가 없어 사진만 저장돼요</p>
+                <p className="save-record__note">{t('save.none')}</p>
               ) : (
                 <ul className="save-record__list">
                   {detected.map((d) => {
@@ -173,7 +176,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
                               {d.constellation.abbr}
                             </span>
                           )}
-                          <span className="save-record__name">{d.constellation.nameKo}</span>
+                          <span className="save-record__name">{getConstellationName(d.constellation.id)}</span>
                           <input type="checkbox" checked={checked} onChange={() => toggle(d.id)} />
                         </label>
                       </li>
@@ -184,12 +187,12 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
             </fieldset>
 
             {status === 'error' && (
-              <p className="save-record__error">저장하지 못했어요. 다시 시도해 주세요.</p>
+              <p className="save-record__error">{t('save.error')}</p>
             )}
 
             <div className="save-record__actions">
               <button type="button" className="save-record__btn" onClick={onClose}>
-                취소
+                {t('save.cancel')}
               </button>
               <button
                 type="button"
@@ -197,7 +200,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
                 onClick={handleSave}
                 disabled={status === 'saving'}
               >
-                {status === 'saving' ? '저장 중…' : '저장'}
+                {status === 'saving' ? t('save.saving') : t('save.save')}
               </button>
             </div>
           </>

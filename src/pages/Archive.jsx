@@ -5,6 +5,7 @@ import FavoriteCard from '../components/FavoriteCard'
 import PhotoRecordCard from '../components/PhotoRecordCard'
 import PhotoRecordViewer from '../components/PhotoRecordViewer'
 import TopNav from '../components/TopNav'
+import { useTranslation } from 'react-i18next'
 import { constellationItems } from '../utils/constellationList'
 import { getConstellationById } from '../utils/constellations'
 import { useArchiveStore } from '../stores/archiveStore'
@@ -18,8 +19,8 @@ const fortunesById = Object.fromEntries(
 )
 
 const TABS = [
-  { key: 'favorites', label: '즐겨찾기' },
-  { key: 'photos', label: '사진 기록' },
+  { key: 'favorites', label: 'archive.tabFavorites' },
+  { key: 'photos', label: 'archive.tabPhotos' },
 ]
 
 function EmptyState({ title, text, to, button }) {
@@ -41,6 +42,7 @@ function EmptyState({ title, text, to, button }) {
 }
 
 function Archive() {
+  const { t } = useTranslation()
   const [params, setParams] = useSearchParams()
   const tab = params.get('tab') === 'photos' ? 'photos' : 'favorites'
   const [favorites, toggleFavorite] = useFavorites()
@@ -55,9 +57,9 @@ function Archive() {
     <div className="archive-page">
       <TopNav />
       <main className="archive">
-        <h1 className="archive__title">나의 기록</h1>
+        <h1 className="archive__title">{t('archive.title')}</h1>
 
-        <div className="archive__tabs" role="tablist" aria-label="기록 종류">
+        <div className="archive__tabs" role="tablist" aria-label={t('archive.kind')}>
           {TABS.map(({ key, label }) => (
             <button
               key={key}
@@ -67,7 +69,7 @@ function Archive() {
               className={`archive__tab${tab === key ? ' archive__tab--active' : ''}`}
               onClick={() => setParams(key === 'favorites' ? {} : { tab: key }, { replace: true })}
             >
-              {label} {hydrated && counts[key]}
+              {t(label)} {hydrated && counts[key]}
             </button>
           ))}
         </div>
@@ -91,10 +93,10 @@ function Archive() {
 
             {hydrated && items.length === 0 && (
               <EmptyState
-                title="아직 즐겨찾기한 별자리가 없어요"
-                text="별자리 목록에서 ✦를 눌러 마음에 드는 별자리를 모아 보세요"
+                title={t('archive.favEmptyTitle')}
+                text={t('archive.favEmptyText')}
                 to="/constellations"
-                button="별자리 보러 가기"
+                button={t('archive.favEmptyButton')}
               />
             )}
           </>
@@ -115,10 +117,10 @@ function Archive() {
 
             {hydrated && photoRecords.length === 0 && (
               <EmptyState
-                title="아직 저장한 사진이 없어요"
-                text="사진 분석 결과에서 '나의 기록에 저장'을 눌러 사진을 모아 보세요"
+                title={t('archive.photoEmptyTitle')}
+                text={t('archive.photoEmptyText')}
                 to="/photo"
-                button="사진 분석하러 가기"
+                button={t('archive.photoEmptyButton')}
               />
             )}
           </>

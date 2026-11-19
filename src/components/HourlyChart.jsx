@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { formatHour, formatHourShort } from '../utils/forecast'
+import { useTranslation } from 'react-i18next'
 import './HourlyChart.css'
 
 const WIDTH = 1200 // 선과 면을 그리는 좌표 폭 (화면 폭에 맞춰 늘어남)
@@ -23,7 +24,8 @@ const smoothPath = (points) =>
 
 // 18시부터 새벽 4시까지 시간대별 점수를 곡선으로 보여주고, 시간을 누르면 그 시간으로 바꿈
 function HourlyChart({ hourly, best, selectedHour, onSelect }) {
-  const bestLabel = best.hour % 24 === 0 ? `자정 ${formatHour(best.hour)}` : formatHour(best.hour)
+  const { t } = useTranslation()
+  const bestLabel = best.hour % 24 === 0 ? t('hourly.midnight', { time: formatHour(best.hour) }) : formatHour(best.hour)
   const count = hourly.length
 
   // 점수 차이가 잘 보이도록 가장 낮은 점수 근처부터 그래프 바닥으로 삼음
@@ -45,13 +47,13 @@ function HourlyChart({ hourly, best, selectedHour, onSelect }) {
 
   return (
     <section className="forecast-card hourly-chart">
-      <h2>시간대별 별 보기 점수</h2>
+      <h2>{t('hourly.title')}</h2>
       <p className="hourly-chart__sub">
-        가장 좋은 시간은{' '}
+        {t('hourly.bestPre')}{' '}
         <strong>
-          {bestLabel} ({best.score}점)
+          {bestLabel} ({t('score.pts', { score: best.score })})
         </strong>
-        이에요.
+        {t('hourly.bestPost')}
       </p>
 
       <div className="hourly-chart__plot">
@@ -90,7 +92,7 @@ function HourlyChart({ hourly, best, selectedHour, onSelect }) {
                   type="button"
                   className={`hourly-chart__item${isSelected ? ' hourly-chart__item--selected' : ''}`}
                   onClick={() => onSelect(hour)}
-                  aria-label={`${formatHour(hour)} ${score}점`}
+                  aria-label={t('hourly.pts', { time: formatHour(hour), score })}
                   aria-pressed={isSelected}
                 >
                   <motion.span

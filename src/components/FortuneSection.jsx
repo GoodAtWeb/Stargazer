@@ -4,13 +4,14 @@ import {
   getHoroscopeById,
   getRankedHoroscopes,
 } from '../utils/horoscopes'
+import { useTranslation } from 'react-i18next'
 import './FortuneSection.css'
 
 const CATEGORIES = [
-  { key: 'love', label: '애정운' },
-  { key: 'money', label: '금전운' },
-  { key: 'work', label: '학업·직장운' },
-  { key: 'health', label: '건강운' },
+  { key: 'love', label: 'fortune.love' },
+  { key: 'money', label: 'fortune.money' },
+  { key: 'work', label: 'fortune.work' },
+  { key: 'health', label: 'fortune.health' },
 ]
 
 const RING_RADIUS = 52
@@ -28,8 +29,9 @@ const toStars = (score) => {
 
 // 오늘의 총점을 원형 게이지로 보여줌
 function ScoreRing({ score }) {
+  const { t } = useTranslation()
   return (
-    <div className="score-ring" role="img" aria-label={`오늘의 운세 ${score}점`}>
+    <div className="score-ring" role="img" aria-label={t('fortune.scoreAria', { score })}>
       <svg viewBox="0 0 120 120">
         <circle className="score-ring__track" cx="60" cy="60" r={RING_RADIUS} />
         <circle
@@ -49,7 +51,8 @@ function ScoreRing({ score }) {
 }
 
 // 별자리 하나를 아이콘과 이름으로 보여주는 버튼
-function SignButton({ id, nameKo, rank, caption, comment, active, onSelect }) {
+function SignButton({ id, name, rank, caption, comment, active, onSelect }) {
+  const { t } = useTranslation()
   return (
     <button
       type="button"
@@ -59,11 +62,11 @@ function SignButton({ id, nameKo, rank, caption, comment, active, onSelect }) {
     >
       {rank && (
         <span className={`sign-button__rank sign-button__rank--${rank <= 3 ? rank : 'etc'}`}>
-          {rank}위
+          {t('fortune.rank', { rank })}
         </span>
       )}
       <img src={getConstellationIcon(id, active)} alt="" />
-      <span className="sign-button__name">{nameKo}</span>
+      <span className="sign-button__name">{name}</span>
       {caption && <span className="sign-button__caption">{caption}</span>}
       {comment && <span className="sign-button__comment">{comment}</span>}
     </button>
@@ -72,6 +75,7 @@ function SignButton({ id, nameKo, rank, caption, comment, active, onSelect }) {
 
 // 오늘의 운세, 행운 정보, 궁합, 12별자리 순위를 보여주는 섹션
 function FortuneSection({ constellationId }) {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const horoscope = getHoroscopeById(constellationId)
   const ranked = getRankedHoroscopes()
@@ -79,13 +83,13 @@ function FortuneSection({ constellationId }) {
   if (!horoscope) return null
 
   const goTo = (id) => navigate(`/constellations/${id}`)
-  const nameOf = (id) => ranked.find((h) => h.id === id)?.nameKo
+  const nameOf = (id) => ranked.find((h) => h.id === id)?.name
 
   return (
-    <section className="fortune" aria-label="오늘의 운세">
+    <section className="fortune" aria-label={t('fortune.aria')}>
       <div className="fortune__top">
         <div className="fortune__score">
-          <h2>오늘의 운세</h2>
+          <h2>{t('fortune.title')}</h2>
           <ScoreRing score={horoscope.score} />
           <p className="fortune__summary">{horoscope.summary}</p>
         </div>
@@ -93,8 +97,8 @@ function FortuneSection({ constellationId }) {
         <ul className="fortune__categories">
           {CATEGORIES.map(({ key, label }) => (
             <li key={key}>
-              <span className="fortune__label">{label}</span>
-              <span className="fortune__stars" aria-label={`${horoscope[key].score}점`}>
+              <span className="fortune__label">{t(label)}</span>
+              <span className="fortune__stars" aria-label={t('fortune.pts', { score: horoscope[key].score })}>
                 {toStars(horoscope[key].score)}
               </span>
               <span className="fortune__comment">{horoscope[key].comment}</span>
@@ -105,30 +109,30 @@ function FortuneSection({ constellationId }) {
         <div className="fortune__side">
           <dl className="fortune__lucky">
             <div>
-              <dt>행운의 색</dt>
+              <dt>{t('fortune.luckyColor')}</dt>
               <dd>
                 <i style={{ background: horoscope.luckyColor.hex }} />
                 {horoscope.luckyColor.name}
               </dd>
             </div>
             <div>
-              <dt>행운의 숫자</dt>
+              <dt>{t('fortune.luckyNumbers')}</dt>
               <dd>{horoscope.luckyNumbers.join(', ')}</dd>
             </div>
             <div>
-              <dt>행운의 시간대</dt>
+              <dt>{t('fortune.luckyTime')}</dt>
               <dd>{horoscope.luckyTime}</dd>
             </div>
           </dl>
 
           <div className="fortune__match">
-            <h3>오늘의 궁합</h3>
+            <h3>{t('fortune.match')}</h3>
             <div className="fortune__match-list">
               {horoscope.compatibility.map(({ id, percent, comment }) => (
                 <SignButton
                   key={id}
                   id={id}
-                  nameKo={nameOf(id)}
+                  name={nameOf(id)}
                   caption={`${percent}%`}
                   comment={comment}
                   onSelect={goTo}
@@ -140,15 +144,15 @@ function FortuneSection({ constellationId }) {
       </div>
 
       <div className="fortune__rank">
-        <h3>황도 12궁 운세 순위</h3>
+        <h3>{t('fortune.ranking')}</h3>
         <div className="fortune__rank-grid">
           {ranked.map((item, i) => (
             <SignButton
               key={item.id}
               id={item.id}
-              nameKo={item.nameKo}
+              name={item.name}
               rank={i + 1}
-              caption={`${item.score}점`}
+              caption={t('fortune.pts', { score: item.score })}
               active={item.id === constellationId}
               onSelect={goTo}
             />

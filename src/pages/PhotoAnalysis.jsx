@@ -14,6 +14,8 @@ import {
   downloadResultImage,
   loadImage,
 } from '../utils/photoAnalysis'
+import { useTranslation } from 'react-i18next'
+import { getConstellationById, getLocalizedStar } from '../i18n/data'
 import './PhotoAnalysis.css'
 
 const INITIAL = {
@@ -40,6 +42,7 @@ const restoreState = () => {
 
 // 사진 업로드 → 분석 중(스캔) → 결과 확인 순서로 진행되는 사진 분석 페이지
 function PhotoAnalysis() {
+  const { t } = useTranslation()
   const [state, setState] = useState(restoreState)
   const [selectedId, setSelectedId] = useState(() => lastPhoto?.selectedId ?? null)
   const [loadError, setLoadError] = useState(null)
@@ -88,7 +91,7 @@ function PhotoAnalysis() {
         if (run.cancelled) return
         URL.revokeObjectURL(photoUrl)
         setState(INITIAL)
-        setLoadError('사진을 읽을 수 없어요. JPG나 PNG 사진으로 다시 시도해 주세요.')
+        setLoadError('photo.loadError')
       })
 
     return () => {
@@ -122,13 +125,18 @@ function PhotoAnalysis() {
     }
   }
 
+  const brightest = result?.brightest && getLocalizedStar(result.brightest.constellationId, result.brightest.id)
+  const direction = result?.firstConstellationId
+    ? getConstellationById(result.firstConstellationId).observation.position.split(' (')[0]
+    : null
+
   return (
     <div className="photo-page">
       <TopNav />
       <main className="photo">
         <header className="photo__header">
-          <h1>사진 분석</h1>
-          <p>밤하늘 사진을 올리면 어떤 별자리가 찍혔는지 찾아드려요.</p>
+          <h1>{t('photo.title')}</h1>
+          <p>{t('photo.desc')}</p>
         </header>
 
         {status === 'idle' ? (
@@ -149,19 +157,19 @@ function PhotoAnalysis() {
               {result && (
                 <dl className="photo__stats">
                   <div>
-                    <dt>찾은 별</dt>
+                    <dt>{t('photo.statStars')}</dt>
                     <dd>
                       {result.starCount}
-                      <small>개</small>
+                      <small>{t('photo.statCount')}</small>
                     </dd>
                   </div>
                   <div>
-                    <dt>가장 밝은 별</dt>
+                    <dt>{t('photo.statBrightest')}</dt>
                     <dd>
                       {result.brightest ? (
                         <>
-                          {result.brightest.nameKo}
-                          <small>{result.brightest.brightness}</small>
+                          {brightest.name}
+                          <small>{brightest.brightness}</small>
                         </>
                       ) : (
                         '-'
@@ -169,8 +177,8 @@ function PhotoAnalysis() {
                     </dd>
                   </div>
                   <div>
-                    <dt>추정 방향</dt>
-                    <dd>{result.direction ?? '-'}</dd>
+                    <dt>{t('photo.statDirection')}</dt>
+                    <dd>{direction ?? '-'}</dd>
                   </div>
                 </dl>
               )}

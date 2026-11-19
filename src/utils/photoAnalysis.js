@@ -1,4 +1,5 @@
 import constellations from '../data/constellations.json'
+import { getConstellationName } from '../i18n/data'
 
 export const MAX_FILE_SIZE = 20 * 1024 * 1024
 export const ANALYSIS_DURATION = 5200
@@ -6,10 +7,10 @@ export const SCAN_DURATION = 2400 // 빛줄기가 사진을 한 번 훑는 시�
 
 // 분석 단계와 각 단계가 끝나는 진행률(%)
 export const ANALYSIS_STEPS = [
-  { label: '사진 불러오기', until: 15 },
-  { label: '별 찾기', until: 50 },
-  { label: '별 자리 모양 맞추기', until: 85 },
-  { label: '결과 정리하기', until: 100 },
+  { label: 'photo.step.load', until: 15 },
+  { label: 'photo.step.stars', until: 50 },
+  { label: 'photo.step.match', until: 85 },
+  { label: 'photo.step.result', until: 100 },
 ]
 
 // 이미지 주소를 불러와 HTMLImageElement로 반환
@@ -338,7 +339,11 @@ export const createAnalysisResult = (points, starCount, aspect) => {
     })
   }
 
-  const foundStars = detected.flatMap((item) => Object.values(item.placed).filter((s) => s.found))
+  const foundStars = detected.flatMap((item) =>
+    Object.values(item.placed)
+      .filter((s) => s.found)
+      .map((s) => ({ ...s, constellationId: item.constellation.id })),
+  )
   const brightest = foundStars.length
     ? foundStars.reduce((a, b) => (b.magnitude < a.magnitude ? b : a))
     : null
@@ -347,7 +352,7 @@ export const createAnalysisResult = (points, starCount, aspect) => {
     detected,
     starCount,
     brightest,
-    direction: detected[0]?.constellation.observation.position.split(' (')[0] ?? null,
+    firstConstellationId: detected[0]?.constellation.id ?? null,
   }
 }
 
@@ -390,7 +395,7 @@ export const downloadResultImage = async (photoUrl, result, fileName = 'stargaze
     ctx.fillStyle = color
     ctx.font = `700 ${Math.max(14, unit * 1.6)}px Pretendard, 'Malgun Gothic', sans-serif`
     ctx.textAlign = 'center'
-    ctx.fillText(item.constellation.nameKo, item.x * unit, top * unit - unit * 1.5)
+    ctx.fillText(getConstellationName(item.constellation.id), item.x * unit, top * unit - unit * 1.5)
   })
 
   const link = document.createElement('a')

@@ -9,12 +9,16 @@ import RecentRegions from '../components/RecentRegions'
 import ScoreCard from '../components/ScoreCard'
 import TopNav from '../components/TopNav'
 import VisibleConstellations from '../components/VisibleConstellations'
+import { useTranslation } from 'react-i18next'
+import { getRegionLabel, resolveRegion } from '../i18n/data'
 import { getForecast, getTodayString, hourToTime } from '../utils/forecast'
 import { addRecentRegion, getRecentRegions, removeRecentRegion } from '../utils/recentRegions'
 import './StarForecast.css'
 
+const DEFAULT_REGION = '서울특별시 성북구' // i18n-ignore 데이터에 저장된 기준 이름
+
 const makeDefaultQuery = () => ({
-  region: '서울특별시 성북구',
+  region: getRegionLabel(DEFAULT_REGION),
   date: getTodayString(),
   time: '22:00',
 })
@@ -28,17 +32,28 @@ const SPRING = { type: 'spring', stiffness: 90, damping: 20 }
 // 처음엔 검색창만 보이고, 검색하면 검색창이 위로 올라가며 결과가 나타나는
 // 지역, 날짜, 시간을 입력하면 그 순간의 관측 점수와 조건, 볼 수 있는 별자리를 보여주는 별 예보 페이지
 function StarForecast() {
+  const { t, i18n } = useTranslation()
+  const lang = i18n.language
   const [draft, setDraft] = useState(() => lastSearch?.draft ?? makeDefaultQuery())
   const [query, setQuery] = useState(() => lastSearch?.query ?? draft)
   const [recentRegions, setRecentRegions] = useState(getRecentRegions)
   const [searched, setSearched] = useState(() => lastSearch !== null) // 한 번이라도 검색했는지 (처음엔 검색창만 보여줌)
   const [activeId, setActiveId] = useState(null) // 밤하늘 지도와 목록이 같이 강조할 별자리
   const [focus, setFocus] = useState(null) // 지도에서 찾을 별자리 (누를 때마다 새로 요청)
+  // 언어를 바꾸면 입력된 지역 이름도 그 언어로 바꿔서 보여줌 (목록에 있는 지역만)
+  useEffect(() => {
+    const localize = (q) => {
+      const label = getRegionLabel(resolveRegion(q.region))
+      return label === q.region ? q : { ...q, region: label }
+    }
+    setDraft(localize)
+    setQuery(localize)
+  }, [lang])
   useEffect(() => {
     if (searched) lastSearch = { draft, query }
   }, [searched, draft, query])
 
-  const forecast = useMemo(() => getForecast(query), [query])
+  const forecast = useMemo(() => getForecast(query), [query, lang])
   const { moon, cloud, bortle, humidity } = forecast.conditions
 
   const handleChange = (field, value) => setDraft((prev) => ({ ...prev, [field]: value }))
@@ -76,8 +91,8 @@ function StarForecast() {
       <main className={searched ? 'forecast' : 'forecast forecast--intro'}>
         <motion.div layout="position" transition={SPRING} className="forecast__top">
           <header className="forecast__header">
-            <h1>별 예보</h1>
-            <p>언제, 어디서 별이 잘 보이는지 알려드려요</p>
+            <h1>{t('forecast.title')}</h1>
+            <p>{t('forecast.desc')}</p>
           </header>
 
           <div className="forecast__search">
@@ -102,33 +117,33 @@ function StarForecast() {
                 <ScoreCard score={forecast.score} status={forecast.status} summary={forecast.summary} />
                 <div className="forecast__conditions">
                   <ConditionCard
-                    title="달"
+                    title={t('forecast.moon')}
                     value={`${moon.percent}%`}
-                    unit="밝기"
+                    unit={t('forecast.moonUnit')}
                     level={moon.level}
                     quality={moon.quality}
                     description={moon.description}
                   />
                   <ConditionCard
-                    title="구름"
+                    title={t('forecast.cloud')}
                     value={`${cloud.percent}%`}
-                    unit="구름양"
+                    unit={t('forecast.cloudUnit')}
                     level={cloud.level}
                     quality={cloud.quality}
                     description={cloud.description}
                   />
                   <ConditionCard
-                    title="빛공해"
+                    title={t('forecast.light')}
                     value={bortle.grade}
-                    unit="Bortle 등급"
+                    unit={t('forecast.lightUnit')}
                     level={bortle.level}
                     quality={bortle.quality}
                     description={bortle.description}
                   />
                   <ConditionCard
-                    title="습도 · 시정"
+                    title={t('forecast.humidity')}
                     value={`${humidity.percent}%`}
-                    unit="습도"
+                    unit={t('forecast.humidityUnit')}
                     level={humidity.level}
                     quality={humidity.quality}
                     description={humidity.description}

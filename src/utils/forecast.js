@@ -1,11 +1,13 @@
 import forecastData from '../data/forecastData.json'
 import { getDirectionName, getSky } from './sky'
+import { t } from '../i18n'
+import { getLang } from '../i18n'
+import { getWeekdayName, getMonthName, getRegionLabel, resolveRegion } from '../i18n/data'
 
 // 시간대별 그래프에 보여줄 시간 (24는 자정 00시, 28은 새벽 04시)
 export const HOURS = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
 export const regions = forecastData.regions
 
-const WEEKDAYS = ['일', '월', '화', '수', '목', '금', '토']
 const SYNODIC_MONTH = 29.530588 // 달의 한 주기(일)
 
 const pad = (n) => String(n).padStart(2, '0')
@@ -21,7 +23,7 @@ export const getTodayString = () => {
 export const formatHour = (hour) => `${pad(hour % 24)}:00`
 
 // 그래프에서 쓰는 '22시' 표기
-export const formatHourShort = (hour) => `${pad(hour % 24)}시`
+export const formatHourShort = (hour) => t('fc.hourShort', { hour: pad(hour % 24) })
 
 // '22:00' 입력값을 그래프 기준 시간(0~4시는 24~28)으로 변환
 export const timeToHour = (time) => {
@@ -60,14 +62,14 @@ const estimateMoon = (date) => {
   const raw = (julianDay - 2451550.26) % SYNODIC_MONTH
   const age = raw < 0 ? raw + SYNODIC_MONTH : raw
   const rise = (6 + (age * 50) / 60) % 24 // 신월에 오전 6시쯤 떠서 하루에 50분씩 늦어짐
-  let phase = '그믐달'
-  if (age < 1.8 || age >= 27.7) phase = '신월'
-  else if (age < 7.4) phase = '초승달'
-  else if (age < 9.2) phase = '상현달'
-  else if (age < 13.8) phase = '차오르는 달'
-  else if (age < 15.8) phase = '보름달'
-  else if (age < 20.4) phase = '기우는 달'
-  else if (age < 22.2) phase = '하현달'
+  let phase = '그믐달' // i18n-ignore
+  if (age < 1.8 || age >= 27.7) phase = '신월' // i18n-ignore
+  else if (age < 7.4) phase = '초승달' // i18n-ignore
+  else if (age < 9.2) phase = '상현달' // i18n-ignore
+  else if (age < 13.8) phase = '차오르는 달' // i18n-ignore
+  else if (age < 15.8) phase = '보름달' // i18n-ignore
+  else if (age < 20.4) phase = '기우는 달' // i18n-ignore
+  else if (age < 22.2) phase = '하현달' // i18n-ignore
   return {
     phase,
     illumination: Math.round(((1 - Math.cos((2 * Math.PI * age) / SYNODIC_MONTH)) / 2) * 100),
@@ -89,20 +91,21 @@ const getMoon = (date, hour) => {
   const up = isMoonUp(hour, rise, set)
   const upFlags = HOURS.map((h) => isMoonUp(h, rise, set))
 
-  let description = `${data.phase} · 밤새 달이 뜨지 않아 하늘이 어두워요`
+  const phase = t(`fc.phase.${data.phase}`)
+  let description = t('fc.moon.none', { phase })
   if (upFlags.every(Boolean)) {
-    description = `${data.phase} · 밤새 떠 있어 하늘이 밝아요`
+    description = t('fc.moon.all', { phase })
   } else if (upFlags.some(Boolean)) {
     description = upFlags[0]
-      ? `${data.phase} · ${data.set}에 져서 이후 밤하늘이 어두워요`
-      : `${data.phase} · ${data.rise}에 떠서 그 전까지 밤하늘이 어두워요`
+      ? t('fc.moon.sets', { phase, time: data.set })
+      : t('fc.moon.rises', { phase, time: data.rise })
   }
 
-  let level = { tone: 'good', label: '좋음' }
-  if (up && percent >= 60) level = { tone: 'bad', label: '나쁨' }
-  else if (up && percent >= 25) level = { tone: 'normal', label: '보통' }
+  let level = { tone: 'good', label: t('fc.level.good') }
+  if (up && percent >= 60) level = { tone: 'bad', label: t('fc.level.bad') }
+  else if (up && percent >= 25) level = { tone: 'normal', label: t('fc.level.normal') }
 
-  const waxing = ['초승달', '상현달', '차오르는 달'].includes(data.phase)
+  const waxing = ['초승달', '상현달', '차오르는 달'].includes(data.phase) // i18n-ignore
   return { percent, up, level, quality: 100 - percent, description, rise, set, waxing }
 }
 
@@ -120,18 +123,18 @@ const getCloudCard = (weather, hour) => {
   const percent = valueAt(weather.cloud, hour)
   const later = valueAt(weather.cloud, hour + 3)
 
-  let summary = '대체로 맑음'
-  if (percent >= 75) summary = '흐려서 별이 잘 안 보여요'
-  else if (percent >= 50) summary = '구름이 많아요'
-  else if (percent >= 20) summary = '구름이 조금 있어요'
+  let summary = t('fc.cloud.clear')
+  if (percent >= 75) summary = t('fc.cloud.overcast')
+  else if (percent >= 50) summary = t('fc.cloud.cloudy')
+  else if (percent >= 20) summary = t('fc.cloud.few')
 
   let trend = ''
-  if (later <= percent - 8) trend = ' · 이후 더 맑아져요'
-  else if (later >= percent + 8) trend = ' · 이후 구름이 늘어요'
+  if (later <= percent - 8) trend = t('fc.cloud.clearing')
+  else if (later >= percent + 8) trend = t('fc.cloud.thickening')
 
-  let level = { tone: 'good', label: '좋음' }
-  if (percent >= 60) level = { tone: 'bad', label: '나쁨' }
-  else if (percent >= 30) level = { tone: 'normal', label: '보통' }
+  let level = { tone: 'good', label: t('fc.level.good') }
+  if (percent >= 60) level = { tone: 'bad', label: t('fc.level.bad') }
+  else if (percent >= 30) level = { tone: 'normal', label: t('fc.level.normal') }
 
   return { percent, level, quality: 100 - percent, description: `${summary}${trend}` }
 }
@@ -141,18 +144,18 @@ const getHumidityCard = (weather, hour) => {
   const visibility = Math.round(clamp(35 - percent * 0.3, 3, 30))
   const fogHour = HOURS.find((h) => valueAt(weather.humidity, h) >= 80)
 
-  let note = '공기가 맑아 멀리까지 보여요'
-  if (fogHour !== undefined) note = `${fogHour % 24 <= 6 ? '새벽' : '밤'}에 안개가 낄 수 있어요`
+  let note = t('fc.hum.clear')
+  if (fogHour !== undefined) note = t(fogHour % 24 <= 6 ? 'fc.hum.fogDawn' : 'fc.hum.fogNight')
 
-  let level = { tone: 'good', label: '좋음' }
-  if (percent >= 80) level = { tone: 'bad', label: '나쁨' }
-  else if (percent >= 60) level = { tone: 'normal', label: '보통' }
+  let level = { tone: 'good', label: t('fc.level.good') }
+  if (percent >= 80) level = { tone: 'bad', label: t('fc.level.bad') }
+  else if (percent >= 60) level = { tone: 'normal', label: t('fc.level.normal') }
 
   return {
     percent,
     level,
     quality: clamp((100 - percent) * 1.5, 0, 100),
-    description: `${note} · 시정거리 ${visibility}km`,
+    description: t('fc.hum.desc', { note, km: visibility }),
   }
 }
 
@@ -161,15 +164,15 @@ const getBortle = (region) => forecastData.regions.find((r) => r.name === region
 
 const getBortleCard = (region) => {
   const grade = getBortle(region)
-  let description = '도심 하늘 · 밝은 별만 보여요'
-  if (grade <= 2) description = '거의 완전한 암흑 · 은하수가 선명해요'
-  else if (grade === 3) description = '시골 하늘 수준 · 도시(7~9)보다 훨씬 어두워요'
-  else if (grade === 4) description = '시골과 도시의 경계 · 은하수가 어렴풋이 보여요'
-  else if (grade <= 6) description = '교외 하늘 · 밝은 별 위주로 보여요'
+  let description = t('fc.bortle.city')
+  if (grade <= 2) description = t('fc.bortle.dark')
+  else if (grade === 3) description = t('fc.bortle.rural')
+  else if (grade === 4) description = t('fc.bortle.edge')
+  else if (grade <= 6) description = t('fc.bortle.suburb')
 
-  let level = { tone: 'good', label: '좋음' }
-  if (grade >= 6) level = { tone: 'bad', label: '나쁨' }
-  else if (grade >= 4) level = { tone: 'normal', label: '보통' }
+  let level = { tone: 'good', label: t('fc.level.good') }
+  if (grade >= 6) level = { tone: 'bad', label: t('fc.level.bad') }
+  else if (grade >= 4) level = { tone: 'normal', label: t('fc.level.normal') }
 
   return { grade, level, quality: ((10 - grade) / 9) * 100, description }
 }
@@ -184,18 +187,18 @@ const calcScore = ({ moon, cloud, bortle, humidity, darkness }) => {
 
 const getStatus = (score, darkness) => {
   if (darkness < 0.3) {
-    return { tone: 'bad', label: '낮 시간', message: '해가 떠 있는 시간이에요.\n18시부터 새벽 4시 사이를 골라 보세요.' }
+    return { tone: 'bad', label: t('fc.status.day'), message: t('fc.status.dayMsg') }
   }
   if (score >= 80) {
-    return { tone: 'good', label: '별 보기 좋음', message: '달빛과 구름이 거의 방해하지 않아요.\n별자리를 찾기 좋은 밤이에요.' }
+    return { tone: 'good', label: t('fc.status.good'), message: t('fc.status.goodMsg') }
   }
   if (score >= 60) {
-    return { tone: 'normal', label: '별 보기 보통', message: '별은 보이지만 달빛이나 구름이 조금 방해해요.\n밝은 별자리부터 찾아보세요.' }
+    return { tone: 'normal', label: t('fc.status.normal'), message: t('fc.status.normalMsg') }
   }
   if (score >= 40) {
-    return { tone: 'poor', label: '별 보기 아쉬움', message: '구름이나 밝은 달빛 때문에 별이 흐릿해요.\n밝은 별 몇 개만 보일 수 있어요.' }
+    return { tone: 'poor', label: t('fc.status.poor'), message: t('fc.status.poorMsg') }
   }
-  return { tone: 'bad', label: '별 보기 어려움', message: '지금은 별을 보기 어려워요.\n다른 시간대를 골라 보세요.' }
+  return { tone: 'bad', label: t('fc.status.bad'), message: t('fc.status.badMsg') }
 }
 
 // 하늘에서 어느 정도 높이 떠 있는 별자리를 높은 순서대로 목록으로 만듦 (밤하늘 지도와 같은 데이터)
@@ -203,9 +206,9 @@ const getVisibleConstellations = (sky) =>
   (sky.darkness < 0.6 ? [] : sky.constellations)
     .filter((c) => c.alt >= 12)
     .sort((a, b) => b.alt - a.alt)
-    .map(({ id, nameKo, shape, az, stars, lines }) => ({
+    .map(({ id, name, shape, az, stars, lines }) => ({
       id,
-      nameKo,
+      name,
       shape,
       direction: getDirectionName(az),
       stars,
@@ -219,7 +222,8 @@ const getRegionPlace = (region) =>
 const getLimitMagnitude = (bortleGrade) => 6.6 - 0.4 * (bortleGrade - 1)
 
 // 지역, 날짜, 시간을 받아 별 예보 결과 전체를 만들어 반환
-export const getForecast = ({ region, date, time }) => {
+export const getForecast = ({ region: inputRegion, date, time }) => {
+  const region = resolveRegion(inputRegion)
   const hour = timeToHour(time)
   const weather = getWeather(region, date)
   const moon = getMoon(date, hour)
@@ -251,14 +255,15 @@ export const getForecast = ({ region, date, time }) => {
 
   const [, month, day] = date.split('-').map(Number)
   const [year] = date.split('-').map(Number)
-  const weekday = WEEKDAYS[new Date(year, month - 1, day).getDay()]
-  const placeName = region.trim().split(/\s+/).pop()
+  const weekday = getWeekdayName(new Date(year, month - 1, day).getDay())
+  const placeName = getRegionLabel(region, true)
+  const dateText = t('fc.dateWeekday', { month: getLang() === 'en' ? getMonthName(month, true) : month, day, weekday })
 
   return {
     hour,
     score,
     status: getStatus(score, getDarkness(hour)),
-    summary: `${placeName} · ${month}월 ${day}일(${weekday}) ${formatHour(hour)}`,
+    summary: t('fc.summary', { place: placeName, date: dateText, time: formatHour(hour) }),
     conditions: { moon, cloud, bortle, humidity },
     hourly,
     best,

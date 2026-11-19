@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { formatMonthDay, getBrightStarName, getConstellationName, getConstellationSubName, translateSeason } from '../i18n/data'
 import ConstellationFigure from './ConstellationFigure'
 import './FavoriteCard.css'
 
@@ -8,19 +10,22 @@ const HIGH_SCORE = 80
 const SLOW_OUT = [0.16, 1, 0.3, 1]
 const APPEAR_GAP = 0.08
 
-// '10-23' → '10월 23일'
-const formatMonthDay = (value) => {
+// '10-23' → '10월 23일' / 'October 23'
+const formatPeriodDate = (value) => {
   const [month, day] = value.split('-').map(Number)
-  return `${month}월 ${day}일`
+  return formatMonthDay(month, day)
 }
 
 function FavoriteCard({ item, period, fortune, index, onRemove }) {
-  const { id, nameKo, nameEn, season, brightStar, figure } = item
+  const { t } = useTranslation()
+  const { id, season, brightStar, figure } = item
+  const name = getConstellationName(id)
+  const subName = getConstellationSubName(id)
   const subtitle = period
-    ? `${formatMonthDay(period.start)} ~ ${formatMonthDay(period.end)}`
-    : season === '연중'
-      ? '일 년 내내 볼 수 있어요'
-      : `${season} 별자리`
+    ? `${formatPeriodDate(period.start)} ~ ${formatPeriodDate(period.end)}`
+    : season === '연중' // i18n-ignore
+      ? t('card.yearRound')
+      : t('card.seasonConstellation', { season: translateSeason(season) })
 
   return (
     <motion.li
@@ -51,8 +56,8 @@ function FavoriteCard({ item, period, fortune, index, onRemove }) {
             <ConstellationFigure figure={figure} />
           </div>
           <div className="favorite-card__info">
-            <h2 className="favorite-card__name">{nameKo}</h2>
-            <p className="favorite-card__latin">{nameEn}</p>
+            <h2 className="favorite-card__name">{name}</h2>
+            {subName && <p className="favorite-card__latin">{subName}</p>}
             <p className="favorite-card__period">{subtitle}</p>
           </div>
         </div>
@@ -60,19 +65,19 @@ function FavoriteCard({ item, period, fortune, index, onRemove }) {
         <div className="favorite-card__bottom">
           {fortune ? (
             <>
-              <span>오늘의 운세</span>
+              <span>{t('card.fortune')}</span>
               <strong
                 className={`favorite-card__score${
                   fortune.score >= HIGH_SCORE ? ' favorite-card__score--high' : ''
                 }`}
               >
-                {fortune.score}점 · {fortune.rank}위
+                {t('card.fortuneScore', { score: fortune.score, rank: fortune.rank })}
               </strong>
             </>
           ) : (
             <>
-              <span>대표 별</span>
-              <strong className="favorite-card__score">{brightStar ?? '-'}</strong>
+              <span>{t('card.brightStar')}</span>
+              <strong className="favorite-card__score">{getBrightStarName(id, brightStar) ?? '-'}</strong>
             </>
           )}
         </div>
@@ -81,7 +86,7 @@ function FavoriteCard({ item, period, fortune, index, onRemove }) {
       <button
         type="button"
         className="favorite-card__fav"
-        aria-label={`${nameKo} 즐겨찾기 해제`}
+        aria-label={t('card.unfavorite', { name })}
         onClick={() => onRemove(id)}
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
