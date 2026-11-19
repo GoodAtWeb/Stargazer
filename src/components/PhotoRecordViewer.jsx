@@ -69,8 +69,8 @@ function PhotoRecordViewer({ record, onClose }) {
         transition={{ duration: 0.3, ease: 'easeOut' }}
       >
         <div
-          className="record-viewer__photo"
-          style={{ aspectRatio: aspect, width: `min(100%, calc(56vh * ${aspect}))` }}
+          className={`record-viewer__photo${editing ? ' record-viewer__photo--small' : ''}`}
+          style={{ aspectRatio: aspect, '--aspect': aspect }}
         >
           <img src={photo} alt="" />
           <RecordOverlay aspect={aspect} constellations={shown} />

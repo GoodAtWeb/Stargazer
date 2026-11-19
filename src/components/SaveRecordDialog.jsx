@@ -101,7 +101,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
 
         <div
           className="save-record__preview"
-          style={{ aspectRatio: aspect, width: `min(100%, calc(240px * ${aspect}))` }}
+          style={{ aspectRatio: aspect, '--aspect': aspect }}
         >
           <img src={photoUrl} alt="" />
           <RecordOverlay aspect={aspect} constellations={chosen} />
