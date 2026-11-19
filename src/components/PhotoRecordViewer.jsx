@@ -14,7 +14,12 @@ function PhotoRecordViewer({ record, onClose }) {
   const [mode, setMode] = useState('view')
   const [title, setTitle] = useState(record.title)
   const [dateValue, setDateValue] = useState(record.date)
+  const [selectedIds, setSelectedIds] = useState(() => record.constellations.map((c) => c.id))
   const { photo, aspect, constellations } = record
+  // 예전 기록에는 분석 전체 목록이 없어서 저장한 별자리 안에서만 선택
+  const options = record.detected ?? constellations
+  const editing = mode === 'edit'
+  const shown = editing ? options.filter((c) => selectedIds.includes(c.id)) : constellations
 
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()
@@ -25,13 +30,18 @@ function PhotoRecordViewer({ record, onClose }) {
   const startEdit = () => {
     setTitle(record.title)
     setDateValue(record.date)
+    setSelectedIds(record.constellations.map((c) => c.id))
     setMode('edit')
   }
+
+  const toggle = (id) =>
+    setSelectedIds((prev) => (prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]))
 
   const saveEdit = () => {
     updatePhotoRecord(record.id, {
       title: title.trim() || getDefaultTitle(dateValue),
       date: dateValue,
+      constellations: options.filter((c) => selectedIds.includes(c.id)),
     })
     setMode('view')
   }
@@ -59,14 +69,14 @@ function PhotoRecordViewer({ record, onClose }) {
         transition={{ duration: 0.3, ease: 'easeOut' }}
       >
         <div
-          className="record-viewer__photo"
-          style={{ aspectRatio: aspect, width: `min(100%, calc(56vh * ${aspect}))` }}
+          className={`record-viewer__photo${editing ? ' record-viewer__photo--small' : ''}`}
+          style={{ aspectRatio: aspect, '--aspect': aspect }}
         >
           <img src={photo} alt="" />
-          <RecordOverlay aspect={aspect} constellations={constellations} />
+          <RecordOverlay aspect={aspect} constellations={shown} />
         </div>
 
-        {mode === 'edit' ? (
+        {editing ? (
           <div className="record-viewer__section">
             <label className="record-viewer__field">
               <span>제목</span>
@@ -86,6 +96,40 @@ function PhotoRecordViewer({ record, onClose }) {
                 onChange={(e) => e.target.value && setDateValue(e.target.value)}
               />
             </label>
+            <fieldset className="record-viewer__choose">
+              <legend className="record-viewer__label">
+                기록할 별자리 <span>{selectedIds.length}개</span>
+              </legend>
+              {options.length === 0 ? (
+                <p className="record-viewer__note">이 사진에서 찾은 별자리가 없어요</p>
+              ) : (
+                <ul className="record-viewer__list">
+                  {options.map((c) => {
+                    const checked = selectedIds.includes(c.id)
+                    const icon = getConstellationIcon(c.id, checked)
+                    return (
+                      <li key={c.id}>
+                        <label
+                          className={`record-viewer__item record-viewer__item--check${
+                            checked ? ' record-viewer__item--on' : ''
+                          }`}
+                        >
+                          {icon ? (
+                            <img className="record-viewer__icon" src={icon} alt="" />
+                          ) : (
+                            <span className="record-viewer__icon record-viewer__icon--text">
+                              {getConstellationById(c.id)?.abbr}
+                            </span>
+                          )}
+                          <span className="record-viewer__name">{c.nameKo}</span>
+                          <input type="checkbox" checked={checked} onChange={() => toggle(c.id)} />
+                        </label>
+                      </li>
+                    )
+                  })}
+                </ul>
+              )}
+            </fieldset>
             <div className="record-viewer__actions">
               <button type="button" className="record-viewer__btn" onClick={() => setMode('view')}>
                 취소

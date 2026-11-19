@@ -6,7 +6,7 @@ function RecordOverlay({ aspect, constellations }) {
     <svg
       className="record-overlay"
       viewBox={`0 0 100 ${100 / aspect}`}
-      preserveAspectRatio="xMidYMid slice"
+      preserveAspectRatio="xMidYMid meet"
       aria-hidden="true"
     >
       {constellations.map((c) => (

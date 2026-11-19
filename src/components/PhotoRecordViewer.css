@@ -25,18 +25,25 @@
 }
 
 .record-viewer__photo {
+  --photo-h: 56vh;
   position: relative;
+  width: min(100%, calc(var(--photo-h) * var(--aspect)));
   margin: 0 auto;
+  transition: width 0.3s ease;
   overflow: hidden;
   border-radius: 8px;
   background: #0b0f26;
+}
+
+.record-viewer__photo--small {
+  --photo-h: 34vh;
 }
 
 .record-viewer__photo img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .record-viewer__section {
@@ -133,6 +140,30 @@
   color: #ffcf8b;
 }
 
+.record-viewer__choose {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.record-viewer__item--check {
+  cursor: pointer;
+}
+
+.record-viewer__item--on {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.record-viewer__item--check input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #ffcf8b;
+}
+
 .record-viewer__field {
   display: flex;
   flex-direction: column;
@@ -225,4 +256,52 @@
 
 .record-viewer__btn--danger:hover {
   background: #ffc6bc;
+}
+
+/* 휴대폰: 아래에서 올라오는 시트, 하단 버튼은 스크롤해도 보이게 */
+@media (max-width: 700px) {
+  .record-viewer {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .record-viewer__panel {
+    width: 100%;
+    max-height: 92vh;
+    padding: 20px 16px 0;
+    border-width: 1px 0 0;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .record-viewer__photo {
+    --photo-h: 38vh;
+  }
+
+  .record-viewer__photo--small {
+    --photo-h: 22vh;
+  }
+
+  .record-viewer__section,
+  .record-viewer__confirm {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  .record-viewer__title {
+    font-size: 18px;
+  }
+
+  .record-viewer__actions {
+    position: sticky;
+    bottom: 0;
+    margin-top: 12px;
+    padding: 12px 0 16px;
+    background: #1b2140;
+  }
+
+  .record-viewer__btn {
+    height: 44px;
+    padding: 0 14px;
+    font-size: 14.5px;
+  }
 }

@@ -26,12 +26,19 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+/* 사진과 별자리 선이 함께 커지도록 둘 다 확대 */
+.photo-record__thumb img,
+.photo-record__thumb .record-overlay {
   transition: transform 0.4s ease;
 }
 
 .photo-record__thumb:hover img,
-.photo-record__thumb:focus-visible img {
+.photo-record__thumb:focus-visible img,
+.photo-record__thumb:hover .record-overlay,
+.photo-record__thumb:focus-visible .record-overlay {
   transform: scale(1.04);
 }
 

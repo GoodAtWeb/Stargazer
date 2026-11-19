@@ -67,6 +67,8 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
         photo: await compressPhoto(photoUrl),
         aspect,
         constellations: chosen,
+        // 나중에 수정할 때 다시 고를 수 있도록 분석된 별자리 전체도 저장
+        detected: detected.map(toRecordConstellation),
       })
       setStatus('saved')
     } catch {
@@ -97,7 +99,10 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
           나의 기록에 저장
         </h2>
 
-        <div className="save-record__preview" style={{ aspectRatio: aspect }}>
+        <div
+          className="save-record__preview"
+          style={{ aspectRatio: aspect, '--aspect': aspect }}
+        >
           <img src={photoUrl} alt="" />
           <RecordOverlay aspect={aspect} constellations={chosen} />
         </div>
