@@ -1,19 +1,21 @@
 import { ANALYSIS_STEPS } from '../utils/photoAnalysis'
 import './AnalysisProgress.css'
+import { useTranslation } from 'react-i18next'
 
 // 진행률과 단계별 상태(완료/진행 중/대기)를 보여주는 분석 중 패널
 function AnalysisProgress({ progress, foundCount, onCancel }) {
+  const { t } = useTranslation()
   const percent = Math.round(progress)
   const currentIndex = ANALYSIS_STEPS.findIndex((step) => progress < step.until)
 
   return (
     <aside className="analysis">
       <div className="analysis__card">
-        <h2>별자리를 찾고 있어요</h2>
-        <p className="analysis__desc">사진 속 별의 위치를 하나씩 비교하는 중이에요.</p>
+        <h2>{t('photo.analyzing')}</h2>
+        <p className="analysis__desc">{t('photo.analyzingDesc')}</p>
 
         <div className="analysis__bar-head">
-          <span>진행률</span>
+          <span>{t('photo.progress')}</span>
           <strong>{percent}%</strong>
         </div>
         <div
@@ -22,14 +24,14 @@ function AnalysisProgress({ progress, foundCount, onCancel }) {
           aria-valuemin={0}
           aria-valuemax={100}
           aria-valuenow={percent}
-          aria-label="분석 진행률"
+          aria-label={t('photo.progressAria')}
         >
           <span style={{ width: `${percent}%` }} />
         </div>
 
         <p className="analysis__found" aria-live="polite">
           <span className="analysis__found-dot" aria-hidden="true" />
-          찾은 별 <strong>{foundCount}</strong>개
+          {t('photo.foundStars', { n: foundCount })}
         </p>
 
         <ol className="analysis__steps">
@@ -43,7 +45,7 @@ function AnalysisProgress({ progress, foundCount, onCancel }) {
             return (
               <li key={step.label} className={`analysis__step analysis__step--${state}`}>
                 <span className="analysis__dot" aria-hidden="true" />
-                {step.label}
+                {t(step.label)}
               </li>
             )
           })}
@@ -51,7 +53,7 @@ function AnalysisProgress({ progress, foundCount, onCancel }) {
       </div>
 
       <button type="button" className="analysis__cancel" onClick={onCancel}>
-        취소하기
+        {t('photo.cancel')}
       </button>
     </aside>
   )

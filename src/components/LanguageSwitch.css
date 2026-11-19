@@ -1,0 +1,80 @@
+.lang-switch {
+  position: relative;
+  flex: none;
+}
+
+.lang-switch__button {
+  padding: 5px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  background: none;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lang-switch__button:hover,
+.lang-switch__button[aria-expanded='true'] {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.lang-switch__menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 120px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 14px;
+  background: rgba(14, 19, 44, 0.94);
+  backdrop-filter: blur(8px);
+  z-index: 40;
+}
+
+.lang-switch__option {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 9px;
+  background: none;
+  color: rgba(255, 255, 255, 0.78);
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lang-switch__option:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.lang-switch__option--active {
+  color: #ffcf8b;
+  font-weight: 700;
+}
+
+/* 메인 화면에서는 오른쪽 위에 띄워 둠 */
+.lang-switch--home {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  z-index: 30;
+}
+
+@media (max-width: 700px) {
+  .lang-switch__button {
+    padding: 4px 9px;
+    font-size: 12px;
+  }
+
+  .lang-switch--home {
+    top: 12px;
+    right: 14px;
+  }
+}

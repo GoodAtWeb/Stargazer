@@ -1,5 +1,2 @@
-import constellations from '../data/constellations.json'
-
-// id로 별자리 한 개를 찾아 반환 (없으면 undefined)
-export const getConstellationById = (id) =>
-  constellations.find((c) => c.id === id)
+// id로 별자리 한 개를 찾아 현재 언어로 반환 (없으면 undefined)
+export { getConstellationById } from '../i18n/data'

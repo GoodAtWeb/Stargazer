@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import './StarInfoCard.css'
 
 const STATS = [
-  { key: 'brightness', label: '밝기' },
-  { key: 'distance', label: '거리' },
-  { key: 'temperature', label: '표면 온도' },
-  { key: 'size', label: '크기' },
+  { key: 'brightness', label: 'star.brightness' },
+  { key: 'distance', label: 'star.distance' },
+  { key: 'temperature', label: 'star.temperature' },
+  { key: 'size', label: 'star.size' },
 ]
 
 // 선택한 별의 이름, 수치, 설명을 보여주는 카드
 function StarInfoCard({ star, top, onMeasure, onClose }) {
+  const { t } = useTranslation()
   return (
     <motion.aside
       className="star-card"
@@ -19,16 +21,16 @@ function StarInfoCard({ star, top, onMeasure, onClose }) {
       animate={{ opacity: 1, x: 0, y: '-50%' }}
       exit={{ opacity: 0, x: -12, y: '-50%' }}
       transition={{ duration: 0.25 }}
-      aria-label={`${star.nameKo} 정보`}
+      aria-label={t('star.info', { name: star.name })}
     >
-      <button type="button" className="star-card__close" onClick={onClose} aria-label="닫기">
+      <button type="button" className="star-card__close" onClick={onClose} aria-label={t('star.close')}>
         ×
       </button>
 
       <div className="star-card__head">
         <div>
-          <h2>{star.nameKo}</h2>
-          <p className="star-card__bayer">{star.bayer}</p>
+          <h2>{star.name}</h2>
+          {star.designation && <p className="star-card__bayer">{star.designation}</p>}
         </div>
         {(star.badge || star.tagline) && (
           <p className="star-card__badge">
@@ -41,8 +43,8 @@ function StarInfoCard({ star, top, onMeasure, onClose }) {
       <dl className="star-card__stats">
         {STATS.map(({ key, label }) => (
           <div key={key}>
-            <dt>{label}</dt>
-            <dd>{star[key] ?? '정보 없음'}</dd>
+            <dt>{t(label)}</dt>
+            <dd>{star[key] ?? t('star.noInfo')}</dd>
           </div>
         ))}
       </dl>

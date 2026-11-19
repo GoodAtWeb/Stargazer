@@ -2,11 +2,11 @@ import detailed from '../data/constellations.json'
 import list from '../data/constellationList.json'
 
 export const PAGE_SIZE = 10
-export const SEASONS = ['봄', '여름', '가을', '겨울', '연중']
+export const SEASONS = ['봄', '여름', '가을', '겨울', '연중'] // i18n-ignore
 export const TABS = [
-  { key: 'all', label: '전체' },
-  { key: 'zodiac', label: '황도 12궁' },
-  { key: 'other', label: '그 외' },
+  { key: 'all', label: 'list.tabAll' },
+  { key: 'zodiac', label: 'list.tabZodiac' },
+  { key: 'other', label: 'list.tabOther' },
 ]
 
 const detailedById = Object.fromEntries(detailed.map((c) => [c.id, c]))
@@ -56,7 +56,7 @@ const toItem = (entry) => {
     id: entry.id,
     nameKo: detail.nameKo,
     nameEn: detail.nameEn,
-    season: detail.season === '사계절' ? '연중' : detail.season,
+    season: detail.season === '사계절' ? '연중' : detail.season, // i18n-ignore
     brightStar: entry.brightStar,
     isZodiac: detail.isZodiac,
     figure: fitToBox(detail.stars, detail.lines),

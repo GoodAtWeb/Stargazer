@@ -1,8 +1,9 @@
 import skyData from '../data/skyData.json'
 import constellations from '../data/constellations.json'
+import { t } from '../i18n'
+import { getConstellationName } from '../i18n/data'
 
 const RAD = Math.PI / 180
-const DIRECTIONS = ['북쪽', '북동쪽', '동쪽', '남동쪽', '남쪽', '남서쪽', '서쪽', '북서쪽']
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
@@ -27,7 +28,11 @@ const toHorizontal = (ra, dec, lat, localSiderealTime) => {
 }
 
 // 방위를 '남동쪽' 같은 말로 바꿈
-export const getDirectionName = (az) => DIRECTIONS[Math.round(az / 45) % 8]
+// 방위를 '남동' 같은 짧은 말로 바꿈
+export const getDirectionShortName = (az) => t(`fc.dirShort.${Math.round(az / 45) % 8}`)
+
+// 방위를 '남동쪽' 같은 말로 바꿈
+export const getDirectionName = (az) => t(`fc.dir.${Math.round(az / 45) % 8}`)
 
 // 별 하나의 적경, 적위를 구함. 별에 ra/dec가 있으면(실제 좌표) 그대로 쓰고, 없으면 별자리 중심에서 그림 위치만큼 떨어뜨림
 const resolveStar = (star, center, box) => {
@@ -68,7 +73,7 @@ export const getSky = ({ lat, lon, date, hour, moon }) => {
         return { ...star, ...toHorizontal(ra, dec, lat, localSiderealTime) }
       })
       const middle = toHorizontal(center.ra, center.dec, lat, localSiderealTime)
-      return { id: c.id, nameKo: c.nameKo, shape: center.shape, lines: c.lines, stars, ...middle }
+      return { id: c.id, name: getConstellationName(c.id), shape: center.shape, lines: c.lines, stars, ...middle }
     })
     .filter((c) => c.alt > 3)
 

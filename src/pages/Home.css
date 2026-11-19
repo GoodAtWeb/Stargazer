@@ -81,6 +81,11 @@
   font-weight: 700;
 }
 
+/* 한국어 '홈'은 동그란 알약, 영어 'Home'은 글자 길이에 맞는 알약 */
+html[lang='en'] .home__menu-link--active {
+  padding: 0 0.9em;
+}
+
 .home__menu-link--active:hover,
 .home__menu-link--active:focus-visible {
   background: #ffffff;

@@ -1,0 +1,146 @@
+{
+ "aquarius": {
+  "summary": "Fresh ideas flow easily today. Follow your heart and take one step forward.",
+  "love": "A greeting you offer first becomes a good connection",
+  "money": "A small investment brings a pleasant result",
+  "work": "A fresh proposal earns high praise",
+  "health": "A light walk gives you energy",
+  "compat": [
+   "The conversation never runs dry",
+   "A relationship of mutual respect"
+  ],
+  "color": "Sky blue"
+ },
+ "leo": {
+  "summary": "Your confidence shines today. Share the joy with the people around you.",
+  "love": "Honest praise opens hearts",
+  "money": "Planned spending feels satisfying",
+  "work": "Your presence grows in the work you handle",
+  "health": "Drink plenty of water",
+  "compat": [
+   "Your passion connects",
+   "It's fun to be together"
+  ],
+  "color": "Gold"
+ },
+ "libra": {
+  "summary": "A well-balanced choice stands out today. It's fine not to decide in a hurry.",
+  "love": "Listen to the other person until the end",
+  "money": "Compare first, and you won't regret your pick",
+  "work": "Coordination with teammates goes smoothly",
+  "health": "Correct your posture often",
+  "compat": [
+   "An easy, light match",
+   "Your thoughts line up well"
+  ],
+  "color": "Pink"
+ },
+ "gemini": {
+  "summary": "A good opportunity arrives through conversation. Follow your curiosity.",
+  "love": "A light joke breaks the ice",
+  "money": "Take care of what you need first",
+  "work": "New information turns out helpful",
+  "health": "Rest your eyes often",
+  "compat": [
+   "Your ideas click",
+   "You talk comfortably together"
+  ],
+  "color": "Yellow"
+ },
+ "virgo": {
+  "summary": "Your thoroughness shines today. Sort things out step by step, starting small.",
+  "love": "A small act of care reaches their heart",
+  "money": "Take a moment to sort out your budget",
+  "work": "Careful checking prevents mistakes",
+  "health": "Keep your mealtimes regular",
+  "compat": [
+   "A calm, well-matched pair",
+   "A reliable partner"
+  ],
+  "color": "Lime green"
+ },
+ "taurus": {
+  "summary": "A day to take it slow and easy. Look after the things you love.",
+  "love": "Comfortable conversation brings you closer",
+  "money": "Spend only where it's truly needed",
+  "work": "Finishing one thing at a time lightens your mind",
+  "health": "Loosen up with some stretching",
+  "compat": [
+   "You look after each other",
+   "A relationship you can trust"
+  ],
+  "color": "Green"
+ },
+ "pisces": {
+  "summary": "Your sensitivity is heightened today. Take some time to care for your heart.",
+  "love": "Send someone a warm message",
+  "money": "Beware of impulse buying",
+  "work": "Take a short break when your focus drifts",
+  "health": "Plenty of sleep is the best remedy",
+  "compat": [
+   "You understand each other",
+   "They understand you deeply"
+  ],
+  "color": "Teal"
+ },
+ "cancer": {
+  "summary": "Time with people close to you gives you strength today. Rest somewhere comfortable.",
+  "love": "Expressing your feelings brings you closer",
+  "money": "Check for unnecessary subscriptions",
+  "work": "It's okay to ask for help",
+  "health": "Eat something warm",
+  "compat": [
+   "You share feelings well",
+   "You cherish each other"
+  ],
+  "color": "White"
+ },
+ "capricorn": {
+  "summary": "The work you've quietly kept up begins to show results. Don't rush, just keep going.",
+  "love": "Check in with someone, even when you're busy",
+  "money": "A good time to review your savings plan",
+  "work": "Consistency builds trust",
+  "health": "Loosen your shoulders and neck often",
+  "compat": [
+   "You move steadily forward together",
+   "Your plans match well"
+  ],
+  "color": "Navy"
+ },
+ "scorpio": {
+  "summary": "A day not to rush. Slow down a beat and watch how things flow.",
+  "love": "Honest talk deepens your relationship",
+  "money": "Put off big spending until tomorrow",
+  "work": "Steady effort gradually pays off",
+  "health": "Drink warm water often",
+  "compat": [
+   "You put each other at ease",
+   "You connect without words"
+  ],
+  "color": "Lavender"
+ },
+ "sagittarius": {
+  "summary": "It's easy to get ahead of yourself today. Double-check before you move.",
+  "love": "Think once more before you speak",
+  "money": "Be careful not to exceed your budget",
+  "work": "Double-check the details",
+  "health": "Change your mood with light exercise",
+  "compat": [
+   "Great for taking on challenges together",
+   "Your energies are alike"
+  ],
+  "color": "Orange"
+ },
+ "aries": {
+  "summary": "You're full of drive but may get impatient. Take a breath and start slowly.",
+  "love": "Soften your tone",
+  "money": "Put off big decisions until tomorrow",
+  "work": "Set your priorities before you start",
+  "health": "Avoid overdoing exercise",
+  "compat": [
+   "You give each other strength",
+   "Adventures suit you well"
+  ],
+  "color": "Red"
+ }
+}

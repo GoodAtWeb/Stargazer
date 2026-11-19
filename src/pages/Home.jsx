@@ -2,19 +2,21 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link, useNavigate } from 'react-router-dom'
 import FloatingConstellation from '../components/FloatingConstellation'
+import LanguageSwitch from '../components/LanguageSwitch'
 import StarField from '../components/StarField'
-import { getConstellationById } from '../utils/constellations'
+import { useTranslation } from 'react-i18next'
+import { getConstellationName } from '../i18n/data'
 import { getConstellationIcon } from '../utils/horoscopes'
 import './Home.css'
 
 const SLOW_OUT = [0.16, 1, 0.3, 1]
 
 const MENUS = [
-  { to: '/', label: '홈', active: true },
-  { to: '/constellations', label: '별자리' },
-  { to: '/forecast', label: '별 예보' },
-  { to: '/photo', label: '사진 분석' },
-  { to: '/archive', label: '나의 기록' },
+  { to: '/', label: 'nav.home', active: true },
+  { to: '/constellations', label: 'nav.constellations' },
+  { to: '/forecast', label: 'nav.forecast' },
+  { to: '/photo', label: 'nav.photo' },
+  { to: '/archive', label: 'nav.archive' },
 ]
 
 // x, y: 시안 기준 중심 좌표(%) / mobile: 세로 화면용 좌표(%), 로고 위아래로 엇갈리게
@@ -58,7 +60,6 @@ const getArt = (id) => {
 
 const CONSTELLATIONS = LAYOUT.map((item, index) => ({
   ...item,
-  name: getConstellationById(item.id)?.nameKo ?? item.id,
   icon: getConstellationIcon(item.id),
   activeIcon: getConstellationIcon(item.id, true),
   art: getArt(item.id),
@@ -258,6 +259,7 @@ const getHoverLayout = (hoveredId, rest, width, height, size, block) => {
 }
 
 function Home() {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const homeRef = useRef(null)
   const centerRef = useRef(null)
@@ -309,12 +311,13 @@ function Home() {
   return (
     <div className="home" ref={homeRef}>
       <StarField className="home__stars" />
+      <LanguageSwitch className="lang-switch--home" />
 
       {rest &&
         CONSTELLATIONS.map((c, index) => (
           <FloatingConstellation
             key={c.id}
-            name={c.name}
+            name={getConstellationName(c.id)}
             icon={c.icon}
             activeIcon={c.activeIcon}
             art={c.art}
@@ -351,7 +354,7 @@ function Home() {
 
         <motion.nav
           className="home__menu"
-          aria-label="주 메뉴"
+          aria-label={t('nav.label')}
           initial={{ opacity: 0, y: 10, filter: 'blur(8px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{
@@ -368,7 +371,7 @@ function Home() {
               className={`home__menu-link${active ? ' home__menu-link--active' : ''}`}
               aria-current={active ? 'page' : undefined}
             >
-              {label}
+              {t(label)}
             </Link>
           ))}
         </motion.nav>

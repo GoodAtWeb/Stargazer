@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import './VisibleConstellations.css'
 
 // 별 좌표의 범위에 맞춰 작은 별자리 아이콘을 그림
@@ -28,15 +29,16 @@ function ConstellationIcon({ stars, lines }) {
 
 // 선택한 시간에 볼 수 있는 별자리를 보여주고, 누르면 상세 페이지로 이동
 function VisibleConstellations({ items, activeId, onActive, onFind }) {
+  const { t } = useTranslation()
   return (
     <section className="forecast-card visible-list">
-      <h2>오늘 밤 볼 수 있는 별자리</h2>
+      <h2>{t('visible.title')}</h2>
       {items.length === 0 ? (
-        <p className="visible-list__empty">이 시간에는 볼 수 있는 별자리가 없어요. 밤 시간대를 골라 보세요.</p>
+        <p className="visible-list__empty">{t('visible.empty')}</p>
       ) : (
         <ul className="visible-list__items">
           <AnimatePresence mode="popLayout" initial={false}>
-            {items.map(({ id, nameKo, direction, stars, lines }) => (
+            {items.map(({ id, name, direction, stars, lines }) => (
               <motion.li
                 key={id}
                 layout
@@ -53,7 +55,7 @@ function VisibleConstellations({ items, activeId, onActive, onFind }) {
                   <Link to={`/constellations/${id}`} className="visible-list__link">
                     <ConstellationIcon stars={stars} lines={lines} />
                     <span>
-                      <strong>{nameKo}</strong>
+                      <strong>{name}</strong>
                       <small>{direction}</small>
                     </span>
                   </Link>
@@ -61,7 +63,7 @@ function VisibleConstellations({ items, activeId, onActive, onFind }) {
                     type="button"
                     className="visible-list__find"
                     onClick={() => onFind(id)}
-                    aria-label={`${nameKo} 하늘에서 찾기`}
+                    aria-label={t('visible.findAria', { name })}
                   >
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                       <circle cx="10.5" cy="10.5" r="6" />

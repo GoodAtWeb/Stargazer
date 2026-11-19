@@ -7,8 +7,11 @@ import { getConstellationIcon } from '../utils/horoscopes'
 import { formatDateLabel, getDefaultTitle } from '../utils/photoRecord'
 import RecordOverlay from './RecordOverlay'
 import './PhotoRecordViewer.css'
+import { useTranslation } from 'react-i18next'
+import { getConstellationName } from '../i18n/data'
 
 function PhotoRecordViewer({ record, onClose }) {
+  const { t } = useTranslation()
   const updatePhotoRecord = useArchiveStore((s) => s.updatePhotoRecord)
   const removePhotoRecord = useArchiveStore((s) => s.removePhotoRecord)
   const [mode, setMode] = useState('view')
@@ -79,7 +82,7 @@ function PhotoRecordViewer({ record, onClose }) {
         {editing ? (
           <div className="record-viewer__section">
             <label className="record-viewer__field">
-              <span>제목</span>
+              <span>{t('record.title')}</span>
               <input
                 type="text"
                 value={title}
@@ -88,7 +91,7 @@ function PhotoRecordViewer({ record, onClose }) {
               />
             </label>
             <label className="record-viewer__field">
-              <span>날짜</span>
+              <span>{t('record.date')}</span>
               <input
                 type="date"
                 value={dateValue}
@@ -98,10 +101,10 @@ function PhotoRecordViewer({ record, onClose }) {
             </label>
             <fieldset className="record-viewer__choose">
               <legend className="record-viewer__label">
-                기록할 별자리 <span>{selectedIds.length}개</span>
+                {t('record.chooseLabel')} <span>{t('record.countN', { n: selectedIds.length })}</span>
               </legend>
               {options.length === 0 ? (
-                <p className="record-viewer__note">이 사진에서 찾은 별자리가 없어요</p>
+                <p className="record-viewer__note">{t('record.chooseNone')}</p>
               ) : (
                 <ul className="record-viewer__list">
                   {options.map((c) => {
@@ -121,7 +124,7 @@ function PhotoRecordViewer({ record, onClose }) {
                               {getConstellationById(c.id)?.abbr}
                             </span>
                           )}
-                          <span className="record-viewer__name">{c.nameKo}</span>
+                          <span className="record-viewer__name">{getConstellationName(c.id)}</span>
                           <input type="checkbox" checked={checked} onChange={() => toggle(c.id)} />
                         </label>
                       </li>
@@ -132,14 +135,14 @@ function PhotoRecordViewer({ record, onClose }) {
             </fieldset>
             <div className="record-viewer__actions">
               <button type="button" className="record-viewer__btn" onClick={() => setMode('view')}>
-                취소
+                {t('record.cancel')}
               </button>
               <button
                 type="button"
                 className="record-viewer__btn record-viewer__btn--primary"
                 onClick={saveEdit}
               >
-                저장
+                {t('record.saveBtn')}
               </button>
             </div>
           </div>
@@ -152,10 +155,10 @@ function PhotoRecordViewer({ record, onClose }) {
 
             <div className="record-viewer__section">
               <p className="record-viewer__label">
-                저장한 별자리 <span>{constellations.length}개</span>
+                {t('record.savedLabel')} <span>{t('record.countN', { n: constellations.length })}</span>
               </p>
               {constellations.length === 0 ? (
-                <p className="record-viewer__note">별자리 없이 저장한 사진이에요</p>
+                <p className="record-viewer__note">{t('record.savedNone')}</p>
               ) : (
                 <ul className="record-viewer__list">
                   {constellations.map((c) => {
@@ -174,8 +177,8 @@ function PhotoRecordViewer({ record, onClose }) {
                               {getConstellationById(c.id)?.abbr}
                             </span>
                           )}
-                          <span className="record-viewer__name">{c.nameKo}</span>
-                          <span className="record-viewer__more">자세히 보기 →</span>
+                          <span className="record-viewer__name">{getConstellationName(c.id)}</span>
+                          <span className="record-viewer__more">{t('result.more')}</span>
                         </Link>
                       </li>
                     )
@@ -186,17 +189,17 @@ function PhotoRecordViewer({ record, onClose }) {
 
             {mode === 'confirm' ? (
               <div className="record-viewer__confirm">
-                <p>이 기록을 삭제할까요? 되돌릴 수 없어요.</p>
+                <p>{t('record.confirmDelete')}</p>
                 <div className="record-viewer__actions">
                   <button type="button" className="record-viewer__btn" onClick={() => setMode('view')}>
-                    취소
+                    {t('record.cancel')}
                   </button>
                   <button
                     type="button"
                     className="record-viewer__btn record-viewer__btn--danger"
                     onClick={remove}
                   >
-                    삭제
+                    {t('record.delete')}
                   </button>
                 </div>
               </div>
@@ -207,17 +210,17 @@ function PhotoRecordViewer({ record, onClose }) {
                   className="record-viewer__btn record-viewer__btn--text"
                   onClick={() => setMode('confirm')}
                 >
-                  삭제
+                  {t('record.delete')}
                 </button>
                 <button type="button" className="record-viewer__btn" onClick={startEdit}>
-                  수정
+                  {t('record.edit')}
                 </button>
                 <button
                   type="button"
                   className="record-viewer__btn record-viewer__btn--primary"
                   onClick={onClose}
                 >
-                  닫기
+                  {t('record.close')}
                 </button>
               </div>
             )}

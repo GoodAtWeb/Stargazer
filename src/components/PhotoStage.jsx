@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { SCAN_DURATION } from '../utils/photoAnalysis'
 import './PhotoStage.css'
+import { useTranslation } from 'react-i18next'
+import { getConstellationName } from '../i18n/data'
 
 const SCAN_SECONDS = SCAN_DURATION / 1000
 const BRIGHT_SPOT = 0.6 // 상대 밝기가 이 이상이면 밝은 별로 강조
@@ -10,6 +12,7 @@ const getStarRadius = (magnitude) => 0.35 + (4 - magnitude) * 0.12
 
 // 올린 사진 위에 분석 중에는 스캔 효과를, 분석이 끝나면 찾은 별자리를 겹쳐 보여줌
 function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSelect }) {
+  const { t } = useTranslation()
   const viewHeight = 100 / aspect
   const isAnalyzing = status === 'analyzing'
   // 별을 다 찾은 뒤에 스캔을 시작해야 빛줄기와 별 표시 시점이 맞음
@@ -18,7 +21,7 @@ function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSel
   return (
     <div className="photo-stage">
       <div className="photo-stage__frame" style={{ '--aspect': aspect }}>
-        <img className="photo-stage__img" src={photoUrl} alt="올린 밤하늘 사진" />
+        <img className="photo-stage__img" src={photoUrl} alt={t('stage.alt')} />
 
         <svg
           className="photo-stage__overlay"
@@ -95,7 +98,7 @@ function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSel
               transition={{ delay: index * 0.4 + 0.5 }}
               onClick={() => onSelect(item.id)}
             >
-              {item.constellation.nameKo}
+              {getConstellationName(item.constellation.id)}
             </motion.button>
           )
         })}

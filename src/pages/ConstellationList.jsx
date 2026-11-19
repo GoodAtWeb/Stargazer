@@ -2,6 +2,8 @@ import { useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import ConstellationCard from '../components/ConstellationCard'
 import TopNav from '../components/TopNav'
+import { useTranslation } from 'react-i18next'
+import { translateSeason } from '../i18n/data'
 import { useFavorites } from '../utils/favorites'
 import {
   PAGE_SIZE,
@@ -36,6 +38,7 @@ function useListQuery() {
 
 // 별자리를 탭·계절로 거르고 5개씩 2줄, 페이지 단위로 보여 주는 목록 화면
 function ConstellationList() {
+  const { t } = useTranslation()
   const { tab, season, requestedPage, move } = useListQuery()
   const [favorites, toggleFavorite] = useFavorites()
 
@@ -49,12 +52,12 @@ function ConstellationList() {
       <TopNav />
       <main className="list">
         <header className="list__header">
-          <h1>별자리</h1>
-          <p>{constellationItems.length}개 별자리를 모두 둘러보고 눌러서 자세히 확인해 보세요</p>
+          <h1>{t('list.title')}</h1>
+          <p>{t('list.desc', { count: constellationItems.length })}</p>
         </header>
 
         <div className="list__filters">
-          <div className="list__tabs" role="group" aria-label="별자리 종류">
+          <div className="list__tabs" role="group" aria-label={t('list.kind')}>
             {TABS.map(({ key, label }) => (
               <button
                 key={key}
@@ -63,11 +66,11 @@ function ConstellationList() {
                 aria-pressed={tab === key}
                 onClick={() => move({ tab: key, page: 1 })}
               >
-                {label} {tabCounts[key]}
+                {t(label)} {tabCounts[key]}
               </button>
             ))}
           </div>
-          <div className="list__chips" role="group" aria-label="계절·지역">
+          <div className="list__chips" role="group" aria-label={t('list.seasons')}>
             {SEASONS.map((name) => (
               <button
                 key={name}
@@ -76,7 +79,7 @@ function ConstellationList() {
                 aria-pressed={season === name}
                 onClick={() => move({ season: season === name ? null : name, page: 1 })}
               >
-                {name}
+                {translateSeason(name)}
               </button>
             ))}
           </div>
@@ -94,15 +97,15 @@ function ConstellationList() {
             ))}
           </ul>
         ) : (
-          <p className="list__empty">조건에 맞는 별자리가 없어요.</p>
+          <p className="list__empty">{t('list.empty')}</p>
         )}
 
         {pageCount > 1 && (
-          <nav className="list__pages" aria-label="페이지">
+          <nav className="list__pages" aria-label={t('list.pages')}>
             <button
               type="button"
               className="list__page"
-              aria-label="이전 페이지"
+              aria-label={t('list.prev')}
               disabled={page === 1}
               onClick={() => move({ page: page - 1 })}
             >
@@ -122,7 +125,7 @@ function ConstellationList() {
             <button
               type="button"
               className="list__page"
-              aria-label="다음 페이지"
+              aria-label={t('list.next')}
               disabled={page === pageCount}
               onClick={() => move({ page: page + 1 })}
             >

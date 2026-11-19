@@ -2,7 +2,8 @@ import { memo, useEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useNavigate } from 'react-router-dom'
 import { AnimatePresence, animate, motion, useMotionValue, useMotionValueEvent, useTransform } from 'framer-motion'
-import { getDirectionName } from '../utils/sky'
+import { getDirectionShortName } from '../utils/sky'
+import { useTranslation } from 'react-i18next'
 import './NightSky.css'
 
 const WIDTH = 1200
@@ -12,10 +13,10 @@ const PPD = 5.5 // 1도당 픽셀
 const RAD = Math.PI / 180
 const COPIES = [-1, 0, 1] // 360도를 이어 붙여 좌우로 끝없이 돌릴 수 있게 세 번 그림
 const VIEWS = [
-  { label: '북', az: 0 },
-  { label: '동', az: 90 },
-  { label: '남', az: 180 },
-  { label: '서', az: 270 },
+  { label: 'sky.n', az: 0 },
+  { label: 'sky.e', az: 90 },
+  { label: 'sky.s', az: 180 },
+  { label: 'sky.w', az: 270 },
 ]
 
 const toX = (az) => az * PPD
@@ -49,6 +50,7 @@ const moonLitPath = (radius, fraction) => {
 
 // 한 바퀴(360도) 분량의 별, 별자리, 달을 그림
 const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive, onSelect }) {
+  const { t } = useTranslation()
   const { constellations, background, moon, limitMagnitude, moonInfo } = sky
 
   return (
@@ -93,7 +95,7 @@ const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive, onSelec
             onBlur={() => onActive(null)}
             role="link"
             tabIndex={copy === 0 ? 0 : -1}
-            aria-label={`${c.nameKo} 상세 보기`}
+            aria-label={t('sky.detailAria', { name: c.name })}
             onClick={() => onSelect(c.id)}
             onKeyDown={(e) => e.key === 'Enter' && onSelect(c.id)}
           >
@@ -111,7 +113,7 @@ const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive, onSelec
                 ) : null,
               )}
               <text x={(minX + Math.max(...xs)) / 2} y={labelY} textAnchor="middle">
-                {c.nameKo}
+                {c.name}
               </text>
             </g>
             {shown.map((s) => (
@@ -142,26 +144,22 @@ const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive, onSelec
 })
 
 // 지평선 위 방향 표시
-const COMPASS = [
-  { label: '북', az: 0 },
-  { label: '동', az: 90 },
-  { label: '남', az: 180 },
-  { label: '서', az: 270 },
-]
+const COMPASS = VIEWS
 
 // 지금 바라보는 방향과 각도 (예: 남동 · 135°)
 function HeadingText({ center }) {
   const text = useTransform(center, (c) => {
     const az = wrap360(c)
-    return `${getDirectionName(az).replace('쪽', '')} · ${Math.round(az)}°`
+    return `${getDirectionShortName(az)} · ${Math.round(az)}°`
   })
   return <motion.span className="night-sky__heading">{text}</motion.span>
 }
 
 // 북·동·남·서로 바로 돌려주는 버튼
 function ViewButtons({ activeView, onTurn }) {
+  const { t } = useTranslation()
   return (
-    <div className="night-sky__views" role="group" aria-label="바라보는 방향">
+    <div className="night-sky__views" role="group" aria-label={t('sky.viewAria')}>
       {VIEWS.map(({ label, az }) => (
         <button
           key={az}
@@ -170,7 +168,7 @@ function ViewButtons({ activeView, onTurn }) {
           onClick={() => onTurn(az)}
           aria-pressed={activeView === az}
         >
-          {label}
+          {t(label)}
         </button>
       ))}
     </div>
@@ -179,6 +177,7 @@ function ViewButtons({ activeView, onTurn }) {
 
 // 모든 별자리의 선과 이름을 한 번에 보여주는 스위치
 function LabelToggle({ checked, onChange }) {
+  const { t } = useTranslation()
   return (
     <button
       type="button"
@@ -188,7 +187,7 @@ function LabelToggle({ checked, onChange }) {
       onClick={() => onChange(!checked)}
     >
       <span className="night-sky__switch" />
-      별자리 모두 보기
+      {t('sky.showAll')}
     </button>
   )
 }
@@ -254,6 +253,7 @@ function useSkyDrag(controls, enabled) {
 
 // 하늘 그림 한 장 (일반 화면과 전체 화면에서 같이 씀)
 function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive, onSelect, onToggleExpand }) {
+  const { t } = useTranslation()
   const x = useTransform(controls.center, (c) => WIDTH / 2 - c * PPD)
   const { ref, handlers } = useSkyDrag(controls, expanded)
 
@@ -278,7 +278,7 @@ function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         preserveAspectRatio={expanded ? 'xMidYMid slice' : 'xMidYMax slice'}
         role="img"
-        aria-label="선택한 시간의 밤하늘"
+        aria-label={t('sky.nightAria')}
       >
         <defs>
           <linearGradient id="night-sky-bg" x1="0" y1="0" x2="0" y2="1">
@@ -321,7 +321,7 @@ function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive
                 y={HORIZON + 34}
                 textAnchor="middle"
               >
-                {label}
+                {t(label)}
               </text>
             )),
           )}
@@ -330,13 +330,15 @@ function SkyScene({ sky, skyKey, controls, expanded, showAll, activeId, onActive
 
       <div className="night-sky__clouds" style={{ opacity: (sky.cloud / 100) * 0.7 }} />
       <div className="night-sky__dusk" style={{ opacity: 1 - sky.darkness }} />
-      {isDaytime && <p className="night-sky__notice">해가 떠 있는 시간이에요. 18시 이후를 골라 보세요.</p>}
+      {isDaytime && <p className="night-sky__notice">{t('sky.daytime')}</p>}
     </div>
   )
 }
 
 // 선택한 지역, 날짜, 시간의 밤하늘을 보여주는 섹션. 더블클릭하면 전체 화면에서 마우스로 돌려볼 수 있음
 function NightSky({ sky, skyKey, activeId, onActive, focus }) {
+  const { t, i18n } = useTranslation()
+  const lang = i18n.language
   const navigate = useNavigate()
   const [expanded, setExpanded] = useState(false)
   const [showAll, setShowAll] = useState(false)
@@ -440,11 +442,11 @@ function NightSky({ sky, skyKey, activeId, onActive, focus }) {
     <section ref={section} className="forecast-card night-sky">
       <header className="night-sky__head">
         <div>
-          <h2>밤하늘 미리보기</h2>
-          <p>별자리에 마우스를 올려 보세요. 더블클릭하면 크게 보면서 직접 돌려볼 수 있어요</p>
+          <h2>{t('sky.title')}</h2>
+          <p>{t('sky.hint')}</p>
         </div>
         <div className="night-sky__controls">
-          <HeadingText center={center} />
+          <HeadingText key={lang} center={center} />
           <LabelToggle checked={showAll} onChange={setShowAll} />
           <ViewButtons activeView={activeView} onTurn={controls.turnTo} />
         </div>
@@ -467,15 +469,15 @@ function NightSky({ sky, skyKey, activeId, onActive, focus }) {
                 type="button"
                 className="night-sky-full__back"
                 onClick={() => setExpanded(false)}
-                aria-label="돌아가기"
+                aria-label={t('sky.back')}
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M15 5l-7 7 7 7" />
                 </svg>
               </button>
-              <p className="night-sky-full__hint">마우스로 끌어서 돌려 보세요 · 더블클릭하거나 Esc를 누르면 나가요</p>
+              <p className="night-sky-full__hint">{t('sky.fullHint')}</p>
               <div className="night-sky-full__bar">
-                <HeadingText center={center} />
+                <HeadingText key={lang} center={center} />
                 <ViewButtons activeView={activeView} onTurn={controls.turnTo} />
                 <LabelToggle checked={showAll} onChange={setShowAll} />
               </div>

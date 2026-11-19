@@ -1,0 +1,1427 @@
+{
+ "taglines": {
+  "비슷한 밝기의 두 별이 나란히": "Two similarly bright stars, side by side",
+  "봄의 시작을 알리던 별": "The star that announced spring",
+  "양자리에서 가장 밝은 별": "The brightest star in Aries",
+  "양의 배를 이루는 별": "A star in the ram's belly",
+  "인도 별자리 이름을 가진 별": "A star with an Indian constellation name",
+  "황소의 남쪽 뿔 끝": "The tip of the bull's southern horn",
+  "황소자리에서 가장 밝은 별": "The brightest star in Taurus",
+  "히아데스 성단의 작은 새": "The little bird of the Hyades",
+  "히아데스 성단의 첫째 별": "First star of the Hyades",
+  "황소의 북쪽 뿔 끝": "The tip of the bull's northern horn",
+  "3.95일마다 밝기가 변하는 별": "A star that changes brightness every 3.95 days",
+  "히아데스 성단의 둘째 별": "Second star of the Hyades",
+  "황소의 눈을 뜻하는 별": "The star meaning 'the bull's eye'",
+  "쌍둥이자리에서 가장 밝은 별": "The brightest star in Gemini",
+  "이름이 '가운데'를 뜻하는 별": "The star whose name means 'the middle'",
+  "10.2일 주기로 맥박치는 별": "A star that pulses every 10.2 days",
+  "쌍둥이의 발": "The twins' foot",
+  "쌍둥이자리에서 두 번째로 밝은 별": "The second brightest star in Gemini",
+  "쌍둥이의 뻗은 앞발": "The twins' outstretched paw",
+  "붉게 빛나는 쌍둥이의 발": "The twins' glowing red foot",
+  "쌍둥이의 앞발": "The twins' forepaw",
+  "쌍둥이 허리께에서 빛나는 별": "A star shining at the twins' waist",
+  "게의 몸통 한가운데": "The middle of the crab's body",
+  "북쪽 당나귀": "The northern donkey",
+  "발리 사람들이 부르던 게": "The crab as the people of Bali called it",
+  "게자리에서 가장 밝은 별": "The brightest star in Cancer",
+  "게의 집게발": "The crab's claw",
+  "사자자리에서 가장 밝은 별": "The brightest star in Leo",
+  "사자의 이마를 이루는 별": "A star forming the lion's forehead",
+  "사자의 갈기에 걸린 이중성": "A double star in the lion's mane",
+  "사자의 갈기 한 타래": "A lock of the lion's mane",
+  "사자 머리의 북쪽 별": "The northern star of the lion's head",
+  "사자 머리의 남쪽 별": "The southern star of the lion's head",
+  "사자의 허리": "The lion's waist",
+  "사자의 갈비뼈": "The lion's ribs",
+  "사자의 꼬리": "The lion's tail",
+  "처녀자리에서 가장 밝은 별": "The brightest star in Virgo",
+  "예언의 여신 이름을 가진 별": "A star named for a goddess of prophecy",
+  "처녀의 모퉁이": "The maiden's corner",
+  "태양과 비슷한 이웃 별": "A neighbor star similar to the Sun",
+  "붉게 빛나는 처녀의 별": "The maiden's glowing red star",
+  "포도 수확을 알리는 별": "The star that announced the grape harvest",
+  "처녀의 옷자락": "The maiden's hem",
+  "이름의 유래가 알려지지 않은 별": "A star whose name's origin is unknown",
+  "남쪽 집게발": "The southern claw",
+  "천칭자리에서 가장 밝은 별": "The brightest star in Libra",
+  "전갈의 집게발": "The scorpion's claw",
+  "2일 8시간마다 어두워지는 별": "A star that dims every 2 days 8 hours",
+  "원래는 전갈자리에 속했던 별": "A star that originally belonged to Scorpius",
+  "여럿이 함께 도는 별": "A star where several stars orbit together",
+  "전갈자리에서 가장 밝은 별": "The brightest star in Scorpius",
+  "전갈의 머리 쪽 집게발 별": "A claw star at the scorpion's head",
+  "전갈의 이마": "The scorpion's forehead",
+  "안타레스 바로 북쪽의 별": "The star just north of Antares",
+  "집게발 쪽의 별": "A star in the claws",
+  "안타레스 남쪽의 별": "The star south of Antares",
+  "꼬리 쪽에서 가까운 별": "A star near the tail",
+  "꼬리 곡선이 시작되는 별": "The star where the tail's curve begins",
+  "꼬리 곡선 맨 아래의 별": "The star at the bottom of the tail's curve",
+  "꼬리에서 밝게 빛나는 별": "A bright star in the tail",
+  "독침 아래의 별": "The star below the stinger",
+  "전갈의 독침": "The scorpion's stinger",
+  "돌아오는 타조들": "The returning ostriches",
+  "활의 윗부분": "The upper part of the bow",
+  "수메르 도시의 이름을 가진 별": "A star with a Sumerian city's name",
+  "궁수의 겨드랑이": "The archer's armpit",
+  "궁수자리에서 가장 밝은 별": "The brightest star in Sagittarius",
+  "화살촉": "The arrowhead",
+  "활의 가운데": "The middle of the bow",
+  "붉게 빛나는 궁수자리의 별": "A glowing red star in Sagittarius",
+  "염소의 도살자": "The goat's slaughterer",
+  "중국에서는 하늘의 밭": "The Heavenly Field in China",
+  "염소자리의 먼 주황빛 거성": "A distant orange giant in Capricornus",
+  "중국의 옛 나라 이름": "The name of an old Chinese state",
+  "염소자리에서 가장 밝은 별": "The brightest star in Capricornus",
+  "염소": "The goat",
+  "물병자리에서 가장 서쪽에 있는 별": "The westernmost star in Aquarius",
+  "행운 중의 행운": "The luck of lucks",
+  "왕의 행운": "The luck of the king",
+  "천막의 행운": "The luck of the tents",
+  "가까이 도는 쌍성": "A closely orbiting binary",
+  "엉덩이를 뜻하는 별": "The star meaning 'hip'",
+  "그리스어로 '물'": "'Water' in Greek",
+  "정강이를 뜻하는 별": "The star meaning 'shin'",
+  "두 물고기를 묶은 끈의 매듭": "The knot tying the two fish together",
+  "중국 별자리 '벽력'의 별": "A star of the Chinese asterism 'Pili'",
+  "가까운 이웃 별": "A nearby neighbor star",
+  "물고기 고리를 이루는 주황빛 별": "The orange star forming the fishes' ring",
+  "서쪽 물고기의 가장 밝은 별": "The brightest star of the western fish",
+  "서쪽 물고기 몸통의 주황 거성": "An orange giant in the western fish's body",
+  "북쪽 물고기의 입구": "The opening of the northern fish",
+  "북쪽 물고기의 가장 밝은 별": "The brightest star of the northern fish",
+  "북쪽 물고기 몸통을 이루는 별": "A star forming the northern fish's body",
+  "북쪽 물고기 머리 근처의 별": "A star near the northern fish's head",
+  "북쪽 물고기 입 쪽 끝 별": "A star at the mouth end of the northern fish",
+  "오리온의 어깨에서 붉게 빛나는 별": "The red-glowing star at Orion's shoulder",
+  "'여전사'라는 이름의 별": "The star named 'female warrior'",
+  "오리온의 머리를 이루는 별": "A star forming Orion's head",
+  "허리띠의 동쪽 끝 별": "The eastern end of the Belt",
+  "허리띠 한가운데의 별": "The star in the middle of the Belt",
+  "허리띠의 서쪽 끝 별": "The western end of the Belt",
+  "오리온의 오른쪽 무릎": "Orion's right knee",
+  "오리온자리에서 가장 밝은 별": "The brightest star in Orion",
+  "북극성을 가리키는 포인터 별": "The pointer star toward Polaris",
+  "국자의 아래 모서리 별": "A star at the bowl's lower corner",
+  "국자의 아랫부분을 이루는 별": "A star forming the bottom of the bowl",
+  "국자와 손잡이가 만나는 곳": "Where the bowl meets the handle",
+  "북두칠성에서 가장 밝은 별": "The brightest star in the Big Dipper",
+  "옆에 알코르가 함께 있는 별": "The star with Alcor beside it",
+  "국자 손잡이의 끝 별": "The star at the end of the handle",
+  "하늘의 북쪽을 가리키는 북극성": "Polaris, pointing to the north of the sky",
+  "북극성 곁에서 이어지는 꼬리": "The tail extending from Polaris",
+  "작은 국자의 모서리 별": "A star at a corner of the Little Dipper",
+  "작은곰자리에서 가장 밝은 별 중 하나": "One of the brightest stars in Ursa Minor",
+  "W자의 서쪽 끝 별": "The western end of the W",
+  "'가슴'이라는 이름의 별": "The star named 'the breast'",
+  "W자의 한가운데 별": "The star in the middle of the W",
+  "왕비의 무릎을 뜻하는 별": "The star meaning 'the queen's knee'",
+  "W자의 동쪽 끝 별": "The eastern end of the W",
+  "백조의 꼬리에서 빛나는 별": "A star shining at the swan's tail",
+  "백조의 가슴에 해당하는 별": "The star at the swan's chest",
+  "주황색과 청색이 나란한 별": "An orange and a blue star side by side",
+  "백조의 한쪽 날개를 이루는 별": "A star forming one of the swan's wings",
+  "백조의 다른 쪽 날개 끝 별": "The star at the tip of the swan's other wing",
+  "직녀성으로 불리는 여름의 별": "The summer star known as the Weaving Girl",
+  "붉은빛이 도는 거문고의 별": "A reddish star in Lyra",
+  "'거북'이라는 이름의 별": "The star named 'the tortoise'",
+  "두 별이 서로 가리며 깜빡이는 별": "A star that blinks as two stars eclipse each other",
+  "견우성으로 불리는 별": "The star known as the Cowherd",
+  "알타이르 곁의 붉은 별": "The red star beside Altair",
+  "알타이르 곁의 가까운 이웃": "A close neighbor beside Altair",
+  "독수리의 한쪽 날개 끝": "The tip of one of the eagle's wings",
+  "독수리의 날개를 이루는 별": "A star forming the eagle's wing",
+  "밤하늘에서 가장 밝은 별": "The brightest star in the night sky",
+  "'알리는 자'라는 이름의 별": "The star named 'the announcer'",
+  "'무게'를 뜻하는 이름의 별": "The star whose name means 'weight'",
+  "큰개의 꼬리 쪽 별": "A star at the big dog's tail",
+  "큰개자리에서 두 번째로 밝은 별": "The second brightest star in Canis Major",
+  "큰개의 앞발에 해당하는 별": "The star at the big dog's forepaw",
+  "가을 사각형의 한 모서리": "A corner of the Great Square of Autumn",
+  "가을 사각형의 북서쪽 모서리": "The northwest corner of the Great Square",
+  "안드로메다와 함께 쓰는 별": "A star shared with Andromeda",
+  "가을 사각형의 남동쪽 모서리": "The southeast corner of the Great Square",
+  "페가수스의 코를 이루는 별": "The star forming Pegasus's nose",
+  "페가수스의 앞다리 쪽 별": "A star near Pegasus's foreleg",
+  "페가수스의 머리 쪽 별": "A star near Pegasus's head",
+  "'비'를 뜻하는 이름의 별": "The star named 'the rain'",
+  "페르세우스자리에서 가장 밝은 별": "The brightest star in Perseus",
+  "'악마의 별'로 불리는 변광성": "A variable star called 'the demon star'",
+  "페르세우스의 발에 해당하는 별": "The star at Perseus's foot",
+  "이중성으로 보이는 별": "A star that looks like a double",
+  "알골 곁의 별": "The star beside Algol",
+  "고래자리에서 가장 밝은 별": "The brightest star in Cetus",
+  "밝기가 크게 변하는 별": "A star whose brightness changes greatly",
+  "2번째로 밝은 별": "The 2nd brightest star",
+  "4번째로 밝은 별": "The 4th brightest star",
+  "5번째로 밝은 별": "The 5th brightest star",
+  "6번째로 밝은 별": "The 6th brightest star",
+  "7번째로 밝은 별": "The 7th brightest star",
+  "8번째로 밝은 별": "The 8th brightest star",
+  "9번째로 밝은 별": "The 9th brightest star",
+  "10번째로 밝은 별": "The 10th brightest star",
+  "11번째로 밝은 별": "The 11th brightest star",
+  "12번째로 밝은 별": "The 12th brightest star",
+  "13번째로 밝은 별": "The 13th brightest star",
+  "14번째로 밝은 별": "The 14th brightest star",
+  "볼프-레이예 별이 있는 쌍성계": "A binary system with a Wolf–Rayet star",
+  "가장 뜨거운 별 가운데 하나": "One of the hottest stars",
+  "3번째로 밝은 별": "The 3rd brightest star",
+  "이 별자리에서 가장 밝은 별": "The brightest star in this constellation",
+  "공작자리의 으뜸별": "The leading star of Pavo",
+  "까마귀의 날개 별": "The crow's wing star",
+  "남십자의 으뜸별": "The leading star of the Southern Cross",
+  "남십자의 푸른 별": "The blue star of the Southern Cross",
+  "남십자의 붉은 별": "The red star of the Southern Cross",
+  "가을 밤하늘의 외로운 1등성": "The lonely first-magnitude star of the autumn sky",
+  "남쪽삼각형의 으뜸별": "The leading star of the Southern Triangle",
+  "이름을 거꾸로 읽는 별": "The star whose name reads backwards",
+  "'밝은 것'이라는 이름의 별": "The star whose name means 'the bright one'",
+  "마차부자리의 으뜸별": "The leading star of Auriga",
+  "두 별자리가 함께 쓰는 별": "A star shared by two constellations",
+  "몇십 년마다 어두워지는 별": "A star that dims every few decades",
+  "머리털자리의 으뜸별": "The leading star of Coma Berenices",
+  "봄철의 길잡이 주황색 별": "The orange star that guides you in spring",
+  "'가장 아름다운 별'이라 불리는 쌍성": "A double star called 'the most beautiful star'",
+  "바다뱀의 외로운 심장": "The lonely heart of the water snake",
+  "15번째로 밝은 별": "The 15th brightest star",
+  "16번째로 밝은 별": "The 16th brightest star",
+  "17번째로 밝은 별": "The 17th brightest star",
+  "18번째로 밝은 별": "The 18th brightest star",
+  "'앞서가는 것'이라는 이름의 별": "The star whose name means 'the preceding one'",
+  "뱀의 목에 있는 별": "A star in the snake's neck",
+  "뱀주인의 머리 별": "The head star of Ophiuchus",
+  "불사조의 으뜸별": "The leading star of the phoenix",
+  "왕관을 장식한 보석": "The jewel that decorates the crown",
+  "비둘기의 으뜸별": "The leading star of the dove",
+  "'찰스의 심장'이라는 별": "The star called 'Charles's Heart'",
+  "사냥개의 별": "The hunting dog's star",
+  "삼각형의 으뜸별": "The leading star of the triangle",
+  "세페우스의 오른팔": "Cepheus's right arm",
+  "미래의 북극성 후보": "A candidate for the future pole star",
+  "변광성 이름의 기준이 된 별": "The star that gave variable stars their standard name",
+  "가장 가까운 이웃 별계": "The nearest neighboring star system",
+  "남십자를 가리키는 별": "A star pointing to the Southern Cross",
+  "켄타우루스의 어깨": "The centaur's shoulder",
+  "두 별자리가 함께 쓰던 별": "A star once shared by two constellations",
+  "안드로메다은하 길잡이": "A guide to the Andromeda Galaxy",
+  "주황과 청색이 나란한 별": "An orange and a blue star side by side",
+  "강의 끝에서 빛나는 별": "The star shining at the end of the river",
+  "오리온의 발판": "Orion's footstool",
+  "강의 끝에 있던 별": "The star at the end of the river",
+  "19번째로 밝은 별": "The 19th brightest star",
+  "20번째로 밝은 별": "The 20th brightest star",
+  "21번째로 밝은 별": "The 21st brightest star",
+  "22번째로 밝은 별": "The 22nd brightest star",
+  "23번째로 밝은 별": "The 23rd brightest star",
+  "24번째로 밝은 별": "The 24th brightest star",
+  "25번째로 밝은 별": "The 25th brightest star",
+  "26번째로 밝은 별": "The 26th brightest star",
+  "27번째로 밝은 별": "The 27th brightest star",
+  "시리우스 다음으로 밝은 별": "The second brightest star after Sirius",
+  "'잔잔한 물'이라는 이름의 별": "The star named 'calm water'",
+  "가짜 십자가의 한 별": "A star of the False Cross",
+  "'작은 방패'라는 이름의 별": "The star named 'little shield'",
+  "용의 머리": "The dragon's head",
+  "용의 머리 별": "A star of the dragon's head",
+  "옛날의 북극성": "The pole star of long ago",
+  "시리우스보다 먼저 뜨는 별": "The star that rises before Sirius",
+  "작은사자의 으뜸별": "The leading star of the little lion",
+  "'거위'라는 이름의 별": "The star named 'the goose'",
+  "조랑말의 으뜸별": "The leading star of the foal",
+  "'컵'이라는 이름의 별": "The star named 'the cup'",
+  "'토끼'라는 이름의 별": "The star named 'the hare'",
+  "곤봉을 든 사람": "The club-bearer",
+  "무릎 꿇은 이의 머리": "The head of the kneeling one",
+  "'화살'이라는 이름의 별": "The star named 'the arrow'"
+ },
+ "constellations": {
+  "aries": {
+   "origin": "Phrixus and Helle, children of King Athamas of Thessaly, had a hard time under their stepmother. Taking pity on them, Hermes sent a golden-fleeced ram to carry the two children through the sky. While flying, Helle fell into the sea, which was later called the Hellespont, meaning 'Helle's Sea' (today's Dardanelles). Phrixus reached Colchis, east of the Black Sea, safely, and Zeus honored the ram's service by placing it among the stars. The oldest record is the Babylonian MUL.APIN, which calls it 'the Hired Man.' In Egypt it was linked to the sun god Amun-Ra, who announced the spring equinox.",
+   "tip": "Its stars are faint, so in cities you may see only Hamal and Sheratan. Look just west of Taurus.",
+   "stars": {
+    "mesarthim": "A binary system of two similarly bright stars 7.8 arcseconds apart. The origin of the name is uncertain; the IAU approved it in 2016 as the official name of γ² Arietis.",
+    "sheratan": "The name means 'the two signs' in Arabic, because this star and Gamma Arietis once marked the northern hemisphere's spring equinox point.",
+    "hamal": "The name comes from the Arabic 'Ras al-Hamal,' meaning 'head of the ram.' In Arabic tradition, Aries was simply called 'the sheep.'",
+    "botein": "The name comes from 'Al Buteyn,' a diminutive of the Arabic 'al-baṭn,' meaning 'the belly.' The IAU approved it as the official name in 2016.",
+    "bharani": "'Bharani' is the name of the second nakshatra (lunar mansion) in Hindu astronomy."
+   }
+  },
+  "taurus": {
+   "origin": "Zeus, who was famously unfaithful, fell for Europa, a Phoenician princess playing by the seashore. He turned into a dazzling white bull and mingled with the king's herd; when Europa playfully climbed on his back, he plunged into the sea and swam all the way to Crete with her. In Greece there is also a story that Zeus turned his lover Io into a heifer to hide her from Hera, and Acusilaus linked this bull to the Cretan Bull that Heracles captured. In older Mesopotamia it connects to the 'Bull of Heaven' from the Epic of Gilgamesh. In the sky, only the front half of the bull is often drawn.",
+   "tip": "It's easy once you find the red first-magnitude star Aldebaran and the small star cluster known as the Pleiades.",
+   "stars": {
+    "tianguan": "The name comes from the Chinese 'Tianguan' (天關), meaning 'Gate of Heaven,' a star within the Chinese asterism Bi (畢宿). It is an eclipsing binary whose stars cover each other about every 133 days.",
+    "aldebaran": "The name comes from the Arabic 'al-Dabarān,' meaning 'the follower,' because it rises after the Pleiades cluster. Its brightness varies slightly between magnitude 0.75 and 0.95.",
+    "chamukuy": "'Chamukuy' means 'little bird' in Yucatec Maya. The IAU approved it as the official name in 2017. It is a Delta Scuti–type variable whose brightness changes very slightly.",
+    "prima-hyadum": "The name is Latin for 'first of the Hyades.' It belongs to the Hyades cluster that forms the bull's face.",
+    "elnath": "The name means 'the one butting with horns' in Arabic. It marks the tip of the bull's horn.",
+    "bibing": "Every 3.95 days the two stars eclipse each other, changing its brightness between magnitude 3.37 and 3.91. The name comes from 'the handle of the net' in the Chinese asterism Bi (畢宿).",
+    "secunda-hyadum": "The name is Latin for 'second of the Hyades.' The IAU approved it as the official name in 2017.",
+    "ain": "The name means 'the eye' in Arabic. It is an orange giant belonging to the Hyades cluster."
+   }
+  },
+  "gemini": {
+   "origin": "Leda, queen of Sparta, was said to have borne twin brothers by Zeus, who had taken the form of a swan, and her husband Tyndareus. Pollux, a son of Zeus, was immortal, while Castor was the son of a mortal. Castor was skilled at horsemanship, and Pollux at boxing and arms; the two were always together. When Castor died, Pollux was overcome with grief and begged Zeus to let him die too; moved by their brotherly love, Zeus turned them both into stars. The Greeks regarded the twins as protectors of sailors. In Babylon these two stars were called 'the Great Twins.'",
+   "tip": "The two bright stars Castor and Pollux stand side by side, which makes them easy to find. Look to the upper left of Orion.",
+   "stars": {
+    "pollux": "Named after Pollux, the immortal twin of myth. It is actually brighter than Castor and is the leading star of Gemini.",
+    "wasat": "The name means 'the middle' in Arabic. It is a binary system in which an orange companion orbits a yellow-white primary.",
+    "mekbuda": "A yellow supergiant that swells and shrinks over about 10.2 days, varying between magnitude 3.7 and 4.2. The name means 'the folded paw of the lion' in Arabic.",
+    "alhena": "The name comes from the Arabic 'al-Han'a,' meaning 'the brand on the camel's neck.' It shines at Pollux's foot.",
+    "castor": "Named after Castor, the mortal twin of myth. It is a multiple star system in which several stars orbit one another.",
+    "mebsuta": "The name means 'the outstretched paw' in Arabic. It comes from the paw of a giant lion that ancient Arabs drew across several constellations.",
+    "tejat": "A red giant that varies between magnitude 2.75 and 3.02. The name comes from the old South Arabian word 'Tihyat,' whose meaning is unknown.",
+    "propus": "A red giant that varies between magnitude 3.1 and 3.7. The name means 'forefoot' in Greek.",
+    "lambda": "Lambda (λ) of Gemini. It has no proper name."
+   }
+  },
+  "cancer": {
+   "origin": "For his second labor, Heracles had to defeat the monstrous water serpent, the Hydra. Hera, who hated Heracles, sent a giant crab to help the serpent; the crab bit Heracles on the toe but was crushed underfoot. To reward the crab that died fighting for her, Hera is said to have raised its image into the sky as a constellation. In the 2nd century Ptolemy called it 'Karkinos' (the crab). The Greeks and Romans saw the central Praesepe (the Beehive Cluster) as a manger from which two donkeys feed, and in Babylon it was called 'Alulu' (MUL.AL.LUL).",
+   "tip": "It is made of faint stars and is barely visible in cities. Look under a dark sky between Leo and Gemini.",
+   "stars": {
+    "asellus-australis": "The name is Latin for 'southern donkey colt.' It comes from the idea that Praesepe (the Beehive Cluster) is a manger, with the two stars on either side being the donkeys.",
+    "asellus-borealis": "The name is Latin for 'northern donkey.' It shines just north of Praesepe.",
+    "yuyu": "'Yuyu' means freshwater crab in Javanese, and it is also the Balinese name for Cancer. It is a multiple star system in which several stars orbit one another.",
+    "tarf": "The name comes from the Arabic 'al-Ṭarf,' meaning 'the end' or 'the edge.' The IAU approved it as the official name in 2018.",
+    "acubens": "The name means 'the claw' in Arabic. It is a multiple system made of four stars."
+   }
+  },
+  "leo": {
+   "origin": "In an age of turmoil, when comets often appeared, a meteor that fell from the Moon is said to have turned into a golden lion and landed in the Nemean valley. This lion was far bigger and fiercer than an ordinary lion and tormented people. For his first labor, Heracles had to catch it; when bow, spear and club all failed, he wrestled it bare-handed and won. Zeus honored his son's courage by raising the lion to the sky, and Ovid called this constellation 'the lion of Heracles.' In Babylon it was called 'the Great Lion' (UR.GU.LA), and Regulus was regarded as 'the King's Star.'",
+   "tip": "It's easy once you spot the backward-question-mark shape of the mane, which begins at the first-magnitude star Regulus.",
+   "stars": {
+    "regulus": "The name is Latin for 'little king.' In Babylon it was called 'the King's Star,' standing at the lion's chest. It spins so fast that it bulges at the equator.",
+    "eta": "A star in the Arabic asterism 'al-Jabhah,' meaning 'the forehead of the lion.' It has no proper name.",
+    "algieba": "The name means 'the forehead' in Arabic. Through a telescope it splits into two stars, making it a binary.",
+    "adhafera": "The name means 'the lock of hair' in Arabic. It originally referred to Coma Berenices and was mistakenly attached to this star in the 17th century.",
+    "rasalas": "The name is short for 'Ras al-Asad al-Shamaliyy,' meaning 'the northern part of the lion's head.'",
+    "algenubi": "The name means 'the southern star of the lion's head' in Arabic. It sits at the end of the 'sickle' that outlines the lion's head.",
+    "zosma": "The name means 'girdle' in Ancient Greek, and it sits where the lion's hindquarters would be.",
+    "chertan": "The name comes from the Arabic 'al-Kharatān,' meaning 'the two small ribs.' It originally referred to the stars δ and θ together.",
+    "denebola": "The name comes from the Arabic 'Dhanab al-Asad,' meaning 'the lion's tail.' It is relatively close to Earth, so it looks bright."
+   }
+  },
+  "virgo": {
+   "origin": "Virgo is said to depict Astraea, goddess of justice. Even after the gods left the earth, she stayed among humans and taught justice, but when people sank into lies and violence she finally returned to the heavens. In old star pictures she holds an ear of wheat, so she was also read as Demeter, goddess of grain, or as her daughter Persephone returning from the underworld. Hyginus linked this constellation to Erigone, daughter of Icarius. The oldest Babylonian records call it 'the Furrow' of the goddess Shala, who holds an ear of grain.",
+   "tip": "Follow the Great Spring Arc from Arcturus to Spica to find it. Spica is the brightest star.",
+   "stars": {
+    "spica": "The name is Latin for 'the maiden's ear of wheat.' It shines blue at the tip of the ear the maiden holds. It is a close binary, so its brightness varies slightly.",
+    "porrima": "Named after Porrima (Antevorta), the Roman goddess of prophecy. It is a binary in which two similar stars orbit each other.",
+    "zaniah": "The name means 'the corner' in Arabic.",
+    "zavijava": "The name means something like 'the corner of the barking dog' in Arabic. A star of a type similar to the Sun is nearby.",
+    "minelauva": "Its brightness varies slightly between magnitude 3.32 and 3.40. The name comes from the Arabic 'in the lunar mansion al-Awwa,' and the IAU approved it as the official name in 2017.",
+    "vindemiatrix": "The name is Latin for 'the grape-gatherer' (a woman who picks grapes).",
+    "syrma": "The name means 'the train of a robe' in Ancient Greek.",
+    "heze": "The name first appeared in the 1951 star atlas 'Atlas Coeli,' and where it came from is unknown. The IAU approved it as the official name in 2018."
+   }
+  },
+  "libra": {
+   "origin": "Libra is said to be the scales carried by Astraea, goddess of justice. She weighed people's good and evil to decide their fates, and was placed in the sky in honor of her work for justice and fairness. In fact, for a long time this constellation was seen as the claws of the Scorpion. Aratus called these stars 'the claws,' and the Arabic 'Zubana' also means 'the scorpion's claws.' In Babylon it was called 'Zibanu,' the scales of the sun god Shamash. In Roman times it became its own scales constellation next to Virgo.",
+   "tip": "Its stars are mostly faint, so a dark spot with an open southern view is best. Look to the lower right of Spica in Virgo.",
+   "stars": {
+    "zubenelgenubi": "The name means 'the southern claw' in Arabic. Through binoculars it splits into two stars.",
+    "zubeneschamali": "The name means 'the northern claw' in Arabic. It is the brightest star in Libra.",
+    "zubenelhakrabi": "The name comes from the Arabic 'Zuban al-ʿAqrab,' meaning 'the scorpion's claw.'",
+    "delta": "An eclipsing binary whose two stars cover each other about every 2 days 8 hours, changing its brightness between magnitude 4.9 and 5.9.",
+    "brachium": "The name is Latin for 'arm.' It was once Gamma Scorpii, until Benjamin Gould moved it to Libra as Sigma Librae in 1851.",
+    "iota": "A complex multiple star system in which several stars orbit one another. The primary is blue-white and part of a binary with a 23-year period."
+   }
+  },
+  "scorpio": {
+   "origin": "Orion, the giant hunter, boasted that he was the strongest in the world and could hunt any beast. Angered by this arrogance, Hera is said to have sent a scorpion to destroy him. The god who sent it differs by tradition: Hesiod, Hyginus and Ovid say it was Gaia, goddess of the earth, while Aratus says it was Artemis. For this deed the scorpion became a constellation. That's why, when Scorpius rises, Orion flees and sets in the west, and the two constellations are never seen in the sky together.",
+   "tip": "The red first-magnitude star Antares is your guide. Since it sits low, look from a place with an open southern horizon, such as by the sea or on wide flat ground.",
+   "stars": {
+    "antares": "The name means 'rival of Ares (Mars)' in Ancient Greek, because its red color resembles Mars. It glows red at the scorpion's heart and is a variable star whose brightness changes slightly.",
+    "acrab": "Acrab means 'scorpion' in Arabic. It is also known by its Greek name Graffias ('the crab'). It is a multiple star system made of several stars, so it splits apart in a telescope.",
+    "dschubba": "The name means 'the scorpion's forehead' in Arabic. It suddenly brightened in 2000 and still varies in brightness.",
+    "alniyat": "Alniyat means 'the arteries' in Arabic. It was a name for the two stars Sigma and Tau on either side of Antares (the scorpion's heart); Sigma lies north of Antares.",
+    "pi": "A star near the claws. It is a multiple star system in which two or more stars orbit one another.",
+    "tau": "A star south of Antares that, together with Sigma, flanks Antares. Its Hawaiian name Paikauhale means 'the wanderer who roams from house to house.'",
+    "epsilon": "Among the bright stars of Scorpius, it is one of the closest to Earth. Its name means 'clearly seen' in the language of the Wardaman, an Aboriginal Australian people.",
+    "mu": "A binary system at the start of the tail's curve. Its name means '(two) lions' eyes' in Khoekhoe.",
+    "zeta2": "Zeta¹, right beside it, is a blue-white supergiant about 6,000 light-years away. The two simply line up in the same direction and are unrelated.",
+    "sargas": "A bright star at the left end of the tail's curve. The name is said to come from Sumerian.",
+    "girtab": "A star where the tail curves upward. Girtab is said to mean 'scorpion' in Sumerian.",
+    "shaula": "The name means 'the raised (tail)' in Arabic. It shines at the tip of the scorpion's stinger and is the second brightest star in Scorpius after Antares."
+   }
+  },
+  "sagittarius": {
+   "origin": "Centaurs are a race with the upper body of a human and the lower body of a horse. Most were wild, but Chiron alone was refined and wise; taught music, medicine, hunting and prophecy by Apollo and Artemis, he is said to have taught astronomy to Heracles and martial arts to Achilles. While Heracles was fighting centaurs, an arrow dipped in Hydra's poison accidentally struck Chiron's foot. Being immortal, he could not even die; after great suffering he gave his immortality to Prometheus and passed away, and Zeus placed him among the stars. Eratosthenes saw this archer as the satyr Crotus, inventor of archery. In Babylon it was called 'Pabilsaĝ.'",
+   "tip": "Look for the Southern Dipper (the Milk Dipper), toward the center of the summer Milky Way. It sits low in the southern sky, so an open horizon helps.",
+   "stars": {
+    "namalsadirah": "The name comes from the Arabic for 'the returning ostriches.' It originally referred to four stars together, and φ was the first of them.",
+    "kaus-borealis": "The name combines the Arabic for 'bow' with the Latin for 'north.' It sits at the upper end of the bow the archer holds.",
+    "nunki": "The name comes from 'Nunki,' the Sumerian name for Eridu, the central city of Abzu, the sea of underground fresh water.",
+    "ascella": "The name means 'armpit' in Late Latin. It is a binary system with two stars of similar brightness close together.",
+    "kaus-australis": "The name combines the Arabic for 'bow' with the Latin for 'south.' It spins so fast that its temperature and size differ between pole and equator.",
+    "alnasl": "The name means 'the arrowhead' in Arabic. It sits at the tip of the teapot's spout.",
+    "kaus-media": "The name combines the Arabic for 'bow' with the Latin for 'middle.'",
+    "hamalwarid": "A red giant whose brightness hardly changes, staying between magnitude 3.08 and 3.12."
+   }
+  },
+  "capricorn": {
+   "origin": "Pan, god of flocks, was happily celebrating at a feast of the gods on the banks of the Nile when the giant Typhon appeared and attacked the gods, who fled by turning into animals. Pan, rushing through his spell, got mixed up and ended up with the upper body of a goat and the lower body of a fish. When Zeus was in danger, Pan blew his reed pipe and drove Typhon away, and in gratitude Zeus made the 'sea-goat,' half goat and half fish, a constellation. Some stories link it to the goat Amalthea, who nursed Zeus with her milk. In Babylon it was called the 'goat-fish' (MUL.SUḪUR.MAŠ), the symbol of the water god Ea.",
+   "tip": "Its faint stars form a big inverted triangle. Look low in the southern sky, below the Summer Triangle.",
+   "stars": {
+    "dabih": "The name comes from the Arabic 'al-Dhābiḥ,' meaning 'the slaughterer.' It is said to come from the custom of offering sacrifices when this star first rose before sunrise.",
+    "psi": "Psi (ψ) of Capricornus. In Chinese astronomy it is part of 'Tiantian' (天田), meaning 'the Heavenly Field.'",
+    "omega": "Omega (ω) of Capricornus. It has no proper name.",
+    "yen": "The name 'Yen' comes from the state of Yan (燕), one of the old states of China. It is a binary system with a white dwarf companion.",
+    "deneb-algedi": "The name means 'the goat's tail' in Arabic. It is an eclipsing variable whose brightness changes by about 0.2 magnitude over a 24.5-hour period.",
+    "algedi": "The name comes from the Arabic 'al-Jady,' meaning 'the goat.' The IAU approved it as the official name of this star in 2016."
+   }
+  },
+  "aquarius": {
+   "origin": "When Hebe, goddess of youth, sprained her ankle and could no longer pour wine for the gods, Zeus is said to have turned into an eagle and carried the Trojan boy Ganymede, who was tending sheep on Mount Ida, up to Olympus. Ganymede then took on the job of filling the gods' cups. The constellation shows Ganymede holding a jar overflowing with water. Other stories see him as Deucalion, who survived the Great Flood, or as Cecrops, the Athenian king who offered water instead of wine to the gods. In Babylon it was called 'the Great One' (GU.LA), a star of the water god Ea, and in Egypt it was tied to the flooding of the Nile.",
+   "tip": "Its stars are faint, so a place with little city light is best. Look in the southern sky below the Great Square of Autumn.",
+   "stars": {
+    "albali": "The name comes from the Arabic 'al-Bāliʿ,' meaning 'the swallower.'",
+    "sadalsuud": "The name comes from the Arabic 'Saʿd al-Suʿūd,' meaning 'the luck of lucks.' It is one of the brightest stars in Aquarius.",
+    "sadalmelik": "The name comes from the Arabic 'Saʿd al-Malik,' meaning 'the luck of the king.' It is a supergiant about 690 light-years from Earth.",
+    "sadachbia": "The name means 'the luck of the tents (houses)' in Arabic. The IAU approved it as the official name in 2016.",
+    "sadaltager": "A binary system of two stars orbiting closely, with a combined magnitude of 3.65. Its old Arabic name was 'al-ʿAqr al-ʾAkbiyah.'",
+    "ancha": "The name means 'hip' in Medieval Latin.",
+    "hydor": "The name means 'water' in Greek. It is a red giant that varies between magnitude 3.57 and 3.80.",
+    "skat": "The name comes from the Arabic 'al-Sāq,' meaning 'the shin.'"
+   }
+  },
+  "pisces": {
+   "origin": "Aphrodite, goddess of beauty, and her son Eros were resting by the Euphrates when the monster Typhon appeared. Startled, the two gods turned into fish and leapt into the river to hide, and their forms are said to have risen into the sky as a constellation. The same story appears in Hyginus's 'Poetic Astronomy' and Ovid's 'Fasti,' and in the Roman version the two gods flee riding on the backs of two fish. The two fish are said to be tied with a cord, a detail believed to come from two Babylonian constellations, 'the Great Swallow' and 'Anunitum, the Lady of the Heavens.'",
+   "tip": "It is made of faint stars. Look below the Great Square of Autumn and follow the V shape.",
+   "stars": {
+    "alrescha": "The name comes from the Arabic 'ar-Rishā,' meaning 'the cord.' It shines at the knot where the cord joining the two fish meets.",
+    "revati": "'Revati' is the name of a nakshatra (lunar mansion) in Indian astronomy, meaning 'wealthy' in Sanskrit. It is a multiple star system in which several stars orbit together.",
+    "omega": "The name 'Pili' comes from the Chinese asterism 'Pili' (霹靂), meaning 'thunder.' Old Arabic catalogs called it 'the tail of the fish.'",
+    "iota": "A star of a type similar to the Sun, about 45 light-years from Earth. In China it is the fourth star of the 'Pili' asterism.",
+    "theta": "Theta (θ) of Pisces. It has no proper name.",
+    "gamma": "The brightest of the stars making up the western fish. In 2021 an exoplanet was discovered around it.",
+    "kuton": "In Chinese astronomy it is part of 'Waiping' (外屏), meaning 'the outer screen.'",
+    "torcular": "The name comes from the old name 'Torcularis Septentrionalis' (the northern wine press), and the IAU approved it as the official name in 2017.",
+    "alpherg": "The name is said to come from the Arabic 'al-Farġ,' meaning 'the emptying.' The IAU approved it as the official name in 2018.",
+    "chi": "A star in the northern fish. It has no proper name.",
+    "phi": "A star in the northern fish. It has no proper name.",
+    "tau": "A star in the northern fish. It has no proper name."
+   }
+  },
+  "orion": {
+   "origin": "Orion was a tall, strong hunter, a son of Poseidon, god of the sea. He was close to Artemis, goddess of the hunt, and Apollo, who disapproved, devised a trick: he had Artemis shoot an arrow at a distant black dot on the sea, and that dot was Orion. Grieving, Artemis raised him to the sky as a constellation. Another story says Orion was killed by a scorpion's sting, which is why Orion seems to flee and set in the west when Scorpius rises. It is the most eye-catching constellation of the winter night sky, and the belt of three stars in a row serves as a guide.",
+   "tip": "The three stars in a row (the Belt) are your guide. Confirm with red Betelgeuse at the upper left and blue Rigel at the lower right.",
+   "stars": {
+    "betelgeuse": "The name is said to come from Arabic, but its exact meaning is uncertain. It is so large that, if placed where the Sun is, it would reach nearly to Jupiter's orbit. It is a variable star whose brightness changes slightly.",
+    "bellatrix": "The name is Latin for 'female warrior.' It is a blue-white star at Orion's left shoulder.",
+    "meissa": "A star forming Orion's head. Its name is said to mean 'the shining one' in Arabic.",
+    "alnitak": "A star at one end of Orion's Belt; its name means 'the girdle' in Arabic. The Horsehead Nebula and the Flame Nebula are nearby.",
+    "alnilam": "The name comes from an Arabic phrase meaning 'string of pearls.' It sits in the middle of the three Belt stars.",
+    "mintaka": "A star at one end of the Belt; its name means 'the belt' in Arabic. It lies almost exactly on the celestial equator, so it rises nearly due east and sets nearly due west.",
+    "saiph": "The name comes from an Arabic phrase meaning 'the sword of the giant.' It marks Orion's knee.",
+    "rigel": "The name comes from an Arabic word meaning 'foot.' It marks Orion's left foot and, despite the name, is the brightest star in the constellation."
+   }
+  },
+  "ursa-major": {
+   "origin": "Zeus loved the beautiful nymph Callisto, and when Hera found out, she jealously turned Callisto into a bear. Years later, Callisto's son Arcas went hunting and came upon his mother in bear form; just as he unknowingly was about to shoot her, Zeus lifted them both into the sky as Ursa Major and Ursa Minor. The seven stars forming the bear's back and tail are the Big Dipper. Extending the line through the two stars at the end of the Dipper's bowl about five times leads to Polaris, so it has long been used as a guide.",
+   "tip": "Link the two stars at the end of the Big Dipper's bowl (Dubhe and Merak) and extend the line about five times to find Polaris.",
+   "stars": {
+    "dubhe": "The name comes from an Arabic word meaning 'bear.' Together with Merak it is a pointer for finding Polaris.",
+    "merak": "The name comes from an Arabic word meaning 'loin.' Connect it with Dubhe to find Polaris.",
+    "phecda": "The name comes from an Arabic word meaning 'thigh.' It sits at a lower corner of the Big Dipper's bowl.",
+    "megrez": "The name means 'the root of the tail' in Arabic. It is the faintest star of the Big Dipper.",
+    "alioth": "The name comes from Arabic. It is the brightest star in Ursa Major and is known as an unusual star with a strong magnetic field.",
+    "mizar": "The faint Alcor beside it was used long ago as an eyesight test. Through a telescope, Mizar is a multiple star system in which several stars orbit together.",
+    "alkaid": "The name comes from an Arabic phrase meaning 'the leader of the group.' It is the star at the very end of the Big Dipper's handle."
+   }
+  },
+  "ursa-minor": {
+   "origin": "Ursa Minor is the partner of Ursa Major and is said to be Callisto's son Arcas. Another story says it is the nymph who hid and raised the infant Zeus, raised to the sky. The star at the tip of its tail is Polaris, which always points north, making it a guide for sailors and travelers. Because it lies close to the celestial north pole, it never sets below the horizon in Korea all year round.",
+   "tip": "Polaris is the tip of the tail. Find Polaris first using the end of the Big Dipper's bowl or the W of Cassiopeia.",
+   "stars": {
+    "polaris": "It points almost exactly at the north celestial pole today, which is why it is called the North Star. Because Earth's rotation axis slowly shifts, other stars will take over as the pole star in time.",
+    "yildun": "The name comes from the Turkish word for 'star.' It forms part of the handle of the Little Dipper.",
+    "epsilon-umi": "A star forming the handle of Ursa Minor. It has no proper name.",
+    "zeta-umi": "A star at a corner of the Little Dipper's bowl. It has no proper name.",
+    "eta-umi": "A star at a corner of the Little Dipper's bowl. It has no proper name.",
+    "pherkad": "The name comes from an Arabic word meaning 'calf.' Together with Kochab, it was called 'the Guardians of the Pole.'",
+    "kochab": "Around 1500 BCE it was the star closest to the north pole. Together with Pherkad, it was called 'the Guardians of the Pole.'"
+   }
+  },
+  "cassiopeia": {
+   "origin": "Cassiopeia was queen of Ethiopia, and she boasted that her daughter Andromeda was more beautiful than the sea nymphs, the Nereids. An angry Poseidon sent a sea monster to ravage the kingdom, and as punishment Cassiopeia is said to have been lifted into the sky, still seated on her throne, to circle the north pole. In the sky she looks like a W or an M, so she is easy to find, and she serves as the guide opposite the Big Dipper when looking for Polaris.",
+   "tip": "Its W or M shape makes it easy to find. It lies on the opposite side of Polaris from the Big Dipper.",
+   "stars": {
+    "caph": "The name comes from an Arabic word meaning 'hand.' It is a variable star whose brightness changes only very slightly.",
+    "shedar": "The name means 'the breast' in Arabic. It marks the queen Cassiopeia's chest.",
+    "navi": "A star whose brightness varies widely; it once brightened to nearly first magnitude. 'Navi' is the astronaut Gus Grissom's middle name, Ivan, spelled backwards.",
+    "ruchbah": "The name comes from an Arabic word meaning 'knee.' It is an eclipsing binary whose two stars cover each other, so its brightness changes slightly.",
+    "segin": "A star forming Cassiopeia's chair. The origin of the name is uncertain."
+   }
+  },
+  "cygnus": {
+   "origin": "It is said to come from the story of Zeus turning into a swan to visit Leda, queen of Sparta. Another story says it is Cycnus, a friend of Phaethon, who dove into the river to search for Phaethon after he fell while driving the sun god's chariot, and was turned into a swan and became a star. Because of its cross shape it is also called the Northern Cross, and it looks like a swan flying right through the middle of the Milky Way. Deneb forms the Summer Triangle together with Vega and Altair.",
+   "tip": "It flies over the Milky Way in the shape of a cross. Deneb is one corner of the Summer Triangle.",
+   "stars": {
+    "deneb": "The name comes from an Arabic word meaning 'tail.' Though it is very far away, it appears as a first-magnitude star because it is intrinsically tremendously bright.",
+    "sadr": "The name means 'the breast' in Arabic. It sits at the crossing point of the cross and is surrounded by a wide spread of nebulae.",
+    "albireo": "A famous double star: through a small telescope you can see an orange star and a blue star side by side. It marks the swan's beak.",
+    "fawaris": "A star at the swan's wing, and a multiple star system in which several stars orbit together.",
+    "aljanah": "The name comes from an Arabic word meaning 'wing.' It is an orange star forming the tip of one of the swan's wings."
+   }
+  },
+  "lyra": {
+   "origin": "Lyra is said to be the lyre of Orpheus, the musician of Greek myth. Apollo gave Orpheus the instrument that Hermes had made from a tortoise shell, and with it Orpheus moved even birds and beasts. After he lost his wife Eurydice and later died, Zeus raised the lyre to the sky. Its brightest star, Vega, is known in East Asia as Zhinü, the Weaving Girl of the Qixi story, and is one corner of the Summer Triangle.",
+   "tip": "The brightest star, Vega (the Weaving Girl star), is your guide. The small parallelogram below Vega is the body of the lyre.",
+   "stars": {
+    "vega": "The fifth brightest star in the night sky. The name comes from an Arabic phrase meaning 'the swooping eagle,' and in East Asia it is called the Weaving Girl star. In about 12,000 years it will become the North Star.",
+    "zeta-lyr": "A star forming a small triangle near Vega. It has no proper name.",
+    "delta-lyr": "A red giant forming one corner of the parallelogram below the lyre. Its brightness varies slightly.",
+    "sulafat": "The name means 'the tortoise' in Arabic. It connects to the story of Hermes making the lyre from a tortoise shell.",
+    "sheliak": "An eclipsing binary in which two stars orbit very closely and cover each other, changing its brightness. The name comes from an Arabic word meaning 'tortoise.'"
+   }
+  },
+  "aquila": {
+   "origin": "Aquila is said to be the eagle that carried Zeus's thunderbolts. To bring the beautiful Trojan youth Ganymede to Olympus, Zeus either turned into an eagle or sent one, and Ganymede became the gods' wine-pouring attendant. This eagle is said to have risen to the sky as a constellation. Its brightest star, Altair, is known in East Asia as the Cowherd star, and it faces the Weaving Girl star Vega across the Milky Way.",
+   "tip": "Find bright Altair (the Cowherd star) with a star on either side of it in a straight line.",
+   "stars": {
+    "altair": "The name comes from an Arabic phrase meaning 'the flying eagle.' It spins so fast that it is flattened rather than round.",
+    "tarazed": "One of the three stars lined up right beside Altair. The name is said to come from the Persian word for 'the beam of a balance.'",
+    "alshain": "A star lined up with Altair and Tarazed. At about 45 light-years from Earth, it is relatively close.",
+    "theta-aql": "A star near the eagle's tail. It has no proper name.",
+    "okab": "A star at the tip of the eagle's wing. The name is said to come from the Arabic word for 'eagle.'",
+    "almizan": "A star about 50 light-years from Earth whose brightness changes only very slightly.",
+    "lambda-aql": "A star below the eagle's wing. It has no proper name."
+   }
+  },
+  "canis-major": {
+   "origin": "Canis Major is said to be the faithful hunting dog that follows the hunter Orion. Another story says it is Laelaps, the dog that never lets its quarry escape, set in the sky by Zeus. Its brightest star, Sirius, is the brightest star in the night sky, and in ancient Egypt its rising just before dawn signaled the time of the Nile flood. Follow Orion's Belt downward to find Sirius.",
+   "tip": "Sirius is the brightest star in the night sky. Follow Orion's Belt downward to reach it. It sits low, so a place with an open southern view helps.",
+   "stars": {
+    "sirius": "The name means 'the scorching one' in Greek. It looks brightest because it is both close and intrinsically bright, and it forms a pair with a small white companion, Sirius B.",
+    "mirzam": "The name means 'the announcer' in Arabic. It rises before Sirius, as though announcing its arrival.",
+    "omicron2-cma": "A bright blue supergiant far from us in Canis Major. It has no proper name.",
+    "wezen": "The name comes from an Arabic word meaning 'weight.' It is a supergiant of enormous size.",
+    "aludra": "The name is said to come from an Arabic word meaning 'the virgin.' It is a supergiant that looks bright despite being very far away.",
+    "adhara": "The name comes from an Arabic word meaning 'the virgins.' It is a bright star that emits a great deal of ultraviolet light.",
+    "furud": "The name comes from an Arabic phrase meaning 'the short stars.' It sits at the big dog's forepaw."
+   }
+  },
+  "pegasus": {
+   "origin": "Pegasus is said to be the winged horse born from the blood of Medusa when the hero Perseus cut off her head. The horse made a spring burst forth on Mount Helicon, and the hero Bellerophon tamed it and rode it to defeat the monster Chimera. Later it carried Zeus's thunderbolts on Olympus, and Zeus raised it to the sky as a constellation. You can find it by the Great Square of Autumn in the autumn night sky.",
+   "tip": "The Great Square of Autumn is your guide. One corner of the square is shared with Alpheratz in Andromeda.",
+   "stars": {
+    "markab": "The name comes from an Arabic word meaning 'ship' or 'vehicle.' It forms one corner of the Great Square of Autumn.",
+    "scheat": "The name is said to come from an Arabic word meaning 'shin.' It is a red giant whose brightness varies.",
+    "alpheratz": "The name comes from an Arabic phrase meaning 'the horse's navel.' It now belongs to Andromeda but forms one corner of the Great Square of Autumn.",
+    "algenib": "A star forming one corner of the Great Square of Autumn. The name is said to come from an Arabic word meaning 'flank.'",
+    "enif": "The name means 'the nose' in Arabic. It is an orange supergiant at the tip of Pegasus's nose.",
+    "homam": "The name comes from an Arabic phrase meaning 'the brave hero.' It sits at Pegasus's foreleg.",
+    "biham": "The name is said to come from an Arabic phrase meaning 'the young animals.' It sits near Pegasus's head.",
+    "matar": "The name means 'the rain' in Arabic. It is a star extending toward Pegasus's foreleg."
+   }
+  },
+  "perseus": {
+   "origin": "Perseus was a hero, son of Zeus and Danaë. Knowing that looking into Medusa's eyes would turn him to stone, he is said to have cut off her head while watching her reflection in Athena's shield. On the way home he rescued Princess Andromeda, who was about to be offered to a sea monster, and married her. The star Algol means 'the demon's head' and corresponds to the hand of Perseus holding Medusa's head. Every year in mid-August the Perseid meteor shower pours down.",
+   "tip": "Look below the W of Cassiopeia. Algol changes brightness about every 3 days. In mid-August you can also see the meteor shower.",
+   "stars": {
+    "mirfak": "The name comes from an Arabic word meaning 'elbow.' Together with the young stars around it, it forms the Alpha Persei Moving Cluster.",
+    "algol": "An eclipsing binary whose brightness drops sharply about every 2.87 days. The name means 'the demon's head' in Arabic, and it is also called the eye of Medusa.",
+    "atik": "The name is said to come from a word meaning 'shoulder' in Arabic. It sits at Perseus's foot.",
+    "epsilon-per": "A star near Perseus's foot. It has no proper name.",
+    "gamma-per": "A star near the northern end of Perseus. It has no proper name.",
+    "delta-per": "A star forming the eastern part of Perseus's body. It has no proper name.",
+    "miram": "The name is said to come from an Arabic phrase meaning 'the one who contests.' Through a small telescope it is a double star.",
+    "misam": "A star at Perseus's arm. The name is said to come from the Arabic for 'wrist.'"
+   }
+  },
+  "cetus": {
+   "origin": "Cetus is the sea monster 'Ketos' of Greek myth that rose from the sea to devour Princess Andromeda. When Cassiopeia, queen of Ethiopia, boasted that her daughter was more beautiful than the sea nymphs, an angry Poseidon sent this monster to ravage the kingdom. The monster was eventually defeated by Perseus, and in the sky it appears stretched out near Andromeda and Perseus. Though it is named for a whale, old pictures draw it as more of a sea monster than a whale.",
+   "tip": "It lies stretched across the southern sky in autumn and has few bright stars. Diphda (β) in the tail stands out most, so find that star first.",
+   "stars": {
+    "diphda": "The name comes from Arabic, and it is also called Deneb Kaitos. It sits in the whale's tail.",
+    "menkar": "The name means 'the nostrils' in Arabic. It marks the whale's nose.",
+    "mira": "The name is Latin for 'wonderful.' It was the first variable star whose changing brightness was recorded, in 1596, and it brightens and dims over a period of about 332 days.",
+    "baten-kaitos": "The name means 'the belly of the whale' in Arabic.",
+    "eta-cet": "An orange giant that forms part of the Cetus constellation lines. It is about 120 light-years from Earth.",
+    "kaffaljidhma": "A white star that forms part of the Cetus constellation lines. It is about 80 light-years from Earth.",
+    "tau-cet": "A yellow star that forms part of the Cetus constellation lines. It is about 12 light-years from Earth.",
+    "iota-cet": "An orange giant that forms part of the Cetus constellation lines. It is about 270 light-years from Earth.",
+    "theta-cet": "An orange giant that forms part of the Cetus constellation lines. It is about 110 light-years from Earth.",
+    "delta-cet": "A blue-white subgiant that forms part of the Cetus constellation lines. It is about 650 light-years from Earth.",
+    "mu-cet": "A yellow-white giant that forms part of the Cetus constellation lines. It is about 84 light-years from Earth.",
+    "xi2-cet": "A blue-white giant that forms part of the Cetus constellation lines. It is about 190 light-years from Earth.",
+    "lambda-cet": "A blue-white giant that forms part of the Cetus constellation lines. It is about 580 light-years from Earth.",
+    "nu-cet": "A yellow giant that forms part of the Cetus constellation lines. It is about 340 light-years from Earth."
+   }
+  },
+  "puppis": {
+   "origin": "Puppis was originally part of Argo Navis, the constellation representing the giant ship Argo that the Greek hero Jason sailed. Argo Navis was so large that the 18th-century French astronomer Nicolas Louis de Lacaille split it into Carina, Vela and Puppis. Puppis is the part corresponding to the stern of the ship. It lies in the middle of the Milky Way, so it contains many star clusters.",
+   "tip": "Look low in the southern sky in winter, below Sirius in Canis Major. It lies in the Milky Way, so on a clear night it looks full of stars through binoculars. A place with an open southern horizon is best.",
+   "stars": {
+    "regor": "The name is the Apollo astronaut Roger Chaffee's first name, Roger, read backwards. It is a binary system made of a very hot Wolf–Rayet star and a blue star.",
+    "naos": "The name means 'ship' in Greek. It is an O-type star among the hottest and brightest of all stars visible to the naked eye.",
+    "ahadi": "An orange supergiant that forms part of the Puppis constellation lines. It is about 810 light-years from Earth.",
+    "tureis": "A yellow-white bright giant that forms part of the Puppis constellation lines. It is about 64 light-years from Earth.",
+    "nu-pup": "A blue-white giant that forms part of the Puppis constellation lines. It is about 370 light-years from Earth.",
+    "azmidi": "A yellow supergiant that forms part of the Puppis constellation lines. It is about 1,200 light-years from Earth.",
+    "hr2948": "A blue-white subgiant that forms part of the Puppis constellation lines. It is about 350 light-years from Earth.",
+    "3-pup": "A white supergiant that forms part of the Puppis constellation lines.",
+    "11-pup": "A yellow-white bright giant that forms part of the Puppis constellation lines. It is about 520 light-years from Earth.",
+    "omicron-pup": "A blue-white subgiant that forms part of the Puppis constellation lines. It is about 1,420 light-years from Earth.",
+    "hr2922": "A blue-white star that forms part of the Puppis constellation lines. It is about 220 light-years from Earth."
+   }
+  },
+  "antlia": {
+   "origin": "Antlia was created by the 18th-century French astronomer Nicolas Louis de Lacaille while observing the southern sky. It is one of the constellations named to honor scientific instruments, and it represents the air pump used to create a vacuum. It is a relatively new constellation with no myth, and it has almost no bright stars, consisting only of a few faint ones.",
+   "tip": "A faint constellation near the southern horizon in spring. It has no bright stars and is hard to find with the naked eye, so look in a dark place low in the sky below Hydra.",
+   "stars": {
+    "alpha-ant": "An orange giant that forms part of the Antlia constellation lines. It is about 370 light-years from Earth.",
+    "epsilon-ant": "An orange giant that forms part of the Antlia constellation lines. It is about 710 light-years from Earth.",
+    "iota-ant": "An orange giant that forms part of the Antlia constellation lines. It is about 190 light-years from Earth."
+   }
+  },
+  "pavo": {
+   "origin": "Pavo was created by the Dutch cartographer Petrus Plancius in the late 16th century, based on southern-sky observations by the navigators Keyser and de Houtman. It became widely known when it appeared in Johann Bayer's star atlas in 1603. It represents the peacock, the bird that symbolizes the goddess Hera in Greek myth.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, use its leading star, Peacock, as your guide.",
+   "stars": {
+    "peacock": "The leading star of Pavo; its name is the English word for the bird.",
+    "beta-pav": "A white subgiant that forms part of the Pavo constellation lines. It is about 140 light-years from Earth.",
+    "delta-pav": "A yellow subgiant that forms part of the Pavo constellation lines. It is about 20 light-years from Earth.",
+    "eta-pav": "An orange giant that forms part of the Pavo constellation lines. It is about 350 light-years from Earth.",
+    "epsilon-pav": "A white star that forms part of the Pavo constellation lines. It is about 110 light-years from Earth.",
+    "zeta-pav": "An orange giant that forms part of the Pavo constellation lines. It is about 220 light-years from Earth.",
+    "gamma-pav": "A yellow-white star that forms part of the Pavo constellation lines. It is about 30 light-years from Earth.",
+    "lambda-pav": "A blue-white giant that forms part of the Pavo constellation lines. It is about 1,430 light-years from Earth.",
+    "pi-pav": "A white star that forms part of the Pavo constellation lines. It is about 130 light-years from Earth.",
+    "xi-pav": "A red giant that forms part of the Pavo constellation lines. It is about 470 light-years from Earth."
+   }
+  },
+  "reticulum": {
+   "origin": "Reticulum was created by the French astronomer Lacaille in the 18th century. It represents the reticle, a grid of fine lines engraved in a telescope's eyepiece. Lacaille used this grid, which measures star positions, to observe the southern sky precisely. It has no myth and is made of a small diamond shape.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere you can find it as a small diamond shape.",
+   "stars": {
+    "alpha-ret": "A yellow giant that forms part of the Reticulum constellation lines. It is about 160 light-years from Earth.",
+    "beta-ret": "An orange subgiant that forms part of the Reticulum constellation lines. It is about 97 light-years from Earth.",
+    "epsilon-ret": "An orange subgiant that forms part of the Reticulum constellation lines. It is about 59 light-years from Earth.",
+    "delta-ret": "A red giant that forms part of the Reticulum constellation lines. It is about 530 light-years from Earth."
+   }
+  },
+  "apus": {
+   "origin": "Apus was created in the late 16th century by the Dutch cartographer Plancius, based on observations by navigators. The bird of paradise is a bird native to the island of New Guinea. The name 'Apus' means 'without feet' in Greek, because in old Europe only the skins reached them without feet, so people believed the bird flew through the sky without feet. It lies close to the south celestial pole.",
+   "tip": "It cannot be seen from Korea. Because it lies close to the south celestial pole, it can be seen all year round from most of the Southern Hemisphere.",
+   "stars": {
+    "alpha-aps": "An orange giant that forms part of the Apus constellation lines. It is about 450 light-years from Earth.",
+    "gamma-aps": "An orange subgiant that forms part of the Apus constellation lines. It is about 160 light-years from Earth.",
+    "beta-aps": "An orange giant that forms part of the Apus constellation lines. It is about 160 light-years from Earth.",
+    "delta1-aps": "A red giant that forms part of the Apus constellation lines. It is about 760 light-years from Earth."
+   }
+  },
+  "camelopardalis": {
+   "origin": "Camelopardalis was created around 1612 by the Dutch astronomer Petrus Plancius. The giraffe has a long neck like a camel and spots like a leopard (pard), so in Latin it was called 'camelopardalis.' It has no myth and almost no bright stars, so even on a dark night its outline is hard to find. It stretches across the northern sky near Polaris.",
+   "tip": "A dim, faint constellation around Polaris. It has no distinct shape, so look in a place with little light pollution, between Cassiopeia and Ursa Major.",
+   "stars": {
+    "beta-cam": "A yellow supergiant that forms part of the Camelopardalis constellation lines. It is about 870 light-years from Earth.",
+    "hr1035": "A blue-white supergiant that forms part of the Camelopardalis constellation lines. It is about 1,940 light-years from Earth.",
+    "alpha-cam": "A blue-white supergiant that forms part of the Camelopardalis constellation lines.",
+    "hr1155": "A red giant that forms part of the Camelopardalis constellation lines. It is about 800 light-years from Earth.",
+    "7-cam": "A white star that forms part of the Camelopardalis constellation lines. It is about 370 light-years from Earth.",
+    "hr2527": "An orange giant that forms part of the Camelopardalis constellation lines. It is about 180 light-years from Earth.",
+    "gamma-cam": "A white subgiant that forms part of the Camelopardalis constellation lines. It is about 360 light-years from Earth.",
+    "hr2209": "A white star that forms part of the Camelopardalis constellation lines. It is about 170 light-years from Earth."
+   }
+  },
+  "corvus": {
+   "origin": "Corvus is the white crow of Apollo, god of the sun, in Greek myth. Apollo sent it on an errand to fetch water in a cup, but the crow waited for figs to ripen and came back late. It lied that a water snake was to blame, was found out, and as punishment was turned into a black bird and placed in the sky. The neighboring Crater and Hydra also appear in this story.",
+   "tip": "Look in the southern sky in spring, close to Spica in Virgo. The trapezoid made by four stars is your guide.",
+   "stars": {
+    "gienah": "The name means 'the wing' in Arabic. It marks the crow's wing.",
+    "algorab": "The name means 'the crow' in Arabic.",
+    "kraz": "A yellow bright giant that forms part of the Corvus constellation lines. It is about 150 light-years from Earth.",
+    "epsilon-crv": "An orange giant that forms part of the Corvus constellation lines. It is about 320 light-years from Earth.",
+    "alchiba": "A yellow-white subgiant that forms part of the Corvus constellation lines. It is about 49 light-years from Earth."
+   }
+  },
+  "pyxis": {
+   "origin": "Pyxis was created by the French astronomer Lacaille in the 18th century and represents the mariner's compass used on ships. It lies close to Argo Navis, which once represented the great ship Argo, so in the past this area was seen as the ship's mast. It has no myth and is made of a few faint stars.",
+   "tip": "A faint constellation low in the southern sky in spring. It has no bright stars and is hard to find with the naked eye, so you need a dark sky and an open southern view.",
+   "stars": {
+    "naos": "The name means 'ship' in Greek. It is an O-type star among the hottest and brightest of all stars visible to the naked eye.",
+    "alpha-pyx": "A blue-white giant that forms part of the Pyxis constellation lines. It is about 880 light-years from Earth.",
+    "beta-pyx": "A yellow giant that forms part of the Pyxis constellation lines. It is about 420 light-years from Earth.",
+    "gamma-pyx": "An orange giant that forms part of the Pyxis constellation lines. It is about 210 light-years from Earth."
+   }
+  },
+  "volans": {
+   "origin": "Volans was created in the late 16th century by the Dutch cartographer Plancius and represents the flying fish leaping out of the water. People sailing the southern seas often saw flying fish, and this brings them into the sky. It became known when it appeared in Johann Bayer's star atlas in 1603.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, look for a small constellation in the southern sky near Carina.",
+   "stars": {
+    "beta-vol": "An orange giant that forms part of the Volans constellation lines. It is about 110 light-years from Earth.",
+    "gamma2-vol": "A yellow giant that forms part of the Volans constellation lines. It is about 140 light-years from Earth.",
+    "delta-vol": "A yellow-white bright giant that forms part of the Volans constellation lines. It is about 740 light-years from Earth.",
+    "alpha-vol": "A white star that forms part of the Volans constellation lines. It is about 120 light-years from Earth.",
+    "epsilon-vol": "A blue-white subgiant that forms part of the Volans constellation lines. It is about 560 light-years from Earth."
+   }
+  },
+  "crux": {
+   "origin": "Crux is the symbol of the Southern Hemisphere sky, a small constellation in the shape of a cross. It was once seen as part of Centaurus, and became widely known in the Age of Discovery when European navigators used it to find direction in the southern seas. In 1679 the Frenchman Augustin Royer separated it as its own constellation. It is the smallest of the 88 constellations, and it appears on the flags of several countries, including Australia and New Zealand.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, extending the cross's long axis about 4.5 times leads to the direction of south, so it serves as a guide.",
+   "stars": {
+    "acrux": "The name combines alpha (α) and Crux. To the naked eye it looks like one star, but through a telescope it splits into a double star.",
+    "gacrux": "The name combines gamma (γ) and Crux. It is one of the closest M-type red giants to Earth.",
+    "mimosa": "A blue-white giant that forms part of the Crux constellation lines. It is about 280 light-years from Earth.",
+    "imai": "A blue-white subgiant that forms part of the Crux constellation lines. It is about 350 light-years from Earth."
+   }
+  },
+  "piscis-austrinus": {
+   "origin": "Piscis Austrinus is the fish that drinks the water poured by Aquarius. It has been known since ancient times, and in myth it is sometimes said to be the parent of the two fish of Pisces. Fomalhaut, the brightest star in the autumn southern sky, sits where this fish's mouth would be.",
+   "tip": "Fomalhaut, a first-magnitude star shining alone low in the autumn southern sky, is your guide. There are no bright stars around it, so it stands out, but since it is low, a place with an open southern view is best.",
+   "stars": {
+    "fomalhaut": "The name means 'the mouth of the fish' in Arabic. It is a first-magnitude star shining alone in the autumn southern sky.",
+    "epsilon-psa": "A blue-white star that forms part of the Piscis Austrinus constellation lines. It is about 490 light-years from Earth.",
+    "delta-psa": "A yellow giant that forms part of the Piscis Austrinus constellation lines. It is about 150 light-years from Earth.",
+    "beta-psa": "A white star that forms part of the Piscis Austrinus constellation lines. It is about 140 light-years from Earth.",
+    "iota-psa": "A blue-white star that forms part of the Piscis Austrinus constellation lines. It is about 200 light-years from Earth.",
+    "gamma-psa": "A white giant that forms part of the Piscis Austrinus constellation lines. It is about 220 light-years from Earth.",
+    "mu-psa": "A white star that forms part of the Piscis Austrinus constellation lines. It is about 140 light-years from Earth.",
+    "theta-psa": "A white star that forms part of the Piscis Austrinus constellation lines. It is about 320 light-years from Earth."
+   }
+  },
+  "triangulum-australe": {
+   "origin": "Triangulum Australe was created in the late 16th century from observations by the Dutch navigators Keyser and de Houtman, and appeared in Johann Bayer's star atlas in 1603. It was given the name 'Southern' to distinguish it from Triangulum in the northern sky. Three bright stars form a large triangle, so it is easy to find in the Southern Hemisphere.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, look for the large triangle made by three bright stars.",
+   "stars": {
+    "atria": "The name combines alpha (α) and Trianguli Australis (Southern Triangle).",
+    "beta-tra": "A yellow-white giant that forms part of the Triangulum Australe constellation lines. It is about 40 light-years from Earth.",
+    "gamma-tra": "A white star that forms part of the Triangulum Australe constellation lines. It is about 180 light-years from Earth."
+   }
+  },
+  "corona-australis": {
+   "origin": "Corona Australis is a small crown (a laurel wreath) lying beneath the feet of Sagittarius. It was already among the 48 constellations catalogued by the ancient Greek astronomer Ptolemy. Several stories are told about this crown. Its stars form a semicircle, so it is easy to recognize.",
+   "tip": "In summer, look low in the southern sky, below Sagittarius. The semicircle shape of the stars is your guide. It is low, so you need an open southern horizon.",
+   "stars": {
+    "beta-cra": "An orange giant that forms part of the Corona Australis constellation lines. It is about 470 light-years from Earth.",
+    "meridiana": "A white star that forms part of the Corona Australis constellation lines. It is about 130 light-years from Earth.",
+    "gamma-cra": "A yellow-white subgiant that forms part of the Corona Australis constellation lines. It is about 56 light-years from Earth.",
+    "delta-cra": "An orange giant that forms part of the Corona Australis constellation lines. It is about 180 light-years from Earth.",
+    "theta-cra": "A yellow giant that forms part of the Corona Australis constellation lines. It is about 560 light-years from Earth.",
+    "zeta-cra": "A white star that forms part of the Corona Australis constellation lines. It is about 190 light-years from Earth.",
+    "epsilon-cra": "A yellow-white subgiant that forms part of the Corona Australis constellation lines. It is about 98 light-years from Earth.",
+    "eta2-cra": "A blue-white subgiant that forms part of the Corona Australis constellation lines. It is about 480 light-years from Earth."
+   }
+  },
+  "lacerta": {
+   "origin": "Lacerta was created in the 17th century by the Polish astronomer Johannes Hevelius. He connected the faint stars between Andromeda and Cygnus into the shape of a lizard crawling in a zigzag. It has no myth and few bright stars. It lies near the Milky Way, so there are many stars around it.",
+   "tip": "In autumn, look near overhead between Cassiopeia and Cygnus for faint stars joined in a zigzag. A clear, dark night is best.",
+   "stars": {
+    "alpha-lac": "A white star that forms part of the Lacerta constellation lines. It is about 100 light-years from Earth.",
+    "1-lac": "An orange giant that forms part of the Lacerta constellation lines. It is about 620 light-years from Earth.",
+    "5-lac": "A red bright giant that forms part of the Lacerta constellation lines. It is about 1,650 light-years from Earth.",
+    "beta-lac": "A yellow giant that forms part of the Lacerta constellation lines. It is about 170 light-years from Earth.",
+    "hr8485": "An orange giant that forms part of the Lacerta constellation lines. It is about 480 light-years from Earth.",
+    "11-lac": "An orange giant that forms part of the Lacerta constellation lines. It is about 330 light-years from Earth.",
+    "6-lac": "A blue-white subgiant that forms part of the Lacerta constellation lines. It is about 1,720 light-years from Earth.",
+    "2-lac": "A blue-white star that forms part of the Lacerta constellation lines. It is about 550 light-years from Earth.",
+    "4-lac": "A blue-white supergiant that forms part of the Lacerta constellation lines. It is about 2,250 light-years from Earth."
+   }
+  },
+  "delphinus": {
+   "origin": "Delphinus is the dolphin that helped Poseidon, god of the sea, in Greek myth. When Poseidon proposed to the sea nymph Amphitrite and she fled and hid, the dolphin found her and persuaded her to marry him, and for this service it is said to have become a constellation in the sky. It is a neat little shape with a small diamond-shaped body and a tail star.",
+   "tip": "On summer nights, look for a small diamond near Altair in Aquila. A tail star extends below the diamond, so it looks like a dolphin.",
+   "stars": {
+    "rotanev": "Read backwards, the name becomes 'Venator,' Latin for 'hunter.' It is said that an observatory assistant in the 19th century named it by reversing his own name.",
+    "sualocin": "Read backwards, the name becomes 'Nicolaus.' It is said that an observatory assistant in the 19th century named it by reversing his own name.",
+    "aldulfin": "The name means 'the dolphin' in Arabic.",
+    "delta-del": "A white giant that forms part of the Delphinus constellation lines. It is about 220 light-years from Earth.",
+    "gamma1-del": "A white supergiant that forms part of the Delphinus constellation lines. It is about 120 light-years from Earth."
+   }
+  },
+  "vela": {
+   "origin": "Vela was originally part of Argo Navis, the constellation representing the great ship Argo that the Greek hero Jason sailed. When the 18th-century French astronomer Lacaille divided Argo Navis, he set the ship's sails apart as Vela. It lies in the Milky Way, and its star Gamma² is a very hot Wolf–Rayet star.",
+   "tip": "From Korea it hangs only low, just above the southern horizon in spring, so it is hard to observe. Try on a clear night from a place with a completely open southern view.",
+   "stars": {
+    "regor": "The name is the Apollo astronaut Roger Chaffee's first name, Roger, read backwards. It is a binary system made of a very hot Wolf–Rayet star and a blue star.",
+    "alsephina": "The name comes from an Arabic phrase meaning 'the little ship.'",
+    "markeb": "The name means 'the ship' in Arabic.",
+    "suhail": "An orange bright giant that forms part of the Vela constellation lines. It is about 540 light-years from Earth.",
+    "mu-vel": "A yellow giant that forms part of the Vela constellation lines. It is about 120 light-years from Earth.",
+    "phi-vel": "A blue-white supergiant that forms part of the Vela constellation lines. It is about 1,590 light-years from Earth.",
+    "psi-vel": "A yellow-white subgiant that forms part of the Vela constellation lines. It is about 61 light-years from Earth.",
+    "hr4023": "A white star that forms part of the Vela constellation lines. It is about 100 light-years from Earth."
+   }
+  },
+  "grus": {
+   "origin": "Grus was created by Plancius in the late 16th century, based on the observations of Dutch navigators, and appeared in Johann Bayer's star atlas in 1603. It represents the crane, a bird with a long neck and legs. In the autumn southern sky it looks like a bird stretching its long neck below Piscis Austrinus.",
+   "tip": "Look low near the southern horizon in autumn, below Piscis Austrinus. Its leading star, Alnair, is the guide, but it is low in the sky, so you need an open southern view.",
+   "stars": {
+    "alnair": "The name means 'the bright one' in Arabic.",
+    "aldhanab": "The name means 'the tail' in Arabic.",
+    "tiaki": "A red giant that forms part of the Grus constellation lines. It is about 180 light-years from Earth.",
+    "epsilon-gru": "A white star that forms part of the Grus constellation lines. It is about 130 light-years from Earth.",
+    "delta1-gru": "A yellow giant that forms part of the Grus constellation lines. It is about 310 light-years from Earth.",
+    "zeta-gru": "A yellow giant that forms part of the Grus constellation lines. It is about 110 light-years from Earth.",
+    "delta2-gru": "A red giant that forms part of the Grus constellation lines. It is about 330 light-years from Earth.",
+    "lambda-gru": "A red giant that forms part of the Grus constellation lines. It is about 240 light-years from Earth.",
+    "mu1-gru": "A yellow giant that forms part of the Grus constellation lines. It is about 270 light-years from Earth."
+   }
+  },
+  "auriga": {
+   "origin": "Auriga shows a man driving a chariot pulled by horses. In Greek myth, one story says he is Erichthonius, the king of Athens who first made the chariot. The charioteer is said to carry the goat Capella on his shoulder and the kids (the Haedi) in his arm. The big pentagon shape in the winter night sky is easy to notice.",
+   "tip": "In winter, find yellow first-magnitude Capella first, near overhead. The big pentagon formed by Capella and the other stars is Auriga.",
+   "stars": {
+    "capella": "The name is Latin for 'little she-goat.' It is a multiple star system made of two pairs of binaries, and it is the sixth brightest star in the night sky.",
+    "elnath": "The name means 'the one butting with horns' in Arabic. It is a star shared by Auriga and Taurus.",
+    "menkalinan": "The name means 'the shoulder of the rein-holder' in Arabic. It is an eclipsing binary whose two stars cover each other, changing its brightness.",
+    "almaaz": "The name means 'the goat' in Arabic. It is an eclipsing binary famous for dimming about every 27 years.",
+    "haedus": "The name is Latin for 'the kids.' It is one of the kids the charioteer holds in his arm.",
+    "mahasim": "A white star that forms part of the Auriga constellation lines. It is about 170 light-years from Earth.",
+    "hassaleh": "An orange bright giant that forms part of the Auriga constellation lines. It is about 490 light-years from Earth.",
+    "saclateni": "An orange bright giant that forms part of the Auriga constellation lines. It is about 790 light-years from Earth.",
+    "delta-aur": "An orange giant that forms part of the Auriga constellation lines. It is about 130 light-years from Earth."
+   }
+  },
+  "telescopium": {
+   "origin": "Telescopium was created by the 18th-century French astronomer Lacaille and represents the telescope used to observe the heavens. It is one of the 14 constellations Lacaille newly defined in the southern sky, named after scientific instruments. It has no myth and is made of a few faint stars.",
+   "tip": "From Korea it barely hangs just above the southern horizon, so it is very hard to observe. Try on a summer night from a place with a completely open southern view.",
+   "stars": {
+    "alpha-tel": "A blue-white subgiant that forms part of the Telescopium constellation lines. It is about 280 light-years from Earth.",
+    "zeta-tel": "A yellow giant that forms part of the Telescopium constellation lines. It is about 130 light-years from Earth.",
+    "epsilon-tel": "A yellow giant that forms part of the Telescopium constellation lines. It is about 420 light-years from Earth."
+   }
+  },
+  "coma-berenices": {
+   "origin": "Coma Berenices comes from the story of Berenice II, queen of Egypt. While her husband Ptolemy III was away at war, she offered her beautiful hair at a temple, praying for his safe return. When the hair disappeared, the court astronomer Conon is said to have explained that it had become stars in the sky. In the 16th century, Tycho Brahe and others treated it as its own constellation. The scattered cluster of stars looks like hair blowing in the wind.",
+   "tip": "In spring, between Denebola in Leo and Arcturus in Boötes, look for a hazy cluster of stars that looks like hair blowing loose. In a dark sky it is visible even to the naked eye.",
+   "stars": {
+    "diadem": "The name means 'headband, crown.' It is the brightest star in Coma Berenices.",
+    "beta-com": "A yellow star that forms part of the Coma Berenices constellation lines. It is about 30 light-years from Earth.",
+    "gamma-com": "An orange giant that forms part of the Coma Berenices constellation lines. It is about 170 light-years from Earth."
+   }
+  },
+  "bootes": {
+   "origin": "Boötes shows a man chasing the bear (Ursa Major), or a farmer driving oxen. Its leading star, Arcturus, means 'guardian of the bear' in Greek. In Greek myth, one story says he is Arcas, son of Zeus and Callisto, and another says he is Icarius, who spread the cultivation of grapes. Following the handle of the Big Dipper leads you to Arcturus.",
+   "tip": "Follow the curve of the Big Dipper's handle and you reach the orange first-magnitude star Arcturus. The kite shape ending at Arcturus is Boötes.",
+   "stars": {
+    "arcturus": "The name means 'guardian of the bear' in Greek. It is the brightest star in the northern sky and the fourth brightest in the whole night sky.",
+    "izar": "The name means 'the girdle' in Arabic. It is a double star in which an orange star and a blue star pair up, and it is also called Pulcherrima, meaning 'the most beautiful.'",
+    "xuange": "Named after the Chinese asterism 'Xuange' (玄戈).",
+    "muphrid": "A yellow subgiant that forms part of the Bootes constellation lines. It is about 37 light-years from Earth.",
+    "seginus": "A white giant that forms part of the Bootes constellation lines. It is about 87 light-years from Earth.",
+    "delta-boo": "A yellow giant that forms part of the Bootes constellation lines. It is about 120 light-years from Earth.",
+    "nekkar": "A yellow giant that forms part of the Bootes constellation lines. It is about 230 light-years from Earth.",
+    "rho-boo": "An orange giant that forms part of the Bootes constellation lines. It is about 160 light-years from Earth.",
+    "zeta-boo": "A white subgiant that forms part of the Bootes constellation lines. It is about 180 light-years from Earth.",
+    "theta-boo": "A yellow-white star that forms part of the Bootes constellation lines. It is about 47 light-years from Earth.",
+    "tau-boo": "A yellow-white star that forms part of the Bootes constellation lines. It is about 51 light-years from Earth.",
+    "kappa2-boo": "A white subgiant that forms part of the Bootes constellation lines. It is about 160 light-years from Earth."
+   }
+  },
+  "hydrus": {
+   "origin": "Hydrus was created by Plancius in the late 16th century, based on the observations of Dutch navigators. Unlike the similarly named Hydra, it represents a small water snake in the southern sky. It lies close to the south celestial pole, so in the Southern Hemisphere its winding shape is easy to see.",
+   "tip": "It cannot be seen from Korea. It lies close to the south celestial pole, so you can find it in the Southern Hemisphere.",
+   "stars": {
+    "beta-hyi": "A yellow subgiant that forms part of the Hydrus constellation lines. It is about 24 light-years from Earth.",
+    "alpha-hyi": "A yellow-white star that forms part of the Hydrus constellation lines. It is about 72 light-years from Earth.",
+    "gamma-hyi": "A red giant that forms part of the Hydrus constellation lines. It is about 210 light-years from Earth.",
+    "delta-hyi": "A white star that forms part of the Hydrus constellation lines. It is about 140 light-years from Earth.",
+    "epsilon-hyi": "A blue-white giant that forms part of the Hydrus constellation lines. It is about 150 light-years from Earth.",
+    "eta2-hyi": "A yellow giant that forms part of the Hydrus constellation lines. It is about 220 light-years from Earth."
+   }
+  },
+  "hydra": {
+   "origin": "Hydra takes up the largest area of the sky of all 88 constellations. It represents the many-headed monster Hydra that Heracles defeated as one of his twelve labors in Greek myth. In the sky it begins below Cancer and stretches out long, carrying Corvus and Crater on its back.",
+   "tip": "It stretches very long across the southern sky in spring. Southwest of Regulus in Leo, find the orange Alphard, which has no bright stars around it, and use it as your guide.",
+   "stars": {
+    "alphard": "The name means 'the solitary one' in Arabic. It was named so because there are almost no bright stars around it.",
+    "ashlesha": "Named after the traditional Indian star group (nakshatra) 'Ashlesha.'",
+    "zhang": "Named after the Chinese asterism 'Zhangsu' (張宿).",
+    "gamma-hya": "A yellow giant that forms part of the Hydra constellation lines. It is about 130 light-years from Earth.",
+    "zeta-hya": "A yellow giant that forms part of the Hydra constellation lines. It is about 170 light-years from Earth.",
+    "nu-hya": "An orange giant that forms part of the Hydra constellation lines. It is about 140 light-years from Earth.",
+    "pi-hya": "An orange giant that forms part of the Hydra constellation lines. It is about 100 light-years from Earth.",
+    "xi-hya": "A yellow giant that forms part of the Hydra constellation lines. It is about 130 light-years from Earth.",
+    "lambda-hya": "An orange giant that forms part of the Hydra constellation lines. It is about 110 light-years from Earth.",
+    "mu-hya": "An orange giant that forms part of the Hydra constellation lines. It is about 230 light-years from Earth.",
+    "theta-hya": "A blue-white star that forms part of the Hydra constellation lines. It is about 110 light-years from Earth.",
+    "ukdah": "An orange giant that forms part of the Hydra constellation lines. It is about 260 light-years from Earth.",
+    "delta-hya": "A white star that forms part of the Hydra constellation lines. It is about 160 light-years from Earth.",
+    "beta-hya": "A white star that forms part of the Hydra constellation lines. It is about 310 light-years from Earth.",
+    "eta-hya": "A blue-white star that forms part of the Hydra constellation lines. It is about 590 light-years from Earth.",
+    "rho-hya": "A white star that forms part of the Hydra constellation lines. It is about 350 light-years from Earth.",
+    "58-hya": "An orange giant that forms part of the Hydra constellation lines. It is about 330 light-years from Earth.",
+    "minchir": "An orange giant that forms part of the Hydra constellation lines. It is about 370 light-years from Earth."
+   }
+  },
+  "scutum": {
+   "origin": "Scutum was created in 1684 by the Polish astronomer Johannes Hevelius to honor the victory of the Polish king John III Sobieski. The king is famous for defeating the Ottoman army at the Battle of Vienna in 1683. Its original name was 'Sobieski's Shield.' It is among the smaller of the 88 constellations and lies in the middle of the Milky Way.",
+   "tip": "A small, faint constellation in the summer Milky Way, below Aquila. On a clear, dark night, look for a small diamond shape within the Milky Way.",
+   "stars": {
+    "alpha-sct": "An orange giant that forms part of the Scutum constellation lines. It is about 200 light-years from Earth.",
+    "beta-sct": "A yellow bright giant that forms part of the Scutum constellation lines. It is about 920 light-years from Earth.",
+    "gamma-sct": "A white subgiant that forms part of the Scutum constellation lines. It is about 320 light-years from Earth.",
+    "delta-sct": "A yellow-white giant that forms part of the Scutum constellation lines. It is about 200 light-years from Earth."
+   }
+  },
+  "serpens": {
+   "origin": "Serpens is the snake held in both hands by Ophiuchus. It is the only one of the 88 constellations split into two parts, a head and a tail. The two parts lie apart with Ophiuchus between them but are seen as a single snake. Ophiuchus is Asclepius, god of medicine, and the snake symbolizes healing.",
+   "tip": "The head lies to the right (west) of Ophiuchus and the tail to the left (east). Find Ophiuchus first in the southern sky in summer, and you can find the snake on both sides.",
+   "stars": {
+    "sabik": "The name means 'the preceding one' in Arabic. It is a binary system made of two stars.",
+    "unukalhai": "The name means 'the neck of the snake' in Arabic. It is the brightest star in the head of Serpens.",
+    "yed-prior": "The name comes from Arabic and means 'the front hand.' It corresponds to the left hand of Ophiuchus.",
+    "eta-ser": "An orange giant that forms part of the Serpens constellation lines. It is about 60 light-years from Earth.",
+    "nu-oph": "An orange giant that forms part of the Serpens constellation lines. It is about 150 light-years from Earth.",
+    "xi-ser": "A yellow-white giant that forms part of the Serpens constellation lines. It is about 110 light-years from Earth.",
+    "beta-ser": "A white star that forms part of the Serpens constellation lines. It is about 160 light-years from Earth.",
+    "epsilon-ser": "A white star that forms part of the Serpens constellation lines. It is about 70 light-years from Earth.",
+    "delta-ser": "A yellow-white subgiant that forms part of the Serpens constellation lines. It is about 230 light-years from Earth.",
+    "gamma-ser": "A yellow-white star that forms part of the Serpens constellation lines. It is about 37 light-years from Earth.",
+    "gudja": "A red giant that forms part of the Serpens constellation lines. It is about 380 light-years from Earth.",
+    "iota-ser": "A white star that forms part of the Serpens constellation lines. It is about 190 light-years from Earth.",
+    "alya": "A white star that forms part of the Serpens constellation lines. It is about 150 light-years from Earth.",
+    "tau-oph": "A yellow-white star that forms part of the Serpens constellation lines. It is about 170 light-years from Earth."
+   }
+  },
+  "ophiuchus": {
+   "origin": "Ophiuchus shows Asclepius, god of medicine, holding a snake in both hands. Asclepius was so skilled a physician that he could even bring the dead back to life; Zeus, who disapproved, struck him down with a thunderbolt, and a grieving Apollo is said to have raised him to the sky. The Sun passes through it from late November to mid-December, so it is also called the '13th zodiac constellation.'",
+   "tip": "In summer, look in the southern sky for a big pentagon (house shape) above Scorpius. It lies between Hercules and Scorpius, and Serpens wraps around it on both sides.",
+   "stars": {
+    "rasalhague": "The name means 'the head of the snake charger' in Arabic. It is the brightest star in Ophiuchus.",
+    "sabik": "The name means 'the preceding one' in Arabic. It is a binary system made of two stars.",
+    "yed-prior": "The name comes from Arabic and means 'the front hand.' It corresponds to the left hand of Ophiuchus.",
+    "cebalrai": "The name means 'the shepherd's dog' in Arabic.",
+    "marfik": "The name means 'the elbow' in Arabic.",
+    "zeta-oph": "A blue-white star that forms part of the Ophiuchus constellation lines. It is about 370 light-years from Earth.",
+    "kappa-oph": "An orange giant that forms part of the Ophiuchus constellation lines. It is about 91 light-years from Earth.",
+    "yed-posterior": "A yellow giant that forms part of the Ophiuchus constellation lines. It is about 110 light-years from Earth.",
+    "theta-oph": "A blue-white subgiant that forms part of the Ophiuchus constellation lines. It is about 440 light-years from Earth.",
+    "nu-oph": "An orange giant that forms part of the Ophiuchus constellation lines. It is about 150 light-years from Earth.",
+    "gamma-oph": "A white star that forms part of the Ophiuchus constellation lines. It is about 100 light-years from Earth.",
+    "chi-oph": "A blue-white star that forms part of the Ophiuchus constellation lines. It is about 530 light-years from Earth.",
+    "45-oph": "A yellow-white giant that forms part of the Ophiuchus constellation lines. It is about 110 light-years from Earth.",
+    "phi-oph": "A yellow giant that forms part of the Ophiuchus constellation lines. It is about 240 light-years from Earth.",
+    "psi-oph": "An orange giant that forms part of the Ophiuchus constellation lines. It is about 200 light-years from Earth.",
+    "rho-oph": "A blue-white star that forms part of the Ophiuchus constellation lines. It is about 360 light-years from Earth."
+   }
+  },
+  "phoenix": {
+   "origin": "Phoenix was created by the Dutch cartographer Petrus Plancius in the late 16th century, based on southern-sky observations by the navigators Keyser and de Houtman. It became known when it appeared in Johann Bayer's star atlas in 1603. It represents the phoenix, the legendary bird that burns itself to ashes when its time comes to die and is reborn. It depicts the Western phoenix, but in Korean it is called the 'Bonghwang' constellation.",
+   "tip": "From Korea it hangs only very low above the southern horizon, so it is hard to observe. In late autumn, from a place with a completely open southern view, try to find its leading star, Ankaa.",
+   "stars": {
+    "ankaa": "The name means 'the phoenix' in Arabic. It is the brightest star in Phoenix.",
+    "beta-phe": "A yellow giant that forms part of the Phoenix constellation lines.",
+    "gamma-phe": "An orange giant that forms part of the Phoenix constellation lines. It is about 230 light-years from Earth.",
+    "epsilon-phe": "An orange giant that forms part of the Phoenix constellation lines. It is about 140 light-years from Earth.",
+    "delta-phe": "An orange giant that forms part of the Phoenix constellation lines. It is about 140 light-years from Earth.",
+    "wurren": "A blue-white star that forms part of the Phoenix constellation lines. It is about 300 light-years from Earth."
+   }
+  },
+  "corona-borealis": {
+   "origin": "Corona Borealis is the crown of Ariadne, princess of Crete, in Greek myth. Ariadne helped the hero Theseus defeat the Minotaur in the labyrinth but was left alone on the island of Naxos. There, Dionysus, god of wine, married her and gave her a crown, which is said to have been raised to the sky as a constellation. Its stars form a round semicircle, so the crown shape is easy to recognize. It is an ancient constellation, already among the 48 listed by Ptolemy in the 2nd century.",
+   "tip": "In summer, look near overhead between Arcturus in Boötes and Hercules. The stars lined up in a semicircle around Alphecca are your guide.",
+   "stars": {
+    "alphecca": "The name means 'the broken dish' in Arabic. It is also called Gemma, Latin for 'jewel.' It is an eclipsing binary whose two stars cover each other, so its brightness changes slightly.",
+    "nusakan": "A yellow-white star that forms part of the Corona Borealis constellation lines. It is about 110 light-years from Earth.",
+    "gamma-crb": "A white star that forms part of the Corona Borealis constellation lines. It is about 150 light-years from Earth.",
+    "theta-crb": "A blue-white star that forms part of the Corona Borealis constellation lines. It is about 380 light-years from Earth.",
+    "epsilon-crb": "An orange giant that forms part of the Corona Borealis constellation lines. It is about 220 light-years from Earth.",
+    "delta-crb": "A yellow giant that forms part of the Corona Borealis constellation lines. It is about 170 light-years from Earth.",
+    "iota-crb": "A white star that forms part of the Corona Borealis constellation lines. It is about 310 light-years from Earth."
+   }
+  },
+  "columba": {
+   "origin": "Columba was created by Plancius in the late 16th century and represents the dove that Noah sent out after the Great Flood in the Bible. It is said that the dove returned carrying an olive branch, announcing that the waters had receded. It is also linked to the Greek myth of the dove the Argo sent out when finding its way. It is a small constellation south of Canis Major.",
+   "tip": "Look low in the southern sky in winter, below Sirius in Canis Major. Its leading star, Phact, is your guide. It is low, so a place with an open southern view is best.",
+   "stars": {
+    "phact": "The name comes from an Arabic word meaning 'ring dove.' It is the brightest star in Columba.",
+    "wazn": "The name means 'weight' in Arabic.",
+    "delta-col": "A yellow bright giant that forms part of the Columba constellation lines. It is about 230 light-years from Earth.",
+    "epsilon-col": "An orange giant that forms part of the Columba constellation lines. It is about 260 light-years from Earth.",
+    "eta-col": "An orange giant that forms part of the Columba constellation lines. It is about 470 light-years from Earth."
+   }
+  },
+  "canes-venatici": {
+   "origin": "Canes Venatici was created in the 17th century by the Polish astronomer Johannes Hevelius. It shows Boötes driving two hunting dogs, Asterion and Chara, on a leash toward Ursa Major. Its leading star, Cor Caroli, means 'Charles's Heart' and is said to have been named in honor of King Charles II of England. This constellation also contains bright galaxies, including the Whirlpool Galaxy (M51), and the globular cluster M3.",
+   "tip": "In spring, look near overhead between the end of the Big Dipper's handle and Boötes. Apart from Cor Caroli, its stars are faint, so you need a dark sky.",
+   "stars": {
+    "cor-caroli": "The name is Latin for 'Charles's heart.' It is said to be named in honor of King Charles II of England. To the naked eye it looks like one star, but through a small telescope it splits into a double star.",
+    "chara": "The name means 'joy' in Greek. It represents one of the two dogs of Canes Venatici."
+   }
+  },
+  "lynx": {
+   "origin": "Lynx was created by Hevelius in the 17th century. It is made only of faint stars, and Hevelius is said to have remarked that you need the eyes of a lynx to make them out. It has no myth, and its few stars are joined in a zigzag between Ursa Major and Auriga.",
+   "tip": "In winter, look near overhead between Auriga and Ursa Major. Its stars are very faint, so you need a dark sky with little light pollution.",
+   "stars": {
+    "alpha-lyn": "A red giant that forms part of the Lynx constellation lines. It is about 200 light-years from Earth.",
+    "38-lyn": "A white star that forms part of the Lynx constellation lines. It is about 120 light-years from Earth.",
+    "hr3579": "A yellow-white star that forms part of the Lynx constellation lines. It is about 52 light-years from Earth.",
+    "alsciaukat": "An orange giant that forms part of the Lynx constellation lines. It is about 380 light-years from Earth.",
+    "15-lyn": "A yellow giant that forms part of the Lynx constellation lines. It is about 180 light-years from Earth.",
+    "2-lyn": "A white star that forms part of the Lynx constellation lines. It is about 160 light-years from Earth.",
+    "21-lyn": "A white star that forms part of the Lynx constellation lines. It is about 270 light-years from Earth."
+   }
+  },
+  "triangulum": {
+   "origin": "Triangulum is a small constellation known since ancient times, among the 48 constellations catalogued by Ptolemy in the 2nd century. The Greeks said the shape resembled the Greek letter delta (Δ) and called it 'Deltoton.' Another story sees it as resembling the delta at the mouth of the Nile. It lies next to Andromeda, and our neighboring galaxy, the Triangulum Galaxy (M33), is located here.",
+   "tip": "In autumn, look near overhead for a small triangle next to Andromeda. In a very dark sky, you can even see the neighboring galaxy M33 through binoculars.",
+   "stars": {
+    "mothallah": "The name means 'the triangle' in Arabic. It is the brightest star in Triangulum.",
+    "beta-tri": "A white giant that forms part of the Triangulum constellation lines. It is about 130 light-years from Earth.",
+    "gamma-tri": "A white star that forms part of the Triangulum constellation lines. It is about 110 light-years from Earth."
+   }
+  },
+  "cepheus": {
+   "origin": "Cepheus represents King Cepheus of Ethiopia in Greek myth. He was the husband of Queen Cassiopeia and the father of Princess Andromeda, who was about to be offered to a sea monster. In the sky it appears as a house-shaped pentagon with a pitched roof, near Cassiopeia. The star Delta Cephei varies in brightness regularly, and the name 'Cepheid variable,' a standard used to measure distances to stars, comes from this star.",
+   "tip": "Look for a house-shaped pentagon with a pitched roof right next to Cassiopeia. It lies near Polaris, so it can be seen all year round.",
+   "stars": {
+    "alderamin": "The name means 'the right arm' in Arabic. It marks Cepheus's right shoulder.",
+    "errai": "The name means 'the shepherd' in Arabic. A planet has been found around this star, and it is known as the star that will take over as the pole star in the far future.",
+    "alfirk": "The name means 'the flock' in Arabic. The name of the 'Beta Cephei variables,' stars whose brightness changes regularly, comes from this star.",
+    "mu-cep": "A very red supergiant that William Herschel called 'the Garnet Star.' It is one of the largest known stars in the Milky Way.",
+    "zeta-cep": "An orange supergiant that forms part of the Cepheus constellation lines. It is about 840 light-years from Earth.",
+    "eta-cep": "An orange subgiant that forms part of the Cepheus constellation lines. It is about 47 light-years from Earth.",
+    "iota-cep": "An orange giant that forms part of the Cepheus constellation lines. It is about 120 light-years from Earth.",
+    "delta-cep": "A yellow supergiant that forms part of the Cepheus constellation lines. It is about 870 light-years from Earth.",
+    "epsilon-cep": "A yellow-white subgiant that forms part of the Cepheus constellation lines. It is about 85 light-years from Earth.",
+    "theta-cep": "A white giant that forms part of the Cepheus constellation lines. It is about 140 light-years from Earth."
+   }
+  },
+  "centaurus": {
+   "origin": "Centaurus represents the centaur, a being with the upper body of a human and the body of a horse. In Greek myth, a widely known story says he is the wise teacher Chiron. The centaur is drawn spearing the beast in the neighboring constellation Lupus. Its leading star, Rigil Kentaurus (Alpha Centauri), is the nearest star system to the Solar System. The largest globular cluster visible to the naked eye, Omega Centauri, is also in this constellation.",
+   "tip": "From Korea only some of its upper stars hang near the southern horizon in spring. The brightest, Alpha Centauri (Rigil Kentaurus) and Hadar, cannot be seen from Korea, but in the Southern Hemisphere they are easy to find next to the Southern Cross.",
+   "stars": {
+    "rigil-kentaurus": "The name means 'the foot of the centaur' in Arabic. It belongs to Alpha Centauri, the nearest star system to the Solar System, and Proxima Centauri, the closest star of all, also orbits in this system.",
+    "hadar": "One of the two Pointer stars that point to the Southern Cross. Together with Alpha Centauri, it serves as a guide to finding the Southern Cross.",
+    "menkent": "The name comes from an Arabic phrase meaning 'the shoulder of the centaur.'",
+    "gamma-cen": "A white subgiant that forms part of the Centaurus constellation lines. It is about 130 light-years from Earth.",
+    "epsilon-cen": "A blue-white giant that forms part of the Centaurus constellation lines. It is about 430 light-years from Earth.",
+    "eta-cen": "A blue-white star that forms part of the Centaurus constellation lines. It is about 310 light-years from Earth.",
+    "zeta-cen": "A blue-white subgiant that forms part of the Centaurus constellation lines. It is about 380 light-years from Earth.",
+    "delta-cen": "A blue-white subgiant that forms part of the Centaurus constellation lines. It is about 410 light-years from Earth.",
+    "iota-cen": "A white star that forms part of the Centaurus constellation lines. It is about 59 light-years from Earth.",
+    "kappa-cen": "A blue-white subgiant that forms part of the Centaurus constellation lines. It is about 380 light-years from Earth.",
+    "nu-cen": "A blue-white subgiant that forms part of the Centaurus constellation lines. It is about 440 light-years from Earth.",
+    "mu-cen": "A blue-white subgiant that forms part of the Centaurus constellation lines. It is about 510 light-years from Earth.",
+    "pi-cen": "A blue-white star that forms part of the Centaurus constellation lines. It is about 360 light-years from Earth.",
+    "sigma-cen": "A blue-white star that forms part of the Centaurus constellation lines. It is about 410 light-years from Earth.",
+    "rho-cen": "A blue-white star that forms part of the Centaurus constellation lines. It is about 380 light-years from Earth.",
+    "omicron1-cen": "A yellow supergiant that forms part of the Centaurus constellation lines."
+   }
+  },
+  "horologium": {
+   "origin": "Horologium was created by the 18th-century French astronomer Nicolas Louis de Lacaille and represents a pendulum clock. Observing the southern sky from the Cape in South Africa, Lacaille created many constellations named after tools of science and technology. It has no myth and is made of a few faint stars stretched in a long line.",
+   "tip": "From Korea it is a very faint constellation that barely hangs above the southern horizon, so it is practically impossible to observe. In the Southern Hemisphere, look near Achernar in Eridanus.",
+   "stars": {
+    "alpha-hor": "An orange giant that forms part of the Horologium constellation lines. It is about 120 light-years from Earth.",
+    "beta-hor": "A white giant that forms part of the Horologium constellation lines. It is about 290 light-years from Earth.",
+    "mu-hor": "A yellow-white subgiant that forms part of the Horologium constellation lines. It is about 140 light-years from Earth.",
+    "zeta-hor": "A yellow-white subgiant that forms part of the Horologium constellation lines. It is about 160 light-years from Earth.",
+    "eta-hor": "A white star that forms part of the Horologium constellation lines. It is about 150 light-years from Earth.",
+    "iota-hor": "A yellow subgiant that forms part of the Horologium constellation lines. It is about 56 light-years from Earth."
+   }
+  },
+  "andromeda": {
+   "origin": "Andromeda represents the princess Andromeda of Greek myth. When her mother Cassiopeia boasted that her daughter was more beautiful than the sea nymphs, Poseidon sent a sea monster to ravage the kingdom. Andromeda was chained to a rock as an offering to the monster, and the hero Perseus rescued her; the two are said to have married. This constellation contains the Andromeda Galaxy (M31), one of the most distant objects visible to the naked eye, about 2.5 million light-years from Earth.",
+   "tip": "In autumn, look near overhead for the line of stars extending from Alpheratz, one corner of the Great Square of Pegasus. On a clear, dark night you can see the Andromeda Galaxy (M31) as a faint smudge with the naked eye.",
+   "stars": {
+    "alpheratz": "The name means 'the horse's navel' in Arabic. It was originally shared by Pegasus and Andromeda, and is one corner of the Great Square of Pegasus in autumn.",
+    "mirach": "The name comes from Arabic. Linking two stars upward from this star leads you to the Andromeda Galaxy (M31).",
+    "almach": "A beautiful multiple star system in which an orange star and a blue star appear side by side through a small telescope. It marks Andromeda's foot.",
+    "delta-and": "An orange giant that forms part of the Andromeda constellation lines. It is about 110 light-years from Earth.",
+    "nembus": "An orange giant that forms part of the Andromeda constellation lines. It is about 180 light-years from Earth.",
+    "omicron-and": "A blue-white star that forms part of the Andromeda constellation lines. It is about 690 light-years from Earth.",
+    "lambda-and": "A yellow giant that forms part of the Andromeda constellation lines. It is about 86 light-years from Earth.",
+    "mu-and": "A white star that forms part of the Andromeda constellation lines. It is about 130 light-years from Earth.",
+    "zeta-and": "An orange bright giant that forms part of the Andromeda constellation lines. It is about 190 light-years from Earth.",
+    "kappa-and": "A blue-white subgiant that forms part of the Andromeda constellation lines. It is about 170 light-years from Earth.",
+    "phi-and": "A blue-white giant that forms part of the Andromeda constellation lines. It is about 720 light-years from Earth.",
+    "iota-and": "A blue-white star that forms part of the Andromeda constellation lines. It is about 500 light-years from Earth.",
+    "pi-and": "A blue-white star that forms part of the Andromeda constellation lines. It is about 600 light-years from Earth.",
+    "epsilon-and": "A yellow giant that forms part of the Andromeda constellation lines. It is about 160 light-years from Earth.",
+    "eta-and": "A yellow giant that forms part of the Andromeda constellation lines. It is about 230 light-years from Earth.",
+    "nu-and": "A blue-white star that forms part of the Andromeda constellation lines. It is about 620 light-years from Earth.",
+    "psi-and": "A yellow supergiant that forms part of the Andromeda constellation lines. It is about 1,000 light-years from Earth."
+   }
+  },
+  "eridanus": {
+   "origin": "Eridanus represents a river that winds long across the sky. Several stories are told, and the most famous says it is the river into which Phaethon fell after being struck by Zeus's thunderbolt while driving the sun's chariot. It begins near Rigel in Orion and runs to Achernar at its southern end, whose name means 'the end of the river.' It is the sixth largest of the 88 constellations.",
+   "tip": "In winter, start near Rigel in Orion and follow the winding line of stars toward the south. From Korea, Achernar at the southern end is out of sight, so only the upper part can be seen.",
+   "stars": {
+    "achernar": "The name means 'the end of the river' in Arabic. It lies at the far southern end of the river Eridanus. It spins so fast that it is flattened rather than a round ball.",
+    "cursa": "The name means 'the footstool' in Arabic. It corresponds to the footstool on which Orion rests his foot.",
+    "acamar": "The name comes from a phrase meaning 'the end of the river.' In the past this star was regarded as the very end of the river Eridanus.",
+    "ran": "A nearby neighbor about 10.5 light-years from Earth. It resembles the young Sun, and a planet has been discovered around it.",
+    "82-g-eri": "A yellow star forming part of the Eridanus constellation lines. It is about 19.7 light-years from Earth.",
+    "zaurak": "A red giant that forms part of the Eridanus constellation lines. It is about 200 light-years from Earth.",
+    "rana": "An orange subgiant that forms part of the Eridanus constellation lines. It is about 29 light-years from Earth.",
+    "upsilon4-eri": "A blue-white star that forms part of the Eridanus constellation lines. It is about 180 light-years from Earth.",
+    "phi-eri": "A blue-white subgiant that forms part of the Eridanus constellation lines. It is about 150 light-years from Earth.",
+    "chi-eri": "A yellow subgiant that forms part of the Eridanus constellation lines. It is about 58 light-years from Earth.",
+    "tau4-eri": "A red giant that forms part of the Eridanus constellation lines. It is about 300 light-years from Earth.",
+    "theemin": "A yellow giant that forms part of the Eridanus constellation lines. It is about 210 light-years from Earth.",
+    "azha": "An orange giant that forms part of the Eridanus constellation lines. It is about 140 light-years from Earth.",
+    "nu-eri": "A blue-white giant that forms part of the Eridanus constellation lines. It is about 680 light-years from Earth.",
+    "beemim": "An orange giant that forms part of the Eridanus constellation lines. It is about 300 light-years from Earth.",
+    "mu-eri": "A blue-white subgiant that forms part of the Eridanus constellation lines. It is about 520 light-years from Earth.",
+    "beid": "A yellow-white giant that forms part of the Eridanus constellation lines. It is about 120 light-years from Earth.",
+    "tau3-eri": "A white star that forms part of the Eridanus constellation lines. It is about 89 light-years from Earth.",
+    "iota-eri": "An orange giant that forms part of the Eridanus constellation lines. It is about 150 light-years from Earth.",
+    "hr1195": "A yellow giant that forms part of the Eridanus constellation lines. It is about 210 light-years from Earth.",
+    "tau6-eri": "A yellow-white star that forms part of the Eridanus constellation lines. It is about 57 light-years from Earth.",
+    "kappa-eri": "A blue-white subgiant that forms part of the Eridanus constellation lines. It is about 510 light-years from Earth.",
+    "pi-cet": "A blue-white subgiant that forms part of the Eridanus constellation lines. It is about 390 light-years from Earth.",
+    "tau5-eri": "A blue-white star that forms part of the Eridanus constellation lines. It is about 290 light-years from Earth.",
+    "pi-eri": "A red giant that forms part of the Eridanus constellation lines. It is about 480 light-years from Earth.",
+    "tau1-eri": "A yellow-white star that forms part of the Eridanus constellation lines. It is about 46 light-years from Earth.",
+    "hr1106": "An orange giant that forms part of the Eridanus constellation lines. It is about 230 light-years from Earth."
+   }
+  },
+  "monoceros": {
+   "origin": "Monoceros represents the unicorn, the legendary animal with a single horn on its forehead. It is a relatively new constellation made in the early 17th century and has no myth. It lies in the Milky Way between Orion, Canis Major and Canis Minor and has almost no bright stars. Instead, it has sights such as the rose-shaped Rosette Nebula and the Christmas Tree Cluster.",
+   "tip": "In winter, look for faint stars in the Milky Way between Orion, Canis Major and Canis Minor. It has no bright stars, so a clear, dark night is best.",
+   "stars": {
+    "beta-mon": "A blue-white star that forms part of the Monoceros constellation lines. It is about 680 light-years from Earth.",
+    "alpha-mon": "An orange giant that forms part of the Monoceros constellation lines. It is about 150 light-years from Earth.",
+    "gamma-mon": "An orange giant that forms part of the Monoceros constellation lines. It is about 500 light-years from Earth.",
+    "delta-mon": "A white star that forms part of the Monoceros constellation lines. It is about 380 light-years from Earth.",
+    "zeta-mon": "A yellow supergiant that forms part of the Monoceros constellation lines. It is about 1,060 light-years from Earth.",
+    "epsilon-mon": "A white subgiant that forms part of the Monoceros constellation lines. It is about 120 light-years from Earth.",
+    "13-mon": "A white supergiant that forms part of the Monoceros constellation lines.",
+    "18-mon": "An orange giant that forms part of the Monoceros constellation lines. It is about 370 light-years from Earth.",
+    "15-mon": "A blue-white star that forms part of the Monoceros constellation lines. It is about 920 light-years from Earth."
+   }
+  },
+  "carina": {
+   "origin": "Carina was originally part of Argo Navis, the constellation representing the great ship Argo that the Greek hero Jason sailed. Argo Navis was so large that the 18th-century French astronomer Lacaille divided it into Carina, Vela and Puppis, and the carina is the keel, the backbone at the ship's bottom. Its leading star, Canopus, is the second brightest in the night sky after Sirius. The constellation also holds the huge Carina Nebula and Eta Carinae, a star expected to become a supernova someday.",
+   "tip": "It cannot be seen from mainland Korea. From the southern tip, such as Jeju Island, Canopus can sometimes be seen very low near the southern horizon.",
+   "stars": {
+    "canopus": "The second brightest star in the night sky after Sirius. The name is said to come from the helmsman of King Menelaus's ship in Greek myth. Spacecraft also use it as a reference star for orientation.",
+    "miaplacidus": "The name is known to combine the Arabic for 'water' and the Latin for 'calm,' meaning 'calm water.'",
+    "regor": "The name is the Apollo astronaut Roger Chaffee's first name, Roger, read backwards. It is a binary system made of a very hot Wolf–Rayet star and a blue star.",
+    "avior": "The name was newly given in the 20th century when a list of navigation stars was made. It is one of the stars forming the 'False Cross,' together with Delta and Kappa Velorum and Iota Carinae.",
+    "alsephina": "The name comes from an Arabic phrase meaning 'the little ship.'",
+    "aspidiske": "The name means 'little shield' in Greek. Together with Epsilon Carinae and Delta and Kappa Velorum, it forms a shape resembling the Southern Cross called the 'False Cross.'",
+    "theta-car": "A blue-white star that forms part of the Carina constellation lines. It is about 460 light-years from Earth.",
+    "nu-pup": "A blue-white giant that forms part of the Carina constellation lines. It is about 370 light-years from Earth.",
+    "omega-car": "A blue-white giant that forms part of the Carina constellation lines. It is about 340 light-years from Earth.",
+    "hr4140": "A blue-white star that forms part of the Carina constellation lines. It is about 480 light-years from Earth.",
+    "hr4050": "An orange bright giant that forms part of the Carina constellation lines. It is about 660 light-years from Earth.",
+    "chi-car": "A blue-white subgiant that forms part of the Carina constellation lines. It is about 450 light-years from Earth.",
+    "hr4257": "An orange giant that forms part of the Carina constellation lines. It is about 95 light-years from Earth.",
+    "hr4337": "A yellow supergiant that forms part of the Carina constellation lines.",
+    "hr4352": "A white supergiant that forms part of the Carina constellation lines.",
+    "hr4325": "A yellow giant that forms part of the Carina constellation lines. It is about 400 light-years from Earth.",
+    "hr4338": "A blue-white supergiant that forms part of the Carina constellation lines."
+   }
+  },
+  "draco": {
+   "origin": "A widely known story says Draco represents the dragon Ladon, who guarded the golden apples in Greek myth. Heracles defeated this dragon as one of his twelve labors and obtained the apples. Draco winds its long body around Polaris. The star Thuban, which served as the pole star about 4,500 years ago, when the pyramids were being built in Egypt, is in this constellation.",
+   "tip": "A long constellation that wraps around Polaris. Find its head near the trapezoid of stars next to Hercules in summer, and follow its body between the Big Dipper and Ursa Minor.",
+   "stars": {
+    "eltanin": "The name means 'the great serpent' in Arabic. It is the brightest star in the dragon's head, and while observing it in the 18th century, astronomers discovered the aberration of light.",
+    "rastaban": "The name means 'the head of the serpent' in Arabic. It is one of the stars forming the dragon's head.",
+    "thuban": "The name means 'the great serpent' in Arabic. About 5,000 years ago it was the pole star. Because of precession, the slow wobble of Earth's axis, the pole star changes from era to era.",
+    "athebyne": "A yellow giant that forms part of the Draco constellation lines. It is about 92 light-years from Earth.",
+    "altais": "A yellow giant that forms part of the Draco constellation lines. It is about 97 light-years from Earth.",
+    "aldhibah": "A blue-white giant that forms part of the Draco constellation lines. It is about 330 light-years from Earth.",
+    "edasich": "An orange giant that forms part of the Draco constellation lines. It is about 100 light-years from Earth.",
+    "chi-dra": "A yellow-white star that forms part of the Draco constellation lines. It is about 26 light-years from Earth.",
+    "grumium": "An orange giant that forms part of the Draco constellation lines. It is about 110 light-years from Earth.",
+    "giausar": "A red giant that forms part of the Draco constellation lines. It is about 330 light-years from Earth.",
+    "epsilon-dra": "A yellow giant that forms part of the Draco constellation lines. It is about 150 light-years from Earth.",
+    "kappa-dra": "A blue-white giant that forms part of the Draco constellation lines. It is about 490 light-years from Earth.",
+    "theta-dra": "A yellow-white subgiant that forms part of the Draco constellation lines. It is about 69 light-years from Earth.",
+    "phi-dra": "A white star that forms part of the Draco constellation lines. It is about 300 light-years from Earth.",
+    "nu2-dra": "A white star that forms part of the Draco constellation lines. It is about 99 light-years from Earth."
+   }
+  },
+  "sextans": {
+   "origin": "Sextans was created in the 17th century by the Polish astronomer Johannes Hevelius and represents the sextant, an instrument for measuring the height of celestial objects. Hevelius observed the stars with large instruments he built himself, but a fire in 1679 nearly destroyed his observatory and instruments. It is said that he left the name in the sky to remember this event. It is made of a few faint stars below Regulus in Leo.",
+   "tip": "In spring, look for a few faint stars below Regulus in Leo. It is a very faint constellation, so you need a dark sky.",
+   "stars": {
+    "alpha-sex": "A white giant that forms part of the Sextans constellation lines. It is about 280 light-years from Earth.",
+    "gamma-sex": "A white star that forms part of the Sextans constellation lines. It is about 280 light-years from Earth.",
+    "beta-sex": "A blue-white star that forms part of the Sextans constellation lines. It is about 400 light-years from Earth.",
+    "delta-sex": "A blue-white star that forms part of the Sextans constellation lines. It is about 320 light-years from Earth."
+   }
+  },
+  "lupus": {
+   "origin": "Lupus has been known since ancient Greek times and represents the beast that the Centaur holds impaled on a spear. It was originally called simply 'the beast,' not a specific animal, and was later regarded as a wolf. In the sky it lies between Centaurus and Scorpius, and the Milky Way passes through it.",
+   "tip": "From Korea it hangs low near the southern horizon in spring, so it is hard to observe. Try from a place with a completely open southern view.",
+   "stars": {
+    "alpha-lup": "A blue-white giant that forms part of the Lupus constellation lines. It is about 460 light-years from Earth.",
+    "beta-lup": "A blue-white giant that forms part of the Lupus constellation lines. It is about 380 light-years from Earth.",
+    "gamma-lup": "A blue-white subgiant that forms part of the Lupus constellation lines. It is about 420 light-years from Earth.",
+    "delta-lup": "A blue-white subgiant that forms part of the Lupus constellation lines. It is about 880 light-years from Earth.",
+    "epsilon-lup": "A blue-white subgiant that forms part of the Lupus constellation lines. It is about 510 light-years from Earth.",
+    "zeta-lup": "A yellow giant that forms part of the Lupus constellation lines. It is about 120 light-years from Earth.",
+    "eta-lup": "A blue-white subgiant that forms part of the Lupus constellation lines. It is about 440 light-years from Earth.",
+    "phi1-lup": "An orange giant that forms part of the Lupus constellation lines. It is about 280 light-years from Earth.",
+    "chi-lup": "A blue-white giant that forms part of the Lupus constellation lines. It is about 200 light-years from Earth.",
+    "theta-lup": "A blue-white star that forms part of the Lupus constellation lines. It is about 410 light-years from Earth.",
+    "mu-lup": "A blue-white star that forms part of the Lupus constellation lines. It is about 340 light-years from Earth.",
+    "psi1-lup": "A yellow giant that forms part of the Lupus constellation lines. It is about 220 light-years from Earth."
+   }
+  },
+  "indus": {
+   "origin": "Indus was created by the Dutch cartographer Plancius in the late 16th century, based on southern-sky observations by the navigators Keyser and de Houtman, and appeared in Johann Bayer's star atlas in 1603. It represents the native people whom Europeans met while sailing the southern seas and new lands. It lies close to the south celestial pole and has no myth.",
+   "tip": "From Korea it barely grazes the southern horizon and is practically impossible to see. In the Southern Hemisphere, look near Pavo and Grus.",
+   "stars": {
+    "alpha-ind": "An orange giant that forms part of the Indus constellation lines. It is about 98 light-years from Earth.",
+    "beta-ind": "An orange giant that forms part of the Indus constellation lines. It is about 610 light-years from Earth.",
+    "theta-ind": "A white star that forms part of the Indus constellation lines. It is about 99 light-years from Earth.",
+    "delta-ind": "A yellow-white subgiant that forms part of the Indus constellation lines. It is about 190 light-years from Earth.",
+    "eta-ind": "A white star that forms part of the Indus constellation lines. It is about 79 light-years from Earth."
+   }
+  },
+  "canis-minor": {
+   "origin": "Canis Minor is the small hunting dog that follows the hunter Orion. Several stories are told, so nothing is certain. Its leading star, Procyon, forms a big winter triangle (the Winter Triangle) with Sirius in Canis Major and Betelgeuse in Orion. With only two stars, its shape is simple, but it is easy to find in the winter night sky.",
+   "tip": "In winter, look to the upper left of Orion for the bright first-magnitude star Procyon. The short line between Procyon and nearby Gomeisa is Canis Minor.",
+   "stars": {
+    "procyon": "The name means 'before the dog' in Greek, because it rises before Sirius. It is a nearby star about 11.5 light-years from Earth, and it has a small white dwarf companion.",
+    "gomeisa": "A blue-white star that forms part of the Canis Minor constellation lines. It is about 160 light-years from Earth."
+   }
+  },
+  "leo-minor": {
+   "origin": "Leo Minor was created by Hevelius in the 17th century to fill the empty space between Ursa Major and Leo. It has no myth and represents a small lion cub above the great lion (Leo). It has almost no bright stars, so it is hard to find with the naked eye.",
+   "tip": "In spring, look near overhead between Ursa Major and Leo for faint stars. It has no bright stars, so you must look under a dark sky.",
+   "stars": {
+    "praecipua": "The name is Latin for 'the foremost.' It is the brightest star in Leo Minor.",
+    "beta-lmi": "A yellow giant that forms part of the Leo Minor constellation lines. It is about 150 light-years from Earth.",
+    "21-lmi": "A white star that forms part of the Leo Minor constellation lines. It is about 92 light-years from Earth.",
+    "10-lmi": "A yellow giant that forms part of the Leo Minor constellation lines. It is about 190 light-years from Earth.",
+    "30-lmi": "A yellow-white star that forms part of the Leo Minor constellation lines. It is about 230 light-years from Earth."
+   }
+  },
+  "vulpecula": {
+   "origin": "Vulpecula was created by Hevelius in the 17th century. Its original name was 'the Fox with the Goose,' but now only the fox remains. It lies in the Milky Way between Cygnus and Aquila, and its stars are faint. It holds the Dumbbell Nebula (M27), the first planetary nebula ever discovered.",
+   "tip": "In summer, look for faint stars in the Milky Way between Cygnus and Aquila. It is fun to look for the Dumbbell Nebula (M27) with binoculars.",
+   "stars": {
+    "anser": "The name is Latin for 'goose.' The constellation's original name was 'the Fox with the Goose.'",
+    "23-vul": "An orange giant that forms part of the Vulpecula constellation lines. It is about 340 light-years from Earth.",
+    "13-vul": "A blue-white giant that forms part of the Vulpecula constellation lines. It is about 330 light-years from Earth.",
+    "15-vul": "A white giant that forms part of the Vulpecula constellation lines. It is about 240 light-years from Earth.",
+    "1-vul": "A blue-white subgiant that forms part of the Vulpecula constellation lines. It is about 810 light-years from Earth."
+   }
+  },
+  "ara": {
+   "origin": "Ara represents the altar on which the Olympian gods swore oaths and made offerings before fighting the Titans, in Greek myth. Zeus, who won the battle, is said to have raised this altar to the sky. It lies in the southern sky below the tail of Scorpius and is among the 48 constellations catalogued by Ptolemy in the 2nd century.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, look below the tail of Scorpius.",
+   "stars": {
+    "beta-ara": "An orange bright giant that forms part of the Ara constellation lines. It is about 650 light-years from Earth.",
+    "alpha-ara": "A blue-white star that forms part of the Ara constellation lines. It is about 270 light-years from Earth.",
+    "zeta-ara": "An orange giant that forms part of the Ara constellation lines. It is about 490 light-years from Earth.",
+    "gamma-ara": "A blue-white supergiant that forms part of the Ara constellation lines. It is about 1,110 light-years from Earth.",
+    "delta-ara": "A blue-white star that forms part of the Ara constellation lines. It is about 200 light-years from Earth.",
+    "eta-ara": "An orange giant that forms part of the Ara constellation lines. It is about 300 light-years from Earth.",
+    "epsilon1-ara": "An orange giant that forms part of the Ara constellation lines. It is about 360 light-years from Earth."
+   }
+  },
+  "sculptor": {
+   "origin": "Sculptor was created by the 18th-century French astronomer Lacaille; its original name is 'the Sculptor's Workshop.' It is one of the 14 constellations Lacaille defined while observing from South Africa. This direction has little dust and few stars of our own galaxy, so it gives a good view out of the Milky Way, and many galaxies such as the Sculptor Galaxy (NGC 253) can be seen.",
+   "tip": "In autumn, look low in the southern sky below Cetus. Its stars are very faint, so you need a dark sky and an open southern view.",
+   "stars": {
+    "alpha-scl": "A blue-white giant that forms part of the Sculptor constellation lines. It is about 780 light-years from Earth.",
+    "beta-scl": "A blue-white subgiant that forms part of the Sculptor constellation lines. It is about 170 light-years from Earth.",
+    "gamma-scl": "An orange giant that forms part of the Sculptor constellation lines. It is about 180 light-years from Earth.",
+    "delta-scl": "A white star that forms part of the Sculptor constellation lines. It is about 140 light-years from Earth."
+   }
+  },
+  "caelum": {
+   "origin": "Caelum was created by the 18th-century French astronomer Lacaille and represents the engraver's chisel used to carve patterns into prints or metal. It is one of the 14 constellations Lacaille defined in the southern sky and has no myth. It is made of a few very faint stars and lies between Eridanus and Columba.",
+   "tip": "From Korea, a very faint star hangs near the southern horizon in winter, so it is hard to see with the naked eye.",
+   "stars": {
+    "alpha-cae": "A yellow-white star that forms part of the Caelum constellation lines. It is about 66 light-years from Earth.",
+    "gamma1-cae": "An orange giant that forms part of the Caelum constellation lines. It is about 180 light-years from Earth.",
+    "beta-cae": "A yellow-white star that forms part of the Caelum constellation lines. It is about 94 light-years from Earth.",
+    "delta-cae": "A blue-white subgiant that forms part of the Caelum constellation lines. It is about 700 light-years from Earth."
+   }
+  },
+  "equuleus": {
+   "origin": "Equuleus is a small constellation known since ancient Greek times, among the 48 constellations catalogued by Ptolemy in the 2nd century. It represents a foal (a little horse) and lies just ahead of the winged horse Pegasus. Several stories are told, so nothing is certain. It is the second smallest of the 88 constellations after the Southern Cross.",
+   "tip": "In summer, look for a few small stars between Delphinus and Pegasus. The stars are faint, so you need a clear, dark night.",
+   "stars": {
+    "kitalpha": "The name comes from an Arabic phrase meaning 'a piece of the horse.' It is the brightest star in Equuleus.",
+    "delta-equ": "A yellow-white star that forms part of the Equuleus constellation lines. It is about 60 light-years from Earth.",
+    "gamma-equ": "A yellow-white star that forms part of the Equuleus constellation lines. It is about 120 light-years from Earth."
+   }
+  },
+  "norma": {
+   "origin": "Norma was created by the 18th-century French astronomer Lacaille; its original name is 'the Square and Rule.' It represents the set square and ruler used by architects and surveyors. It is one of the 14 constellations Lacaille defined in the southern sky and has no myth. It lies in the Milky Way, so it has many star clusters.",
+   "tip": "From Korea it hangs just above the southern horizon, so it is hard to observe. In the Southern Hemisphere, look in the Milky Way between Scorpius and Lupus.",
+   "stars": {
+    "gamma2-nor": "A yellow giant that forms part of the Norma constellation lines. It is about 130 light-years from Earth.",
+    "epsilon-nor": "A blue-white star that forms part of the Norma constellation lines. It is about 530 light-years from Earth.",
+    "eta-nor": "A yellow giant that forms part of the Norma constellation lines. It is about 220 light-years from Earth.",
+    "delta-nor": "A white star that forms part of the Norma constellation lines. It is about 120 light-years from Earth."
+   }
+  },
+  "chamaeleon": {
+   "origin": "Chamaeleon was created by Plancius in the late 16th century, based on observations by the navigators Keyser and de Houtman, and appeared in Johann Bayer's star atlas in 1603. It represents the chameleon, the lizard that changes its body color to match its surroundings. It lies close to the south celestial pole, so it can be seen all year round from most of the Southern Hemisphere.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, look close to the south celestial pole, south of Carina.",
+   "stars": {
+    "alpha-cha": "A yellow-white giant that forms part of the Chamaeleon constellation lines. It is about 64 light-years from Earth.",
+    "gamma-cha": "A red giant that forms part of the Chamaeleon constellation lines. It is about 420 light-years from Earth.",
+    "beta-cha": "A blue-white star that forms part of the Chamaeleon constellation lines. It is about 300 light-years from Earth.",
+    "epsilon-cha": "A blue-white star that forms part of the Chamaeleon constellation lines. It is about 360 light-years from Earth.",
+    "delta1-cha": "An orange giant that forms part of the Chamaeleon constellation lines. It is about 350 light-years from Earth."
+   }
+  },
+  "circinus": {
+   "origin": "Circinus was created by the 18th-century French astronomer Lacaille and represents the drawing compass used to draw circles and transfer lengths. It lies right next to Alpha Centauri, the leading star of Centaurus. It has no myth and is a small constellation in the Milky Way.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, look right next to Alpha Centauri in Centaurus.",
+   "stars": {
+    "alpha-cir": "A yellow-white star that forms part of the Circinus constellation lines. It is about 54 light-years from Earth.",
+    "beta-cir": "A white star that forms part of the Circinus constellation lines. It is about 100 light-years from Earth.",
+    "gamma-cir": "A blue-white giant that forms part of the Circinus constellation lines. It is about 450 light-years from Earth."
+   }
+  },
+  "crater": {
+   "origin": "Crater is the cup of Apollo, god of the sun, in Greek myth. There is a story that Apollo told the crow to fetch water in this cup, and the crow lied after waiting for figs to ripen and coming back late (see Corvus). In the sky the cup sits on the back of Hydra, with the crow beside it. Its stars are faint, so you need a clear night and a dark place.",
+   "tip": "In spring, look in the southern sky between Leo and Hydra, next to Corvus. Faint stars form the shape of a cup.",
+   "stars": {
+    "alkes": "The name means 'the cup' in Arabic. It is the brightest star in Crater.",
+    "delta-crt": "An orange giant that forms part of the Crater constellation lines. It is about 190 light-years from Earth.",
+    "gamma-crt": "A white star that forms part of the Crater constellation lines. It is about 82 light-years from Earth.",
+    "beta-crt": "A white star that forms part of the Crater constellation lines. It is about 340 light-years from Earth.",
+    "theta-crt": "A blue-white star that forms part of the Crater constellation lines. It is about 280 light-years from Earth.",
+    "zeta-crt": "A yellow giant that forms part of the Crater constellation lines. It is about 350 light-years from Earth.",
+    "epsilon-crt": "An orange giant that forms part of the Crater constellation lines. It is about 380 light-years from Earth.",
+    "lambda-crt": "A yellow-white subgiant that forms part of the Crater constellation lines. It is about 140 light-years from Earth.",
+    "eta-crt": "A white star that forms part of the Crater constellation lines. It is about 250 light-years from Earth."
+   }
+  },
+  "tucana": {
+   "origin": "Tucana was created by Plancius in the late 16th century, based on observations by the navigators Keyser and de Houtman, and appeared in Johann Bayer's star atlas in 1603. It represents the toucan, a South American bird with a big beak. Here lie the Small Magellanic Cloud, a small galaxy beside our own, and the very bright globular cluster 47 Tucanae.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, use the Small Magellanic Cloud, which looks like a faint cloud to the naked eye, as your guide.",
+   "stars": {
+    "alpha-tuc": "An orange giant that forms part of the Tucana constellation lines. It is about 200 light-years from Earth.",
+    "gamma-tuc": "A yellow-white giant that forms part of the Tucana constellation lines. It is about 75 light-years from Earth.",
+    "zeta-tuc": "A yellow-white star that forms part of the Tucana constellation lines. It is about 28 light-years from Earth.",
+    "beta1-tuc": "A blue-white star that forms part of the Tucana constellation lines. It is about 140 light-years from Earth.",
+    "epsilon-tuc": "A blue-white subgiant that forms part of the Tucana constellation lines. It is about 370 light-years from Earth.",
+    "delta-tuc": "A blue-white star that forms part of the Tucana constellation lines. It is about 250 light-years from Earth."
+   }
+  },
+  "mensa": {
+   "origin": "Mensa was created by the 18th-century French astronomer Lacaille while observing from the Cape in South Africa. It is named after Table Mountain in Cape Town. It is the only one of the 88 constellations named after a place. Its stars are very faint. Part of the Large Magellanic Cloud extends into this constellation.",
+   "tip": "It cannot be seen from Korea. Near the south celestial pole, close to the Large Magellanic Cloud, look for a few very faint stars.",
+   "stars": {
+    "alpha-men": "A yellow star that forms part of the Mensa constellation lines. It is about 33 light-years from Earth.",
+    "gamma-men": "An orange giant that forms part of the Mensa constellation lines. It is about 100 light-years from Earth.",
+    "beta-men": "A yellow giant that forms part of the Mensa constellation lines. It is about 790 light-years from Earth.",
+    "eta-men": "An orange giant that forms part of the Mensa constellation lines. It is about 670 light-years from Earth."
+   }
+  },
+  "lepus": {
+   "origin": "Lepus represents the hare chased by hunting dogs at the feet of the hunter Orion. Several stories are told. It is an ancient constellation among the 48 catalogued by Ptolemy in the 2nd century. It also holds the variable star R Leporis, called 'Hind's Crimson Star' for its vivid red color.",
+   "tip": "In winter, look just below Orion for the bright stars Arneb and Nihal. The square formed by a few stars is the hare.",
+   "stars": {
+    "arneb": "The name means 'the hare' in Arabic. It is a supergiant so intrinsically bright that it looks like a second-magnitude star despite being very far away.",
+    "nihal": "A yellow bright giant that forms part of the Lepus constellation lines. It is about 160 light-years from Earth.",
+    "epsilon-lep": "An orange giant that forms part of the Lepus constellation lines. It is about 210 light-years from Earth.",
+    "mu-lep": "A blue-white subgiant that forms part of the Lepus constellation lines. It is about 190 light-years from Earth.",
+    "zeta-lep": "A white star that forms part of the Lepus constellation lines. It is about 70 light-years from Earth.",
+    "gamma-lep": "A yellow-white star that forms part of the Lepus constellation lines. It is about 29 light-years from Earth.",
+    "eta-lep": "A yellow-white star that forms part of the Lepus constellation lines. It is about 49 light-years from Earth.",
+    "delta-lep": "A yellow giant that forms part of the Lepus constellation lines. It is about 110 light-years from Earth.",
+    "lambda-lep": "A blue-white subgiant that forms part of the Lepus constellation lines. It is about 850 light-years from Earth.",
+    "kappa-lep": "A blue-white star that forms part of the Lepus constellation lines. It is about 730 light-years from Earth.",
+    "theta-lep": "A white star that forms part of the Lepus constellation lines. It is about 170 light-years from Earth."
+   }
+  },
+  "musca": {
+   "origin": "Musca was created by Plancius in the late 16th century. At first it was called 'Apis,' meaning the bee, and was later changed to the fly. It lies in the Milky Way right below the Southern Cross, and a few stars form an elongated rectangle.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, look in the Milky Way right below the Southern Cross.",
+   "stars": {
+    "alpha-mus": "A blue-white subgiant that forms part of the Musca constellation lines. It is about 320 light-years from Earth.",
+    "beta-mus": "A blue-white star that forms part of the Musca constellation lines. It is about 340 light-years from Earth.",
+    "delta-mus": "An orange giant that forms part of the Musca constellation lines. It is about 91 light-years from Earth.",
+    "lambda-mus": "A white giant that forms part of the Musca constellation lines. It is about 130 light-years from Earth.",
+    "gamma-mus": "A blue-white star that forms part of the Musca constellation lines. It is about 320 light-years from Earth.",
+    "epsilon-mus": "A red giant that forms part of the Musca constellation lines. It is about 300 light-years from Earth."
+   }
+  },
+  "octans": {
+   "origin": "Octans was created by the 18th-century French astronomer Lacaille and represents the octant, a navigation instrument used on ships to find position by measuring the height of the stars. The south celestial pole lies within this constellation. The star that corresponds to the North Star in the Southern Hemisphere is Sigma Octantis, but it is so faint that it doesn't stand out like Polaris does.",
+   "tip": "It cannot be seen from Korea. It lies right beside the south celestial pole, so it can be seen all year round from most of the Southern Hemisphere.",
+   "stars": {
+    "nu-oct": "An orange giant that forms part of the Octans constellation lines. It is about 69 light-years from Earth.",
+    "beta-oct": "A white subgiant that forms part of the Octans constellation lines. It is about 150 light-years from Earth.",
+    "delta-oct": "An orange giant that forms part of the Octans constellation lines. It is about 300 light-years from Earth."
+   }
+  },
+  "hercules": {
+   "origin": "Hercules represents the hero Heracles of Greek myth. In the sky he kneels on one knee, holding a club. Heracles was the hero who completed twelve labors, and the gods are said to have raised him to the sky. The trapezoid (the Keystone) in the middle of the constellation stands out. Nearby is the Great Globular Cluster in Hercules (M13), faintly visible even to the naked eye.",
+   "tip": "In summer, look near overhead between Vega and Boötes. Next to the central trapezoid (the Keystone), look for the globular cluster M13 with binoculars.",
+   "stars": {
+    "kornephoros": "The name means 'the club-bearer' in Greek. It marks the shoulder of Heracles.",
+    "rasalgethi": "The name means 'the head of the kneeling one' in Arabic. It is a giant red giant hundreds of times the Sun's diameter, and a binary system.",
+    "zeta-her": "A yellow-white subgiant that forms part of the Hercules constellation lines. It is about 35 light-years from Earth.",
+    "sarin": "A white subgiant that forms part of the Hercules constellation lines. It is about 75 light-years from Earth.",
+    "pi-her": "An orange bright giant that forms part of the Hercules constellation lines. It is about 380 light-years from Earth.",
+    "mu-her": "A yellow subgiant that forms part of the Hercules constellation lines. It is about 27 light-years from Earth.",
+    "eta-her": "A yellow giant that forms part of the Hercules constellation lines. It is about 110 light-years from Earth.",
+    "xi-her": "An orange giant that forms part of the Hercules constellation lines. It is about 140 light-years from Earth.",
+    "gamma-her": "A white giant that forms part of the Hercules constellation lines. It is about 190 light-years from Earth.",
+    "omicron-her": "A blue-white star that forms part of the Hercules constellation lines. It is about 340 light-years from Earth.",
+    "theta-her": "An orange bright giant that forms part of the Hercules constellation lines. It is about 750 light-years from Earth.",
+    "tau-her": "A blue-white subgiant that forms part of the Hercules constellation lines. It is about 310 light-years from Earth.",
+    "epsilon-her": "A white star that forms part of the Hercules constellation lines. It is about 160 light-years from Earth.",
+    "rho-her": "A blue-white giant that forms part of the Hercules constellation lines. It is about 390 light-years from Earth.",
+    "sigma-her": "A blue-white star that forms part of the Hercules constellation lines. It is about 310 light-years from Earth.",
+    "phi-her": "A blue-white star that forms part of the Hercules constellation lines. It is about 200 light-years from Earth.",
+    "chi-her": "A yellow-white star that forms part of the Hercules constellation lines. It is about 52 light-years from Earth."
+   }
+  },
+  "microscopium": {
+   "origin": "Microscopium was created by the 18th-century French astronomer Lacaille and represents the microscope, which magnifies small things. It is one of the constellations named after scientific instruments and has no myth. It lies between Piscis Austrinus and Sagittarius and has no bright stars, only a few faint ones.",
+   "tip": "In early autumn, look low in the southern sky between Sagittarius and Piscis Austrinus. Its stars are very faint, so you need a dark sky and an open southern view.",
+   "stars": {
+    "gamma-mic": "A yellow giant that forms part of the Microscopium constellation lines. It is about 230 light-years from Earth.",
+    "epsilon-mic": "A white star that forms part of the Microscopium constellation lines. It is about 180 light-years from Earth.",
+    "theta1-mic": "A white star that forms part of the Microscopium constellation lines. It is about 200 light-years from Earth.",
+    "alpha-mic": "A yellow giant that forms part of the Microscopium constellation lines. It is about 380 light-years from Earth.",
+    "iota-mic": "A yellow-white subgiant that forms part of the Microscopium constellation lines. It is about 120 light-years from Earth."
+   }
+  },
+  "pictor": {
+   "origin": "Pictor was created by the 18th-century French astronomer Lacaille; its original name is 'the Painter's Easel.' It represents the easel used when painting. It lies in the southern sky near Canopus in Carina. Beta Pictoris is famous as a star with a disk of dust around it and a discovered planet.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, look near Canopus in Carina.",
+   "stars": {
+    "alpha-pic": "A white subgiant that forms part of the Pictor constellation lines. It is about 97 light-years from Earth.",
+    "beta-pic": "A white star that forms part of the Pictor constellation lines. It is about 63 light-years from Earth.",
+    "gamma-pic": "An orange giant that forms part of the Pictor constellation lines. It is about 180 light-years from Earth."
+   }
+  },
+  "fornax": {
+   "origin": "Fornax was created by the 18th-century French astronomer Lacaille; its original name is 'the Chemical Furnace.' It represents the furnace used in chemistry experiments. It has no myth and almost no bright stars. The Fornax Galaxy Cluster, a gathering of many galaxies outside our own, is located here.",
+   "tip": "In late autumn, look low in the southern sky between Eridanus and Cetus. Its stars are very faint, so you need a dark sky.",
+   "stars": {
+    "dalim": "A yellow-white star that forms part of the Fornax constellation lines. It is about 46 light-years from Earth.",
+    "beta-for": "A yellow giant that forms part of the Fornax constellation lines. It is about 170 light-years from Earth.",
+    "nu-for": "A blue-white star that forms part of the Fornax constellation lines. It is about 370 light-years from Earth."
+   }
+  },
+  "sagitta": {
+   "origin": "Sagitta is a small constellation known since ancient Greek times. Various stories are told, such as that it is the arrow Heracles shot at the eagle that pecked Prometheus's liver. It is among the 48 constellations catalogued by Ptolemy in the 2nd century. It lies right above Aquila and is the third smallest of the 88 constellations.",
+   "tip": "In summer, look between Altair in Aquila and Albireo in Cygnus for a small arrow shape. It is small but its shape is clear, so it is easy to find with binoculars.",
+   "stars": {
+    "sham": "The name means 'the arrow' in Arabic. It is the brightest star in Sagitta.",
+    "gamma-sge": "An orange giant that forms part of the Sagitta constellation lines. It is about 260 light-years from Earth.",
+    "delta-sge": "A red bright giant that forms part of the Sagitta constellation lines. It is about 590 light-years from Earth.",
+    "beta-sge": "A yellow bright giant that forms part of the Sagitta constellation lines. It is about 440 light-years from Earth."
+   }
+  },
+  "dorado": {
+   "origin": "Dorado was created by Plancius in the late 16th century, based on observations by the navigators Keyser and de Houtman, and appeared in Johann Bayer's star atlas in 1603. The name comes from a word meaning 'golden' and refers to a fish of tropical seas, known as the swordfish or the dolphinfish (mahi-mahi). Within this constellation lies the Large Magellanic Cloud, a neighboring galaxy beside our own, and inside it the giant Tarantula Nebula.",
+   "tip": "It cannot be seen from Korea. In the Southern Hemisphere, look close to the south celestial pole, using the Large Magellanic Cloud as your guide.",
+   "stars": {
+    "alpha-dor": "A white star that forms part of the Dorado constellation lines. It is about 170 light-years from Earth.",
+    "beta-dor": "A yellow-white supergiant that forms part of the Dorado constellation lines. It is about 1,010 light-years from Earth.",
+    "gamma-dor": "A yellow-white giant that forms part of the Dorado constellation lines. It is about 67 light-years from Earth.",
+    "delta-dor": "A white star that forms part of the Dorado constellation lines. It is about 150 light-years from Earth.",
+    "hr2102": "An orange giant that forms part of the Dorado constellation lines. It is about 86 light-years from Earth.",
+    "zeta-dor": "A yellow-white star that forms part of the Dorado constellation lines. It is about 38 light-years from Earth."
+   }
+  }
+ }
+}
