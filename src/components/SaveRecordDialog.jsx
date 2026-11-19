@@ -97,7 +97,10 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
           나의 기록에 저장
         </h2>
 
-        <div className="save-record__preview" style={{ aspectRatio: aspect }}>
+        <div
+          className="save-record__preview"
+          style={{ aspectRatio: aspect, width: `min(100%, calc(240px * ${aspect}))` }}
+        >
           <img src={photoUrl} alt="" />
           <RecordOverlay aspect={aspect} constellations={chosen} />
         </div>
