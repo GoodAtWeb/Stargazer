@@ -480,8 +480,8 @@ npm run check:i18n
 
 | 자료 | 사용한 곳 | 출처 | 라이선스 |
 | --- | --- | --- | --- |
-| 별 위치, 별자리 데이터 | 별자리 지도·목록의 별자리 모양, 별 예보 밤하늘 | [d3-celestial](https://github.com/ofrohn/d3-celestial) (Olaf Frohn) | BSD 3-Clause |
-| 별 정보 (밝기, 거리, 온도 등) | 별자리 상세보기의 별 정보 카드 | [HYG Database](https://github.com/astronexus/HYG-Database) (오픈 데이터) | CC BY-SA 4.0 |
+| 별자리 선 | 별자리 지도·목록의 별자리 모양, 별 예보 밤하늘 | [Stellarium](https://github.com/Stellarium/stellarium) | GPL-2.0 |
+| 별 정보 (밝기, 거리, 온도, 위치 등) | 별자리 지도의 별 위치, 별자리 상세보기의 별 정보 카드 | [HYG Database](https://github.com/astronexus/HYG-Database) (오픈 데이터) | CC BY-SA 4.0 |
 
 ### 이미지
 
