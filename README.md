@@ -387,7 +387,8 @@ npm start
 
 **별자리·예보 데이터** (`src/data/`)
 
-- 별자리 88개의 모양·이름·계절과 대표 별자리 별 정보, 운세, 별 예보 조건은 수업 프로젝트용으로 직접 정리한 **mock(예시) 데이터**입니다.
+- 별 위치와 별자리 선은 [d3-celestial](https://github.com/ofrohn/d3-celestial) 데이터를 바탕으로 정리했습니다.
+- 별자리 88개의 이름·계절과 대표 별자리 별 정보, 운세, 별 예보 조건은 수업 프로젝트용으로 직접 정리한 **mock(예시) 데이터**입니다.
 - 실제 날씨·천문 API는 호출하지 않으므로 인터넷 연결이나 API 키 없이 동작합니다.
 - 별 예보의 밤하늘 위치는 별의 적경·적위를 선택한 날짜·시간·지역에 맞게 계산해서 그립니다 (`src/utils/sky.js`).
 
@@ -474,6 +475,19 @@ npm run check:i18n
 | --- | --- | --- | --- |
 | Pretendard | 전체 화면 본문 | [orioncactus/pretendard](https://github.com/orioncactus/pretendard) (jsDelivr CDN, v1.3.9) | SIL Open Font License 1.1 |
 | DM Serif Display | 메인 화면 로고 `stargazer` | [Google Fonts](https://fonts.google.com/specimen/DM+Serif+Display) | SIL Open Font License 1.1 |
+
+### 데이터
+
+| 자료 | 사용한 곳 | 출처 | 라이선스 |
+| --- | --- | --- | --- |
+| 별 위치, 별자리 데이터 | 별자리 지도·목록의 별자리 모양, 별 예보 밤하늘 | [d3-celestial](https://github.com/ofrohn/d3-celestial) (Olaf Frohn) | BSD 3-Clause |
+
+### 이미지
+
+| 자료 | 사용한 곳 | 출처 |
+| --- | --- | --- |
+| 배경 사진 `src/assets/bg/milkyway.jpg` | 메인·별자리 상세 배경 | AI(Claude)로 생성 |
+| 별자리 그림·아이콘 `src/assets/art`, `src/assets/constellations` | 메인 화면 별자리, 상세보기 배경 그림, 운세·사진 분석 아이콘 | AI(Claude)로 제작 (외부 이미지 사용 없음) |
 
 ### 라이선스
 
