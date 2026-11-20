@@ -74,9 +74,10 @@ function Archive() {
           ))}
         </div>
 
+        {/* 탭마다 목록을 따로 그려야 이전 탭 카드가 빠지는 동안 새 카드가 밀리지 않음 */}
         {tab === 'favorites' ? (
           <>
-            <ul className="archive__grid">
+            <ul key="favorites" className="archive__grid">
               <AnimatePresence>
                 {items.map((item, index) => (
                   <FavoriteCard
@@ -102,7 +103,7 @@ function Archive() {
           </>
         ) : (
           <>
-            <ul className="archive__grid">
+            <ul key="photos" className="archive__grid">
               <AnimatePresence>
                 {photoRecords.map((record, index) => (
                   <PhotoRecordCard
