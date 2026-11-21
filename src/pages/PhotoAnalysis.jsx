@@ -32,7 +32,7 @@ const INITIAL = {
 // 다른 페이지(별자리 상세보기 등)에 갔다가 돌아와도 마지막 분석 화면을 그대로 보여주기 위한 값
 let lastPhoto = null
 
-// 저장해 둔 상태를 되살림
+// 저장해둔 상태를 되살림
 const restoreState = () => {
   if (!lastPhoto) return INITIAL
   const saved = lastPhoto.state
@@ -50,7 +50,7 @@ function PhotoAnalysis() {
   const [isRecording, setIsRecording] = useState(false)
   const { status, file, photoUrl, aspect, spots, foundCount, progress, result } = state
 
-  // 사진을 올린 뒤의 상태는 계속 기억해 두고, 처음 화면(업로드)으로 돌아가면 지움
+  // 사진을 올린 뒤의 상태는 계속 기억해두고, 처음 화면(업로드)으로 돌아가면 지움
   useEffect(() => {
     lastPhoto = status === 'idle' ? null : { state, selectedId }
   }, [state, selectedId, status])
@@ -65,7 +65,7 @@ function PhotoAnalysis() {
         if (run.cancelled) return
         const aspect = img.naturalWidth / img.naturalHeight
         const found = detectStars(img)
-        // 찾은 별들과 별자리 모양을 맞춰 보는 계산은 스캔 전에 미리 끝내 둠
+        // 찾은 별들과 별자리 모양을 맞춰보는 계산은 스캔 전에 미리 끝내둠
         const analysis = createAnalysisResult(found.points, found.count, aspect)
         setState((s) => ({ ...s, aspect, spots: found.points }))
 

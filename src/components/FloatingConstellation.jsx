@@ -4,8 +4,9 @@ import './FloatingConstellation.css'
 
 const SLOW_OUT = [0.16, 1, 0.3, 1]
 const SPRING = { type: 'spring', stiffness: 140, damping: 20 }
-const LABEL_GAP = 12
+const LABEL_GAP = 12 // 별·그림 끝과 이름표 사이 간격(px)
 
+// 메인 화면에 떠 있는 별자리 버튼 (마우스를 올리면 커지며 그림과 이름표가 나타남)
 function FloatingConstellation({
   name,
   icon,
@@ -25,7 +26,7 @@ function FloatingConstellation({
   onSelect,
 }) {
   const reduceMotion = useReducedMotion()
-  // 사라지는 동안 이름표가 반대쪽으로 튀지 않게 마지막 위치 유지
+  // 사라지는 동안 이름표가 반대쪽으로 튀지 않게 마지막 위치를 유지함
   const [below, setBelow] = useState(false)
   if (hovered && below !== labelBelow) setBelow(labelBelow)
 

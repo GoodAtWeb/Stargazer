@@ -5,13 +5,14 @@ import { createJSONStorage, persist } from 'zustand/middleware'
 const STORE_KEY = 'stargazer.archive'
 const LEGACY_FAVORITES_KEY = 'stargazer.favorites'
 
-// 사진 용량 때문에 localStorage 대신 IndexedDB 사용
+// 사진 용량 때문에 localStorage 대신 IndexedDB를 사용함
 const idbStorage = {
   getItem: async (name) => (await get(name)) ?? null,
   setItem: (name, value) => set(name, value),
   removeItem: (name) => del(name),
 }
 
+// 스토어 도입 전 localStorage에 저장한 즐겨찾기 목록을 읽어 반환
 const readLegacyFavorites = () => {
   try {
     const saved = JSON.parse(localStorage.getItem(LEGACY_FAVORITES_KEY))
@@ -65,7 +66,7 @@ export const useArchiveStore = create(
           try {
             localStorage.removeItem(LEGACY_FAVORITES_KEY)
           } catch {
-            // 무시
+            // 지우기 실패는 무시함
           }
         }
         useArchiveStore.setState(changes)

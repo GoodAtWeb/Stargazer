@@ -1,6 +1,6 @@
 import './TwinkleStars.css'
 
-// 같은 값이 나오는 간단한 난수 (새로고침해도 별 위치가 그대로)
+// 항상 같은 순서의 값을 내는 간단한 난수 함수를 반환 (새로고침해도 별 위치가 그대로)
 const makeRandom = (seed) => () => {
   seed = (seed * 16807) % 2147483647
   return seed / 2147483647

@@ -13,6 +13,8 @@ const SYNODIC_MONTH = 29.530588 // 달의 한 주기(일)
 const pad = (n) => String(n).padStart(2, '0')
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
+// ── 시간 ────────────────────────────────────────────────────
+
 // 오늘 날짜를 'YYYY-MM-DD'로 반환
 export const getTodayString = () => {
   const now = new Date()
@@ -22,16 +24,16 @@ export const getTodayString = () => {
 // 24시간 이후 값(24~28)도 시계 표기로 바꿔 '00:00' 형태로 반환
 export const formatHour = (hour) => `${pad(hour % 24)}:00`
 
-// 그래프에서 쓰는 '22시' 표기
+// 그래프에서 쓰는 '22시' 표기를 반환
 export const formatHourShort = (hour) => t('fc.hourShort', { hour: pad(hour % 24) })
 
-// '22:00' 입력값을 그래프 기준 시간(0~4시는 24~28)으로 변환
+// '22:00' 입력값을 그래프 기준 시간(0~4시는 24~28)으로 바꿔 반환
 export const timeToHour = (time) => {
   const hour = Number(time.split(':')[0])
   return hour <= 6 ? hour + 24 : hour
 }
 
-// 그래프 기준 시간을 '22:00' 입력값으로 변환
+// 그래프 기준 시간을 '22:00' 입력값으로 바꿔 반환
 export const hourToTime = (hour) => formatHour(hour)
 
 // 해가 진 정도 (0: 낮, 1: 완전한 밤)
@@ -45,7 +47,9 @@ const getDarkness = (hour) => {
   return 0
 }
 
-// 달 (forecastData.json의 moons 값 사용, 없는 날짜는 평균 주기로 대략 계산)
+// ── 달 ──────────────────────────────────────────────────────
+// forecastData.json의 moons 값을 쓰고, 없는 날짜는 평균 주기로 대략 계산함
+
 const parseClock = (text) => {
   const [h, m] = text.split(':').map(Number)
   return h + m / 60
@@ -56,6 +60,7 @@ const formatClock = (decimalHour) => {
   return `${pad(Math.floor(total / 60) % 24)}:${pad(total % 60)}`
 }
 
+// 날짜로 달의 위상, 밝기, 뜨고 지는 시각을 대략 계산해 반환
 const estimateMoon = (date) => {
   const [year, month, day] = date.split('-').map(Number)
   const julianDay = Date.UTC(year, month - 1, day, 13) / 86400000 + 2440587.5
@@ -78,11 +83,13 @@ const estimateMoon = (date) => {
   }
 }
 
+// 그 시간에 달이 떠 있는지 반환
 const isMoonUp = (hour, rise, set) => {
   const h = hour % 24
   return rise < set ? h >= rise && h < set : h >= rise || h < set
 }
 
+// 달 조건 카드에 쓸 밝기, 떠 있는지, 단계, 설명을 반환
 const getMoon = (date, hour) => {
   const data = forecastData.moons[date] ?? estimateMoon(date)
   const rise = parseClock(data.rise)
@@ -109,8 +116,10 @@ const getMoon = (date, hour) => {
   return { percent, up, level, quality: 100 - percent, description, rise, set, waxing }
 }
 
-// 구름, 습도 (forecastData.json의 weather: 18시~04시 시간별 값)
-// 지역+날짜 값 → 지역 기본값 → 전체 기본값 순서로 찾음
+// ── 구름·습도 ──────────────────────────────────────────────
+// forecastData.json의 weather 값 (18시~04시 시간별 값)
+
+// 지역+날짜 값 → 지역 기본값 → 전체 기본값 순서로 찾아 반환
 const getWeather = (region, date) => {
   const byRegion = forecastData.weather[region]
   return byRegion?.[date] ?? byRegion?.default ?? forecastData.weather.default
@@ -119,6 +128,7 @@ const getWeather = (region, date) => {
 // 시간별 배열(18시부터 한 칸씩)에서 해당 시간의 값을 꺼냄 (범위 밖은 양 끝 값)
 const valueAt = (list, hour) => list[clamp(hour - HOURS[0], 0, list.length - 1)]
 
+// 구름 조건 카드에 쓸 구름양, 단계, 설명을 반환
 const getCloudCard = (weather, hour) => {
   const percent = valueAt(weather.cloud, hour)
   const later = valueAt(weather.cloud, hour + 3)
@@ -139,6 +149,7 @@ const getCloudCard = (weather, hour) => {
   return { percent, level, quality: 100 - percent, description: `${summary}${trend}` }
 }
 
+// 습도 조건 카드에 쓸 습도, 단계, 설명을 반환
 const getHumidityCard = (weather, hour) => {
   const percent = valueAt(weather.humidity, hour)
   const visibility = Math.round(clamp(35 - percent * 0.3, 3, 30))
@@ -159,9 +170,12 @@ const getHumidityCard = (weather, hour) => {
   }
 }
 
-// 빛공해 (지역별 Bortle 등급)
+// ── 빛공해 ──────────────────────────────────────────────────
+
+// 지역의 Bortle 등급을 반환 (없으면 5)
 const getBortle = (region) => forecastData.regions.find((r) => r.name === region)?.bortle ?? 5
 
+// 빛공해 조건 카드에 쓸 등급, 단계, 설명을 반환
 const getBortleCard = (region) => {
   const grade = getBortle(region)
   let description = t('fc.bortle.city')
@@ -177,7 +191,9 @@ const getBortleCard = (region) => {
   return { grade, level, quality: ((10 - grade) / 9) * 100, description }
 }
 
-// 점수
+// ── 점수 ────────────────────────────────────────────────────
+
+// 달, 구름, 빛공해, 습도, 어두운 정도로 관측 점수(0~100)를 계산해 반환
 const calcScore = ({ moon, cloud, bortle, humidity, darkness }) => {
   const moonPenalty = moon.up ? (moon.percent / 100) * 30 : 0
   const humidityPenalty = Math.max(0, humidity - 60) * 0.25
@@ -185,6 +201,7 @@ const calcScore = ({ moon, cloud, bortle, humidity, darkness }) => {
   return Math.round(clamp(raw, 0, 100) * darkness)
 }
 
+// 점수에 맞는 상태 이름과 안내 문구를 반환
 const getStatus = (score, darkness) => {
   if (darkness < 0.3) {
     return { tone: 'bad', label: t('fc.status.day'), message: t('fc.status.dayMsg') }
@@ -201,6 +218,8 @@ const getStatus = (score, darkness) => {
   return { tone: 'bad', label: t('fc.status.bad'), message: t('fc.status.badMsg') }
 }
 
+// ── 예보 결과 ──────────────────────────────────────────────
+
 // 하늘에서 어느 정도 높이 떠 있는 별자리를 높은 순서대로 목록으로 만듦 (밤하늘 지도와 같은 데이터)
 const getVisibleConstellations = (sky) =>
   (sky.darkness < 0.6 ? [] : sky.constellations)
@@ -215,10 +234,11 @@ const getVisibleConstellations = (sky) =>
       lines,
     }))
 
-// 지역 위치와 별 개수에 쓸 한계 등급 (빛공해가 심할수록 어두운 별이 안 보임)
+// 지역 위치(위도·경도)를 반환 (없으면 서울 근처)
 const getRegionPlace = (region) =>
   forecastData.regions.find((r) => r.name === region) ?? { lat: 37.5, lon: 127 }
 
+// 별 개수에 쓸 한계 등급을 반환 (빛공해가 심할수록 어두운 별이 안 보임)
 const getLimitMagnitude = (bortleGrade) => 6.6 - 0.4 * (bortleGrade - 1)
 
 // 지역, 날짜, 시간을 받아 별 예보 결과 전체를 만들어 반환

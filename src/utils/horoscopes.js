@@ -9,7 +9,7 @@ const icons = import.meta.glob('../assets/constellations/*.svg', {
   import: 'default',
 })
 
-// "오전 10시~오후 12시" → "10 AM – 12 PM"
+// 시간 표기 변환: "오전 10시~오후 12시" → "10 AM – 12 PM"
 const toEnglishTime = (text) =>
   text
     .replace(/(오전|오후)\s*(\d+)시/g, (_, ap, h) => `${h} ${ap === '오전' ? 'AM' : 'PM'}`) // i18n-ignore

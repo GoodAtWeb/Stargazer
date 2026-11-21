@@ -59,7 +59,7 @@
   font-weight: 700;
 }
 
-/* 메인 화면에서는 오른쪽 위에 띄워 둠 */
+/* 메인 화면에서는 오른쪽 위에 띄워둠 */
 .lang-switch--home {
   position: absolute;
   top: 18px;

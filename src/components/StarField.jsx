@@ -5,6 +5,7 @@ import { loadSlim } from '@tsparticles/slim'
 // init은 앱 전체에서 같은 함수여야 함
 const initEngine = (engine) => loadSlim(engine)
 
+// 메인 화면 배경에서 천천히 떠다니며 반짝이는 별 입자
 function StarField({ className }) {
   const options = useMemo(
     () => ({

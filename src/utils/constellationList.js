@@ -35,7 +35,7 @@ const fitToBox = (stars, lines) => {
   }
 }
 
-// 상세 데이터가 있으면 상세 화면과 같은 별 모양·이름·계절을, 없으면 목록용 데이터를 사용
+// 상세 데이터가 있으면 상세 화면과 같은 별 모양·이름·계절을, 없으면 목록용 데이터를 사용함
 const toItem = (entry) => {
   const detail = detailedById[entry.id]
   if (!detail) {

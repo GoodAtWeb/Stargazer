@@ -15,6 +15,7 @@ import { getConstellationName } from '../i18n/data'
 import RecordOverlay from './RecordOverlay'
 import './SaveRecordDialog.css'
 
+// 분석한 사진의 제목, 촬영일, 별자리를 골라 보관함에 저장하는 창
 function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
   const { t } = useTranslation()
   const navigate = useNavigate()
@@ -34,7 +35,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
       const todayTitle = getDefaultTitle(toDateValue(new Date()))
       setDateValue(value)
       setDateSource('taken')
-      // 사용자가 제목을 아직 안 바꿨을 때만 촬영일 제목으로
+      // 사용자가 제목을 아직 안 바꿨을 때만 촬영일 제목으로 바꿈
       setTitle((current) => (current === todayTitle ? getDefaultTitle(value) : current))
     })
     return () => {
@@ -70,7 +71,7 @@ function SaveRecordDialog({ photoUrl, file, aspect, detected, onClose }) {
         photo: await compressPhoto(photoUrl),
         aspect,
         constellations: chosen,
-        // 나중에 수정할 때 다시 고를 수 있도록 분석된 별자리 전체도 저장
+        // 나중에 수정할 때 다시 고를 수 있도록 분석된 별자리 전체도 저장함
         detected: detected.map(toRecordConstellation),
       })
       setStatus('saved')

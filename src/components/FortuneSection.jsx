@@ -27,7 +27,7 @@ const toStars = (score) => {
   ))
 }
 
-// 오늘의 총점을 원형 게이지로 보여줌
+// 오늘의 총점을 보여주는 원형 게이지
 function ScoreRing({ score }) {
   const { t } = useTranslation()
   return (

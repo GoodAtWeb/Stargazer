@@ -1,8 +1,8 @@
 import constellations from '../data/constellations.json'
 import { getConstellationName } from '../i18n/data'
 
-export const MAX_FILE_SIZE = 20 * 1024 * 1024
-export const ANALYSIS_DURATION = 5200
+export const MAX_FILE_SIZE = 20 * 1024 * 1024 // 올릴 수 있는 사진 최대 용량(20MB)
+export const ANALYSIS_DURATION = 5200 // 분석 진행률이 100%까지 차는 시간(ms)
 export const SCAN_DURATION = 2400 // 빛줄기가 사진을 한 번 훑는 시간(ms)
 
 // 분석 단계와 각 단계가 끝나는 진행률(%)
@@ -22,17 +22,19 @@ export const loadImage = (url) =>
     img.src = url
   })
 
+// ── 별 찾기 ────────────────────────────────────────────────
+
 // 별 찾기 기준값 (0~255 밝기 기준)
 const DETECT_WIDTH = 1200 // 이 너비로 줄여서 분석 (작은 별이 뭉개지지 않을 만큼)
-const NOISE_K = 5 // 주변보다 노이즈의 몇 배 이상 밝아야 별 후보
-const MIN_CONTRAST = 60 // 주변보다 최소 이만큼은 밝아야 별 후보 (높일수록 눈에 띄는 별만 남음)
-const MAX_LOCAL_BG = 45 // 바로 주변이 이보다 밝으면 (불빛, 건물) 제외
+const NOISE_K = 5 // 주변보다 노이즈의 몇 배 이상 밝아야 별 후보로 봄
+const MIN_CONTRAST = 60 // 주변보다 최소 이만큼은 밝아야 별 후보로 봄 (높일수록 눈에 띄는 별만 남음)
+const MAX_LOCAL_BG = 45 // 바로 주변이 이보다 밝으면 (불빛, 건물) 제외함
 const MAX_WIDE_BG = 30 // 넓은 영역 평균이 이보다 밝으면 하늘이 아닌 곳으로 봄
 const RING = 4 // 점 모양 검사에 쓰는 고리 반지름(px)
 
 // 사진에서 별을 찾아 위치(%), 상대 밝기(0~1), 전체 개수를 반환
 // 1) 주변 배경보다 확 밝은 점만 후보로 삼고  2) 둘레가 모두 어두운 '점'만 남기고
-// 3) 건물·땅처럼 넓게 밝은 곳(지평선 아래)은 제외
+// 3) 건물·땅처럼 넓게 밝은 곳(지평선 아래)은 제외함
 export const detectStars = (img, maxPoints = 150) => {
   const width = Math.min(DETECT_WIDTH, img.naturalWidth)
   const height = Math.max(1, Math.round((img.naturalHeight / img.naturalWidth) * width))
@@ -50,7 +52,7 @@ export const detectStars = (img, maxPoints = 150) => {
     lum[i] = data[i * 4] * 0.299 + data[i * 4 + 1] * 0.587 + data[i * 4 + 2] * 0.114
   }
 
-  // 누적합 표를 만들어 두면 어떤 사각형의 평균 밝기든 바로 구할 수 있음
+  // 누적합 표를 만들어두면 어떤 사각형의 평균 밝기든 바로 구할 수 있음
   const W1 = width + 1
   const integral = new Float64Array(W1 * (height + 1))
   for (let y = 0; y < height; y++) {
@@ -153,7 +155,7 @@ export const detectStars = (img, maxPoints = 150) => {
     }
   }
 
-  // 밝은 순으로 보면서 이미 고른 별과 너무 가까운 후보는 제외
+  // 밝은 순으로 보면서 이미 고른 별과 너무 가까운 후보는 제외함
   candidates.sort((a, b) => b.r - a.r)
   const minDist2 = Math.max(4, width / 150) ** 2
   const picked = []
@@ -172,6 +174,8 @@ export const detectStars = (img, maxPoints = 150) => {
   }
 }
 
+// ── 별자리 맞추기 ──────────────────────────────────────────
+
 // 별자리 맞추기 기준값
 const MATCH = {
   anchorStars: 4, // 별자리에서 기준으로 삼을 밝은 별 수
@@ -180,10 +184,10 @@ const MATCH = {
   minSize: 12, // 별자리 크기 최소 (사진 가로 대비 %)
   maxSize: 60, // 별자리 크기 최대
   tolerance: 0.06, // 별자리 크기 대비 허용 오차 (이 안에 사진 속 별이 있으면 일치)
-  minMatched: 4, // 최소 이만큼은 실제 별과 겹쳐야 찾은 것으로 인정
-  minRatio: 0.6, // 별자리 별 중 이 비율 이상이 겹쳐야 인정
-  maxOverlap: 0.15, // 다른 별자리 영역과 이 비율 이상 겹치면 제외
-  fitsPerConstellation: 6, // 별자리마다 남겨 둘 후보 자리 수
+  minMatched: 4, // 최소 이만큼은 실제 별과 겹쳐야 찾은 것으로 인정함
+  minRatio: 0.6, // 별자리 별 중 이 비율 이상이 겹쳐야 인정함
+  maxOverlap: 0.15, // 다른 별자리 영역과 이 비율 이상 겹치면 제외함
+  fitsPerConstellation: 6, // 별자리마다 남겨둘 후보 자리 수
   maxResults: 3,
 }
 
@@ -197,7 +201,7 @@ const makeTransform = (t1, p1, scale, angle) => {
   })
 }
 
-// 별들을 감싸는 사각형 영역
+// 별들을 감싸는 사각형 영역을 반환
 const getBox = (stars) => ({
   x0: Math.min(...stars.map((s) => s.px)),
   x1: Math.max(...stars.map((s) => s.px)),
@@ -214,8 +218,8 @@ const getOverlap = (a, b) => {
   return (w * h) / Math.min(area(a), area(b))
 }
 
-// 별자리 하나를 사진 속 별들에 맞춰 보고, 잘 겹치는 위치·크기·각도 후보를 좋은 순으로 반환
-// (가장 좋은 자리가 다른 별자리와 겹칠 수 있어서 후보를 여러 개 남겨 둠)
+// 별자리 하나를 사진 속 별들에 맞춰보고, 잘 겹치는 위치·크기·각도 후보를 좋은 순으로 반환
+// (가장 좋은 자리가 다른 별자리와 겹칠 수 있어서 후보를 여러 개 남겨둠)
 const fitConstellation = (constellation, pts, anchors) => {
   const { stars } = constellation
   const tmplAnchors = [...stars].sort((a, b) => a.magnitude - b.magnitude).slice(0, MATCH.anchorStars)
@@ -263,7 +267,7 @@ const fitConstellation = (constellation, pts, anchors) => {
               matched++
               err += nearestD / tol
             }
-            // 남은 별이 다 맞아도 남겨 둔 후보보다 나을 수 없으면 중단
+            // 남은 별이 다 맞아도 남겨둔 후보보다 나을 수 없으면 중단함
             if (matched + (stars.length - k - 1) < minToKeep()) break
           }
           if (hits.length < stars.length || matched < MATCH.minMatched) continue
@@ -286,7 +290,7 @@ const fitConstellation = (constellation, pts, anchors) => {
   return top
 }
 
-// 사진 속 별(위치 %)과 별자리 데이터를 맞춰 보고, 실제 별 위에 놓인 별자리를 결과로 만듦
+// 사진 속 별(위치 %)과 별자리 데이터를 맞춰보고, 실제 별 위에 놓인 별자리를 결과로 만듦
 export const createAnalysisResult = (points, starCount, aspect) => {
   // 가로·세로를 같은 단위로 맞춰야 별자리 모양이 찌그러지지 않음 (가로 100 기준)
   const pts = [...points]
@@ -306,7 +310,7 @@ export const createAnalysisResult = (points, starCount, aspect) => {
     .filter(({ ratio }) => ratio >= MATCH.minRatio)
     .sort((a, b) => b.confidence - a.confidence || b.fit.matched - a.fit.matched)
 
-  // 신뢰도 높은 순으로 고르되, 이미 고른 별자리와 별을 함께 쓰거나 영역이 많이 겹치면 제외
+  // 신뢰도 높은 순으로 고르되, 이미 고른 별자리와 별을 함께 쓰거나 영역이 많이 겹치면 제외함
   const usedPoints = new Set()
   const boxes = []
   const detected = []
@@ -355,6 +359,8 @@ export const createAnalysisResult = (points, starCount, aspect) => {
     firstConstellationId: detected[0]?.constellation.id ?? null,
   }
 }
+
+// ── 결과 이미지 저장 ──────────────────────────────────────
 
 // 사진 위에 별자리 선과 이름을 그린 PNG를 내려받음
 export const downloadResultImage = async (photoUrl, result, fileName = 'stargazer') => {

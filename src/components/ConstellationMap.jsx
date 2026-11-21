@@ -12,7 +12,7 @@ const LINE_DURATION = 0.8
 const LINE_STAGGER = 0.08
 const MAP_SCALE = { scorpio: 1.3 }
 
-// 별 좌표 전체를 감싸는 SVG viewBox 범위를 계산
+// 별 좌표 전체를 감싸는 SVG viewBox 범위를 계산해 반환
 const getBounds = (stars) => {
   const xs = stars.map((s) => s.x)
   const ys = stars.map((s) => s.y)

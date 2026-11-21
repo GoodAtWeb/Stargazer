@@ -7,8 +7,9 @@ import { useTranslation } from 'react-i18next'
 import { getConstellationName } from '../i18n/data'
 
 const SLOW_OUT = [0.16, 1, 0.3, 1]
-const APPEAR_GAP = 0.08
+const APPEAR_GAP = 0.08 // 카드가 차례로 나타나는 간격(초)
 
+// 저장한 사진 기록 하나를 별자리 선, 제목, 날짜와 함께 보여주고, 누르면 크게 여는 카드
 function PhotoRecordCard({ record, index, onOpen }) {
   const { t } = useTranslation()
   const { title, date, photo, aspect, constellations } = record

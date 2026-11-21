@@ -6,16 +6,17 @@ import ConstellationFigure from './ConstellationFigure'
 import './FavoriteCard.css'
 
 const SPARKLE = 'M12 2Q12 12 22 12Q12 12 12 22Q12 12 2 12Q12 12 12 2Z'
-const HIGH_SCORE = 80
+const HIGH_SCORE = 80 // 이 점수 이상이면 운세 점수를 강조
 const SLOW_OUT = [0.16, 1, 0.3, 1]
-const APPEAR_GAP = 0.08
+const APPEAR_GAP = 0.08 // 카드가 차례로 나타나는 간격(초)
 
-// '10-23' → '10월 23일' / 'October 23'
+// 날짜 변환: '10-23' → '10월 23일' / 'October 23'
 const formatPeriodDate = (value) => {
   const [month, day] = value.split('-').map(Number)
   return formatMonthDay(month, day)
 }
 
+// 즐겨찾기한 별자리를 기간과 운세 점수(없으면 대표 별)로 보여주고, 누르면 상세 화면으로 이동하는 카드
 function FavoriteCard({ item, period, fortune, index, onRemove }) {
   const { t } = useTranslation()
   const { id, season, brightStar, figure } = item

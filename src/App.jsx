@@ -7,16 +7,16 @@ import Home from './pages/Home'
 import PhotoAnalysis from './pages/PhotoAnalysis'
 import StarForecast from './pages/StarForecast'
 
-// 스크롤 위치를 기억해 둘 페이지 (별 예보, 사진 분석은 갔다 와도 보던 자리 그대로)
-// 별자리 상세는 상단 메뉴로 돌아왔을 때(state.restore)만 보던 자리로
+// 스크롤 위치를 기억해둘 페이지 (별 예보, 사진 분석은 갔다 와도 보던 자리 그대로)
+// 별자리 상세는 상단 메뉴로 돌아왔을 때(state.restore)만 보던 자리로 돌려놓음
 const KEEP_SCROLL = ['/forecast', '/photo']
 const savedScroll = {}
 
-// 페이지가 바뀌면 맨 위부터, 단 KEEP_SCROLL 페이지는 마지막 위치로
+// 페이지가 바뀌면 맨 위로 올리고, KEEP_SCROLL 페이지는 마지막 위치로 되돌림
 function ScrollManager() {
   const { pathname, state } = useLocation()
   const current = useRef(pathname)
-  current.current = pathname // 렌더 시점에 갱신 → 새 페이지의 스크롤이 이전 페이지 기록을 덮지 않음
+  current.current = pathname // 렌더 시점에 갱신해서 새 페이지의 스크롤이 이전 페이지 기록을 덮지 않게 함
 
   useEffect(() => {
     const onScroll = () => {
@@ -36,6 +36,7 @@ function ScrollManager() {
   return null
 }
 
+// 주소마다 보여줄 페이지를 연결하는 라우터 (스크롤 위치 관리 포함)
 function App() {
   return (
     <BrowserRouter>

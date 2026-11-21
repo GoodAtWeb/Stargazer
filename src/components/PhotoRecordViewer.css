@@ -258,7 +258,7 @@
   background: #ffc6bc;
 }
 
-/* 휴대폰: 아래에서 올라오는 시트, 하단 버튼은 스크롤해도 보이게 */
+/* 휴대폰: 아래에서 올라오는 시트로 바꾸고, 하단 버튼은 스크롤해도 보이게 함 */
 @media (max-width: 700px) {
   .record-viewer {
     align-items: flex-end;

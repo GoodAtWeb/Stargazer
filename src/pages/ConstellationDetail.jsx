@@ -10,13 +10,13 @@ import { useRevisitStore } from '../stores/revisitStore'
 import { getConstellationById } from '../utils/constellations'
 import './ConstellationDetail.css'
 
-// '10-23' 형태의 날짜를 현재 언어의 '10월 23일' / 'October 23'으로 변환
+// '10-23' 형태의 날짜를 현재 언어의 '10월 23일' / 'October 23'으로 바꿔 반환
 const formatPeriodDate = (value) => {
   const [month, day] = value.split('-').map(Number)
   return formatMonthDay(month, day)
 }
 
-// 별자리 정보, 지도, 오늘의 운세를 한 페이지에 이어서 보여주고 선택된 별 상태를 관리
+// 별자리 정보, 지도, 오늘의 운세를 한 페이지에 이어서 보여주고 선택된 별 상태를 관리하는 화면
 function ConstellationView({ constellation }) {
   const { t } = useTranslation()
   const location = useLocation()
