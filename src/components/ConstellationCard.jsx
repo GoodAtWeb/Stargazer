@@ -7,7 +7,7 @@ import './ConstellationCard.css'
 // 반짝이는 4갈래 별 모양 아이콘
 const SPARKLE = 'M12 2Q12 12 22 12Q12 12 12 22Q12 12 2 12Q12 12 12 2Z'
 
-// 별자리 모양, 이름, 계절·대표 별을 보여 주고 누르면 상세 화면으로 이동하는 카드
+// 별자리 모양, 이름, 계절·대표 별을 보여주고 누르면 상세 화면으로 이동하는 카드
 function ConstellationCard({ item, favorite, onToggleFavorite }) {
   const { t } = useTranslation()
   const { id, season, brightStar, figure } = item

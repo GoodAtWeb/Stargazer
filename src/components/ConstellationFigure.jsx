@@ -1,6 +1,6 @@
 import './ConstellationFigure.css'
 
-// 별 좌표(0~100)와 연결선으로 별자리 모양을 작게 그려 줌
+// 별 좌표(0~100)와 연결선으로 별자리 모양을 작게 그리는 그림
 function ConstellationFigure({ figure }) {
   return (
     <svg className="constellation-figure" viewBox="0 0 100 100" aria-hidden="true">

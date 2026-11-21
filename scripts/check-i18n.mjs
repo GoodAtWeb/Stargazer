@@ -1,9 +1,9 @@
-// 번역 누락을 찾아 주는 검사 스크립트 (npm run check:i18n)
+// 번역 누락을 찾아주는 검사 스크립트 (npm run check:i18n)
 //  1) ko / en 사전의 키가 서로 같은지
 //  2) 코드에서 쓰는 t('키') 가 사전에 있는지
-//  3) 코드(주석 제외)에 번역 없이 직접 적어 둔 한글이 없는지
-//     - 의도적으로 한글을 남겨야 하면 그 줄 끝에 `// i18n-ignore` 를 붙여요
-//     - src/i18n, src/locales, src/data 폴더는 번역 자료라서 검사하지 않아요
+//  3) 코드(주석 제외)에 번역 없이 직접 적어둔 한글이 없는지
+//     - 의도적으로 한글을 남겨야 하면 그 줄 끝에 `// i18n-ignore` 를 붙임
+//     - src/i18n, src/locales, src/data 폴더는 번역 자료라서 검사하지 않음
 import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, relative, sep } from 'node:path'
 
@@ -47,6 +47,7 @@ for (const file of walk(srcDir)) {
   const original = readFileSync(file, 'utf8').split(/\r?\n/)
   const stripped = stripComments(readFileSync(file, 'utf8')).split(/\r?\n/)
 
+  // 3) 주석을 뺀 코드에 직접 적은 한글 확인
   stripped.forEach((line, i) => {
     if (original[i].includes('i18n-ignore')) return
     if (HANGUL.test(line)) report('한글', `${rel}:${i + 1}`, original[i].trim().slice(0, 80))

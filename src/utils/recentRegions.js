@@ -11,11 +11,12 @@ export const getRecentRegions = () => {
   }
 }
 
+// 지역 목록을 브라우저에 저장하고 그 목록을 반환
 const saveRecentRegions = (list) => {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(list))
   } catch {
-    // 저장에 실패해도 화면은 그대로 동작
+    // 저장에 실패해도 화면은 그대로 동작함
   }
   return list
 }

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { getRegionLabel, resolveRegion } from '../i18n/data'
 import './RecentRegions.css'
 
-// 최근 검색한 지역을 바로가기로 보여주고, 누르면 그 지역으로 바로 검색
+// 최근 검색한 지역을 바로가기로 보여주고, 누르면 그 지역으로 바로 검색하는 목록
 function RecentRegions({ regions, onSelect, onRemove }) {
   const { t } = useTranslation()
   if (regions.length === 0) return null

@@ -55,7 +55,7 @@
   align-items: center;
 }
 
-/* index.css의 기본 제목 색·글꼴이 덮어쓰지 않게 */
+/* index.css의 기본 제목 색·글꼴이 덮어쓰지 않게 함 */
 .forecast-page :is(h1, h2) {
   color: inherit;
   font-family: inherit;

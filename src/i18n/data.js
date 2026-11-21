@@ -57,6 +57,7 @@ const BADGE_KINDS = {
   '별': 'star', '거성': 'giant', '준거성': 'subgiant', '초거성': 'supergiant',
   '밝은 거성': 'bright giant', '주계열성': 'main-sequence star',
 }
+// '청백색 거성' 같은 별 분류 표기를 영어로 바꿈
 const translateBadge = (ko) => {
   if (BADGES[ko]) return BADGES[ko]
   const [color, ...rest] = ko.split(' ')
@@ -65,7 +66,7 @@ const translateBadge = (ko) => {
 }
 
 const num = '[-\\d.,]+'
-// '약 0.85등급', '3.4~4.2등급(변광)' 같은 밝기 표기를 영어로
+// '약 0.85등급', '3.4~4.2등급(변광)' 같은 밝기 표기를 영어로 바꿈
 const translateBrightness = (ko) => {
   let en = ko
     .replace(new RegExp(`^약 (${num})~(${num})등급$`), 'About magnitude $1–$2')
@@ -77,6 +78,7 @@ const translateBrightness = (ko) => {
     .replace(new RegExp(`^(${num})등급$`), 'Magnitude $1')
   return en
 }
+// 거리·온도·크기 표기를 영어로 바꿈
 const translateDistance = (ko) => ko.replace(new RegExp(`^약 (${num})광년$`), 'About $1 light-years')
 const translateTemperature = (ko) =>
   ko
@@ -99,9 +101,10 @@ const PLANETS = {
 }
 const SEASONS = { '봄': 'Spring', '여름': 'Summer', '가을': 'Autumn', '겨울': 'Winter', '연중': 'Year-round', '사계절': 'Year-round' }
 
+// 계절 이름을 현재 언어로 바꿔 반환
 export const translateSeason = (ko) => (getLang() === 'en' ? (SEASONS[ko] ?? ko) : ko)
 
-// '8월~10월 (남반구)', '일 년 내내 (특히 7월)', '1월 (남반구 기준)' 같은 달 표기를 영어로
+// '8월~10월 (남반구)', '일 년 내내 (특히 7월)', '1월 (남반구 기준)' 같은 달 표기를 영어로 바꿈
 const translateMonths = (ko, short) =>
   ko
     .replace(/(\d+)월~(\d+)월/g, (_, a, b) => `${getMonthName(a, short)}–${getMonthName(b, short)}`)
@@ -122,6 +125,7 @@ const POSITIONS = [
   ['남쪽 하늘', 'Southern sky'],
   ['북쪽 하늘', 'Northern sky'],
 ]
+// '남쪽 하늘 (고도 약 40°)' 같은 위치 표기를 영어로 바꿈
 const translatePosition = (ko) => {
   const found = POSITIONS.find(([prefix]) => ko.startsWith(prefix))
   if (!found) return ko
@@ -212,28 +216,29 @@ const WEEKDAYS = {
   en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
 }
 
+// 월 번호(1~12)를 영어 달 이름으로 반환 (short면 세 글자)
 export const getMonthName = (month, short = false) =>
   (short ? MONTHS_SHORT : MONTHS)[month - 1]
 
-// 요일 (0=일요일)
+// 요일 이름을 반환 (0=일요일)
 export const getWeekdayName = (weekday) => WEEKDAYS[getLang()][weekday]
 
-// 10월 23일 / October 23
+// 월·일 표기: 10월 23일 / October 23
 export const formatMonthDay = (month, day) =>
   getLang() === 'en' ? `${MONTHS[month - 1]} ${day}` : `${month}월 ${day}일`
 
-// 2026년 10월 23일 / October 23, 2026
+// 연·월·일 표기: 2026년 10월 23일 / October 23, 2026
 export const formatFullDate = (year, month, day) =>
   getLang() === 'en' ? `${MONTHS[month - 1]} ${day}, ${year}` : `${year}년 ${month}월 ${day}일`
 
-// 22:00 → 22시 / 22:00 (그래프 눈금용)
+// 그래프 눈금용 시간 표기: 22시 / 22:00
 export const formatHourLabel = (hour) => {
   const h = String(hour % 24).padStart(2, '0')
   return getLang() === 'en' ? `${h}:00` : `${h}시`
 }
 
 // ── 지역 이름 ───────────────────────────────────────────────
-// 예보 데이터는 한국어 지역 이름을 기준으로 저장돼 있어서, 영어 이름을 같은 지역으로 연결해 줌
+// 예보 데이터는 한국어 지역 이름을 기준으로 저장돼 있어서, 영어 이름을 같은 지역으로 연결해줌
 const REGION_EN = {
   '서울특별시 성북구': { full: 'Seongbuk-gu, Seoul', short: 'Seongbuk-gu' },
   '서울특별시 종로구': { full: 'Jongno-gu, Seoul', short: 'Jongno-gu' },
@@ -247,7 +252,7 @@ const REGION_EN = {
 
 const normalize = (text) => text.trim().toLowerCase()
 
-// 한국어/영어 어느 쪽으로 입력해도 데이터에 있는 한국어 지역 이름으로 바꿔 줌 (없으면 입력 그대로)
+// 한국어/영어 어느 쪽으로 입력해도 데이터에 있는 한국어 지역 이름으로 바꿔줌 (없으면 입력 그대로)
 export const resolveRegion = (input) => {
   const key = normalize(input)
   const found = Object.entries(REGION_EN).find(

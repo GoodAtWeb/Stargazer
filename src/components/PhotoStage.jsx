@@ -5,12 +5,12 @@ import { useTranslation } from 'react-i18next'
 import { getConstellationName } from '../i18n/data'
 
 const SCAN_SECONDS = SCAN_DURATION / 1000
-const BRIGHT_SPOT = 0.6 // 상대 밝기가 이 이상이면 밝은 별로 강조
+const BRIGHT_SPOT = 0.6 // 상대 밝기가 이 이상이면 밝은 별로 강조함
 
 // 등급이 작을수록(밝을수록) 큰 반지름을 반환
 const getStarRadius = (magnitude) => 0.35 + (4 - magnitude) * 0.12
 
-// 올린 사진 위에 분석 중에는 스캔 효과를, 분석이 끝나면 찾은 별자리를 겹쳐 보여줌
+// 올린 사진 위에 분석 중에는 스캔 효과를, 분석이 끝나면 찾은 별자리를 겹쳐 보여주는 사진 영역
 function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSelect }) {
   const { t } = useTranslation()
   const viewHeight = 100 / aspect

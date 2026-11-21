@@ -36,7 +36,7 @@ function useListQuery() {
   return { tab, season, requestedPage, move }
 }
 
-// 별자리를 탭·계절로 거르고 5개씩 2줄, 페이지 단위로 보여 주는 목록 화면
+// 별자리를 탭·계절로 거르고 5개씩 2줄, 페이지 단위로 보여주는 목록 화면
 function ConstellationList() {
   const { t } = useTranslation()
   const { tab, season, requestedPage, move } = useListQuery()

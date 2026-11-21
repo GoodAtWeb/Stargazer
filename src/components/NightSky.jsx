@@ -48,7 +48,7 @@ const moonLitPath = (radius, fraction) => {
   return `M0 ${-radius} A${radius} ${radius} 0 0 1 0 ${radius} A${rx} ${radius} 0 0 ${k > 0 ? 0 : 1} 0 ${-radius}Z`
 }
 
-// 한 바퀴(360도) 분량의 별, 별자리, 달을 그림
+// 한 바퀴(360도) 분량의 별, 별자리, 달을 그리는 하늘 레이어
 const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive, onSelect }) {
   const { t } = useTranslation()
   const { constellations, background, moon, limitMagnitude, moonInfo } = sky
@@ -146,7 +146,7 @@ const SkyLayer = memo(function SkyLayer({ sky, copy, activeId, onActive, onSelec
 // 지평선 위 방향 표시
 const COMPASS = VIEWS
 
-// 지금 바라보는 방향과 각도 (예: 남동 · 135°)
+// 지금 바라보는 방향과 각도를 보여주는 글자 (예: 남동 · 135°)
 function HeadingText({ center }) {
   const text = useTransform(center, (c) => {
     const az = wrap360(c)
@@ -380,14 +380,14 @@ function NightSky({ sky, skyKey, activeId, onActive, focus }) {
     return { center, stop, normalize, turnTo, inertia }
   }, [center])
 
-  // 바라보는 방향이 동서남북 중 하나에 가까우면 그 버튼을 강조
+  // 바라보는 방향이 동서남북 중 하나에 가까우면 그 버튼을 강조함
   useMotionValueEvent(center, 'change', (c) => {
     const az = wrap360(c)
     const near = VIEWS.find((v) => Math.abs(wrapAngle(az - v.az)) < 20)
     setActiveView(near ? near.az : null)
   })
 
-  // 별자리를 누르면 그 별자리의 상세 페이지로 이동
+  // 별자리를 누르면 그 별자리의 상세 페이지로 이동함
   const selectConstellation = (id) => {
     navigate(`/constellations/${id}`)
   }
@@ -396,7 +396,7 @@ function NightSky({ sky, skyKey, activeId, onActive, focus }) {
     setExpanded((value) => !value)
   }
 
-  // 목록에서 '하늘에서 찾기'를 누르면 그 별자리 쪽으로 돌리고 지도가 보이게 스크롤
+  // 목록에서 '하늘에서 찾기'를 누르면 그 별자리 쪽으로 돌리고 지도가 보이게 스크롤함
   useEffect(() => {
     if (!focus) return
     const target = sky.constellations.find((c) => c.id === focus.id)

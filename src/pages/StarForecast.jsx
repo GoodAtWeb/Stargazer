@@ -17,6 +17,7 @@ import './StarForecast.css'
 
 const DEFAULT_REGION = '서울특별시 성북구' // i18n-ignore 데이터에 저장된 기준 이름
 
+// 처음 화면의 기본 검색값 (기본 지역, 오늘, 22시)
 const makeDefaultQuery = () => ({
   region: getRegionLabel(DEFAULT_REGION),
   date: getTodayString(),
@@ -29,8 +30,8 @@ let lastSearch = null
 
 const SPRING = { type: 'spring', stiffness: 90, damping: 20 }
 
-// 처음엔 검색창만 보이고, 검색하면 검색창이 위로 올라가며 결과가 나타나는
 // 지역, 날짜, 시간을 입력하면 그 순간의 관측 점수와 조건, 볼 수 있는 별자리를 보여주는 별 예보 페이지
+// 처음엔 검색창만 보이고, 검색하면 검색창이 위로 올라가며 결과가 나타남
 function StarForecast() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language
@@ -68,7 +69,7 @@ function StarForecast() {
     setRecentRegions(addRecentRegion(next.region))
   }
 
-  // 최근 검색한 지역을 누르면 날짜와 시간은 그대로 두고 그 지역으로 바로 검색
+  // 최근 검색한 지역을 누르면 날짜와 시간은 그대로 두고 그 지역으로 바로 검색함
   const handleSelectRecent = (region) => {
     const next = { ...draft, region }
     setDraft(next)
@@ -77,7 +78,7 @@ function StarForecast() {
     setRecentRegions(addRecentRegion(region))
   }
 
-  // 그래프의 막대를 누르면 그 시간으로 바로 다시 계산
+  // 그래프의 막대를 누르면 그 시간으로 바로 다시 계산함
   const handleSelectHour = (hour) => {
     const next = { ...query, time: hourToTime(hour) }
     setDraft(next)

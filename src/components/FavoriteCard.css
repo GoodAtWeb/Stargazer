@@ -113,7 +113,7 @@
   border-radius: 6px;
 }
 
-/* 화면 너비가 아니라 카드 너비 기준으로 좁을 때 촘촘하게 */
+/* 화면 너비가 아니라 카드 너비 기준으로 좁을 때 촘촘하게 줄임 */
 @container (max-width: 420px) {
   .favorite-card__link {
     padding: 20px 20px 16px;

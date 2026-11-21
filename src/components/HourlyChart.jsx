@@ -8,7 +8,7 @@ const HEIGHT = 200
 const TOP = 40
 const BOTTOM = 12
 
-// 점들을 부드러운 곡선(베지어)으로 잇는 경로
+// 점들을 부드러운 곡선(베지어)으로 잇는 경로를 반환
 const smoothPath = (points) =>
   points.reduce((d, p, i, list) => {
     if (i === 0) return `M${p.x} ${p.y}`
@@ -22,7 +22,7 @@ const smoothPath = (points) =>
     return `${d} C${c1x} ${c1y} ${c2x} ${c2y} ${p.x} ${p.y}`
   }, '')
 
-// 18시부터 새벽 4시까지 시간대별 점수를 곡선으로 보여주고, 시간을 누르면 그 시간으로 바꿈
+// 18시부터 새벽 4시까지 시간대별 점수를 곡선으로 보여주고, 시간을 누르면 그 시간으로 바꾸는 그래프
 function HourlyChart({ hourly, best, selectedHour, onSelect }) {
   const { t } = useTranslation()
   const bestLabel = best.hour % 24 === 0 ? t('hourly.midnight', { time: formatHour(best.hour) }) : formatHour(best.hour)

@@ -19,7 +19,9 @@ const MENUS = [
   { to: '/archive', label: 'nav.archive' },
 ]
 
-// x, y: 시안 기준 중심 좌표(%) / mobile: 세로 화면용 좌표(%), 로고 위아래로 엇갈리게
+// ── 별자리 배치 ────────────────────────────────────────────
+
+// x, y: 시안 기준 중심 좌표(%) / mobile: 세로 화면용 좌표(%), 로고 위아래로 엇갈리게 놓음
 // spread: 아이콘 안 별들의 가로·세로 반경 (버튼 크기 대비)
 // labelReach: 이름표가 놓이는 가운데 폭에서 별·그림의 위·아래 끝 (버튼 크기 대비, 픽셀로 측정)
 const LAYOUT = [
@@ -38,8 +40,8 @@ const LAYOUT = [
 ]
 
 const APPEAR_ORDER = [3, 8, 0, 6, 10, 2, 7, 4, 9, 1, 11, 5]
-const APPEAR_START = 1.2
-const APPEAR_GAP = 0.1
+const APPEAR_START = 1.2 // 첫 별자리가 나타나기 시작하는 시각(초)
+const APPEAR_GAP = 0.1 // 별자리가 차례로 나타나는 간격(초)
 
 const artFiles = import.meta.glob('../assets/art/*.svg', {
   eager: true,
@@ -53,6 +55,7 @@ const ART_PLACEMENTS = {
   scorpio: { x: 2, y: 4, size: 98 },
 }
 
+// 별자리 배경 그림 주소와 놓일 위치를 반환 (그림이 없으면 null)
 const getArt = (id) => {
   const src = artFiles[`../assets/art/${id}.svg`]
   return src ? { src, ...(ART_PLACEMENTS[id] ?? DEFAULT_ART_PLACEMENT) } : null
@@ -71,8 +74,10 @@ const CONSTELLATIONS = LAYOUT.map((item, index) => ({
   },
 }))
 
+// ── 위치 계산 ──────────────────────────────────────────────
+
 const NO_OFFSET = { x: 0, y: 0 }
-const HOVER_SCALE = 1.4
+const HOVER_SCALE = 1.4 // 마우스를 올렸을 때 커지는 배율
 // 커진 별자리 높이 상한 (화면 높이 대비)
 const HOVER_MAX_HEIGHT = 0.42
 // 커질 때 제자리에서 움직일 수 있는 최대 거리 (별자리 크기 대비)
@@ -96,6 +101,7 @@ const MOBILE_RANGE = [0, 100]
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max)
 
+// 화면 끝 여백을 뺀 안쪽 영역을 반환
 const getSafeArea = (width, height) => {
   const padX = Math.max(SAFE_MIN, width * SAFE_X)
   const padY = Math.max(SAFE_MIN, height * SAFE_Y)
@@ -108,8 +114,10 @@ const getHalf = (constellation, size, scale = 1) => {
   return { x: (constellation.spread[0] + GLOW) * size * scale, top: y, bottom: y }
 }
 
+// 이름표 쪽(위/아래)의 별·그림 끝까지 거리를 반환 (버튼 크기 대비)
 const getLabelReach = (constellation, below) => constellation.labelReach[below ? 1 : 0]
 
+// 별자리가 안쪽 영역을 벗어나지 않게 중심 좌표를 맞춤
 const clampToSafe = (point, half, safe) => ({
   x: clamp(point.x, safe.left + half.x, safe.right - half.x),
   y: clamp(point.y, safe.top + half.top, safe.bottom - half.bottom),
@@ -175,6 +183,7 @@ const separate = (points, fixed, gapFor, safe, block, size) => {
   }
 }
 
+// 별자리가 차지하는 원의 반지름(px)을 반환
 const getRadius = (constellation, size, scale = 1) =>
   (Math.max(...constellation.spread) + GLOW) * size * scale
 
@@ -214,7 +223,7 @@ const getHoverLayout = (hoveredId, rest, width, height, size, block) => {
   let hoverScale = 1
   let labelBelow = false
 
-  // 별은 여백 안, 그림은 화면 안에 들어오게. 이름표는 위가 막히면 아래로
+  // 별은 여백 안, 그림은 화면 안에 들어오게 하고, 이름표는 위가 막히면 아래로 옮김
   const screen = { left: 0, right: width, top: 0, bottom: height }
   const tryPlace = (scale, below) => {
     const stars = getHalf(target, size, scale)
@@ -258,6 +267,9 @@ const getHoverLayout = (hoveredId, rest, width, height, size, block) => {
   return { offsets, hoverScale, labelBelow }
 }
 
+// ── 메인 페이지 ────────────────────────────────────────────
+
+// 로고와 메뉴 주위에 12궁 별자리가 떠 있고, 누르면 그 별자리 상세 화면으로 이동하는 메인 페이지
 function Home() {
   const { t } = useTranslation()
   const navigate = useNavigate()
@@ -290,7 +302,7 @@ function Home() {
     return () => observer.disconnect()
   }, [])
 
-  // 세로로 긴 화면은 별도 좌표로 로고 위아래에 배치
+  // 세로로 긴 화면은 별도 좌표로 로고 위아래에 배치함
   const portrait = area.width < area.height
   const size = portrait
     ? Math.min(area.width * 0.3, area.height * 0.16)

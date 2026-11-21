@@ -10,6 +10,7 @@ import './PhotoRecordViewer.css'
 import { useTranslation } from 'react-i18next'
 import { getConstellationName } from '../i18n/data'
 
+// 저장한 사진 기록을 크게 보여주고, 제목·날짜·별자리를 고치거나 기록을 지울 수 있는 창
 function PhotoRecordViewer({ record, onClose }) {
   const { t } = useTranslation()
   const updatePhotoRecord = useArchiveStore((s) => s.updatePhotoRecord)
@@ -19,7 +20,7 @@ function PhotoRecordViewer({ record, onClose }) {
   const [dateValue, setDateValue] = useState(record.date)
   const [selectedIds, setSelectedIds] = useState(() => record.constellations.map((c) => c.id))
   const { photo, aspect, constellations } = record
-  // 예전 기록에는 분석 전체 목록이 없어서 저장한 별자리 안에서만 선택
+  // 예전 기록에는 분석 전체 목록이 없어서 저장한 별자리 안에서만 고르게 함
   const options = record.detected ?? constellations
   const editing = mode === 'edit'
   const shown = editing ? options.filter((c) => selectedIds.includes(c.id)) : constellations

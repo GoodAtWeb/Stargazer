@@ -43,7 +43,7 @@
   height: auto;
 }
 
-/* 가운데 정렬은 left/right로 (transform은 애니메이션이 사용) */
+/* 가운데 정렬은 left/right로 함 (transform은 애니메이션이 사용) */
 .floating-constellation__label {
   position: absolute;
   left: -50%;

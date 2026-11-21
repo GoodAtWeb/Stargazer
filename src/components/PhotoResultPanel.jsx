@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { getConstellationById } from '../i18n/data'
 import './PhotoResultPanel.css'
 
-// 유래 글에서 앞의 두 문장만 잘라 요약으로 사용
+// 유래 글에서 앞의 두 문장만 잘라 요약으로 반환
 const summarize = (text) => text.split(/(?<=[.!?])\s+/).slice(0, 2).join(' ')
 
 // 별자리에서 가장 밝은 별을 반환
@@ -62,7 +62,7 @@ function PhotoResultPanel({
   return <ResultDetail detected={detected} selectedId={selectedId} onSelect={onSelect} actions={actions} />
 }
 
-// 찾은 별자리 목록과 선택한 별자리 설명
+// 찾은 별자리 목록과 선택한 별자리 설명을 보여주는 부분
 function ResultDetail({ detected, selectedId, onSelect, actions }) {
   const { t } = useTranslation()
   const navigate = useNavigate()

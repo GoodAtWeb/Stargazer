@@ -29,7 +29,7 @@
   object-fit: contain;
 }
 
-/* 사진과 별자리 선이 함께 커지도록 둘 다 확대 */
+/* 사진과 별자리 선이 함께 커지도록 둘 다 확대함 */
 .photo-record__thumb img,
 .photo-record__thumb .record-overlay {
   transition: transform 0.4s ease;

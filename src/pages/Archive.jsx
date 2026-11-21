@@ -23,9 +23,10 @@ const TABS = [
   { key: 'photos', label: 'archive.tabPhotos' },
 ]
 
+// 목록이 비었을 때 안내 문구와 이동 버튼을 보여주는 화면
 function EmptyState({ title, text, to, button }) {
   return (
-    // 마지막 카드가 사라진 뒤에 나타나도록 지연
+    // 마지막 카드가 사라진 뒤에 나타나도록 늦춤
     <motion.div
       className="archive__empty"
       initial={{ opacity: 0, y: 12 }}
@@ -41,6 +42,7 @@ function EmptyState({ title, text, to, button }) {
   )
 }
 
+// 즐겨찾기한 별자리와 저장한 사진 기록을 탭으로 나눠 보여주는 보관함 페이지
 function Archive() {
   const { t } = useTranslation()
   const [params, setParams] = useSearchParams()

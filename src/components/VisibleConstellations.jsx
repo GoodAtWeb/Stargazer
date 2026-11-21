@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './VisibleConstellations.css'
 
-// 별 좌표의 범위에 맞춰 작은 별자리 아이콘을 그림
+// 별 좌표의 범위에 맞춰 그리는 작은 별자리 아이콘
 function ConstellationIcon({ stars, lines }) {
   const xs = stars.map((s) => s.x)
   const ys = stars.map((s) => s.y)
@@ -27,7 +27,7 @@ function ConstellationIcon({ stars, lines }) {
   )
 }
 
-// 선택한 시간에 볼 수 있는 별자리를 보여주고, 누르면 상세 페이지로 이동
+// 선택한 시간에 볼 수 있는 별자리를 보여주고, 누르면 상세 페이지로 이동하는 목록
 function VisibleConstellations({ items, activeId, onActive, onFind }) {
   const { t } = useTranslation()
   return (

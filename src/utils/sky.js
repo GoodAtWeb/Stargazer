@@ -3,7 +3,7 @@ import constellations from '../data/constellations.json'
 import { t } from '../i18n'
 import { getConstellationName } from '../i18n/data'
 
-const RAD = Math.PI / 180
+const RAD = Math.PI / 180 // 도 → 라디안 변환 값
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
@@ -27,11 +27,10 @@ const toHorizontal = (ra, dec, lat, localSiderealTime) => {
   return { alt, az }
 }
 
-// 방위를 '남동쪽' 같은 말로 바꿈
-// 방위를 '남동' 같은 짧은 말로 바꿈
+// 방위를 '남동' 같은 짧은 이름으로 바꿔 반환
 export const getDirectionShortName = (az) => t(`fc.dirShort.${Math.round(az / 45) % 8}`)
 
-// 방위를 '남동쪽' 같은 말로 바꿈
+// 방위를 '남동쪽' 같은 이름으로 바꿔 반환
 export const getDirectionName = (az) => t(`fc.dir.${Math.round(az / 45) % 8}`)
 
 // 별 하나의 적경, 적위를 구함. 별에 ra/dec가 있으면(실제 좌표) 그대로 쓰고, 없으면 별자리 중심에서 그림 위치만큼 떨어뜨림
@@ -43,7 +42,7 @@ const resolveStar = (star, center, box) => {
   return { ra, dec }
 }
 
-// 달은 뜨는 시각과 지는 시각 사이를 동쪽에서 서쪽으로 지나가는 호로 단순하게 표현
+// 달은 뜨는 시각과 지는 시각 사이를 동쪽에서 서쪽으로 지나가는 호로 단순하게 표현함
 const getMoonPosition = (hour, moon) => {
   const length = (moon.set - moon.rise + 24) % 24
   const passed = (((hour % 24) - moon.rise + 24) % 24) / length
