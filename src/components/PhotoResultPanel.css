@@ -222,3 +222,28 @@
   color: rgba(255, 255, 255, 0.8);
   word-break: keep-all;
 }
+
+/* 영어는 글이 길어서 양쪽 정렬, 항목 이름과 내용은 한 줄에 맞춰 시작하고, 버튼 글자는 줄바꿈하지 않음 */
+html[lang='en'] .result-panel__summary {
+  text-align: justify;
+  hyphens: auto;
+}
+
+html[lang='en'] .result-panel__facts li {
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  gap: 0 8px;
+}
+
+html[lang='en'] .result-panel__facts span {
+  margin-right: 0;
+}
+
+html[lang='en'] .result-panel__actions {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+html[lang='en'] .result-panel__btn {
+  padding: 0 12px;
+  white-space: nowrap;
+}
