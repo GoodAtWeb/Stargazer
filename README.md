@@ -98,6 +98,7 @@ Stargazer/
 │  │  ├─ ko.json, en.json     # 화면 문구 사전 (키 이름은 두 파일이 똑같아야 함)
 │  ├─ dev/
 │  │  ├─ detailPreview.jsx    # 별자리 목록·상세보기 등 화면 미리보기용 임시 진입점
+│  │  ├─ forecastPreview.jsx  # 별 예보 화면 단독 미리보기용 임시 진입점
 │  │  ├─ homePreview.jsx      # 메인 화면 단독 미리보기용 임시 진입점
 │  │  └─ photoPreview.jsx     # 사진 분석 화면 단독 미리보기용 임시 진입점
 │  ├─ pages/
@@ -126,6 +127,7 @@ Stargazer/
 ├─ scripts/
 │  └─ check-i18n.mjs          # 번역 누락 검사 (npm run check:i18n)
 ├─ detail-dev.html            # 별자리 목록·상세보기 미리보기용 임시 HTML (src/dev와 함께 사용)
+├─ forecast-dev.html          # 별 예보 미리보기용 임시 HTML (src/dev와 함께 사용)
 ├─ home-dev.html              # 메인 화면 미리보기용 임시 HTML (src/dev와 함께 사용)
 ├─ photo-dev.html             # 사진 분석 미리보기용 임시 HTML (src/dev와 함께 사용)
 ├─ index.html                 # HTML 진입 파일 (탭 제목: Stargazer)
@@ -425,6 +427,7 @@ npm start
 | 주소 | 내용 |
 | --- | --- |
 | `http://localhost:5173/detail-dev.html` | 별자리 목록이 먼저 열리고, 카드를 누르면 상세보기로 이동 (상단 메뉴의 홈, 별 예보, 사진 분석도 이동 가능) |
+| `http://localhost:5173/forecast-dev.html` | 별 예보 화면 (별자리 클릭 시 상세보기 이동까지 확인 가능) |
 | `http://localhost:5173/home-dev.html` | 메인 화면 (별자리 클릭 시 상세보기 이동까지 확인 가능) |
 | `http://localhost:5173/photo-dev.html` | 사진 분석 화면 |
 
