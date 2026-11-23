@@ -25,7 +25,8 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.forecast-form__field input {
+.forecast-form__field input,
+.forecast-form__field select {
   width: 100%;
   padding: 0;
   border: 0;
@@ -35,6 +36,12 @@
   font: inherit;
   font-size: 24px;
   color-scheme: dark;
+}
+
+/* 시간 선택 목록의 항목 색 */
+.forecast-form__field select option {
+  background: #1b2140;
+  color: #fff;
 }
 
 /* 지역 자동완성 목록은 유지하고 크롬 기본 화살표만 숨김 */

@@ -23,6 +23,7 @@ i18n.use(initReactI18next).init({
   fallbackLng: 'ko',
   keySeparator: false, // 'nav.home' 같은 키를 그대로 사용함
   nsSeparator: false,
+  returnEmptyString: true, // 영어에서 일부러 비워둔 문구(예: 단위 '개')가 한국어로 대체되지 않게 함
   interpolation: { prefix: '{', suffix: '}', escapeValue: false }, // '{count}개' 형식을 그대로 사용함
 })
 
