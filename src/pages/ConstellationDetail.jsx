@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation, useParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import ConstellationMap from '../components/ConstellationMap'
 import FortuneSection from '../components/FortuneSection'
 import ObservationSection from '../components/ObservationSection'
@@ -24,6 +24,7 @@ const formatPeriodDate = (value) => {
 function ConstellationView({ constellation }) {
   const { t } = useTranslation()
   const location = useLocation()
+  const navigate = useNavigate()
   const remembered = useRevisitStore((s) => s.selectedStars[constellation.id])
   const setSelectedStar = useRevisitStore((s) => s.setSelectedStar)
   const [favorites, toggleFavorite] = useFavorites()
@@ -34,6 +35,13 @@ function ConstellationView({ constellation }) {
   useEffect(() => {
     setSelectedStar(constellation.id, selectedId)
   }, [constellation.id, selectedId, setSelectedStar])
+  // 별 예보에서 왔으면 새로 이동하지 않고 한 칸 뒤로 감 (새로 이동하면 뒤로가기가 이 화면으로 되돌아옴)
+  const goBack = (e) => {
+    if (location.state?.from === '/forecast' && !location.state?.restore) {
+      e.preventDefault()
+      navigate(-1)
+    }
+  }
   const { isZodiac, name, subName, symbol, element, rulingPlanet, season, period, origin } =
     constellation
 
@@ -41,7 +49,12 @@ function ConstellationView({ constellation }) {
     <div className="detail-page">
       <TopNav />
       <div className="detail__bar">
-        <Link to={location.state?.from ?? '/constellations'} className="detail__back" aria-label={t('detail.back')}>
+        <Link
+          to={location.state?.from ?? '/constellations'}
+          className="detail__back"
+          aria-label={t('detail.back')}
+          onClick={goBack}
+        >
           ←
         </Link>
       </div>

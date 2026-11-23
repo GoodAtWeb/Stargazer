@@ -52,7 +52,7 @@ function VisibleConstellations({ items, activeId, onActive, onFind }) {
                   onPointerEnter={() => onActive(id)}
                   onPointerLeave={() => onActive(null)}
                 >
-                  <Link to={`/constellations/${id}`} className="visible-list__link">
+                  <Link to={`/constellations/${id}`} state={{ from: '/forecast' }} className="visible-list__link">
                     <ConstellationIcon stars={stars} lines={lines} />
                     <span>
                       <strong>{name}</strong>
