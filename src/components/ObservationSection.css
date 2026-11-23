@@ -77,3 +77,9 @@
     border-left: 0;
   }
 }
+
+/* 영어는 세 줄 넘는 글이 많아 양쪽 정렬 */
+html[lang='en'] .observation__tip {
+  text-align: justify;
+  hyphens: auto;
+}
