@@ -130,7 +130,7 @@ function ResultDetail({ detected, selectedId, onSelect, actions }) {
         <button
           type="button"
           className="result-panel__more"
-          onClick={() => navigate(`/constellations/${constellation.id}`)}
+          onClick={() => navigate(`/constellations/${constellation.id}`, { state: { from: '/photo' } })}
         >
           {t('result.more')}
         </button>

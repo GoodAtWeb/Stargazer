@@ -11,6 +11,9 @@ import { getConstellationById } from '../utils/constellations'
 import { useFavorites } from '../utils/favorites'
 import './ConstellationDetail.css'
 
+// 상세보기에서 ← 를 누르면 이전 화면으로 돌아갈 페이지 (별 예보, 사진 분석)
+const BACK_PAGES = ['/forecast', '/photo']
+
 // 반짝이는 4갈래 별 모양 아이콘
 const SPARKLE = 'M12 2Q12 12 22 12Q12 12 12 22Q12 12 2 12Q12 12 12 2Z'
 
@@ -35,9 +38,9 @@ function ConstellationView({ constellation }) {
   useEffect(() => {
     setSelectedStar(constellation.id, selectedId)
   }, [constellation.id, selectedId, setSelectedStar])
-  // 별 예보에서 왔으면 새로 이동하지 않고 한 칸 뒤로 감 (새로 이동하면 뒤로가기가 이 화면으로 되돌아옴)
+  // 별 예보, 사진 분석에서 왔으면 새로 이동하지 않고 한 칸 뒤로 감 (새로 이동하면 뒤로가기가 이 화면으로 되돌아옴)
   const goBack = (e) => {
-    if (location.state?.from === '/forecast' && !location.state?.restore) {
+    if (BACK_PAGES.includes(location.state?.from) && !location.state?.restore) {
       e.preventDefault()
       navigate(-1)
     }
