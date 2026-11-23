@@ -83,18 +83,21 @@ function PhotoStage({ photoUrl, aspect, status, spots, result, selectedId, onSel
         </svg>
 
         {result?.detected.map((item, index) => {
-          const stars = Object.values(item.placed)
-          const top = Math.min(...stars.map((s) => s.py))
           const isActive = item.id === selectedId
 
+          // framer-motion이 transform을 덮어쓰므로 가운데 정렬·위로 올리기도 x/y 값으로 넘김
           return (
             <motion.button
               key={item.id}
               type="button"
               className={`photo-stage__label${isActive ? ' photo-stage__label--active' : ''}`}
-              style={{ left: `${item.x}%`, top: `${(top / viewHeight) * 100}%` }}
-              initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
+              style={{
+                left: `${item.label.x}%`,
+                top: `${(item.label.y / viewHeight) * 100}%`,
+                x: '-50%',
+              }}
+              initial={{ opacity: 0, y: 'calc(-100% - 4px)' }}
+              animate={{ opacity: 1, y: 'calc(-100% - 10px)' }}
               transition={{ delay: index * 0.4 + 0.5 }}
               onClick={() => onSelect(item.id)}
             >

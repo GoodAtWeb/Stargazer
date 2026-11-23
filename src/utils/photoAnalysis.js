@@ -333,13 +333,15 @@ export const createAnalysisResult = (points, starCount, aspect) => {
 
     own.forEach((h) => usedPoints.add(h))
     boxes.push(box)
+    // 이름표는 가장 위에 있는 별 바로 위에 붙임
+    const topStar = Object.values(placed).reduce((a, b) => (b.py < a.py ? b : a))
     detected.push({
       id: constellation.id,
       constellation,
       confidence,
       matched: own.length,
       placed,
-      x: (box.x0 + box.x1) / 2,
+      label: { x: topStar.px, y: topStar.py },
     })
   }
 
@@ -397,11 +399,14 @@ export const downloadResultImage = async (photoUrl, result, fileName = 'stargaze
       ctx.fill()
     })
 
-    const top = Math.min(...Object.values(stars).map((s) => s.py))
     ctx.fillStyle = color
     ctx.font = `700 ${Math.max(14, unit * 1.6)}px Pretendard, 'Malgun Gothic', sans-serif`
     ctx.textAlign = 'center'
-    ctx.fillText(getConstellationName(item.constellation.id), item.x * unit, top * unit - unit * 1.5)
+    ctx.fillText(
+      getConstellationName(item.constellation.id),
+      item.label.x * unit,
+      item.label.y * unit - unit * 1.5,
+    )
   })
 
   const link = document.createElement('a')
