@@ -387,9 +387,9 @@ function NightSky({ sky, skyKey, activeId, onActive, focus }) {
     setActiveView(near ? near.az : null)
   })
 
-  // 별자리를 누르면 그 별자리의 상세 페이지로 이동함
+  // 별자리를 누르면 그 별자리의 상세 페이지로 이동함 (상세의 ← 버튼이 별 예보로 돌아오도록 표시)
   const selectConstellation = (id) => {
-    navigate(`/constellations/${id}`)
+    navigate(`/constellations/${id}`, { state: { from: '/forecast' } })
   }
 
   const toggleExpand = () => {
