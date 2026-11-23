@@ -2,7 +2,11 @@ import { motion } from 'framer-motion'
 import { regions } from '../utils/forecast'
 import { useTranslation } from 'react-i18next'
 import { getRegionLabel } from '../i18n/data'
+import DatePicker from './DatePicker'
 import './ForecastForm.css'
+
+// 시간 선택 목록 ('00:00' ~ '23:00', 브라우저 기본 시간 입력은 언어 설정을 따라가지 않아 직접 만듦)
+const TIME_OPTIONS = Array.from({ length: 24 }, (_, hour) => `${String(hour).padStart(2, '0')}:00`)
 
 // 지역, 날짜, 시간을 입력받는 폼
 function ForecastForm({ values, onChange, onSubmit }) {
@@ -25,24 +29,19 @@ function ForecastForm({ values, onChange, onSubmit }) {
           ))}
         </datalist>
       </label>
-      <label className="forecast-form__field">
+      <div className="forecast-form__field">
         <span>{t('form.date')}</span>
-        <input
-          type="date"
-          value={values.date}
-          onChange={(e) => onChange('date', e.target.value)}
-          required
-        />
-      </label>
+        <DatePicker value={values.date} onChange={(date) => onChange('date', date)} />
+      </div>
       <label className="forecast-form__field">
         <span>{t('form.time')}</span>
-        <input
-          type="time"
-          step="3600"
-          value={values.time}
-          onChange={(e) => onChange('time', e.target.value)}
-          required
-        />
+        <select value={values.time} onChange={(e) => onChange('time', e.target.value)} required>
+          {TIME_OPTIONS.map((time) => (
+            <option key={time} value={time}>
+              {time}
+            </option>
+          ))}
+        </select>
       </label>
       <motion.button
         type="submit"
