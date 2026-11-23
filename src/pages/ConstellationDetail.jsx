@@ -8,7 +8,11 @@ import { useTranslation } from 'react-i18next'
 import { formatMonthDay } from '../i18n/data'
 import { useRevisitStore } from '../stores/revisitStore'
 import { getConstellationById } from '../utils/constellations'
+import { useFavorites } from '../utils/favorites'
 import './ConstellationDetail.css'
+
+// 반짝이는 4갈래 별 모양 아이콘
+const SPARKLE = 'M12 2Q12 12 22 12Q12 12 12 22Q12 12 2 12Q12 12 12 2Z'
 
 // '10-23' 형태의 날짜를 현재 언어의 '10월 23일' / 'October 23'으로 바꿔 반환
 const formatPeriodDate = (value) => {
@@ -22,6 +26,8 @@ function ConstellationView({ constellation }) {
   const location = useLocation()
   const remembered = useRevisitStore((s) => s.selectedStars[constellation.id])
   const setSelectedStar = useRevisitStore((s) => s.setSelectedStar)
+  const [favorites, toggleFavorite] = useFavorites()
+  const favorite = favorites.includes(constellation.id)
   const [selectedId, setSelectedId] = useState(() =>
     location.state?.restore ? (remembered ?? null) : null,
   )
@@ -41,7 +47,20 @@ function ConstellationView({ constellation }) {
       </div>
       <main className="detail">
         <header className="detail__header">
-          <h1>{name}</h1>
+          <div className="detail__title">
+            <h1>{name}</h1>
+            <button
+              type="button"
+              className={`detail__fav${favorite ? ' detail__fav--on' : ''}`}
+              aria-label={t('card.favorite', { name })}
+              aria-pressed={favorite}
+              onClick={() => toggleFavorite(constellation.id)}
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d={SPARKLE} />
+              </svg>
+            </button>
+          </div>
           <p className="detail__meta">
             {isZodiac && (
               <>
