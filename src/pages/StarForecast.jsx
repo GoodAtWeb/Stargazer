@@ -71,7 +71,7 @@ function StarForecast() {
 
   // 최근 검색한 지역을 누르면 날짜와 시간은 그대로 두고 그 지역으로 바로 검색함
   const handleSelectRecent = (region) => {
-    const next = { ...draft, region }
+    const next = { ...draft, region: getRegionLabel(region) } // 저장된 기준 이름을 현재 언어로 바꿔 입력창에 넣음
     setDraft(next)
     setQuery(next)
     setSearched(true)
